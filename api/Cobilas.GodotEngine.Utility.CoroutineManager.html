@@ -1,0 +1,1084 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CoroutineManager | cobilas.godot.utility </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CoroutineManager | cobilas.godot.utility ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.godot.utility/new/main.dev/apiSpec/new?filename=Cobilas_GodotEngine_Utility_CoroutineManager.md&amp;value=---%0Auid%3A%20Cobilas.GodotEngine.Utility.CoroutineManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="cobilas.godot.utility">
+            cobilas.godot.utility
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Cobilas.GodotEngine.Utility.CoroutineManager">
+
+
+
+  <h1 id="Cobilas_GodotEngine_Utility_CoroutineManager" data-uid="Cobilas.GodotEngine.Utility.CoroutineManager" class="text-break">
+Class CoroutineManager  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Coroutine/CoroutineManager.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Cobilas.html">Cobilas</a>.<a class="xref" href="Cobilas.GodotEngine.html">GodotEngine</a>.<a class="xref" href="Cobilas.GodotEngine.Utility.html">Utility</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>com.cobilas.godot.utility.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RunTimeInitializationClass(&quot;CoroutineManager&quot;)]
+public class CoroutineManager : Node, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Node</span></div>
+      <div><span class="xref">CoroutineManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <span class="xref">Node.NotificationEnterTree</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationExitTree</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationMovedInParent</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationReady</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationPaused</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationUnpaused</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationPhysicsProcess</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationProcess</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationParented</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationUnparented</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationInstanced</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationDragBegin</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationDragEnd</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationPathChanged</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationInternalProcess</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationInternalPhysicsProcess</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationPostEnterTree</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationResetPhysicsInterpolation</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationWmMouseEnter</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationWmMouseExit</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationWmFocusIn</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationWmFocusOut</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationWmQuitRequest</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationWmGoBackRequest</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationWmUnfocusRequest</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationOsMemoryWarning</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationTranslationChanged</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationWmAbout</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationCrash</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationOsImeUpdate</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationAppResumed</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationAppPaused</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetNode&lt;T&gt;(NodePath)</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetNodeOrNull&lt;T&gt;(NodePath)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Node.GetChild&lt;T&gt;(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Node.GetChildOrNull&lt;T&gt;(int)</a>
+    </div>
+    <div>
+      <span class="xref">Node.GetOwner&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetOwnerOrNull&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetParentOrNull&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Node._EnterTree()</span>
+    </div>
+    <div>
+      <span class="xref">Node._ExitTree()</span>
+    </div>
+    <div>
+      <span class="xref">Node._GetConfigurationWarning()</span>
+    </div>
+    <div>
+      <span class="xref">Node._Input(InputEvent)</span>
+    </div>
+    <div>
+      <span class="xref">Node._UnhandledInput(InputEvent)</span>
+    </div>
+    <div>
+      <span class="xref">Node._UnhandledKeyInput(InputEventKey)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.AddChildBelowNode(Node, Node, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.SetName(string)</a>
+    </div>
+    <div>
+      <span class="xref">Node.GetName()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.AddChild(Node, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Node.RemoveChild(Node)</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetChildCount()</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetChildren()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Node.GetChild(int)</a>
+    </div>
+    <div>
+      <span class="xref">Node.HasNode(NodePath)</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetNode(NodePath)</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetNodeOrNull(NodePath)</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetParent()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.FindNode(string, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.FindParent(string)</a>
+    </div>
+    <div>
+      <span class="xref">Node.HasNodeAndResource(NodePath)</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetNodeAndResource(NodePath)</span>
+    </div>
+    <div>
+      <span class="xref">Node.IsInsideTree()</span>
+    </div>
+    <div>
+      <span class="xref">Node.IsAParentOf(Node)</span>
+    </div>
+    <div>
+      <span class="xref">Node.IsGreaterThan(Node)</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetPath()</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetPathTo(Node)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.AddToGroup(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.RemoveFromGroup(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.IsInGroup(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Node.MoveChild(Node, int)</a>
+    </div>
+    <div>
+      <span class="xref">Node.GetGroups()</span>
+    </div>
+    <div>
+      <span class="xref">Node.Raise()</span>
+    </div>
+    <div>
+      <span class="xref">Node.SetOwner(Node)</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetOwner()</span>
+    </div>
+    <div>
+      <span class="xref">Node.RemoveAndSkip()</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetIndex()</span>
+    </div>
+    <div>
+      <span class="xref">Node.PrintTree()</span>
+    </div>
+    <div>
+      <span class="xref">Node.PrintTreePretty()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.SetFilename(string)</a>
+    </div>
+    <div>
+      <span class="xref">Node.GetFilename()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Node.PropagateNotification(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.PropagateCall(string, Array, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.SetPhysicsProcess(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Node.GetPhysicsProcessDeltaTime()</span>
+    </div>
+    <div>
+      <span class="xref">Node.IsPhysicsProcessing()</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetProcessDeltaTime()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.SetProcess(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Node.SetProcessPriority(int)</a>
+    </div>
+    <div>
+      <span class="xref">Node.GetProcessPriority()</span>
+    </div>
+    <div>
+      <span class="xref">Node.IsProcessing()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.SetProcessInput(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Node.IsProcessingInput()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.SetProcessUnhandledInput(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Node.IsProcessingUnhandledInput()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.SetProcessUnhandledKeyInput(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Node.IsProcessingUnhandledKeyInput()</span>
+    </div>
+    <div>
+      <span class="xref">Node.SetPauseMode(Node.PauseModeEnum)</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetPauseMode()</span>
+    </div>
+    <div>
+      <span class="xref">Node.CanProcess()</span>
+    </div>
+    <div>
+      <span class="xref">Node.PrintStrayNodes()</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetPositionInParent()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.SetDisplayFolded(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Node.IsDisplayedFolded()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.SetProcessInternal(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Node.IsProcessingInternal()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.SetPhysicsProcessInternal(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Node.IsPhysicsProcessingInternal()</span>
+    </div>
+    <div>
+      <span class="xref">Node.SetPhysicsInterpolationMode(Node.PhysicsInterpolationModeEnum)</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetPhysicsInterpolationMode()</span>
+    </div>
+    <div>
+      <span class="xref">Node.IsPhysicsInterpolated()</span>
+    </div>
+    <div>
+      <span class="xref">Node.IsPhysicsInterpolatedAndEnabled()</span>
+    </div>
+    <div>
+      <span class="xref">Node.ResetPhysicsInterpolation()</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetTree()</span>
+    </div>
+    <div>
+      <span class="xref">Node.CreateTween()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Node.Duplicate(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.ReplaceBy(Node, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.SetSceneInstanceLoadPlaceholder(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Node.GetSceneInstanceLoadPlaceholder()</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetViewport()</span>
+    </div>
+    <div>
+      <span class="xref">Node.QueueFree()</span>
+    </div>
+    <div>
+      <span class="xref">Node.RequestReady()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Node.SetNetworkMaster(int, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Node.GetNetworkMaster()</span>
+    </div>
+    <div>
+      <span class="xref">Node.IsNetworkMaster()</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetMultiplayer()</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetCustomMultiplayer()</span>
+    </div>
+    <div>
+      <span class="xref">Node.SetCustomMultiplayer(MultiplayerAPI)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.RpcConfig(string, MultiplayerAPI.RPCMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.RsetConfig(string, MultiplayerAPI.RPCMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.SetUniqueNameInOwner(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Node.IsUniqueNameInOwner()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.Rpc(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.RpcUnreliable(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Node.RpcId(int, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Node.RpcUnreliableId(int, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.Rset(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Node.RsetId(int, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.RsetUnreliable(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Node.RsetUnreliableId(int, string, object)</a>
+    </div>
+    <div>
+      <span class="xref">Node.UpdateConfigurationWarning()</span>
+    </div>
+    <div>
+      <span class="xref">Node.EditorDescription</span>
+    </div>
+    <div>
+      <span class="xref">Node._ImportPath</span>
+    </div>
+    <div>
+      <span class="xref">Node.PauseMode</span>
+    </div>
+    <div>
+      <span class="xref">Node.PhysicsInterpolationMode</span>
+    </div>
+    <div>
+      <span class="xref">Node.Name</span>
+    </div>
+    <div>
+      <span class="xref">Node.UniqueNameInOwner</span>
+    </div>
+    <div>
+      <span class="xref">Node.Filename</span>
+    </div>
+    <div>
+      <span class="xref">Node.Owner</span>
+    </div>
+    <div>
+      <span class="xref">Node.Multiplayer</span>
+    </div>
+    <div>
+      <span class="xref">Node.CustomMultiplayer</span>
+    </div>
+    <div>
+      <span class="xref">Node.ProcessPriority</span>
+    </div>
+    <div>
+      <span class="xref">Object.NotificationPostinitialize</span>
+    </div>
+    <div>
+      <span class="xref">Object.NotificationPredelete</span>
+    </div>
+    <div>
+      <span class="xref">Object.IsInstanceValid(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.WeakRef(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Dispose()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Dispose(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.ToSignal(Object, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object._Get(string)</a>
+    </div>
+    <div>
+      <span class="xref">Object._GetPropertyList()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object._Notification(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object._Set(string, object)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Free()</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetClass()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.IsClass(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.Set(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.Get(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object.SetIndexed(NodePath, object)</a>
+    </div>
+    <div>
+      <span class="xref">Object.GetIndexed(NodePath)</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetPropertyList()</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetMethodList()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.Notification(int, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.GetInstanceId()</span>
+    </div>
+    <div>
+      <span class="xref">Object.SetScript(Reference)</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetScript()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.SetMeta(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.RemoveMeta(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.GetMeta(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.HasMeta(string)</a>
+    </div>
+    <div>
+      <span class="xref">Object.GetMetaList()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.AddUserSignal(string, Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.HasUserSignal(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.EmitSignal(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.Call(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.CallDeferred(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.SetDeferred(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.Callv(string, Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.HasMethod(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.HasSignal(string)</a>
+    </div>
+    <div>
+      <span class="xref">Object.GetSignalList()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.GetSignalConnectionList(string)</a>
+    </div>
+    <div>
+      <span class="xref">Object.GetIncomingConnections()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.Connect(string, Object, string, Array, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.Disconnect(string, Object, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.IsConnected(string, Object, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.SetBlockSignals(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.IsBlockingSignals()</span>
+    </div>
+    <div>
+      <span class="xref">Object.PropertyListChangedNotify()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.SetMessageTranslation(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.CanTranslateMessages()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.Tr(string)</a>
+    </div>
+    <div>
+      <span class="xref">Object.IsQueuedForDeletion()</span>
+    </div>
+    <div>
+      <span class="xref">Object.NativeInstance</span>
+    </div>
+    <div>
+      <span class="xref">Object.DynamicObject</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_FindNodeByName_Godot_Node_System_String_">Node_GD_CB_Extension.FindNodeByName(Node, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_FindNodeByName_Godot_Node_System_String_System_Boolean_">Node_GD_CB_Extension.FindNodeByName(Node, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_FindNodeByName_Godot_Node_System_String_System_Type_System_Boolean_">Node_GD_CB_Extension.FindNodeByName(Node, string, Type, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_FindNodeByName__1_Godot_Node_System_String_">Node_GD_CB_Extension.FindNodeByName&lt;T&gt;(Node, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_FindNodeByName__1_Godot_Node_System_String_System_Boolean_">Node_GD_CB_Extension.FindNodeByName&lt;T&gt;(Node, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_FindNodes_Godot_Node_System_Type_">Node_GD_CB_Extension.FindNodes(Node, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_FindNodes_Godot_Node_System_Type_System_Boolean_">Node_GD_CB_Extension.FindNodes(Node, Type, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_FindNodes__1_Godot_Node_">Node_GD_CB_Extension.FindNodes&lt;T&gt;(Node)</a>
+  </div>
+  <div>
+      <a class="xref" href="Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_FindNodes__1_Godot_Node_System_Boolean_">Node_GD_CB_Extension.FindNodes&lt;T&gt;(Node, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_GetNodePosition_Godot_Node_">Node_GD_CB_Extension.GetNodePosition(Node)</a>
+  </div>
+  <div>
+      <a class="xref" href="Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_GetNodeRotation_Godot_Node_">Node_GD_CB_Extension.GetNodeRotation(Node)</a>
+  </div>
+  <div>
+      <a class="xref" href="Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_GetNodeScale_Godot_Node_">Node_GD_CB_Extension.GetNodeScale(Node)</a>
+  </div>
+  <div>
+      <a class="xref" href="Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_Print_Godot_Node_System_Object___">Node_GD_CB_Extension.Print(Node, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_SetNodePosition_Godot_Node_Cobilas_GodotEngine_Utility_Numerics_Vector3D_">Node_GD_CB_Extension.SetNodePosition(Node, Vector3D)</a>
+  </div>
+  <div>
+      <a class="xref" href="Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_SetNodeRotation_Godot_Node_Cobilas_GodotEngine_Utility_Numerics_Vector3D_">Node_GD_CB_Extension.SetNodeRotation(Node, Vector3D)</a>
+  </div>
+  <div>
+      <a class="xref" href="Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_SetNodeScale_Godot_Node_Cobilas_GodotEngine_Utility_Numerics_Vector3D_">Node_GD_CB_Extension.SetNodeScale(Node, Vector3D)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_Utility_CoroutineManager_GenID_" data-uid="Cobilas.GodotEngine.Utility.CoroutineManager.GenID*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_CoroutineManager_GenID" data-uid="Cobilas.GodotEngine.Utility.CoroutineManager.GenID">
+  GenID()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Coroutine/CoroutineManager.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates an ID to be used in a coroutine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GenID()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_CoroutineManager_StartCoroutine_" data-uid="Cobilas.GodotEngine.Utility.CoroutineManager.StartCoroutine*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_CoroutineManager_StartCoroutine_System_Collections_IEnumerator_" data-uid="Cobilas.GodotEngine.Utility.CoroutineManager.StartCoroutine(System.Collections.IEnumerator)">
+  StartCoroutine(IEnumerator?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Coroutine/CoroutineManager.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts a collating process from an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Coroutine StartCoroutine(IEnumerator? enumerator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enumerator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Coroutine.html">Coroutine</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_CoroutineManager_StopAllCoroutines_" data-uid="Cobilas.GodotEngine.Utility.CoroutineManager.StopAllCoroutines*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_CoroutineManager_StopAllCoroutines" data-uid="Cobilas.GodotEngine.Utility.CoroutineManager.StopAllCoroutines">
+  StopAllCoroutines()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Coroutine/CoroutineManager.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ends all open Coroutines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StopAllCoroutines()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_CoroutineManager_StopCoroutine_" data-uid="Cobilas.GodotEngine.Utility.CoroutineManager.StopCoroutine*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_CoroutineManager_StopCoroutine_Cobilas_GodotEngine_Utility_Coroutine_" data-uid="Cobilas.GodotEngine.Utility.CoroutineManager.StopCoroutine(Cobilas.GodotEngine.Utility.Coroutine)">
+  StopCoroutine(Coroutine?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Coroutine/CoroutineManager.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ends all open Coroutines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StopCoroutine(Coroutine? Coroutine)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Coroutine</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Coroutine.html">Coroutine</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_CoroutineManager__PhysicsProcess_" data-uid="Cobilas.GodotEngine.Utility.CoroutineManager._PhysicsProcess*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_CoroutineManager__PhysicsProcess_System_Single_" data-uid="Cobilas.GodotEngine.Utility.CoroutineManager._PhysicsProcess(System.Single)">
+  _PhysicsProcess(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Coroutine/CoroutineManager.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called during the physics processing step of the main loop. Physics processing means that the frame rate is synced to the physics, i.e. the <code>delta</code> variable should be constant. <code>delta</code> is in seconds.</p>
+<p>It is only called if physics processing is enabled, which is done automatically if this method is overridden, and can be toggled with <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">SetPhysicsProcess(bool)</a>.</p>
+<p>Corresponds to the <span class="xref">Godot.Node.NotificationPhysicsProcess</span> notification in <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">_Notification(int)</a>.</p>
+<p>Note: This method is only called if the node is present in the scene tree (i.e. if it's not an orphan).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void _PhysicsProcess(float delta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_CoroutineManager__Process_" data-uid="Cobilas.GodotEngine.Utility.CoroutineManager._Process*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_CoroutineManager__Process_System_Single_" data-uid="Cobilas.GodotEngine.Utility.CoroutineManager._Process(System.Single)">
+  _Process(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Coroutine/CoroutineManager.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called during the processing step of the main loop. Processing happens at every frame and as fast as possible, so the <code>delta</code> time since the previous frame is not constant. <code>delta</code> is in seconds.</p>
+<p>It is only called if processing is enabled, which is done automatically if this method is overridden, and can be toggled with <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">SetProcess(bool)</a>.</p>
+<p>Corresponds to the <span class="xref">Godot.Node.NotificationProcess</span> notification in <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">_Notification(int)</a>.</p>
+<p>Note: This method is only called if the node is present in the scene tree (i.e. if it's not an orphan).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void _Process(float delta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_CoroutineManager__Ready_" data-uid="Cobilas.GodotEngine.Utility.CoroutineManager._Ready*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_CoroutineManager__Ready" data-uid="Cobilas.GodotEngine.Utility.CoroutineManager._Ready">
+  _Ready()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Coroutine/CoroutineManager.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when the node is "ready", i.e. when both the node and its children have entered the scene tree. If the node has children, their <span class="xref">Godot.Node._Ready()</span> callbacks get triggered first, and the parent node will receive the ready notification afterwards.</p>
+<p>Corresponds to the <span class="xref">Godot.Node.NotificationReady</span> notification in <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">_Notification(int)</a>. See also the <code>onready</code> keyword for variables.</p>
+<p>Usually used for initialization. For even earlier initialization,  may be used. See also <span class="xref">Godot.Node._EnterTree()</span>.</p>
+<p>Note: <span class="xref">Godot.Node._Ready()</span> may be called only once for each node. After removing a node from the scene tree and adding it again, <code>_ready</code> will not be called a second time. This can be bypassed by requesting another call with <span class="xref">Godot.Node.RequestReady()</span>, which may be called anywhere before adding the node again.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void _Ready()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Coroutine/CoroutineManager.cs/#L10" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
