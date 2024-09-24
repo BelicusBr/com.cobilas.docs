@@ -1,0 +1,730 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.GodotEngine.Utility.Coroutine
+  commentId: T:Cobilas.GodotEngine.Utility.Coroutine
+  id: Coroutine
+  parent: Cobilas.GodotEngine.Utility
+  children:
+  - Cobilas.GodotEngine.Utility.Coroutine.#ctor(System.Collections.IEnumerator,System.String)
+  - Cobilas.GodotEngine.Utility.Coroutine.Cancel
+  - Cobilas.GodotEngine.Utility.Coroutine.CancelAfter(System.Int32)
+  - Cobilas.GodotEngine.Utility.Coroutine.CancelAfter(System.TimeSpan)
+  - Cobilas.GodotEngine.Utility.Coroutine.Dispose
+  - Cobilas.GodotEngine.Utility.Coroutine.Finalize
+  - Cobilas.GodotEngine.Utility.Coroutine.ID
+  - Cobilas.GodotEngine.Utility.Coroutine.IsCancellationRequested
+  - Cobilas.GodotEngine.Utility.Coroutine.IsRunning
+  langs:
+  - csharp
+  - vb
+  name: Coroutine
+  nameWithType: Coroutine
+  fullName: Cobilas.GodotEngine.Utility.Coroutine
+  type: Class
+  source:
+    remote:
+      path: GodotEngine.Utility/Coroutine/Coroutine.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Coroutine
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/Coroutine.cs
+    startLine: 6
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  syntax:
+    content: 'public sealed class Coroutine : IEnumerable, IDisposable'
+    content.vb: Public NotInheritable Class Coroutine Implements IEnumerable, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.IEnumerable
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+- uid: Cobilas.GodotEngine.Utility.Coroutine.ID
+  commentId: P:Cobilas.GodotEngine.Utility.Coroutine.ID
+  id: ID
+  parent: Cobilas.GodotEngine.Utility.Coroutine
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: Coroutine.ID
+  fullName: Cobilas.GodotEngine.Utility.Coroutine.ID
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/Coroutine/Coroutine.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ID
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/Coroutine.cs
+    startLine: 11
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  syntax:
+    content: public string ID { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ID As String
+  overload: Cobilas.GodotEngine.Utility.Coroutine.ID*
+- uid: Cobilas.GodotEngine.Utility.Coroutine.IsRunning
+  commentId: P:Cobilas.GodotEngine.Utility.Coroutine.IsRunning
+  id: IsRunning
+  parent: Cobilas.GodotEngine.Utility.Coroutine
+  langs:
+  - csharp
+  - vb
+  name: IsRunning
+  nameWithType: Coroutine.IsRunning
+  fullName: Cobilas.GodotEngine.Utility.Coroutine.IsRunning
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/Coroutine/Coroutine.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: IsRunning
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/Coroutine.cs
+    startLine: 12
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  syntax:
+    content: public bool IsRunning { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsRunning As Boolean
+  overload: Cobilas.GodotEngine.Utility.Coroutine.IsRunning*
+- uid: Cobilas.GodotEngine.Utility.Coroutine.IsCancellationRequested
+  commentId: P:Cobilas.GodotEngine.Utility.Coroutine.IsCancellationRequested
+  id: IsCancellationRequested
+  parent: Cobilas.GodotEngine.Utility.Coroutine
+  langs:
+  - csharp
+  - vb
+  name: IsCancellationRequested
+  nameWithType: Coroutine.IsCancellationRequested
+  fullName: Cobilas.GodotEngine.Utility.Coroutine.IsCancellationRequested
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/Coroutine/Coroutine.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: IsCancellationRequested
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/Coroutine.cs
+    startLine: 13
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  syntax:
+    content: public bool IsCancellationRequested { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsCancellationRequested As Boolean
+  overload: Cobilas.GodotEngine.Utility.Coroutine.IsCancellationRequested*
+- uid: Cobilas.GodotEngine.Utility.Coroutine.#ctor(System.Collections.IEnumerator,System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.Coroutine.#ctor(System.Collections.IEnumerator,System.String)
+  id: '#ctor(System.Collections.IEnumerator,System.String)'
+  parent: Cobilas.GodotEngine.Utility.Coroutine
+  langs:
+  - csharp
+  - vb
+  name: Coroutine(IEnumerator?, string?)
+  nameWithType: Coroutine.Coroutine(IEnumerator?, string?)
+  fullName: Cobilas.GodotEngine.Utility.Coroutine.Coroutine(System.Collections.IEnumerator?, string?)
+  type: Constructor
+  source:
+    remote:
+      path: GodotEngine.Utility/Coroutine/Coroutine.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: .ctor
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/Coroutine.cs
+    startLine: 15
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  syntax:
+    content: public Coroutine(IEnumerator? enumerator, string? iD)
+    parameters:
+    - id: enumerator
+      type: System.Collections.IEnumerator
+    - id: iD
+      type: System.String
+    content.vb: Public Sub New(enumerator As IEnumerator, iD As String)
+  overload: Cobilas.GodotEngine.Utility.Coroutine.#ctor*
+  nameWithType.vb: Coroutine.New(IEnumerator, String)
+  fullName.vb: Cobilas.GodotEngine.Utility.Coroutine.New(System.Collections.IEnumerator, String)
+  name.vb: New(IEnumerator, String)
+- uid: Cobilas.GodotEngine.Utility.Coroutine.Finalize
+  commentId: M:Cobilas.GodotEngine.Utility.Coroutine.Finalize
+  id: Finalize
+  parent: Cobilas.GodotEngine.Utility.Coroutine
+  langs:
+  - csharp
+  - vb
+  name: ~Coroutine()
+  nameWithType: Coroutine.~Coroutine()
+  fullName: Cobilas.GodotEngine.Utility.Coroutine.~Coroutine()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Coroutine/Coroutine.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Finalize
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/Coroutine.cs
+    startLine: 22
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  syntax:
+    content: protected ~Coroutine()
+    content.vb: 'Protected '
+  overload: Cobilas.GodotEngine.Utility.Coroutine.Finalize*
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+- uid: Cobilas.GodotEngine.Utility.Coroutine.Cancel
+  commentId: M:Cobilas.GodotEngine.Utility.Coroutine.Cancel
+  id: Cancel
+  parent: Cobilas.GodotEngine.Utility.Coroutine
+  langs:
+  - csharp
+  - vb
+  name: Cancel()
+  nameWithType: Coroutine.Cancel()
+  fullName: Cobilas.GodotEngine.Utility.Coroutine.Cancel()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Coroutine/Coroutine.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Cancel
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/Coroutine.cs
+    startLine: 25
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  syntax:
+    content: public void Cancel()
+    content.vb: Public Sub Cancel()
+  overload: Cobilas.GodotEngine.Utility.Coroutine.Cancel*
+- uid: Cobilas.GodotEngine.Utility.Coroutine.CancelAfter(System.TimeSpan)
+  commentId: M:Cobilas.GodotEngine.Utility.Coroutine.CancelAfter(System.TimeSpan)
+  id: CancelAfter(System.TimeSpan)
+  parent: Cobilas.GodotEngine.Utility.Coroutine
+  langs:
+  - csharp
+  - vb
+  name: CancelAfter(TimeSpan)
+  nameWithType: Coroutine.CancelAfter(TimeSpan)
+  fullName: Cobilas.GodotEngine.Utility.Coroutine.CancelAfter(System.TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Coroutine/Coroutine.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: CancelAfter
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/Coroutine.cs
+    startLine: 28
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  syntax:
+    content: public void CancelAfter(TimeSpan delay)
+    parameters:
+    - id: delay
+      type: System.TimeSpan
+    content.vb: Public Sub CancelAfter(delay As TimeSpan)
+  overload: Cobilas.GodotEngine.Utility.Coroutine.CancelAfter*
+- uid: Cobilas.GodotEngine.Utility.Coroutine.CancelAfter(System.Int32)
+  commentId: M:Cobilas.GodotEngine.Utility.Coroutine.CancelAfter(System.Int32)
+  id: CancelAfter(System.Int32)
+  parent: Cobilas.GodotEngine.Utility.Coroutine
+  langs:
+  - csharp
+  - vb
+  name: CancelAfter(int)
+  nameWithType: Coroutine.CancelAfter(int)
+  fullName: Cobilas.GodotEngine.Utility.Coroutine.CancelAfter(int)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Coroutine/Coroutine.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: CancelAfter
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/Coroutine.cs
+    startLine: 31
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  syntax:
+    content: public void CancelAfter(int millisecondsDelay)
+    parameters:
+    - id: millisecondsDelay
+      type: System.Int32
+    content.vb: Public Sub CancelAfter(millisecondsDelay As Integer)
+  overload: Cobilas.GodotEngine.Utility.Coroutine.CancelAfter*
+  nameWithType.vb: Coroutine.CancelAfter(Integer)
+  fullName.vb: Cobilas.GodotEngine.Utility.Coroutine.CancelAfter(Integer)
+  name.vb: CancelAfter(Integer)
+- uid: Cobilas.GodotEngine.Utility.Coroutine.Dispose
+  commentId: M:Cobilas.GodotEngine.Utility.Coroutine.Dispose
+  id: Dispose
+  parent: Cobilas.GodotEngine.Utility.Coroutine
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: Coroutine.Dispose()
+  fullName: Cobilas.GodotEngine.Utility.Coroutine.Dispose()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Coroutine/Coroutine.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Dispose
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/Coroutine.cs
+    startLine: 35
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Cobilas.GodotEngine.Utility.Coroutine.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: Cobilas.GodotEngine.Utility
+  commentId: N:Cobilas.GodotEngine.Utility
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Utility
+  nameWithType: Cobilas.GodotEngine.Utility
+  fullName: Cobilas.GodotEngine.Utility
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: Cobilas.GodotEngine.Utility.Coroutine.ID*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Coroutine.ID
+  href: Cobilas.GodotEngine.Utility.Coroutine.html#Cobilas_GodotEngine_Utility_Coroutine_ID
+  name: ID
+  nameWithType: Coroutine.ID
+  fullName: Cobilas.GodotEngine.Utility.Coroutine.ID
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Cobilas.GodotEngine.Utility.Coroutine.IsRunning*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Coroutine.IsRunning
+  href: Cobilas.GodotEngine.Utility.Coroutine.html#Cobilas_GodotEngine_Utility_Coroutine_IsRunning
+  name: IsRunning
+  nameWithType: Coroutine.IsRunning
+  fullName: Cobilas.GodotEngine.Utility.Coroutine.IsRunning
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Cobilas.GodotEngine.Utility.Coroutine.IsCancellationRequested*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Coroutine.IsCancellationRequested
+  href: Cobilas.GodotEngine.Utility.Coroutine.html#Cobilas_GodotEngine_Utility_Coroutine_IsCancellationRequested
+  name: IsCancellationRequested
+  nameWithType: Coroutine.IsCancellationRequested
+  fullName: Cobilas.GodotEngine.Utility.Coroutine.IsCancellationRequested
+- uid: Cobilas.GodotEngine.Utility.Coroutine.#ctor*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Coroutine.#ctor
+  href: Cobilas.GodotEngine.Utility.Coroutine.html#Cobilas_GodotEngine_Utility_Coroutine__ctor_System_Collections_IEnumerator_System_String_
+  name: Coroutine
+  nameWithType: Coroutine.Coroutine
+  fullName: Cobilas.GodotEngine.Utility.Coroutine.Coroutine
+  nameWithType.vb: Coroutine.New
+  fullName.vb: Cobilas.GodotEngine.Utility.Coroutine.New
+  name.vb: New
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: Cobilas.GodotEngine.Utility.Coroutine.Finalize*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Coroutine.Finalize
+  href: Cobilas.GodotEngine.Utility.Coroutine.html#Cobilas_GodotEngine_Utility_Coroutine_Finalize
+  name: ~Coroutine
+  nameWithType: Coroutine.~Coroutine
+  fullName: Cobilas.GodotEngine.Utility.Coroutine.~Coroutine
+  spec.csharp:
+  - name: "~"
+  - uid: Cobilas.GodotEngine.Utility.Coroutine.Finalize*
+    name: Coroutine
+    href: Cobilas.GodotEngine.Utility.Coroutine.html#Cobilas_GodotEngine_Utility_Coroutine_Finalize
+- uid: Cobilas.GodotEngine.Utility.Coroutine.Cancel*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Coroutine.Cancel
+  href: Cobilas.GodotEngine.Utility.Coroutine.html#Cobilas_GodotEngine_Utility_Coroutine_Cancel
+  name: Cancel
+  nameWithType: Coroutine.Cancel
+  fullName: Cobilas.GodotEngine.Utility.Coroutine.Cancel
+- uid: Cobilas.GodotEngine.Utility.Coroutine.CancelAfter*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Coroutine.CancelAfter
+  href: Cobilas.GodotEngine.Utility.Coroutine.html#Cobilas_GodotEngine_Utility_Coroutine_CancelAfter_System_TimeSpan_
+  name: CancelAfter
+  nameWithType: Coroutine.CancelAfter
+  fullName: Cobilas.GodotEngine.Utility.Coroutine.CancelAfter
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Cobilas.GodotEngine.Utility.Coroutine.Dispose*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Coroutine.Dispose
+  href: Cobilas.GodotEngine.Utility.Coroutine.html#Cobilas_GodotEngine_Utility_Coroutine_Dispose
+  name: Dispose
+  nameWithType: Coroutine.Dispose
+  fullName: Cobilas.GodotEngine.Utility.Coroutine.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

@@ -1,0 +1,50 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "D:/Git Repos/Godot Dev/com.cobilas.godot.utility",
+          "files": [
+            "**/*.csproj"
+          ]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "sitemap": {
+      "baseUrl": "https://belicusbr.github.io/doctds",
+      "priority": 0.1,
+      "changefreq": "monthly"
+    },
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "_site/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "output": "_site",
+    "template": [
+      "default",
+      "modern"
+    ],
+    "globalMetadata": {
+      "_appName": "cobilas.godot.utility",
+      "_appTitle": "cobilas.godot.utility",
+      "_enableSearch": true,
+      "pdf": true
+    }
+  }
+}

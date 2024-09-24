@@ -1,0 +1,1946 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct Vector4D | cobilas.godot.utility </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct Vector4D | cobilas.godot.utility ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.godot.utility/new/main.dev/apiSpec/new?filename=Cobilas_GodotEngine_Utility_Numerics_Vector4D.md&amp;value=---%0Auid%3A%20Cobilas.GodotEngine.Utility.Numerics.Vector4D%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="cobilas.godot.utility">
+            cobilas.godot.utility
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D">
+
+
+
+  <h1 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D" class="text-break">
+Struct Vector4D  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Cobilas.html">Cobilas</a>.<a class="xref" href="Cobilas.GodotEngine.html">GodotEngine</a>.<a class="xref" href="Cobilas.GodotEngine.Utility.html">Utility</a>.<a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.html">Numerics</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>com.cobilas.godot.utility.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public struct Vector4D : IVector&lt;Vector4D&gt;, IEquatable&lt;Vector4D&gt;, IVector, IFormattable</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.IVector-1.html">IVector</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a>&gt;</div>
+      <div><a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.IVector.html">IVector</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformattable">IFormattable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D__ctor_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.#ctor*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D__ctor_Cobilas_GodotEngine_Utility_Numerics_Quaternion_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.#ctor(Cobilas.GodotEngine.Utility.Numerics.Quaternion)">
+  Vector4D(Quaternion)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4D(Quaternion vector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D__ctor_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.#ctor*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D__ctor_Cobilas_GodotEngine_Utility_Numerics_Vector4D_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.#ctor(Cobilas.GodotEngine.Utility.Numerics.Vector4D)">
+  Vector4D(Vector4D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4D(Vector4D vector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D__ctor_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.#ctor*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D__ctor_System_Single_System_Single_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.#ctor(System.Single,System.Single)">
+  Vector4D(float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4D(float x, float y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D__ctor_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.#ctor*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D__ctor_System_Single_System_Single_System_Single_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.#ctor(System.Single,System.Single,System.Single)">
+  Vector4D(float, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4D(float x, float y, float z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D__ctor_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.#ctor*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D__ctor_System_Single_System_Single_System_Single_System_Single_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.#ctor(System.Single,System.Single,System.Single,System.Single)">
+  Vector4D(float, float, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4D(float x, float y, float z, float w)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>w</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_w" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.w">
+  w
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float w</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_x" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.x">
+  x
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float x</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_y" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.y">
+  y
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float y</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_z" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.z">
+  z
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float z</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_AxisCount_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.AxisCount*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_AxisCount" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.AxisCount">
+  AxisCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int AxisCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Item_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Item*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Item_System_Int32_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Item(System.Int32)">
+  this[int]
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float this[int index] { readonly get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Normalized_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Normalized*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Normalized" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Normalized">
+  Normalized
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Vector4D Normalized { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_One_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.One*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_One" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.One">
+  One
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4D One { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Zero_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Zero*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Zero" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Zero">
+  Zero
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4D Zero { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_ceil_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.ceil*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_ceil" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.ceil">
+  ceil
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Vector4D ceil { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_floor_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.floor*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_floor" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.floor">
+  floor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Vector4D floor { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_magnitude_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.magnitude*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_magnitude" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.magnitude">
+  magnitude
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly float magnitude { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_sqrMagnitude_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.sqrMagnitude*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_sqrMagnitude" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.sqrMagnitude">
+  sqrMagnitude
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly float sqrMagnitude { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Abs_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Abs*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Abs_Cobilas_GodotEngine_Utility_Numerics_Vector4D_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Abs(Cobilas.GodotEngine.Utility.Numerics.Vector4D)">
+  Abs(Vector4D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4D Abs(Vector4D a)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Abs_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Abs*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Abs_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Abs(System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+  Abs(bool, bool, bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Vector3D Abs(bool absX = true, bool absY = true, bool absZ = true, bool absW = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>absX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>absY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>absZ</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>absW</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector3D.html">Vector3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Ceil_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Ceil*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Ceil_Cobilas_GodotEngine_Utility_Numerics_Vector4D__" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Ceil(Cobilas.GodotEngine.Utility.Numerics.Vector4D@)">
+  Ceil(in Vector4D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4D Ceil(in Vector4D a)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Distance_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Distance*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Distance_Cobilas_GodotEngine_Utility_Numerics_Vector4D_Cobilas_GodotEngine_Utility_Numerics_Vector4D_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Distance(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)">
+  Distance(Vector4D, Vector4D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Distance(Vector4D a, Vector4D b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Dot_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Dot*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Dot_Cobilas_GodotEngine_Utility_Numerics_Vector4D_Cobilas_GodotEngine_Utility_Numerics_Vector4D_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Dot(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)">
+  Dot(Vector4D, Vector4D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Dot(Vector4D a, Vector4D b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Equals_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Equals*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Equals_Cobilas_GodotEngine_Utility_Numerics_Vector4D_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector4D)">
+  Equals(Vector4D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool Equals(Vector4D other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Equals_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Equals*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Equals_System_Object_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance and a specified object are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override readonly bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current instance.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Floor_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Floor*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Floor_Cobilas_GodotEngine_Utility_Numerics_Vector3D__" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Floor(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)">
+  Floor(in Vector3D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3D Floor(in Vector3D a)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector3D.html">Vector3D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector3D.html">Vector3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_GetHashCode_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.GetHashCode*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_GetHashCode" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the hash code for this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override readonly int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A 32-bit signed integer that is the hash code for this instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_IsNormalized_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.IsNormalized*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_IsNormalized_Cobilas_GodotEngine_Utility_Numerics_IVector_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.IsNormalized(Cobilas.GodotEngine.Utility.Numerics.IVector)">
+  IsNormalized(IVector)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsNormalized(IVector a)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.IVector.html">IVector</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Magnitude_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Magnitude*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Magnitude_Cobilas_GodotEngine_Utility_Numerics_Vector4D_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Magnitude(Cobilas.GodotEngine.Utility.Numerics.Vector4D)">
+  Magnitude(Vector4D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Magnitude(Vector4D a)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Max_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Max*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Max_Cobilas_GodotEngine_Utility_Numerics_Vector4D_Cobilas_GodotEngine_Utility_Numerics_Vector4D_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Max(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)">
+  Max(Vector4D, Vector4D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4D Max(Vector4D lhs, Vector4D rhs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lhs</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+    <dt><code>rhs</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Min_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Min*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Min_Cobilas_GodotEngine_Utility_Numerics_Vector4D_Cobilas_GodotEngine_Utility_Numerics_Vector4D_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Min(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)">
+  Min(Vector4D, Vector4D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4D Min(Vector4D lhs, Vector4D rhs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lhs</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+    <dt><code>rhs</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Normalize_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Normalize*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_Normalize_Cobilas_GodotEngine_Utility_Numerics_Vector4D_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.Normalize(Cobilas.GodotEngine.Utility.Numerics.Vector4D)">
+  Normalize(Vector4D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4D Normalize(Vector4D a)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_SqrMagnitude_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.SqrMagnitude*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_SqrMagnitude_Cobilas_GodotEngine_Utility_Numerics_Vector4D_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.SqrMagnitude(Cobilas.GodotEngine.Utility.Numerics.Vector4D)">
+  SqrMagnitude(Vector4D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float SqrMagnitude(Vector4D a)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_ToString_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.ToString*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_ToString" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the fully qualified type name of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override readonly string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The fully qualified type name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_ToString_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.ToString*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_ToString_System_String_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.ToString(System.String)">
+  ToString(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly string ToString(string format)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_ToString_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.ToString*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_ToString_System_String_System_IFormatProvider_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.ToString(System.String,System.IFormatProvider)">
+  ToString(string, IFormatProvider)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Formats the value of the current instance using the specified format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly string ToString(string format, IFormatProvider formatProvider)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The format to use.-or- A null reference (<code>Nothing</code> in Visual Basic) to use the default format defined for the type of the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformattable">IFormattable</a> implementation.</p>
+</dd>
+    <dt><code>formatProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
+    <dd><p>The provider to use to format the value.-or- A null reference (<code>Nothing</code> in Visual Basic) to obtain the numeric format information from the current locale setting of the operating system.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The value of the current instance in the specified format.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Addition_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Addition*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Addition_Cobilas_GodotEngine_Utility_Numerics_Vector4D_Cobilas_GodotEngine_Utility_Numerics_Vector4D_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Addition(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)">
+  operator +(Vector4D, Vector4D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4D operator +(Vector4D a, Vector4D b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Division_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Division*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Division_Cobilas_GodotEngine_Utility_Numerics_Vector4D_Cobilas_GodotEngine_Utility_Numerics_Vector4D_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Division(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)">
+  operator /(Vector4D, Vector4D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4D operator /(Vector4D a, Vector4D b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Division_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Division*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Division_Cobilas_GodotEngine_Utility_Numerics_Vector4D_System_Single_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Division(Cobilas.GodotEngine.Utility.Numerics.Vector4D,System.Single)">
+  operator /(Vector4D, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4D operator /(Vector4D a, float b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Division_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Division*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Division_System_Single_Cobilas_GodotEngine_Utility_Numerics_Vector4D_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Division(System.Single,Cobilas.GodotEngine.Utility.Numerics.Vector4D)">
+  operator /(float, Vector4D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4D operator /(float a, Vector4D b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Implicit_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Implicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Implicit_Cobilas_GodotEngine_Utility_Numerics_Vector4D__Cobilas_GodotEngine_Utility_Numerics_Vector2D" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Implicit(Cobilas.GodotEngine.Utility.Numerics.Vector4D)~Cobilas.GodotEngine.Utility.Numerics.Vector2D">
+  implicit operator Vector2D(Vector4D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Vector2D(Vector4D v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector2D.html">Vector2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Implicit_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Implicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Implicit_Cobilas_GodotEngine_Utility_Numerics_Vector4D__Cobilas_GodotEngine_Utility_Numerics_Vector3D" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Implicit(Cobilas.GodotEngine.Utility.Numerics.Vector4D)~Cobilas.GodotEngine.Utility.Numerics.Vector3D">
+  implicit operator Vector3D(Vector4D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Vector3D(Vector4D v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector3D.html">Vector3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Implicit_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Implicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Implicit_Cobilas_GodotEngine_Utility_Numerics_Vector4D__Godot_Vector2" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Implicit(Cobilas.GodotEngine.Utility.Numerics.Vector4D)~Godot.Vector2">
+  implicit operator Vector2(Vector4D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Vector2(Vector4D v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Implicit_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Implicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Implicit_Cobilas_GodotEngine_Utility_Numerics_Vector4D__Godot_Vector3" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Implicit(Cobilas.GodotEngine.Utility.Numerics.Vector4D)~Godot.Vector3">
+  implicit operator Vector3(Vector4D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Vector3(Vector4D v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Implicit_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Implicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Implicit_Godot_Vector2__Cobilas_GodotEngine_Utility_Numerics_Vector4D" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Implicit(Godot.Vector2)~Cobilas.GodotEngine.Utility.Numerics.Vector4D">
+  implicit operator Vector4D(Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Vector4D(Vector2 v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Implicit_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Implicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Implicit_Godot_Vector3__Cobilas_GodotEngine_Utility_Numerics_Vector4D" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Implicit(Godot.Vector3)~Cobilas.GodotEngine.Utility.Numerics.Vector4D">
+  implicit operator Vector4D(Vector3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Vector4D(Vector3 v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Multiply_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Multiply*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Multiply_Cobilas_GodotEngine_Utility_Numerics_Vector4D_Cobilas_GodotEngine_Utility_Numerics_Vector4D_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Multiply(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)">
+  operator *(Vector4D, Vector4D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4D operator *(Vector4D a, Vector4D b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Multiply_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Multiply*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Multiply_Cobilas_GodotEngine_Utility_Numerics_Vector4D_System_Single_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Multiply(Cobilas.GodotEngine.Utility.Numerics.Vector4D,System.Single)">
+  operator *(Vector4D, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4D operator *(Vector4D a, float b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Multiply_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Multiply*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Multiply_System_Single_Cobilas_GodotEngine_Utility_Numerics_Vector4D_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Multiply(System.Single,Cobilas.GodotEngine.Utility.Numerics.Vector4D)">
+  operator *(float, Vector4D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4D operator *(float a, Vector4D b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Subtraction_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Subtraction*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Subtraction_Cobilas_GodotEngine_Utility_Numerics_Vector4D_Cobilas_GodotEngine_Utility_Numerics_Vector4D_" data-uid="Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Subtraction(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)">
+  operator -(Vector4D, Vector4D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4D operator -(Vector4D a, Vector4D b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/Vector4D.cs/#L6" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

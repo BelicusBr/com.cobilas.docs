@@ -1,0 +1,1160 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.GodotEngine.Utility.GDDirectory
+  commentId: T:Cobilas.GodotEngine.Utility.GDDirectory
+  id: GDDirectory
+  parent: Cobilas.GodotEngine.Utility
+  children:
+  - Cobilas.GodotEngine.Utility.GDDirectory.Attribute
+  - Cobilas.GodotEngine.Utility.GDDirectory.Count
+  - Cobilas.GodotEngine.Utility.GDDirectory.CreateDirectory(System.String)
+  - Cobilas.GodotEngine.Utility.GDDirectory.Dispose
+  - Cobilas.GodotEngine.Utility.GDDirectory.Finalize
+  - Cobilas.GodotEngine.Utility.GDDirectory.GetDirectories
+  - Cobilas.GodotEngine.Utility.GDDirectory.GetDirectory(System.String,System.Boolean)
+  - Cobilas.GodotEngine.Utility.GDDirectory.GetFile(System.String,System.Boolean)
+  - Cobilas.GodotEngine.Utility.GDDirectory.GetFiles(System.Boolean)
+  - Cobilas.GodotEngine.Utility.GDDirectory.GetGDDirectory
+  - Cobilas.GodotEngine.Utility.GDDirectory.GetGDDirectory(System.String)
+  - Cobilas.GodotEngine.Utility.GDDirectory.Name
+  - Cobilas.GodotEngine.Utility.GDDirectory.NameWithoutExtension
+  - Cobilas.GodotEngine.Utility.GDDirectory.Parent
+  - Cobilas.GodotEngine.Utility.GDDirectory.Path
+  - Cobilas.GodotEngine.Utility.GDDirectory.RemoveDirectory(System.String)
+  - Cobilas.GodotEngine.Utility.GDDirectory.RemoveFile(System.String)
+  - Cobilas.GodotEngine.Utility.GDDirectory.ToString
+  langs:
+  - csharp
+  - vb
+  name: GDDirectory
+  nameWithType: GDDirectory
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory
+  type: Class
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/GDDirectory.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GDDirectory
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
+    startLine: 9
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  syntax:
+    content: 'public sealed class GDDirectory : GDFileBase, IDisposable'
+    content.vb: Public NotInheritable Class GDDirectory Inherits GDFileBase Implements IDisposable
+  inheritance:
+  - System.Object
+  - Cobilas.GodotEngine.Utility.GDFileBase
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - Cobilas.GodotEngine.Utility.GDFileBase.Null
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.Path
+  commentId: P:Cobilas.GodotEngine.Utility.GDDirectory.Path
+  id: Path
+  parent: Cobilas.GodotEngine.Utility.GDDirectory
+  langs:
+  - csharp
+  - vb
+  name: Path
+  nameWithType: GDDirectory.Path
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.Path
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/GDDirectory.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Path
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
+    startLine: 14
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  example: []
+  syntax:
+    content: public override string Path { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides Property Path As String
+  overridden: Cobilas.GodotEngine.Utility.GDFileBase.Path
+  overload: Cobilas.GodotEngine.Utility.GDDirectory.Path*
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.NameWithoutExtension
+  commentId: P:Cobilas.GodotEngine.Utility.GDDirectory.NameWithoutExtension
+  id: NameWithoutExtension
+  parent: Cobilas.GodotEngine.Utility.GDDirectory
+  langs:
+  - csharp
+  - vb
+  name: NameWithoutExtension
+  nameWithType: GDDirectory.NameWithoutExtension
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.NameWithoutExtension
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/GDDirectory.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: NameWithoutExtension
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
+    startLine: 15
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  example: []
+  syntax:
+    content: public override string NameWithoutExtension { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property NameWithoutExtension As String
+  overridden: Cobilas.GodotEngine.Utility.GDFileBase.NameWithoutExtension
+  overload: Cobilas.GodotEngine.Utility.GDDirectory.NameWithoutExtension*
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.Name
+  commentId: P:Cobilas.GodotEngine.Utility.GDDirectory.Name
+  id: Name
+  parent: Cobilas.GodotEngine.Utility.GDDirectory
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: GDDirectory.Name
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.Name
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/GDDirectory.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Name
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
+    startLine: 16
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  example: []
+  syntax:
+    content: public override string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property Name As String
+  overridden: Cobilas.GodotEngine.Utility.GDFileBase.Name
+  overload: Cobilas.GodotEngine.Utility.GDDirectory.Name*
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.Count
+  commentId: P:Cobilas.GodotEngine.Utility.GDDirectory.Count
+  id: Count
+  parent: Cobilas.GodotEngine.Utility.GDDirectory
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: GDDirectory.Count
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.Count
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/GDDirectory.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Count
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
+    startLine: 17
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: Cobilas.GodotEngine.Utility.GDDirectory.Count*
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.Parent
+  commentId: P:Cobilas.GodotEngine.Utility.GDDirectory.Parent
+  id: Parent
+  parent: Cobilas.GodotEngine.Utility.GDDirectory
+  langs:
+  - csharp
+  - vb
+  name: Parent
+  nameWithType: GDDirectory.Parent
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.Parent
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/GDDirectory.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Parent
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
+    startLine: 18
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  example: []
+  syntax:
+    content: public override GDFileBase Parent { get; protected set; }
+    parameters: []
+    return:
+      type: Cobilas.GodotEngine.Utility.GDFileBase
+    content.vb: Public Overrides Property Parent As GDFileBase
+  overridden: Cobilas.GodotEngine.Utility.GDFileBase.Parent
+  overload: Cobilas.GodotEngine.Utility.GDDirectory.Parent*
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.Attribute
+  commentId: P:Cobilas.GodotEngine.Utility.GDDirectory.Attribute
+  id: Attribute
+  parent: Cobilas.GodotEngine.Utility.GDDirectory
+  langs:
+  - csharp
+  - vb
+  name: Attribute
+  nameWithType: GDDirectory.Attribute
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.Attribute
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/GDDirectory.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Attribute
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
+    startLine: 19
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  example: []
+  syntax:
+    content: public override GDFileAttributes Attribute { get; protected set; }
+    parameters: []
+    return:
+      type: Cobilas.GodotEngine.Utility.GDFileAttributes
+    content.vb: Public Overrides Property Attribute As GDFileAttributes
+  overridden: Cobilas.GodotEngine.Utility.GDFileBase.Attribute
+  overload: Cobilas.GodotEngine.Utility.GDDirectory.Attribute*
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.Finalize
+  commentId: M:Cobilas.GodotEngine.Utility.GDDirectory.Finalize
+  id: Finalize
+  parent: Cobilas.GodotEngine.Utility.GDDirectory
+  langs:
+  - csharp
+  - vb
+  name: ~GDDirectory()
+  nameWithType: GDDirectory.~GDDirectory()
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.~GDDirectory()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/GDDirectory.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Finalize
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
+    startLine: 32
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  syntax:
+    content: protected ~GDDirectory()
+    content.vb: 'Protected '
+  overload: Cobilas.GodotEngine.Utility.GDDirectory.Finalize*
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.Dispose
+  commentId: M:Cobilas.GodotEngine.Utility.GDDirectory.Dispose
+  id: Dispose
+  parent: Cobilas.GodotEngine.Utility.GDDirectory
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: GDDirectory.Dispose()
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.Dispose()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/GDDirectory.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Dispose
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
+    startLine: 34
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public override void Dispose()
+    content.vb: Public Overrides Sub Dispose()
+  overridden: Cobilas.GodotEngine.Utility.GDFileBase.Dispose
+  overload: Cobilas.GodotEngine.Utility.GDDirectory.Dispose*
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.GetDirectory(System.String,System.Boolean)
+  commentId: M:Cobilas.GodotEngine.Utility.GDDirectory.GetDirectory(System.String,System.Boolean)
+  id: GetDirectory(System.String,System.Boolean)
+  parent: Cobilas.GodotEngine.Utility.GDDirectory
+  langs:
+  - csharp
+  - vb
+  name: GetDirectory(string?, bool)
+  nameWithType: GDDirectory.GetDirectory(string?, bool)
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.GetDirectory(string?, bool)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/GDDirectory.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetDirectory
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
+    startLine: 39
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  syntax:
+    content: public GDDirectory? GetDirectory(string? relativePath, bool isSubdirectory = false)
+    parameters:
+    - id: relativePath
+      type: System.String
+    - id: isSubdirectory
+      type: System.Boolean
+    return:
+      type: Cobilas.GodotEngine.Utility.GDDirectory
+    content.vb: Public Function GetDirectory(relativePath As String, isSubdirectory As Boolean = False) As GDDirectory
+  overload: Cobilas.GodotEngine.Utility.GDDirectory.GetDirectory*
+  nameWithType.vb: GDDirectory.GetDirectory(String, Boolean)
+  fullName.vb: Cobilas.GodotEngine.Utility.GDDirectory.GetDirectory(String, Boolean)
+  name.vb: GetDirectory(String, Boolean)
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.CreateDirectory(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.GDDirectory.CreateDirectory(System.String)
+  id: CreateDirectory(System.String)
+  parent: Cobilas.GodotEngine.Utility.GDDirectory
+  langs:
+  - csharp
+  - vb
+  name: CreateDirectory(string?)
+  nameWithType: GDDirectory.CreateDirectory(string?)
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.CreateDirectory(string?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/GDDirectory.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: CreateDirectory
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
+    startLine: 55
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  syntax:
+    content: public bool CreateDirectory(string? directoryName)
+    parameters:
+    - id: directoryName
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function CreateDirectory(directoryName As String) As Boolean
+  overload: Cobilas.GodotEngine.Utility.GDDirectory.CreateDirectory*
+  nameWithType.vb: GDDirectory.CreateDirectory(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.GDDirectory.CreateDirectory(String)
+  name.vb: CreateDirectory(String)
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.RemoveDirectory(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.GDDirectory.RemoveDirectory(System.String)
+  id: RemoveDirectory(System.String)
+  parent: Cobilas.GodotEngine.Utility.GDDirectory
+  langs:
+  - csharp
+  - vb
+  name: RemoveDirectory(string?)
+  nameWithType: GDDirectory.RemoveDirectory(string?)
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.RemoveDirectory(string?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/GDDirectory.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: RemoveDirectory
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
+    startLine: 66
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  syntax:
+    content: public bool RemoveDirectory(string? directoryName)
+    parameters:
+    - id: directoryName
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function RemoveDirectory(directoryName As String) As Boolean
+  overload: Cobilas.GodotEngine.Utility.GDDirectory.RemoveDirectory*
+  nameWithType.vb: GDDirectory.RemoveDirectory(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.GDDirectory.RemoveDirectory(String)
+  name.vb: RemoveDirectory(String)
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.RemoveFile(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.GDDirectory.RemoveFile(System.String)
+  id: RemoveFile(System.String)
+  parent: Cobilas.GodotEngine.Utility.GDDirectory
+  langs:
+  - csharp
+  - vb
+  name: RemoveFile(string?)
+  nameWithType: GDDirectory.RemoveFile(string?)
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.RemoveFile(string?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/GDDirectory.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: RemoveFile
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
+    startLine: 81
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  syntax:
+    content: public bool RemoveFile(string? fileName)
+    parameters:
+    - id: fileName
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function RemoveFile(fileName As String) As Boolean
+  overload: Cobilas.GodotEngine.Utility.GDDirectory.RemoveFile*
+  nameWithType.vb: GDDirectory.RemoveFile(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.GDDirectory.RemoveFile(String)
+  name.vb: RemoveFile(String)
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.GetDirectories
+  commentId: M:Cobilas.GodotEngine.Utility.GDDirectory.GetDirectories
+  id: GetDirectories
+  parent: Cobilas.GodotEngine.Utility.GDDirectory
+  langs:
+  - csharp
+  - vb
+  name: GetDirectories()
+  nameWithType: GDDirectory.GetDirectories()
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.GetDirectories()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/GDDirectory.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetDirectories
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
+    startLine: 97
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  syntax:
+    content: public GDDirectory[] GetDirectories()
+    return:
+      type: Cobilas.GodotEngine.Utility.GDDirectory[]
+    content.vb: Public Function GetDirectories() As GDDirectory()
+  overload: Cobilas.GodotEngine.Utility.GDDirectory.GetDirectories*
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.GetFiles(System.Boolean)
+  commentId: M:Cobilas.GodotEngine.Utility.GDDirectory.GetFiles(System.Boolean)
+  id: GetFiles(System.Boolean)
+  parent: Cobilas.GodotEngine.Utility.GDDirectory
+  langs:
+  - csharp
+  - vb
+  name: GetFiles(bool)
+  nameWithType: GDDirectory.GetFiles(bool)
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.GetFiles(bool)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/GDDirectory.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetFiles
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
+    startLine: 105
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  syntax:
+    content: public GDFile[] GetFiles(bool isSubdirectory = false)
+    parameters:
+    - id: isSubdirectory
+      type: System.Boolean
+    return:
+      type: Cobilas.GodotEngine.Utility.GDFile[]
+    content.vb: Public Function GetFiles(isSubdirectory As Boolean = False) As GDFile()
+  overload: Cobilas.GodotEngine.Utility.GDDirectory.GetFiles*
+  nameWithType.vb: GDDirectory.GetFiles(Boolean)
+  fullName.vb: Cobilas.GodotEngine.Utility.GDDirectory.GetFiles(Boolean)
+  name.vb: GetFiles(Boolean)
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.GetFile(System.String,System.Boolean)
+  commentId: M:Cobilas.GodotEngine.Utility.GDDirectory.GetFile(System.String,System.Boolean)
+  id: GetFile(System.String,System.Boolean)
+  parent: Cobilas.GodotEngine.Utility.GDDirectory
+  langs:
+  - csharp
+  - vb
+  name: GetFile(string?, bool)
+  nameWithType: GDDirectory.GetFile(string?, bool)
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.GetFile(string?, bool)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/GDDirectory.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetFile
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
+    startLine: 119
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  syntax:
+    content: public GDFile? GetFile(string? name, bool isSubdirectory = false)
+    parameters:
+    - id: name
+      type: System.String
+    - id: isSubdirectory
+      type: System.Boolean
+    return:
+      type: Cobilas.GodotEngine.Utility.GDFile
+    content.vb: Public Function GetFile(name As String, isSubdirectory As Boolean = False) As GDFile
+  overload: Cobilas.GodotEngine.Utility.GDDirectory.GetFile*
+  nameWithType.vb: GDDirectory.GetFile(String, Boolean)
+  fullName.vb: Cobilas.GodotEngine.Utility.GDDirectory.GetFile(String, Boolean)
+  name.vb: GetFile(String, Boolean)
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.ToString
+  commentId: M:Cobilas.GodotEngine.Utility.GDDirectory.ToString
+  id: ToString
+  parent: Cobilas.GodotEngine.Utility.GDDirectory
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: GDDirectory.ToString()
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.ToString()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/GDDirectory.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ToString
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
+    startLine: 136
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Returns a string that represents the current object.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that represents the current object.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Cobilas.GodotEngine.Utility.GDDirectory.ToString*
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.GetGDDirectory
+  commentId: M:Cobilas.GodotEngine.Utility.GDDirectory.GetGDDirectory
+  id: GetGDDirectory
+  parent: Cobilas.GodotEngine.Utility.GDDirectory
+  langs:
+  - csharp
+  - vb
+  name: GetGDDirectory()
+  nameWithType: GDDirectory.GetGDDirectory()
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.GetGDDirectory()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/GDDirectory.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetGDDirectory
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
+    startLine: 158
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  syntax:
+    content: public static GDDirectory? GetGDDirectory()
+    return:
+      type: Cobilas.GodotEngine.Utility.GDDirectory
+    content.vb: Public Shared Function GetGDDirectory() As GDDirectory
+  overload: Cobilas.GodotEngine.Utility.GDDirectory.GetGDDirectory*
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.GetGDDirectory(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.GDDirectory.GetGDDirectory(System.String)
+  id: GetGDDirectory(System.String)
+  parent: Cobilas.GodotEngine.Utility.GDDirectory
+  langs:
+  - csharp
+  - vb
+  name: GetGDDirectory(string?)
+  nameWithType: GDDirectory.GetGDDirectory(string?)
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.GetGDDirectory(string?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/GDDirectory.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetGDDirectory
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
+    startLine: 166
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: >-
+    <br>Opens an existing directory of the filesystem. The path argument can be within</br>
+
+    <br>the project tree (<code>res://folder</code>), the user directory (<code>user://folder</code>) or an absolute</br>
+
+    <br>path of the user filesystem (e.g. <code>/tmp/folder</code> or <code>C:\tmp\folder</code>).</br>
+  example: []
+  syntax:
+    content: public static GDDirectory? GetGDDirectory(string? path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: Cobilas.GodotEngine.Utility.GDDirectory
+    content.vb: Public Shared Function GetGDDirectory(path As String) As GDDirectory
+  overload: Cobilas.GodotEngine.Utility.GDDirectory.GetGDDirectory*
+  nameWithType.vb: GDDirectory.GetGDDirectory(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.GDDirectory.GetGDDirectory(String)
+  name.vb: GetGDDirectory(String)
+references:
+- uid: Cobilas.GodotEngine.Utility
+  commentId: N:Cobilas.GodotEngine.Utility
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Utility
+  nameWithType: Cobilas.GodotEngine.Utility
+  fullName: Cobilas.GodotEngine.Utility
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Cobilas.GodotEngine.Utility.GDFileBase
+  commentId: T:Cobilas.GodotEngine.Utility.GDFileBase
+  parent: Cobilas.GodotEngine.Utility
+  href: Cobilas.GodotEngine.Utility.GDFileBase.html
+  name: GDFileBase
+  nameWithType: GDFileBase
+  fullName: Cobilas.GodotEngine.Utility.GDFileBase
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Cobilas.GodotEngine.Utility.GDFileBase.Null
+  commentId: P:Cobilas.GodotEngine.Utility.GDFileBase.Null
+  parent: Cobilas.GodotEngine.Utility.GDFileBase
+  href: Cobilas.GodotEngine.Utility.GDFileBase.html#Cobilas_GodotEngine_Utility_GDFileBase_Null
+  name: "Null"
+  nameWithType: GDFileBase.Null
+  fullName: Cobilas.GodotEngine.Utility.GDFileBase.Null
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cobilas.GodotEngine.Utility.GDFileBase.Path
+  commentId: P:Cobilas.GodotEngine.Utility.GDFileBase.Path
+  parent: Cobilas.GodotEngine.Utility.GDFileBase
+  href: Cobilas.GodotEngine.Utility.GDFileBase.html#Cobilas_GodotEngine_Utility_GDFileBase_Path
+  name: Path
+  nameWithType: GDFileBase.Path
+  fullName: Cobilas.GodotEngine.Utility.GDFileBase.Path
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.Path*
+  commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.Path
+  href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_Path
+  name: Path
+  nameWithType: GDDirectory.Path
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.Path
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Cobilas.GodotEngine.Utility.GDFileBase.NameWithoutExtension
+  commentId: P:Cobilas.GodotEngine.Utility.GDFileBase.NameWithoutExtension
+  parent: Cobilas.GodotEngine.Utility.GDFileBase
+  href: Cobilas.GodotEngine.Utility.GDFileBase.html#Cobilas_GodotEngine_Utility_GDFileBase_NameWithoutExtension
+  name: NameWithoutExtension
+  nameWithType: GDFileBase.NameWithoutExtension
+  fullName: Cobilas.GodotEngine.Utility.GDFileBase.NameWithoutExtension
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.NameWithoutExtension*
+  commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.NameWithoutExtension
+  href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_NameWithoutExtension
+  name: NameWithoutExtension
+  nameWithType: GDDirectory.NameWithoutExtension
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.NameWithoutExtension
+- uid: Cobilas.GodotEngine.Utility.GDFileBase.Name
+  commentId: P:Cobilas.GodotEngine.Utility.GDFileBase.Name
+  parent: Cobilas.GodotEngine.Utility.GDFileBase
+  href: Cobilas.GodotEngine.Utility.GDFileBase.html#Cobilas_GodotEngine_Utility_GDFileBase_Name
+  name: Name
+  nameWithType: GDFileBase.Name
+  fullName: Cobilas.GodotEngine.Utility.GDFileBase.Name
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.Name*
+  commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.Name
+  href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_Name
+  name: Name
+  nameWithType: GDDirectory.Name
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.Name
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.Count*
+  commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.Count
+  href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_Count
+  name: Count
+  nameWithType: GDDirectory.Count
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Cobilas.GodotEngine.Utility.GDFileBase.Parent
+  commentId: P:Cobilas.GodotEngine.Utility.GDFileBase.Parent
+  parent: Cobilas.GodotEngine.Utility.GDFileBase
+  href: Cobilas.GodotEngine.Utility.GDFileBase.html#Cobilas_GodotEngine_Utility_GDFileBase_Parent
+  name: Parent
+  nameWithType: GDFileBase.Parent
+  fullName: Cobilas.GodotEngine.Utility.GDFileBase.Parent
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.Parent*
+  commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.Parent
+  href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_Parent
+  name: Parent
+  nameWithType: GDDirectory.Parent
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.Parent
+- uid: Cobilas.GodotEngine.Utility.GDFileBase.Attribute
+  commentId: P:Cobilas.GodotEngine.Utility.GDFileBase.Attribute
+  parent: Cobilas.GodotEngine.Utility.GDFileBase
+  href: Cobilas.GodotEngine.Utility.GDFileBase.html#Cobilas_GodotEngine_Utility_GDFileBase_Attribute
+  name: Attribute
+  nameWithType: GDFileBase.Attribute
+  fullName: Cobilas.GodotEngine.Utility.GDFileBase.Attribute
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.Attribute*
+  commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.Attribute
+  href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_Attribute
+  name: Attribute
+  nameWithType: GDDirectory.Attribute
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.Attribute
+- uid: Cobilas.GodotEngine.Utility.GDFileAttributes
+  commentId: T:Cobilas.GodotEngine.Utility.GDFileAttributes
+  parent: Cobilas.GodotEngine.Utility
+  href: Cobilas.GodotEngine.Utility.GDFileAttributes.html
+  name: GDFileAttributes
+  nameWithType: GDFileAttributes
+  fullName: Cobilas.GodotEngine.Utility.GDFileAttributes
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.Finalize*
+  commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.Finalize
+  href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_Finalize
+  name: ~GDDirectory
+  nameWithType: GDDirectory.~GDDirectory
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.~GDDirectory
+  spec.csharp:
+  - name: "~"
+  - uid: Cobilas.GodotEngine.Utility.GDDirectory.Finalize*
+    name: GDDirectory
+    href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_Finalize
+- uid: Cobilas.GodotEngine.Utility.GDFileBase.Dispose
+  commentId: M:Cobilas.GodotEngine.Utility.GDFileBase.Dispose
+  parent: Cobilas.GodotEngine.Utility.GDFileBase
+  href: Cobilas.GodotEngine.Utility.GDFileBase.html#Cobilas_GodotEngine_Utility_GDFileBase_Dispose
+  name: Dispose()
+  nameWithType: GDFileBase.Dispose()
+  fullName: Cobilas.GodotEngine.Utility.GDFileBase.Dispose()
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Utility.GDFileBase.Dispose
+    name: Dispose
+    href: Cobilas.GodotEngine.Utility.GDFileBase.html#Cobilas_GodotEngine_Utility_GDFileBase_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Utility.GDFileBase.Dispose
+    name: Dispose
+    href: Cobilas.GodotEngine.Utility.GDFileBase.html#Cobilas_GodotEngine_Utility_GDFileBase_Dispose
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.Dispose*
+  commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.Dispose
+  href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_Dispose
+  name: Dispose
+  nameWithType: GDDirectory.Dispose
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.Dispose
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.GetDirectory*
+  commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.GetDirectory
+  href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_GetDirectory_System_String_System_Boolean_
+  name: GetDirectory
+  nameWithType: GDDirectory.GetDirectory
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.GetDirectory
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Cobilas.GodotEngine.Utility.GDDirectory
+  commentId: T:Cobilas.GodotEngine.Utility.GDDirectory
+  parent: Cobilas.GodotEngine.Utility
+  href: Cobilas.GodotEngine.Utility.GDDirectory.html
+  name: GDDirectory
+  nameWithType: GDDirectory
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.CreateDirectory*
+  commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.CreateDirectory
+  href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_CreateDirectory_System_String_
+  name: CreateDirectory
+  nameWithType: GDDirectory.CreateDirectory
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.CreateDirectory
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.RemoveDirectory*
+  commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.RemoveDirectory
+  href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_RemoveDirectory_System_String_
+  name: RemoveDirectory
+  nameWithType: GDDirectory.RemoveDirectory
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.RemoveDirectory
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.RemoveFile*
+  commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.RemoveFile
+  href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_RemoveFile_System_String_
+  name: RemoveFile
+  nameWithType: GDDirectory.RemoveFile
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.RemoveFile
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.GetDirectories*
+  commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.GetDirectories
+  href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_GetDirectories
+  name: GetDirectories
+  nameWithType: GDDirectory.GetDirectories
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.GetDirectories
+- uid: Cobilas.GodotEngine.Utility.GDDirectory[]
+  isExternal: true
+  href: Cobilas.GodotEngine.Utility.GDDirectory.html
+  name: GDDirectory[]
+  nameWithType: GDDirectory[]
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory[]
+  nameWithType.vb: GDDirectory()
+  fullName.vb: Cobilas.GodotEngine.Utility.GDDirectory()
+  name.vb: GDDirectory()
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Utility.GDDirectory
+    name: GDDirectory
+    href: Cobilas.GodotEngine.Utility.GDDirectory.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Utility.GDDirectory
+    name: GDDirectory
+    href: Cobilas.GodotEngine.Utility.GDDirectory.html
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.GetFiles*
+  commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.GetFiles
+  href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_GetFiles_System_Boolean_
+  name: GetFiles
+  nameWithType: GDDirectory.GetFiles
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.GetFiles
+- uid: Cobilas.GodotEngine.Utility.GDFile[]
+  isExternal: true
+  href: Cobilas.GodotEngine.Utility.GDFile.html
+  name: GDFile[]
+  nameWithType: GDFile[]
+  fullName: Cobilas.GodotEngine.Utility.GDFile[]
+  nameWithType.vb: GDFile()
+  fullName.vb: Cobilas.GodotEngine.Utility.GDFile()
+  name.vb: GDFile()
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Utility.GDFile
+    name: GDFile
+    href: Cobilas.GodotEngine.Utility.GDFile.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Utility.GDFile
+    name: GDFile
+    href: Cobilas.GodotEngine.Utility.GDFile.html
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.GetFile*
+  commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.GetFile
+  href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_GetFile_System_String_System_Boolean_
+  name: GetFile
+  nameWithType: GDDirectory.GetFile
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.GetFile
+- uid: Cobilas.GodotEngine.Utility.GDFile
+  commentId: T:Cobilas.GodotEngine.Utility.GDFile
+  parent: Cobilas.GodotEngine.Utility
+  href: Cobilas.GodotEngine.Utility.GDFile.html
+  name: GDFile
+  nameWithType: GDFile
+  fullName: Cobilas.GodotEngine.Utility.GDFile
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.ToString*
+  commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.ToString
+  href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_ToString
+  name: ToString
+  nameWithType: GDDirectory.ToString
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.ToString
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.GetGDDirectory*
+  commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.GetGDDirectory
+  href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_GetGDDirectory
+  name: GetGDDirectory
+  nameWithType: GDDirectory.GetGDDirectory
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.GetGDDirectory

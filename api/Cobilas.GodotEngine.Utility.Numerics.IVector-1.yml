@@ -1,0 +1,474 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVector`1
+  commentId: T:Cobilas.GodotEngine.Utility.Numerics.IVector`1
+  id: IVector`1
+  parent: Cobilas.GodotEngine.Utility.Numerics
+  children:
+  - Cobilas.GodotEngine.Utility.Numerics.IVector`1.Normalized
+  - Cobilas.GodotEngine.Utility.Numerics.IVector`1.ceil
+  - Cobilas.GodotEngine.Utility.Numerics.IVector`1.floor
+  langs:
+  - csharp
+  - vb
+  name: IVector<TVector>
+  nameWithType: IVector<TVector>
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector<TVector>
+  type: Interface
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/IVector.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: IVector
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/IVector.cs
+    startLine: 19
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  syntax:
+    content: 'public interface IVector<TVector> : IEquatable<TVector>, IVector, IFormattable where TVector : IVector'
+    typeParameters:
+    - id: TVector
+    content.vb: Public Interface IVector(Of TVector As IVector) Inherits IEquatable(Of TVector), IVector, IFormattable
+  inheritedMembers:
+  - System.IEquatable{{TVector}}.Equals({TVector})
+  - Cobilas.GodotEngine.Utility.Numerics.IVector.magnitude
+  - Cobilas.GodotEngine.Utility.Numerics.IVector.sqrMagnitude
+  - Cobilas.GodotEngine.Utility.Numerics.IVector.aspect
+  - Cobilas.GodotEngine.Utility.Numerics.IVector.AxisCount
+  - Cobilas.GodotEngine.Utility.Numerics.IVector.Item(System.Int32)
+  - Cobilas.GodotEngine.Utility.Numerics.IVector.ToString(System.String)
+  - System.IFormattable.ToString(System.String,System.IFormatProvider)
+  nameWithType.vb: IVector(Of TVector)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVector(Of TVector)
+  name.vb: IVector(Of TVector)
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVector`1.Normalized
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IVector`1.Normalized
+  id: Normalized
+  parent: Cobilas.GodotEngine.Utility.Numerics.IVector`1
+  langs:
+  - csharp
+  - vb
+  name: Normalized
+  nameWithType: IVector<TVector>.Normalized
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector<TVector>.Normalized
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/IVector.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Normalized
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/IVector.cs
+    startLine: 20
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  syntax:
+    content: TVector Normalized { get; }
+    parameters: []
+    return:
+      type: '{TVector}'
+    content.vb: ReadOnly Property Normalized As TVector
+  overload: Cobilas.GodotEngine.Utility.Numerics.IVector`1.Normalized*
+  nameWithType.vb: IVector(Of TVector).Normalized
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVector(Of TVector).Normalized
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVector`1.floor
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IVector`1.floor
+  id: floor
+  parent: Cobilas.GodotEngine.Utility.Numerics.IVector`1
+  langs:
+  - csharp
+  - vb
+  name: floor
+  nameWithType: IVector<TVector>.floor
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector<TVector>.floor
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/IVector.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: floor
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/IVector.cs
+    startLine: 22
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  syntax:
+    content: TVector floor { get; }
+    parameters: []
+    return:
+      type: '{TVector}'
+    content.vb: ReadOnly Property floor As TVector
+  overload: Cobilas.GodotEngine.Utility.Numerics.IVector`1.floor*
+  nameWithType.vb: IVector(Of TVector).floor
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVector(Of TVector).floor
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVector`1.ceil
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IVector`1.ceil
+  id: ceil
+  parent: Cobilas.GodotEngine.Utility.Numerics.IVector`1
+  langs:
+  - csharp
+  - vb
+  name: ceil
+  nameWithType: IVector<TVector>.ceil
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector<TVector>.ceil
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/IVector.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ceil
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/IVector.cs
+    startLine: 23
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  syntax:
+    content: TVector ceil { get; }
+    parameters: []
+    return:
+      type: '{TVector}'
+    content.vb: ReadOnly Property ceil As TVector
+  overload: Cobilas.GodotEngine.Utility.Numerics.IVector`1.ceil*
+  nameWithType.vb: IVector(Of TVector).ceil
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVector(Of TVector).ceil
+references:
+- uid: Cobilas.GodotEngine.Utility.Numerics
+  commentId: N:Cobilas.GodotEngine.Utility.Numerics
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Utility.Numerics
+  nameWithType: Cobilas.GodotEngine.Utility.Numerics
+  fullName: Cobilas.GodotEngine.Utility.Numerics
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.Numerics
+    name: Numerics
+    href: Cobilas.GodotEngine.Utility.Numerics.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.Numerics
+    name: Numerics
+    href: Cobilas.GodotEngine.Utility.Numerics.html
+- uid: System.IEquatable{{TVector}}.Equals({TVector})
+  commentId: M:System.IEquatable{`0}.Equals(`0)
+  parent: System.IEquatable{{TVector}}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(TVector)
+  nameWithType: IEquatable<TVector>.Equals(TVector)
+  fullName: System.IEquatable<TVector>.Equals(TVector)
+  nameWithType.vb: IEquatable(Of TVector).Equals(TVector)
+  fullName.vb: System.IEquatable(Of TVector).Equals(TVector)
+  spec.csharp:
+  - uid: System.IEquatable{`0}.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: TVector
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{`0}.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: TVector
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVector.magnitude
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IVector.magnitude
+  parent: Cobilas.GodotEngine.Utility.Numerics.IVector
+  href: Cobilas.GodotEngine.Utility.Numerics.IVector.html#Cobilas_GodotEngine_Utility_Numerics_IVector_magnitude
+  name: magnitude
+  nameWithType: IVector.magnitude
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector.magnitude
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVector.sqrMagnitude
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IVector.sqrMagnitude
+  parent: Cobilas.GodotEngine.Utility.Numerics.IVector
+  href: Cobilas.GodotEngine.Utility.Numerics.IVector.html#Cobilas_GodotEngine_Utility_Numerics_IVector_sqrMagnitude
+  name: sqrMagnitude
+  nameWithType: IVector.sqrMagnitude
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector.sqrMagnitude
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVector.aspect
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IVector.aspect
+  parent: Cobilas.GodotEngine.Utility.Numerics.IVector
+  href: Cobilas.GodotEngine.Utility.Numerics.IVector.html#Cobilas_GodotEngine_Utility_Numerics_IVector_aspect
+  name: aspect
+  nameWithType: IVector.aspect
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector.aspect
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVector.AxisCount
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IVector.AxisCount
+  parent: Cobilas.GodotEngine.Utility.Numerics.IVector
+  href: Cobilas.GodotEngine.Utility.Numerics.IVector.html#Cobilas_GodotEngine_Utility_Numerics_IVector_AxisCount
+  name: AxisCount
+  nameWithType: IVector.AxisCount
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector.AxisCount
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVector.Item(System.Int32)
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IVector.Item(System.Int32)
+  parent: Cobilas.GodotEngine.Utility.Numerics.IVector
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: IVector.this[int]
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector.this[int]
+  nameWithType.vb: IVector.this[](Integer)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVector.this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Utility.Numerics.IVector.Item(System.Int32)
+    name: this[]
+    href: Cobilas.GodotEngine.Utility.Numerics.IVector.html#Cobilas_GodotEngine_Utility_Numerics_IVector_Item_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVector.ToString(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.IVector.ToString(System.String)
+  parent: Cobilas.GodotEngine.Utility.Numerics.IVector
+  isExternal: true
+  href: Cobilas.GodotEngine.Utility.Numerics.IVector.html#Cobilas_GodotEngine_Utility_Numerics_IVector_ToString_System_String_
+  name: ToString(string)
+  nameWithType: IVector.ToString(string)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector.ToString(string)
+  nameWithType.vb: IVector.ToString(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVector.ToString(String)
+  name.vb: ToString(String)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Utility.Numerics.IVector.ToString(System.String)
+    name: ToString
+    href: Cobilas.GodotEngine.Utility.Numerics.IVector.html#Cobilas_GodotEngine_Utility_Numerics_IVector_ToString_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Utility.Numerics.IVector.ToString(System.String)
+    name: ToString
+    href: Cobilas.GodotEngine.Utility.Numerics.IVector.html#Cobilas_GodotEngine_Utility_Numerics_IVector_ToString_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.IFormattable.ToString(System.String,System.IFormatProvider)
+  commentId: M:System.IFormattable.ToString(System.String,System.IFormatProvider)
+  parent: System.IFormattable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformattable.tostring
+  name: ToString(string, IFormatProvider)
+  nameWithType: IFormattable.ToString(string, IFormatProvider)
+  fullName: System.IFormattable.ToString(string, System.IFormatProvider)
+  nameWithType.vb: IFormattable.ToString(String, IFormatProvider)
+  fullName.vb: System.IFormattable.ToString(String, System.IFormatProvider)
+  name.vb: ToString(String, IFormatProvider)
+  spec.csharp:
+  - uid: System.IFormattable.ToString(System.String,System.IFormatProvider)
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformattable.tostring
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  - name: )
+  spec.vb:
+  - uid: System.IFormattable.ToString(System.String,System.IFormatProvider)
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformattable.tostring
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IEquatable{{TVector}}
+  commentId: T:System.IEquatable{`0}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<TVector>
+  nameWithType: IEquatable<TVector>
+  fullName: System.IEquatable<TVector>
+  nameWithType.vb: IEquatable(Of TVector)
+  fullName.vb: System.IEquatable(Of TVector)
+  name.vb: IEquatable(Of TVector)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: TVector
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TVector
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVector
+  commentId: T:Cobilas.GodotEngine.Utility.Numerics.IVector
+  parent: Cobilas.GodotEngine.Utility.Numerics
+  href: Cobilas.GodotEngine.Utility.Numerics.IVector.html
+  name: IVector
+  nameWithType: IVector
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector
+- uid: System.IFormattable
+  commentId: T:System.IFormattable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformattable
+  name: IFormattable
+  nameWithType: IFormattable
+  fullName: System.IFormattable
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVector`1.Normalized*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.IVector`1.Normalized
+  href: Cobilas.GodotEngine.Utility.Numerics.IVector-1.html#Cobilas_GodotEngine_Utility_Numerics_IVector_1_Normalized
+  name: Normalized
+  nameWithType: IVector<TVector>.Normalized
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector<TVector>.Normalized
+  nameWithType.vb: IVector(Of TVector).Normalized
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVector(Of TVector).Normalized
+- uid: '{TVector}'
+  commentId: '!:TVector'
+  definition: TVector
+  name: TVector
+  nameWithType: TVector
+  fullName: TVector
+- uid: TVector
+  name: TVector
+  nameWithType: TVector
+  fullName: TVector
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVector`1.floor*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.IVector`1.floor
+  href: Cobilas.GodotEngine.Utility.Numerics.IVector-1.html#Cobilas_GodotEngine_Utility_Numerics_IVector_1_floor
+  name: floor
+  nameWithType: IVector<TVector>.floor
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector<TVector>.floor
+  nameWithType.vb: IVector(Of TVector).floor
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVector(Of TVector).floor
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVector`1.ceil*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.IVector`1.ceil
+  href: Cobilas.GodotEngine.Utility.Numerics.IVector-1.html#Cobilas_GodotEngine_Utility_Numerics_IVector_1_ceil
+  name: ceil
+  nameWithType: IVector<TVector>.ceil
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector<TVector>.ceil
+  nameWithType.vb: IVector(Of TVector).ceil
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVector(Of TVector).ceil
