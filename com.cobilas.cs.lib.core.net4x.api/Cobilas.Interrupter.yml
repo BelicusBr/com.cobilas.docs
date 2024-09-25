@@ -1,0 +1,1265 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.Interrupter
+  commentId: T:Cobilas.Interrupter
+  id: Interrupter
+  parent: Cobilas
+  children:
+  - Cobilas.Interrupter.#ctor(System.Int32)
+  - Cobilas.Interrupter.#ctor(System.Int32,System.Boolean)
+  - Cobilas.Interrupter.CurrentIndex
+  - Cobilas.Interrupter.Dispose
+  - Cobilas.Interrupter.Item(System.Int32)
+  - Cobilas.Interrupter.ToString
+  - Cobilas.Interrupter.UseASwitch
+  langs:
+  - csharp
+  - vb
+  name: Interrupter
+  nameWithType: Interrupter
+  fullName: Cobilas.Interrupter
+  type: Struct
+  source:
+    remote:
+      path: Runtime/Interrupter.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Interrupter
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Interrupter.cs
+    startLine: 6
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas
+  summary: Represents a list of switches.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct Interrupter : IDisposable
+    content.vb: >-
+      <Serializable>
+
+      Public Structure Interrupter Implements IDisposable
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  extensionMethods:
+  - System.Object.System.Object_CB_Extension.CompareType(System.Type)
+  - System.Object.System.Object_CB_Extension.CompareType(System.Type[])
+  - System.Object.System.Object_CB_Extension.CompareTypeAndSubType(System.Type)
+  - System.Object.System.Object_CB_Extension.CompareTypeAndSubType(System.Type,System.Boolean)
+  - System.Object.System.Object_CB_Extension.CompareTypeAndSubType``1
+  - System.Object.System.Object_CB_Extension.CompareTypeAndSubType``1(System.Boolean)
+  - System.Object.System.Object_CB_Extension.CompareType``1
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Cobilas.Interrupter.CurrentIndex
+  commentId: P:Cobilas.Interrupter.CurrentIndex
+  id: CurrentIndex
+  parent: Cobilas.Interrupter
+  langs:
+  - csharp
+  - vb
+  name: CurrentIndex
+  nameWithType: Interrupter.CurrentIndex
+  fullName: Cobilas.Interrupter.CurrentIndex
+  type: Property
+  source:
+    remote:
+      path: Runtime/Interrupter.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: CurrentIndex
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Interrupter.cs
+    startLine: 14
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas
+  summary: Returns the current switch index.
+  example: []
+  syntax:
+    content: public int CurrentIndex { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property CurrentIndex As Integer
+  overload: Cobilas.Interrupter.CurrentIndex*
+- uid: Cobilas.Interrupter.UseASwitch
+  commentId: P:Cobilas.Interrupter.UseASwitch
+  id: UseASwitch
+  parent: Cobilas.Interrupter
+  langs:
+  - csharp
+  - vb
+  name: UseASwitch
+  nameWithType: Interrupter.UseASwitch
+  fullName: Cobilas.Interrupter.UseASwitch
+  type: Property
+  source:
+    remote:
+      path: Runtime/Interrupter.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: UseASwitch
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Interrupter.cs
+    startLine: 21
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas
+  summary: This property allows the exchange of a single switch for multiple switches and vice versa.
+  example: []
+  syntax:
+    content: public bool UseASwitch { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property UseASwitch As Boolean
+  overload: Cobilas.Interrupter.UseASwitch*
+- uid: Cobilas.Interrupter.Item(System.Int32)
+  commentId: P:Cobilas.Interrupter.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: Cobilas.Interrupter
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: Interrupter.this[int]
+  fullName: Cobilas.Interrupter.this[int]
+  type: Property
+  source:
+    remote:
+      path: Runtime/Interrupter.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: this[]
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Interrupter.cs
+    startLine: 33
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas
+  summary: Gets or sets a switch when specifying an index.
+  example: []
+  syntax:
+    content: public bool this[int Index] { get; set; }
+    parameters:
+    - id: Index
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Default Property this[](Index As Integer) As Boolean
+  overload: Cobilas.Interrupter.Item*
+  nameWithType.vb: Interrupter.this[](Integer)
+  fullName.vb: Cobilas.Interrupter.this[](Integer)
+  name.vb: this[](Integer)
+- uid: Cobilas.Interrupter.#ctor(System.Int32,System.Boolean)
+  commentId: M:Cobilas.Interrupter.#ctor(System.Int32,System.Boolean)
+  id: '#ctor(System.Int32,System.Boolean)'
+  parent: Cobilas.Interrupter
+  langs:
+  - csharp
+  - vb
+  name: Interrupter(int, bool)
+  nameWithType: Interrupter.Interrupter(int, bool)
+  fullName: Cobilas.Interrupter.Interrupter(int, bool)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Interrupter.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: .ctor
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Interrupter.cs
+    startLine: 52
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas
+  summary: Only one switch specifying the index will be used, the others will remain at false value.
+  example: []
+  syntax:
+    content: public Interrupter(int Capacity, bool UseASwitch)
+    parameters:
+    - id: Capacity
+      type: System.Int32
+      description: How many switches.
+    - id: UseASwitch
+      type: System.Boolean
+      description: Allows you to use one switch at a time.
+    content.vb: Public Sub New(Capacity As Integer, UseASwitch As Boolean)
+  overload: Cobilas.Interrupter.#ctor*
+  nameWithType.vb: Interrupter.New(Integer, Boolean)
+  fullName.vb: Cobilas.Interrupter.New(Integer, Boolean)
+  name.vb: New(Integer, Boolean)
+- uid: Cobilas.Interrupter.#ctor(System.Int32)
+  commentId: M:Cobilas.Interrupter.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: Cobilas.Interrupter
+  langs:
+  - csharp
+  - vb
+  name: Interrupter(int)
+  nameWithType: Interrupter.Interrupter(int)
+  fullName: Cobilas.Interrupter.Interrupter(int)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Interrupter.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: .ctor
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Interrupter.cs
+    startLine: 61
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas
+  summary: Only one switch specifying the index will be used, the others will remain at false value.
+  example: []
+  syntax:
+    content: public Interrupter(int Capacity)
+    parameters:
+    - id: Capacity
+      type: System.Int32
+      description: How many switches.
+    content.vb: Public Sub New(Capacity As Integer)
+  overload: Cobilas.Interrupter.#ctor*
+  nameWithType.vb: Interrupter.New(Integer)
+  fullName.vb: Cobilas.Interrupter.New(Integer)
+  name.vb: New(Integer)
+- uid: Cobilas.Interrupter.ToString
+  commentId: M:Cobilas.Interrupter.ToString
+  id: ToString
+  parent: Cobilas.Interrupter
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Interrupter.ToString()
+  fullName: Cobilas.Interrupter.ToString()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Interrupter.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ToString
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Interrupter.cs
+    startLine: 64
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas
+  summary: Returns a text representation of the object.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: Cobilas.Interrupter.ToString*
+- uid: Cobilas.Interrupter.Dispose
+  commentId: M:Cobilas.Interrupter.Dispose
+  id: Dispose
+  parent: Cobilas.Interrupter
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: Interrupter.Dispose()
+  fullName: Cobilas.Interrupter.Dispose()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Interrupter.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Dispose
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Interrupter.cs
+    startLine: 75
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas
+  summary: Resource disposal.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Cobilas.Interrupter.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: Cobilas
+  commentId: N:Cobilas
+  href: Cobilas.html
+  name: Cobilas
+  nameWithType: Cobilas
+  fullName: Cobilas
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.System.Object_CB_Extension.CompareType(System.Type)
+  commentId: M:System.Object_CB_Extension.CompareType(System.Object,System.Type)
+  parent: System.Object_CB_Extension
+  definition: System.Object_CB_Extension.CompareType(System.Object,System.Type)
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type_
+  name: CompareType(object, Type)
+  nameWithType: Object_CB_Extension.CompareType(object, Type)
+  fullName: System.Object_CB_Extension.CompareType(object, System.Type)
+  nameWithType.vb: Object_CB_Extension.CompareType(Object, Type)
+  fullName.vb: System.Object_CB_Extension.CompareType(Object, System.Type)
+  name.vb: CompareType(Object, Type)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareType(System.Object,System.Type)
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareType(System.Object,System.Type)
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Object.System.Object_CB_Extension.CompareType(System.Type[])
+  commentId: M:System.Object_CB_Extension.CompareType(System.Object,System.Type[])
+  parent: System.Object_CB_Extension
+  definition: System.Object_CB_Extension.CompareType(System.Object,System.Type[])
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type___
+  name: CompareType(object, params Type[])
+  nameWithType: Object_CB_Extension.CompareType(object, params Type[])
+  fullName: System.Object_CB_Extension.CompareType(object, params System.Type[])
+  nameWithType.vb: Object_CB_Extension.CompareType(Object, ParamArray Type())
+  fullName.vb: System.Object_CB_Extension.CompareType(Object, ParamArray System.Type())
+  name.vb: CompareType(Object, ParamArray Type())
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareType(System.Object,System.Type[])
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type___
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareType(System.Object,System.Type[])
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type___
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Object.System.Object_CB_Extension.CompareTypeAndSubType(System.Type)
+  commentId: M:System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type)
+  parent: System.Object_CB_Extension
+  definition: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type)
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_
+  name: CompareTypeAndSubType(object, Type)
+  nameWithType: Object_CB_Extension.CompareTypeAndSubType(object, Type)
+  fullName: System.Object_CB_Extension.CompareTypeAndSubType(object, System.Type)
+  nameWithType.vb: Object_CB_Extension.CompareTypeAndSubType(Object, Type)
+  fullName.vb: System.Object_CB_Extension.CompareTypeAndSubType(Object, System.Type)
+  name.vb: CompareTypeAndSubType(Object, Type)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Object.System.Object_CB_Extension.CompareTypeAndSubType(System.Type,System.Boolean)
+  commentId: M:System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type,System.Boolean)
+  parent: System.Object_CB_Extension
+  definition: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type,System.Boolean)
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_System_Boolean_
+  name: CompareTypeAndSubType(object, Type, bool)
+  nameWithType: Object_CB_Extension.CompareTypeAndSubType(object, Type, bool)
+  fullName: System.Object_CB_Extension.CompareTypeAndSubType(object, System.Type, bool)
+  nameWithType.vb: Object_CB_Extension.CompareTypeAndSubType(Object, Type, Boolean)
+  fullName.vb: System.Object_CB_Extension.CompareTypeAndSubType(Object, System.Type, Boolean)
+  name.vb: CompareTypeAndSubType(Object, Type, Boolean)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type,System.Boolean)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_System_Boolean_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type,System.Boolean)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_System_Boolean_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object.System.Object_CB_Extension.CompareTypeAndSubType``1
+  commentId: M:System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object)
+  parent: System.Object_CB_Extension
+  definition: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object)
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_
+  name: CompareTypeAndSubType<T>(object)
+  nameWithType: Object_CB_Extension.CompareTypeAndSubType<T>(object)
+  fullName: System.Object_CB_Extension.CompareTypeAndSubType<T>(object)
+  nameWithType.vb: Object_CB_Extension.CompareTypeAndSubType(Of T)(Object)
+  fullName.vb: System.Object_CB_Extension.CompareTypeAndSubType(Of T)(Object)
+  name.vb: CompareTypeAndSubType(Of T)(Object)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.System.Object_CB_Extension.CompareTypeAndSubType``1(System.Boolean)
+  commentId: M:System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object,System.Boolean)
+  parent: System.Object_CB_Extension
+  definition: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object,System.Boolean)
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_System_Boolean_
+  name: CompareTypeAndSubType<T>(object, bool)
+  nameWithType: Object_CB_Extension.CompareTypeAndSubType<T>(object, bool)
+  fullName: System.Object_CB_Extension.CompareTypeAndSubType<T>(object, bool)
+  nameWithType.vb: Object_CB_Extension.CompareTypeAndSubType(Of T)(Object, Boolean)
+  fullName.vb: System.Object_CB_Extension.CompareTypeAndSubType(Of T)(Object, Boolean)
+  name.vb: CompareTypeAndSubType(Of T)(Object, Boolean)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object,System.Boolean)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_System_Boolean_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object,System.Boolean)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_System_Boolean_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object.System.Object_CB_Extension.CompareType``1
+  commentId: M:System.Object_CB_Extension.CompareType``1(System.Object)
+  parent: System.Object_CB_Extension
+  definition: System.Object_CB_Extension.CompareType``1(System.Object)
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType__1_System_Object_
+  name: CompareType<T>(object)
+  nameWithType: Object_CB_Extension.CompareType<T>(object)
+  fullName: System.Object_CB_Extension.CompareType<T>(object)
+  nameWithType.vb: Object_CB_Extension.CompareType(Of T)(Object)
+  fullName.vb: System.Object_CB_Extension.CompareType(Of T)(Object)
+  name.vb: CompareType(Of T)(Object)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareType``1(System.Object)
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareType``1(System.Object)
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object_CB_Extension.CompareType(System.Object,System.Type)
+  commentId: M:System.Object_CB_Extension.CompareType(System.Object,System.Type)
+  isExternal: true
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type_
+  name: CompareType(object, Type)
+  nameWithType: Object_CB_Extension.CompareType(object, Type)
+  fullName: System.Object_CB_Extension.CompareType(object, System.Type)
+  nameWithType.vb: Object_CB_Extension.CompareType(Object, Type)
+  fullName.vb: System.Object_CB_Extension.CompareType(Object, System.Type)
+  name.vb: CompareType(Object, Type)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareType(System.Object,System.Type)
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareType(System.Object,System.Type)
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Object_CB_Extension
+  commentId: T:System.Object_CB_Extension
+  parent: System
+  href: System.Object_CB_Extension.html
+  name: Object_CB_Extension
+  nameWithType: Object_CB_Extension
+  fullName: System.Object_CB_Extension
+- uid: System.Object_CB_Extension.CompareType(System.Object,System.Type[])
+  commentId: M:System.Object_CB_Extension.CompareType(System.Object,System.Type[])
+  isExternal: true
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type___
+  name: CompareType(object, params Type[])
+  nameWithType: Object_CB_Extension.CompareType(object, params Type[])
+  fullName: System.Object_CB_Extension.CompareType(object, params System.Type[])
+  nameWithType.vb: Object_CB_Extension.CompareType(Object, ParamArray Type())
+  fullName.vb: System.Object_CB_Extension.CompareType(Object, ParamArray System.Type())
+  name.vb: CompareType(Object, ParamArray Type())
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareType(System.Object,System.Type[])
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type___
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareType(System.Object,System.Type[])
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type___
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type)
+  commentId: M:System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type)
+  isExternal: true
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_
+  name: CompareTypeAndSubType(object, Type)
+  nameWithType: Object_CB_Extension.CompareTypeAndSubType(object, Type)
+  fullName: System.Object_CB_Extension.CompareTypeAndSubType(object, System.Type)
+  nameWithType.vb: Object_CB_Extension.CompareTypeAndSubType(Object, Type)
+  fullName.vb: System.Object_CB_Extension.CompareTypeAndSubType(Object, System.Type)
+  name.vb: CompareTypeAndSubType(Object, Type)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type,System.Boolean)
+  commentId: M:System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type,System.Boolean)
+  isExternal: true
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_System_Boolean_
+  name: CompareTypeAndSubType(object, Type, bool)
+  nameWithType: Object_CB_Extension.CompareTypeAndSubType(object, Type, bool)
+  fullName: System.Object_CB_Extension.CompareTypeAndSubType(object, System.Type, bool)
+  nameWithType.vb: Object_CB_Extension.CompareTypeAndSubType(Object, Type, Boolean)
+  fullName.vb: System.Object_CB_Extension.CompareTypeAndSubType(Object, System.Type, Boolean)
+  name.vb: CompareTypeAndSubType(Object, Type, Boolean)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type,System.Boolean)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_System_Boolean_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type,System.Boolean)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_System_Boolean_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object)
+  commentId: M:System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object)
+  isExternal: true
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_
+  name: CompareTypeAndSubType<T>(object)
+  nameWithType: Object_CB_Extension.CompareTypeAndSubType<T>(object)
+  fullName: System.Object_CB_Extension.CompareTypeAndSubType<T>(object)
+  nameWithType.vb: Object_CB_Extension.CompareTypeAndSubType(Of T)(Object)
+  fullName.vb: System.Object_CB_Extension.CompareTypeAndSubType(Of T)(Object)
+  name.vb: CompareTypeAndSubType(Of T)(Object)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object,System.Boolean)
+  commentId: M:System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object,System.Boolean)
+  isExternal: true
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_System_Boolean_
+  name: CompareTypeAndSubType<T>(object, bool)
+  nameWithType: Object_CB_Extension.CompareTypeAndSubType<T>(object, bool)
+  fullName: System.Object_CB_Extension.CompareTypeAndSubType<T>(object, bool)
+  nameWithType.vb: Object_CB_Extension.CompareTypeAndSubType(Of T)(Object, Boolean)
+  fullName.vb: System.Object_CB_Extension.CompareTypeAndSubType(Of T)(Object, Boolean)
+  name.vb: CompareTypeAndSubType(Of T)(Object, Boolean)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object,System.Boolean)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_System_Boolean_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object,System.Boolean)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_System_Boolean_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object_CB_Extension.CompareType``1(System.Object)
+  commentId: M:System.Object_CB_Extension.CompareType``1(System.Object)
+  isExternal: true
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType__1_System_Object_
+  name: CompareType<T>(object)
+  nameWithType: Object_CB_Extension.CompareType<T>(object)
+  fullName: System.Object_CB_Extension.CompareType<T>(object)
+  nameWithType.vb: Object_CB_Extension.CompareType(Of T)(Object)
+  fullName.vb: System.Object_CB_Extension.CompareType(Of T)(Object)
+  name.vb: CompareType(Of T)(Object)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareType``1(System.Object)
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareType``1(System.Object)
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Cobilas.Interrupter.CurrentIndex*
+  commentId: Overload:Cobilas.Interrupter.CurrentIndex
+  href: Cobilas.Interrupter.html#Cobilas_Interrupter_CurrentIndex
+  name: CurrentIndex
+  nameWithType: Interrupter.CurrentIndex
+  fullName: Cobilas.Interrupter.CurrentIndex
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Cobilas.Interrupter.UseASwitch*
+  commentId: Overload:Cobilas.Interrupter.UseASwitch
+  href: Cobilas.Interrupter.html#Cobilas_Interrupter_UseASwitch
+  name: UseASwitch
+  nameWithType: Interrupter.UseASwitch
+  fullName: Cobilas.Interrupter.UseASwitch
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Cobilas.Interrupter.Item*
+  commentId: Overload:Cobilas.Interrupter.Item
+  href: Cobilas.Interrupter.html#Cobilas_Interrupter_Item_System_Int32_
+  name: this
+  nameWithType: Interrupter.this
+  fullName: Cobilas.Interrupter.this
+  nameWithType.vb: Interrupter.this[]
+  fullName.vb: Cobilas.Interrupter.this[]
+  name.vb: this[]
+- uid: Cobilas.Interrupter.#ctor*
+  commentId: Overload:Cobilas.Interrupter.#ctor
+  href: Cobilas.Interrupter.html#Cobilas_Interrupter__ctor_System_Int32_System_Boolean_
+  name: Interrupter
+  nameWithType: Interrupter.Interrupter
+  fullName: Cobilas.Interrupter.Interrupter
+  nameWithType.vb: Interrupter.New
+  fullName.vb: Cobilas.Interrupter.New
+  name.vb: New
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: Cobilas.Interrupter.ToString*
+  commentId: Overload:Cobilas.Interrupter.ToString
+  href: Cobilas.Interrupter.html#Cobilas_Interrupter_ToString
+  name: ToString
+  nameWithType: Interrupter.ToString
+  fullName: Cobilas.Interrupter.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Cobilas.Interrupter.Dispose*
+  commentId: Overload:Cobilas.Interrupter.Dispose
+  href: Cobilas.Interrupter.html#Cobilas_Interrupter_Dispose
+  name: Dispose
+  nameWithType: Interrupter.Dispose
+  fullName: Cobilas.Interrupter.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

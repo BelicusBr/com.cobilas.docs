@@ -1,0 +1,680 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct HashString | Cobilas Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct HashString | Cobilas Documentation ">
+      
+      <meta name="description" content="The HashString structure can be used to transform a list of bytes with a minimum length of 16 into a  or .">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/new/main.fix/apiSpec/new?filename=System_Security_Cryptography_HashString.md&amp;value=---%0Auid%3A%20System.Security.Cryptography.HashString%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Cobilas Documentation">
+            Cobilas Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="System.Security.Cryptography.HashString">
+
+
+
+  <h1 id="System_Security_Cryptography_HashString" data-uid="System.Security.Cryptography.HashString" class="text-break">
+Struct HashString  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/Runtime/Extensions/HashAlgorithmExtension/HashString.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="https://learn.microsoft.com/dotnet/api/system">System</a>.<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security">Security</a>.<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography">Cryptography</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Cobilas.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>The HashString structure can be used to transform a list of bytes with a minimum length of 16 into a
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly struct HashString : IEquatable&lt;HashString&gt;, IComparable&lt;HashString&gt;, IEquatable&lt;string&gt;, IFormattable</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformattable">IFormattable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type_">Object_CB_Extension.CompareType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type___">Object_CB_Extension.CompareType(object, params Type[])</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_">Object_CB_Extension.CompareTypeAndSubType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_System_Boolean_">Object_CB_Extension.CompareTypeAndSubType(object, Type, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_">Object_CB_Extension.CompareTypeAndSubType&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_System_Boolean_">Object_CB_Extension.CompareTypeAndSubType&lt;T&gt;(object, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType__1_System_Object_">Object_CB_Extension.CompareType&lt;T&gt;(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="System_Security_Cryptography_HashString__ctor_" data-uid="System.Security.Cryptography.HashString.#ctor*"></a>
+
+  <h3 id="System_Security_Cryptography_HashString__ctor_System_Byte___" data-uid="System.Security.Cryptography.HashString.#ctor(System.Byte[])">
+  HashString(byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/Runtime/Extensions/HashAlgorithmExtension/HashString.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a> object using a list of bytes with a minimum length of 16.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HashString(byte[] hash)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hash</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="System_Security_Cryptography_HashString_Empty" data-uid="System.Security.Cryptography.HashString.Empty">
+  Empty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/Runtime/Extensions/HashAlgorithmExtension/HashString.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A read-only instance of type <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a> whose value is all zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly HashString Empty</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="System_Security_Cryptography_HashString_CompareTo_" data-uid="System.Security.Cryptography.HashString.CompareTo*"></a>
+
+  <h3 id="System_Security_Cryptography_HashString_CompareTo_System_Security_Cryptography_HashString_" data-uid="System.Security.Cryptography.HashString.CompareTo(System.Security.Cryptography.HashString)">
+  CompareTo(HashString)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/Runtime/Extensions/HashAlgorithmExtension/HashString.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compares this instance to a specified <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a> object and returns an indication
+of their relative values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(HashString other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a></dt>
+    <dd><p>An object to compare to this instance.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A signed number indicating the relative values of this instance and value. Return
+value Description A negative integer This instance is less than value. Zero This
+instance is equal to value. A positive integer This instance is greater than
+value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Security_Cryptography_HashString_Equals_" data-uid="System.Security.Cryptography.HashString.Equals*"></a>
+
+  <h3 id="System_Security_Cryptography_HashString_Equals_System_Object_" data-uid="System.Security.Cryptography.HashString.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/Runtime/Extensions/HashAlgorithmExtension/HashString.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance and a specified object are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> to compare with the current instance.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if obj and this instance are the same type and represent the same value; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Security_Cryptography_HashString_Equals_" data-uid="System.Security.Cryptography.HashString.Equals*"></a>
+
+  <h3 id="System_Security_Cryptography_HashString_Equals_System_Security_Cryptography_HashString_" data-uid="System.Security.Cryptography.HashString.Equals(System.Security.Cryptography.HashString)">
+  Equals(HashString)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/Runtime/Extensions/HashAlgorithmExtension/HashString.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(HashString other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the current object is equal to the other parameter; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Security_Cryptography_HashString_Equals_" data-uid="System.Security.Cryptography.HashString.Equals*"></a>
+
+  <h3 id="System_Security_Cryptography_HashString_Equals_System_String_" data-uid="System.Security.Cryptography.HashString.Equals(System.String)">
+  Equals(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/Runtime/Extensions/HashAlgorithmExtension/HashString.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(string other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>An object to compare with this object.
+<p>Use <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>.ToString() or convert a list of bytes to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> using a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> or similar.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the current object is equal to the other parameter; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Security_Cryptography_HashString_GetHashCode_" data-uid="System.Security.Cryptography.HashString.GetHashCode*"></a>
+
+  <h3 id="System_Security_Cryptography_HashString_GetHashCode" data-uid="System.Security.Cryptography.HashString.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/Runtime/Extensions/HashAlgorithmExtension/HashString.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the hash code for this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A 32-bit signed integer that is the hash code for this instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Security_Cryptography_HashString_ToString_" data-uid="System.Security.Cryptography.HashString.ToString*"></a>
+
+  <h3 id="System_Security_Cryptography_HashString_ToString" data-uid="System.Security.Cryptography.HashString.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/Runtime/Extensions/HashAlgorithmExtension/HashString.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a string representation of the value of this instance in registry format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The value of this <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>, formatted by using the &quot;D&quot; format specifier as
+follows: <code>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</code> where the value of the GUID is
+represented as a series of lowercase hexadecimal digits in groups of 8, 4, 4,
+4, and 12 digits and separated by hyphens. An example of a return value is &quot;382c74c3-721d-4f34-80e5-57657b6cbc27&quot;.
+To convert the hexadecimal digits from a through f to uppercase, call the System.String.ToUpper
+method on the returned string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Security_Cryptography_HashString_ToString_" data-uid="System.Security.Cryptography.HashString.ToString*"></a>
+
+  <h3 id="System_Security_Cryptography_HashString_ToString_System_String_" data-uid="System.Security.Cryptography.HashString.ToString(System.String)">
+  ToString(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/Runtime/Extensions/HashAlgorithmExtension/HashString.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a string representation of the value of this <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a> instance, according to the provided format specifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToString(string format)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A single format specifier that indicates how to format the value of this <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>.
+The format parameter can be &quot;N&quot;, &quot;D&quot;, &quot;B&quot;, &quot;P&quot;, or &quot;X&quot;. If format is null or
+an empty string (&quot;&quot;), &quot;D&quot; is used.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The value of this <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>, represented as a series of lowercase hexadecimal
+digits in the specified format.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.formatexception">FormatException</a></dt>
+    <dd><p>The value of format is not null, an empty string (&quot;&quot;), &quot;N&quot;, &quot;D&quot;, &quot;B&quot;, &quot;P&quot;, or &quot;X&quot;.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="System_Security_Cryptography_HashString_ToString_" data-uid="System.Security.Cryptography.HashString.ToString*"></a>
+
+  <h3 id="System_Security_Cryptography_HashString_ToString_System_String_System_IFormatProvider_" data-uid="System.Security.Cryptography.HashString.ToString(System.String,System.IFormatProvider)">
+  ToString(string, IFormatProvider)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/Runtime/Extensions/HashAlgorithmExtension/HashString.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a string representation of the value of this instance of the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>
+class, according to the provided format specifier and culture-specific format
+information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToString(string format, IFormatProvider formatProvider)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A single format specifier that indicates how to format the value of this <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>.
+The format parameter can be &quot;N&quot;, &quot;D&quot;, &quot;B&quot;, &quot;P&quot;, or &quot;X&quot;. If format is null or
+an empty string (&quot;&quot;), &quot;D&quot; is used.</p>
+</dd>
+    <dt><code>formatProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
+    <dd><p>(Reserved) An object that supplies culture-specific formatting information.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The value of this <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>, represented as a series of lowercase hexadecimal
+digits in the specified format.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="System_Security_Cryptography_HashString_op_Explicit_" data-uid="System.Security.Cryptography.HashString.op_Explicit*"></a>
+
+  <h3 id="System_Security_Cryptography_HashString_op_Explicit_System_Security_Cryptography_HashString__System_Guid" data-uid="System.Security.Cryptography.HashString.op_Explicit(System.Security.Cryptography.HashString)~System.Guid">
+  explicit operator Guid(HashString)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/Runtime/Extensions/HashAlgorithmExtension/HashString.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Explicit conversion from <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a> object to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator Guid(HashString hash)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hash</code> <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Security_Cryptography_HashString_op_Implicit_" data-uid="System.Security.Cryptography.HashString.op_Implicit*"></a>
+
+  <h3 id="System_Security_Cryptography_HashString_op_Implicit_System_Security_Cryptography_HashString__System_String" data-uid="System.Security.Cryptography.HashString.op_Implicit(System.Security.Cryptography.HashString)~System.String">
+  implicit operator string(HashString)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/Runtime/Extensions/HashAlgorithmExtension/HashString.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Implicit conversion from <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a> to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator string(HashString hash)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hash</code> <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/Runtime/Extensions/HashAlgorithmExtension/HashString.cs/#L8" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

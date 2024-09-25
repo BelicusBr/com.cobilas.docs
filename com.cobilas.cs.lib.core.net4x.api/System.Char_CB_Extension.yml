@@ -1,0 +1,449 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Char_CB_Extension
+  commentId: T:System.Char_CB_Extension
+  id: Char_CB_Extension
+  parent: System
+  children:
+  - System.Char_CB_Extension.EscapeSequenceToString(System.Char)
+  - System.Char_CB_Extension.InterpretEscapeSequence(System.Char)
+  - System.Char_CB_Extension.ToSByte(System.Char)
+  langs:
+  - csharp
+  - vb
+  name: Char_CB_Extension
+  nameWithType: Char_CB_Extension
+  fullName: System.Char_CB_Extension
+  type: Class
+  source:
+    remote:
+      path: Runtime/Extensions/CharExtension/Char_CB_Extension.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Char_CB_Extension
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/CharExtension/Char_CB_Extension.cs
+    startLine: 2
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  syntax:
+    content: public static class Char_CB_Extension
+    content.vb: Public Module Char_CB_Extension
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Char_CB_Extension.ToSByte(System.Char)
+  commentId: M:System.Char_CB_Extension.ToSByte(System.Char)
+  id: ToSByte(System.Char)
+  isExtensionMethod: true
+  parent: System.Char_CB_Extension
+  langs:
+  - csharp
+  - vb
+  name: ToSByte(char)
+  nameWithType: Char_CB_Extension.ToSByte(char)
+  fullName: System.Char_CB_Extension.ToSByte(char)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Extensions/CharExtension/Char_CB_Extension.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ToSByte
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/CharExtension/Char_CB_Extension.cs
+    startLine: 3
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  syntax:
+    content: public static sbyte ToSByte(this char c)
+    parameters:
+    - id: c
+      type: System.Char
+    return:
+      type: System.SByte
+    content.vb: Public Shared Function ToSByte(c As Char) As SByte
+  overload: System.Char_CB_Extension.ToSByte*
+  nameWithType.vb: Char_CB_Extension.ToSByte(Char)
+  fullName.vb: System.Char_CB_Extension.ToSByte(Char)
+  name.vb: ToSByte(Char)
+- uid: System.Char_CB_Extension.InterpretEscapeSequence(System.Char)
+  commentId: M:System.Char_CB_Extension.InterpretEscapeSequence(System.Char)
+  id: InterpretEscapeSequence(System.Char)
+  isExtensionMethod: true
+  parent: System.Char_CB_Extension
+  langs:
+  - csharp
+  - vb
+  name: InterpretEscapeSequence(char)
+  nameWithType: Char_CB_Extension.InterpretEscapeSequence(char)
+  fullName: System.Char_CB_Extension.InterpretEscapeSequence(char)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Extensions/CharExtension/Char_CB_Extension.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: InterpretEscapeSequence
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/CharExtension/Char_CB_Extension.cs
+    startLine: 11
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Method that interprets a char value.
+  example: []
+  syntax:
+    content: public static EscapeSequence InterpretEscapeSequence(this char c)
+    parameters:
+    - id: c
+      type: System.Char
+    return:
+      type: System.EscapeSequence
+      description: The method returns a value of type <xref href="System.EscapeSequence" data-throw-if-not-resolved="false"></xref> representing the type of escape sequence.
+    content.vb: Public Shared Function InterpretEscapeSequence(c As Char) As EscapeSequence
+  overload: System.Char_CB_Extension.InterpretEscapeSequence*
+  nameWithType.vb: Char_CB_Extension.InterpretEscapeSequence(Char)
+  fullName.vb: System.Char_CB_Extension.InterpretEscapeSequence(Char)
+  name.vb: InterpretEscapeSequence(Char)
+- uid: System.Char_CB_Extension.EscapeSequenceToString(System.Char)
+  commentId: M:System.Char_CB_Extension.EscapeSequenceToString(System.Char)
+  id: EscapeSequenceToString(System.Char)
+  isExtensionMethod: true
+  parent: System.Char_CB_Extension
+  langs:
+  - csharp
+  - vb
+  name: EscapeSequenceToString(char)
+  nameWithType: Char_CB_Extension.EscapeSequenceToString(char)
+  fullName: System.Char_CB_Extension.EscapeSequenceToString(char)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Extensions/CharExtension/Char_CB_Extension.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: EscapeSequenceToString
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/CharExtension/Char_CB_Extension.cs
+    startLine: 34
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Method that interprets a char value.
+  example: []
+  syntax:
+    content: public static string EscapeSequenceToString(this char c)
+    parameters:
+    - id: c
+      type: System.Char
+    return:
+      type: System.String
+      description: >-
+        The method returns a value of type <xref href="System.EscapeSequence" data-throw-if-not-resolved="false"></xref> representing the type of escape sequence.
+            <p>The return is converted to a <xref href="System.String" data-throw-if-not-resolved="false"></xref>.</p>
+    content.vb: Public Shared Function EscapeSequenceToString(c As Char) As String
+  overload: System.Char_CB_Extension.EscapeSequenceToString*
+  nameWithType.vb: Char_CB_Extension.EscapeSequenceToString(Char)
+  fullName.vb: System.Char_CB_Extension.EscapeSequenceToString(Char)
+  name.vb: EscapeSequenceToString(Char)
+references:
+- uid: System
+  commentId: N:System
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Char_CB_Extension.ToSByte*
+  commentId: Overload:System.Char_CB_Extension.ToSByte
+  href: System.Char_CB_Extension.html#System_Char_CB_Extension_ToSByte_System_Char_
+  name: ToSByte
+  nameWithType: Char_CB_Extension.ToSByte
+  fullName: System.Char_CB_Extension.ToSByte
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char
+  nameWithType: char
+  fullName: char
+  nameWithType.vb: Char
+  fullName.vb: Char
+  name.vb: Char
+- uid: System.SByte
+  commentId: T:System.SByte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  name: sbyte
+  nameWithType: sbyte
+  fullName: sbyte
+  nameWithType.vb: SByte
+  fullName.vb: SByte
+  name.vb: SByte
+- uid: System.EscapeSequence
+  commentId: T:System.EscapeSequence
+  parent: System
+  href: System.EscapeSequence.html
+  name: EscapeSequence
+  nameWithType: EscapeSequence
+  fullName: System.EscapeSequence
+- uid: System.Char_CB_Extension.InterpretEscapeSequence*
+  commentId: Overload:System.Char_CB_Extension.InterpretEscapeSequence
+  href: System.Char_CB_Extension.html#System_Char_CB_Extension_InterpretEscapeSequence_System_Char_
+  name: InterpretEscapeSequence
+  nameWithType: Char_CB_Extension.InterpretEscapeSequence
+  fullName: System.Char_CB_Extension.InterpretEscapeSequence
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Char_CB_Extension.EscapeSequenceToString*
+  commentId: Overload:System.Char_CB_Extension.EscapeSequenceToString
+  href: System.Char_CB_Extension.html#System_Char_CB_Extension_EscapeSequenceToString_System_Char_
+  name: EscapeSequenceToString
+  nameWithType: Char_CB_Extension.EscapeSequenceToString
+  fullName: System.Char_CB_Extension.EscapeSequenceToString

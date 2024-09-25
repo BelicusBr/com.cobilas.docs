@@ -1,0 +1,4377 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.Collections.Generic.LongList`1
+  commentId: T:Cobilas.Collections.Generic.LongList`1
+  id: LongList`1
+  parent: Cobilas.Collections.Generic
+  children:
+  - Cobilas.Collections.Generic.LongList`1.#ctor
+  - Cobilas.Collections.Generic.LongList`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  - Cobilas.Collections.Generic.LongList`1.#ctor(System.Int64)
+  - Cobilas.Collections.Generic.LongList`1.#ctor(`0[])
+  - Cobilas.Collections.Generic.LongList`1.Add(`0)
+  - Cobilas.Collections.Generic.LongList`1.AddRange(System.Collections.Generic.IEnumerable{`0})
+  - Cobilas.Collections.Generic.LongList`1.AsReadOnly
+  - Cobilas.Collections.Generic.LongList`1.Capacity
+  - Cobilas.Collections.Generic.LongList`1.Clear
+  - Cobilas.Collections.Generic.LongList`1.Clone
+  - Cobilas.Collections.Generic.LongList`1.Contains(System.Predicate{`0})
+  - Cobilas.Collections.Generic.LongList`1.Contains(`0)
+  - Cobilas.Collections.Generic.LongList`1.ConvertAll``1(System.Converter{`0,``0})
+  - Cobilas.Collections.Generic.LongList`1.CopyTo(`0[],System.Int64)
+  - Cobilas.Collections.Generic.LongList`1.Count
+  - Cobilas.Collections.Generic.LongList`1.Find(System.Predicate{`0})
+  - Cobilas.Collections.Generic.LongList`1.FindAll(System.Predicate{`0})
+  - Cobilas.Collections.Generic.LongList`1.FindIndex(System.Int64,System.Int64,System.Predicate{`0})
+  - Cobilas.Collections.Generic.LongList`1.FindIndex(System.Int64,System.Predicate{`0})
+  - Cobilas.Collections.Generic.LongList`1.FindIndex(System.Predicate{`0})
+  - Cobilas.Collections.Generic.LongList`1.FindLast(System.Predicate{`0})
+  - Cobilas.Collections.Generic.LongList`1.FindLastIndex(System.Int64,System.Int64,System.Predicate{`0})
+  - Cobilas.Collections.Generic.LongList`1.FindLastIndex(System.Int64,System.Predicate{`0})
+  - Cobilas.Collections.Generic.LongList`1.FindLastIndex(System.Predicate{`0})
+  - Cobilas.Collections.Generic.LongList`1.ForEach(System.Action{`0})
+  - Cobilas.Collections.Generic.LongList`1.GetEnumerator
+  - Cobilas.Collections.Generic.LongList`1.GetRange(System.Int64,System.Int64)
+  - Cobilas.Collections.Generic.LongList`1.IndexOf(`0)
+  - Cobilas.Collections.Generic.LongList`1.Insert(System.Int64,`0)
+  - Cobilas.Collections.Generic.LongList`1.InsertRange(System.Int64,System.Collections.Generic.IEnumerable{`0})
+  - Cobilas.Collections.Generic.LongList`1.IsReadOnly
+  - Cobilas.Collections.Generic.LongList`1.Item(System.Int64)
+  - Cobilas.Collections.Generic.LongList`1.Remove(`0)
+  - Cobilas.Collections.Generic.LongList`1.RemoveAll(System.Predicate{`0})
+  - Cobilas.Collections.Generic.LongList`1.RemoveAt(System.Int64)
+  - Cobilas.Collections.Generic.LongList`1.RemoveRamge(System.Int64,System.Int64)
+  - Cobilas.Collections.Generic.LongList`1.Reverse
+  - Cobilas.Collections.Generic.LongList`1.Reverse(System.Int64,System.Int64)
+  - Cobilas.Collections.Generic.LongList`1.ToArray
+  langs:
+  - csharp
+  - vb
+  name: LongList<T>
+  nameWithType: LongList<T>
+  fullName: Cobilas.Collections.Generic.LongList<T>
+  type: Class
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: LongList
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 9
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: >-
+    Represents a long, strongly typed list of objects that can be accessed by index. 
+        Provides methods for searching, sorting, and manipulating lists.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class LongList<T> : ILongList<T>, ILongCollection<T>, IReadOnlyLongList<T>, IReadOnlyLongCollection<T>, IEnumerable<T>, ILongList, ILongCollection, IEnumerable, ICloneable
+    typeParameters:
+    - id: T
+      description: The type of elements in the list.
+    content.vb: >-
+      <Serializable>
+
+      Public Class LongList(Of T) Implements ILongList(Of T), ILongCollection(Of T), IReadOnlyLongList(Of T), IReadOnlyLongCollection(Of T), IEnumerable(Of T), ILongList, ILongCollection, IEnumerable, ICloneable
+  inheritance:
+  - System.Object
+  implements:
+  - Cobilas.Collections.Generic.ILongList{{T}}
+  - Cobilas.Collections.Generic.ILongCollection{{T}}
+  - Cobilas.Collections.Generic.IReadOnlyLongList{{T}}
+  - Cobilas.Collections.Generic.IReadOnlyLongCollection{{T}}
+  - System.Collections.Generic.IEnumerable{{T}}
+  - Cobilas.Collections.ILongList
+  - Cobilas.Collections.ILongCollection
+  - System.Collections.IEnumerable
+  - System.ICloneable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.System.Object_CB_Extension.CompareType(System.Type)
+  - System.Object.System.Object_CB_Extension.CompareType(System.Type[])
+  - System.Object.System.Object_CB_Extension.CompareTypeAndSubType(System.Type)
+  - System.Object.System.Object_CB_Extension.CompareTypeAndSubType(System.Type,System.Boolean)
+  - System.Object.System.Object_CB_Extension.CompareTypeAndSubType``1
+  - System.Object.System.Object_CB_Extension.CompareTypeAndSubType``1(System.Boolean)
+  - System.Object.System.Object_CB_Extension.CompareType``1
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  nameWithType.vb: LongList(Of T)
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T)
+  name.vb: LongList(Of T)
+- uid: Cobilas.Collections.Generic.LongList`1.Count
+  commentId: P:Cobilas.Collections.Generic.LongList`1.Count
+  id: Count
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: LongList<T>.Count
+  fullName: Cobilas.Collections.Generic.LongList<T>.Count
+  type: Property
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Count
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 17
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Gets the number of elements contained in the <xref href="Cobilas.Collections.Generic.ILongCollection%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public long Count { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property Count As Long
+  overload: Cobilas.Collections.Generic.LongList`1.Count*
+  implements:
+  - Cobilas.Collections.Generic.ILongCollection{{T}}.Count
+  - Cobilas.Collections.Generic.IReadOnlyLongCollection{{T}}.Count
+  - Cobilas.Collections.ILongCollection.Count
+  nameWithType.vb: LongList(Of T).Count
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).Count
+- uid: Cobilas.Collections.Generic.LongList`1.Capacity
+  commentId: P:Cobilas.Collections.Generic.LongList`1.Capacity
+  id: Capacity
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: Capacity
+  nameWithType: LongList<T>.Capacity
+  fullName: Cobilas.Collections.Generic.LongList<T>.Capacity
+  type: Property
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Capacity
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 19
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Gets or sets the total number of elements the internal data structure can hold without resizing.
+  example: []
+  syntax:
+    content: public long Capacity { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Property Capacity As Long
+  overload: Cobilas.Collections.Generic.LongList`1.Capacity*
+  nameWithType.vb: LongList(Of T).Capacity
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).Capacity
+- uid: Cobilas.Collections.Generic.LongList`1.IsReadOnly
+  commentId: P:Cobilas.Collections.Generic.LongList`1.IsReadOnly
+  id: IsReadOnly
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  nameWithType: LongList<T>.IsReadOnly
+  fullName: Cobilas.Collections.Generic.LongList<T>.IsReadOnly
+  type: Property
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: IsReadOnly
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 36
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Gets a value indicating whether the <xref href="Cobilas.Collections.Generic.ILongCollection%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  example: []
+  syntax:
+    content: public bool IsReadOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsReadOnly As Boolean
+  overload: Cobilas.Collections.Generic.LongList`1.IsReadOnly*
+  implements:
+  - Cobilas.Collections.Generic.ILongCollection{{T}}.IsReadOnly
+  - Cobilas.Collections.ILongList.IsReadOnly
+  nameWithType.vb: LongList(Of T).IsReadOnly
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).IsReadOnly
+- uid: Cobilas.Collections.Generic.LongList`1.Item(System.Int64)
+  commentId: P:Cobilas.Collections.Generic.LongList`1.Item(System.Int64)
+  id: Item(System.Int64)
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: this[long]
+  nameWithType: LongList<T>.this[long]
+  fullName: Cobilas.Collections.Generic.LongList<T>.this[long]
+  type: Property
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: this[]
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 48
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Gets or sets the element at the specified index.
+  example: []
+  syntax:
+    content: public T this[long index] { get; set; }
+    parameters:
+    - id: index
+      type: System.Int64
+    return:
+      type: '{T}'
+    content.vb: Public Default Property this[](index As Long) As T
+  overload: Cobilas.Collections.Generic.LongList`1.Item*
+  implements:
+  - Cobilas.Collections.Generic.ILongList{{T}}.Item(System.Int64)
+  - Cobilas.Collections.Generic.IReadOnlyLongList{{T}}.Item(System.Int64)
+  nameWithType.vb: LongList(Of T).this[](Long)
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).this[](Long)
+  name.vb: this[](Long)
+- uid: Cobilas.Collections.Generic.LongList`1.#ctor
+  commentId: M:Cobilas.Collections.Generic.LongList`1.#ctor
+  id: '#ctor'
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: LongList()
+  nameWithType: LongList<T>.LongList()
+  fullName: Cobilas.Collections.Generic.LongList<T>.LongList()
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: .ctor
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 52
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Creates a new instance of the object.
+  example: []
+  syntax:
+    content: public LongList()
+    content.vb: Public Sub New()
+  overload: Cobilas.Collections.Generic.LongList`1.#ctor*
+  nameWithType.vb: LongList(Of T).New()
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).New()
+  name.vb: New()
+- uid: Cobilas.Collections.Generic.LongList`1.#ctor(System.Int64)
+  commentId: M:Cobilas.Collections.Generic.LongList`1.#ctor(System.Int64)
+  id: '#ctor(System.Int64)'
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: LongList(long)
+  nameWithType: LongList<T>.LongList(long)
+  fullName: Cobilas.Collections.Generic.LongList<T>.LongList(long)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: .ctor
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 54
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Creates a new instance of the object.
+  example: []
+  syntax:
+    content: public LongList(long capacity)
+    parameters:
+    - id: capacity
+      type: System.Int64
+    content.vb: Public Sub New(capacity As Long)
+  overload: Cobilas.Collections.Generic.LongList`1.#ctor*
+  nameWithType.vb: LongList(Of T).New(Long)
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).New(Long)
+  name.vb: New(Long)
+- uid: Cobilas.Collections.Generic.LongList`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Cobilas.Collections.Generic.LongList`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  id: '#ctor(System.Collections.Generic.IEnumerable{`0})'
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: LongList(IEnumerable<T>)
+  nameWithType: LongList<T>.LongList(IEnumerable<T>)
+  fullName: Cobilas.Collections.Generic.LongList<T>.LongList(System.Collections.Generic.IEnumerable<T>)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: .ctor
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 56
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Creates a new instance of the object.
+  example: []
+  syntax:
+    content: public LongList(IEnumerable<T> collection)
+    parameters:
+    - id: collection
+      type: System.Collections.Generic.IEnumerable{{T}}
+    content.vb: Public Sub New(collection As IEnumerable(Of T))
+  overload: Cobilas.Collections.Generic.LongList`1.#ctor*
+  nameWithType.vb: LongList(Of T).New(IEnumerable(Of T))
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).New(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: New(IEnumerable(Of T))
+- uid: Cobilas.Collections.Generic.LongList`1.#ctor(`0[])
+  commentId: M:Cobilas.Collections.Generic.LongList`1.#ctor(`0[])
+  id: '#ctor(`0[])'
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: LongList(params T[])
+  nameWithType: LongList<T>.LongList(params T[])
+  fullName: Cobilas.Collections.Generic.LongList<T>.LongList(params T[])
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: .ctor
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 60
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Creates a new instance of the object.
+  example: []
+  syntax:
+    content: public LongList(params T[] collection)
+    parameters:
+    - id: collection
+      type: '{T}[]'
+    content.vb: Public Sub New(ParamArray collection As T())
+  overload: Cobilas.Collections.Generic.LongList`1.#ctor*
+  nameWithType.vb: LongList(Of T).New(ParamArray T())
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).New(ParamArray T())
+  name.vb: New(ParamArray T())
+- uid: Cobilas.Collections.Generic.LongList`1.AsReadOnly
+  commentId: M:Cobilas.Collections.Generic.LongList`1.AsReadOnly
+  id: AsReadOnly
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: AsReadOnly()
+  nameWithType: LongList<T>.AsReadOnly()
+  fullName: Cobilas.Collections.Generic.LongList<T>.AsReadOnly()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: AsReadOnly
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 63
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Returns a read-only ReadOnlyLongCollection&lt; T &gt; wrapper for the current collection.
+  example: []
+  syntax:
+    content: public ReadOnlyLongCollection<T> AsReadOnly()
+    return:
+      type: Cobilas.Collections.Generic.ReadOnlyLongCollection{{T}}
+    content.vb: Public Function AsReadOnly() As ReadOnlyLongCollection(Of T)
+  overload: Cobilas.Collections.Generic.LongList`1.AsReadOnly*
+  nameWithType.vb: LongList(Of T).AsReadOnly()
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).AsReadOnly()
+- uid: Cobilas.Collections.Generic.LongList`1.GetRange(System.Int64,System.Int64)
+  commentId: M:Cobilas.Collections.Generic.LongList`1.GetRange(System.Int64,System.Int64)
+  id: GetRange(System.Int64,System.Int64)
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: GetRange(long, long)
+  nameWithType: LongList<T>.GetRange(long, long)
+  fullName: Cobilas.Collections.Generic.LongList<T>.GetRange(long, long)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: GetRange
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 74
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Creates a shallow copy of a range of elements in the source <xref href="Cobilas.Collections.Generic.LongList%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public LongList<T> GetRange(long index, long count)
+    parameters:
+    - id: index
+      type: System.Int64
+      description: The zero-based <xref href="Cobilas.Collections.Generic.LongList%601" data-throw-if-not-resolved="false"></xref> index at which the range starts.
+    - id: count
+      type: System.Int64
+      description: The number of elements in the range.
+    return:
+      type: Cobilas.Collections.Generic.LongList`1
+      description: A shallow copy of a range of elements in the source <xref href="Cobilas.Collections.Generic.LongList%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetRange(index As Long, count As Long) As LongList(Of T)
+  overload: Cobilas.Collections.Generic.LongList`1.GetRange*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: ''
+  nameWithType.vb: LongList(Of T).GetRange(Long, Long)
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).GetRange(Long, Long)
+  name.vb: GetRange(Long, Long)
+- uid: Cobilas.Collections.Generic.LongList`1.Add(`0)
+  commentId: M:Cobilas.Collections.Generic.LongList`1.Add(`0)
+  id: Add(`0)
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: Add(T)
+  nameWithType: LongList<T>.Add(T)
+  fullName: Cobilas.Collections.Generic.LongList<T>.Add(T)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Add
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 86
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Adds an item to the <xref href="Cobilas.Collections.Generic.ILongCollection%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Add(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The object to add to the <xref href="Cobilas.Collections.Generic.ILongCollection%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub Add(item As T)
+  overload: Cobilas.Collections.Generic.LongList`1.Add*
+  implements:
+  - Cobilas.Collections.Generic.ILongCollection{{T}}.Add({T})
+  nameWithType.vb: LongList(Of T).Add(T)
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).Add(T)
+- uid: Cobilas.Collections.Generic.LongList`1.AddRange(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Cobilas.Collections.Generic.LongList`1.AddRange(System.Collections.Generic.IEnumerable{`0})
+  id: AddRange(System.Collections.Generic.IEnumerable{`0})
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: AddRange(IEnumerable<T>)
+  nameWithType: LongList<T>.AddRange(IEnumerable<T>)
+  fullName: Cobilas.Collections.Generic.LongList<T>.AddRange(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: AddRange
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 95
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Adds the elements of the specified collection to the end of the <xref href="Cobilas.Collections.Generic.LongList%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void AddRange(IEnumerable<T> collection)
+    parameters:
+    - id: collection
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: >-
+        The collection whose elements should be added to the end of the <xref href="Cobilas.Collections.Generic.LongList%601" data-throw-if-not-resolved="false"></xref>. 
+            The collection itself cannot be <code>null</code>, but it can contain elements that are <code>null</code>, if type <code>T</code> is a 
+            reference type.
+    content.vb: Public Sub AddRange(collection As IEnumerable(Of T))
+  overload: Cobilas.Collections.Generic.LongList`1.AddRange*
+  nameWithType.vb: LongList(Of T).AddRange(IEnumerable(Of T))
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).AddRange(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: AddRange(IEnumerable(Of T))
+- uid: Cobilas.Collections.Generic.LongList`1.Clear
+  commentId: M:Cobilas.Collections.Generic.LongList`1.Clear
+  id: Clear
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: LongList<T>.Clear()
+  fullName: Cobilas.Collections.Generic.LongList<T>.Clear()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Clear
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 101
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Removes all items from the <xref href="Cobilas.Collections.Generic.ILongCollection%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: Cobilas.Collections.Generic.LongList`1.Clear*
+  implements:
+  - Cobilas.Collections.Generic.ILongCollection{{T}}.Clear
+  - Cobilas.Collections.ILongList.Clear
+  nameWithType.vb: LongList(Of T).Clear()
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).Clear()
+- uid: Cobilas.Collections.Generic.LongList`1.Contains(`0)
+  commentId: M:Cobilas.Collections.Generic.LongList`1.Contains(`0)
+  id: Contains(`0)
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: Contains(T)
+  nameWithType: LongList<T>.Contains(T)
+  fullName: Cobilas.Collections.Generic.LongList<T>.Contains(T)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Contains
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 107
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Determines whether the <xref href="Cobilas.Collections.Generic.ILongCollection%601" data-throw-if-not-resolved="false"></xref> contains a specific value.
+  example: []
+  syntax:
+    content: public bool Contains(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The object to locate in the <xref href="Cobilas.Collections.Generic.ILongCollection%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if <code>item</code> is found in the <xref href="Cobilas.Collections.Generic.ILongCollection%601" data-throw-if-not-resolved="false"></xref>; otherwise, <code>false</code>.
+    content.vb: Public Function Contains(item As T) As Boolean
+  overload: Cobilas.Collections.Generic.LongList`1.Contains*
+  implements:
+  - Cobilas.Collections.Generic.ILongCollection{{T}}.Contains({T})
+  nameWithType.vb: LongList(Of T).Contains(T)
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).Contains(T)
+- uid: Cobilas.Collections.Generic.LongList`1.Contains(System.Predicate{`0})
+  commentId: M:Cobilas.Collections.Generic.LongList`1.Contains(System.Predicate{`0})
+  id: Contains(System.Predicate{`0})
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: Contains(Predicate<T>)
+  nameWithType: LongList<T>.Contains(Predicate<T>)
+  fullName: Cobilas.Collections.Generic.LongList<T>.Contains(System.Predicate<T>)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Contains
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 111
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Determines whether the <xref href="Cobilas.Collections.Generic.ILongCollection%601" data-throw-if-not-resolved="false"></xref> contains a specific value.
+  example: []
+  syntax:
+    content: public bool Contains(Predicate<T> match)
+    parameters:
+    - id: match
+      type: System.Predicate{{T}}
+      description: The match parameter allows you to create custom comparison logic.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if <code>item</code> is found in the <xref href="Cobilas.Collections.Generic.ILongCollection%601" data-throw-if-not-resolved="false"></xref>; otherwise, <code>false</code>.
+    content.vb: Public Function Contains(match As Predicate(Of T)) As Boolean
+  overload: Cobilas.Collections.Generic.LongList`1.Contains*
+  nameWithType.vb: LongList(Of T).Contains(Predicate(Of T))
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).Contains(System.Predicate(Of T))
+  name.vb: Contains(Predicate(Of T))
+- uid: Cobilas.Collections.Generic.LongList`1.CopyTo(`0[],System.Int64)
+  commentId: M:Cobilas.Collections.Generic.LongList`1.CopyTo(`0[],System.Int64)
+  id: CopyTo(`0[],System.Int64)
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(T[], long)
+  nameWithType: LongList<T>.CopyTo(T[], long)
+  fullName: Cobilas.Collections.Generic.LongList<T>.CopyTo(T[], long)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: CopyTo
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 114
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Copies the elements of the <xref href="Cobilas.Collections.Generic.ILongCollection%601" data-throw-if-not-resolved="false"></xref> to an Array, starting at a particular Array index.
+  example: []
+  syntax:
+    content: public void CopyTo(T[] array, long arrayIndex)
+    parameters:
+    - id: array
+      type: '{T}[]'
+      description: The one-dimensional Array that is the destination of the elements copied from <xref href="Cobilas.Collections.Generic.ILongCollection%601" data-throw-if-not-resolved="false"></xref>. The Array must have zero-based indexing.
+    - id: arrayIndex
+      type: System.Int64
+      description: The zero-based index in <code>array</code> at which copying begins.
+    content.vb: Public Sub CopyTo(array As T(), arrayIndex As Long)
+  overload: Cobilas.Collections.Generic.LongList`1.CopyTo*
+  implements:
+  - Cobilas.Collections.Generic.ILongCollection{{T}}.CopyTo({T}[],System.Int64)
+  nameWithType.vb: LongList(Of T).CopyTo(T(), Long)
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).CopyTo(T(), Long)
+  name.vb: CopyTo(T(), Long)
+- uid: Cobilas.Collections.Generic.LongList`1.GetEnumerator
+  commentId: M:Cobilas.Collections.Generic.LongList`1.GetEnumerator
+  id: GetEnumerator
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: LongList<T>.GetEnumerator()
+  fullName: Cobilas.Collections.Generic.LongList<T>.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: GetEnumerator
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 118
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Returns an enumerator that iterates through the collection.
+  example: []
+  syntax:
+    content: public IEnumerator<T> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{{T}}
+      description: An enumerator that can be used to iterate through the collection.
+    content.vb: Public Function GetEnumerator() As IEnumerator(Of T)
+  overload: Cobilas.Collections.Generic.LongList`1.GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
+  nameWithType.vb: LongList(Of T).GetEnumerator()
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).GetEnumerator()
+- uid: Cobilas.Collections.Generic.LongList`1.IndexOf(`0)
+  commentId: M:Cobilas.Collections.Generic.LongList`1.IndexOf(`0)
+  id: IndexOf(`0)
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: IndexOf(T)
+  nameWithType: LongList<T>.IndexOf(T)
+  fullName: Cobilas.Collections.Generic.LongList<T>.IndexOf(T)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: IndexOf
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 125
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Determines the index of a specific item in the <xref href="Cobilas.Collections.Generic.ILongList%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public long IndexOf(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The object to locate in the <xref href="Cobilas.Collections.Generic.ILongList%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Int64
+      description: The index of <code>item</code> if found in the list; otherwise, -1.
+    content.vb: Public Function IndexOf(item As T) As Long
+  overload: Cobilas.Collections.Generic.LongList`1.IndexOf*
+  implements:
+  - Cobilas.Collections.Generic.ILongList{{T}}.IndexOf({T})
+  nameWithType.vb: LongList(Of T).IndexOf(T)
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).IndexOf(T)
+- uid: Cobilas.Collections.Generic.LongList`1.Insert(System.Int64,`0)
+  commentId: M:Cobilas.Collections.Generic.LongList`1.Insert(System.Int64,`0)
+  id: Insert(System.Int64,`0)
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: Insert(long, T)
+  nameWithType: LongList<T>.Insert(long, T)
+  fullName: Cobilas.Collections.Generic.LongList<T>.Insert(long, T)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Insert
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 128
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Inserts an item to the <xref href="Cobilas.Collections.Generic.ILongList%601" data-throw-if-not-resolved="false"></xref> at the specified index.
+  example: []
+  syntax:
+    content: public void Insert(long index, T item)
+    parameters:
+    - id: index
+      type: System.Int64
+      description: The zero-based index at which <code>item</code> should be inserted.
+    - id: item
+      type: '{T}'
+      description: The object to insert into the <xref href="Cobilas.Collections.Generic.ILongList%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub Insert(index As Long, item As T)
+  overload: Cobilas.Collections.Generic.LongList`1.Insert*
+  implements:
+  - Cobilas.Collections.Generic.ILongList{{T}}.Insert(System.Int64,{T})
+  nameWithType.vb: LongList(Of T).Insert(Long, T)
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).Insert(Long, T)
+  name.vb: Insert(Long, T)
+- uid: Cobilas.Collections.Generic.LongList`1.InsertRange(System.Int64,System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Cobilas.Collections.Generic.LongList`1.InsertRange(System.Int64,System.Collections.Generic.IEnumerable{`0})
+  id: InsertRange(System.Int64,System.Collections.Generic.IEnumerable{`0})
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: InsertRange(long, IEnumerable<T>)
+  nameWithType: LongList<T>.InsertRange(long, IEnumerable<T>)
+  fullName: Cobilas.Collections.Generic.LongList<T>.InsertRange(long, System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: InsertRange
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 138
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Inserts the elements of a collection into the <xref href="Cobilas.Collections.Generic.LongList%601" data-throw-if-not-resolved="false"></xref> at the specified index.
+  example: []
+  syntax:
+    content: public void InsertRange(long index, IEnumerable<T> collection)
+    parameters:
+    - id: index
+      type: System.Int64
+      description: The zero-based index at which the new elements should be inserted.
+    - id: collection
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: >-
+        The collection whose elements should be inserted into the <xref href="Cobilas.Collections.Generic.LongList%601" data-throw-if-not-resolved="false"></xref>. 
+            The collection itself cannot be <code>null</code>, but it can contain elements that are <code>null</code>, 
+            if type <code>T</code> is a reference type.
+    content.vb: Public Sub InsertRange(index As Long, collection As IEnumerable(Of T))
+  overload: Cobilas.Collections.Generic.LongList`1.InsertRange*
+  nameWithType.vb: LongList(Of T).InsertRange(Long, IEnumerable(Of T))
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).InsertRange(Long, System.Collections.Generic.IEnumerable(Of T))
+  name.vb: InsertRange(Long, IEnumerable(Of T))
+- uid: Cobilas.Collections.Generic.LongList`1.Remove(`0)
+  commentId: M:Cobilas.Collections.Generic.LongList`1.Remove(`0)
+  id: Remove(`0)
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: Remove(T)
+  nameWithType: LongList<T>.Remove(T)
+  fullName: Cobilas.Collections.Generic.LongList<T>.Remove(T)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Remove
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 144
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Removes the first occurrence of a specific object from the <xref href="Cobilas.Collections.Generic.ILongCollection%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public bool Remove(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The object to remove from the <xref href="Cobilas.Collections.Generic.ILongCollection%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Boolean
+    content.vb: Public Function Remove(item As T) As Boolean
+  overload: Cobilas.Collections.Generic.LongList`1.Remove*
+  implements:
+  - Cobilas.Collections.Generic.ILongCollection{{T}}.Remove({T})
+  nameWithType.vb: LongList(Of T).Remove(T)
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).Remove(T)
+- uid: Cobilas.Collections.Generic.LongList`1.RemoveAt(System.Int64)
+  commentId: M:Cobilas.Collections.Generic.LongList`1.RemoveAt(System.Int64)
+  id: RemoveAt(System.Int64)
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: RemoveAt(long)
+  nameWithType: LongList<T>.RemoveAt(long)
+  fullName: Cobilas.Collections.Generic.LongList<T>.RemoveAt(long)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: RemoveAt
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 151
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Removes the <xref href="Cobilas.Collections.Generic.ILongList%601" data-throw-if-not-resolved="false"></xref> item at the specified index.
+  example: []
+  syntax:
+    content: public void RemoveAt(long index)
+    parameters:
+    - id: index
+      type: System.Int64
+      description: The zero-based index of the item to remove.
+    content.vb: Public Sub RemoveAt(index As Long)
+  overload: Cobilas.Collections.Generic.LongList`1.RemoveAt*
+  implements:
+  - Cobilas.Collections.Generic.ILongList{{T}}.RemoveAt(System.Int64)
+  - Cobilas.Collections.ILongList.RemoveAt(System.Int64)
+  nameWithType.vb: LongList(Of T).RemoveAt(Long)
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).RemoveAt(Long)
+  name.vb: RemoveAt(Long)
+- uid: Cobilas.Collections.Generic.LongList`1.RemoveAll(System.Predicate{`0})
+  commentId: M:Cobilas.Collections.Generic.LongList`1.RemoveAll(System.Predicate{`0})
+  id: RemoveAll(System.Predicate{`0})
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: RemoveAll(Predicate<T>)
+  nameWithType: LongList<T>.RemoveAll(Predicate<T>)
+  fullName: Cobilas.Collections.Generic.LongList<T>.RemoveAll(System.Predicate<T>)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: RemoveAll
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 162
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Removes all the elements that match the conditions defined by the specified predicate.
+  example: []
+  syntax:
+    content: public long RemoveAll(Predicate<T> match)
+    parameters:
+    - id: match
+      type: System.Predicate{{T}}
+      description: The <xref href="System.Predicate%601" data-throw-if-not-resolved="false"></xref> delegate that defines the conditions of the elements to remove.
+    return:
+      type: System.Int64
+      description: The number of elements removed from the <xref href="Cobilas.Collections.Generic.LongList%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function RemoveAll(match As Predicate(Of T)) As Long
+  overload: Cobilas.Collections.Generic.LongList`1.RemoveAll*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: ''
+  nameWithType.vb: LongList(Of T).RemoveAll(Predicate(Of T))
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).RemoveAll(System.Predicate(Of T))
+  name.vb: RemoveAll(Predicate(Of T))
+- uid: Cobilas.Collections.Generic.LongList`1.RemoveRamge(System.Int64,System.Int64)
+  commentId: M:Cobilas.Collections.Generic.LongList`1.RemoveRamge(System.Int64,System.Int64)
+  id: RemoveRamge(System.Int64,System.Int64)
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: RemoveRamge(long, long)
+  nameWithType: LongList<T>.RemoveRamge(long, long)
+  fullName: Cobilas.Collections.Generic.LongList<T>.RemoveRamge(long, long)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: RemoveRamge
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 185
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Removes a range of elements from the <xref href="Cobilas.Collections.Generic.LongList%601" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public void RemoveRamge(long index, long count)
+    parameters:
+    - id: index
+      type: System.Int64
+      description: The zero-based starting index of the range of elements to remove.
+    - id: count
+      type: System.Int64
+      description: The number of elements to remove.
+    content.vb: Public Sub RemoveRamge(index As Long, count As Long)
+  overload: Cobilas.Collections.Generic.LongList`1.RemoveRamge*
+  nameWithType.vb: LongList(Of T).RemoveRamge(Long, Long)
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).RemoveRamge(Long, Long)
+  name.vb: RemoveRamge(Long, Long)
+- uid: Cobilas.Collections.Generic.LongList`1.Clone
+  commentId: M:Cobilas.Collections.Generic.LongList`1.Clone
+  id: Clone
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: LongList<T>.Clone()
+  fullName: Cobilas.Collections.Generic.LongList<T>.Clone()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Clone
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 193
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Creates a new object that is a copy of the current instance.
+  example: []
+  syntax:
+    content: public object Clone()
+    return:
+      type: System.Object
+      description: A new object that is a copy of this instance.
+    content.vb: Public Function Clone() As Object
+  overload: Cobilas.Collections.Generic.LongList`1.Clone*
+  implements:
+  - System.ICloneable.Clone
+  nameWithType.vb: LongList(Of T).Clone()
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).Clone()
+- uid: Cobilas.Collections.Generic.LongList`1.ToArray
+  commentId: M:Cobilas.Collections.Generic.LongList`1.ToArray
+  id: ToArray
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: ToArray()
+  nameWithType: LongList<T>.ToArray()
+  fullName: Cobilas.Collections.Generic.LongList<T>.ToArray()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ToArray
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 197
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Copies the elements of the <xref href="Cobilas.Collections.Generic.LongList%601" data-throw-if-not-resolved="false"></xref> to a new array.
+  example: []
+  syntax:
+    content: public T[] ToArray()
+    return:
+      type: '{T}[]'
+      description: ''
+    content.vb: Public Function ToArray() As T()
+  overload: Cobilas.Collections.Generic.LongList`1.ToArray*
+  nameWithType.vb: LongList(Of T).ToArray()
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).ToArray()
+- uid: Cobilas.Collections.Generic.LongList`1.Reverse(System.Int64,System.Int64)
+  commentId: M:Cobilas.Collections.Generic.LongList`1.Reverse(System.Int64,System.Int64)
+  id: Reverse(System.Int64,System.Int64)
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: Reverse(long, long)
+  nameWithType: LongList<T>.Reverse(long, long)
+  fullName: Cobilas.Collections.Generic.LongList<T>.Reverse(long, long)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Reverse
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 204
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Reverses the order of the elements in a one-dimensional Array or in a portion of the Array.
+  example: []
+  syntax:
+    content: public void Reverse(long index, long length)
+    parameters:
+    - id: index
+      type: System.Int64
+      description: The starting index of the section to reverse.
+    - id: length
+      type: System.Int64
+      description: The number of elements in the section to reverse.
+    content.vb: Public Sub Reverse(index As Long, length As Long)
+  overload: Cobilas.Collections.Generic.LongList`1.Reverse*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: ''
+  - type: System.RankException
+    commentId: T:System.RankException
+    description: ''
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: ''
+  nameWithType.vb: LongList(Of T).Reverse(Long, Long)
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).Reverse(Long, Long)
+  name.vb: Reverse(Long, Long)
+- uid: Cobilas.Collections.Generic.LongList`1.Reverse
+  commentId: M:Cobilas.Collections.Generic.LongList`1.Reverse
+  id: Reverse
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: Reverse()
+  nameWithType: LongList<T>.Reverse()
+  fullName: Cobilas.Collections.Generic.LongList<T>.Reverse()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Reverse
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 208
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Reverses the order of the elements in a one-dimensional Array or in a portion of the Array.
+  example: []
+  syntax:
+    content: public void Reverse()
+    content.vb: Public Sub Reverse()
+  overload: Cobilas.Collections.Generic.LongList`1.Reverse*
+  nameWithType.vb: LongList(Of T).Reverse()
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).Reverse()
+- uid: Cobilas.Collections.Generic.LongList`1.Find(System.Predicate{`0})
+  commentId: M:Cobilas.Collections.Generic.LongList`1.Find(System.Predicate{`0})
+  id: Find(System.Predicate{`0})
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: Find(Predicate<T>)
+  nameWithType: LongList<T>.Find(Predicate<T>)
+  fullName: Cobilas.Collections.Generic.LongList<T>.Find(System.Predicate<T>)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Find
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 211
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: >-
+    Searches for an element that matches the conditions defined by the 
+
+    specified predicate, and returns the first occurrence within the entire Array.
+  example: []
+  syntax:
+    content: public T Find(Predicate<T> match)
+    parameters:
+    - id: match
+      type: System.Predicate{{T}}
+    return:
+      type: '{T}'
+    content.vb: Public Function Find(match As Predicate(Of T)) As T
+  overload: Cobilas.Collections.Generic.LongList`1.Find*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: ''
+  - type: System.RankException
+    commentId: T:System.RankException
+    description: ''
+  nameWithType.vb: LongList(Of T).Find(Predicate(Of T))
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).Find(System.Predicate(Of T))
+  name.vb: Find(Predicate(Of T))
+- uid: Cobilas.Collections.Generic.LongList`1.FindLast(System.Predicate{`0})
+  commentId: M:Cobilas.Collections.Generic.LongList`1.FindLast(System.Predicate{`0})
+  id: FindLast(System.Predicate{`0})
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: FindLast(Predicate<T>)
+  nameWithType: LongList<T>.FindLast(Predicate<T>)
+  fullName: Cobilas.Collections.Generic.LongList<T>.FindLast(System.Predicate<T>)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: FindLast
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 215
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: >-
+    Searches for an element that matches the conditions defined by the 
+
+    specified predicate and returns the first occurrence in the entire Array.
+  example: []
+  syntax:
+    content: public T FindLast(Predicate<T> match)
+    parameters:
+    - id: match
+      type: System.Predicate{{T}}
+    return:
+      type: '{T}'
+    content.vb: Public Function FindLast(match As Predicate(Of T)) As T
+  overload: Cobilas.Collections.Generic.LongList`1.FindLast*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: ''
+  - type: System.RankException
+    commentId: T:System.RankException
+    description: ''
+  nameWithType.vb: LongList(Of T).FindLast(Predicate(Of T))
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).FindLast(System.Predicate(Of T))
+  name.vb: FindLast(Predicate(Of T))
+- uid: Cobilas.Collections.Generic.LongList`1.FindAll(System.Predicate{`0})
+  commentId: M:Cobilas.Collections.Generic.LongList`1.FindAll(System.Predicate{`0})
+  id: FindAll(System.Predicate{`0})
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: FindAll(Predicate<T>)
+  nameWithType: LongList<T>.FindAll(Predicate<T>)
+  fullName: Cobilas.Collections.Generic.LongList<T>.FindAll(System.Predicate<T>)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: FindAll
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 219
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Retrieves all elements that match the conditions defined by the specified predicate.
+  example: []
+  syntax:
+    content: public T[] FindAll(Predicate<T> match)
+    parameters:
+    - id: match
+      type: System.Predicate{{T}}
+    return:
+      type: '{T}[]'
+    content.vb: Public Function FindAll(match As Predicate(Of T)) As T()
+  overload: Cobilas.Collections.Generic.LongList`1.FindAll*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: ''
+  - type: System.RankException
+    commentId: T:System.RankException
+    description: ''
+  nameWithType.vb: LongList(Of T).FindAll(Predicate(Of T))
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).FindAll(System.Predicate(Of T))
+  name.vb: FindAll(Predicate(Of T))
+- uid: Cobilas.Collections.Generic.LongList`1.FindIndex(System.Predicate{`0})
+  commentId: M:Cobilas.Collections.Generic.LongList`1.FindIndex(System.Predicate{`0})
+  id: FindIndex(System.Predicate{`0})
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: FindIndex(Predicate<T>)
+  nameWithType: LongList<T>.FindIndex(Predicate<T>)
+  fullName: Cobilas.Collections.Generic.LongList<T>.FindIndex(System.Predicate<T>)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: FindIndex
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 223
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: >-
+    Searches for an element that matches the conditions defined by the specified predicate and returns
+
+    the zero-based index of the first occurrence within the range of elements in the Array that starts
+
+    at the specified index and contains the specified number of elements.
+  example: []
+  syntax:
+    content: public long FindIndex(Predicate<T> match)
+    parameters:
+    - id: match
+      type: System.Predicate{{T}}
+    return:
+      type: System.Int64
+    content.vb: Public Function FindIndex(match As Predicate(Of T)) As Long
+  overload: Cobilas.Collections.Generic.LongList`1.FindIndex*
+  nameWithType.vb: LongList(Of T).FindIndex(Predicate(Of T))
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).FindIndex(System.Predicate(Of T))
+  name.vb: FindIndex(Predicate(Of T))
+- uid: Cobilas.Collections.Generic.LongList`1.FindIndex(System.Int64,System.Predicate{`0})
+  commentId: M:Cobilas.Collections.Generic.LongList`1.FindIndex(System.Int64,System.Predicate{`0})
+  id: FindIndex(System.Int64,System.Predicate{`0})
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: FindIndex(long, Predicate<T>)
+  nameWithType: LongList<T>.FindIndex(long, Predicate<T>)
+  fullName: Cobilas.Collections.Generic.LongList<T>.FindIndex(long, System.Predicate<T>)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: FindIndex
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 227
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: >-
+    Searches for an element that matches the conditions defined by the specified predicate and returns
+
+    the zero-based index of the first occurrence within the range of elements in the Array that starts
+
+    at the specified index and contains the specified number of elements.
+  example: []
+  syntax:
+    content: public long FindIndex(long startIndex, Predicate<T> match)
+    parameters:
+    - id: startIndex
+      type: System.Int64
+    - id: match
+      type: System.Predicate{{T}}
+    return:
+      type: System.Int64
+    content.vb: Public Function FindIndex(startIndex As Long, match As Predicate(Of T)) As Long
+  overload: Cobilas.Collections.Generic.LongList`1.FindIndex*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: ''
+  - type: System.RankException
+    commentId: T:System.RankException
+    description: ''
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: ''
+  nameWithType.vb: LongList(Of T).FindIndex(Long, Predicate(Of T))
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).FindIndex(Long, System.Predicate(Of T))
+  name.vb: FindIndex(Long, Predicate(Of T))
+- uid: Cobilas.Collections.Generic.LongList`1.FindIndex(System.Int64,System.Int64,System.Predicate{`0})
+  commentId: M:Cobilas.Collections.Generic.LongList`1.FindIndex(System.Int64,System.Int64,System.Predicate{`0})
+  id: FindIndex(System.Int64,System.Int64,System.Predicate{`0})
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: FindIndex(long, long, Predicate<T>)
+  nameWithType: LongList<T>.FindIndex(long, long, Predicate<T>)
+  fullName: Cobilas.Collections.Generic.LongList<T>.FindIndex(long, long, System.Predicate<T>)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: FindIndex
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 231
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: >-
+    Searches for an element that matches the conditions defined by the specified predicate and returns
+
+    the zero-based index of the first occurrence within the range of elements in the Array that starts
+
+    at the specified index and contains the specified number of elements.
+  example: []
+  syntax:
+    content: public long FindIndex(long startIndex, long count, Predicate<T> match)
+    parameters:
+    - id: startIndex
+      type: System.Int64
+    - id: count
+      type: System.Int64
+    - id: match
+      type: System.Predicate{{T}}
+    return:
+      type: System.Int64
+    content.vb: Public Function FindIndex(startIndex As Long, count As Long, match As Predicate(Of T)) As Long
+  overload: Cobilas.Collections.Generic.LongList`1.FindIndex*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: ''
+  - type: System.RankException
+    commentId: T:System.RankException
+    description: ''
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: ''
+  nameWithType.vb: LongList(Of T).FindIndex(Long, Long, Predicate(Of T))
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).FindIndex(Long, Long, System.Predicate(Of T))
+  name.vb: FindIndex(Long, Long, Predicate(Of T))
+- uid: Cobilas.Collections.Generic.LongList`1.FindLastIndex(System.Predicate{`0})
+  commentId: M:Cobilas.Collections.Generic.LongList`1.FindLastIndex(System.Predicate{`0})
+  id: FindLastIndex(System.Predicate{`0})
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: FindLastIndex(Predicate<T>)
+  nameWithType: LongList<T>.FindLastIndex(Predicate<T>)
+  fullName: Cobilas.Collections.Generic.LongList<T>.FindLastIndex(System.Predicate<T>)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: FindLastIndex
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 235
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: >-
+    Searches for an element that matches the conditions defined by a
+
+    specified predicate and returns the zero-based index of the last
+
+    occurrence in an Array or part of it.
+  example: []
+  syntax:
+    content: public long FindLastIndex(Predicate<T> match)
+    parameters:
+    - id: match
+      type: System.Predicate{{T}}
+    return:
+      type: System.Int64
+    content.vb: Public Function FindLastIndex(match As Predicate(Of T)) As Long
+  overload: Cobilas.Collections.Generic.LongList`1.FindLastIndex*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: ''
+  - type: System.RankException
+    commentId: T:System.RankException
+    description: ''
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: ''
+  nameWithType.vb: LongList(Of T).FindLastIndex(Predicate(Of T))
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).FindLastIndex(System.Predicate(Of T))
+  name.vb: FindLastIndex(Predicate(Of T))
+- uid: Cobilas.Collections.Generic.LongList`1.FindLastIndex(System.Int64,System.Predicate{`0})
+  commentId: M:Cobilas.Collections.Generic.LongList`1.FindLastIndex(System.Int64,System.Predicate{`0})
+  id: FindLastIndex(System.Int64,System.Predicate{`0})
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: FindLastIndex(long, Predicate<T>)
+  nameWithType: LongList<T>.FindLastIndex(long, Predicate<T>)
+  fullName: Cobilas.Collections.Generic.LongList<T>.FindLastIndex(long, System.Predicate<T>)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: FindLastIndex
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 239
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: >-
+    Searches for an element that matches the conditions defined by a
+
+    specified predicate and returns the zero-based index of the last
+
+    occurrence in an Array or part of it.
+  example: []
+  syntax:
+    content: public long FindLastIndex(long startIndex, Predicate<T> match)
+    parameters:
+    - id: startIndex
+      type: System.Int64
+    - id: match
+      type: System.Predicate{{T}}
+    return:
+      type: System.Int64
+    content.vb: Public Function FindLastIndex(startIndex As Long, match As Predicate(Of T)) As Long
+  overload: Cobilas.Collections.Generic.LongList`1.FindLastIndex*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: ''
+  - type: System.RankException
+    commentId: T:System.RankException
+    description: ''
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: ''
+  nameWithType.vb: LongList(Of T).FindLastIndex(Long, Predicate(Of T))
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).FindLastIndex(Long, System.Predicate(Of T))
+  name.vb: FindLastIndex(Long, Predicate(Of T))
+- uid: Cobilas.Collections.Generic.LongList`1.FindLastIndex(System.Int64,System.Int64,System.Predicate{`0})
+  commentId: M:Cobilas.Collections.Generic.LongList`1.FindLastIndex(System.Int64,System.Int64,System.Predicate{`0})
+  id: FindLastIndex(System.Int64,System.Int64,System.Predicate{`0})
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: FindLastIndex(long, long, Predicate<T>)
+  nameWithType: LongList<T>.FindLastIndex(long, long, Predicate<T>)
+  fullName: Cobilas.Collections.Generic.LongList<T>.FindLastIndex(long, long, System.Predicate<T>)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: FindLastIndex
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 243
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: >-
+    Searches for an element that matches the conditions defined by a
+
+    specified predicate and returns the zero-based index of the last
+
+    occurrence in an Array or part of it.
+  example: []
+  syntax:
+    content: public long FindLastIndex(long startIndex, long count, Predicate<T> match)
+    parameters:
+    - id: startIndex
+      type: System.Int64
+    - id: count
+      type: System.Int64
+    - id: match
+      type: System.Predicate{{T}}
+    return:
+      type: System.Int64
+    content.vb: Public Function FindLastIndex(startIndex As Long, count As Long, match As Predicate(Of T)) As Long
+  overload: Cobilas.Collections.Generic.LongList`1.FindLastIndex*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: ''
+  - type: System.RankException
+    commentId: T:System.RankException
+    description: ''
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: ''
+  nameWithType.vb: LongList(Of T).FindLastIndex(Long, Long, Predicate(Of T))
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).FindLastIndex(Long, Long, System.Predicate(Of T))
+  name.vb: FindLastIndex(Long, Long, Predicate(Of T))
+- uid: Cobilas.Collections.Generic.LongList`1.ConvertAll``1(System.Converter{`0,``0})
+  commentId: M:Cobilas.Collections.Generic.LongList`1.ConvertAll``1(System.Converter{`0,``0})
+  id: ConvertAll``1(System.Converter{`0,``0})
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: ConvertAll<TOutput>(Converter<T, TOutput>)
+  nameWithType: LongList<T>.ConvertAll<TOutput>(Converter<T, TOutput>)
+  fullName: Cobilas.Collections.Generic.LongList<T>.ConvertAll<TOutput>(System.Converter<T, TOutput>)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ConvertAll
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 247
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Converts an array of one type to an array of another type.
+  example: []
+  syntax:
+    content: public TOutput[] ConvertAll<TOutput>(Converter<T, TOutput> converter)
+    parameters:
+    - id: converter
+      type: System.Converter{{T},{TOutput}}
+      description: A <xref href="System.Converter%602" data-throw-if-not-resolved="false"></xref> that converts each element from one type to another type.
+    typeParameters:
+    - id: TOutput
+      description: The type of the elements of the target array.
+    return:
+      type: '{TOutput}[]'
+      description: An array of the target type containing the converted elements from the source array.
+    content.vb: Public Function ConvertAll(Of TOutput)(converter As Converter(Of T, TOutput)) As TOutput()
+  overload: Cobilas.Collections.Generic.LongList`1.ConvertAll*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: ''
+  - type: System.RankException
+    commentId: T:System.RankException
+    description: ''
+  nameWithType.vb: LongList(Of T).ConvertAll(Of TOutput)(Converter(Of T, TOutput))
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).ConvertAll(Of TOutput)(System.Converter(Of T, TOutput))
+  name.vb: ConvertAll(Of TOutput)(Converter(Of T, TOutput))
+- uid: Cobilas.Collections.Generic.LongList`1.ForEach(System.Action{`0})
+  commentId: M:Cobilas.Collections.Generic.LongList`1.ForEach(System.Action{`0})
+  id: ForEach(System.Action{`0})
+  parent: Cobilas.Collections.Generic.LongList`1
+  langs:
+  - csharp
+  - vb
+  name: ForEach(Action<T>)
+  nameWithType: LongList<T>.ForEach(Action<T>)
+  fullName: Cobilas.Collections.Generic.LongList<T>.ForEach(System.Action<T>)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Collections/Generic/LongList.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ForEach
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/Generic/LongList.cs
+    startLine: 254
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.Collections.Generic
+  summary: Performs the specified action on each element of the <xref href="Cobilas.Collections.Generic.LongList%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void ForEach(Action<T> action)
+    parameters:
+    - id: action
+      type: System.Action{{T}}
+      description: The <xref href="System.Action%601" data-throw-if-not-resolved="false"></xref> delegate to perform on each element of the <xref href="Cobilas.Collections.Generic.LongList%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub ForEach(action As Action(Of T))
+  overload: Cobilas.Collections.Generic.LongList`1.ForEach*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: ''
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: ''
+  nameWithType.vb: LongList(Of T).ForEach(Action(Of T))
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).ForEach(System.Action(Of T))
+  name.vb: ForEach(Action(Of T))
+references:
+- uid: Cobilas.Collections.Generic
+  commentId: N:Cobilas.Collections.Generic
+  href: Cobilas.html
+  name: Cobilas.Collections.Generic
+  nameWithType: Cobilas.Collections.Generic
+  fullName: Cobilas.Collections.Generic
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.Collections
+    name: Collections
+    href: Cobilas.Collections.html
+  - name: .
+  - uid: Cobilas.Collections.Generic
+    name: Generic
+    href: Cobilas.Collections.Generic.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.Collections
+    name: Collections
+    href: Cobilas.Collections.html
+  - name: .
+  - uid: Cobilas.Collections.Generic
+    name: Generic
+    href: Cobilas.Collections.Generic.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Cobilas.Collections.Generic.ILongList{{T}}
+  commentId: T:Cobilas.Collections.Generic.ILongList{`0}
+  parent: Cobilas.Collections.Generic
+  definition: Cobilas.Collections.Generic.ILongList`1
+  href: Cobilas.Collections.Generic.ILongList-1.html
+  name: ILongList<T>
+  nameWithType: ILongList<T>
+  fullName: Cobilas.Collections.Generic.ILongList<T>
+  nameWithType.vb: ILongList(Of T)
+  fullName.vb: Cobilas.Collections.Generic.ILongList(Of T)
+  name.vb: ILongList(Of T)
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.ILongList`1
+    name: ILongList
+    href: Cobilas.Collections.Generic.ILongList-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.ILongList`1
+    name: ILongList
+    href: Cobilas.Collections.Generic.ILongList-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Cobilas.Collections.Generic.ILongCollection{{T}}
+  commentId: T:Cobilas.Collections.Generic.ILongCollection{`0}
+  parent: Cobilas.Collections.Generic
+  definition: Cobilas.Collections.Generic.ILongCollection`1
+  href: Cobilas.Collections.Generic.ILongCollection-1.html
+  name: ILongCollection<T>
+  nameWithType: ILongCollection<T>
+  fullName: Cobilas.Collections.Generic.ILongCollection<T>
+  nameWithType.vb: ILongCollection(Of T)
+  fullName.vb: Cobilas.Collections.Generic.ILongCollection(Of T)
+  name.vb: ILongCollection(Of T)
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.ILongCollection`1
+    name: ILongCollection
+    href: Cobilas.Collections.Generic.ILongCollection-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.ILongCollection`1
+    name: ILongCollection
+    href: Cobilas.Collections.Generic.ILongCollection-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Cobilas.Collections.Generic.IReadOnlyLongList{{T}}
+  commentId: T:Cobilas.Collections.Generic.IReadOnlyLongList{`0}
+  parent: Cobilas.Collections.Generic
+  definition: Cobilas.Collections.Generic.IReadOnlyLongList`1
+  href: Cobilas.Collections.Generic.IReadOnlyLongList-1.html
+  name: IReadOnlyLongList<T>
+  nameWithType: IReadOnlyLongList<T>
+  fullName: Cobilas.Collections.Generic.IReadOnlyLongList<T>
+  nameWithType.vb: IReadOnlyLongList(Of T)
+  fullName.vb: Cobilas.Collections.Generic.IReadOnlyLongList(Of T)
+  name.vb: IReadOnlyLongList(Of T)
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.IReadOnlyLongList`1
+    name: IReadOnlyLongList
+    href: Cobilas.Collections.Generic.IReadOnlyLongList-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.IReadOnlyLongList`1
+    name: IReadOnlyLongList
+    href: Cobilas.Collections.Generic.IReadOnlyLongList-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Cobilas.Collections.Generic.IReadOnlyLongCollection{{T}}
+  commentId: T:Cobilas.Collections.Generic.IReadOnlyLongCollection{`0}
+  parent: Cobilas.Collections.Generic
+  definition: Cobilas.Collections.Generic.IReadOnlyLongCollection`1
+  href: Cobilas.Collections.Generic.IReadOnlyLongCollection-1.html
+  name: IReadOnlyLongCollection<T>
+  nameWithType: IReadOnlyLongCollection<T>
+  fullName: Cobilas.Collections.Generic.IReadOnlyLongCollection<T>
+  nameWithType.vb: IReadOnlyLongCollection(Of T)
+  fullName.vb: Cobilas.Collections.Generic.IReadOnlyLongCollection(Of T)
+  name.vb: IReadOnlyLongCollection(Of T)
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.IReadOnlyLongCollection`1
+    name: IReadOnlyLongCollection
+    href: Cobilas.Collections.Generic.IReadOnlyLongCollection-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.IReadOnlyLongCollection`1
+    name: IReadOnlyLongCollection
+    href: Cobilas.Collections.Generic.IReadOnlyLongCollection-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Cobilas.Collections.ILongList
+  commentId: T:Cobilas.Collections.ILongList
+  parent: Cobilas.Collections
+  href: Cobilas.Collections.ILongList.html
+  name: ILongList
+  nameWithType: ILongList
+  fullName: Cobilas.Collections.ILongList
+- uid: Cobilas.Collections.ILongCollection
+  commentId: T:Cobilas.Collections.ILongCollection
+  parent: Cobilas.Collections
+  href: Cobilas.Collections.ILongCollection.html
+  name: ILongCollection
+  nameWithType: ILongCollection
+  fullName: Cobilas.Collections.ILongCollection
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.System.Object_CB_Extension.CompareType(System.Type)
+  commentId: M:System.Object_CB_Extension.CompareType(System.Object,System.Type)
+  parent: System.Object_CB_Extension
+  definition: System.Object_CB_Extension.CompareType(System.Object,System.Type)
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type_
+  name: CompareType(object, Type)
+  nameWithType: Object_CB_Extension.CompareType(object, Type)
+  fullName: System.Object_CB_Extension.CompareType(object, System.Type)
+  nameWithType.vb: Object_CB_Extension.CompareType(Object, Type)
+  fullName.vb: System.Object_CB_Extension.CompareType(Object, System.Type)
+  name.vb: CompareType(Object, Type)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareType(System.Object,System.Type)
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareType(System.Object,System.Type)
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Object.System.Object_CB_Extension.CompareType(System.Type[])
+  commentId: M:System.Object_CB_Extension.CompareType(System.Object,System.Type[])
+  parent: System.Object_CB_Extension
+  definition: System.Object_CB_Extension.CompareType(System.Object,System.Type[])
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type___
+  name: CompareType(object, params Type[])
+  nameWithType: Object_CB_Extension.CompareType(object, params Type[])
+  fullName: System.Object_CB_Extension.CompareType(object, params System.Type[])
+  nameWithType.vb: Object_CB_Extension.CompareType(Object, ParamArray Type())
+  fullName.vb: System.Object_CB_Extension.CompareType(Object, ParamArray System.Type())
+  name.vb: CompareType(Object, ParamArray Type())
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareType(System.Object,System.Type[])
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type___
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareType(System.Object,System.Type[])
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type___
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Object.System.Object_CB_Extension.CompareTypeAndSubType(System.Type)
+  commentId: M:System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type)
+  parent: System.Object_CB_Extension
+  definition: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type)
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_
+  name: CompareTypeAndSubType(object, Type)
+  nameWithType: Object_CB_Extension.CompareTypeAndSubType(object, Type)
+  fullName: System.Object_CB_Extension.CompareTypeAndSubType(object, System.Type)
+  nameWithType.vb: Object_CB_Extension.CompareTypeAndSubType(Object, Type)
+  fullName.vb: System.Object_CB_Extension.CompareTypeAndSubType(Object, System.Type)
+  name.vb: CompareTypeAndSubType(Object, Type)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Object.System.Object_CB_Extension.CompareTypeAndSubType(System.Type,System.Boolean)
+  commentId: M:System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type,System.Boolean)
+  parent: System.Object_CB_Extension
+  definition: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type,System.Boolean)
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_System_Boolean_
+  name: CompareTypeAndSubType(object, Type, bool)
+  nameWithType: Object_CB_Extension.CompareTypeAndSubType(object, Type, bool)
+  fullName: System.Object_CB_Extension.CompareTypeAndSubType(object, System.Type, bool)
+  nameWithType.vb: Object_CB_Extension.CompareTypeAndSubType(Object, Type, Boolean)
+  fullName.vb: System.Object_CB_Extension.CompareTypeAndSubType(Object, System.Type, Boolean)
+  name.vb: CompareTypeAndSubType(Object, Type, Boolean)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type,System.Boolean)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_System_Boolean_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type,System.Boolean)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_System_Boolean_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object.System.Object_CB_Extension.CompareTypeAndSubType``1
+  commentId: M:System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object)
+  parent: System.Object_CB_Extension
+  definition: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object)
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_
+  name: CompareTypeAndSubType<T>(object)
+  nameWithType: Object_CB_Extension.CompareTypeAndSubType<T>(object)
+  fullName: System.Object_CB_Extension.CompareTypeAndSubType<T>(object)
+  nameWithType.vb: Object_CB_Extension.CompareTypeAndSubType(Of T)(Object)
+  fullName.vb: System.Object_CB_Extension.CompareTypeAndSubType(Of T)(Object)
+  name.vb: CompareTypeAndSubType(Of T)(Object)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.System.Object_CB_Extension.CompareTypeAndSubType``1(System.Boolean)
+  commentId: M:System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object,System.Boolean)
+  parent: System.Object_CB_Extension
+  definition: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object,System.Boolean)
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_System_Boolean_
+  name: CompareTypeAndSubType<T>(object, bool)
+  nameWithType: Object_CB_Extension.CompareTypeAndSubType<T>(object, bool)
+  fullName: System.Object_CB_Extension.CompareTypeAndSubType<T>(object, bool)
+  nameWithType.vb: Object_CB_Extension.CompareTypeAndSubType(Of T)(Object, Boolean)
+  fullName.vb: System.Object_CB_Extension.CompareTypeAndSubType(Of T)(Object, Boolean)
+  name.vb: CompareTypeAndSubType(Of T)(Object, Boolean)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object,System.Boolean)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_System_Boolean_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object,System.Boolean)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_System_Boolean_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object.System.Object_CB_Extension.CompareType``1
+  commentId: M:System.Object_CB_Extension.CompareType``1(System.Object)
+  parent: System.Object_CB_Extension
+  definition: System.Object_CB_Extension.CompareType``1(System.Object)
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType__1_System_Object_
+  name: CompareType<T>(object)
+  nameWithType: Object_CB_Extension.CompareType<T>(object)
+  fullName: System.Object_CB_Extension.CompareType<T>(object)
+  nameWithType.vb: Object_CB_Extension.CompareType(Of T)(Object)
+  fullName.vb: System.Object_CB_Extension.CompareType(Of T)(Object)
+  name.vb: CompareType(Of T)(Object)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareType``1(System.Object)
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareType``1(System.Object)
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cobilas.Collections.Generic.ILongList`1
+  commentId: T:Cobilas.Collections.Generic.ILongList`1
+  href: Cobilas.Collections.Generic.ILongList-1.html
+  name: ILongList<T>
+  nameWithType: ILongList<T>
+  fullName: Cobilas.Collections.Generic.ILongList<T>
+  nameWithType.vb: ILongList(Of T)
+  fullName.vb: Cobilas.Collections.Generic.ILongList(Of T)
+  name.vb: ILongList(Of T)
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.ILongList`1
+    name: ILongList
+    href: Cobilas.Collections.Generic.ILongList-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.ILongList`1
+    name: ILongList
+    href: Cobilas.Collections.Generic.ILongList-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Cobilas.Collections.Generic.ILongCollection`1
+  commentId: T:Cobilas.Collections.Generic.ILongCollection`1
+  href: Cobilas.Collections.Generic.ILongCollection-1.html
+  name: ILongCollection<T>
+  nameWithType: ILongCollection<T>
+  fullName: Cobilas.Collections.Generic.ILongCollection<T>
+  nameWithType.vb: ILongCollection(Of T)
+  fullName.vb: Cobilas.Collections.Generic.ILongCollection(Of T)
+  name.vb: ILongCollection(Of T)
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.ILongCollection`1
+    name: ILongCollection
+    href: Cobilas.Collections.Generic.ILongCollection-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.ILongCollection`1
+    name: ILongCollection
+    href: Cobilas.Collections.Generic.ILongCollection-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Cobilas.Collections.Generic.IReadOnlyLongList`1
+  commentId: T:Cobilas.Collections.Generic.IReadOnlyLongList`1
+  href: Cobilas.Collections.Generic.IReadOnlyLongList-1.html
+  name: IReadOnlyLongList<T>
+  nameWithType: IReadOnlyLongList<T>
+  fullName: Cobilas.Collections.Generic.IReadOnlyLongList<T>
+  nameWithType.vb: IReadOnlyLongList(Of T)
+  fullName.vb: Cobilas.Collections.Generic.IReadOnlyLongList(Of T)
+  name.vb: IReadOnlyLongList(Of T)
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.IReadOnlyLongList`1
+    name: IReadOnlyLongList
+    href: Cobilas.Collections.Generic.IReadOnlyLongList-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.IReadOnlyLongList`1
+    name: IReadOnlyLongList
+    href: Cobilas.Collections.Generic.IReadOnlyLongList-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Cobilas.Collections.Generic.IReadOnlyLongCollection`1
+  commentId: T:Cobilas.Collections.Generic.IReadOnlyLongCollection`1
+  href: Cobilas.Collections.Generic.IReadOnlyLongCollection-1.html
+  name: IReadOnlyLongCollection<T>
+  nameWithType: IReadOnlyLongCollection<T>
+  fullName: Cobilas.Collections.Generic.IReadOnlyLongCollection<T>
+  nameWithType.vb: IReadOnlyLongCollection(Of T)
+  fullName.vb: Cobilas.Collections.Generic.IReadOnlyLongCollection(Of T)
+  name.vb: IReadOnlyLongCollection(Of T)
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.IReadOnlyLongCollection`1
+    name: IReadOnlyLongCollection
+    href: Cobilas.Collections.Generic.IReadOnlyLongCollection-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.IReadOnlyLongCollection`1
+    name: IReadOnlyLongCollection
+    href: Cobilas.Collections.Generic.IReadOnlyLongCollection-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Cobilas.Collections
+  commentId: N:Cobilas.Collections
+  href: Cobilas.html
+  name: Cobilas.Collections
+  nameWithType: Cobilas.Collections
+  fullName: Cobilas.Collections
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.Collections
+    name: Collections
+    href: Cobilas.Collections.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.Collections
+    name: Collections
+    href: Cobilas.Collections.html
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: System.Object_CB_Extension.CompareType(System.Object,System.Type)
+  commentId: M:System.Object_CB_Extension.CompareType(System.Object,System.Type)
+  isExternal: true
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type_
+  name: CompareType(object, Type)
+  nameWithType: Object_CB_Extension.CompareType(object, Type)
+  fullName: System.Object_CB_Extension.CompareType(object, System.Type)
+  nameWithType.vb: Object_CB_Extension.CompareType(Object, Type)
+  fullName.vb: System.Object_CB_Extension.CompareType(Object, System.Type)
+  name.vb: CompareType(Object, Type)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareType(System.Object,System.Type)
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareType(System.Object,System.Type)
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Object_CB_Extension
+  commentId: T:System.Object_CB_Extension
+  parent: System
+  href: System.Object_CB_Extension.html
+  name: Object_CB_Extension
+  nameWithType: Object_CB_Extension
+  fullName: System.Object_CB_Extension
+- uid: System.Object_CB_Extension.CompareType(System.Object,System.Type[])
+  commentId: M:System.Object_CB_Extension.CompareType(System.Object,System.Type[])
+  isExternal: true
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type___
+  name: CompareType(object, params Type[])
+  nameWithType: Object_CB_Extension.CompareType(object, params Type[])
+  fullName: System.Object_CB_Extension.CompareType(object, params System.Type[])
+  nameWithType.vb: Object_CB_Extension.CompareType(Object, ParamArray Type())
+  fullName.vb: System.Object_CB_Extension.CompareType(Object, ParamArray System.Type())
+  name.vb: CompareType(Object, ParamArray Type())
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareType(System.Object,System.Type[])
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type___
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareType(System.Object,System.Type[])
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type___
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type)
+  commentId: M:System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type)
+  isExternal: true
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_
+  name: CompareTypeAndSubType(object, Type)
+  nameWithType: Object_CB_Extension.CompareTypeAndSubType(object, Type)
+  fullName: System.Object_CB_Extension.CompareTypeAndSubType(object, System.Type)
+  nameWithType.vb: Object_CB_Extension.CompareTypeAndSubType(Object, Type)
+  fullName.vb: System.Object_CB_Extension.CompareTypeAndSubType(Object, System.Type)
+  name.vb: CompareTypeAndSubType(Object, Type)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type,System.Boolean)
+  commentId: M:System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type,System.Boolean)
+  isExternal: true
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_System_Boolean_
+  name: CompareTypeAndSubType(object, Type, bool)
+  nameWithType: Object_CB_Extension.CompareTypeAndSubType(object, Type, bool)
+  fullName: System.Object_CB_Extension.CompareTypeAndSubType(object, System.Type, bool)
+  nameWithType.vb: Object_CB_Extension.CompareTypeAndSubType(Object, Type, Boolean)
+  fullName.vb: System.Object_CB_Extension.CompareTypeAndSubType(Object, System.Type, Boolean)
+  name.vb: CompareTypeAndSubType(Object, Type, Boolean)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type,System.Boolean)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_System_Boolean_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type,System.Boolean)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_System_Boolean_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object)
+  commentId: M:System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object)
+  isExternal: true
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_
+  name: CompareTypeAndSubType<T>(object)
+  nameWithType: Object_CB_Extension.CompareTypeAndSubType<T>(object)
+  fullName: System.Object_CB_Extension.CompareTypeAndSubType<T>(object)
+  nameWithType.vb: Object_CB_Extension.CompareTypeAndSubType(Of T)(Object)
+  fullName.vb: System.Object_CB_Extension.CompareTypeAndSubType(Of T)(Object)
+  name.vb: CompareTypeAndSubType(Of T)(Object)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object,System.Boolean)
+  commentId: M:System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object,System.Boolean)
+  isExternal: true
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_System_Boolean_
+  name: CompareTypeAndSubType<T>(object, bool)
+  nameWithType: Object_CB_Extension.CompareTypeAndSubType<T>(object, bool)
+  fullName: System.Object_CB_Extension.CompareTypeAndSubType<T>(object, bool)
+  nameWithType.vb: Object_CB_Extension.CompareTypeAndSubType(Of T)(Object, Boolean)
+  fullName.vb: System.Object_CB_Extension.CompareTypeAndSubType(Of T)(Object, Boolean)
+  name.vb: CompareTypeAndSubType(Of T)(Object, Boolean)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object,System.Boolean)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_System_Boolean_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object,System.Boolean)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_System_Boolean_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object_CB_Extension.CompareType``1(System.Object)
+  commentId: M:System.Object_CB_Extension.CompareType``1(System.Object)
+  isExternal: true
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType__1_System_Object_
+  name: CompareType<T>(object)
+  nameWithType: Object_CB_Extension.CompareType<T>(object)
+  fullName: System.Object_CB_Extension.CompareType<T>(object)
+  nameWithType.vb: Object_CB_Extension.CompareType(Of T)(Object)
+  fullName.vb: System.Object_CB_Extension.CompareType(Of T)(Object)
+  name.vb: CompareType(Of T)(Object)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareType``1(System.Object)
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareType``1(System.Object)
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Cobilas.Collections.Generic.LongList`1.Count*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.Count
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_Count
+  name: Count
+  nameWithType: LongList<T>.Count
+  fullName: Cobilas.Collections.Generic.LongList<T>.Count
+  nameWithType.vb: LongList(Of T).Count
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).Count
+- uid: Cobilas.Collections.Generic.ILongCollection{{T}}.Count
+  commentId: P:Cobilas.Collections.Generic.ILongCollection{`0}.Count
+  parent: Cobilas.Collections.Generic.ILongCollection{{T}}
+  definition: Cobilas.Collections.Generic.ILongCollection`1.Count
+  href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_Count
+  name: Count
+  nameWithType: ILongCollection<T>.Count
+  fullName: Cobilas.Collections.Generic.ILongCollection<T>.Count
+  nameWithType.vb: ILongCollection(Of T).Count
+  fullName.vb: Cobilas.Collections.Generic.ILongCollection(Of T).Count
+- uid: Cobilas.Collections.Generic.IReadOnlyLongCollection{{T}}.Count
+  commentId: P:Cobilas.Collections.Generic.IReadOnlyLongCollection{`0}.Count
+  parent: Cobilas.Collections.Generic.IReadOnlyLongCollection{{T}}
+  definition: Cobilas.Collections.Generic.IReadOnlyLongCollection`1.Count
+  href: Cobilas.Collections.Generic.IReadOnlyLongCollection-1.html#Cobilas_Collections_Generic_IReadOnlyLongCollection_1_Count
+  name: Count
+  nameWithType: IReadOnlyLongCollection<T>.Count
+  fullName: Cobilas.Collections.Generic.IReadOnlyLongCollection<T>.Count
+  nameWithType.vb: IReadOnlyLongCollection(Of T).Count
+  fullName.vb: Cobilas.Collections.Generic.IReadOnlyLongCollection(Of T).Count
+- uid: Cobilas.Collections.ILongCollection.Count
+  commentId: P:Cobilas.Collections.ILongCollection.Count
+  parent: Cobilas.Collections.ILongCollection
+  href: Cobilas.Collections.ILongCollection.html#Cobilas_Collections_ILongCollection_Count
+  name: Count
+  nameWithType: ILongCollection.Count
+  fullName: Cobilas.Collections.ILongCollection.Count
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: Cobilas.Collections.Generic.ILongCollection`1.Count
+  commentId: P:Cobilas.Collections.Generic.ILongCollection`1.Count
+  href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_Count
+  name: Count
+  nameWithType: ILongCollection<T>.Count
+  fullName: Cobilas.Collections.Generic.ILongCollection<T>.Count
+  nameWithType.vb: ILongCollection(Of T).Count
+  fullName.vb: Cobilas.Collections.Generic.ILongCollection(Of T).Count
+- uid: Cobilas.Collections.Generic.IReadOnlyLongCollection`1.Count
+  commentId: P:Cobilas.Collections.Generic.IReadOnlyLongCollection`1.Count
+  href: Cobilas.Collections.Generic.IReadOnlyLongCollection-1.html#Cobilas_Collections_Generic_IReadOnlyLongCollection_1_Count
+  name: Count
+  nameWithType: IReadOnlyLongCollection<T>.Count
+  fullName: Cobilas.Collections.Generic.IReadOnlyLongCollection<T>.Count
+  nameWithType.vb: IReadOnlyLongCollection(Of T).Count
+  fullName.vb: Cobilas.Collections.Generic.IReadOnlyLongCollection(Of T).Count
+- uid: Cobilas.Collections.Generic.LongList`1.Capacity*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.Capacity
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_Capacity
+  name: Capacity
+  nameWithType: LongList<T>.Capacity
+  fullName: Cobilas.Collections.Generic.LongList<T>.Capacity
+  nameWithType.vb: LongList(Of T).Capacity
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).Capacity
+- uid: Cobilas.Collections.Generic.LongList`1.IsReadOnly*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.IsReadOnly
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_IsReadOnly
+  name: IsReadOnly
+  nameWithType: LongList<T>.IsReadOnly
+  fullName: Cobilas.Collections.Generic.LongList<T>.IsReadOnly
+  nameWithType.vb: LongList(Of T).IsReadOnly
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).IsReadOnly
+- uid: Cobilas.Collections.Generic.ILongCollection{{T}}.IsReadOnly
+  commentId: P:Cobilas.Collections.Generic.ILongCollection{`0}.IsReadOnly
+  parent: Cobilas.Collections.Generic.ILongCollection{{T}}
+  definition: Cobilas.Collections.Generic.ILongCollection`1.IsReadOnly
+  href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_IsReadOnly
+  name: IsReadOnly
+  nameWithType: ILongCollection<T>.IsReadOnly
+  fullName: Cobilas.Collections.Generic.ILongCollection<T>.IsReadOnly
+  nameWithType.vb: ILongCollection(Of T).IsReadOnly
+  fullName.vb: Cobilas.Collections.Generic.ILongCollection(Of T).IsReadOnly
+- uid: Cobilas.Collections.ILongList.IsReadOnly
+  commentId: P:Cobilas.Collections.ILongList.IsReadOnly
+  parent: Cobilas.Collections.ILongList
+  href: Cobilas.Collections.ILongList.html#Cobilas_Collections_ILongList_IsReadOnly
+  name: IsReadOnly
+  nameWithType: ILongList.IsReadOnly
+  fullName: Cobilas.Collections.ILongList.IsReadOnly
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Cobilas.Collections.Generic.ILongCollection`1.IsReadOnly
+  commentId: P:Cobilas.Collections.Generic.ILongCollection`1.IsReadOnly
+  href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_IsReadOnly
+  name: IsReadOnly
+  nameWithType: ILongCollection<T>.IsReadOnly
+  fullName: Cobilas.Collections.Generic.ILongCollection<T>.IsReadOnly
+  nameWithType.vb: ILongCollection(Of T).IsReadOnly
+  fullName.vb: Cobilas.Collections.Generic.ILongCollection(Of T).IsReadOnly
+- uid: Cobilas.Collections.Generic.LongList`1.Item*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.Item
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_Item_System_Int64_
+  name: this
+  nameWithType: LongList<T>.this
+  fullName: Cobilas.Collections.Generic.LongList<T>.this
+  nameWithType.vb: LongList(Of T).this[]
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).this[]
+  name.vb: this[]
+- uid: Cobilas.Collections.Generic.ILongList{{T}}.Item(System.Int64)
+  commentId: P:Cobilas.Collections.Generic.ILongList{`0}.Item(System.Int64)
+  parent: Cobilas.Collections.Generic.ILongList{{T}}
+  definition: Cobilas.Collections.Generic.ILongList`1.Item(System.Int64)
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: this[long]
+  nameWithType: ILongList<T>.this[long]
+  fullName: Cobilas.Collections.Generic.ILongList<T>.this[long]
+  nameWithType.vb: ILongList(Of T).this[](Long)
+  fullName.vb: Cobilas.Collections.Generic.ILongList(Of T).this[](Long)
+  name.vb: this[](Long)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ']'
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.ILongList{`0}.Item(System.Int64)
+    name: this[]
+    href: Cobilas.Collections.Generic.ILongList-1.html#Cobilas_Collections_Generic_ILongList_1_Item_System_Int64_
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: Cobilas.Collections.Generic.IReadOnlyLongList{{T}}.Item(System.Int64)
+  commentId: P:Cobilas.Collections.Generic.IReadOnlyLongList{`0}.Item(System.Int64)
+  parent: Cobilas.Collections.Generic.IReadOnlyLongList{{T}}
+  definition: Cobilas.Collections.Generic.IReadOnlyLongList`1.Item(System.Int64)
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: this[long]
+  nameWithType: IReadOnlyLongList<T>.this[long]
+  fullName: Cobilas.Collections.Generic.IReadOnlyLongList<T>.this[long]
+  nameWithType.vb: IReadOnlyLongList(Of T).this[](Long)
+  fullName.vb: Cobilas.Collections.Generic.IReadOnlyLongList(Of T).this[](Long)
+  name.vb: this[](Long)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ']'
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.IReadOnlyLongList{`0}.Item(System.Int64)
+    name: this[]
+    href: Cobilas.Collections.Generic.IReadOnlyLongList-1.html#Cobilas_Collections_Generic_IReadOnlyLongList_1_Item_System_Int64_
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Cobilas.Collections.Generic.ILongList`1.Item(System.Int64)
+  commentId: P:Cobilas.Collections.Generic.ILongList`1.Item(System.Int64)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: this[long]
+  nameWithType: ILongList<T>.this[long]
+  fullName: Cobilas.Collections.Generic.ILongList<T>.this[long]
+  nameWithType.vb: ILongList(Of T).this[](Long)
+  fullName.vb: Cobilas.Collections.Generic.ILongList(Of T).this[](Long)
+  name.vb: this[](Long)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ']'
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.ILongList`1.Item(System.Int64)
+    name: this[]
+    href: Cobilas.Collections.Generic.ILongList-1.html#Cobilas_Collections_Generic_ILongList_1_Item_System_Int64_
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: Cobilas.Collections.Generic.IReadOnlyLongList`1.Item(System.Int64)
+  commentId: P:Cobilas.Collections.Generic.IReadOnlyLongList`1.Item(System.Int64)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: this[long]
+  nameWithType: IReadOnlyLongList<T>.this[long]
+  fullName: Cobilas.Collections.Generic.IReadOnlyLongList<T>.this[long]
+  nameWithType.vb: IReadOnlyLongList(Of T).this[](Long)
+  fullName.vb: Cobilas.Collections.Generic.IReadOnlyLongList(Of T).this[](Long)
+  name.vb: this[](Long)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ']'
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.IReadOnlyLongList`1.Item(System.Int64)
+    name: this[]
+    href: Cobilas.Collections.Generic.IReadOnlyLongList-1.html#Cobilas_Collections_Generic_IReadOnlyLongList_1_Item_System_Int64_
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Cobilas.Collections.Generic.LongList`1.#ctor*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.#ctor
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1__ctor
+  name: LongList
+  nameWithType: LongList<T>.LongList
+  fullName: Cobilas.Collections.Generic.LongList<T>.LongList
+  nameWithType.vb: LongList(Of T).New
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).New
+  name.vb: New
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: T
+  - name: (
+  - name: )
+- uid: Cobilas.Collections.Generic.LongList`1.AsReadOnly*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.AsReadOnly
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_AsReadOnly
+  name: AsReadOnly
+  nameWithType: LongList<T>.AsReadOnly
+  fullName: Cobilas.Collections.Generic.LongList<T>.AsReadOnly
+  nameWithType.vb: LongList(Of T).AsReadOnly
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).AsReadOnly
+- uid: Cobilas.Collections.Generic.ReadOnlyLongCollection{{T}}
+  commentId: T:Cobilas.Collections.Generic.ReadOnlyLongCollection{`0}
+  parent: Cobilas.Collections.Generic
+  definition: Cobilas.Collections.Generic.ReadOnlyLongCollection`1
+  href: Cobilas.Collections.Generic.ReadOnlyLongCollection-1.html
+  name: ReadOnlyLongCollection<T>
+  nameWithType: ReadOnlyLongCollection<T>
+  fullName: Cobilas.Collections.Generic.ReadOnlyLongCollection<T>
+  nameWithType.vb: ReadOnlyLongCollection(Of T)
+  fullName.vb: Cobilas.Collections.Generic.ReadOnlyLongCollection(Of T)
+  name.vb: ReadOnlyLongCollection(Of T)
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.ReadOnlyLongCollection`1
+    name: ReadOnlyLongCollection
+    href: Cobilas.Collections.Generic.ReadOnlyLongCollection-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.ReadOnlyLongCollection`1
+    name: ReadOnlyLongCollection
+    href: Cobilas.Collections.Generic.ReadOnlyLongCollection-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Cobilas.Collections.Generic.ReadOnlyLongCollection`1
+  commentId: T:Cobilas.Collections.Generic.ReadOnlyLongCollection`1
+  href: Cobilas.Collections.Generic.ReadOnlyLongCollection-1.html
+  name: ReadOnlyLongCollection<T>
+  nameWithType: ReadOnlyLongCollection<T>
+  fullName: Cobilas.Collections.Generic.ReadOnlyLongCollection<T>
+  nameWithType.vb: ReadOnlyLongCollection(Of T)
+  fullName.vb: Cobilas.Collections.Generic.ReadOnlyLongCollection(Of T)
+  name.vb: ReadOnlyLongCollection(Of T)
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.ReadOnlyLongCollection`1
+    name: ReadOnlyLongCollection
+    href: Cobilas.Collections.Generic.ReadOnlyLongCollection-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.ReadOnlyLongCollection`1
+    name: ReadOnlyLongCollection
+    href: Cobilas.Collections.Generic.ReadOnlyLongCollection-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Cobilas.Collections.Generic.LongList`1
+  commentId: T:Cobilas.Collections.Generic.LongList`1
+  parent: Cobilas.Collections.Generic
+  href: Cobilas.Collections.Generic.LongList-1.html
+  name: LongList<T>
+  nameWithType: LongList<T>
+  fullName: Cobilas.Collections.Generic.LongList<T>
+  nameWithType.vb: LongList(Of T)
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T)
+  name.vb: LongList(Of T)
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.LongList`1
+    name: LongList
+    href: Cobilas.Collections.Generic.LongList-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.LongList`1
+    name: LongList
+    href: Cobilas.Collections.Generic.LongList-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: Cobilas.Collections.Generic.LongList`1.GetRange*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.GetRange
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_GetRange_System_Int64_System_Int64_
+  name: GetRange
+  nameWithType: LongList<T>.GetRange
+  fullName: Cobilas.Collections.Generic.LongList<T>.GetRange
+  nameWithType.vb: LongList(Of T).GetRange
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).GetRange
+- uid: Cobilas.Collections.Generic.LongList`1.Add*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.Add
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_Add__0_
+  name: Add
+  nameWithType: LongList<T>.Add
+  fullName: Cobilas.Collections.Generic.LongList<T>.Add
+  nameWithType.vb: LongList(Of T).Add
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).Add
+- uid: Cobilas.Collections.Generic.ILongCollection{{T}}.Add({T})
+  commentId: M:Cobilas.Collections.Generic.ILongCollection{`0}.Add(`0)
+  parent: Cobilas.Collections.Generic.ILongCollection{{T}}
+  definition: Cobilas.Collections.Generic.ILongCollection`1.Add(`0)
+  href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_Add__0_
+  name: Add(T)
+  nameWithType: ILongCollection<T>.Add(T)
+  fullName: Cobilas.Collections.Generic.ILongCollection<T>.Add(T)
+  nameWithType.vb: ILongCollection(Of T).Add(T)
+  fullName.vb: Cobilas.Collections.Generic.ILongCollection(Of T).Add(T)
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.ILongCollection{`0}.Add(`0)
+    name: Add
+    href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_Add__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.ILongCollection{`0}.Add(`0)
+    name: Add
+    href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_Add__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: Cobilas.Collections.Generic.ILongCollection`1.Add(`0)
+  commentId: M:Cobilas.Collections.Generic.ILongCollection`1.Add(`0)
+  href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_Add__0_
+  name: Add(T)
+  nameWithType: ILongCollection<T>.Add(T)
+  fullName: Cobilas.Collections.Generic.ILongCollection<T>.Add(T)
+  nameWithType.vb: ILongCollection(Of T).Add(T)
+  fullName.vb: Cobilas.Collections.Generic.ILongCollection(Of T).Add(T)
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.ILongCollection`1.Add(`0)
+    name: Add
+    href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_Add__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.ILongCollection`1.Add(`0)
+    name: Add
+    href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_Add__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: Cobilas.Collections.Generic.LongList`1.AddRange*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.AddRange
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_AddRange_System_Collections_Generic_IEnumerable__0__
+  name: AddRange
+  nameWithType: LongList<T>.AddRange
+  fullName: Cobilas.Collections.Generic.LongList<T>.AddRange
+  nameWithType.vb: LongList(Of T).AddRange
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).AddRange
+- uid: Cobilas.Collections.Generic.LongList`1.Clear*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.Clear
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_Clear
+  name: Clear
+  nameWithType: LongList<T>.Clear
+  fullName: Cobilas.Collections.Generic.LongList<T>.Clear
+  nameWithType.vb: LongList(Of T).Clear
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).Clear
+- uid: Cobilas.Collections.Generic.ILongCollection{{T}}.Clear
+  commentId: M:Cobilas.Collections.Generic.ILongCollection{`0}.Clear
+  parent: Cobilas.Collections.Generic.ILongCollection{{T}}
+  definition: Cobilas.Collections.Generic.ILongCollection`1.Clear
+  href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_Clear
+  name: Clear()
+  nameWithType: ILongCollection<T>.Clear()
+  fullName: Cobilas.Collections.Generic.ILongCollection<T>.Clear()
+  nameWithType.vb: ILongCollection(Of T).Clear()
+  fullName.vb: Cobilas.Collections.Generic.ILongCollection(Of T).Clear()
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.ILongCollection{`0}.Clear
+    name: Clear
+    href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_Clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.ILongCollection{`0}.Clear
+    name: Clear
+    href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_Clear
+  - name: (
+  - name: )
+- uid: Cobilas.Collections.ILongList.Clear
+  commentId: M:Cobilas.Collections.ILongList.Clear
+  parent: Cobilas.Collections.ILongList
+  href: Cobilas.Collections.ILongList.html#Cobilas_Collections_ILongList_Clear
+  name: Clear()
+  nameWithType: ILongList.Clear()
+  fullName: Cobilas.Collections.ILongList.Clear()
+  spec.csharp:
+  - uid: Cobilas.Collections.ILongList.Clear
+    name: Clear
+    href: Cobilas.Collections.ILongList.html#Cobilas_Collections_ILongList_Clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Cobilas.Collections.ILongList.Clear
+    name: Clear
+    href: Cobilas.Collections.ILongList.html#Cobilas_Collections_ILongList_Clear
+  - name: (
+  - name: )
+- uid: Cobilas.Collections.Generic.ILongCollection`1.Clear
+  commentId: M:Cobilas.Collections.Generic.ILongCollection`1.Clear
+  href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_Clear
+  name: Clear()
+  nameWithType: ILongCollection<T>.Clear()
+  fullName: Cobilas.Collections.Generic.ILongCollection<T>.Clear()
+  nameWithType.vb: ILongCollection(Of T).Clear()
+  fullName.vb: Cobilas.Collections.Generic.ILongCollection(Of T).Clear()
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.ILongCollection`1.Clear
+    name: Clear
+    href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_Clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.ILongCollection`1.Clear
+    name: Clear
+    href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_Clear
+  - name: (
+  - name: )
+- uid: Cobilas.Collections.Generic.LongList`1.Contains*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.Contains
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_Contains__0_
+  name: Contains
+  nameWithType: LongList<T>.Contains
+  fullName: Cobilas.Collections.Generic.LongList<T>.Contains
+  nameWithType.vb: LongList(Of T).Contains
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).Contains
+- uid: Cobilas.Collections.Generic.ILongCollection{{T}}.Contains({T})
+  commentId: M:Cobilas.Collections.Generic.ILongCollection{`0}.Contains(`0)
+  parent: Cobilas.Collections.Generic.ILongCollection{{T}}
+  definition: Cobilas.Collections.Generic.ILongCollection`1.Contains(`0)
+  href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_Contains__0_
+  name: Contains(T)
+  nameWithType: ILongCollection<T>.Contains(T)
+  fullName: Cobilas.Collections.Generic.ILongCollection<T>.Contains(T)
+  nameWithType.vb: ILongCollection(Of T).Contains(T)
+  fullName.vb: Cobilas.Collections.Generic.ILongCollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.ILongCollection{`0}.Contains(`0)
+    name: Contains
+    href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_Contains__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.ILongCollection{`0}.Contains(`0)
+    name: Contains
+    href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_Contains__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: Cobilas.Collections.Generic.ILongCollection`1.Contains(`0)
+  commentId: M:Cobilas.Collections.Generic.ILongCollection`1.Contains(`0)
+  href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_Contains__0_
+  name: Contains(T)
+  nameWithType: ILongCollection<T>.Contains(T)
+  fullName: Cobilas.Collections.Generic.ILongCollection<T>.Contains(T)
+  nameWithType.vb: ILongCollection(Of T).Contains(T)
+  fullName.vb: Cobilas.Collections.Generic.ILongCollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.ILongCollection`1.Contains(`0)
+    name: Contains
+    href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_Contains__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.ILongCollection`1.Contains(`0)
+    name: Contains
+    href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_Contains__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Predicate{{T}}
+  commentId: T:System.Predicate{``0}
+  parent: System
+  definition: System.Predicate`1
+  href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  name: Predicate<T>
+  nameWithType: Predicate<T>
+  fullName: System.Predicate<T>
+  nameWithType.vb: Predicate(Of T)
+  fullName.vb: System.Predicate(Of T)
+  name.vb: Predicate(Of T)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Predicate`1
+  commentId: T:System.Predicate`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  name: Predicate<T>
+  nameWithType: Predicate<T>
+  fullName: System.Predicate<T>
+  nameWithType.vb: Predicate(Of T)
+  fullName.vb: System.Predicate(Of T)
+  name.vb: Predicate(Of T)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Cobilas.Collections.Generic.LongList`1.CopyTo*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.CopyTo
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_CopyTo__0___System_Int64_
+  name: CopyTo
+  nameWithType: LongList<T>.CopyTo
+  fullName: Cobilas.Collections.Generic.LongList<T>.CopyTo
+  nameWithType.vb: LongList(Of T).CopyTo
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).CopyTo
+- uid: Cobilas.Collections.Generic.ILongCollection{{T}}.CopyTo({T}[],System.Int64)
+  commentId: M:Cobilas.Collections.Generic.ILongCollection{`0}.CopyTo(`0[],System.Int64)
+  parent: Cobilas.Collections.Generic.ILongCollection{{T}}
+  definition: Cobilas.Collections.Generic.ILongCollection`1.CopyTo(`0[],System.Int64)
+  href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_CopyTo__0___System_Int64_
+  name: CopyTo(T[], long)
+  nameWithType: ILongCollection<T>.CopyTo(T[], long)
+  fullName: Cobilas.Collections.Generic.ILongCollection<T>.CopyTo(T[], long)
+  nameWithType.vb: ILongCollection(Of T).CopyTo(T(), Long)
+  fullName.vb: Cobilas.Collections.Generic.ILongCollection(Of T).CopyTo(T(), Long)
+  name.vb: CopyTo(T(), Long)
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.ILongCollection{`0}.CopyTo(`0[],System.Int64)
+    name: CopyTo
+    href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_CopyTo__0___System_Int64_
+  - name: (
+  - name: T
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.ILongCollection{`0}.CopyTo(`0[],System.Int64)
+    name: CopyTo
+    href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_CopyTo__0___System_Int64_
+  - name: (
+  - name: T
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: Cobilas.Collections.Generic.ILongCollection`1.CopyTo(`0[],System.Int64)
+  commentId: M:Cobilas.Collections.Generic.ILongCollection`1.CopyTo(`0[],System.Int64)
+  isExternal: true
+  href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_CopyTo__0___System_Int64_
+  name: CopyTo(T[], long)
+  nameWithType: ILongCollection<T>.CopyTo(T[], long)
+  fullName: Cobilas.Collections.Generic.ILongCollection<T>.CopyTo(T[], long)
+  nameWithType.vb: ILongCollection(Of T).CopyTo(T(), Long)
+  fullName.vb: Cobilas.Collections.Generic.ILongCollection(Of T).CopyTo(T(), Long)
+  name.vb: CopyTo(T(), Long)
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.ILongCollection`1.CopyTo(`0[],System.Int64)
+    name: CopyTo
+    href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_CopyTo__0___System_Int64_
+  - name: (
+  - name: T
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.ILongCollection`1.CopyTo(`0[],System.Int64)
+    name: CopyTo
+    href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_CopyTo__0___System_Int64_
+  - name: (
+  - name: T
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: Cobilas.Collections.Generic.LongList`1.GetEnumerator*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.GetEnumerator
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_GetEnumerator
+  name: GetEnumerator
+  nameWithType: LongList<T>.GetEnumerator
+  fullName: Cobilas.Collections.Generic.LongList<T>.GetEnumerator
+  nameWithType.vb: LongList(Of T).GetEnumerator
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{`0}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{{T}}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable{`0}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable{`0}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator{{T}}
+  commentId: T:System.Collections.Generic.IEnumerator{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Cobilas.Collections.Generic.LongList`1.IndexOf*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.IndexOf
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_IndexOf__0_
+  name: IndexOf
+  nameWithType: LongList<T>.IndexOf
+  fullName: Cobilas.Collections.Generic.LongList<T>.IndexOf
+  nameWithType.vb: LongList(Of T).IndexOf
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).IndexOf
+- uid: Cobilas.Collections.Generic.ILongList{{T}}.IndexOf({T})
+  commentId: M:Cobilas.Collections.Generic.ILongList{`0}.IndexOf(`0)
+  parent: Cobilas.Collections.Generic.ILongList{{T}}
+  definition: Cobilas.Collections.Generic.ILongList`1.IndexOf(`0)
+  href: Cobilas.Collections.Generic.ILongList-1.html#Cobilas_Collections_Generic_ILongList_1_IndexOf__0_
+  name: IndexOf(T)
+  nameWithType: ILongList<T>.IndexOf(T)
+  fullName: Cobilas.Collections.Generic.ILongList<T>.IndexOf(T)
+  nameWithType.vb: ILongList(Of T).IndexOf(T)
+  fullName.vb: Cobilas.Collections.Generic.ILongList(Of T).IndexOf(T)
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.ILongList{`0}.IndexOf(`0)
+    name: IndexOf
+    href: Cobilas.Collections.Generic.ILongList-1.html#Cobilas_Collections_Generic_ILongList_1_IndexOf__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.ILongList{`0}.IndexOf(`0)
+    name: IndexOf
+    href: Cobilas.Collections.Generic.ILongList-1.html#Cobilas_Collections_Generic_ILongList_1_IndexOf__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: Cobilas.Collections.Generic.ILongList`1.IndexOf(`0)
+  commentId: M:Cobilas.Collections.Generic.ILongList`1.IndexOf(`0)
+  href: Cobilas.Collections.Generic.ILongList-1.html#Cobilas_Collections_Generic_ILongList_1_IndexOf__0_
+  name: IndexOf(T)
+  nameWithType: ILongList<T>.IndexOf(T)
+  fullName: Cobilas.Collections.Generic.ILongList<T>.IndexOf(T)
+  nameWithType.vb: ILongList(Of T).IndexOf(T)
+  fullName.vb: Cobilas.Collections.Generic.ILongList(Of T).IndexOf(T)
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.ILongList`1.IndexOf(`0)
+    name: IndexOf
+    href: Cobilas.Collections.Generic.ILongList-1.html#Cobilas_Collections_Generic_ILongList_1_IndexOf__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.ILongList`1.IndexOf(`0)
+    name: IndexOf
+    href: Cobilas.Collections.Generic.ILongList-1.html#Cobilas_Collections_Generic_ILongList_1_IndexOf__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: Cobilas.Collections.Generic.LongList`1.Insert*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.Insert
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_Insert_System_Int64__0_
+  name: Insert
+  nameWithType: LongList<T>.Insert
+  fullName: Cobilas.Collections.Generic.LongList<T>.Insert
+  nameWithType.vb: LongList(Of T).Insert
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).Insert
+- uid: Cobilas.Collections.Generic.ILongList{{T}}.Insert(System.Int64,{T})
+  commentId: M:Cobilas.Collections.Generic.ILongList{`0}.Insert(System.Int64,`0)
+  parent: Cobilas.Collections.Generic.ILongList{{T}}
+  definition: Cobilas.Collections.Generic.ILongList`1.Insert(System.Int64,`0)
+  href: Cobilas.Collections.Generic.ILongList-1.html#Cobilas_Collections_Generic_ILongList_1_Insert_System_Int64__0_
+  name: Insert(long, T)
+  nameWithType: ILongList<T>.Insert(long, T)
+  fullName: Cobilas.Collections.Generic.ILongList<T>.Insert(long, T)
+  nameWithType.vb: ILongList(Of T).Insert(Long, T)
+  fullName.vb: Cobilas.Collections.Generic.ILongList(Of T).Insert(Long, T)
+  name.vb: Insert(Long, T)
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.ILongList{`0}.Insert(System.Int64,`0)
+    name: Insert
+    href: Cobilas.Collections.Generic.ILongList-1.html#Cobilas_Collections_Generic_ILongList_1_Insert_System_Int64__0_
+  - name: (
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.ILongList{`0}.Insert(System.Int64,`0)
+    name: Insert
+    href: Cobilas.Collections.Generic.ILongList-1.html#Cobilas_Collections_Generic_ILongList_1_Insert_System_Int64__0_
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Cobilas.Collections.Generic.ILongList`1.Insert(System.Int64,`0)
+  commentId: M:Cobilas.Collections.Generic.ILongList`1.Insert(System.Int64,`0)
+  isExternal: true
+  href: Cobilas.Collections.Generic.ILongList-1.html#Cobilas_Collections_Generic_ILongList_1_Insert_System_Int64__0_
+  name: Insert(long, T)
+  nameWithType: ILongList<T>.Insert(long, T)
+  fullName: Cobilas.Collections.Generic.ILongList<T>.Insert(long, T)
+  nameWithType.vb: ILongList(Of T).Insert(Long, T)
+  fullName.vb: Cobilas.Collections.Generic.ILongList(Of T).Insert(Long, T)
+  name.vb: Insert(Long, T)
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.ILongList`1.Insert(System.Int64,`0)
+    name: Insert
+    href: Cobilas.Collections.Generic.ILongList-1.html#Cobilas_Collections_Generic_ILongList_1_Insert_System_Int64__0_
+  - name: (
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.ILongList`1.Insert(System.Int64,`0)
+    name: Insert
+    href: Cobilas.Collections.Generic.ILongList-1.html#Cobilas_Collections_Generic_ILongList_1_Insert_System_Int64__0_
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Cobilas.Collections.Generic.LongList`1.InsertRange*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.InsertRange
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_InsertRange_System_Int64_System_Collections_Generic_IEnumerable__0__
+  name: InsertRange
+  nameWithType: LongList<T>.InsertRange
+  fullName: Cobilas.Collections.Generic.LongList<T>.InsertRange
+  nameWithType.vb: LongList(Of T).InsertRange
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).InsertRange
+- uid: Cobilas.Collections.Generic.LongList`1.Remove*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.Remove
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_Remove__0_
+  name: Remove
+  nameWithType: LongList<T>.Remove
+  fullName: Cobilas.Collections.Generic.LongList<T>.Remove
+  nameWithType.vb: LongList(Of T).Remove
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).Remove
+- uid: Cobilas.Collections.Generic.ILongCollection{{T}}.Remove({T})
+  commentId: M:Cobilas.Collections.Generic.ILongCollection{`0}.Remove(`0)
+  parent: Cobilas.Collections.Generic.ILongCollection{{T}}
+  definition: Cobilas.Collections.Generic.ILongCollection`1.Remove(`0)
+  href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_Remove__0_
+  name: Remove(T)
+  nameWithType: ILongCollection<T>.Remove(T)
+  fullName: Cobilas.Collections.Generic.ILongCollection<T>.Remove(T)
+  nameWithType.vb: ILongCollection(Of T).Remove(T)
+  fullName.vb: Cobilas.Collections.Generic.ILongCollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.ILongCollection{`0}.Remove(`0)
+    name: Remove
+    href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_Remove__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.ILongCollection{`0}.Remove(`0)
+    name: Remove
+    href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_Remove__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: Cobilas.Collections.Generic.ILongCollection`1.Remove(`0)
+  commentId: M:Cobilas.Collections.Generic.ILongCollection`1.Remove(`0)
+  href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_Remove__0_
+  name: Remove(T)
+  nameWithType: ILongCollection<T>.Remove(T)
+  fullName: Cobilas.Collections.Generic.ILongCollection<T>.Remove(T)
+  nameWithType.vb: ILongCollection(Of T).Remove(T)
+  fullName.vb: Cobilas.Collections.Generic.ILongCollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.ILongCollection`1.Remove(`0)
+    name: Remove
+    href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_Remove__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.ILongCollection`1.Remove(`0)
+    name: Remove
+    href: Cobilas.Collections.Generic.ILongCollection-1.html#Cobilas_Collections_Generic_ILongCollection_1_Remove__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: Cobilas.Collections.Generic.LongList`1.RemoveAt*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.RemoveAt
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_RemoveAt_System_Int64_
+  name: RemoveAt
+  nameWithType: LongList<T>.RemoveAt
+  fullName: Cobilas.Collections.Generic.LongList<T>.RemoveAt
+  nameWithType.vb: LongList(Of T).RemoveAt
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).RemoveAt
+- uid: Cobilas.Collections.Generic.ILongList{{T}}.RemoveAt(System.Int64)
+  commentId: M:Cobilas.Collections.Generic.ILongList{`0}.RemoveAt(System.Int64)
+  parent: Cobilas.Collections.Generic.ILongList{{T}}
+  definition: Cobilas.Collections.Generic.ILongList`1.RemoveAt(System.Int64)
+  href: Cobilas.Collections.Generic.ILongList-1.html#Cobilas_Collections_Generic_ILongList_1_RemoveAt_System_Int64_
+  name: RemoveAt(long)
+  nameWithType: ILongList<T>.RemoveAt(long)
+  fullName: Cobilas.Collections.Generic.ILongList<T>.RemoveAt(long)
+  nameWithType.vb: ILongList(Of T).RemoveAt(Long)
+  fullName.vb: Cobilas.Collections.Generic.ILongList(Of T).RemoveAt(Long)
+  name.vb: RemoveAt(Long)
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.ILongList{`0}.RemoveAt(System.Int64)
+    name: RemoveAt
+    href: Cobilas.Collections.Generic.ILongList-1.html#Cobilas_Collections_Generic_ILongList_1_RemoveAt_System_Int64_
+  - name: (
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.ILongList{`0}.RemoveAt(System.Int64)
+    name: RemoveAt
+    href: Cobilas.Collections.Generic.ILongList-1.html#Cobilas_Collections_Generic_ILongList_1_RemoveAt_System_Int64_
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: Cobilas.Collections.ILongList.RemoveAt(System.Int64)
+  commentId: M:Cobilas.Collections.ILongList.RemoveAt(System.Int64)
+  parent: Cobilas.Collections.ILongList
+  isExternal: true
+  href: Cobilas.Collections.ILongList.html#Cobilas_Collections_ILongList_RemoveAt_System_Int64_
+  name: RemoveAt(long)
+  nameWithType: ILongList.RemoveAt(long)
+  fullName: Cobilas.Collections.ILongList.RemoveAt(long)
+  nameWithType.vb: ILongList.RemoveAt(Long)
+  fullName.vb: Cobilas.Collections.ILongList.RemoveAt(Long)
+  name.vb: RemoveAt(Long)
+  spec.csharp:
+  - uid: Cobilas.Collections.ILongList.RemoveAt(System.Int64)
+    name: RemoveAt
+    href: Cobilas.Collections.ILongList.html#Cobilas_Collections_ILongList_RemoveAt_System_Int64_
+  - name: (
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: Cobilas.Collections.ILongList.RemoveAt(System.Int64)
+    name: RemoveAt
+    href: Cobilas.Collections.ILongList.html#Cobilas_Collections_ILongList_RemoveAt_System_Int64_
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: Cobilas.Collections.Generic.ILongList`1.RemoveAt(System.Int64)
+  commentId: M:Cobilas.Collections.Generic.ILongList`1.RemoveAt(System.Int64)
+  isExternal: true
+  href: Cobilas.Collections.Generic.ILongList-1.html#Cobilas_Collections_Generic_ILongList_1_RemoveAt_System_Int64_
+  name: RemoveAt(long)
+  nameWithType: ILongList<T>.RemoveAt(long)
+  fullName: Cobilas.Collections.Generic.ILongList<T>.RemoveAt(long)
+  nameWithType.vb: ILongList(Of T).RemoveAt(Long)
+  fullName.vb: Cobilas.Collections.Generic.ILongList(Of T).RemoveAt(Long)
+  name.vb: RemoveAt(Long)
+  spec.csharp:
+  - uid: Cobilas.Collections.Generic.ILongList`1.RemoveAt(System.Int64)
+    name: RemoveAt
+    href: Cobilas.Collections.Generic.ILongList-1.html#Cobilas_Collections_Generic_ILongList_1_RemoveAt_System_Int64_
+  - name: (
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: Cobilas.Collections.Generic.ILongList`1.RemoveAt(System.Int64)
+    name: RemoveAt
+    href: Cobilas.Collections.Generic.ILongList-1.html#Cobilas_Collections_Generic_ILongList_1_RemoveAt_System_Int64_
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Cobilas.Collections.Generic.LongList`1.RemoveAll*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.RemoveAll
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_RemoveAll_System_Predicate__0__
+  name: RemoveAll
+  nameWithType: LongList<T>.RemoveAll
+  fullName: Cobilas.Collections.Generic.LongList<T>.RemoveAll
+  nameWithType.vb: LongList(Of T).RemoveAll
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).RemoveAll
+- uid: Cobilas.Collections.Generic.LongList`1.RemoveRamge*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.RemoveRamge
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_RemoveRamge_System_Int64_System_Int64_
+  name: RemoveRamge
+  nameWithType: LongList<T>.RemoveRamge
+  fullName: Cobilas.Collections.Generic.LongList<T>.RemoveRamge
+  nameWithType.vb: LongList(Of T).RemoveRamge
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).RemoveRamge
+- uid: Cobilas.Collections.Generic.LongList`1.Clone*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.Clone
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_Clone
+  name: Clone
+  nameWithType: LongList<T>.Clone
+  fullName: Cobilas.Collections.Generic.LongList<T>.Clone
+  nameWithType.vb: LongList(Of T).Clone
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).Clone
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+- uid: Cobilas.Collections.Generic.LongList`1.ToArray*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.ToArray
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_ToArray
+  name: ToArray
+  nameWithType: LongList<T>.ToArray
+  fullName: Cobilas.Collections.Generic.LongList<T>.ToArray
+  nameWithType.vb: LongList(Of T).ToArray
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).ToArray
+- uid: System.RankException
+  commentId: T:System.RankException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.rankexception
+  name: RankException
+  nameWithType: RankException
+  fullName: System.RankException
+- uid: Cobilas.Collections.Generic.LongList`1.Reverse*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.Reverse
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_Reverse_System_Int64_System_Int64_
+  name: Reverse
+  nameWithType: LongList<T>.Reverse
+  fullName: Cobilas.Collections.Generic.LongList<T>.Reverse
+  nameWithType.vb: LongList(Of T).Reverse
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).Reverse
+- uid: Cobilas.Collections.Generic.LongList`1.Find*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.Find
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_Find_System_Predicate__0__
+  name: Find
+  nameWithType: LongList<T>.Find
+  fullName: Cobilas.Collections.Generic.LongList<T>.Find
+  nameWithType.vb: LongList(Of T).Find
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).Find
+- uid: Cobilas.Collections.Generic.LongList`1.FindLast*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.FindLast
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_FindLast_System_Predicate__0__
+  name: FindLast
+  nameWithType: LongList<T>.FindLast
+  fullName: Cobilas.Collections.Generic.LongList<T>.FindLast
+  nameWithType.vb: LongList(Of T).FindLast
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).FindLast
+- uid: Cobilas.Collections.Generic.LongList`1.FindAll*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.FindAll
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_FindAll_System_Predicate__0__
+  name: FindAll
+  nameWithType: LongList<T>.FindAll
+  fullName: Cobilas.Collections.Generic.LongList<T>.FindAll
+  nameWithType.vb: LongList(Of T).FindAll
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).FindAll
+- uid: Cobilas.Collections.Generic.LongList`1.FindIndex*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.FindIndex
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_FindIndex_System_Predicate__0__
+  name: FindIndex
+  nameWithType: LongList<T>.FindIndex
+  fullName: Cobilas.Collections.Generic.LongList<T>.FindIndex
+  nameWithType.vb: LongList(Of T).FindIndex
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).FindIndex
+- uid: Cobilas.Collections.Generic.LongList`1.FindLastIndex*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.FindLastIndex
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_FindLastIndex_System_Predicate__0__
+  name: FindLastIndex
+  nameWithType: LongList<T>.FindLastIndex
+  fullName: Cobilas.Collections.Generic.LongList<T>.FindLastIndex
+  nameWithType.vb: LongList(Of T).FindLastIndex
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).FindLastIndex
+- uid: System.Array
+  commentId: T:System.Array
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.array
+  name: Array
+  nameWithType: Array
+  fullName: System.Array
+- uid: System.Converter`2
+  commentId: T:System.Converter`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.converter-2
+  name: Converter<TInput, TOutput>
+  nameWithType: Converter<TInput, TOutput>
+  fullName: System.Converter<TInput, TOutput>
+  nameWithType.vb: Converter(Of TInput, TOutput)
+  fullName.vb: System.Converter(Of TInput, TOutput)
+  name.vb: Converter(Of TInput, TOutput)
+  spec.csharp:
+  - uid: System.Converter`2
+    name: Converter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.converter-2
+  - name: <
+  - name: TInput
+  - name: ','
+  - name: " "
+  - name: TOutput
+  - name: '>'
+  spec.vb:
+  - uid: System.Converter`2
+    name: Converter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.converter-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInput
+  - name: ','
+  - name: " "
+  - name: TOutput
+  - name: )
+- uid: Cobilas.Collections.Generic.LongList`1.ConvertAll*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.ConvertAll
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_ConvertAll__1_System_Converter__0___0__
+  name: ConvertAll
+  nameWithType: LongList<T>.ConvertAll
+  fullName: Cobilas.Collections.Generic.LongList<T>.ConvertAll
+  nameWithType.vb: LongList(Of T).ConvertAll
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).ConvertAll
+- uid: System.Converter{{T},{TOutput}}
+  commentId: T:System.Converter{`0,``0}
+  parent: System
+  definition: System.Converter`2
+  href: https://learn.microsoft.com/dotnet/api/system.converter-2
+  name: Converter<T, TOutput>
+  nameWithType: Converter<T, TOutput>
+  fullName: System.Converter<T, TOutput>
+  nameWithType.vb: Converter(Of T, TOutput)
+  fullName.vb: System.Converter(Of T, TOutput)
+  name.vb: Converter(Of T, TOutput)
+  spec.csharp:
+  - uid: System.Converter`2
+    name: Converter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.converter-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TOutput
+  - name: '>'
+  spec.vb:
+  - uid: System.Converter`2
+    name: Converter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.converter-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TOutput
+  - name: )
+- uid: '{TOutput}[]'
+  isExternal: true
+  name: TOutput[]
+  nameWithType: TOutput[]
+  fullName: TOutput[]
+  nameWithType.vb: TOutput()
+  fullName.vb: TOutput()
+  name.vb: TOutput()
+  spec.csharp:
+  - name: TOutput
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: TOutput
+  - name: (
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: Cobilas.Collections.Generic.LongList`1.ForEach*
+  commentId: Overload:Cobilas.Collections.Generic.LongList`1.ForEach
+  href: Cobilas.Collections.Generic.LongList-1.html#Cobilas_Collections_Generic_LongList_1_ForEach_System_Action__0__
+  name: ForEach
+  nameWithType: LongList<T>.ForEach
+  fullName: Cobilas.Collections.Generic.LongList<T>.ForEach
+  nameWithType.vb: LongList(Of T).ForEach
+  fullName.vb: Cobilas.Collections.Generic.LongList(Of T).ForEach
+- uid: System.Action{{T}}
+  commentId: T:System.Action{`0}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

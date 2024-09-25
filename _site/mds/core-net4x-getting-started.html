@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Cobilas Core | Cobilas Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Cobilas Core | Cobilas Documentation ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.godot.utility.io/blob/main/mds/core-net4x-getting-started.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Cobilas Documentation">
+            Cobilas Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="cobilas-core">Cobilas Core</h1>
+
+<h3 id="descripition">Descripition</h3>
+<p>Cobilas Core Net4x is a utility library for CSharp.</p>
+<h2 id="json">Json</h2>
+<p>(namespace:Cobilas.IO.Serialization.Json)<br>
+Only present in the NuGet version.<br>
+The static class <code>Json</code> grants static read and write functions.</p>
+<h3 id="jsoncontractresolver">JsonContractResolver</h3>
+<p>Used by <code>JsonSerializer</code> to resolve a <code>JsonContract</code> for a given <code>Type</code>.
+Furthermore, <code>JsonContractResolver</code> determines how the fields of an <code>Object</code> will be serialized.</p>
+<h2 id="atlfarquivo-de-tradução-de-leitura-facil">ATLF(Arquivo de tradução de leitura facil)</h2>
+<p>ATLF (Easy to Read Translation File) can be used to create and load translations for apps.</p>
+<pre><code>#&gt;Header
+The use of the header is not mandatory.&lt;#
+#! version:/*std:1.0*/
+#! encoding:/*utf-8*/
+
+#&gt; Comment &lt;#
+#&gt; ATLF format(1.0) &lt;#
+
+#&gt; Uni-line marking &lt;#
+#! Tag1:/*value1*/
+
+#&gt; Multi-line marking &lt;#
+#! Tag2:/*
+value1
+value2
+value3
+value4
+*/
+</code></pre>
+<h3 id="how-to-read-atlf">How to read ATLF</h3>
+<pre><code class="lang-csharp">static void Main(string[] args) {
+    using ATLFReader reader = ATLFReader.Create(@&quot;C:\folder1\file.txt&quot;);
+    reader.Reader();
+    Console.WriteLine($&quot;tag.value.1:{reader.GetTag(&quot;tag.value.1&quot;)}&quot;);
+    Console.WriteLine($&quot;tag.value.2:{reader.GetTag(&quot;tag.value.2&quot;)}&quot;);
+    Console.WriteLine($&quot;tag.value.3:{reader.GetTag(&quot;tag.value.3&quot;)}&quot;);
+}
+</code></pre>
+<p>The other reading functions.</p>
+<ul>
+<li>The <code>ATLFNode[]:ATLFReader.GetHeader()</code> function allows you to get the header tags.</li>
+<li>The <code>ATLFNode[]:ATLFReader.GetAllComments()</code> function allows you to get all comments.
+The <code>ATLFNode[]:ATLFReader.GetTagGroup(string path)</code> function allows you to obtain tags that belong to the same path.</li>
+</ul>
+<pre><code class="lang-csharp">/*C:\folder1\file.txt
+* #! version:/*std:1.0* /
+* #! encoding:/*utf-8* /
+* 
+* #! tag.value.cop1:/*value1* /
+* #! tag.value.map.cop1:/*value1* /
+* #! tag.value.map.cop2:/*value1* /
+* #! tag.value.cop2:/*value1* /
+* #! tag.value.cop3:/*value1* /
+*/
+static void Main(string[] args) {
+    using ATLFReader reader = ATLFReader.Create(@&quot;C:\folder1\file.txt&quot;);
+    reader.Reader();
+    foreach(var item in reader.GetTagGroup(&quot;tag.value.map&quot;))
+        Console.WriteLine(item);
+}
+</code></pre>
+<h3 id="how-to-write-atlf">How to write ATLF</h3>
+<pre><code class="lang-csharp">static void Main(string[] args) {
+    using ATLFWriter writer = ATLFWriter.Create(File.OpenWrite(@&quot;C:\folder1\file.txt&quot;));
+    writer.WriteHeader();//The header is not mandatory but if you add a header, call this function first.
+    writer.WriteComment(&quot;my tag1&quot;);
+    writer.WriteNode(&quot;tag1&quot;, &quot;value1&quot;);
+    writer.WriteWhitespace(&quot;\r\n&quot;);//This function is called automatically when the `Indent` property is `true`. By default the `Indent` property is `true`.
+    writer.WriteComment(&quot;my tag2&quot;);
+    writer.WriteNode(&quot;tag2&quot;, &quot;value2&quot;);
+    writer.WriteWhitespace(2, &quot;\r\n&quot;);//This function is called automatically when the `Indent` property is `true`. By default the `Indent` property is `true`.
+    writer.WriteComment(&quot;my tag3&quot;);
+    writer.WriteNode(&quot;tag3&quot;, &quot;value3&quot;);
+}
+</code></pre>
+<h3 id="encoders-and-decoders">Encoders and decoders</h3>
+<p>Regarding encoders and decoders, ATLF allows the creation of customized encoders and decoders.<br>
+To use a custom encoder or decoder, assign a version to your custom encoder or decoder using the <code>Version</code> property and then assign the version of the custom encoder or decoder in the <code>TargetVersion</code> property of the <code>ATLFWriter</code> and <code>ATLFReader</code> classes.<br></p>
+<h4 id="creating-a-custom-encoding-class">Creating a custom encoding class</h4>
+<p>To create a custom encoding class, the class must inherit the <code>ATLFVS10Encoding</code> class.</p>
+<h4 id="creating-a-custom-decoding-class">Creating a custom decoding class</h4>
+<p>To create a custom decoding class, the class must inherit the <code>ATLFVS10Decoding</code> class.</p>
+<h1 id="cobilascorenet4x-is-on-nugetorg"><a href="https://www.nuget.org/packages/Cobilas.Core.Net4x">Cobilas.Core.Net4x</a> is on nuget.org</h1>
+<p>To include the package, open the <code>.csproj</code> file and add it.</p>
+<pre><code class="lang-xml">&lt;ItemGroup&gt;
+  &lt;PackageReference Include=&quot;Cobilas.Core.Net4x&quot; Version=&quot;1.4.0&quot; /&gt;
+&lt;/ItemGroup&gt;
+</code></pre>
+<p>Or use command line.</p>
+<pre><code class="lang-ps1">dotnet add package Cobilas.Core.Net4x --version 1.4.0
+</code></pre>
+<h1 id="cobilascorenet4x-is-on-npm"><a href="https://www.npmjs.com/package/com.cobilas.unity.core.net4x">Cobilas.Core.Net4x</a> is on NPM</h1>
+<p>Include in npm package</p>
+<pre><code class="lang-json">&quot;dependencies&quot;: {
+    &quot;com.cobilas.unity.core.net4x&quot;:&quot;1.4.0&quot;
+}
+</code></pre>
+<p>Or use command line.</p>
+<pre><code class="lang-ps1">npm i com.cobilas.unity.core.net4x
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility.io/blob/main/mds/core-net4x-getting-started.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

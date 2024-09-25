@@ -1,0 +1,2707 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.IO.Atlf.ATLFStreamReader
+  commentId: T:Cobilas.IO.Atlf.ATLFStreamReader
+  id: ATLFStreamReader
+  parent: Cobilas.IO.Atlf
+  children:
+  - Cobilas.IO.Atlf.ATLFStreamReader.Close
+  - Cobilas.IO.Atlf.ATLFStreamReader.CloseFlow
+  - Cobilas.IO.Atlf.ATLFStreamReader.Closed
+  - Cobilas.IO.Atlf.ATLFStreamReader.Dispose
+  - Cobilas.IO.Atlf.ATLFStreamReader.Dispose(System.Boolean)
+  - Cobilas.IO.Atlf.ATLFStreamReader.Encoding
+  - Cobilas.IO.Atlf.ATLFStreamReader.Finalize
+  - Cobilas.IO.Atlf.ATLFStreamReader.GetATLFDecoding(System.String)
+  - Cobilas.IO.Atlf.ATLFStreamReader.GetAllComments
+  - Cobilas.IO.Atlf.ATLFStreamReader.GetEnumerator
+  - Cobilas.IO.Atlf.ATLFStreamReader.GetHeader
+  - Cobilas.IO.Atlf.ATLFStreamReader.GetTag(System.String)
+  - Cobilas.IO.Atlf.ATLFStreamReader.GetTagGroup(System.String)
+  - Cobilas.IO.Atlf.ATLFStreamReader.Indent
+  - Cobilas.IO.Atlf.ATLFStreamReader.NodeCount
+  - Cobilas.IO.Atlf.ATLFStreamReader.Nodes
+  - Cobilas.IO.Atlf.ATLFStreamReader.Reader
+  - Cobilas.IO.Atlf.ATLFStreamReader.RefObject
+  - Cobilas.IO.Atlf.ATLFStreamReader.Stream
+  - Cobilas.IO.Atlf.ATLFStreamReader.TargetVersion
+  langs:
+  - csharp
+  - vb
+  name: ATLFStreamReader
+  nameWithType: ATLFStreamReader
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader
+  type: Class
+  source:
+    remote:
+      path: Runtime/IO/Atlf/ATLFStreamReader.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ATLFStreamReader
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFStreamReader.cs
+    startLine: 9
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.IO.Atlf
+  syntax:
+    content: 'public class ATLFStreamReader : ATLFSBReader, IDisposable, IEnumerable<ATLFNode>, IEnumerable'
+    content.vb: Public Class ATLFStreamReader Inherits ATLFSBReader Implements IDisposable, IEnumerable(Of ATLFNode), IEnumerable
+  inheritance:
+  - System.Object
+  - Cobilas.IO.Atlf.ATLFBase
+  - Cobilas.IO.Atlf.ATLFReader
+  - Cobilas.IO.Atlf.ATLFSBReader
+  implements:
+  - System.IDisposable
+  - System.Collections.Generic.IEnumerable{Cobilas.IO.Atlf.ATLFNode}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - Cobilas.IO.Atlf.ATLFReader.Create``1(System.IO.Stream)
+  - Cobilas.IO.Atlf.ATLFReader.Create``1(System.String)
+  - Cobilas.IO.Atlf.ATLFReader.Create``1(System.IO.TextReader)
+  - Cobilas.IO.Atlf.ATLFReader.Create``1(System.Text.StringBuilder)
+  - Cobilas.IO.Atlf.ATLFReader.Create(System.IO.Stream)
+  - Cobilas.IO.Atlf.ATLFReader.Create(System.String)
+  - Cobilas.IO.Atlf.ATLFReader.Create(System.IO.TextReader)
+  - Cobilas.IO.Atlf.ATLFReader.Create(System.Text.StringBuilder)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.System.Object_CB_Extension.CompareType(System.Type)
+  - System.Object.System.Object_CB_Extension.CompareType(System.Type[])
+  - System.Object.System.Object_CB_Extension.CompareTypeAndSubType(System.Type)
+  - System.Object.System.Object_CB_Extension.CompareTypeAndSubType(System.Type,System.Boolean)
+  - System.Object.System.Object_CB_Extension.CompareTypeAndSubType``1
+  - System.Object.System.Object_CB_Extension.CompareTypeAndSubType``1(System.Boolean)
+  - System.Object.System.Object_CB_Extension.CompareType``1
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.NodeCount
+  commentId: P:Cobilas.IO.Atlf.ATLFStreamReader.NodeCount
+  id: NodeCount
+  parent: Cobilas.IO.Atlf.ATLFStreamReader
+  langs:
+  - csharp
+  - vb
+  name: NodeCount
+  nameWithType: ATLFStreamReader.NodeCount
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.NodeCount
+  type: Property
+  source:
+    remote:
+      path: Runtime/IO/Atlf/ATLFStreamReader.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: NodeCount
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFStreamReader.cs
+    startLine: 14
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.IO.Atlf
+  summary: The number of ATLF nodes stored.
+  example: []
+  syntax:
+    content: public override long NodeCount { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Overrides ReadOnly Property NodeCount As Long
+  overridden: Cobilas.IO.Atlf.ATLFBase.NodeCount
+  overload: Cobilas.IO.Atlf.ATLFStreamReader.NodeCount*
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.Indent
+  commentId: P:Cobilas.IO.Atlf.ATLFStreamReader.Indent
+  id: Indent
+  parent: Cobilas.IO.Atlf.ATLFStreamReader
+  langs:
+  - csharp
+  - vb
+  name: Indent
+  nameWithType: ATLFStreamReader.Indent
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.Indent
+  type: Property
+  source:
+    remote:
+      path: Runtime/IO/Atlf/ATLFStreamReader.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Indent
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFStreamReader.cs
+    startLine: 17
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.IO.Atlf
+  summary: Determines whether text should be indented.
+  example: []
+  syntax:
+    content: public override bool Indent { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Property Indent As Boolean
+  overridden: Cobilas.IO.Atlf.ATLFBase.Indent
+  overload: Cobilas.IO.Atlf.ATLFStreamReader.Indent*
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.Encoding
+  commentId: P:Cobilas.IO.Atlf.ATLFStreamReader.Encoding
+  id: Encoding
+  parent: Cobilas.IO.Atlf.ATLFStreamReader
+  langs:
+  - csharp
+  - vb
+  name: Encoding
+  nameWithType: ATLFStreamReader.Encoding
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.Encoding
+  type: Property
+  source:
+    remote:
+      path: Runtime/IO/Atlf/ATLFStreamReader.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Encoding
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFStreamReader.cs
+    startLine: 19
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.IO.Atlf
+  summary: Sets or returns the encoding used.
+  example: []
+  syntax:
+    content: public override Encoding Encoding { get; set; }
+    parameters: []
+    return:
+      type: System.Text.Encoding
+    content.vb: Public Overrides Property Encoding As Encoding
+  overridden: Cobilas.IO.Atlf.ATLFBase.Encoding
+  overload: Cobilas.IO.Atlf.ATLFStreamReader.Encoding*
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.TargetVersion
+  commentId: P:Cobilas.IO.Atlf.ATLFStreamReader.TargetVersion
+  id: TargetVersion
+  parent: Cobilas.IO.Atlf.ATLFStreamReader
+  langs:
+  - csharp
+  - vb
+  name: TargetVersion
+  nameWithType: ATLFStreamReader.TargetVersion
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.TargetVersion
+  type: Property
+  source:
+    remote:
+      path: Runtime/IO/Atlf/ATLFStreamReader.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: TargetVersion
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFStreamReader.cs
+    startLine: 21
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.IO.Atlf
+  summary: Represents the version that the ATLF object is using.
+  example: []
+  syntax:
+    content: public override string TargetVersion { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides Property TargetVersion As String
+  overridden: Cobilas.IO.Atlf.ATLFBase.TargetVersion
+  overload: Cobilas.IO.Atlf.ATLFStreamReader.TargetVersion*
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.Closed
+  commentId: P:Cobilas.IO.Atlf.ATLFStreamReader.Closed
+  id: Closed
+  parent: Cobilas.IO.Atlf.ATLFStreamReader
+  langs:
+  - csharp
+  - vb
+  name: Closed
+  nameWithType: ATLFStreamReader.Closed
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.Closed
+  type: Property
+  source:
+    remote:
+      path: Runtime/IO/Atlf/ATLFStreamReader.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Closed
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFStreamReader.cs
+    startLine: 23
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.IO.Atlf
+  summary: Indicate whether the flow has been closed.
+  example: []
+  syntax:
+    content: public override bool Closed { get; protected set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Property Closed As Boolean
+  overridden: Cobilas.IO.Atlf.ATLFBase.Closed
+  overload: Cobilas.IO.Atlf.ATLFStreamReader.Closed*
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.CloseFlow
+  commentId: P:Cobilas.IO.Atlf.ATLFStreamReader.CloseFlow
+  id: CloseFlow
+  parent: Cobilas.IO.Atlf.ATLFStreamReader
+  langs:
+  - csharp
+  - vb
+  name: CloseFlow
+  nameWithType: ATLFStreamReader.CloseFlow
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.CloseFlow
+  type: Property
+  source:
+    remote:
+      path: Runtime/IO/Atlf/ATLFStreamReader.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: CloseFlow
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFStreamReader.cs
+    startLine: 25
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.IO.Atlf
+  summary: >-
+    This property is used to close the workflow automatically.
+
+    <p>This property should be used in cases where you directly access a stream. 
+
+    Example: when a flow is called using the <xref href="System.IO.File" data-throw-if-not-resolved="false"></xref>.Open(string) method.</p>
+  example: []
+  syntax:
+    content: protected override bool CloseFlow { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Property CloseFlow As Boolean
+  overridden: Cobilas.IO.Atlf.ATLFBase.CloseFlow
+  overload: Cobilas.IO.Atlf.ATLFStreamReader.CloseFlow*
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.Nodes
+  commentId: P:Cobilas.IO.Atlf.ATLFStreamReader.Nodes
+  id: Nodes
+  parent: Cobilas.IO.Atlf.ATLFStreamReader
+  langs:
+  - csharp
+  - vb
+  name: Nodes
+  nameWithType: ATLFStreamReader.Nodes
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.Nodes
+  type: Property
+  source:
+    remote:
+      path: Runtime/IO/Atlf/ATLFStreamReader.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Nodes
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFStreamReader.cs
+    startLine: 27
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.IO.Atlf
+  summary: Where ATLF nodes are stored.
+  example: []
+  syntax:
+    content: protected override ATLFNode[] Nodes { get; set; }
+    parameters: []
+    return:
+      type: Cobilas.IO.Atlf.ATLFNode[]
+    content.vb: Protected Overrides Property Nodes As ATLFNode()
+  overridden: Cobilas.IO.Atlf.ATLFBase.Nodes
+  overload: Cobilas.IO.Atlf.ATLFStreamReader.Nodes*
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.RefObject
+  commentId: P:Cobilas.IO.Atlf.ATLFStreamReader.RefObject
+  id: RefObject
+  parent: Cobilas.IO.Atlf.ATLFStreamReader
+  langs:
+  - csharp
+  - vb
+  name: RefObject
+  nameWithType: ATLFStreamReader.RefObject
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.RefObject
+  type: Property
+  source:
+    remote:
+      path: Runtime/IO/Atlf/ATLFStreamReader.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: RefObject
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFStreamReader.cs
+    startLine: 29
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.IO.Atlf
+  summary: Sets or returns the current stream.
+  example: []
+  syntax:
+    content: protected override MarshalByRefObject RefObject { get; set; }
+    parameters: []
+    return:
+      type: System.MarshalByRefObject
+    content.vb: Protected Overrides Property RefObject As MarshalByRefObject
+  overridden: Cobilas.IO.Atlf.ATLFBase.RefObject
+  overload: Cobilas.IO.Atlf.ATLFStreamReader.RefObject*
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.Stream
+  commentId: P:Cobilas.IO.Atlf.ATLFStreamReader.Stream
+  id: Stream
+  parent: Cobilas.IO.Atlf.ATLFStreamReader
+  langs:
+  - csharp
+  - vb
+  name: Stream
+  nameWithType: ATLFStreamReader.Stream
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.Stream
+  type: Property
+  source:
+    remote:
+      path: Runtime/IO/Atlf/ATLFStreamReader.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Stream
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFStreamReader.cs
+    startLine: 31
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.IO.Atlf
+  summary: Represents the stream converted to <xref href="System.IO.Stream" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: protected override Stream Stream { get; set; }
+    parameters: []
+    return:
+      type: System.IO.Stream
+    content.vb: Protected Overrides Property Stream As Stream
+  overridden: Cobilas.IO.Atlf.ATLFSBReader.Stream
+  overload: Cobilas.IO.Atlf.ATLFStreamReader.Stream*
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.Finalize
+  commentId: M:Cobilas.IO.Atlf.ATLFStreamReader.Finalize
+  id: Finalize
+  parent: Cobilas.IO.Atlf.ATLFStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ~ATLFStreamReader()
+  nameWithType: ATLFStreamReader.~ATLFStreamReader()
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.~ATLFStreamReader()
+  type: Method
+  source:
+    remote:
+      path: Runtime/IO/Atlf/ATLFStreamReader.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Finalize
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFStreamReader.cs
+    startLine: 34
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.IO.Atlf
+  syntax:
+    content: protected ~ATLFStreamReader()
+    content.vb: 'Protected '
+  overload: Cobilas.IO.Atlf.ATLFStreamReader.Finalize*
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.Close
+  commentId: M:Cobilas.IO.Atlf.ATLFStreamReader.Close
+  id: Close
+  parent: Cobilas.IO.Atlf.ATLFStreamReader
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: ATLFStreamReader.Close()
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.Close()
+  type: Method
+  source:
+    remote:
+      path: Runtime/IO/Atlf/ATLFStreamReader.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Close
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFStreamReader.cs
+    startLine: 39
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.IO.Atlf
+  summary: Allows you to close the current flow.
+  example: []
+  syntax:
+    content: public override void Close()
+    content.vb: Public Overrides Sub Close()
+  overridden: Cobilas.IO.Atlf.ATLFBase.Close
+  overload: Cobilas.IO.Atlf.ATLFStreamReader.Close*
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.Reader
+  commentId: M:Cobilas.IO.Atlf.ATLFStreamReader.Reader
+  id: Reader
+  parent: Cobilas.IO.Atlf.ATLFStreamReader
+  langs:
+  - csharp
+  - vb
+  name: Reader()
+  nameWithType: ATLFStreamReader.Reader()
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.Reader()
+  type: Method
+  source:
+    remote:
+      path: Runtime/IO/Atlf/ATLFStreamReader.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Reader
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFStreamReader.cs
+    startLine: 50
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.IO.Atlf
+  summary: Starts the process of reading the ATLF file.
+  example: []
+  syntax:
+    content: public override void Reader()
+    content.vb: Public Overrides Sub Reader()
+  overridden: Cobilas.IO.Atlf.ATLFReader.Reader
+  overload: Cobilas.IO.Atlf.ATLFStreamReader.Reader*
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.Dispose
+  commentId: M:Cobilas.IO.Atlf.ATLFStreamReader.Dispose
+  id: Dispose
+  parent: Cobilas.IO.Atlf.ATLFStreamReader
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: ATLFStreamReader.Dispose()
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.Dispose()
+  type: Method
+  source:
+    remote:
+      path: Runtime/IO/Atlf/ATLFStreamReader.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Dispose
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFStreamReader.cs
+    startLine: 59
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.IO.Atlf
+  summary: Allows you to discard the current stream.
+  example: []
+  syntax:
+    content: public override void Dispose()
+    content.vb: Public Overrides Sub Dispose()
+  overridden: Cobilas.IO.Atlf.ATLFBase.Dispose
+  overload: Cobilas.IO.Atlf.ATLFStreamReader.Dispose*
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.GetHeader
+  commentId: M:Cobilas.IO.Atlf.ATLFStreamReader.GetHeader
+  id: GetHeader
+  parent: Cobilas.IO.Atlf.ATLFStreamReader
+  langs:
+  - csharp
+  - vb
+  name: GetHeader()
+  nameWithType: ATLFStreamReader.GetHeader()
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.GetHeader()
+  type: Method
+  source:
+    remote:
+      path: Runtime/IO/Atlf/ATLFStreamReader.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: GetHeader
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFStreamReader.cs
+    startLine: 65
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.IO.Atlf
+  summary: Gets the ATLF header tags.
+  example: []
+  syntax:
+    content: public override ATLFNode[] GetHeader()
+    return:
+      type: Cobilas.IO.Atlf.ATLFNode[]
+    content.vb: Public Overrides Function GetHeader() As ATLFNode()
+  overridden: Cobilas.IO.Atlf.ATLFReader.GetHeader
+  overload: Cobilas.IO.Atlf.ATLFStreamReader.GetHeader*
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.GetTag(System.String)
+  commentId: M:Cobilas.IO.Atlf.ATLFStreamReader.GetTag(System.String)
+  id: GetTag(System.String)
+  parent: Cobilas.IO.Atlf.ATLFStreamReader
+  langs:
+  - csharp
+  - vb
+  name: GetTag(string)
+  nameWithType: ATLFStreamReader.GetTag(string)
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.GetTag(string)
+  type: Method
+  source:
+    remote:
+      path: Runtime/IO/Atlf/ATLFStreamReader.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: GetTag
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFStreamReader.cs
+    startLine: 79
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.IO.Atlf
+  summary: Gets the value of the tag.
+  example: []
+  syntax:
+    content: public override string GetTag(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the target tag.
+    return:
+      type: System.String
+    content.vb: Public Overrides Function GetTag(name As String) As String
+  overridden: Cobilas.IO.Atlf.ATLFReader.GetTag(System.String)
+  overload: Cobilas.IO.Atlf.ATLFStreamReader.GetTag*
+  nameWithType.vb: ATLFStreamReader.GetTag(String)
+  fullName.vb: Cobilas.IO.Atlf.ATLFStreamReader.GetTag(String)
+  name.vb: GetTag(String)
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.GetAllComments
+  commentId: M:Cobilas.IO.Atlf.ATLFStreamReader.GetAllComments
+  id: GetAllComments
+  parent: Cobilas.IO.Atlf.ATLFStreamReader
+  langs:
+  - csharp
+  - vb
+  name: GetAllComments()
+  nameWithType: ATLFStreamReader.GetAllComments()
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.GetAllComments()
+  type: Method
+  source:
+    remote:
+      path: Runtime/IO/Atlf/ATLFStreamReader.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: GetAllComments
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFStreamReader.cs
+    startLine: 89
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.IO.Atlf
+  summary: Gets all comments from the ATLF file.
+  example: []
+  syntax:
+    content: public override ATLFNode[] GetAllComments()
+    return:
+      type: Cobilas.IO.Atlf.ATLFNode[]
+    content.vb: Public Overrides Function GetAllComments() As ATLFNode()
+  overridden: Cobilas.IO.Atlf.ATLFReader.GetAllComments
+  overload: Cobilas.IO.Atlf.ATLFStreamReader.GetAllComments*
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.GetTagGroup(System.String)
+  commentId: M:Cobilas.IO.Atlf.ATLFStreamReader.GetTagGroup(System.String)
+  id: GetTagGroup(System.String)
+  parent: Cobilas.IO.Atlf.ATLFStreamReader
+  langs:
+  - csharp
+  - vb
+  name: GetTagGroup(string)
+  nameWithType: ATLFStreamReader.GetTagGroup(string)
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.GetTagGroup(string)
+  type: Method
+  source:
+    remote:
+      path: Runtime/IO/Atlf/ATLFStreamReader.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: GetTagGroup
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFStreamReader.cs
+    startLine: 100
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.IO.Atlf
+  summary: Gets a group of ATLF tags within a path.
+  example: []
+  syntax:
+    content: public override ATLFNode[] GetTagGroup(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: Cobilas.IO.Atlf.ATLFNode[]
+      description: >-
+        Returns a list of ATLF tags according to a path. 
+            Example: there are three nodes with the name <code>com.cob.lib.tag1</code>, <code>com.cob.lib.tag2</code> and <code>com.cob.cli.tag-1</code> 
+            and passing in the <code class="paramref">path</code> parameter <code>com.cob.lib</code> the tags <code>tag1</code> and <code>tag2</code> will be obtained.
+    content.vb: Public Overrides Function GetTagGroup(path As String) As ATLFNode()
+  overridden: Cobilas.IO.Atlf.ATLFReader.GetTagGroup(System.String)
+  overload: Cobilas.IO.Atlf.ATLFStreamReader.GetTagGroup*
+  nameWithType.vb: ATLFStreamReader.GetTagGroup(String)
+  fullName.vb: Cobilas.IO.Atlf.ATLFStreamReader.GetTagGroup(String)
+  name.vb: GetTagGroup(String)
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.GetEnumerator
+  commentId: M:Cobilas.IO.Atlf.ATLFStreamReader.GetEnumerator
+  id: GetEnumerator
+  parent: Cobilas.IO.Atlf.ATLFStreamReader
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: ATLFStreamReader.GetEnumerator()
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: Runtime/IO/Atlf/ATLFStreamReader.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: GetEnumerator
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFStreamReader.cs
+    startLine: 111
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.IO.Atlf
+  summary: Gets all nodes within the buffer.
+  example: []
+  syntax:
+    content: public override IEnumerator<ATLFNode> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{Cobilas.IO.Atlf.ATLFNode}
+    content.vb: Public Overrides Function GetEnumerator() As IEnumerator(Of ATLFNode)
+  overridden: Cobilas.IO.Atlf.ATLFReader.GetEnumerator
+  overload: Cobilas.IO.Atlf.ATLFStreamReader.GetEnumerator*
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.Dispose(System.Boolean)
+  commentId: M:Cobilas.IO.Atlf.ATLFStreamReader.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: Cobilas.IO.Atlf.ATLFStreamReader
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: ATLFStreamReader.Dispose(bool)
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.Dispose(bool)
+  type: Method
+  source:
+    remote:
+      path: Runtime/IO/Atlf/ATLFStreamReader.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Dispose
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFStreamReader.cs
+    startLine: 115
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.IO.Atlf
+  summary: Performs an internal disposal of the object.
+  example: []
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: Cobilas.IO.Atlf.ATLFStreamReader.Dispose*
+  nameWithType.vb: ATLFStreamReader.Dispose(Boolean)
+  fullName.vb: Cobilas.IO.Atlf.ATLFStreamReader.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.GetATLFDecoding(System.String)
+  commentId: M:Cobilas.IO.Atlf.ATLFStreamReader.GetATLFDecoding(System.String)
+  id: GetATLFDecoding(System.String)
+  parent: Cobilas.IO.Atlf.ATLFStreamReader
+  langs:
+  - csharp
+  - vb
+  name: GetATLFDecoding(string)
+  nameWithType: ATLFStreamReader.GetATLFDecoding(string)
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.GetATLFDecoding(string)
+  type: Method
+  source:
+    remote:
+      path: Runtime/IO/Atlf/ATLFStreamReader.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: GetATLFDecoding
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFStreamReader.cs
+    startLine: 126
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.IO.Atlf
+  summary: Gets the ATLF encoding.
+  example: []
+  syntax:
+    content: protected override ATLFDecoding GetATLFDecoding(string targetVersion)
+    parameters:
+    - id: targetVersion
+      type: System.String
+    return:
+      type: Cobilas.IO.Atlf.Text.ATLFDecoding
+      description: >-
+        The method returns the encoder corresponding to the version passed in the <code class="paramref">targetVersion</code> parameter. 
+            If the previous version does not exist, the default version will be returned.
+    content.vb: Protected Overrides Function GetATLFDecoding(targetVersion As String) As ATLFDecoding
+  overridden: Cobilas.IO.Atlf.ATLFReader.GetATLFDecoding(System.String)
+  overload: Cobilas.IO.Atlf.ATLFStreamReader.GetATLFDecoding*
+  nameWithType.vb: ATLFStreamReader.GetATLFDecoding(String)
+  fullName.vb: Cobilas.IO.Atlf.ATLFStreamReader.GetATLFDecoding(String)
+  name.vb: GetATLFDecoding(String)
+references:
+- uid: Cobilas.IO.Atlf
+  commentId: N:Cobilas.IO.Atlf
+  href: Cobilas.html
+  name: Cobilas.IO.Atlf
+  nameWithType: Cobilas.IO.Atlf
+  fullName: Cobilas.IO.Atlf
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.IO
+    name: IO
+    href: Cobilas.IO.html
+  - name: .
+  - uid: Cobilas.IO.Atlf
+    name: Atlf
+    href: Cobilas.IO.Atlf.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.IO
+    name: IO
+    href: Cobilas.IO.html
+  - name: .
+  - uid: Cobilas.IO.Atlf
+    name: Atlf
+    href: Cobilas.IO.Atlf.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Cobilas.IO.Atlf.ATLFBase
+  commentId: T:Cobilas.IO.Atlf.ATLFBase
+  parent: Cobilas.IO.Atlf
+  href: Cobilas.IO.Atlf.ATLFBase.html
+  name: ATLFBase
+  nameWithType: ATLFBase
+  fullName: Cobilas.IO.Atlf.ATLFBase
+- uid: Cobilas.IO.Atlf.ATLFReader
+  commentId: T:Cobilas.IO.Atlf.ATLFReader
+  parent: Cobilas.IO.Atlf
+  href: Cobilas.IO.Atlf.ATLFReader.html
+  name: ATLFReader
+  nameWithType: ATLFReader
+  fullName: Cobilas.IO.Atlf.ATLFReader
+- uid: Cobilas.IO.Atlf.ATLFSBReader
+  commentId: T:Cobilas.IO.Atlf.ATLFSBReader
+  parent: Cobilas.IO.Atlf
+  href: Cobilas.IO.Atlf.ATLFSBReader.html
+  name: ATLFSBReader
+  nameWithType: ATLFSBReader
+  fullName: Cobilas.IO.Atlf.ATLFSBReader
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Collections.Generic.IEnumerable{Cobilas.IO.Atlf.ATLFNode}
+  commentId: T:System.Collections.Generic.IEnumerable{Cobilas.IO.Atlf.ATLFNode}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ATLFNode>
+  nameWithType: IEnumerable<ATLFNode>
+  fullName: System.Collections.Generic.IEnumerable<Cobilas.IO.Atlf.ATLFNode>
+  nameWithType.vb: IEnumerable(Of ATLFNode)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Cobilas.IO.Atlf.ATLFNode)
+  name.vb: IEnumerable(Of ATLFNode)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Cobilas.IO.Atlf.ATLFNode
+    name: ATLFNode
+    href: Cobilas.IO.Atlf.ATLFNode.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Cobilas.IO.Atlf.ATLFNode
+    name: ATLFNode
+    href: Cobilas.IO.Atlf.ATLFNode.html
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: Cobilas.IO.Atlf.ATLFReader.Create``1(System.IO.Stream)
+  commentId: M:Cobilas.IO.Atlf.ATLFReader.Create``1(System.IO.Stream)
+  parent: Cobilas.IO.Atlf.ATLFReader
+  isExternal: true
+  href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Create__1_System_IO_Stream_
+  name: Create<T>(Stream)
+  nameWithType: ATLFReader.Create<T>(Stream)
+  fullName: Cobilas.IO.Atlf.ATLFReader.Create<T>(System.IO.Stream)
+  nameWithType.vb: ATLFReader.Create(Of T)(Stream)
+  fullName.vb: Cobilas.IO.Atlf.ATLFReader.Create(Of T)(System.IO.Stream)
+  name.vb: Create(Of T)(Stream)
+  spec.csharp:
+  - uid: Cobilas.IO.Atlf.ATLFReader.Create``1(System.IO.Stream)
+    name: Create
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Create__1_System_IO_Stream_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+  spec.vb:
+  - uid: Cobilas.IO.Atlf.ATLFReader.Create``1(System.IO.Stream)
+    name: Create
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Create__1_System_IO_Stream_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+- uid: Cobilas.IO.Atlf.ATLFReader.Create``1(System.String)
+  commentId: M:Cobilas.IO.Atlf.ATLFReader.Create``1(System.String)
+  parent: Cobilas.IO.Atlf.ATLFReader
+  isExternal: true
+  href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Create__1_System_String_
+  name: Create<T>(string)
+  nameWithType: ATLFReader.Create<T>(string)
+  fullName: Cobilas.IO.Atlf.ATLFReader.Create<T>(string)
+  nameWithType.vb: ATLFReader.Create(Of T)(String)
+  fullName.vb: Cobilas.IO.Atlf.ATLFReader.Create(Of T)(String)
+  name.vb: Create(Of T)(String)
+  spec.csharp:
+  - uid: Cobilas.IO.Atlf.ATLFReader.Create``1(System.String)
+    name: Create
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Create__1_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cobilas.IO.Atlf.ATLFReader.Create``1(System.String)
+    name: Create
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Create__1_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Cobilas.IO.Atlf.ATLFReader.Create``1(System.IO.TextReader)
+  commentId: M:Cobilas.IO.Atlf.ATLFReader.Create``1(System.IO.TextReader)
+  parent: Cobilas.IO.Atlf.ATLFReader
+  isExternal: true
+  href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Create__1_System_IO_TextReader_
+  name: Create<T>(TextReader)
+  nameWithType: ATLFReader.Create<T>(TextReader)
+  fullName: Cobilas.IO.Atlf.ATLFReader.Create<T>(System.IO.TextReader)
+  nameWithType.vb: ATLFReader.Create(Of T)(TextReader)
+  fullName.vb: Cobilas.IO.Atlf.ATLFReader.Create(Of T)(System.IO.TextReader)
+  name.vb: Create(Of T)(TextReader)
+  spec.csharp:
+  - uid: Cobilas.IO.Atlf.ATLFReader.Create``1(System.IO.TextReader)
+    name: Create
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Create__1_System_IO_TextReader_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.IO.TextReader
+    name: TextReader
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textreader
+  - name: )
+  spec.vb:
+  - uid: Cobilas.IO.Atlf.ATLFReader.Create``1(System.IO.TextReader)
+    name: Create
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Create__1_System_IO_TextReader_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.IO.TextReader
+    name: TextReader
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textreader
+  - name: )
+- uid: Cobilas.IO.Atlf.ATLFReader.Create``1(System.Text.StringBuilder)
+  commentId: M:Cobilas.IO.Atlf.ATLFReader.Create``1(System.Text.StringBuilder)
+  parent: Cobilas.IO.Atlf.ATLFReader
+  isExternal: true
+  href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Create__1_System_Text_StringBuilder_
+  name: Create<T>(StringBuilder)
+  nameWithType: ATLFReader.Create<T>(StringBuilder)
+  fullName: Cobilas.IO.Atlf.ATLFReader.Create<T>(System.Text.StringBuilder)
+  nameWithType.vb: ATLFReader.Create(Of T)(StringBuilder)
+  fullName.vb: Cobilas.IO.Atlf.ATLFReader.Create(Of T)(System.Text.StringBuilder)
+  name.vb: Create(Of T)(StringBuilder)
+  spec.csharp:
+  - uid: Cobilas.IO.Atlf.ATLFReader.Create``1(System.Text.StringBuilder)
+    name: Create
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Create__1_System_Text_StringBuilder_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  - name: )
+  spec.vb:
+  - uid: Cobilas.IO.Atlf.ATLFReader.Create``1(System.Text.StringBuilder)
+    name: Create
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Create__1_System_Text_StringBuilder_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  - name: )
+- uid: Cobilas.IO.Atlf.ATLFReader.Create(System.IO.Stream)
+  commentId: M:Cobilas.IO.Atlf.ATLFReader.Create(System.IO.Stream)
+  parent: Cobilas.IO.Atlf.ATLFReader
+  isExternal: true
+  href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Create_System_IO_Stream_
+  name: Create(Stream)
+  nameWithType: ATLFReader.Create(Stream)
+  fullName: Cobilas.IO.Atlf.ATLFReader.Create(System.IO.Stream)
+  spec.csharp:
+  - uid: Cobilas.IO.Atlf.ATLFReader.Create(System.IO.Stream)
+    name: Create
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Create_System_IO_Stream_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+  spec.vb:
+  - uid: Cobilas.IO.Atlf.ATLFReader.Create(System.IO.Stream)
+    name: Create
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Create_System_IO_Stream_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+- uid: Cobilas.IO.Atlf.ATLFReader.Create(System.String)
+  commentId: M:Cobilas.IO.Atlf.ATLFReader.Create(System.String)
+  parent: Cobilas.IO.Atlf.ATLFReader
+  isExternal: true
+  href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Create_System_String_
+  name: Create(string)
+  nameWithType: ATLFReader.Create(string)
+  fullName: Cobilas.IO.Atlf.ATLFReader.Create(string)
+  nameWithType.vb: ATLFReader.Create(String)
+  fullName.vb: Cobilas.IO.Atlf.ATLFReader.Create(String)
+  name.vb: Create(String)
+  spec.csharp:
+  - uid: Cobilas.IO.Atlf.ATLFReader.Create(System.String)
+    name: Create
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Create_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cobilas.IO.Atlf.ATLFReader.Create(System.String)
+    name: Create
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Create_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Cobilas.IO.Atlf.ATLFReader.Create(System.IO.TextReader)
+  commentId: M:Cobilas.IO.Atlf.ATLFReader.Create(System.IO.TextReader)
+  parent: Cobilas.IO.Atlf.ATLFReader
+  isExternal: true
+  href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Create_System_IO_TextReader_
+  name: Create(TextReader)
+  nameWithType: ATLFReader.Create(TextReader)
+  fullName: Cobilas.IO.Atlf.ATLFReader.Create(System.IO.TextReader)
+  spec.csharp:
+  - uid: Cobilas.IO.Atlf.ATLFReader.Create(System.IO.TextReader)
+    name: Create
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Create_System_IO_TextReader_
+  - name: (
+  - uid: System.IO.TextReader
+    name: TextReader
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textreader
+  - name: )
+  spec.vb:
+  - uid: Cobilas.IO.Atlf.ATLFReader.Create(System.IO.TextReader)
+    name: Create
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Create_System_IO_TextReader_
+  - name: (
+  - uid: System.IO.TextReader
+    name: TextReader
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textreader
+  - name: )
+- uid: Cobilas.IO.Atlf.ATLFReader.Create(System.Text.StringBuilder)
+  commentId: M:Cobilas.IO.Atlf.ATLFReader.Create(System.Text.StringBuilder)
+  parent: Cobilas.IO.Atlf.ATLFReader
+  isExternal: true
+  href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Create_System_Text_StringBuilder_
+  name: Create(StringBuilder)
+  nameWithType: ATLFReader.Create(StringBuilder)
+  fullName: Cobilas.IO.Atlf.ATLFReader.Create(System.Text.StringBuilder)
+  spec.csharp:
+  - uid: Cobilas.IO.Atlf.ATLFReader.Create(System.Text.StringBuilder)
+    name: Create
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Create_System_Text_StringBuilder_
+  - name: (
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  - name: )
+  spec.vb:
+  - uid: Cobilas.IO.Atlf.ATLFReader.Create(System.Text.StringBuilder)
+    name: Create
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Create_System_Text_StringBuilder_
+  - name: (
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.System.Object_CB_Extension.CompareType(System.Type)
+  commentId: M:System.Object_CB_Extension.CompareType(System.Object,System.Type)
+  parent: System.Object_CB_Extension
+  definition: System.Object_CB_Extension.CompareType(System.Object,System.Type)
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type_
+  name: CompareType(object, Type)
+  nameWithType: Object_CB_Extension.CompareType(object, Type)
+  fullName: System.Object_CB_Extension.CompareType(object, System.Type)
+  nameWithType.vb: Object_CB_Extension.CompareType(Object, Type)
+  fullName.vb: System.Object_CB_Extension.CompareType(Object, System.Type)
+  name.vb: CompareType(Object, Type)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareType(System.Object,System.Type)
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareType(System.Object,System.Type)
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Object.System.Object_CB_Extension.CompareType(System.Type[])
+  commentId: M:System.Object_CB_Extension.CompareType(System.Object,System.Type[])
+  parent: System.Object_CB_Extension
+  definition: System.Object_CB_Extension.CompareType(System.Object,System.Type[])
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type___
+  name: CompareType(object, params Type[])
+  nameWithType: Object_CB_Extension.CompareType(object, params Type[])
+  fullName: System.Object_CB_Extension.CompareType(object, params System.Type[])
+  nameWithType.vb: Object_CB_Extension.CompareType(Object, ParamArray Type())
+  fullName.vb: System.Object_CB_Extension.CompareType(Object, ParamArray System.Type())
+  name.vb: CompareType(Object, ParamArray Type())
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareType(System.Object,System.Type[])
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type___
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareType(System.Object,System.Type[])
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type___
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Object.System.Object_CB_Extension.CompareTypeAndSubType(System.Type)
+  commentId: M:System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type)
+  parent: System.Object_CB_Extension
+  definition: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type)
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_
+  name: CompareTypeAndSubType(object, Type)
+  nameWithType: Object_CB_Extension.CompareTypeAndSubType(object, Type)
+  fullName: System.Object_CB_Extension.CompareTypeAndSubType(object, System.Type)
+  nameWithType.vb: Object_CB_Extension.CompareTypeAndSubType(Object, Type)
+  fullName.vb: System.Object_CB_Extension.CompareTypeAndSubType(Object, System.Type)
+  name.vb: CompareTypeAndSubType(Object, Type)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Object.System.Object_CB_Extension.CompareTypeAndSubType(System.Type,System.Boolean)
+  commentId: M:System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type,System.Boolean)
+  parent: System.Object_CB_Extension
+  definition: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type,System.Boolean)
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_System_Boolean_
+  name: CompareTypeAndSubType(object, Type, bool)
+  nameWithType: Object_CB_Extension.CompareTypeAndSubType(object, Type, bool)
+  fullName: System.Object_CB_Extension.CompareTypeAndSubType(object, System.Type, bool)
+  nameWithType.vb: Object_CB_Extension.CompareTypeAndSubType(Object, Type, Boolean)
+  fullName.vb: System.Object_CB_Extension.CompareTypeAndSubType(Object, System.Type, Boolean)
+  name.vb: CompareTypeAndSubType(Object, Type, Boolean)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type,System.Boolean)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_System_Boolean_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type,System.Boolean)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_System_Boolean_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object.System.Object_CB_Extension.CompareTypeAndSubType``1
+  commentId: M:System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object)
+  parent: System.Object_CB_Extension
+  definition: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object)
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_
+  name: CompareTypeAndSubType<T>(object)
+  nameWithType: Object_CB_Extension.CompareTypeAndSubType<T>(object)
+  fullName: System.Object_CB_Extension.CompareTypeAndSubType<T>(object)
+  nameWithType.vb: Object_CB_Extension.CompareTypeAndSubType(Of T)(Object)
+  fullName.vb: System.Object_CB_Extension.CompareTypeAndSubType(Of T)(Object)
+  name.vb: CompareTypeAndSubType(Of T)(Object)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.System.Object_CB_Extension.CompareTypeAndSubType``1(System.Boolean)
+  commentId: M:System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object,System.Boolean)
+  parent: System.Object_CB_Extension
+  definition: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object,System.Boolean)
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_System_Boolean_
+  name: CompareTypeAndSubType<T>(object, bool)
+  nameWithType: Object_CB_Extension.CompareTypeAndSubType<T>(object, bool)
+  fullName: System.Object_CB_Extension.CompareTypeAndSubType<T>(object, bool)
+  nameWithType.vb: Object_CB_Extension.CompareTypeAndSubType(Of T)(Object, Boolean)
+  fullName.vb: System.Object_CB_Extension.CompareTypeAndSubType(Of T)(Object, Boolean)
+  name.vb: CompareTypeAndSubType(Of T)(Object, Boolean)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object,System.Boolean)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_System_Boolean_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object,System.Boolean)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_System_Boolean_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object.System.Object_CB_Extension.CompareType``1
+  commentId: M:System.Object_CB_Extension.CompareType``1(System.Object)
+  parent: System.Object_CB_Extension
+  definition: System.Object_CB_Extension.CompareType``1(System.Object)
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType__1_System_Object_
+  name: CompareType<T>(object)
+  nameWithType: Object_CB_Extension.CompareType<T>(object)
+  fullName: System.Object_CB_Extension.CompareType<T>(object)
+  nameWithType.vb: Object_CB_Extension.CompareType(Of T)(Object)
+  fullName.vb: System.Object_CB_Extension.CompareType(Of T)(Object)
+  name.vb: CompareType(Of T)(Object)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareType``1(System.Object)
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareType``1(System.Object)
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: System.Object_CB_Extension.CompareType(System.Object,System.Type)
+  commentId: M:System.Object_CB_Extension.CompareType(System.Object,System.Type)
+  isExternal: true
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type_
+  name: CompareType(object, Type)
+  nameWithType: Object_CB_Extension.CompareType(object, Type)
+  fullName: System.Object_CB_Extension.CompareType(object, System.Type)
+  nameWithType.vb: Object_CB_Extension.CompareType(Object, Type)
+  fullName.vb: System.Object_CB_Extension.CompareType(Object, System.Type)
+  name.vb: CompareType(Object, Type)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareType(System.Object,System.Type)
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareType(System.Object,System.Type)
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Object_CB_Extension
+  commentId: T:System.Object_CB_Extension
+  parent: System
+  href: System.Object_CB_Extension.html
+  name: Object_CB_Extension
+  nameWithType: Object_CB_Extension
+  fullName: System.Object_CB_Extension
+- uid: System.Object_CB_Extension.CompareType(System.Object,System.Type[])
+  commentId: M:System.Object_CB_Extension.CompareType(System.Object,System.Type[])
+  isExternal: true
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type___
+  name: CompareType(object, params Type[])
+  nameWithType: Object_CB_Extension.CompareType(object, params Type[])
+  fullName: System.Object_CB_Extension.CompareType(object, params System.Type[])
+  nameWithType.vb: Object_CB_Extension.CompareType(Object, ParamArray Type())
+  fullName.vb: System.Object_CB_Extension.CompareType(Object, ParamArray System.Type())
+  name.vb: CompareType(Object, ParamArray Type())
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareType(System.Object,System.Type[])
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type___
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareType(System.Object,System.Type[])
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType_System_Object_System_Type___
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type)
+  commentId: M:System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type)
+  isExternal: true
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_
+  name: CompareTypeAndSubType(object, Type)
+  nameWithType: Object_CB_Extension.CompareTypeAndSubType(object, Type)
+  fullName: System.Object_CB_Extension.CompareTypeAndSubType(object, System.Type)
+  nameWithType.vb: Object_CB_Extension.CompareTypeAndSubType(Object, Type)
+  fullName.vb: System.Object_CB_Extension.CompareTypeAndSubType(Object, System.Type)
+  name.vb: CompareTypeAndSubType(Object, Type)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type,System.Boolean)
+  commentId: M:System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type,System.Boolean)
+  isExternal: true
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_System_Boolean_
+  name: CompareTypeAndSubType(object, Type, bool)
+  nameWithType: Object_CB_Extension.CompareTypeAndSubType(object, Type, bool)
+  fullName: System.Object_CB_Extension.CompareTypeAndSubType(object, System.Type, bool)
+  nameWithType.vb: Object_CB_Extension.CompareTypeAndSubType(Object, Type, Boolean)
+  fullName.vb: System.Object_CB_Extension.CompareTypeAndSubType(Object, System.Type, Boolean)
+  name.vb: CompareTypeAndSubType(Object, Type, Boolean)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type,System.Boolean)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_System_Boolean_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType(System.Object,System.Type,System.Boolean)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType_System_Object_System_Type_System_Boolean_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object)
+  commentId: M:System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object)
+  isExternal: true
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_
+  name: CompareTypeAndSubType<T>(object)
+  nameWithType: Object_CB_Extension.CompareTypeAndSubType<T>(object)
+  fullName: System.Object_CB_Extension.CompareTypeAndSubType<T>(object)
+  nameWithType.vb: Object_CB_Extension.CompareTypeAndSubType(Of T)(Object)
+  fullName.vb: System.Object_CB_Extension.CompareTypeAndSubType(Of T)(Object)
+  name.vb: CompareTypeAndSubType(Of T)(Object)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object,System.Boolean)
+  commentId: M:System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object,System.Boolean)
+  isExternal: true
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_System_Boolean_
+  name: CompareTypeAndSubType<T>(object, bool)
+  nameWithType: Object_CB_Extension.CompareTypeAndSubType<T>(object, bool)
+  fullName: System.Object_CB_Extension.CompareTypeAndSubType<T>(object, bool)
+  nameWithType.vb: Object_CB_Extension.CompareTypeAndSubType(Of T)(Object, Boolean)
+  fullName.vb: System.Object_CB_Extension.CompareTypeAndSubType(Of T)(Object, Boolean)
+  name.vb: CompareTypeAndSubType(Of T)(Object, Boolean)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object,System.Boolean)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_System_Boolean_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareTypeAndSubType``1(System.Object,System.Boolean)
+    name: CompareTypeAndSubType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareTypeAndSubType__1_System_Object_System_Boolean_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object_CB_Extension.CompareType``1(System.Object)
+  commentId: M:System.Object_CB_Extension.CompareType``1(System.Object)
+  isExternal: true
+  href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType__1_System_Object_
+  name: CompareType<T>(object)
+  nameWithType: Object_CB_Extension.CompareType<T>(object)
+  fullName: System.Object_CB_Extension.CompareType<T>(object)
+  nameWithType.vb: Object_CB_Extension.CompareType(Of T)(Object)
+  fullName.vb: System.Object_CB_Extension.CompareType(Of T)(Object)
+  name.vb: CompareType(Of T)(Object)
+  spec.csharp:
+  - uid: System.Object_CB_Extension.CompareType``1(System.Object)
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object_CB_Extension.CompareType``1(System.Object)
+    name: CompareType
+    href: System.Object_CB_Extension.html#System_Object_CB_Extension_CompareType__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Cobilas.IO.Atlf.ATLFBase.NodeCount
+  commentId: P:Cobilas.IO.Atlf.ATLFBase.NodeCount
+  parent: Cobilas.IO.Atlf.ATLFBase
+  href: Cobilas.IO.Atlf.ATLFBase.html#Cobilas_IO_Atlf_ATLFBase_NodeCount
+  name: NodeCount
+  nameWithType: ATLFBase.NodeCount
+  fullName: Cobilas.IO.Atlf.ATLFBase.NodeCount
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.NodeCount*
+  commentId: Overload:Cobilas.IO.Atlf.ATLFStreamReader.NodeCount
+  href: Cobilas.IO.Atlf.ATLFStreamReader.html#Cobilas_IO_Atlf_ATLFStreamReader_NodeCount
+  name: NodeCount
+  nameWithType: ATLFStreamReader.NodeCount
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.NodeCount
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: Cobilas.IO.Atlf.ATLFBase.Indent
+  commentId: P:Cobilas.IO.Atlf.ATLFBase.Indent
+  parent: Cobilas.IO.Atlf.ATLFBase
+  href: Cobilas.IO.Atlf.ATLFBase.html#Cobilas_IO_Atlf_ATLFBase_Indent
+  name: Indent
+  nameWithType: ATLFBase.Indent
+  fullName: Cobilas.IO.Atlf.ATLFBase.Indent
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.Indent*
+  commentId: Overload:Cobilas.IO.Atlf.ATLFStreamReader.Indent
+  href: Cobilas.IO.Atlf.ATLFStreamReader.html#Cobilas_IO_Atlf_ATLFStreamReader_Indent
+  name: Indent
+  nameWithType: ATLFStreamReader.Indent
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.Indent
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Cobilas.IO.Atlf.ATLFBase.Encoding
+  commentId: P:Cobilas.IO.Atlf.ATLFBase.Encoding
+  parent: Cobilas.IO.Atlf.ATLFBase
+  href: Cobilas.IO.Atlf.ATLFBase.html#Cobilas_IO_Atlf_ATLFBase_Encoding
+  name: Encoding
+  nameWithType: ATLFBase.Encoding
+  fullName: Cobilas.IO.Atlf.ATLFBase.Encoding
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.Encoding*
+  commentId: Overload:Cobilas.IO.Atlf.ATLFStreamReader.Encoding
+  href: Cobilas.IO.Atlf.ATLFStreamReader.html#Cobilas_IO_Atlf_ATLFStreamReader_Encoding
+  name: Encoding
+  nameWithType: ATLFStreamReader.Encoding
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.Encoding
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.encoding
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+- uid: Cobilas.IO.Atlf.ATLFBase.TargetVersion
+  commentId: P:Cobilas.IO.Atlf.ATLFBase.TargetVersion
+  parent: Cobilas.IO.Atlf.ATLFBase
+  href: Cobilas.IO.Atlf.ATLFBase.html#Cobilas_IO_Atlf_ATLFBase_TargetVersion
+  name: TargetVersion
+  nameWithType: ATLFBase.TargetVersion
+  fullName: Cobilas.IO.Atlf.ATLFBase.TargetVersion
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.TargetVersion*
+  commentId: Overload:Cobilas.IO.Atlf.ATLFStreamReader.TargetVersion
+  href: Cobilas.IO.Atlf.ATLFStreamReader.html#Cobilas_IO_Atlf_ATLFStreamReader_TargetVersion
+  name: TargetVersion
+  nameWithType: ATLFStreamReader.TargetVersion
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.TargetVersion
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Cobilas.IO.Atlf.ATLFBase.Closed
+  commentId: P:Cobilas.IO.Atlf.ATLFBase.Closed
+  parent: Cobilas.IO.Atlf.ATLFBase
+  href: Cobilas.IO.Atlf.ATLFBase.html#Cobilas_IO_Atlf_ATLFBase_Closed
+  name: Closed
+  nameWithType: ATLFBase.Closed
+  fullName: Cobilas.IO.Atlf.ATLFBase.Closed
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.Closed*
+  commentId: Overload:Cobilas.IO.Atlf.ATLFStreamReader.Closed
+  href: Cobilas.IO.Atlf.ATLFStreamReader.html#Cobilas_IO_Atlf_ATLFStreamReader_Closed
+  name: Closed
+  nameWithType: ATLFStreamReader.Closed
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.Closed
+- uid: System.IO.File
+  commentId: T:System.IO.File
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.file
+  name: File
+  nameWithType: File
+  fullName: System.IO.File
+- uid: Cobilas.IO.Atlf.ATLFBase.CloseFlow
+  commentId: P:Cobilas.IO.Atlf.ATLFBase.CloseFlow
+  parent: Cobilas.IO.Atlf.ATLFBase
+  href: Cobilas.IO.Atlf.ATLFBase.html#Cobilas_IO_Atlf_ATLFBase_CloseFlow
+  name: CloseFlow
+  nameWithType: ATLFBase.CloseFlow
+  fullName: Cobilas.IO.Atlf.ATLFBase.CloseFlow
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.CloseFlow*
+  commentId: Overload:Cobilas.IO.Atlf.ATLFStreamReader.CloseFlow
+  href: Cobilas.IO.Atlf.ATLFStreamReader.html#Cobilas_IO_Atlf_ATLFStreamReader_CloseFlow
+  name: CloseFlow
+  nameWithType: ATLFStreamReader.CloseFlow
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.CloseFlow
+- uid: Cobilas.IO.Atlf.ATLFBase.Nodes
+  commentId: P:Cobilas.IO.Atlf.ATLFBase.Nodes
+  parent: Cobilas.IO.Atlf.ATLFBase
+  href: Cobilas.IO.Atlf.ATLFBase.html#Cobilas_IO_Atlf_ATLFBase_Nodes
+  name: Nodes
+  nameWithType: ATLFBase.Nodes
+  fullName: Cobilas.IO.Atlf.ATLFBase.Nodes
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.Nodes*
+  commentId: Overload:Cobilas.IO.Atlf.ATLFStreamReader.Nodes
+  href: Cobilas.IO.Atlf.ATLFStreamReader.html#Cobilas_IO_Atlf_ATLFStreamReader_Nodes
+  name: Nodes
+  nameWithType: ATLFStreamReader.Nodes
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.Nodes
+- uid: Cobilas.IO.Atlf.ATLFNode[]
+  isExternal: true
+  href: Cobilas.IO.Atlf.ATLFNode.html
+  name: ATLFNode[]
+  nameWithType: ATLFNode[]
+  fullName: Cobilas.IO.Atlf.ATLFNode[]
+  nameWithType.vb: ATLFNode()
+  fullName.vb: Cobilas.IO.Atlf.ATLFNode()
+  name.vb: ATLFNode()
+  spec.csharp:
+  - uid: Cobilas.IO.Atlf.ATLFNode
+    name: ATLFNode
+    href: Cobilas.IO.Atlf.ATLFNode.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Cobilas.IO.Atlf.ATLFNode
+    name: ATLFNode
+    href: Cobilas.IO.Atlf.ATLFNode.html
+  - name: (
+  - name: )
+- uid: Cobilas.IO.Atlf.ATLFBase.RefObject
+  commentId: P:Cobilas.IO.Atlf.ATLFBase.RefObject
+  parent: Cobilas.IO.Atlf.ATLFBase
+  href: Cobilas.IO.Atlf.ATLFBase.html#Cobilas_IO_Atlf_ATLFBase_RefObject
+  name: RefObject
+  nameWithType: ATLFBase.RefObject
+  fullName: Cobilas.IO.Atlf.ATLFBase.RefObject
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.RefObject*
+  commentId: Overload:Cobilas.IO.Atlf.ATLFStreamReader.RefObject
+  href: Cobilas.IO.Atlf.ATLFStreamReader.html#Cobilas_IO_Atlf_ATLFStreamReader_RefObject
+  name: RefObject
+  nameWithType: ATLFStreamReader.RefObject
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.RefObject
+- uid: System.MarshalByRefObject
+  commentId: T:System.MarshalByRefObject
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject
+  name: MarshalByRefObject
+  nameWithType: MarshalByRefObject
+  fullName: System.MarshalByRefObject
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: Cobilas.IO.Atlf.ATLFSBReader.Stream
+  commentId: P:Cobilas.IO.Atlf.ATLFSBReader.Stream
+  parent: Cobilas.IO.Atlf.ATLFSBReader
+  href: Cobilas.IO.Atlf.ATLFSBReader.html#Cobilas_IO_Atlf_ATLFSBReader_Stream
+  name: Stream
+  nameWithType: ATLFSBReader.Stream
+  fullName: Cobilas.IO.Atlf.ATLFSBReader.Stream
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.Stream*
+  commentId: Overload:Cobilas.IO.Atlf.ATLFStreamReader.Stream
+  href: Cobilas.IO.Atlf.ATLFStreamReader.html#Cobilas_IO_Atlf_ATLFStreamReader_Stream
+  name: Stream
+  nameWithType: ATLFStreamReader.Stream
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.Finalize*
+  commentId: Overload:Cobilas.IO.Atlf.ATLFStreamReader.Finalize
+  href: Cobilas.IO.Atlf.ATLFStreamReader.html#Cobilas_IO_Atlf_ATLFStreamReader_Finalize
+  name: ~ATLFStreamReader
+  nameWithType: ATLFStreamReader.~ATLFStreamReader
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.~ATLFStreamReader
+  spec.csharp:
+  - name: "~"
+  - uid: Cobilas.IO.Atlf.ATLFStreamReader.Finalize*
+    name: ATLFStreamReader
+    href: Cobilas.IO.Atlf.ATLFStreamReader.html#Cobilas_IO_Atlf_ATLFStreamReader_Finalize
+- uid: Cobilas.IO.Atlf.ATLFBase.Close
+  commentId: M:Cobilas.IO.Atlf.ATLFBase.Close
+  parent: Cobilas.IO.Atlf.ATLFBase
+  href: Cobilas.IO.Atlf.ATLFBase.html#Cobilas_IO_Atlf_ATLFBase_Close
+  name: Close()
+  nameWithType: ATLFBase.Close()
+  fullName: Cobilas.IO.Atlf.ATLFBase.Close()
+  spec.csharp:
+  - uid: Cobilas.IO.Atlf.ATLFBase.Close
+    name: Close
+    href: Cobilas.IO.Atlf.ATLFBase.html#Cobilas_IO_Atlf_ATLFBase_Close
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Cobilas.IO.Atlf.ATLFBase.Close
+    name: Close
+    href: Cobilas.IO.Atlf.ATLFBase.html#Cobilas_IO_Atlf_ATLFBase_Close
+  - name: (
+  - name: )
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.Close*
+  commentId: Overload:Cobilas.IO.Atlf.ATLFStreamReader.Close
+  href: Cobilas.IO.Atlf.ATLFStreamReader.html#Cobilas_IO_Atlf_ATLFStreamReader_Close
+  name: Close
+  nameWithType: ATLFStreamReader.Close
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.Close
+- uid: Cobilas.IO.Atlf.ATLFReader.Reader
+  commentId: M:Cobilas.IO.Atlf.ATLFReader.Reader
+  parent: Cobilas.IO.Atlf.ATLFReader
+  href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Reader
+  name: Reader()
+  nameWithType: ATLFReader.Reader()
+  fullName: Cobilas.IO.Atlf.ATLFReader.Reader()
+  spec.csharp:
+  - uid: Cobilas.IO.Atlf.ATLFReader.Reader
+    name: Reader
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Reader
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Cobilas.IO.Atlf.ATLFReader.Reader
+    name: Reader
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_Reader
+  - name: (
+  - name: )
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.Reader*
+  commentId: Overload:Cobilas.IO.Atlf.ATLFStreamReader.Reader
+  href: Cobilas.IO.Atlf.ATLFStreamReader.html#Cobilas_IO_Atlf_ATLFStreamReader_Reader
+  name: Reader
+  nameWithType: ATLFStreamReader.Reader
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.Reader
+- uid: Cobilas.IO.Atlf.ATLFBase.Dispose
+  commentId: M:Cobilas.IO.Atlf.ATLFBase.Dispose
+  parent: Cobilas.IO.Atlf.ATLFBase
+  href: Cobilas.IO.Atlf.ATLFBase.html#Cobilas_IO_Atlf_ATLFBase_Dispose
+  name: Dispose()
+  nameWithType: ATLFBase.Dispose()
+  fullName: Cobilas.IO.Atlf.ATLFBase.Dispose()
+  spec.csharp:
+  - uid: Cobilas.IO.Atlf.ATLFBase.Dispose
+    name: Dispose
+    href: Cobilas.IO.Atlf.ATLFBase.html#Cobilas_IO_Atlf_ATLFBase_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Cobilas.IO.Atlf.ATLFBase.Dispose
+    name: Dispose
+    href: Cobilas.IO.Atlf.ATLFBase.html#Cobilas_IO_Atlf_ATLFBase_Dispose
+  - name: (
+  - name: )
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.Dispose*
+  commentId: Overload:Cobilas.IO.Atlf.ATLFStreamReader.Dispose
+  href: Cobilas.IO.Atlf.ATLFStreamReader.html#Cobilas_IO_Atlf_ATLFStreamReader_Dispose
+  name: Dispose
+  nameWithType: ATLFStreamReader.Dispose
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.Dispose
+- uid: Cobilas.IO.Atlf.ATLFReader.GetHeader
+  commentId: M:Cobilas.IO.Atlf.ATLFReader.GetHeader
+  parent: Cobilas.IO.Atlf.ATLFReader
+  href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_GetHeader
+  name: GetHeader()
+  nameWithType: ATLFReader.GetHeader()
+  fullName: Cobilas.IO.Atlf.ATLFReader.GetHeader()
+  spec.csharp:
+  - uid: Cobilas.IO.Atlf.ATLFReader.GetHeader
+    name: GetHeader
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_GetHeader
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Cobilas.IO.Atlf.ATLFReader.GetHeader
+    name: GetHeader
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_GetHeader
+  - name: (
+  - name: )
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.GetHeader*
+  commentId: Overload:Cobilas.IO.Atlf.ATLFStreamReader.GetHeader
+  href: Cobilas.IO.Atlf.ATLFStreamReader.html#Cobilas_IO_Atlf_ATLFStreamReader_GetHeader
+  name: GetHeader
+  nameWithType: ATLFStreamReader.GetHeader
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.GetHeader
+- uid: Cobilas.IO.Atlf.ATLFReader.GetTag(System.String)
+  commentId: M:Cobilas.IO.Atlf.ATLFReader.GetTag(System.String)
+  parent: Cobilas.IO.Atlf.ATLFReader
+  isExternal: true
+  href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_GetTag_System_String_
+  name: GetTag(string)
+  nameWithType: ATLFReader.GetTag(string)
+  fullName: Cobilas.IO.Atlf.ATLFReader.GetTag(string)
+  nameWithType.vb: ATLFReader.GetTag(String)
+  fullName.vb: Cobilas.IO.Atlf.ATLFReader.GetTag(String)
+  name.vb: GetTag(String)
+  spec.csharp:
+  - uid: Cobilas.IO.Atlf.ATLFReader.GetTag(System.String)
+    name: GetTag
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_GetTag_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cobilas.IO.Atlf.ATLFReader.GetTag(System.String)
+    name: GetTag
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_GetTag_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.GetTag*
+  commentId: Overload:Cobilas.IO.Atlf.ATLFStreamReader.GetTag
+  href: Cobilas.IO.Atlf.ATLFStreamReader.html#Cobilas_IO_Atlf_ATLFStreamReader_GetTag_System_String_
+  name: GetTag
+  nameWithType: ATLFStreamReader.GetTag
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.GetTag
+- uid: Cobilas.IO.Atlf.ATLFReader.GetAllComments
+  commentId: M:Cobilas.IO.Atlf.ATLFReader.GetAllComments
+  parent: Cobilas.IO.Atlf.ATLFReader
+  href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_GetAllComments
+  name: GetAllComments()
+  nameWithType: ATLFReader.GetAllComments()
+  fullName: Cobilas.IO.Atlf.ATLFReader.GetAllComments()
+  spec.csharp:
+  - uid: Cobilas.IO.Atlf.ATLFReader.GetAllComments
+    name: GetAllComments
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_GetAllComments
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Cobilas.IO.Atlf.ATLFReader.GetAllComments
+    name: GetAllComments
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_GetAllComments
+  - name: (
+  - name: )
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.GetAllComments*
+  commentId: Overload:Cobilas.IO.Atlf.ATLFStreamReader.GetAllComments
+  href: Cobilas.IO.Atlf.ATLFStreamReader.html#Cobilas_IO_Atlf_ATLFStreamReader_GetAllComments
+  name: GetAllComments
+  nameWithType: ATLFStreamReader.GetAllComments
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.GetAllComments
+- uid: Cobilas.IO.Atlf.ATLFReader.GetTagGroup(System.String)
+  commentId: M:Cobilas.IO.Atlf.ATLFReader.GetTagGroup(System.String)
+  parent: Cobilas.IO.Atlf.ATLFReader
+  isExternal: true
+  href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_GetTagGroup_System_String_
+  name: GetTagGroup(string)
+  nameWithType: ATLFReader.GetTagGroup(string)
+  fullName: Cobilas.IO.Atlf.ATLFReader.GetTagGroup(string)
+  nameWithType.vb: ATLFReader.GetTagGroup(String)
+  fullName.vb: Cobilas.IO.Atlf.ATLFReader.GetTagGroup(String)
+  name.vb: GetTagGroup(String)
+  spec.csharp:
+  - uid: Cobilas.IO.Atlf.ATLFReader.GetTagGroup(System.String)
+    name: GetTagGroup
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_GetTagGroup_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cobilas.IO.Atlf.ATLFReader.GetTagGroup(System.String)
+    name: GetTagGroup
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_GetTagGroup_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.GetTagGroup*
+  commentId: Overload:Cobilas.IO.Atlf.ATLFStreamReader.GetTagGroup
+  href: Cobilas.IO.Atlf.ATLFStreamReader.html#Cobilas_IO_Atlf_ATLFStreamReader_GetTagGroup_System_String_
+  name: GetTagGroup
+  nameWithType: ATLFStreamReader.GetTagGroup
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.GetTagGroup
+- uid: Cobilas.IO.Atlf.ATLFReader.GetEnumerator
+  commentId: M:Cobilas.IO.Atlf.ATLFReader.GetEnumerator
+  parent: Cobilas.IO.Atlf.ATLFReader
+  href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_GetEnumerator
+  name: GetEnumerator()
+  nameWithType: ATLFReader.GetEnumerator()
+  fullName: Cobilas.IO.Atlf.ATLFReader.GetEnumerator()
+  spec.csharp:
+  - uid: Cobilas.IO.Atlf.ATLFReader.GetEnumerator
+    name: GetEnumerator
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_GetEnumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Cobilas.IO.Atlf.ATLFReader.GetEnumerator
+    name: GetEnumerator
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_GetEnumerator
+  - name: (
+  - name: )
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.GetEnumerator*
+  commentId: Overload:Cobilas.IO.Atlf.ATLFStreamReader.GetEnumerator
+  href: Cobilas.IO.Atlf.ATLFStreamReader.html#Cobilas_IO_Atlf_ATLFStreamReader_GetEnumerator
+  name: GetEnumerator
+  nameWithType: ATLFStreamReader.GetEnumerator
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.GetEnumerator
+- uid: System.Collections.Generic.IEnumerator{Cobilas.IO.Atlf.ATLFNode}
+  commentId: T:System.Collections.Generic.IEnumerator{Cobilas.IO.Atlf.ATLFNode}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<ATLFNode>
+  nameWithType: IEnumerator<ATLFNode>
+  fullName: System.Collections.Generic.IEnumerator<Cobilas.IO.Atlf.ATLFNode>
+  nameWithType.vb: IEnumerator(Of ATLFNode)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of Cobilas.IO.Atlf.ATLFNode)
+  name.vb: IEnumerator(Of ATLFNode)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - uid: Cobilas.IO.Atlf.ATLFNode
+    name: ATLFNode
+    href: Cobilas.IO.Atlf.ATLFNode.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Cobilas.IO.Atlf.ATLFNode
+    name: ATLFNode
+    href: Cobilas.IO.Atlf.ATLFNode.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Cobilas.IO.Atlf.ATLFReader.GetATLFDecoding(System.String)
+  commentId: M:Cobilas.IO.Atlf.ATLFReader.GetATLFDecoding(System.String)
+  parent: Cobilas.IO.Atlf.ATLFReader
+  isExternal: true
+  href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_GetATLFDecoding_System_String_
+  name: GetATLFDecoding(string)
+  nameWithType: ATLFReader.GetATLFDecoding(string)
+  fullName: Cobilas.IO.Atlf.ATLFReader.GetATLFDecoding(string)
+  nameWithType.vb: ATLFReader.GetATLFDecoding(String)
+  fullName.vb: Cobilas.IO.Atlf.ATLFReader.GetATLFDecoding(String)
+  name.vb: GetATLFDecoding(String)
+  spec.csharp:
+  - uid: Cobilas.IO.Atlf.ATLFReader.GetATLFDecoding(System.String)
+    name: GetATLFDecoding
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_GetATLFDecoding_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cobilas.IO.Atlf.ATLFReader.GetATLFDecoding(System.String)
+    name: GetATLFDecoding
+    href: Cobilas.IO.Atlf.ATLFReader.html#Cobilas_IO_Atlf_ATLFReader_GetATLFDecoding_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Cobilas.IO.Atlf.ATLFStreamReader.GetATLFDecoding*
+  commentId: Overload:Cobilas.IO.Atlf.ATLFStreamReader.GetATLFDecoding
+  href: Cobilas.IO.Atlf.ATLFStreamReader.html#Cobilas_IO_Atlf_ATLFStreamReader_GetATLFDecoding_System_String_
+  name: GetATLFDecoding
+  nameWithType: ATLFStreamReader.GetATLFDecoding
+  fullName: Cobilas.IO.Atlf.ATLFStreamReader.GetATLFDecoding
+- uid: Cobilas.IO.Atlf.Text.ATLFDecoding
+  commentId: T:Cobilas.IO.Atlf.Text.ATLFDecoding
+  parent: Cobilas.IO.Atlf.Text
+  href: Cobilas.IO.Atlf.Text.ATLFDecoding.html
+  name: ATLFDecoding
+  nameWithType: ATLFDecoding
+  fullName: Cobilas.IO.Atlf.Text.ATLFDecoding
+- uid: Cobilas.IO.Atlf.Text
+  commentId: N:Cobilas.IO.Atlf.Text
+  href: Cobilas.html
+  name: Cobilas.IO.Atlf.Text
+  nameWithType: Cobilas.IO.Atlf.Text
+  fullName: Cobilas.IO.Atlf.Text
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.IO
+    name: IO
+    href: Cobilas.IO.html
+  - name: .
+  - uid: Cobilas.IO.Atlf
+    name: Atlf
+    href: Cobilas.IO.Atlf.html
+  - name: .
+  - uid: Cobilas.IO.Atlf.Text
+    name: Text
+    href: Cobilas.IO.Atlf.Text.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.IO
+    name: IO
+    href: Cobilas.IO.html
+  - name: .
+  - uid: Cobilas.IO.Atlf
+    name: Atlf
+    href: Cobilas.IO.Atlf.html
+  - name: .
+  - uid: Cobilas.IO.Atlf.Text
+    name: Text
+    href: Cobilas.IO.Atlf.Text.html
