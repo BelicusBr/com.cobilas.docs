@@ -1,5 +1,4 @@
-# Cobilas Godot Utility
-[Cobilas.GodotEngine.Utility](com.cobilas.godot.utility.api/Cobilas.GodotEngine.Utility.html)
+# [Cobilas Godot Utility](/com.cobilas.godot.utility.api/Cobilas.GodotEngine.Utility.html)
 ### Descripition
 The package contains utility classes in csharp for godot engine(Godot3.5)
 ## RunTimeInitialization
