@@ -1,4 +1,4 @@
-# [Cobilas Core](/com.cobilas.cs.lib.core.net4x.api/Cobilas.html)
+# [Cobilas Core](com.cobilas.cs.lib.core.net4x.api/Cobilas.html)
 ### Descripition
 Cobilas Core Net4x is a utility library for CSharp.
 
