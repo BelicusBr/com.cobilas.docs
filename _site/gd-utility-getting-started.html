@@ -76,15 +76,15 @@
 <h3 id="descripition">Descripition</h3>
 <p>The package contains utility classes in csharp for godot engine(Godot3.5)</p>
 <h2 id="runtimeinitialization">RunTimeInitialization</h2>
-<p>(namespace: Cobilas.GodotEngine.Utility.Runtime)<br>
-The <code>RunTimeInitialization</code> class allows you to automate the <kbd>Project&gt;Project Settings&gt;AutoLoad</kbd> option.<br>
+<p>(namespace: Cobilas.GodotEngine.Utility.Runtime) <br>
+The <code>RunTimeInitialization</code> class allows you to automate the <kbd>Project&gt;Project Settings&gt;AutoLoad</kbd> option. <br>
 To use the <code>RunTimeInitialization</code> class, you must create a class and make it inherit <code>RunTimeInitialization</code>.</p>
 <pre><code class="lang-c#">using Cobilas.GodotEngine.Utility.Runtime;
 //The name of the class is up to you.
 public class RunTimeProcess : RunTimeInitialization {}
 </code></pre>
-<p>And remember to add the class that inherits <code>RunTimeInitialization</code> in <kbd>Project&gt;Project Settings&gt;AutoLoad</kbd>.<br>
-Remembering that the <code>RunTimeInitialization</code> class uses the virtual method <code>_Ready()</code> to perform the initialization of other classes.<br>
+<p>And remember to add the class that inherits <code>RunTimeInitialization</code> in <kbd>Project&gt;Project Settings&gt;AutoLoad</kbd>. <br>
+Remembering that the <code>RunTimeInitialization</code> class uses the virtual method <code>_Ready()</code> to perform the initialization of other classes. <br>
 And to initialize other classes along with the <code>RunTimeInitialization</code> class, the class must inherit the <code>Godot.Node</code> class or some class that inherits <code>Godot.Node</code> and use the <code>RunTimeInitializationClassAttribute</code> attribute.</p>
 <pre><code class="lang-c#">using Godot;
 using Cobilas.GodotEngine.Utility.Runtime;
