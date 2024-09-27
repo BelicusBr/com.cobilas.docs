@@ -29,10 +29,14 @@ items:
   - Cobilas.GodotEngine.Utility.Numerics.Vector3D.Magnitude(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
   - Cobilas.GodotEngine.Utility.Numerics.Vector3D.Max(Cobilas.GodotEngine.Utility.Numerics.Vector3D,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   - Cobilas.GodotEngine.Utility.Numerics.Vector3D.Min(Cobilas.GodotEngine.Utility.Numerics.Vector3D,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  - Cobilas.GodotEngine.Utility.Numerics.Vector3D.Neg(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  - Cobilas.GodotEngine.Utility.Numerics.Vector3D.Neg(System.Boolean,System.Boolean,System.Boolean)
   - Cobilas.GodotEngine.Utility.Numerics.Vector3D.Normalize(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
   - Cobilas.GodotEngine.Utility.Numerics.Vector3D.Normalized
   - Cobilas.GodotEngine.Utility.Numerics.Vector3D.One
   - Cobilas.GodotEngine.Utility.Numerics.Vector3D.Right
+  - Cobilas.GodotEngine.Utility.Numerics.Vector3D.Round
+  - Cobilas.GodotEngine.Utility.Numerics.Vector3D.Round(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
   - Cobilas.GodotEngine.Utility.Numerics.Vector3D.SqrMagnitude(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
   - Cobilas.GodotEngine.Utility.Numerics.Vector3D.ToString
   - Cobilas.GodotEngine.Utility.Numerics.Vector3D.ToString(System.String)
@@ -82,13 +86,13 @@ items:
     content: >-
       [Serializable]
 
-      public struct Vector3D : IVector<Vector3D>, IEquatable<Vector3D>, IVector, IFormattable
+      public struct Vector3D : IVectorGeneric<Vector3D>, IEquatable<Vector3D>, IVector, IFormattable
     content.vb: >-
       <Serializable>
 
-      Public Structure Vector3D Implements IVector(Of Vector3D), IEquatable(Of Vector3D), IVector, IFormattable
+      Public Structure Vector3D Implements IVectorGeneric(Of Vector3D), IEquatable(Of Vector3D), IVector, IFormattable
   implements:
-  - Cobilas.GodotEngine.Utility.Numerics.IVector{Cobilas.GodotEngine.Utility.Numerics.Vector3D}
+  - Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3D}
   - System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector3D}
   - Cobilas.GodotEngine.Utility.Numerics.IVector
   - System.IFormattable
@@ -212,7 +216,7 @@ items:
     content.vb: Public ReadOnly Property Normalized As Vector3D
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Normalized*
   implements:
-  - Cobilas.GodotEngine.Utility.Numerics.IVector{Cobilas.GodotEngine.Utility.Numerics.Vector3D}.Normalized
+  - Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3D}.Normalized
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.floor
   commentId: P:Cobilas.GodotEngine.Utility.Numerics.Vector3D.floor
   id: floor
@@ -244,7 +248,7 @@ items:
     content.vb: Public ReadOnly Property floor As Vector3D
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3D.floor*
   implements:
-  - Cobilas.GodotEngine.Utility.Numerics.IVector{Cobilas.GodotEngine.Utility.Numerics.Vector3D}.floor
+  - Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3D}.floor
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.ceil
   commentId: P:Cobilas.GodotEngine.Utility.Numerics.Vector3D.ceil
   id: ceil
@@ -276,7 +280,7 @@ items:
     content.vb: Public ReadOnly Property ceil As Vector3D
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3D.ceil*
   implements:
-  - Cobilas.GodotEngine.Utility.Numerics.IVector{Cobilas.GodotEngine.Utility.Numerics.Vector3D}.ceil
+  - Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3D}.ceil
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.magnitude
   commentId: P:Cobilas.GodotEngine.Utility.Numerics.Vector3D.magnitude
   id: magnitude
@@ -814,6 +818,44 @@ items:
   nameWithType.vb: Vector3D.Abs(Boolean, Boolean, Boolean)
   fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Abs(Boolean, Boolean, Boolean)
   name.vb: Abs(Boolean, Boolean, Boolean)
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Neg(System.Boolean,System.Boolean,System.Boolean)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Neg(System.Boolean,System.Boolean,System.Boolean)
+  id: Neg(System.Boolean,System.Boolean,System.Boolean)
+  parent: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+  langs:
+  - csharp
+  - vb
+  name: Neg(bool, bool, bool)
+  nameWithType: Vector3D.Neg(bool, bool, bool)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Neg(bool, bool, bool)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Vector3D.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Neg
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
+    startLine: 80
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  syntax:
+    content: public readonly Vector3D Neg(bool negX = true, bool negY = true, bool negZ = true)
+    parameters:
+    - id: negX
+      type: System.Boolean
+    - id: negY
+      type: System.Boolean
+    - id: negZ
+      type: System.Boolean
+    return:
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    content.vb: Public Function Neg(negX As Boolean = True, negY As Boolean = True, negZ As Boolean = True) As Vector3D
+  overload: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Neg*
+  nameWithType.vb: Vector3D.Neg(Boolean, Boolean, Boolean)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Neg(Boolean, Boolean, Boolean)
+  name.vb: Neg(Boolean, Boolean, Boolean)
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   id: Equals(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
@@ -832,7 +874,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Equals
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 80
+    startLine: 88
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -869,7 +911,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToString
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 83
+    startLine: 91
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -912,7 +954,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToString
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 86
+    startLine: 94
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -949,7 +991,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToString
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 88
+    startLine: 96
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -981,7 +1023,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Equals
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 90
+    startLine: 98
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1020,7 +1062,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetHashCode
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 93
+    startLine: 101
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1034,40 +1076,71 @@ items:
     content.vb: Public Overrides Function GetHashCode() As Integer
   overridden: System.ValueType.GetHashCode
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3D.GetHashCode*
-- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.SqrMagnitude(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
-  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3D.SqrMagnitude(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
-  id: SqrMagnitude(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Round
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Round
+  id: Round
   parent: Cobilas.GodotEngine.Utility.Numerics.Vector3D
   langs:
   - csharp
   - vb
-  name: SqrMagnitude(in Vector3D)
-  nameWithType: Vector3D.SqrMagnitude(in Vector3D)
-  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.SqrMagnitude(in Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  name: Round()
+  nameWithType: Vector3D.Round()
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Round()
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: SqrMagnitude
+    id: Round
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 96
+    startLine: 103
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  example: []
+  syntax:
+    content: public readonly Vector3D Round()
+    return:
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    content.vb: Public Function Round() As Vector3D
+  overload: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Round*
+  implements:
+  - Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3D}.Round
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Neg(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Neg(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  id: Neg(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  parent: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+  langs:
+  - csharp
+  - vb
+  name: Neg(in Vector3D)
+  nameWithType: Vector3D.Neg(in Vector3D)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Neg(in Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Vector3D.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Neg
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
+    startLine: 107
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
   syntax:
-    content: public static float SqrMagnitude(in Vector3D a)
+    content: public static Vector3D Neg(in Vector3D a)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
     return:
-      type: System.Single
-    content.vb: Public Shared Function SqrMagnitude(a As Vector3D) As Single
-  overload: Cobilas.GodotEngine.Utility.Numerics.Vector3D.SqrMagnitude*
-  nameWithType.vb: Vector3D.SqrMagnitude(Vector3D)
-  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector3D.SqrMagnitude(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
-  name.vb: SqrMagnitude(Vector3D)
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    content.vb: Public Shared Function Neg(a As Vector3D) As Vector3D
+  overload: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Neg*
+  nameWithType.vb: Vector3D.Neg(Vector3D)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Neg(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  name.vb: Neg(Vector3D)
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Magnitude(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
   commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Magnitude(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
   id: Magnitude(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
@@ -1086,7 +1159,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Magnitude
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 99
+    startLine: 108
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1102,6 +1175,318 @@ items:
   nameWithType.vb: Vector3D.Magnitude(Vector3D)
   fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Magnitude(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   name.vb: Magnitude(Vector3D)
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Distance(Cobilas.GodotEngine.Utility.Numerics.Vector3D@,Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Distance(Cobilas.GodotEngine.Utility.Numerics.Vector3D@,Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  id: Distance(Cobilas.GodotEngine.Utility.Numerics.Vector3D@,Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  parent: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+  langs:
+  - csharp
+  - vb
+  name: Distance(in Vector3D, in Vector3D)
+  nameWithType: Vector3D.Distance(in Vector3D, in Vector3D)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Distance(in Cobilas.GodotEngine.Utility.Numerics.Vector3D, in Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Vector3D.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Distance
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
+    startLine: 109
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  syntax:
+    content: public static float Distance(in Vector3D a, in Vector3D b)
+    parameters:
+    - id: a
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    - id: b
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Distance(a As Vector3D, b As Vector3D) As Single
+  overload: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Distance*
+  nameWithType.vb: Vector3D.Distance(Vector3D, Vector3D)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Distance(Cobilas.GodotEngine.Utility.Numerics.Vector3D, Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  name.vb: Distance(Vector3D, Vector3D)
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Abs(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Abs(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  id: Abs(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  parent: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+  langs:
+  - csharp
+  - vb
+  name: Abs(in Vector3D)
+  nameWithType: Vector3D.Abs(in Vector3D)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Abs(in Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Vector3D.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Abs
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
+    startLine: 110
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  syntax:
+    content: public static Vector3D Abs(in Vector3D a)
+    parameters:
+    - id: a
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    return:
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    content.vb: Public Shared Function Abs(a As Vector3D) As Vector3D
+  overload: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Abs*
+  nameWithType.vb: Vector3D.Abs(Vector3D)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Abs(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  name.vb: Abs(Vector3D)
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Round(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Round(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  id: Round(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  parent: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+  langs:
+  - csharp
+  - vb
+  name: Round(in Vector3D)
+  nameWithType: Vector3D.Round(in Vector3D)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Round(in Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Vector3D.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Round
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
+    startLine: 111
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  syntax:
+    content: public static Vector3D Round(in Vector3D a)
+    parameters:
+    - id: a
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    return:
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    content.vb: Public Shared Function Round(a As Vector3D) As Vector3D
+  overload: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Round*
+  nameWithType.vb: Vector3D.Round(Vector3D)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Round(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  name.vb: Round(Vector3D)
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Dot(Cobilas.GodotEngine.Utility.Numerics.Vector3D@,Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Dot(Cobilas.GodotEngine.Utility.Numerics.Vector3D@,Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  id: Dot(Cobilas.GodotEngine.Utility.Numerics.Vector3D@,Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  parent: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+  langs:
+  - csharp
+  - vb
+  name: Dot(in Vector3D, in Vector3D)
+  nameWithType: Vector3D.Dot(in Vector3D, in Vector3D)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Dot(in Cobilas.GodotEngine.Utility.Numerics.Vector3D, in Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Vector3D.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Dot
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
+    startLine: 112
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  syntax:
+    content: public static float Dot(in Vector3D lhs, in Vector3D rhs)
+    parameters:
+    - id: lhs
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    - id: rhs
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Dot(lhs As Vector3D, rhs As Vector3D) As Single
+  overload: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Dot*
+  nameWithType.vb: Vector3D.Dot(Vector3D, Vector3D)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Dot(Cobilas.GodotEngine.Utility.Numerics.Vector3D, Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  name.vb: Dot(Vector3D, Vector3D)
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.SqrMagnitude(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3D.SqrMagnitude(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  id: SqrMagnitude(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  parent: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+  langs:
+  - csharp
+  - vb
+  name: SqrMagnitude(in Vector3D)
+  nameWithType: Vector3D.SqrMagnitude(in Vector3D)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.SqrMagnitude(in Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Vector3D.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: SqrMagnitude
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
+    startLine: 113
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  syntax:
+    content: public static float SqrMagnitude(in Vector3D a)
+    parameters:
+    - id: a
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    return:
+      type: System.Single
+    content.vb: Public Shared Function SqrMagnitude(a As Vector3D) As Single
+  overload: Cobilas.GodotEngine.Utility.Numerics.Vector3D.SqrMagnitude*
+  nameWithType.vb: Vector3D.SqrMagnitude(Vector3D)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector3D.SqrMagnitude(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  name.vb: SqrMagnitude(Vector3D)
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.AngleTo(Cobilas.GodotEngine.Utility.Numerics.Vector2D@,Cobilas.GodotEngine.Utility.Numerics.Vector2D@)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3D.AngleTo(Cobilas.GodotEngine.Utility.Numerics.Vector2D@,Cobilas.GodotEngine.Utility.Numerics.Vector2D@)
+  id: AngleTo(Cobilas.GodotEngine.Utility.Numerics.Vector2D@,Cobilas.GodotEngine.Utility.Numerics.Vector2D@)
+  parent: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+  langs:
+  - csharp
+  - vb
+  name: AngleTo(in Vector2D, in Vector2D)
+  nameWithType: Vector3D.AngleTo(in Vector2D, in Vector2D)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.AngleTo(in Cobilas.GodotEngine.Utility.Numerics.Vector2D, in Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Vector3D.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: AngleTo
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
+    startLine: 114
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  syntax:
+    content: public static float AngleTo(in Vector2D lhs, in Vector2D rhs)
+    parameters:
+    - id: lhs
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+    - id: rhs
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+    return:
+      type: System.Single
+    content.vb: Public Shared Function AngleTo(lhs As Vector2D, rhs As Vector2D) As Single
+  overload: Cobilas.GodotEngine.Utility.Numerics.Vector3D.AngleTo*
+  nameWithType.vb: Vector3D.AngleTo(Vector2D, Vector2D)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector3D.AngleTo(Cobilas.GodotEngine.Utility.Numerics.Vector2D, Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  name.vb: AngleTo(Vector2D, Vector2D)
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Min(Cobilas.GodotEngine.Utility.Numerics.Vector3D,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Min(Cobilas.GodotEngine.Utility.Numerics.Vector3D,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  id: Min(Cobilas.GodotEngine.Utility.Numerics.Vector3D,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  parent: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+  langs:
+  - csharp
+  - vb
+  name: Min(Vector3D, Vector3D)
+  nameWithType: Vector3D.Min(Vector3D, Vector3D)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Min(Cobilas.GodotEngine.Utility.Numerics.Vector3D, Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Vector3D.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Min
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
+    startLine: 115
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  syntax:
+    content: public static Vector3D Min(Vector3D lhs, Vector3D rhs)
+    parameters:
+    - id: lhs
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    - id: rhs
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    return:
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    content.vb: Public Shared Function Min(lhs As Vector3D, rhs As Vector3D) As Vector3D
+  overload: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Min*
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Max(Cobilas.GodotEngine.Utility.Numerics.Vector3D,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Max(Cobilas.GodotEngine.Utility.Numerics.Vector3D,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  id: Max(Cobilas.GodotEngine.Utility.Numerics.Vector3D,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  parent: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+  langs:
+  - csharp
+  - vb
+  name: Max(Vector3D, Vector3D)
+  nameWithType: Vector3D.Max(Vector3D, Vector3D)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Max(Cobilas.GodotEngine.Utility.Numerics.Vector3D, Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Vector3D.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Max
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
+    startLine: 116
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  syntax:
+    content: public static Vector3D Max(Vector3D lhs, Vector3D rhs)
+    parameters:
+    - id: lhs
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    - id: rhs
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    return:
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    content.vb: Public Shared Function Max(lhs As Vector3D, rhs As Vector3D) As Vector3D
+  overload: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Max*
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Cross(Cobilas.GodotEngine.Utility.Numerics.Vector3D@,Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Cross(Cobilas.GodotEngine.Utility.Numerics.Vector3D@,Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  id: Cross(Cobilas.GodotEngine.Utility.Numerics.Vector3D@,Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  parent: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+  langs:
+  - csharp
+  - vb
+  name: Cross(in Vector3D, in Vector3D)
+  nameWithType: Vector3D.Cross(in Vector3D, in Vector3D)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Cross(in Cobilas.GodotEngine.Utility.Numerics.Vector3D, in Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Vector3D.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Cross
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
+    startLine: 117
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  syntax:
+    content: public static Vector3D Cross(in Vector3D lhs, in Vector3D rhs)
+    parameters:
+    - id: lhs
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    - id: rhs
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    return:
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    content.vb: Public Shared Function Cross(lhs As Vector3D, rhs As Vector3D) As Vector3D
+  overload: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Cross*
+  nameWithType.vb: Vector3D.Cross(Vector3D, Vector3D)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Cross(Cobilas.GodotEngine.Utility.Numerics.Vector3D, Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  name.vb: Cross(Vector3D, Vector3D)
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Normalize(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
   commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Normalize(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
   id: Normalize(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
@@ -1120,7 +1505,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Normalize
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 101
+    startLine: 119
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1154,7 +1539,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Ceil
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 106
+    startLine: 124
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1188,7 +1573,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Floor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 114
+    startLine: 132
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1204,250 +1589,6 @@ items:
   nameWithType.vb: Vector3D.Floor(Vector3D)
   fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Floor(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   name.vb: Floor(Vector3D)
-- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Dot(Cobilas.GodotEngine.Utility.Numerics.Vector3D@,Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
-  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Dot(Cobilas.GodotEngine.Utility.Numerics.Vector3D@,Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
-  id: Dot(Cobilas.GodotEngine.Utility.Numerics.Vector3D@,Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
-  parent: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-  langs:
-  - csharp
-  - vb
-  name: Dot(in Vector3D, in Vector3D)
-  nameWithType: Vector3D.Dot(in Vector3D, in Vector3D)
-  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Dot(in Cobilas.GodotEngine.Utility.Numerics.Vector3D, in Cobilas.GodotEngine.Utility.Numerics.Vector3D)
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Dot
-    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 122
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.Numerics
-  syntax:
-    content: public static float Dot(in Vector3D lhs, in Vector3D rhs)
-    parameters:
-    - id: lhs
-      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-    - id: rhs
-      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-    return:
-      type: System.Single
-    content.vb: Public Shared Function Dot(lhs As Vector3D, rhs As Vector3D) As Single
-  overload: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Dot*
-  nameWithType.vb: Vector3D.Dot(Vector3D, Vector3D)
-  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Dot(Cobilas.GodotEngine.Utility.Numerics.Vector3D, Cobilas.GodotEngine.Utility.Numerics.Vector3D)
-  name.vb: Dot(Vector3D, Vector3D)
-- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.AngleTo(Cobilas.GodotEngine.Utility.Numerics.Vector2D@,Cobilas.GodotEngine.Utility.Numerics.Vector2D@)
-  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3D.AngleTo(Cobilas.GodotEngine.Utility.Numerics.Vector2D@,Cobilas.GodotEngine.Utility.Numerics.Vector2D@)
-  id: AngleTo(Cobilas.GodotEngine.Utility.Numerics.Vector2D@,Cobilas.GodotEngine.Utility.Numerics.Vector2D@)
-  parent: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-  langs:
-  - csharp
-  - vb
-  name: AngleTo(in Vector2D, in Vector2D)
-  nameWithType: Vector3D.AngleTo(in Vector2D, in Vector2D)
-  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.AngleTo(in Cobilas.GodotEngine.Utility.Numerics.Vector2D, in Cobilas.GodotEngine.Utility.Numerics.Vector2D)
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: AngleTo
-    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 125
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.Numerics
-  syntax:
-    content: public static float AngleTo(in Vector2D lhs, in Vector2D rhs)
-    parameters:
-    - id: lhs
-      type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
-    - id: rhs
-      type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
-    return:
-      type: System.Single
-    content.vb: Public Shared Function AngleTo(lhs As Vector2D, rhs As Vector2D) As Single
-  overload: Cobilas.GodotEngine.Utility.Numerics.Vector3D.AngleTo*
-  nameWithType.vb: Vector3D.AngleTo(Vector2D, Vector2D)
-  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector3D.AngleTo(Cobilas.GodotEngine.Utility.Numerics.Vector2D, Cobilas.GodotEngine.Utility.Numerics.Vector2D)
-  name.vb: AngleTo(Vector2D, Vector2D)
-- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Cross(Cobilas.GodotEngine.Utility.Numerics.Vector3D@,Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
-  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Cross(Cobilas.GodotEngine.Utility.Numerics.Vector3D@,Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
-  id: Cross(Cobilas.GodotEngine.Utility.Numerics.Vector3D@,Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
-  parent: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-  langs:
-  - csharp
-  - vb
-  name: Cross(in Vector3D, in Vector3D)
-  nameWithType: Vector3D.Cross(in Vector3D, in Vector3D)
-  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Cross(in Cobilas.GodotEngine.Utility.Numerics.Vector3D, in Cobilas.GodotEngine.Utility.Numerics.Vector3D)
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Cross
-    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 128
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.Numerics
-  syntax:
-    content: public static Vector3D Cross(in Vector3D lhs, in Vector3D rhs)
-    parameters:
-    - id: lhs
-      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-    - id: rhs
-      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-    return:
-      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-    content.vb: Public Shared Function Cross(lhs As Vector3D, rhs As Vector3D) As Vector3D
-  overload: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Cross*
-  nameWithType.vb: Vector3D.Cross(Vector3D, Vector3D)
-  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Cross(Cobilas.GodotEngine.Utility.Numerics.Vector3D, Cobilas.GodotEngine.Utility.Numerics.Vector3D)
-  name.vb: Cross(Vector3D, Vector3D)
-- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Abs(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
-  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Abs(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
-  id: Abs(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
-  parent: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-  langs:
-  - csharp
-  - vb
-  name: Abs(in Vector3D)
-  nameWithType: Vector3D.Abs(in Vector3D)
-  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Abs(in Cobilas.GodotEngine.Utility.Numerics.Vector3D)
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Abs
-    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 131
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.Numerics
-  syntax:
-    content: public static Vector3D Abs(in Vector3D a)
-    parameters:
-    - id: a
-      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-    return:
-      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-    content.vb: Public Shared Function Abs(a As Vector3D) As Vector3D
-  overload: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Abs*
-  nameWithType.vb: Vector3D.Abs(Vector3D)
-  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Abs(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
-  name.vb: Abs(Vector3D)
-- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Distance(Cobilas.GodotEngine.Utility.Numerics.Vector3D@,Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
-  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Distance(Cobilas.GodotEngine.Utility.Numerics.Vector3D@,Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
-  id: Distance(Cobilas.GodotEngine.Utility.Numerics.Vector3D@,Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
-  parent: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-  langs:
-  - csharp
-  - vb
-  name: Distance(in Vector3D, in Vector3D)
-  nameWithType: Vector3D.Distance(in Vector3D, in Vector3D)
-  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Distance(in Cobilas.GodotEngine.Utility.Numerics.Vector3D, in Cobilas.GodotEngine.Utility.Numerics.Vector3D)
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Distance
-    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 134
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.Numerics
-  syntax:
-    content: public static float Distance(in Vector3D a, in Vector3D b)
-    parameters:
-    - id: a
-      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-    - id: b
-      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-    return:
-      type: System.Single
-    content.vb: Public Shared Function Distance(a As Vector3D, b As Vector3D) As Single
-  overload: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Distance*
-  nameWithType.vb: Vector3D.Distance(Vector3D, Vector3D)
-  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Distance(Cobilas.GodotEngine.Utility.Numerics.Vector3D, Cobilas.GodotEngine.Utility.Numerics.Vector3D)
-  name.vb: Distance(Vector3D, Vector3D)
-- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Min(Cobilas.GodotEngine.Utility.Numerics.Vector3D,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
-  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Min(Cobilas.GodotEngine.Utility.Numerics.Vector3D,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
-  id: Min(Cobilas.GodotEngine.Utility.Numerics.Vector3D,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
-  parent: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-  langs:
-  - csharp
-  - vb
-  name: Min(Vector3D, Vector3D)
-  nameWithType: Vector3D.Min(Vector3D, Vector3D)
-  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Min(Cobilas.GodotEngine.Utility.Numerics.Vector3D, Cobilas.GodotEngine.Utility.Numerics.Vector3D)
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Min
-    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 136
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.Numerics
-  syntax:
-    content: public static Vector3D Min(Vector3D lhs, Vector3D rhs)
-    parameters:
-    - id: lhs
-      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-    - id: rhs
-      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-    return:
-      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-    content.vb: Public Shared Function Min(lhs As Vector3D, rhs As Vector3D) As Vector3D
-  overload: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Min*
-- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Max(Cobilas.GodotEngine.Utility.Numerics.Vector3D,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
-  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Max(Cobilas.GodotEngine.Utility.Numerics.Vector3D,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
-  id: Max(Cobilas.GodotEngine.Utility.Numerics.Vector3D,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
-  parent: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-  langs:
-  - csharp
-  - vb
-  name: Max(Vector3D, Vector3D)
-  nameWithType: Vector3D.Max(Vector3D, Vector3D)
-  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Max(Cobilas.GodotEngine.Utility.Numerics.Vector3D, Cobilas.GodotEngine.Utility.Numerics.Vector3D)
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Max
-    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 137
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.Numerics
-  syntax:
-    content: public static Vector3D Max(Vector3D lhs, Vector3D rhs)
-    parameters:
-    - id: lhs
-      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-    - id: rhs
-      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-    return:
-      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-    content.vb: Public Shared Function Max(lhs As Vector3D, rhs As Vector3D) As Vector3D
-  overload: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Max*
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.op_Addition(Cobilas.GodotEngine.Utility.Numerics.Vector3D,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3D.op_Addition(Cobilas.GodotEngine.Utility.Numerics.Vector3D,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   id: op_Addition(Cobilas.GodotEngine.Utility.Numerics.Vector3D,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
@@ -1466,7 +1607,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Addition
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 140
+    startLine: 141
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1502,7 +1643,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Subtraction
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 148
+    startLine: 149
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1538,7 +1679,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Division
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 156
+    startLine: 157
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1574,7 +1715,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Multiply
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 164
+    startLine: 165
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1610,7 +1751,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Division
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 172
+    startLine: 173
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1646,7 +1787,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Multiply
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 180
+    startLine: 181
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1682,7 +1823,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Equality
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 188
+    startLine: 189
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1718,7 +1859,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Inequality
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 189
+    startLine: 190
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1754,7 +1895,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 191
+    startLine: 192
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1788,7 +1929,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 192
+    startLine: 193
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1822,7 +1963,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 194
+    startLine: 195
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1856,7 +1997,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 195
+    startLine: 196
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1890,7 +2031,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 197
+    startLine: 198
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1924,7 +2065,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 198
+    startLine: 199
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1979,30 +2120,30 @@ references:
   - uid: Cobilas.GodotEngine.Utility.Numerics
     name: Numerics
     href: Cobilas.GodotEngine.Utility.Numerics.html
-- uid: Cobilas.GodotEngine.Utility.Numerics.IVector{Cobilas.GodotEngine.Utility.Numerics.Vector3D}
-  commentId: T:Cobilas.GodotEngine.Utility.Numerics.IVector{Cobilas.GodotEngine.Utility.Numerics.Vector3D}
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3D}
+  commentId: T:Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3D}
   parent: Cobilas.GodotEngine.Utility.Numerics
-  definition: Cobilas.GodotEngine.Utility.Numerics.IVector`1
-  href: Cobilas.GodotEngine.Utility.Numerics.IVector-1.html
-  name: IVector<Vector3D>
-  nameWithType: IVector<Vector3D>
-  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector<Cobilas.GodotEngine.Utility.Numerics.Vector3D>
-  nameWithType.vb: IVector(Of Vector3D)
-  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVector(Of Cobilas.GodotEngine.Utility.Numerics.Vector3D)
-  name.vb: IVector(Of Vector3D)
+  definition: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1
+  href: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric-1.html
+  name: IVectorGeneric<Vector3D>
+  nameWithType: IVectorGeneric<Vector3D>
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric<Cobilas.GodotEngine.Utility.Numerics.Vector3D>
+  nameWithType.vb: IVectorGeneric(Of Vector3D)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric(Of Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  name.vb: IVectorGeneric(Of Vector3D)
   spec.csharp:
-  - uid: Cobilas.GodotEngine.Utility.Numerics.IVector`1
-    name: IVector
-    href: Cobilas.GodotEngine.Utility.Numerics.IVector-1.html
+  - uid: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1
+    name: IVectorGeneric
+    href: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric-1.html
   - name: <
   - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D
     name: Vector3D
     href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html
   - name: '>'
   spec.vb:
-  - uid: Cobilas.GodotEngine.Utility.Numerics.IVector`1
-    name: IVector
-    href: Cobilas.GodotEngine.Utility.Numerics.IVector-1.html
+  - uid: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1
+    name: IVectorGeneric
+    href: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric-1.html
   - name: (
   - name: Of
   - name: " "
@@ -2172,26 +2313,26 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.gettype
   - name: (
   - name: )
-- uid: Cobilas.GodotEngine.Utility.Numerics.IVector`1
-  commentId: T:Cobilas.GodotEngine.Utility.Numerics.IVector`1
-  href: Cobilas.GodotEngine.Utility.Numerics.IVector-1.html
-  name: IVector<TVector>
-  nameWithType: IVector<TVector>
-  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector<TVector>
-  nameWithType.vb: IVector(Of TVector)
-  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVector(Of TVector)
-  name.vb: IVector(Of TVector)
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1
+  commentId: T:Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1
+  href: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric-1.html
+  name: IVectorGeneric<TVector>
+  nameWithType: IVectorGeneric<TVector>
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric<TVector>
+  nameWithType.vb: IVectorGeneric(Of TVector)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric(Of TVector)
+  name.vb: IVectorGeneric(Of TVector)
   spec.csharp:
-  - uid: Cobilas.GodotEngine.Utility.Numerics.IVector`1
-    name: IVector
-    href: Cobilas.GodotEngine.Utility.Numerics.IVector-1.html
+  - uid: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1
+    name: IVectorGeneric
+    href: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric-1.html
   - name: <
   - name: TVector
   - name: '>'
   spec.vb:
-  - uid: Cobilas.GodotEngine.Utility.Numerics.IVector`1
-    name: IVector
-    href: Cobilas.GodotEngine.Utility.Numerics.IVector-1.html
+  - uid: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1
+    name: IVectorGeneric
+    href: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric-1.html
   - name: (
   - name: Of
   - name: " "
@@ -2260,16 +2401,16 @@ references:
   name: Normalized
   nameWithType: Vector3D.Normalized
   fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Normalized
-- uid: Cobilas.GodotEngine.Utility.Numerics.IVector{Cobilas.GodotEngine.Utility.Numerics.Vector3D}.Normalized
-  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IVector{Cobilas.GodotEngine.Utility.Numerics.Vector3D}.Normalized
-  parent: Cobilas.GodotEngine.Utility.Numerics.IVector{Cobilas.GodotEngine.Utility.Numerics.Vector3D}
-  definition: Cobilas.GodotEngine.Utility.Numerics.IVector`1.Normalized
-  href: Cobilas.GodotEngine.Utility.Numerics.IVector-1.html#Cobilas_GodotEngine_Utility_Numerics_IVector_1_Normalized
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3D}.Normalized
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3D}.Normalized
+  parent: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3D}
+  definition: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1.Normalized
+  href: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IVectorGeneric_1_Normalized
   name: Normalized
-  nameWithType: IVector<Vector3D>.Normalized
-  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector<Cobilas.GodotEngine.Utility.Numerics.Vector3D>.Normalized
-  nameWithType.vb: IVector(Of Vector3D).Normalized
-  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVector(Of Cobilas.GodotEngine.Utility.Numerics.Vector3D).Normalized
+  nameWithType: IVectorGeneric<Vector3D>.Normalized
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric<Cobilas.GodotEngine.Utility.Numerics.Vector3D>.Normalized
+  nameWithType.vb: IVectorGeneric(Of Vector3D).Normalized
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric(Of Cobilas.GodotEngine.Utility.Numerics.Vector3D).Normalized
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D
   commentId: T:Cobilas.GodotEngine.Utility.Numerics.Vector3D
   parent: Cobilas.GodotEngine.Utility.Numerics
@@ -2277,62 +2418,62 @@ references:
   name: Vector3D
   nameWithType: Vector3D
   fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-- uid: Cobilas.GodotEngine.Utility.Numerics.IVector`1.Normalized
-  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IVector`1.Normalized
-  href: Cobilas.GodotEngine.Utility.Numerics.IVector-1.html#Cobilas_GodotEngine_Utility_Numerics_IVector_1_Normalized
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1.Normalized
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1.Normalized
+  href: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IVectorGeneric_1_Normalized
   name: Normalized
-  nameWithType: IVector<TVector>.Normalized
-  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector<TVector>.Normalized
-  nameWithType.vb: IVector(Of TVector).Normalized
-  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVector(Of TVector).Normalized
+  nameWithType: IVectorGeneric<TVector>.Normalized
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric<TVector>.Normalized
+  nameWithType.vb: IVectorGeneric(Of TVector).Normalized
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric(Of TVector).Normalized
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.floor*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3D.floor
   href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html#Cobilas_GodotEngine_Utility_Numerics_Vector3D_floor
   name: floor
   nameWithType: Vector3D.floor
   fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.floor
-- uid: Cobilas.GodotEngine.Utility.Numerics.IVector{Cobilas.GodotEngine.Utility.Numerics.Vector3D}.floor
-  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IVector{Cobilas.GodotEngine.Utility.Numerics.Vector3D}.floor
-  parent: Cobilas.GodotEngine.Utility.Numerics.IVector{Cobilas.GodotEngine.Utility.Numerics.Vector3D}
-  definition: Cobilas.GodotEngine.Utility.Numerics.IVector`1.floor
-  href: Cobilas.GodotEngine.Utility.Numerics.IVector-1.html#Cobilas_GodotEngine_Utility_Numerics_IVector_1_floor
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3D}.floor
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3D}.floor
+  parent: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3D}
+  definition: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1.floor
+  href: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IVectorGeneric_1_floor
   name: floor
-  nameWithType: IVector<Vector3D>.floor
-  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector<Cobilas.GodotEngine.Utility.Numerics.Vector3D>.floor
-  nameWithType.vb: IVector(Of Vector3D).floor
-  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVector(Of Cobilas.GodotEngine.Utility.Numerics.Vector3D).floor
-- uid: Cobilas.GodotEngine.Utility.Numerics.IVector`1.floor
-  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IVector`1.floor
-  href: Cobilas.GodotEngine.Utility.Numerics.IVector-1.html#Cobilas_GodotEngine_Utility_Numerics_IVector_1_floor
+  nameWithType: IVectorGeneric<Vector3D>.floor
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric<Cobilas.GodotEngine.Utility.Numerics.Vector3D>.floor
+  nameWithType.vb: IVectorGeneric(Of Vector3D).floor
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric(Of Cobilas.GodotEngine.Utility.Numerics.Vector3D).floor
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1.floor
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1.floor
+  href: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IVectorGeneric_1_floor
   name: floor
-  nameWithType: IVector<TVector>.floor
-  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector<TVector>.floor
-  nameWithType.vb: IVector(Of TVector).floor
-  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVector(Of TVector).floor
+  nameWithType: IVectorGeneric<TVector>.floor
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric<TVector>.floor
+  nameWithType.vb: IVectorGeneric(Of TVector).floor
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric(Of TVector).floor
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.ceil*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3D.ceil
   href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html#Cobilas_GodotEngine_Utility_Numerics_Vector3D_ceil
   name: ceil
   nameWithType: Vector3D.ceil
   fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.ceil
-- uid: Cobilas.GodotEngine.Utility.Numerics.IVector{Cobilas.GodotEngine.Utility.Numerics.Vector3D}.ceil
-  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IVector{Cobilas.GodotEngine.Utility.Numerics.Vector3D}.ceil
-  parent: Cobilas.GodotEngine.Utility.Numerics.IVector{Cobilas.GodotEngine.Utility.Numerics.Vector3D}
-  definition: Cobilas.GodotEngine.Utility.Numerics.IVector`1.ceil
-  href: Cobilas.GodotEngine.Utility.Numerics.IVector-1.html#Cobilas_GodotEngine_Utility_Numerics_IVector_1_ceil
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3D}.ceil
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3D}.ceil
+  parent: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3D}
+  definition: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1.ceil
+  href: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IVectorGeneric_1_ceil
   name: ceil
-  nameWithType: IVector<Vector3D>.ceil
-  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector<Cobilas.GodotEngine.Utility.Numerics.Vector3D>.ceil
-  nameWithType.vb: IVector(Of Vector3D).ceil
-  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVector(Of Cobilas.GodotEngine.Utility.Numerics.Vector3D).ceil
-- uid: Cobilas.GodotEngine.Utility.Numerics.IVector`1.ceil
-  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IVector`1.ceil
-  href: Cobilas.GodotEngine.Utility.Numerics.IVector-1.html#Cobilas_GodotEngine_Utility_Numerics_IVector_1_ceil
+  nameWithType: IVectorGeneric<Vector3D>.ceil
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric<Cobilas.GodotEngine.Utility.Numerics.Vector3D>.ceil
+  nameWithType.vb: IVectorGeneric(Of Vector3D).ceil
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric(Of Cobilas.GodotEngine.Utility.Numerics.Vector3D).ceil
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1.ceil
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1.ceil
+  href: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IVectorGeneric_1_ceil
   name: ceil
-  nameWithType: IVector<TVector>.ceil
-  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector<TVector>.ceil
-  nameWithType.vb: IVector(Of TVector).ceil
-  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVector(Of TVector).ceil
+  nameWithType: IVectorGeneric<TVector>.ceil
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric<TVector>.ceil
+  nameWithType.vb: IVectorGeneric(Of TVector).ceil
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric(Of TVector).ceil
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.magnitude*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3D.magnitude
   href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html#Cobilas_GodotEngine_Utility_Numerics_Vector3D_magnitude
@@ -2508,6 +2649,12 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Neg*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Neg
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html#Cobilas_GodotEngine_Utility_Numerics_Vector3D_Neg_System_Boolean_System_Boolean_System_Boolean_
+  name: Neg
+  nameWithType: Vector3D.Neg
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Neg
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Equals*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Equals
   href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html#Cobilas_GodotEngine_Utility_Numerics_Vector3D_Equals_Cobilas_GodotEngine_Utility_Numerics_Vector3D_
@@ -2761,18 +2908,109 @@ references:
   name: GetHashCode
   nameWithType: Vector3D.GetHashCode
   fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.GetHashCode
-- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.SqrMagnitude*
-  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3D.SqrMagnitude
-  href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html#Cobilas_GodotEngine_Utility_Numerics_Vector3D_SqrMagnitude_Cobilas_GodotEngine_Utility_Numerics_Vector3D__
-  name: SqrMagnitude
-  nameWithType: Vector3D.SqrMagnitude
-  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.SqrMagnitude
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Round*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Round
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html#Cobilas_GodotEngine_Utility_Numerics_Vector3D_Round
+  name: Round
+  nameWithType: Vector3D.Round
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Round
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3D}.Round
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3D}.Round
+  parent: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3D}
+  definition: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1.Round
+  href: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IVectorGeneric_1_Round
+  name: Round()
+  nameWithType: IVectorGeneric<Vector3D>.Round()
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric<Cobilas.GodotEngine.Utility.Numerics.Vector3D>.Round()
+  nameWithType.vb: IVectorGeneric(Of Vector3D).Round()
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric(Of Cobilas.GodotEngine.Utility.Numerics.Vector3D).Round()
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3D}.Round
+    name: Round
+    href: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IVectorGeneric_1_Round
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3D}.Round
+    name: Round
+    href: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IVectorGeneric_1_Round
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1.Round
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1.Round
+  href: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IVectorGeneric_1_Round
+  name: Round()
+  nameWithType: IVectorGeneric<TVector>.Round()
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric<TVector>.Round()
+  nameWithType.vb: IVectorGeneric(Of TVector).Round()
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric(Of TVector).Round()
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1.Round
+    name: Round
+    href: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IVectorGeneric_1_Round
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1.Round
+    name: Round
+    href: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IVectorGeneric_1_Round
+  - name: (
+  - name: )
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Magnitude*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Magnitude
   href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html#Cobilas_GodotEngine_Utility_Numerics_Vector3D_Magnitude_Cobilas_GodotEngine_Utility_Numerics_Vector3D__
   name: Magnitude
   nameWithType: Vector3D.Magnitude
   fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Magnitude
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Distance*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Distance
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html#Cobilas_GodotEngine_Utility_Numerics_Vector3D_Distance_Cobilas_GodotEngine_Utility_Numerics_Vector3D__Cobilas_GodotEngine_Utility_Numerics_Vector3D__
+  name: Distance
+  nameWithType: Vector3D.Distance
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Distance
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Dot*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Dot
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html#Cobilas_GodotEngine_Utility_Numerics_Vector3D_Dot_Cobilas_GodotEngine_Utility_Numerics_Vector3D__Cobilas_GodotEngine_Utility_Numerics_Vector3D__
+  name: Dot
+  nameWithType: Vector3D.Dot
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Dot
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.SqrMagnitude*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3D.SqrMagnitude
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html#Cobilas_GodotEngine_Utility_Numerics_Vector3D_SqrMagnitude_Cobilas_GodotEngine_Utility_Numerics_Vector3D__
+  name: SqrMagnitude
+  nameWithType: Vector3D.SqrMagnitude
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.SqrMagnitude
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.AngleTo*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3D.AngleTo
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html#Cobilas_GodotEngine_Utility_Numerics_Vector3D_AngleTo_Cobilas_GodotEngine_Utility_Numerics_Vector2D__Cobilas_GodotEngine_Utility_Numerics_Vector2D__
+  name: AngleTo
+  nameWithType: Vector3D.AngleTo
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.AngleTo
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+  commentId: T:Cobilas.GodotEngine.Utility.Numerics.Vector2D
+  parent: Cobilas.GodotEngine.Utility.Numerics
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector2D.html
+  name: Vector2D
+  nameWithType: Vector2D
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Min*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Min
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html#Cobilas_GodotEngine_Utility_Numerics_Vector3D_Min_Cobilas_GodotEngine_Utility_Numerics_Vector3D_Cobilas_GodotEngine_Utility_Numerics_Vector3D_
+  name: Min
+  nameWithType: Vector3D.Min
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Min
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Max*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Max
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html#Cobilas_GodotEngine_Utility_Numerics_Vector3D_Max_Cobilas_GodotEngine_Utility_Numerics_Vector3D_Cobilas_GodotEngine_Utility_Numerics_Vector3D_
+  name: Max
+  nameWithType: Vector3D.Max
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Max
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Cross*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Cross
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html#Cobilas_GodotEngine_Utility_Numerics_Vector3D_Cross_Cobilas_GodotEngine_Utility_Numerics_Vector3D__Cobilas_GodotEngine_Utility_Numerics_Vector3D__
+  name: Cross
+  nameWithType: Vector3D.Cross
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Cross
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Normalize*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Normalize
   href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html#Cobilas_GodotEngine_Utility_Numerics_Vector3D_Normalize_Cobilas_GodotEngine_Utility_Numerics_Vector3D__
@@ -2791,49 +3029,6 @@ references:
   name: Floor
   nameWithType: Vector3D.Floor
   fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Floor
-- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Dot*
-  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Dot
-  href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html#Cobilas_GodotEngine_Utility_Numerics_Vector3D_Dot_Cobilas_GodotEngine_Utility_Numerics_Vector3D__Cobilas_GodotEngine_Utility_Numerics_Vector3D__
-  name: Dot
-  nameWithType: Vector3D.Dot
-  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Dot
-- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.AngleTo*
-  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3D.AngleTo
-  href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html#Cobilas_GodotEngine_Utility_Numerics_Vector3D_AngleTo_Cobilas_GodotEngine_Utility_Numerics_Vector2D__Cobilas_GodotEngine_Utility_Numerics_Vector2D__
-  name: AngleTo
-  nameWithType: Vector3D.AngleTo
-  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.AngleTo
-- uid: Cobilas.GodotEngine.Utility.Numerics.Vector2D
-  commentId: T:Cobilas.GodotEngine.Utility.Numerics.Vector2D
-  parent: Cobilas.GodotEngine.Utility.Numerics
-  href: Cobilas.GodotEngine.Utility.Numerics.Vector2D.html
-  name: Vector2D
-  nameWithType: Vector2D
-  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector2D
-- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Cross*
-  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Cross
-  href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html#Cobilas_GodotEngine_Utility_Numerics_Vector3D_Cross_Cobilas_GodotEngine_Utility_Numerics_Vector3D__Cobilas_GodotEngine_Utility_Numerics_Vector3D__
-  name: Cross
-  nameWithType: Vector3D.Cross
-  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Cross
-- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Distance*
-  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Distance
-  href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html#Cobilas_GodotEngine_Utility_Numerics_Vector3D_Distance_Cobilas_GodotEngine_Utility_Numerics_Vector3D__Cobilas_GodotEngine_Utility_Numerics_Vector3D__
-  name: Distance
-  nameWithType: Vector3D.Distance
-  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Distance
-- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Min*
-  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Min
-  href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html#Cobilas_GodotEngine_Utility_Numerics_Vector3D_Min_Cobilas_GodotEngine_Utility_Numerics_Vector3D_Cobilas_GodotEngine_Utility_Numerics_Vector3D_
-  name: Min
-  nameWithType: Vector3D.Min
-  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Min
-- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Max*
-  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Max
-  href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html#Cobilas_GodotEngine_Utility_Numerics_Vector3D_Max_Cobilas_GodotEngine_Utility_Numerics_Vector3D_Cobilas_GodotEngine_Utility_Numerics_Vector3D_
-  name: Max
-  nameWithType: Vector3D.Max
-  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Max
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.op_Addition*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3D.op_Addition
   href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html#Cobilas_GodotEngine_Utility_Numerics_Vector3D_op_Addition_Cobilas_GodotEngine_Utility_Numerics_Vector3D_Cobilas_GodotEngine_Utility_Numerics_Vector3D_

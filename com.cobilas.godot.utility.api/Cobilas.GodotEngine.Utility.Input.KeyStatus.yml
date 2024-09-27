@@ -23,13 +23,15 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: KeyStatus
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/KeyStatus.cs
-    startLine: 2
+    startLine: 3
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Input
+  summary: represents the state of a key.
+  example: []
   syntax:
-    content: public enum KeyStatus
-    content.vb: Public Enum KeyStatus
+    content: 'public enum KeyStatus : byte'
+    content.vb: Public Enum KeyStatus As Byte
 - uid: Cobilas.GodotEngine.Utility.Input.KeyStatus.None
   commentId: F:Cobilas.GodotEngine.Utility.Input.KeyStatus.None
   id: None
@@ -48,10 +50,12 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: None
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/KeyStatus.cs
-    startLine: 3
+    startLine: 5
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Input
+  summary: No status detected.
+  example: []
   syntax:
     content: None = 0
     return:
@@ -74,10 +78,12 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Up
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/KeyStatus.cs
-    startLine: 4
+    startLine: 7
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Input
+  summary: Occurs when the key has been released.
+  example: []
   syntax:
     content: Up = 1
     return:
@@ -100,10 +106,12 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Press
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/KeyStatus.cs
-    startLine: 5
+    startLine: 9
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Input
+  summary: Occurs when the key is being pressed.
+  example: []
   syntax:
     content: Press = 2
     return:
@@ -126,10 +134,12 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Down
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/KeyStatus.cs
-    startLine: 6
+    startLine: 11
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Input
+  summary: Occurs when the key has been pressed.
+  example: []
   syntax:
     content: Down = 3
     return:

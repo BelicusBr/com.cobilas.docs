@@ -6,11 +6,15 @@ items:
   parent: Cobilas.GodotEngine.Utility.Numerics
   children:
   - Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2D,Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  - Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt,Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
   - Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector3D,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  - Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt,Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
   - Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
   - Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals(System.Object,System.Object)
   - Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  - Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
   - Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  - Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
   - Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector4D)
   - Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode(System.Object)
   langs:
@@ -32,13 +36,15 @@ items:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
   syntax:
-    content: 'public struct VectorEqualityComparer : IEqualityComparer, IEqualityComparer<Vector2D>, IEqualityComparer<Vector3D>, IEqualityComparer<Vector4D>'
-    content.vb: Public Structure VectorEqualityComparer Implements IEqualityComparer, IEqualityComparer(Of Vector2D), IEqualityComparer(Of Vector3D), IEqualityComparer(Of Vector4D)
+    content: 'public struct VectorEqualityComparer : IEqualityComparer, IEqualityComparer<Vector2D>, IEqualityComparer<Vector3D>, IEqualityComparer<Vector4D>, IEqualityComparer<Vector2DInt>, IEqualityComparer<Vector3DInt>'
+    content.vb: Public Structure VectorEqualityComparer Implements IEqualityComparer, IEqualityComparer(Of Vector2D), IEqualityComparer(Of Vector3D), IEqualityComparer(Of Vector4D), IEqualityComparer(Of Vector2DInt), IEqualityComparer(Of Vector3DInt)
   implements:
   - System.Collections.IEqualityComparer
   - System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector2D}
   - System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector3D}
   - System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector4D}
+  - System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector2DInt}
+  - System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}
   inheritedMembers:
   - System.ValueType.Equals(System.Object)
   - System.ValueType.GetHashCode
@@ -63,7 +69,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Equals
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-    startLine: 9
+    startLine: 10
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -110,7 +116,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Equals
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-    startLine: 16
+    startLine: 19
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -150,7 +156,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Equals
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-    startLine: 19
+    startLine: 20
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -190,7 +196,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Equals
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-    startLine: 22
+    startLine: 21
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -212,6 +218,86 @@ items:
   overload: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals*
   implements:
   - System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector4D}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+- uid: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt,Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt,Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  id: Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt,Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  parent: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer
+  langs:
+  - csharp
+  - vb
+  name: Equals(Vector2DInt, Vector2DInt)
+  nameWithType: VectorEqualityComparer.Equals(Vector2DInt, Vector2DInt)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt, Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Equals
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
+    startLine: 23
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Determines whether the specified objects are equal.
+  example: []
+  syntax:
+    content: public readonly bool Equals(Vector2DInt x, Vector2DInt y)
+    parameters:
+    - id: x
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+      description: The first object of type <code class="paramref">T</code> to compare.
+    - id: y
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+      description: The second object of type <code class="paramref">T</code> to compare.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified objects are equal; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(x As Vector2DInt, y As Vector2DInt) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals*
+  implements:
+  - System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector2DInt}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt,Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+- uid: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt,Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt,Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
+  id: Equals(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt,Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
+  parent: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer
+  langs:
+  - csharp
+  - vb
+  name: Equals(Vector3DInt, Vector3DInt)
+  nameWithType: VectorEqualityComparer.Equals(Vector3DInt, Vector3DInt)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt, Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Equals
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
+    startLine: 24
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Determines whether the specified objects are equal.
+  example: []
+  syntax:
+    content: public readonly bool Equals(Vector3DInt x, Vector3DInt y)
+    parameters:
+    - id: x
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: The first object of type <code class="paramref">T</code> to compare.
+    - id: y
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: The second object of type <code class="paramref">T</code> to compare.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified objects are equal; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(x As Vector3DInt, y As Vector3DInt) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals*
+  implements:
+  - System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt,Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
 - uid: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode(System.Object)
   commentId: M:Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode(System.Object)
   id: GetHashCode(System.Object)
@@ -230,7 +316,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetHashCode
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-    startLine: 25
+    startLine: 26
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -274,7 +360,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetHashCode
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-    startLine: 33
+    startLine: 36
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -315,7 +401,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetHashCode
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-    startLine: 36
+    startLine: 37
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -356,7 +442,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetHashCode
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-    startLine: 39
+    startLine: 38
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -379,6 +465,88 @@ items:
     description: The type of <code class="paramref">obj</code> is a reference type and <code class="paramref">obj</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
   implements:
   - System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector4D}.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+- uid: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  id: GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  parent: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode(Vector2DInt)
+  nameWithType: VectorEqualityComparer.GetHashCode(Vector2DInt)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetHashCode
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
+    startLine: 40
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns a hash code for the specified object.
+  example: []
+  syntax:
+    content: public readonly int GetHashCode(Vector2DInt obj)
+    parameters:
+    - id: obj
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+      description: The <xref href="System.Object" data-throw-if-not-resolved="false"></xref> for which a hash code is to be returned.
+    return:
+      type: System.Int32
+      description: A hash code for the specified object.
+    content.vb: Public Function GetHashCode(obj As Vector2DInt) As Integer
+  overload: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The type of <code class="paramref">obj</code> is a reference type and <code class="paramref">obj</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  implements:
+  - System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector2DInt}.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+- uid: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
+  id: GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
+  parent: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode(Vector3DInt)
+  nameWithType: VectorEqualityComparer.GetHashCode(Vector3DInt)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetHashCode
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
+    startLine: 41
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns a hash code for the specified object.
+  example: []
+  syntax:
+    content: public readonly int GetHashCode(Vector3DInt obj)
+    parameters:
+    - id: obj
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: The <xref href="System.Object" data-throw-if-not-resolved="false"></xref> for which a hash code is to be returned.
+    return:
+      type: System.Int32
+      description: A hash code for the specified object.
+    content.vb: Public Function GetHashCode(obj As Vector3DInt) As Integer
+  overload: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The type of <code class="paramref">obj</code> is a reference type and <code class="paramref">obj</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  implements:
+  - System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
 references:
 - uid: Cobilas.GodotEngine.Utility.Numerics
   commentId: N:Cobilas.GodotEngine.Utility.Numerics
@@ -524,6 +692,72 @@ references:
   - uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D
     name: Vector4D
     href: Cobilas.GodotEngine.Utility.Numerics.Vector4D.html
+  - name: )
+- uid: System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector2DInt}
+  commentId: T:System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector2DInt}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEqualityComparer`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  name: IEqualityComparer<Vector2DInt>
+  nameWithType: IEqualityComparer<Vector2DInt>
+  fullName: System.Collections.Generic.IEqualityComparer<Cobilas.GodotEngine.Utility.Numerics.Vector2DInt>
+  nameWithType.vb: IEqualityComparer(Of Vector2DInt)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  name.vb: IEqualityComparer(Of Vector2DInt)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+    name: Vector2DInt
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+    name: Vector2DInt
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt.html
+  - name: )
+- uid: System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}
+  commentId: T:System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEqualityComparer`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  name: IEqualityComparer<Vector3DInt>
+  nameWithType: IEqualityComparer<Vector3DInt>
+  fullName: System.Collections.Generic.IEqualityComparer<Cobilas.GodotEngine.Utility.Numerics.Vector3DInt>
+  nameWithType.vb: IEqualityComparer(Of Vector3DInt)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
+  name.vb: IEqualityComparer(Of Vector3DInt)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+    name: Vector3DInt
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+    name: Vector3DInt
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html
   - name: )
 - uid: System.ValueType.Equals(System.Object)
   commentId: M:System.ValueType.Equals(System.Object)
@@ -1030,6 +1264,100 @@ references:
   name: Vector4D
   nameWithType: Vector4D
   fullName: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+- uid: System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector2DInt}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt,Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  commentId: M:System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector2DInt}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt,Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  parent: System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector2DInt}
+  definition: System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1.equals
+  name: Equals(Vector2DInt, Vector2DInt)
+  nameWithType: IEqualityComparer<Vector2DInt>.Equals(Vector2DInt, Vector2DInt)
+  fullName: System.Collections.Generic.IEqualityComparer<Cobilas.GodotEngine.Utility.Numerics.Vector2DInt>.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt, Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  nameWithType.vb: IEqualityComparer(Of Vector2DInt).Equals(Vector2DInt, Vector2DInt)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of Cobilas.GodotEngine.Utility.Numerics.Vector2DInt).Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt, Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector2DInt}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt,Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1.equals
+  - name: (
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+    name: Vector2DInt
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt.html
+  - name: ','
+  - name: " "
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+    name: Vector2DInt
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector2DInt}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt,Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1.equals
+  - name: (
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+    name: Vector2DInt
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt.html
+  - name: ','
+  - name: " "
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+    name: Vector2DInt
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt.html
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+  commentId: T:Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+  parent: Cobilas.GodotEngine.Utility.Numerics
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt.html
+  name: Vector2DInt
+  nameWithType: Vector2DInt
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+- uid: System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt,Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
+  commentId: M:System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt,Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
+  parent: System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}
+  definition: System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1.equals
+  name: Equals(Vector3DInt, Vector3DInt)
+  nameWithType: IEqualityComparer<Vector3DInt>.Equals(Vector3DInt, Vector3DInt)
+  fullName: System.Collections.Generic.IEqualityComparer<Cobilas.GodotEngine.Utility.Numerics.Vector3DInt>.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt, Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
+  nameWithType.vb: IEqualityComparer(Of Vector3DInt).Equals(Vector3DInt, Vector3DInt)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of Cobilas.GodotEngine.Utility.Numerics.Vector3DInt).Equals(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt, Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt,Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1.equals
+  - name: (
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+    name: Vector3DInt
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html
+  - name: ','
+  - name: " "
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+    name: Vector3DInt
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt,Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1.equals
+  - name: (
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+    name: Vector3DInt
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html
+  - name: ','
+  - name: " "
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+    name: Vector3DInt
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+  commentId: T:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+  parent: Cobilas.GodotEngine.Utility.Numerics
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html
+  name: Vector3DInt
+  nameWithType: Vector3DInt
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
 - uid: System.ArgumentNullException
   commentId: T:System.ArgumentNullException
   isExternal: true
@@ -1201,4 +1529,64 @@ references:
   - uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D
     name: Vector4D
     href: Cobilas.GodotEngine.Utility.Numerics.Vector4D.html
+  - name: )
+- uid: System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector2DInt}.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  commentId: M:System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector2DInt}.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  parent: System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector2DInt}
+  definition: System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1.gethashcode
+  name: GetHashCode(Vector2DInt)
+  nameWithType: IEqualityComparer<Vector2DInt>.GetHashCode(Vector2DInt)
+  fullName: System.Collections.Generic.IEqualityComparer<Cobilas.GodotEngine.Utility.Numerics.Vector2DInt>.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  nameWithType.vb: IEqualityComparer(Of Vector2DInt).GetHashCode(Vector2DInt)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of Cobilas.GodotEngine.Utility.Numerics.Vector2DInt).GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector2DInt}.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1.gethashcode
+  - name: (
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+    name: Vector2DInt
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector2DInt}.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1.gethashcode
+  - name: (
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+    name: Vector2DInt
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt.html
+  - name: )
+- uid: System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
+  commentId: M:System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
+  parent: System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}
+  definition: System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1.gethashcode
+  name: GetHashCode(Vector3DInt)
+  nameWithType: IEqualityComparer<Vector3DInt>.GetHashCode(Vector3DInt)
+  fullName: System.Collections.Generic.IEqualityComparer<Cobilas.GodotEngine.Utility.Numerics.Vector3DInt>.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
+  nameWithType.vb: IEqualityComparer(Of Vector3DInt).GetHashCode(Vector3DInt)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of Cobilas.GodotEngine.Utility.Numerics.Vector3DInt).GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1.gethashcode
+  - name: (
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+    name: Vector3DInt
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1.gethashcode
+  - name: (
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+    name: Vector3DInt
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html
   - name: )

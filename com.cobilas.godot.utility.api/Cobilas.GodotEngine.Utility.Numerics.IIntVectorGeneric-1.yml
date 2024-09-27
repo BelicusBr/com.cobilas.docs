@@ -1,0 +1,473 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1
+  commentId: T:Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1
+  id: IIntVectorGeneric`1
+  parent: Cobilas.GodotEngine.Utility.Numerics
+  children:
+  - Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.RoundToInt
+  - Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.ceilToInt
+  - Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.floorToInt
+  langs:
+  - csharp
+  - vb
+  name: IIntVectorGeneric<TVector>
+  nameWithType: IIntVectorGeneric<TVector>
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric<TVector>
+  type: Interface
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/IIntVectorGeneric.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: IIntVectorGeneric
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/IIntVectorGeneric.cs
+    startLine: 3
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  syntax:
+    content: 'public interface IIntVectorGeneric<TVector> : IEquatable<TVector>, IIntVector, IFormattable where TVector : IIntVector'
+    typeParameters:
+    - id: TVector
+    content.vb: Public Interface IIntVectorGeneric(Of TVector As IIntVector) Inherits IEquatable(Of TVector), IIntVector, IFormattable
+  inheritedMembers:
+  - System.IEquatable{{TVector}}.Equals({TVector})
+  - Cobilas.GodotEngine.Utility.Numerics.IIntVector.magnitude
+  - Cobilas.GodotEngine.Utility.Numerics.IIntVector.sqrMagnitude
+  - Cobilas.GodotEngine.Utility.Numerics.IIntVector.aspect
+  - Cobilas.GodotEngine.Utility.Numerics.IIntVector.AxisCount
+  - Cobilas.GodotEngine.Utility.Numerics.IIntVector.Item(System.Int32)
+  - Cobilas.GodotEngine.Utility.Numerics.IIntVector.ToString(System.String)
+  - System.IFormattable.ToString(System.String,System.IFormatProvider)
+  nameWithType.vb: IIntVectorGeneric(Of TVector)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric(Of TVector)
+  name.vb: IIntVectorGeneric(Of TVector)
+- uid: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.floorToInt
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.floorToInt
+  id: floorToInt
+  parent: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1
+  langs:
+  - csharp
+  - vb
+  name: floorToInt
+  nameWithType: IIntVectorGeneric<TVector>.floorToInt
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric<TVector>.floorToInt
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/IIntVectorGeneric.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: floorToInt
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/IIntVectorGeneric.cs
+    startLine: 4
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  syntax:
+    content: TVector floorToInt { get; }
+    parameters: []
+    return:
+      type: '{TVector}'
+    content.vb: ReadOnly Property floorToInt As TVector
+  overload: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.floorToInt*
+  nameWithType.vb: IIntVectorGeneric(Of TVector).floorToInt
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric(Of TVector).floorToInt
+- uid: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.ceilToInt
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.ceilToInt
+  id: ceilToInt
+  parent: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1
+  langs:
+  - csharp
+  - vb
+  name: ceilToInt
+  nameWithType: IIntVectorGeneric<TVector>.ceilToInt
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric<TVector>.ceilToInt
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/IIntVectorGeneric.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ceilToInt
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/IIntVectorGeneric.cs
+    startLine: 5
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  syntax:
+    content: TVector ceilToInt { get; }
+    parameters: []
+    return:
+      type: '{TVector}'
+    content.vb: ReadOnly Property ceilToInt As TVector
+  overload: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.ceilToInt*
+  nameWithType.vb: IIntVectorGeneric(Of TVector).ceilToInt
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric(Of TVector).ceilToInt
+- uid: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.RoundToInt
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.RoundToInt
+  id: RoundToInt
+  parent: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1
+  langs:
+  - csharp
+  - vb
+  name: RoundToInt()
+  nameWithType: IIntVectorGeneric<TVector>.RoundToInt()
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric<TVector>.RoundToInt()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/IIntVectorGeneric.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: RoundToInt
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/IIntVectorGeneric.cs
+    startLine: 7
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  syntax:
+    content: TVector RoundToInt()
+    return:
+      type: '{TVector}'
+    content.vb: Function RoundToInt() As TVector
+  overload: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.RoundToInt*
+  nameWithType.vb: IIntVectorGeneric(Of TVector).RoundToInt()
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric(Of TVector).RoundToInt()
+references:
+- uid: Cobilas.GodotEngine.Utility.Numerics
+  commentId: N:Cobilas.GodotEngine.Utility.Numerics
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Utility.Numerics
+  nameWithType: Cobilas.GodotEngine.Utility.Numerics
+  fullName: Cobilas.GodotEngine.Utility.Numerics
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.Numerics
+    name: Numerics
+    href: Cobilas.GodotEngine.Utility.Numerics.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.Numerics
+    name: Numerics
+    href: Cobilas.GodotEngine.Utility.Numerics.html
+- uid: System.IEquatable{{TVector}}.Equals({TVector})
+  commentId: M:System.IEquatable{`0}.Equals(`0)
+  parent: System.IEquatable{{TVector}}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(TVector)
+  nameWithType: IEquatable<TVector>.Equals(TVector)
+  fullName: System.IEquatable<TVector>.Equals(TVector)
+  nameWithType.vb: IEquatable(Of TVector).Equals(TVector)
+  fullName.vb: System.IEquatable(Of TVector).Equals(TVector)
+  spec.csharp:
+  - uid: System.IEquatable{`0}.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: TVector
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{`0}.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: TVector
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.Numerics.IIntVector.magnitude
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IIntVector.magnitude
+  parent: Cobilas.GodotEngine.Utility.Numerics.IIntVector
+  href: Cobilas.GodotEngine.Utility.Numerics.IIntVector.html#Cobilas_GodotEngine_Utility_Numerics_IIntVector_magnitude
+  name: magnitude
+  nameWithType: IIntVector.magnitude
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IIntVector.magnitude
+- uid: Cobilas.GodotEngine.Utility.Numerics.IIntVector.sqrMagnitude
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IIntVector.sqrMagnitude
+  parent: Cobilas.GodotEngine.Utility.Numerics.IIntVector
+  href: Cobilas.GodotEngine.Utility.Numerics.IIntVector.html#Cobilas_GodotEngine_Utility_Numerics_IIntVector_sqrMagnitude
+  name: sqrMagnitude
+  nameWithType: IIntVector.sqrMagnitude
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IIntVector.sqrMagnitude
+- uid: Cobilas.GodotEngine.Utility.Numerics.IIntVector.aspect
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IIntVector.aspect
+  parent: Cobilas.GodotEngine.Utility.Numerics.IIntVector
+  href: Cobilas.GodotEngine.Utility.Numerics.IIntVector.html#Cobilas_GodotEngine_Utility_Numerics_IIntVector_aspect
+  name: aspect
+  nameWithType: IIntVector.aspect
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IIntVector.aspect
+- uid: Cobilas.GodotEngine.Utility.Numerics.IIntVector.AxisCount
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IIntVector.AxisCount
+  parent: Cobilas.GodotEngine.Utility.Numerics.IIntVector
+  href: Cobilas.GodotEngine.Utility.Numerics.IIntVector.html#Cobilas_GodotEngine_Utility_Numerics_IIntVector_AxisCount
+  name: AxisCount
+  nameWithType: IIntVector.AxisCount
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IIntVector.AxisCount
+- uid: Cobilas.GodotEngine.Utility.Numerics.IIntVector.Item(System.Int32)
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IIntVector.Item(System.Int32)
+  parent: Cobilas.GodotEngine.Utility.Numerics.IIntVector
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: IIntVector.this[int]
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IIntVector.this[int]
+  nameWithType.vb: IIntVector.this[](Integer)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IIntVector.this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Utility.Numerics.IIntVector.Item(System.Int32)
+    name: this[]
+    href: Cobilas.GodotEngine.Utility.Numerics.IIntVector.html#Cobilas_GodotEngine_Utility_Numerics_IIntVector_Item_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.Numerics.IIntVector.ToString(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.IIntVector.ToString(System.String)
+  parent: Cobilas.GodotEngine.Utility.Numerics.IIntVector
+  isExternal: true
+  href: Cobilas.GodotEngine.Utility.Numerics.IIntVector.html#Cobilas_GodotEngine_Utility_Numerics_IIntVector_ToString_System_String_
+  name: ToString(string)
+  nameWithType: IIntVector.ToString(string)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IIntVector.ToString(string)
+  nameWithType.vb: IIntVector.ToString(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IIntVector.ToString(String)
+  name.vb: ToString(String)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Utility.Numerics.IIntVector.ToString(System.String)
+    name: ToString
+    href: Cobilas.GodotEngine.Utility.Numerics.IIntVector.html#Cobilas_GodotEngine_Utility_Numerics_IIntVector_ToString_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Utility.Numerics.IIntVector.ToString(System.String)
+    name: ToString
+    href: Cobilas.GodotEngine.Utility.Numerics.IIntVector.html#Cobilas_GodotEngine_Utility_Numerics_IIntVector_ToString_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.IFormattable.ToString(System.String,System.IFormatProvider)
+  commentId: M:System.IFormattable.ToString(System.String,System.IFormatProvider)
+  parent: System.IFormattable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformattable.tostring
+  name: ToString(string, IFormatProvider)
+  nameWithType: IFormattable.ToString(string, IFormatProvider)
+  fullName: System.IFormattable.ToString(string, System.IFormatProvider)
+  nameWithType.vb: IFormattable.ToString(String, IFormatProvider)
+  fullName.vb: System.IFormattable.ToString(String, System.IFormatProvider)
+  name.vb: ToString(String, IFormatProvider)
+  spec.csharp:
+  - uid: System.IFormattable.ToString(System.String,System.IFormatProvider)
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformattable.tostring
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  - name: )
+  spec.vb:
+  - uid: System.IFormattable.ToString(System.String,System.IFormatProvider)
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformattable.tostring
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IEquatable{{TVector}}
+  commentId: T:System.IEquatable{`0}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<TVector>
+  nameWithType: IEquatable<TVector>
+  fullName: System.IEquatable<TVector>
+  nameWithType.vb: IEquatable(Of TVector)
+  fullName.vb: System.IEquatable(Of TVector)
+  name.vb: IEquatable(Of TVector)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: TVector
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TVector
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.Numerics.IIntVector
+  commentId: T:Cobilas.GodotEngine.Utility.Numerics.IIntVector
+  parent: Cobilas.GodotEngine.Utility.Numerics
+  href: Cobilas.GodotEngine.Utility.Numerics.IIntVector.html
+  name: IIntVector
+  nameWithType: IIntVector
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IIntVector
+- uid: System.IFormattable
+  commentId: T:System.IFormattable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformattable
+  name: IFormattable
+  nameWithType: IFormattable
+  fullName: System.IFormattable
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.floorToInt*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.floorToInt
+  href: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IIntVectorGeneric_1_floorToInt
+  name: floorToInt
+  nameWithType: IIntVectorGeneric<TVector>.floorToInt
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric<TVector>.floorToInt
+  nameWithType.vb: IIntVectorGeneric(Of TVector).floorToInt
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric(Of TVector).floorToInt
+- uid: '{TVector}'
+  commentId: '!:TVector'
+  definition: TVector
+  name: TVector
+  nameWithType: TVector
+  fullName: TVector
+- uid: TVector
+  name: TVector
+  nameWithType: TVector
+  fullName: TVector
+- uid: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.ceilToInt*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.ceilToInt
+  href: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IIntVectorGeneric_1_ceilToInt
+  name: ceilToInt
+  nameWithType: IIntVectorGeneric<TVector>.ceilToInt
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric<TVector>.ceilToInt
+  nameWithType.vb: IIntVectorGeneric(Of TVector).ceilToInt
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric(Of TVector).ceilToInt
+- uid: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.RoundToInt*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.RoundToInt
+  href: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IIntVectorGeneric_1_RoundToInt
+  name: RoundToInt
+  nameWithType: IIntVectorGeneric<TVector>.RoundToInt
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric<TVector>.RoundToInt
+  nameWithType.vb: IIntVectorGeneric(Of TVector).RoundToInt
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric(Of TVector).RoundToInt

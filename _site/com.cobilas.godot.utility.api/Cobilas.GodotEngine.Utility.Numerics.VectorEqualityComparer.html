@@ -101,7 +101,7 @@ Struct VectorEqualityComparer  <a class="header-action link-secondary" title="Vi
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct VectorEqualityComparer : IEqualityComparer, IEqualityComparer&lt;Vector2D&gt;, IEqualityComparer&lt;Vector3D&gt;, IEqualityComparer&lt;Vector4D&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public struct VectorEqualityComparer : IEqualityComparer, IEqualityComparer&lt;Vector2D&gt;, IEqualityComparer&lt;Vector3D&gt;, IEqualityComparer&lt;Vector4D&gt;, IEqualityComparer&lt;Vector2DInt&gt;, IEqualityComparer&lt;Vector3DInt&gt;</code></pre>
   </div>
 
 
@@ -115,6 +115,8 @@ Struct VectorEqualityComparer  <a class="header-action link-secondary" title="Vi
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector2D.html">Vector2D</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector3D.html">Vector3D</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector4D.html">Vector4D</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector2DInt.html">Vector2DInt</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html">Vector3DInt</a>&gt;</div>
     </dd>
   </dl>
 
@@ -152,7 +154,7 @@ Struct VectorEqualityComparer  <a class="header-action link-secondary" title="Vi
 
   <h3 id="Cobilas_GodotEngine_Utility_Numerics_VectorEqualityComparer_Equals_Cobilas_GodotEngine_Utility_Numerics_Vector2D_Cobilas_GodotEngine_Utility_Numerics_Vector2D_" data-uid="Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2D,Cobilas.GodotEngine.Utility.Numerics.Vector2D)">
   Equals(Vector2D, Vector2D)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified objects are equal.</p>
@@ -192,9 +194,51 @@ Struct VectorEqualityComparer  <a class="header-action link-secondary" title="Vi
 
   <a id="Cobilas_GodotEngine_Utility_Numerics_VectorEqualityComparer_Equals_" data-uid="Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals*"></a>
 
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_VectorEqualityComparer_Equals_Cobilas_GodotEngine_Utility_Numerics_Vector2DInt_Cobilas_GodotEngine_Utility_Numerics_Vector2DInt_" data-uid="Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt,Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)">
+  Equals(Vector2DInt, Vector2DInt)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified objects are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool Equals(Vector2DInt x, Vector2DInt y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector2DInt.html">Vector2DInt</a></dt>
+    <dd><p>The first object of type <code class="paramref">T</code> to compare.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector2DInt.html">Vector2DInt</a></dt>
+    <dd><p>The second object of type <code class="paramref">T</code> to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified objects are equal; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_VectorEqualityComparer_Equals_" data-uid="Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals*"></a>
+
   <h3 id="Cobilas_GodotEngine_Utility_Numerics_VectorEqualityComparer_Equals_Cobilas_GodotEngine_Utility_Numerics_Vector3D_Cobilas_GodotEngine_Utility_Numerics_Vector3D_" data-uid="Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector3D,Cobilas.GodotEngine.Utility.Numerics.Vector3D)">
   Equals(Vector3D, Vector3D)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified objects are equal.</p>
@@ -234,9 +278,51 @@ Struct VectorEqualityComparer  <a class="header-action link-secondary" title="Vi
 
   <a id="Cobilas_GodotEngine_Utility_Numerics_VectorEqualityComparer_Equals_" data-uid="Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals*"></a>
 
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_VectorEqualityComparer_Equals_Cobilas_GodotEngine_Utility_Numerics_Vector3DInt_Cobilas_GodotEngine_Utility_Numerics_Vector3DInt_" data-uid="Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt,Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)">
+  Equals(Vector3DInt, Vector3DInt)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified objects are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool Equals(Vector3DInt x, Vector3DInt y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html">Vector3DInt</a></dt>
+    <dd><p>The first object of type <code class="paramref">T</code> to compare.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html">Vector3DInt</a></dt>
+    <dd><p>The second object of type <code class="paramref">T</code> to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified objects are equal; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_VectorEqualityComparer_Equals_" data-uid="Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals*"></a>
+
   <h3 id="Cobilas_GodotEngine_Utility_Numerics_VectorEqualityComparer_Equals_Cobilas_GodotEngine_Utility_Numerics_Vector4D_Cobilas_GodotEngine_Utility_Numerics_Vector4D_" data-uid="Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)">
   Equals(Vector4D, Vector4D)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified objects are equal.</p>
@@ -278,7 +364,7 @@ Struct VectorEqualityComparer  <a class="header-action link-secondary" title="Vi
 
   <h3 id="Cobilas_GodotEngine_Utility_Numerics_VectorEqualityComparer_Equals_System_Object_System_Object_" data-uid="Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals(System.Object,System.Object)">
   Equals(object, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified objects are equal.</p>
@@ -326,7 +412,7 @@ Struct VectorEqualityComparer  <a class="header-action link-secondary" title="Vi
 
   <h3 id="Cobilas_GodotEngine_Utility_Numerics_VectorEqualityComparer_GetHashCode_Cobilas_GodotEngine_Utility_Numerics_Vector2D_" data-uid="Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector2D)">
   GetHashCode(Vector2D)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns a hash code for the specified object.</p>
@@ -369,9 +455,54 @@ Struct VectorEqualityComparer  <a class="header-action link-secondary" title="Vi
 
   <a id="Cobilas_GodotEngine_Utility_Numerics_VectorEqualityComparer_GetHashCode_" data-uid="Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode*"></a>
 
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_VectorEqualityComparer_GetHashCode_Cobilas_GodotEngine_Utility_Numerics_Vector2DInt_" data-uid="Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)">
+  GetHashCode(Vector2DInt)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a hash code for the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int GetHashCode(Vector2DInt obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector2DInt.html">Vector2DInt</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> for which a hash code is to be returned.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the specified object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The type of <code class="paramref">obj</code> is a reference type and <code class="paramref">obj</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_VectorEqualityComparer_GetHashCode_" data-uid="Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode*"></a>
+
   <h3 id="Cobilas_GodotEngine_Utility_Numerics_VectorEqualityComparer_GetHashCode_Cobilas_GodotEngine_Utility_Numerics_Vector3D_" data-uid="Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector3D)">
   GetHashCode(Vector3D)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns a hash code for the specified object.</p>
@@ -414,9 +545,54 @@ Struct VectorEqualityComparer  <a class="header-action link-secondary" title="Vi
 
   <a id="Cobilas_GodotEngine_Utility_Numerics_VectorEqualityComparer_GetHashCode_" data-uid="Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode*"></a>
 
+  <h3 id="Cobilas_GodotEngine_Utility_Numerics_VectorEqualityComparer_GetHashCode_Cobilas_GodotEngine_Utility_Numerics_Vector3DInt_" data-uid="Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)">
+  GetHashCode(Vector3DInt)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a hash code for the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int GetHashCode(Vector3DInt obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html">Vector3DInt</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> for which a hash code is to be returned.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the specified object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The type of <code class="paramref">obj</code> is a reference type and <code class="paramref">obj</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Numerics_VectorEqualityComparer_GetHashCode_" data-uid="Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode*"></a>
+
   <h3 id="Cobilas_GodotEngine_Utility_Numerics_VectorEqualityComparer_GetHashCode_Cobilas_GodotEngine_Utility_Numerics_Vector4D_" data-uid="Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector4D)">
   GetHashCode(Vector4D)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns a hash code for the specified object.</p>
@@ -461,7 +637,7 @@ Struct VectorEqualityComparer  <a class="header-action link-secondary" title="Vi
 
   <h3 id="Cobilas_GodotEngine_Utility_Numerics_VectorEqualityComparer_GetHashCode_System_Object_" data-uid="Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode(System.Object)">
   GetHashCode(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns a hash code for the specified object.</p>
