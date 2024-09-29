@@ -1,0 +1,521 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.GodotEngine.Utility.Runtime.PriorityList
+  commentId: T:Cobilas.GodotEngine.Utility.Runtime.PriorityList
+  id: PriorityList
+  parent: Cobilas.GodotEngine.Utility.Runtime
+  children:
+  - Cobilas.GodotEngine.Utility.Runtime.PriorityList.Add(System.Int32,Godot.Node)
+  - Cobilas.GodotEngine.Utility.Runtime.PriorityList.Dispose
+  - Cobilas.GodotEngine.Utility.Runtime.PriorityList.ReorderList
+  - Cobilas.GodotEngine.Utility.Runtime.PriorityList.Run(Godot.Node)
+  langs:
+  - csharp
+  - vb
+  name: PriorityList
+  nameWithType: PriorityList
+  fullName: Cobilas.GodotEngine.Utility.Runtime.PriorityList
+  type: Struct
+  source:
+    remote:
+      path: GodotEngine.Utility/Runtime/PriorityList.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: PriorityList
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/PriorityList.cs
+    startLine: 7
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: Represents a list of <xref href="Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization" data-throw-if-not-resolved="false"></xref> priorities.
+  example: []
+  syntax:
+    content: 'public struct PriorityList : IDisposable'
+    content.vb: Public Structure PriorityList Implements IDisposable
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: Cobilas.GodotEngine.Utility.Runtime.PriorityList.Add(System.Int32,Godot.Node)
+  commentId: M:Cobilas.GodotEngine.Utility.Runtime.PriorityList.Add(System.Int32,Godot.Node)
+  id: Add(System.Int32,Godot.Node)
+  parent: Cobilas.GodotEngine.Utility.Runtime.PriorityList
+  langs:
+  - csharp
+  - vb
+  name: Add(int, Node)
+  nameWithType: PriorityList.Add(int, Node)
+  fullName: Cobilas.GodotEngine.Utility.Runtime.PriorityList.Add(int, Godot.Node)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Runtime/PriorityList.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Add
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/PriorityList.cs
+    startLine: 14
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: Adds items to the priority list.
+  example: []
+  syntax:
+    content: public PriorityList Add(int priority, Node node)
+    parameters:
+    - id: priority
+      type: System.Int32
+      description: Object execution priority.
+    - id: node
+      type: Godot.Node
+      description: The object to be added to the list.
+    return:
+      type: Cobilas.GodotEngine.Utility.Runtime.PriorityList
+      description: The method will return a <xref href="Cobilas.GodotEngine.Utility.Runtime.PriorityList" data-throw-if-not-resolved="false"></xref> object with its modified priority list.
+    content.vb: Public Function Add(priority As Integer, node As Node) As PriorityList
+  overload: Cobilas.GodotEngine.Utility.Runtime.PriorityList.Add*
+  nameWithType.vb: PriorityList.Add(Integer, Node)
+  fullName.vb: Cobilas.GodotEngine.Utility.Runtime.PriorityList.Add(Integer, Godot.Node)
+  name.vb: Add(Integer, Node)
+- uid: Cobilas.GodotEngine.Utility.Runtime.PriorityList.Run(Godot.Node)
+  commentId: M:Cobilas.GodotEngine.Utility.Runtime.PriorityList.Run(Godot.Node)
+  id: Run(Godot.Node)
+  parent: Cobilas.GodotEngine.Utility.Runtime.PriorityList
+  langs:
+  - csharp
+  - vb
+  name: Run(Node)
+  nameWithType: PriorityList.Run(Node)
+  fullName: Cobilas.GodotEngine.Utility.Runtime.PriorityList.Run(Godot.Node)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Runtime/PriorityList.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Run
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/PriorityList.cs
+    startLine: 22
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: Execute your priority list.
+  example: []
+  syntax:
+    content: public readonly void Run(Node root)
+    parameters:
+    - id: root
+      type: Godot.Node
+      description: The parent node where nodes will be added to start their priority execution.
+    content.vb: Public Sub Run(root As Node)
+  overload: Cobilas.GodotEngine.Utility.Runtime.PriorityList.Run*
+- uid: Cobilas.GodotEngine.Utility.Runtime.PriorityList.ReorderList
+  commentId: M:Cobilas.GodotEngine.Utility.Runtime.PriorityList.ReorderList
+  id: ReorderList
+  parent: Cobilas.GodotEngine.Utility.Runtime.PriorityList
+  langs:
+  - csharp
+  - vb
+  name: ReorderList()
+  nameWithType: PriorityList.ReorderList()
+  fullName: Cobilas.GodotEngine.Utility.Runtime.PriorityList.ReorderList()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Runtime/PriorityList.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ReorderList
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/PriorityList.cs
+    startLine: 30
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: Sort the priority list according to the priority of the list items.
+  example: []
+  syntax:
+    content: public void ReorderList()
+    content.vb: Public Sub ReorderList()
+  overload: Cobilas.GodotEngine.Utility.Runtime.PriorityList.ReorderList*
+- uid: Cobilas.GodotEngine.Utility.Runtime.PriorityList.Dispose
+  commentId: M:Cobilas.GodotEngine.Utility.Runtime.PriorityList.Dispose
+  id: Dispose
+  parent: Cobilas.GodotEngine.Utility.Runtime.PriorityList
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: PriorityList.Dispose()
+  fullName: Cobilas.GodotEngine.Utility.Runtime.PriorityList.Dispose()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Runtime/PriorityList.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Dispose
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/PriorityList.cs
+    startLine: 37
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Cobilas.GodotEngine.Utility.Runtime.PriorityList.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization
+  commentId: T:Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization
+  href: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization.html
+  name: RunTimeInitialization
+  nameWithType: RunTimeInitialization
+  fullName: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization
+- uid: Cobilas.GodotEngine.Utility.Runtime
+  commentId: N:Cobilas.GodotEngine.Utility.Runtime
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Utility.Runtime
+  nameWithType: Cobilas.GodotEngine.Utility.Runtime
+  fullName: Cobilas.GodotEngine.Utility.Runtime
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.Runtime
+    name: Runtime
+    href: Cobilas.GodotEngine.Utility.Runtime.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.Runtime
+    name: Runtime
+    href: Cobilas.GodotEngine.Utility.Runtime.html
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Cobilas.GodotEngine.Utility.Runtime.PriorityList
+  commentId: T:Cobilas.GodotEngine.Utility.Runtime.PriorityList
+  parent: Cobilas.GodotEngine.Utility.Runtime
+  href: Cobilas.GodotEngine.Utility.Runtime.PriorityList.html
+  name: PriorityList
+  nameWithType: PriorityList
+  fullName: Cobilas.GodotEngine.Utility.Runtime.PriorityList
+- uid: Cobilas.GodotEngine.Utility.Runtime.PriorityList.Add*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Runtime.PriorityList.Add
+  href: Cobilas.GodotEngine.Utility.Runtime.PriorityList.html#Cobilas_GodotEngine_Utility_Runtime_PriorityList_Add_System_Int32_Godot_Node_
+  name: Add
+  nameWithType: PriorityList.Add
+  fullName: Cobilas.GodotEngine.Utility.Runtime.PriorityList.Add
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Godot.Node
+  commentId: T:Godot.Node
+  parent: Godot
+  isExternal: true
+  name: Node
+  nameWithType: Node
+  fullName: Godot.Node
+- uid: Godot
+  commentId: N:Godot
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: Cobilas.GodotEngine.Utility.Runtime.PriorityList.Run*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Runtime.PriorityList.Run
+  href: Cobilas.GodotEngine.Utility.Runtime.PriorityList.html#Cobilas_GodotEngine_Utility_Runtime_PriorityList_Run_Godot_Node_
+  name: Run
+  nameWithType: PriorityList.Run
+  fullName: Cobilas.GodotEngine.Utility.Runtime.PriorityList.Run
+- uid: Cobilas.GodotEngine.Utility.Runtime.PriorityList.ReorderList*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Runtime.PriorityList.ReorderList
+  href: Cobilas.GodotEngine.Utility.Runtime.PriorityList.html#Cobilas_GodotEngine_Utility_Runtime_PriorityList_ReorderList
+  name: ReorderList
+  nameWithType: PriorityList.ReorderList
+  fullName: Cobilas.GodotEngine.Utility.Runtime.PriorityList.ReorderList
+- uid: Cobilas.GodotEngine.Utility.Runtime.PriorityList.Dispose*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Runtime.PriorityList.Dispose
+  href: Cobilas.GodotEngine.Utility.Runtime.PriorityList.html#Cobilas_GodotEngine_Utility_Runtime_PriorityList_Dispose
+  name: Dispose
+  nameWithType: PriorityList.Dispose
+  fullName: Cobilas.GodotEngine.Utility.Runtime.PriorityList.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

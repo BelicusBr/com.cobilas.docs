@@ -22,10 +22,28 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RunTimeInitialization
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitialization.cs
-    startLine: 7
+    startLine: 21
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: Responsible for initializing other classes marked with the <xref href="Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute" data-throw-if-not-resolved="false"></xref> attribute.
+  remarks: >-
+    The <code>RunTimeInitialization</code> class allows you to automate the <kbd>Project&gt;Project Settings&gt;AutoLoad</kbd> option.
+
+    To use the <code>RunTimeInitialization</code> class, you must create a class and make it inherit <code>RunTimeInitialization</code>.
+
+    And remember to add the class that inherits <code>RunTimeInitialization</code> in <kbd>Project&gt;Project Settings&gt;AutoLoad</kbd>.
+
+    Remembering that the <code>RunTimeInitialization</code> class uses the virtual method <code>_Ready()</code> to perform the initialization of other classes.
+
+    And to initialize other classes along with the <code>RunTimeInitialization</code> class, the class must inherit the <code>Godot.Node</code> class or some class that inherits <code>Godot.Node</code> and use the <code>RunTimeInitializationClassAttribute</code> attribute.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using Cobilas.GodotEngine.Utility.Runtime;
+
+    // The name of the class is up to you.
+
+    public class RunTimeProcess : RunTimeInitialization {}</code></pre>
   syntax:
     content: 'public class RunTimeInitialization : Node, IDisposable'
     content.vb: Public Class RunTimeInitialization Inherits Node Implements IDisposable
@@ -285,15 +303,29 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: DeltaTime
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitialization.cs
-    startLine: 9
+    startLine: 25
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: The interval in seconds from the last frame to the current one (Read Only)
+  example: []
   syntax:
-    content: public const float DeltaTime = 0.33333334
+    content: >-
+      [Obsolete("Use RunTime.DeltaTime")]
+
+      public const float DeltaTime = 0.33333334
     return:
       type: System.Single
-    content.vb: Public Const DeltaTime As Single = 0.33333334
+    content.vb: >-
+      <Obsolete("Use RunTime.DeltaTime")>
+
+      Public Const DeltaTime As Single = 0.33333334
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use RunTime.DeltaTime
 - uid: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization.FixedDeltaTime
   commentId: F:Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization.FixedDeltaTime
   id: FixedDeltaTime
@@ -312,15 +344,29 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: FixedDeltaTime
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitialization.cs
-    startLine: 10
+    startLine: 28
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: The interval in seconds of in-game time at which physics and other fixed frame rate updates  are performed.
+  example: []
   syntax:
-    content: public const float FixedDeltaTime = 0.02
+    content: >-
+      [Obsolete("Use RunTime.FixedDeltaTime")]
+
+      public const float FixedDeltaTime = 0.02
     return:
       type: System.Single
-    content.vb: Public Const FixedDeltaTime As Single = 0.02
+    content.vb: >-
+      <Obsolete("Use RunTime.FixedDeltaTime")>
+
+      Public Const FixedDeltaTime As Single = 0.02
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use RunTime.FixedDeltaTime
 - uid: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._Ready
   commentId: M:Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._Ready
   id: _Ready
@@ -339,7 +385,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: _Ready
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitialization.cs
-    startLine: 12
+    startLine: 31
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime
@@ -358,6 +404,13 @@ items:
   overridden: Godot.Node._Ready
   overload: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._Ready*
 references:
+- uid: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute
+  commentId: T:Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute
+  parent: Cobilas.GodotEngine.Utility.Runtime
+  href: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.html
+  name: RunTimeInitializationClassAttribute
+  nameWithType: RunTimeInitializationClassAttribute
+  fullName: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute
 - uid: Cobilas.GodotEngine.Utility.Runtime
   commentId: N:Cobilas.GodotEngine.Utility.Runtime
   href: Cobilas.html

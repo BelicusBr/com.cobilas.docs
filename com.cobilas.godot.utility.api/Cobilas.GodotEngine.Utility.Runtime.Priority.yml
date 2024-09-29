@@ -21,13 +21,15 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Priority
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/Priority.cs
-    startLine: 2
+    startLine: 3
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: Indicates the boot priority.
+  example: []
   syntax:
-    content: public enum Priority
-    content.vb: Public Enum Priority
+    content: 'public enum Priority : byte'
+    content.vb: Public Enum Priority As Byte
 - uid: Cobilas.GodotEngine.Utility.Runtime.Priority.StartBefore
   commentId: F:Cobilas.GodotEngine.Utility.Runtime.Priority.StartBefore
   id: StartBefore
@@ -46,10 +48,12 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: StartBefore
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/Priority.cs
-    startLine: 3
+    startLine: 5
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: Starts before everyone else.
+  example: []
   syntax:
     content: StartBefore = 0
     return:
@@ -72,10 +76,12 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: StartLater
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/Priority.cs
-    startLine: 4
+    startLine: 7
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: Starts after everyone else.
+  example: []
   syntax:
     content: StartLater = 1
     return:
