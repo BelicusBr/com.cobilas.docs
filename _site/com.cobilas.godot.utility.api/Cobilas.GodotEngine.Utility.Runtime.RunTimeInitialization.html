@@ -89,7 +89,7 @@
 
 
   <h1 id="Cobilas_GodotEngine_Utility_Runtime_RunTimeInitialization" data-uid="Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization" class="text-break">
-Class RunTimeInitialization  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitialization.cs/#L22"><i class="bi bi-code-slash"></i></a>
+Class RunTimeInitialization  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitialization.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -828,18 +828,20 @@ Class RunTimeInitialization  <a class="header-action link-secondary" title="View
 
 
   <h2 id="Cobilas_GodotEngine_Utility_Runtime_RunTimeInitialization_examples">Examples</h2>
-  <pre><code class="lang-csharp">using Cobilas.GodotEngine.Utility.Runtime;
+  <p>The <code>RunTimeInitialization</code> class allows you to automate the <kbd>Project&gt;Project Settings&gt;AutoLoad</kbd> option.
+To use the <code>RunTimeInitialization</code> class, you must create a class and make it inherit <code>RunTimeInitialization</code>.///</p>
+<pre><code class="lang-csharp">using Cobilas.GodotEngine.Utility.Runtime;
 // The name of the class is up to you.
 public class RunTimeProcess : RunTimeInitialization {}</code></pre>
-
-
-  <h2 id="Cobilas_GodotEngine_Utility_Runtime_RunTimeInitialization_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>The <code>RunTimeInitialization</code> class allows you to automate the <kbd>Project&gt;Project Settings&gt;AutoLoad</kbd> option.
-To use the <code>RunTimeInitialization</code> class, you must create a class and make it inherit <code>RunTimeInitialization</code>.
-And remember to add the class that inherits <code>RunTimeInitialization</code> in <kbd>Project&gt;Project Settings&gt;AutoLoad</kbd>.
+<p>And remember to add the class that inherits <code>RunTimeInitialization</code> in <kbd>Project&gt;Project Settings&gt;AutoLoad</kbd>.
 Remembering that the <code>RunTimeInitialization</code> class uses the virtual method <code>_Ready()</code> to perform the initialization of other classes.
 And to initialize other classes along with the <code>RunTimeInitialization</code> class, the class must inherit the <code>Godot.Node</code> class or some class that inherits <code>Godot.Node</code> and use the <code>RunTimeInitializationClassAttribute</code> attribute.</p>
-</div>
+<pre><code class="lang-csharp">using Godot;
+using Cobilas.GodotEngine.Utility.Runtime;
+[RunTimeInitializationClass]
+public class ClassTest : Node {}</code></pre>
+
+
 
 
   <h2 class="section" id="fields">Fields
@@ -849,7 +851,7 @@ And to initialize other classes along with the <code>RunTimeInitialization</code
 
   <h3 id="Cobilas_GodotEngine_Utility_Runtime_RunTimeInitialization_DeltaTime" data-uid="Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization.DeltaTime">
   DeltaTime
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitialization.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitialization.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The interval in seconds from the last frame to the current one (Read Only)</p>
@@ -881,7 +883,7 @@ public const float DeltaTime = 0.33333334</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Runtime_RunTimeInitialization_FixedDeltaTime" data-uid="Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization.FixedDeltaTime">
   FixedDeltaTime
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitialization.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitialization.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The interval in seconds of in-game time at which physics and other fixed frame rate updates  are performed.</p>
@@ -918,7 +920,7 @@ public const float FixedDeltaTime = 0.02</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Runtime_RunTimeInitialization__Ready" data-uid="Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._Ready">
   _Ready()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitialization.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitialization.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Called when the node is "ready", i.e. when both the node and its children have entered the scene tree. If the node has children, their <span class="xref">Godot.Node._Ready()</span> callbacks get triggered first, and the parent node will receive the ready notification afterwards.</p>
@@ -948,7 +950,7 @@ public const float FixedDeltaTime = 0.02</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitialization.cs/#L22" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitialization.cs/#L26" class="edit-link">Edit this page</a>
         </div>
 
 

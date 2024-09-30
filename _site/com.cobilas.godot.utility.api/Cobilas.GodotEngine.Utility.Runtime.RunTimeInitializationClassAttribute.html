@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class RunTimeInitializationClassAttribute | Cobilas Documentation ">
       
-      
+      <meta name="description" content="This attribute marks which classes will be called by .">
       <link rel="icon" href="../images/favicon-96x96.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Cobilas_GodotEngine_Utility_Runtime_RunTimeInitializationClassAttribute" data-uid="Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute" class="text-break">
-Class RunTimeInitializationClassAttribute  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs/#L5"><i class="bi bi-code-slash"></i></a>
+Class RunTimeInitializationClassAttribute  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class RunTimeInitializationClassAttribute  <a class="header-action link-secondar
   <dl><dt>Assembly</dt><dd>com.cobilas.godot.utility.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>This attribute marks which classes will be called by <a class="xref" href="Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization.html">RunTimeInitialization</a>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -255,6 +256,13 @@ public sealed class RunTimeInitializationClassAttribute : Attribute, _Attribute<
 
 
 
+  <h2 id="Cobilas_GodotEngine_Utility_Runtime_RunTimeInitializationClassAttribute_examples">Examples</h2>
+  <p>Simple example of class demarcation to be called by <a class="xref" href="Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization.html">RunTimeInitialization</a>.</p>
+<pre><code class="lang-csharp">using Godot;
+using Cobilas.GodotEngine.Utility.Runtime;
+[RunTimeInitializationClass]
+public class ClassTest : Node {}</code></pre>
+
 
 
 
@@ -266,10 +274,12 @@ public sealed class RunTimeInitializationClassAttribute : Attribute, _Attribute<
 
   <h3 id="Cobilas_GodotEngine_Utility_Runtime_RunTimeInitializationClassAttribute__ctor" data-uid="Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.#ctor">
   RunTimeInitializationClassAttribute()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Instance the RunTimeInitializationClassAttribute attribute.
+<p>By default the priority type is <a class="xref" href="Cobilas.GodotEngine.Utility.Runtime.Priority.html#Cobilas_GodotEngine_Utility_Runtime_Priority_StartBefore">StartBefore</a>.</p><p>By default the execution priority is 0.</p><p>By default the priority name and the class name that the attribute is associated with.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -292,10 +302,12 @@ public sealed class RunTimeInitializationClassAttribute : Attribute, _Attribute<
 
   <h3 id="Cobilas_GodotEngine_Utility_Runtime_RunTimeInitializationClassAttribute__ctor_Cobilas_GodotEngine_Utility_Runtime_Priority_" data-uid="Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.#ctor(Cobilas.GodotEngine.Utility.Runtime.Priority)">
   RunTimeInitializationClassAttribute(Priority)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Instance the RunTimeInitializationClassAttribute attribute.
+<p>By default the execution priority is 0.</p><p>By default the priority name and the class name that the attribute is associated with.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -305,7 +317,8 @@ public sealed class RunTimeInitializationClassAttribute : Attribute, _Attribute<
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>bootPriority</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Runtime.Priority.html">Priority</a></dt>
-    <dd></dd>
+    <dd><p>The type of priority.</p>
+</dd>
   </dl>
 
 
@@ -323,10 +336,12 @@ public sealed class RunTimeInitializationClassAttribute : Attribute, _Attribute<
 
   <h3 id="Cobilas_GodotEngine_Utility_Runtime_RunTimeInitializationClassAttribute__ctor_Cobilas_GodotEngine_Utility_Runtime_Priority_System_String_" data-uid="Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.#ctor(Cobilas.GodotEngine.Utility.Runtime.Priority,System.String)">
   RunTimeInitializationClassAttribute(Priority, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Instance the RunTimeInitializationClassAttribute attribute.
+<p>By default the execution priority is 0.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -336,9 +351,11 @@ public sealed class RunTimeInitializationClassAttribute : Attribute, _Attribute<
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>bootPriority</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Runtime.Priority.html">Priority</a></dt>
-    <dd></dd>
+    <dd><p>The type of priority.</p>
+</dd>
     <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The name of the priority.</p>
+</dd>
   </dl>
 
 
@@ -356,10 +373,11 @@ public sealed class RunTimeInitializationClassAttribute : Attribute, _Attribute<
 
   <h3 id="Cobilas_GodotEngine_Utility_Runtime_RunTimeInitializationClassAttribute__ctor_Cobilas_GodotEngine_Utility_Runtime_Priority_System_String_System_Int32_" data-uid="Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.#ctor(Cobilas.GodotEngine.Utility.Runtime.Priority,System.String,System.Int32)">
   RunTimeInitializationClassAttribute(Priority, string?, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Instance the RunTimeInitializationClassAttribute attribute.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -369,11 +387,14 @@ public sealed class RunTimeInitializationClassAttribute : Attribute, _Attribute<
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>bootPriority</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Runtime.Priority.html">Priority</a></dt>
-    <dd></dd>
+    <dd><p>The type of priority.</p>
+</dd>
     <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The name of the priority.</p>
+</dd>
     <dt><code>subPriority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The execution priority.</p>
+</dd>
   </dl>
 
 
@@ -391,10 +412,12 @@ public sealed class RunTimeInitializationClassAttribute : Attribute, _Attribute<
 
   <h3 id="Cobilas_GodotEngine_Utility_Runtime_RunTimeInitializationClassAttribute__ctor_System_String_" data-uid="Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.#ctor(System.String)">
   RunTimeInitializationClassAttribute(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Instance the RunTimeInitializationClassAttribute attribute.
+<p>By default the priority type is <a class="xref" href="Cobilas.GodotEngine.Utility.Runtime.Priority.html#Cobilas_GodotEngine_Utility_Runtime_Priority_StartBefore">StartBefore</a>.</p><p>By default the execution priority is 0.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -404,7 +427,8 @@ public sealed class RunTimeInitializationClassAttribute : Attribute, _Attribute<
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The name of the priority.</p>
+</dd>
   </dl>
 
 
@@ -422,10 +446,12 @@ public sealed class RunTimeInitializationClassAttribute : Attribute, _Attribute<
 
   <h3 id="Cobilas_GodotEngine_Utility_Runtime_RunTimeInitializationClassAttribute__ctor_System_String_System_Int32_" data-uid="Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.#ctor(System.String,System.Int32)">
   RunTimeInitializationClassAttribute(string, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs/#L56"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Instance the RunTimeInitializationClassAttribute attribute.
+<p>By default the priority type is <a class="xref" href="Cobilas.GodotEngine.Utility.Runtime.Priority.html#Cobilas_GodotEngine_Utility_Runtime_Priority_StartBefore">StartBefore</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -435,9 +461,11 @@ public sealed class RunTimeInitializationClassAttribute : Attribute, _Attribute<
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The name of the priority.</p>
+</dd>
     <dt><code>subPriority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The execution priority.</p>
+</dd>
   </dl>
 
 
@@ -459,10 +487,11 @@ public sealed class RunTimeInitializationClassAttribute : Attribute, _Attribute<
 
   <h3 id="Cobilas_GodotEngine_Utility_Runtime_RunTimeInitializationClassAttribute_BootPriority" data-uid="Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.BootPriority">
   BootPriority
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The type of priority.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -476,7 +505,8 @@ public sealed class RunTimeInitializationClassAttribute : Attribute, _Attribute<
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Runtime.Priority.html">Priority</a></dt>
-    <dd></dd>
+    <dd><p>Returns the type of priority that will be executed.</p>
+</dd>
   </dl>
 
 
@@ -490,10 +520,11 @@ public sealed class RunTimeInitializationClassAttribute : Attribute, _Attribute<
 
   <h3 id="Cobilas_GodotEngine_Utility_Runtime_RunTimeInitializationClassAttribute_ClassName" data-uid="Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.ClassName">
   ClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The name of the priority.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -507,7 +538,8 @@ public sealed class RunTimeInitializationClassAttribute : Attribute, _Attribute<
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>Returns the name of the priority that will be executed.</p>
+</dd>
   </dl>
 
 
@@ -521,10 +553,11 @@ public sealed class RunTimeInitializationClassAttribute : Attribute, _Attribute<
 
   <h3 id="Cobilas_GodotEngine_Utility_Runtime_RunTimeInitializationClassAttribute_SubPriority" data-uid="Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.SubPriority">
   SubPriority
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The execution priority.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -538,7 +571,8 @@ public sealed class RunTimeInitializationClassAttribute : Attribute, _Attribute<
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>Returns the priority execution level.</p>
+</dd>
   </dl>
 
 
@@ -552,7 +586,7 @@ public sealed class RunTimeInitializationClassAttribute : Attribute, _Attribute<
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs/#L5" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs/#L15" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -22,28 +22,36 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RunTimeInitialization
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitialization.cs
-    startLine: 21
+    startLine: 25
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime
   summary: Responsible for initializing other classes marked with the <xref href="Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute" data-throw-if-not-resolved="false"></xref> attribute.
-  remarks: >-
+  example:
+  - >-
     The <code>RunTimeInitialization</code> class allows you to automate the <kbd>Project&gt;Project Settings&gt;AutoLoad</kbd> option.
 
-    To use the <code>RunTimeInitialization</code> class, you must create a class and make it inherit <code>RunTimeInitialization</code>.
+    To use the <code>RunTimeInitialization</code> class, you must create a class and make it inherit <code>RunTimeInitialization</code>./// 
+
+    <pre><code class="lang-csharp">using Cobilas.GodotEngine.Utility.Runtime;
+
+    // The name of the class is up to you.
+
+    public class RunTimeProcess : RunTimeInitialization {}</code></pre>
 
     And remember to add the class that inherits <code>RunTimeInitialization</code> in <kbd>Project&gt;Project Settings&gt;AutoLoad</kbd>.
 
     Remembering that the <code>RunTimeInitialization</code> class uses the virtual method <code>_Ready()</code> to perform the initialization of other classes.
 
     And to initialize other classes along with the <code>RunTimeInitialization</code> class, the class must inherit the <code>Godot.Node</code> class or some class that inherits <code>Godot.Node</code> and use the <code>RunTimeInitializationClassAttribute</code> attribute.
-  example:
-  - >-
-    <pre><code class="lang-csharp">using Cobilas.GodotEngine.Utility.Runtime;
 
-    // The name of the class is up to you.
+    <pre><code class="lang-csharp">using Godot;
 
-    public class RunTimeProcess : RunTimeInitialization {}</code></pre>
+    using Cobilas.GodotEngine.Utility.Runtime;
+
+    [RunTimeInitializationClass]
+
+    public class ClassTest : Node {}</code></pre>
   syntax:
     content: 'public class RunTimeInitialization : Node, IDisposable'
     content.vb: Public Class RunTimeInitialization Inherits Node Implements IDisposable
@@ -303,7 +311,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: DeltaTime
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitialization.cs
-    startLine: 25
+    startLine: 29
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime
@@ -344,7 +352,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: FixedDeltaTime
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitialization.cs
-    startLine: 28
+    startLine: 32
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime
@@ -385,7 +393,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: _Ready
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitialization.cs
-    startLine: 31
+    startLine: 35
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime

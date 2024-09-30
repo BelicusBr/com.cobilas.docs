@@ -28,10 +28,22 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RunTimeInitializationClassAttribute
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs
-    startLine: 4
+    startLine: 14
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: This attribute marks which classes will be called by <xref href="Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization" data-throw-if-not-resolved="false"></xref>.
+  example:
+  - >-
+    Simple example of class demarcation to be called by <xref href="Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization" data-throw-if-not-resolved="false"></xref>.
+
+    <pre><code class="lang-csharp">using Godot;
+
+    using Cobilas.GodotEngine.Utility.Runtime;
+
+    [RunTimeInitializationClass]
+
+    public class ClassTest : Node {}</code></pre>
   syntax:
     content: >-
       [AttributeUsage(AttributeTargets.Class, Inherited = false, AllowMultiple = false)]
@@ -119,15 +131,18 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SubPriority
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs
-    startLine: 6
+    startLine: 18
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: The execution priority.
+  example: []
   syntax:
     content: public int SubPriority { get; }
     parameters: []
     return:
       type: System.Int32
+      description: Returns the priority execution level.
     content.vb: Public Property SubPriority As Integer
   overload: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.SubPriority*
 - uid: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.ClassName
@@ -148,15 +163,18 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ClassName
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs
-    startLine: 7
+    startLine: 21
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: The name of the priority.
+  example: []
   syntax:
     content: public string ClassName { get; }
     parameters: []
     return:
       type: System.String
+      description: Returns the name of the priority that will be executed.
     content.vb: Public Property ClassName As String
   overload: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.ClassName*
 - uid: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.BootPriority
@@ -177,15 +195,18 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: BootPriority
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs
-    startLine: 8
+    startLine: 24
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: The type of priority.
+  example: []
   syntax:
     content: public Priority BootPriority { get; }
     parameters: []
     return:
       type: Cobilas.GodotEngine.Utility.Runtime.Priority
+      description: Returns the type of priority that will be executed.
     content.vb: Public Property BootPriority As Priority
   overload: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.BootPriority*
 - uid: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.#ctor(Cobilas.GodotEngine.Utility.Runtime.Priority,System.String,System.Int32)
@@ -206,19 +227,24 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs
-    startLine: 10
+    startLine: 30
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: Instance the RunTimeInitializationClassAttribute attribute.
+  example: []
   syntax:
     content: public RunTimeInitializationClassAttribute(Priority bootPriority, string? name, int subPriority)
     parameters:
     - id: bootPriority
       type: Cobilas.GodotEngine.Utility.Runtime.Priority
+      description: The type of priority.
     - id: name
       type: System.String
+      description: The name of the priority.
     - id: subPriority
       type: System.Int32
+      description: The execution priority.
     content.vb: Public Sub New(bootPriority As Priority, name As String, subPriority As Integer)
   overload: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.#ctor*
   nameWithType.vb: RunTimeInitializationClassAttribute.New(Priority, String, Integer)
@@ -242,17 +268,23 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs
-    startLine: 16
+    startLine: 41
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: >-
+    Instance the RunTimeInitializationClassAttribute attribute.
+        <p>By default the execution priority is 0.</p>
+  example: []
   syntax:
     content: public RunTimeInitializationClassAttribute(Priority bootPriority, string? name)
     parameters:
     - id: bootPriority
       type: Cobilas.GodotEngine.Utility.Runtime.Priority
+      description: The type of priority.
     - id: name
       type: System.String
+      description: The name of the priority.
     content.vb: Public Sub New(bootPriority As Priority, name As String)
   overload: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.#ctor*
   nameWithType.vb: RunTimeInitializationClassAttribute.New(Priority, String)
@@ -276,15 +308,20 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs
-    startLine: 18
+    startLine: 48
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: >-
+    Instance the RunTimeInitializationClassAttribute attribute.
+        <p>By default the execution priority is 0.</p><p>By default the priority name and the class name that the attribute is associated with.</p>
+  example: []
   syntax:
     content: public RunTimeInitializationClassAttribute(Priority bootPriority)
     parameters:
     - id: bootPriority
       type: Cobilas.GodotEngine.Utility.Runtime.Priority
+      description: The type of priority.
     content.vb: Public Sub New(bootPriority As Priority)
   overload: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.#ctor*
   nameWithType.vb: RunTimeInitializationClassAttribute.New(Priority)
@@ -308,17 +345,23 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs
-    startLine: 20
+    startLine: 55
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: >-
+    Instance the RunTimeInitializationClassAttribute attribute.
+        <p>By default the priority type is <xref href="Cobilas.GodotEngine.Utility.Runtime.Priority.StartBefore" data-throw-if-not-resolved="false"></xref>.</p>
+  example: []
   syntax:
     content: public RunTimeInitializationClassAttribute(string name, int subPriority)
     parameters:
     - id: name
       type: System.String
+      description: The name of the priority.
     - id: subPriority
       type: System.Int32
+      description: The execution priority.
     content.vb: Public Sub New(name As String, subPriority As Integer)
   overload: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.#ctor*
   nameWithType.vb: RunTimeInitializationClassAttribute.New(String, Integer)
@@ -342,15 +385,20 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs
-    startLine: 22
+    startLine: 62
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: >-
+    Instance the RunTimeInitializationClassAttribute attribute.
+        <p>By default the priority type is <xref href="Cobilas.GodotEngine.Utility.Runtime.Priority.StartBefore" data-throw-if-not-resolved="false"></xref>.</p><p>By default the execution priority is 0.</p>
+  example: []
   syntax:
     content: public RunTimeInitializationClassAttribute(string name)
     parameters:
     - id: name
       type: System.String
+      description: The name of the priority.
     content.vb: Public Sub New(name As String)
   overload: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.#ctor*
   nameWithType.vb: RunTimeInitializationClassAttribute.New(String)
@@ -374,10 +422,14 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitializationClassAttribute.cs
-    startLine: 24
+    startLine: 69
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: >-
+    Instance the RunTimeInitializationClassAttribute attribute.
+        <p>By default the priority type is <xref href="Cobilas.GodotEngine.Utility.Runtime.Priority.StartBefore" data-throw-if-not-resolved="false"></xref>.</p><p>By default the execution priority is 0.</p><p>By default the priority name and the class name that the attribute is associated with.</p>
+  example: []
   syntax:
     content: public RunTimeInitializationClassAttribute()
     content.vb: Public Sub New()
@@ -386,6 +438,12 @@ items:
   fullName.vb: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.New()
   name.vb: New()
 references:
+- uid: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization
+  commentId: T:Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization
+  href: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization.html
+  name: RunTimeInitialization
+  nameWithType: RunTimeInitialization
+  fullName: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization
 - uid: Cobilas.GodotEngine.Utility.Runtime
   commentId: N:Cobilas.GodotEngine.Utility.Runtime
   href: Cobilas.html
@@ -2295,3 +2353,9 @@ references:
   nameWithType.vb: RunTimeInitializationClassAttribute.New
   fullName.vb: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.New
   name.vb: New
+- uid: Cobilas.GodotEngine.Utility.Runtime.Priority.StartBefore
+  commentId: F:Cobilas.GodotEngine.Utility.Runtime.Priority.StartBefore
+  href: Cobilas.GodotEngine.Utility.Runtime.Priority.html#Cobilas_GodotEngine_Utility_Runtime_Priority_StartBefore
+  name: StartBefore
+  nameWithType: Priority.StartBefore
+  fullName: Cobilas.GodotEngine.Utility.Runtime.Priority.StartBefore
