@@ -16,19 +16,24 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Coroutine/IYieldVolatile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: IYieldVolatile
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/IYieldVolatile.cs
-    startLine: 2
+    startLine: 4
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: >-
+    The IyieldVolatile interface allows the Yield class to change the type of process.
+        <p>This interface allows you to change the type of update if the object will use the <xref href="Godot.Node._Process(System.Single)" data-throw-if-not-resolved="false"></xref> or <xref href="Godot.Node._PhysicsProcess(System.Single)" data-throw-if-not-resolved="false"></xref><xref href="Cobilas.GodotEngine.Utility.Coroutine" data-throw-if-not-resolved="false"></xref> process.</p>
+  example: []
   syntax:
     content: 'public interface IYieldVolatile : IYieldCoroutine'
     content.vb: Public Interface IYieldVolatile Inherits IYieldCoroutine
   inheritedMembers:
   - Cobilas.GodotEngine.Utility.IYieldCoroutine.Delay
+  - Cobilas.GodotEngine.Utility.IYieldCoroutine.IsLastCoroutine
 - uid: Cobilas.GodotEngine.Utility.IYieldVolatile.IsPhysicsProcess
   commentId: P:Cobilas.GodotEngine.Utility.IYieldVolatile.IsPhysicsProcess
   id: IsPhysicsProcess
@@ -43,22 +48,98 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Coroutine/IYieldVolatile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: IsPhysicsProcess
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/IYieldVolatile.cs
-    startLine: 3
+    startLine: 10
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Indicates which process of updating the <xref href="Cobilas.GodotEngine.Utility.Coroutine" data-throw-if-not-resolved="false"></xref> is using.
+  example: []
   syntax:
     content: bool IsPhysicsProcess { get; }
     parameters: []
     return:
       type: System.Boolean
+      description: >-
+        <p>
+          <code>true</code> when the corrotine is using <xref href="Godot.Node._PhysicsProcess(System.Single)" data-throw-if-not-resolved="false"></xref>.</p>
+        <p>
+          <code>false</code> when the corrotine is using <xref href="Godot.Node._Process(System.Single)" data-throw-if-not-resolved="false"></xref>.</p>
     content.vb: ReadOnly Property IsPhysicsProcess As Boolean
   overload: Cobilas.GodotEngine.Utility.IYieldVolatile.IsPhysicsProcess*
 references:
+- uid: Godot.Node._Process(System.Single)
+  commentId: M:Godot.Node._Process(System.Single)
+  parent: Godot.Node
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: _Process(float)
+  nameWithType: Node._Process(float)
+  fullName: Godot.Node._Process(float)
+  nameWithType.vb: Node._Process(Single)
+  fullName.vb: Godot.Node._Process(Single)
+  name.vb: _Process(Single)
+  spec.csharp:
+  - uid: Godot.Node._Process(System.Single)
+    name: _Process
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Godot.Node._Process(System.Single)
+    name: _Process
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Godot.Node._PhysicsProcess(System.Single)
+  commentId: M:Godot.Node._PhysicsProcess(System.Single)
+  parent: Godot.Node
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: _PhysicsProcess(float)
+  nameWithType: Node._PhysicsProcess(float)
+  fullName: Godot.Node._PhysicsProcess(float)
+  nameWithType.vb: Node._PhysicsProcess(Single)
+  fullName.vb: Godot.Node._PhysicsProcess(Single)
+  name.vb: _PhysicsProcess(Single)
+  spec.csharp:
+  - uid: Godot.Node._PhysicsProcess(System.Single)
+    name: _PhysicsProcess
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Godot.Node._PhysicsProcess(System.Single)
+    name: _PhysicsProcess
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.Coroutine
+  commentId: T:Cobilas.GodotEngine.Utility.Coroutine
+  parent: Cobilas.GodotEngine.Utility
+  href: Cobilas.GodotEngine.Utility.Coroutine.html
+  name: Coroutine
+  nameWithType: Coroutine
+  fullName: Cobilas.GodotEngine.Utility.Coroutine
 - uid: Cobilas.GodotEngine.Utility
   commentId: N:Cobilas.GodotEngine.Utility
   href: Cobilas.html
@@ -96,6 +177,20 @@ references:
   name: Delay
   nameWithType: IYieldCoroutine.Delay
   fullName: Cobilas.GodotEngine.Utility.IYieldCoroutine.Delay
+- uid: Cobilas.GodotEngine.Utility.IYieldCoroutine.IsLastCoroutine
+  commentId: P:Cobilas.GodotEngine.Utility.IYieldCoroutine.IsLastCoroutine
+  parent: Cobilas.GodotEngine.Utility.IYieldCoroutine
+  href: Cobilas.GodotEngine.Utility.IYieldCoroutine.html#Cobilas_GodotEngine_Utility_IYieldCoroutine_IsLastCoroutine
+  name: IsLastCoroutine
+  nameWithType: IYieldCoroutine.IsLastCoroutine
+  fullName: Cobilas.GodotEngine.Utility.IYieldCoroutine.IsLastCoroutine
+- uid: Godot.Node
+  commentId: T:Godot.Node
+  parent: Godot
+  isExternal: true
+  name: Node
+  nameWithType: Node
+  fullName: Godot.Node
 - uid: Cobilas.GodotEngine.Utility.IYieldCoroutine
   commentId: T:Cobilas.GodotEngine.Utility.IYieldCoroutine
   parent: Cobilas.GodotEngine.Utility
@@ -103,6 +198,12 @@ references:
   name: IYieldCoroutine
   nameWithType: IYieldCoroutine
   fullName: Cobilas.GodotEngine.Utility.IYieldCoroutine
+- uid: Godot
+  commentId: N:Godot
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
 - uid: Cobilas.GodotEngine.Utility.IYieldVolatile.IsPhysicsProcess*
   commentId: Overload:Cobilas.GodotEngine.Utility.IYieldVolatile.IsPhysicsProcess
   href: Cobilas.GodotEngine.Utility.IYieldVolatile.html#Cobilas_GodotEngine_Utility_IYieldVolatile_IsPhysicsProcess

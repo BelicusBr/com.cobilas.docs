@@ -1,0 +1,1709 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.GodotEngine.Utility.Resolution
+  commentId: T:Cobilas.GodotEngine.Utility.Resolution
+  id: Resolution
+  parent: Cobilas.GodotEngine.Utility
+  children:
+  - Cobilas.GodotEngine.Utility.Resolution.#ctor(Cobilas.GodotEngine.Utility.Numerics.Vector2D@,System.Int32@)
+  - Cobilas.GodotEngine.Utility.Resolution.#ctor(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt@,System.Int32@)
+  - Cobilas.GodotEngine.Utility.Resolution.#ctor(Godot.Vector2@,System.Int32@)
+  - Cobilas.GodotEngine.Utility.Resolution.#ctor(System.Int32@,System.Int32@,System.Int32@)
+  - Cobilas.GodotEngine.Utility.Resolution.#ctor(System.Single@,System.Single@,System.Int32@)
+  - Cobilas.GodotEngine.Utility.Resolution.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  - Cobilas.GodotEngine.Utility.Resolution.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  - Cobilas.GodotEngine.Utility.Resolution.Equals(Cobilas.GodotEngine.Utility.Resolution)
+  - Cobilas.GodotEngine.Utility.Resolution.Equals(Godot.Vector2)
+  - Cobilas.GodotEngine.Utility.Resolution.Equals(System.Int32)
+  - Cobilas.GodotEngine.Utility.Resolution.Equals(System.Object)
+  - Cobilas.GodotEngine.Utility.Resolution.Frequency
+  - Cobilas.GodotEngine.Utility.Resolution.GetHashCode
+  - Cobilas.GodotEngine.Utility.Resolution.Height
+  - Cobilas.GodotEngine.Utility.Resolution.ToString
+  - Cobilas.GodotEngine.Utility.Resolution.Width
+  - Cobilas.GodotEngine.Utility.Resolution.op_Equality(Cobilas.GodotEngine.Utility.Resolution,Cobilas.GodotEngine.Utility.Resolution)
+  - Cobilas.GodotEngine.Utility.Resolution.op_Explicit(Cobilas.GodotEngine.Utility.Resolution)~Cobilas.GodotEngine.Utility.Numerics.Vector2D
+  - Cobilas.GodotEngine.Utility.Resolution.op_Explicit(Cobilas.GodotEngine.Utility.Resolution)~Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+  - Cobilas.GodotEngine.Utility.Resolution.op_Explicit(Cobilas.GodotEngine.Utility.Resolution)~Godot.Vector2
+  - Cobilas.GodotEngine.Utility.Resolution.op_Explicit(Cobilas.GodotEngine.Utility.Resolution)~System.Int32
+  - Cobilas.GodotEngine.Utility.Resolution.op_Inequality(Cobilas.GodotEngine.Utility.Resolution,Cobilas.GodotEngine.Utility.Resolution)
+  langs:
+  - csharp
+  - vb
+  name: Resolution
+  nameWithType: Resolution
+  fullName: Cobilas.GodotEngine.Utility.Resolution
+  type: Struct
+  source:
+    remote:
+      path: GodotEngine.Utility/Resolution.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Resolution
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Resolution.cs
+    startLine: 7
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Stores information about a screen resolution.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public readonly struct Resolution : IEquatable<Resolution>, IEquatable<Vector2D>, IEquatable<Vector2DInt>, IEquatable<Vector2>, IEquatable<int>
+    content.vb: >-
+      <Serializable>
+
+      Public Structure Resolution Implements IEquatable(Of Resolution), IEquatable(Of Vector2D), IEquatable(Of Vector2DInt), IEquatable(Of Vector2), IEquatable(Of Integer)
+  implements:
+  - System.IEquatable{Cobilas.GodotEngine.Utility.Resolution}
+  - System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector2D}
+  - System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector2DInt}
+  - System.IEquatable{Godot.Vector2}
+  - System.IEquatable{System.Int32}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Cobilas.GodotEngine.Utility.Resolution.Frequency
+  commentId: P:Cobilas.GodotEngine.Utility.Resolution.Frequency
+  id: Frequency
+  parent: Cobilas.GodotEngine.Utility.Resolution
+  langs:
+  - csharp
+  - vb
+  name: Frequency
+  nameWithType: Resolution.Frequency
+  fullName: Cobilas.GodotEngine.Utility.Resolution.Frequency
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/Resolution.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Frequency
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Resolution.cs
+    startLine: 15
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Screen frequency.
+  example: []
+  syntax:
+    content: public int Frequency { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: Returns the frequency of this resolution.
+    content.vb: Public ReadOnly Property Frequency As Integer
+  overload: Cobilas.GodotEngine.Utility.Resolution.Frequency*
+- uid: Cobilas.GodotEngine.Utility.Resolution.Width
+  commentId: P:Cobilas.GodotEngine.Utility.Resolution.Width
+  id: Width
+  parent: Cobilas.GodotEngine.Utility.Resolution
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: Resolution.Width
+  fullName: Cobilas.GodotEngine.Utility.Resolution.Width
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/Resolution.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Width
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Resolution.cs
+    startLine: 18
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: The width of the screen.
+  example: []
+  syntax:
+    content: public float Width { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: Returns the height of this resolution.
+    content.vb: Public ReadOnly Property Width As Single
+  overload: Cobilas.GodotEngine.Utility.Resolution.Width*
+- uid: Cobilas.GodotEngine.Utility.Resolution.Height
+  commentId: P:Cobilas.GodotEngine.Utility.Resolution.Height
+  id: Height
+  parent: Cobilas.GodotEngine.Utility.Resolution
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: Resolution.Height
+  fullName: Cobilas.GodotEngine.Utility.Resolution.Height
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/Resolution.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Height
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Resolution.cs
+    startLine: 21
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: The height of the screen.
+  example: []
+  syntax:
+    content: public float Height { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: Returns the width of this resolution.
+    content.vb: Public ReadOnly Property Height As Single
+  overload: Cobilas.GodotEngine.Utility.Resolution.Height*
+- uid: Cobilas.GodotEngine.Utility.Resolution.#ctor(Cobilas.GodotEngine.Utility.Numerics.Vector2D@,System.Int32@)
+  commentId: M:Cobilas.GodotEngine.Utility.Resolution.#ctor(Cobilas.GodotEngine.Utility.Numerics.Vector2D@,System.Int32@)
+  id: '#ctor(Cobilas.GodotEngine.Utility.Numerics.Vector2D@,System.Int32@)'
+  parent: Cobilas.GodotEngine.Utility.Resolution
+  langs:
+  - csharp
+  - vb
+  name: Resolution(in Vector2D, in int)
+  nameWithType: Resolution.Resolution(in Vector2D, in int)
+  fullName: Cobilas.GodotEngine.Utility.Resolution.Resolution(in Cobilas.GodotEngine.Utility.Numerics.Vector2D, in int)
+  type: Constructor
+  source:
+    remote:
+      path: GodotEngine.Utility/Resolution.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: .ctor
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Resolution.cs
+    startLine: 26
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Starts a new instance of the object.
+  example: []
+  syntax:
+    content: public Resolution(in Vector2D resolution, in int frequency)
+    parameters:
+    - id: resolution
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+      description: Screen resolution.
+    - id: frequency
+      type: System.Int32
+      description: Screen frequency.
+    content.vb: Public Sub New(resolution As Vector2D, frequency As Integer)
+  overload: Cobilas.GodotEngine.Utility.Resolution.#ctor*
+  nameWithType.vb: Resolution.New(Vector2D, Integer)
+  fullName.vb: Cobilas.GodotEngine.Utility.Resolution.New(Cobilas.GodotEngine.Utility.Numerics.Vector2D, Integer)
+  name.vb: New(Vector2D, Integer)
+- uid: Cobilas.GodotEngine.Utility.Resolution.#ctor(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt@,System.Int32@)
+  commentId: M:Cobilas.GodotEngine.Utility.Resolution.#ctor(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt@,System.Int32@)
+  id: '#ctor(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt@,System.Int32@)'
+  parent: Cobilas.GodotEngine.Utility.Resolution
+  langs:
+  - csharp
+  - vb
+  name: Resolution(in Vector2DInt, in int)
+  nameWithType: Resolution.Resolution(in Vector2DInt, in int)
+  fullName: Cobilas.GodotEngine.Utility.Resolution.Resolution(in Cobilas.GodotEngine.Utility.Numerics.Vector2DInt, in int)
+  type: Constructor
+  source:
+    remote:
+      path: GodotEngine.Utility/Resolution.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: .ctor
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Resolution.cs
+    startLine: 34
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Starts a new instance of the object.
+  example: []
+  syntax:
+    content: public Resolution(in Vector2DInt resolution, in int frequency)
+    parameters:
+    - id: resolution
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+      description: Screen resolution.
+    - id: frequency
+      type: System.Int32
+      description: Screen frequency.
+    content.vb: Public Sub New(resolution As Vector2DInt, frequency As Integer)
+  overload: Cobilas.GodotEngine.Utility.Resolution.#ctor*
+  nameWithType.vb: Resolution.New(Vector2DInt, Integer)
+  fullName.vb: Cobilas.GodotEngine.Utility.Resolution.New(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt, Integer)
+  name.vb: New(Vector2DInt, Integer)
+- uid: Cobilas.GodotEngine.Utility.Resolution.#ctor(Godot.Vector2@,System.Int32@)
+  commentId: M:Cobilas.GodotEngine.Utility.Resolution.#ctor(Godot.Vector2@,System.Int32@)
+  id: '#ctor(Godot.Vector2@,System.Int32@)'
+  parent: Cobilas.GodotEngine.Utility.Resolution
+  langs:
+  - csharp
+  - vb
+  name: Resolution(in Vector2, in int)
+  nameWithType: Resolution.Resolution(in Vector2, in int)
+  fullName: Cobilas.GodotEngine.Utility.Resolution.Resolution(in Godot.Vector2, in int)
+  type: Constructor
+  source:
+    remote:
+      path: GodotEngine.Utility/Resolution.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: .ctor
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Resolution.cs
+    startLine: 39
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Starts a new instance of the object.
+  example: []
+  syntax:
+    content: public Resolution(in Vector2 resolution, in int frequency)
+    parameters:
+    - id: resolution
+      type: Godot.Vector2
+      description: Screen resolution.
+    - id: frequency
+      type: System.Int32
+      description: Screen frequency.
+    content.vb: Public Sub New(resolution As Vector2, frequency As Integer)
+  overload: Cobilas.GodotEngine.Utility.Resolution.#ctor*
+  nameWithType.vb: Resolution.New(Vector2, Integer)
+  fullName.vb: Cobilas.GodotEngine.Utility.Resolution.New(Godot.Vector2, Integer)
+  name.vb: New(Vector2, Integer)
+- uid: Cobilas.GodotEngine.Utility.Resolution.#ctor(System.Int32@,System.Int32@,System.Int32@)
+  commentId: M:Cobilas.GodotEngine.Utility.Resolution.#ctor(System.Int32@,System.Int32@,System.Int32@)
+  id: '#ctor(System.Int32@,System.Int32@,System.Int32@)'
+  parent: Cobilas.GodotEngine.Utility.Resolution
+  langs:
+  - csharp
+  - vb
+  name: Resolution(in int, in int, in int)
+  nameWithType: Resolution.Resolution(in int, in int, in int)
+  fullName: Cobilas.GodotEngine.Utility.Resolution.Resolution(in int, in int, in int)
+  type: Constructor
+  source:
+    remote:
+      path: GodotEngine.Utility/Resolution.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: .ctor
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Resolution.cs
+    startLine: 45
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Starts a new instance of the object.
+  example: []
+  syntax:
+    content: public Resolution(in int width, in int height, in int frequency)
+    parameters:
+    - id: width
+      type: System.Int32
+      description: The width of the screen.
+    - id: height
+      type: System.Int32
+      description: The height of the screen.
+    - id: frequency
+      type: System.Int32
+      description: Screen frequency.
+    content.vb: Public Sub New(width As Integer, height As Integer, frequency As Integer)
+  overload: Cobilas.GodotEngine.Utility.Resolution.#ctor*
+  nameWithType.vb: Resolution.New(Integer, Integer, Integer)
+  fullName.vb: Cobilas.GodotEngine.Utility.Resolution.New(Integer, Integer, Integer)
+  name.vb: New(Integer, Integer, Integer)
+- uid: Cobilas.GodotEngine.Utility.Resolution.#ctor(System.Single@,System.Single@,System.Int32@)
+  commentId: M:Cobilas.GodotEngine.Utility.Resolution.#ctor(System.Single@,System.Single@,System.Int32@)
+  id: '#ctor(System.Single@,System.Single@,System.Int32@)'
+  parent: Cobilas.GodotEngine.Utility.Resolution
+  langs:
+  - csharp
+  - vb
+  name: Resolution(in float, in float, in int)
+  nameWithType: Resolution.Resolution(in float, in float, in int)
+  fullName: Cobilas.GodotEngine.Utility.Resolution.Resolution(in float, in float, in int)
+  type: Constructor
+  source:
+    remote:
+      path: GodotEngine.Utility/Resolution.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: .ctor
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Resolution.cs
+    startLine: 51
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Starts a new instance of the object.
+  example: []
+  syntax:
+    content: public Resolution(in float width, in float height, in int frequency)
+    parameters:
+    - id: width
+      type: System.Single
+      description: The width of the screen.
+    - id: height
+      type: System.Single
+      description: The height of the screen.
+    - id: frequency
+      type: System.Int32
+      description: Screen frequency.
+    content.vb: Public Sub New(width As Single, height As Single, frequency As Integer)
+  overload: Cobilas.GodotEngine.Utility.Resolution.#ctor*
+  nameWithType.vb: Resolution.New(Single, Single, Integer)
+  fullName.vb: Cobilas.GodotEngine.Utility.Resolution.New(Single, Single, Integer)
+  name.vb: New(Single, Single, Integer)
+- uid: Cobilas.GodotEngine.Utility.Resolution.Equals(System.Int32)
+  commentId: M:Cobilas.GodotEngine.Utility.Resolution.Equals(System.Int32)
+  id: Equals(System.Int32)
+  parent: Cobilas.GodotEngine.Utility.Resolution
+  langs:
+  - csharp
+  - vb
+  name: Equals(int)
+  nameWithType: Resolution.Equals(int)
+  fullName: Cobilas.GodotEngine.Utility.Resolution.Equals(int)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Resolution.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Equals
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Resolution.cs
+    startLine: 54
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(int other)
+    parameters:
+    - id: other
+      type: System.Int32
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As Integer) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Resolution.Equals*
+  implements:
+  - System.IEquatable{System.Int32}.Equals(System.Int32)
+  nameWithType.vb: Resolution.Equals(Integer)
+  fullName.vb: Cobilas.GodotEngine.Utility.Resolution.Equals(Integer)
+  name.vb: Equals(Integer)
+- uid: Cobilas.GodotEngine.Utility.Resolution.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  commentId: M:Cobilas.GodotEngine.Utility.Resolution.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  id: Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  parent: Cobilas.GodotEngine.Utility.Resolution
+  langs:
+  - csharp
+  - vb
+  name: Equals(Vector2D)
+  nameWithType: Resolution.Equals(Vector2D)
+  fullName: Cobilas.GodotEngine.Utility.Resolution.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Resolution.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Equals
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Resolution.cs
+    startLine: 56
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(Vector2D other)
+    parameters:
+    - id: other
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As Vector2D) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Resolution.Equals*
+  implements:
+  - System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector2D}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+- uid: Cobilas.GodotEngine.Utility.Resolution.Equals(Godot.Vector2)
+  commentId: M:Cobilas.GodotEngine.Utility.Resolution.Equals(Godot.Vector2)
+  id: Equals(Godot.Vector2)
+  parent: Cobilas.GodotEngine.Utility.Resolution
+  langs:
+  - csharp
+  - vb
+  name: Equals(Vector2)
+  nameWithType: Resolution.Equals(Vector2)
+  fullName: Cobilas.GodotEngine.Utility.Resolution.Equals(Godot.Vector2)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Resolution.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Equals
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Resolution.cs
+    startLine: 58
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(Vector2 other)
+    parameters:
+    - id: other
+      type: Godot.Vector2
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As Vector2) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Resolution.Equals*
+  implements:
+  - System.IEquatable{Godot.Vector2}.Equals(Godot.Vector2)
+- uid: Cobilas.GodotEngine.Utility.Resolution.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  commentId: M:Cobilas.GodotEngine.Utility.Resolution.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  id: Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  parent: Cobilas.GodotEngine.Utility.Resolution
+  langs:
+  - csharp
+  - vb
+  name: Equals(Vector2DInt)
+  nameWithType: Resolution.Equals(Vector2DInt)
+  fullName: Cobilas.GodotEngine.Utility.Resolution.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Resolution.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Equals
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Resolution.cs
+    startLine: 60
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(Vector2DInt other)
+    parameters:
+    - id: other
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As Vector2DInt) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Resolution.Equals*
+  implements:
+  - System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector2DInt}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+- uid: Cobilas.GodotEngine.Utility.Resolution.Equals(Cobilas.GodotEngine.Utility.Resolution)
+  commentId: M:Cobilas.GodotEngine.Utility.Resolution.Equals(Cobilas.GodotEngine.Utility.Resolution)
+  id: Equals(Cobilas.GodotEngine.Utility.Resolution)
+  parent: Cobilas.GodotEngine.Utility.Resolution
+  langs:
+  - csharp
+  - vb
+  name: Equals(Resolution)
+  nameWithType: Resolution.Equals(Resolution)
+  fullName: Cobilas.GodotEngine.Utility.Resolution.Equals(Cobilas.GodotEngine.Utility.Resolution)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Resolution.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Equals
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Resolution.cs
+    startLine: 62
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(Resolution other)
+    parameters:
+    - id: other
+      type: Cobilas.GodotEngine.Utility.Resolution
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As Resolution) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Resolution.Equals*
+  implements:
+  - System.IEquatable{Cobilas.GodotEngine.Utility.Resolution}.Equals(Cobilas.GodotEngine.Utility.Resolution)
+- uid: Cobilas.GodotEngine.Utility.Resolution.Equals(System.Object)
+  commentId: M:Cobilas.GodotEngine.Utility.Resolution.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Cobilas.GodotEngine.Utility.Resolution
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: Resolution.Equals(object)
+  fullName: Cobilas.GodotEngine.Utility.Resolution.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Resolution.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Equals
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Resolution.cs
+    startLine: 64
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Indicates whether this instance and a specified object are equal.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current instance.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Cobilas.GodotEngine.Utility.Resolution.Equals*
+  nameWithType.vb: Resolution.Equals(Object)
+  fullName.vb: Cobilas.GodotEngine.Utility.Resolution.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Cobilas.GodotEngine.Utility.Resolution.GetHashCode
+  commentId: M:Cobilas.GodotEngine.Utility.Resolution.GetHashCode
+  id: GetHashCode
+  parent: Cobilas.GodotEngine.Utility.Resolution
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Resolution.GetHashCode()
+  fullName: Cobilas.GodotEngine.Utility.Resolution.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Resolution.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetHashCode
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Resolution.cs
+    startLine: 71
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Returns the hash code for this instance.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer that is the hash code for this instance.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Cobilas.GodotEngine.Utility.Resolution.GetHashCode*
+- uid: Cobilas.GodotEngine.Utility.Resolution.ToString
+  commentId: M:Cobilas.GodotEngine.Utility.Resolution.ToString
+  id: ToString
+  parent: Cobilas.GodotEngine.Utility.Resolution
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Resolution.ToString()
+  fullName: Cobilas.GodotEngine.Utility.Resolution.ToString()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Resolution.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ToString
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Resolution.cs
+    startLine: 73
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Returns the fully qualified type name of this instance.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The fully qualified type name.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: Cobilas.GodotEngine.Utility.Resolution.ToString*
+- uid: Cobilas.GodotEngine.Utility.Resolution.op_Equality(Cobilas.GodotEngine.Utility.Resolution,Cobilas.GodotEngine.Utility.Resolution)
+  commentId: M:Cobilas.GodotEngine.Utility.Resolution.op_Equality(Cobilas.GodotEngine.Utility.Resolution,Cobilas.GodotEngine.Utility.Resolution)
+  id: op_Equality(Cobilas.GodotEngine.Utility.Resolution,Cobilas.GodotEngine.Utility.Resolution)
+  parent: Cobilas.GodotEngine.Utility.Resolution
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Resolution, Resolution)
+  nameWithType: Resolution.operator ==(Resolution, Resolution)
+  fullName: Cobilas.GodotEngine.Utility.Resolution.operator ==(Cobilas.GodotEngine.Utility.Resolution, Cobilas.GodotEngine.Utility.Resolution)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/Resolution.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Equality
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Resolution.cs
+    startLine: 79
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Indicates whether this instance is equal to another instance of the same type.
+  example: []
+  syntax:
+    content: public static bool operator ==(Resolution A, Resolution B)
+    parameters:
+    - id: A
+      type: Cobilas.GodotEngine.Utility.Resolution
+      description: Object to be compared.
+    - id: B
+      type: Cobilas.GodotEngine.Utility.Resolution
+      description: Object of comparison.
+    return:
+      type: System.Boolean
+      description: Returns the result of the comparison.
+    content.vb: Public Shared Operator =(A As Resolution, B As Resolution) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Resolution.op_Equality*
+  nameWithType.vb: Resolution.=(Resolution, Resolution)
+  fullName.vb: Cobilas.GodotEngine.Utility.Resolution.=(Cobilas.GodotEngine.Utility.Resolution, Cobilas.GodotEngine.Utility.Resolution)
+  name.vb: =(Resolution, Resolution)
+- uid: Cobilas.GodotEngine.Utility.Resolution.op_Inequality(Cobilas.GodotEngine.Utility.Resolution,Cobilas.GodotEngine.Utility.Resolution)
+  commentId: M:Cobilas.GodotEngine.Utility.Resolution.op_Inequality(Cobilas.GodotEngine.Utility.Resolution,Cobilas.GodotEngine.Utility.Resolution)
+  id: op_Inequality(Cobilas.GodotEngine.Utility.Resolution,Cobilas.GodotEngine.Utility.Resolution)
+  parent: Cobilas.GodotEngine.Utility.Resolution
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Resolution, Resolution)
+  nameWithType: Resolution.operator !=(Resolution, Resolution)
+  fullName: Cobilas.GodotEngine.Utility.Resolution.operator !=(Cobilas.GodotEngine.Utility.Resolution, Cobilas.GodotEngine.Utility.Resolution)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/Resolution.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Inequality
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Resolution.cs
+    startLine: 84
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Indicates whether this instance is different from another instance of the same type.
+  example: []
+  syntax:
+    content: public static bool operator !=(Resolution A, Resolution B)
+    parameters:
+    - id: A
+      type: Cobilas.GodotEngine.Utility.Resolution
+      description: Object to be compared.
+    - id: B
+      type: Cobilas.GodotEngine.Utility.Resolution
+      description: Object of comparison.
+    return:
+      type: System.Boolean
+      description: Returns the result of the comparison.
+    content.vb: Public Shared Operator <>(A As Resolution, B As Resolution) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Resolution.op_Inequality*
+  nameWithType.vb: Resolution.<>(Resolution, Resolution)
+  fullName.vb: Cobilas.GodotEngine.Utility.Resolution.<>(Cobilas.GodotEngine.Utility.Resolution, Cobilas.GodotEngine.Utility.Resolution)
+  name.vb: <>(Resolution, Resolution)
+- uid: Cobilas.GodotEngine.Utility.Resolution.op_Explicit(Cobilas.GodotEngine.Utility.Resolution)~System.Int32
+  commentId: M:Cobilas.GodotEngine.Utility.Resolution.op_Explicit(Cobilas.GodotEngine.Utility.Resolution)~System.Int32
+  id: op_Explicit(Cobilas.GodotEngine.Utility.Resolution)~System.Int32
+  parent: Cobilas.GodotEngine.Utility.Resolution
+  langs:
+  - csharp
+  - vb
+  name: explicit operator int(Resolution)
+  nameWithType: Resolution.explicit operator int(Resolution)
+  fullName: Cobilas.GodotEngine.Utility.Resolution.explicit operator int(Cobilas.GodotEngine.Utility.Resolution)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/Resolution.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Explicit
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Resolution.cs
+    startLine: 88
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Explicit conversion operator.(<xref href="Cobilas.GodotEngine.Utility.Resolution" data-throw-if-not-resolved="false"></xref> to <xref href="System.Int32" data-throw-if-not-resolved="false"></xref>)
+  example: []
+  syntax:
+    content: public static explicit operator int(Resolution R)
+    parameters:
+    - id: R
+      type: Cobilas.GodotEngine.Utility.Resolution
+      description: Object to be converted.
+    return:
+      type: System.Int32
+    content.vb: Public Shared Narrowing Operator CType(R As Resolution) As Integer
+  overload: Cobilas.GodotEngine.Utility.Resolution.op_Explicit*
+  nameWithType.vb: Resolution.CType(Resolution)
+  fullName.vb: Cobilas.GodotEngine.Utility.Resolution.CType(Cobilas.GodotEngine.Utility.Resolution)
+  name.vb: CType(Resolution)
+- uid: Cobilas.GodotEngine.Utility.Resolution.op_Explicit(Cobilas.GodotEngine.Utility.Resolution)~Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+  commentId: M:Cobilas.GodotEngine.Utility.Resolution.op_Explicit(Cobilas.GodotEngine.Utility.Resolution)~Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+  id: op_Explicit(Cobilas.GodotEngine.Utility.Resolution)~Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+  parent: Cobilas.GodotEngine.Utility.Resolution
+  langs:
+  - csharp
+  - vb
+  name: explicit operator Vector2DInt(Resolution)
+  nameWithType: Resolution.explicit operator Vector2DInt(Resolution)
+  fullName: Cobilas.GodotEngine.Utility.Resolution.explicit operator Cobilas.GodotEngine.Utility.Numerics.Vector2DInt(Cobilas.GodotEngine.Utility.Resolution)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/Resolution.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Explicit
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Resolution.cs
+    startLine: 91
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Explicit conversion operator.(<xref href="Cobilas.GodotEngine.Utility.Resolution" data-throw-if-not-resolved="false"></xref> to <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector2DInt" data-throw-if-not-resolved="false"></xref>)
+  example: []
+  syntax:
+    content: public static explicit operator Vector2DInt(Resolution R)
+    parameters:
+    - id: R
+      type: Cobilas.GodotEngine.Utility.Resolution
+      description: Object to be converted.
+    return:
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+    content.vb: Public Shared Narrowing Operator CType(R As Resolution) As Vector2DInt
+  overload: Cobilas.GodotEngine.Utility.Resolution.op_Explicit*
+  nameWithType.vb: Resolution.CType(Resolution)
+  fullName.vb: Cobilas.GodotEngine.Utility.Resolution.CType(Cobilas.GodotEngine.Utility.Resolution)
+  name.vb: CType(Resolution)
+- uid: Cobilas.GodotEngine.Utility.Resolution.op_Explicit(Cobilas.GodotEngine.Utility.Resolution)~Cobilas.GodotEngine.Utility.Numerics.Vector2D
+  commentId: M:Cobilas.GodotEngine.Utility.Resolution.op_Explicit(Cobilas.GodotEngine.Utility.Resolution)~Cobilas.GodotEngine.Utility.Numerics.Vector2D
+  id: op_Explicit(Cobilas.GodotEngine.Utility.Resolution)~Cobilas.GodotEngine.Utility.Numerics.Vector2D
+  parent: Cobilas.GodotEngine.Utility.Resolution
+  langs:
+  - csharp
+  - vb
+  name: explicit operator Vector2D(Resolution)
+  nameWithType: Resolution.explicit operator Vector2D(Resolution)
+  fullName: Cobilas.GodotEngine.Utility.Resolution.explicit operator Cobilas.GodotEngine.Utility.Numerics.Vector2D(Cobilas.GodotEngine.Utility.Resolution)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/Resolution.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Explicit
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Resolution.cs
+    startLine: 94
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Explicit conversion operator.(<xref href="Cobilas.GodotEngine.Utility.Resolution" data-throw-if-not-resolved="false"></xref> to <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector2D" data-throw-if-not-resolved="false"></xref>)
+  example: []
+  syntax:
+    content: public static explicit operator Vector2D(Resolution R)
+    parameters:
+    - id: R
+      type: Cobilas.GodotEngine.Utility.Resolution
+      description: Object to be converted.
+    return:
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+    content.vb: Public Shared Narrowing Operator CType(R As Resolution) As Vector2D
+  overload: Cobilas.GodotEngine.Utility.Resolution.op_Explicit*
+  nameWithType.vb: Resolution.CType(Resolution)
+  fullName.vb: Cobilas.GodotEngine.Utility.Resolution.CType(Cobilas.GodotEngine.Utility.Resolution)
+  name.vb: CType(Resolution)
+- uid: Cobilas.GodotEngine.Utility.Resolution.op_Explicit(Cobilas.GodotEngine.Utility.Resolution)~Godot.Vector2
+  commentId: M:Cobilas.GodotEngine.Utility.Resolution.op_Explicit(Cobilas.GodotEngine.Utility.Resolution)~Godot.Vector2
+  id: op_Explicit(Cobilas.GodotEngine.Utility.Resolution)~Godot.Vector2
+  parent: Cobilas.GodotEngine.Utility.Resolution
+  langs:
+  - csharp
+  - vb
+  name: explicit operator Vector2(Resolution)
+  nameWithType: Resolution.explicit operator Vector2(Resolution)
+  fullName: Cobilas.GodotEngine.Utility.Resolution.explicit operator Godot.Vector2(Cobilas.GodotEngine.Utility.Resolution)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/Resolution.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Explicit
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Resolution.cs
+    startLine: 97
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Explicit conversion operator.(<xref href="Cobilas.GodotEngine.Utility.Resolution" data-throw-if-not-resolved="false"></xref> to <xref href="Godot.Vector2" data-throw-if-not-resolved="false"></xref>)
+  example: []
+  syntax:
+    content: public static explicit operator Vector2(Resolution R)
+    parameters:
+    - id: R
+      type: Cobilas.GodotEngine.Utility.Resolution
+      description: Object to be converted.
+    return:
+      type: Godot.Vector2
+    content.vb: Public Shared Narrowing Operator CType(R As Resolution) As Vector2
+  overload: Cobilas.GodotEngine.Utility.Resolution.op_Explicit*
+  nameWithType.vb: Resolution.CType(Resolution)
+  fullName.vb: Cobilas.GodotEngine.Utility.Resolution.CType(Cobilas.GodotEngine.Utility.Resolution)
+  name.vb: CType(Resolution)
+references:
+- uid: Cobilas.GodotEngine.Utility
+  commentId: N:Cobilas.GodotEngine.Utility
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Utility
+  nameWithType: Cobilas.GodotEngine.Utility
+  fullName: Cobilas.GodotEngine.Utility
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+- uid: System.IEquatable{Cobilas.GodotEngine.Utility.Resolution}
+  commentId: T:System.IEquatable{Cobilas.GodotEngine.Utility.Resolution}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Resolution>
+  nameWithType: IEquatable<Resolution>
+  fullName: System.IEquatable<Cobilas.GodotEngine.Utility.Resolution>
+  nameWithType.vb: IEquatable(Of Resolution)
+  fullName.vb: System.IEquatable(Of Cobilas.GodotEngine.Utility.Resolution)
+  name.vb: IEquatable(Of Resolution)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Cobilas.GodotEngine.Utility.Resolution
+    name: Resolution
+    href: Cobilas.GodotEngine.Utility.Resolution.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Cobilas.GodotEngine.Utility.Resolution
+    name: Resolution
+    href: Cobilas.GodotEngine.Utility.Resolution.html
+  - name: )
+- uid: System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector2D}
+  commentId: T:System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector2D}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Vector2D>
+  nameWithType: IEquatable<Vector2D>
+  fullName: System.IEquatable<Cobilas.GodotEngine.Utility.Numerics.Vector2D>
+  nameWithType.vb: IEquatable(Of Vector2D)
+  fullName.vb: System.IEquatable(Of Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  name.vb: IEquatable(Of Vector2D)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+    name: Vector2D
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector2D.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+    name: Vector2D
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector2D.html
+  - name: )
+- uid: System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector2DInt}
+  commentId: T:System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector2DInt}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Vector2DInt>
+  nameWithType: IEquatable<Vector2DInt>
+  fullName: System.IEquatable<Cobilas.GodotEngine.Utility.Numerics.Vector2DInt>
+  nameWithType.vb: IEquatable(Of Vector2DInt)
+  fullName.vb: System.IEquatable(Of Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  name.vb: IEquatable(Of Vector2DInt)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+    name: Vector2DInt
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+    name: Vector2DInt
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt.html
+  - name: )
+- uid: System.IEquatable{Godot.Vector2}
+  commentId: T:System.IEquatable{Godot.Vector2}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Vector2>
+  nameWithType: IEquatable<Vector2>
+  fullName: System.IEquatable<Godot.Vector2>
+  nameWithType.vb: IEquatable(Of Vector2)
+  fullName.vb: System.IEquatable(Of Godot.Vector2)
+  name.vb: IEquatable(Of Vector2)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: System.IEquatable{System.Int32}
+  commentId: T:System.IEquatable{System.Int32}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<int>
+  nameWithType: IEquatable<int>
+  fullName: System.IEquatable<int>
+  nameWithType.vb: IEquatable(Of Integer)
+  fullName.vb: System.IEquatable(Of Integer)
+  name.vb: IEquatable(Of Integer)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Cobilas.GodotEngine.Utility.Resolution.Frequency*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Resolution.Frequency
+  href: Cobilas.GodotEngine.Utility.Resolution.html#Cobilas_GodotEngine_Utility_Resolution_Frequency
+  name: Frequency
+  nameWithType: Resolution.Frequency
+  fullName: Cobilas.GodotEngine.Utility.Resolution.Frequency
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Cobilas.GodotEngine.Utility.Resolution.Width*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Resolution.Width
+  href: Cobilas.GodotEngine.Utility.Resolution.html#Cobilas_GodotEngine_Utility_Resolution_Width
+  name: Width
+  nameWithType: Resolution.Width
+  fullName: Cobilas.GodotEngine.Utility.Resolution.Width
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Cobilas.GodotEngine.Utility.Resolution.Height*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Resolution.Height
+  href: Cobilas.GodotEngine.Utility.Resolution.html#Cobilas_GodotEngine_Utility_Resolution_Height
+  name: Height
+  nameWithType: Resolution.Height
+  fullName: Cobilas.GodotEngine.Utility.Resolution.Height
+- uid: Cobilas.GodotEngine.Utility.Resolution.#ctor*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Resolution.#ctor
+  href: Cobilas.GodotEngine.Utility.Resolution.html#Cobilas_GodotEngine_Utility_Resolution__ctor_Cobilas_GodotEngine_Utility_Numerics_Vector2D__System_Int32__
+  name: Resolution
+  nameWithType: Resolution.Resolution
+  fullName: Cobilas.GodotEngine.Utility.Resolution.Resolution
+  nameWithType.vb: Resolution.New
+  fullName.vb: Cobilas.GodotEngine.Utility.Resolution.New
+  name.vb: New
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+  commentId: T:Cobilas.GodotEngine.Utility.Numerics.Vector2D
+  parent: Cobilas.GodotEngine.Utility.Numerics
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector2D.html
+  name: Vector2D
+  nameWithType: Vector2D
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+- uid: Cobilas.GodotEngine.Utility.Numerics
+  commentId: N:Cobilas.GodotEngine.Utility.Numerics
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Utility.Numerics
+  nameWithType: Cobilas.GodotEngine.Utility.Numerics
+  fullName: Cobilas.GodotEngine.Utility.Numerics
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.Numerics
+    name: Numerics
+    href: Cobilas.GodotEngine.Utility.Numerics.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.Numerics
+    name: Numerics
+    href: Cobilas.GodotEngine.Utility.Numerics.html
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+  commentId: T:Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+  parent: Cobilas.GodotEngine.Utility.Numerics
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt.html
+  name: Vector2DInt
+  nameWithType: Vector2DInt
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+- uid: Godot.Vector2
+  commentId: T:Godot.Vector2
+  parent: Godot
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Godot.Vector2
+- uid: Godot
+  commentId: N:Godot
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: Cobilas.GodotEngine.Utility.Resolution.Equals*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Resolution.Equals
+  href: Cobilas.GodotEngine.Utility.Resolution.html#Cobilas_GodotEngine_Utility_Resolution_Equals_System_Int32_
+  name: Equals
+  nameWithType: Resolution.Equals
+  fullName: Cobilas.GodotEngine.Utility.Resolution.Equals
+- uid: System.IEquatable{System.Int32}.Equals(System.Int32)
+  commentId: M:System.IEquatable{System.Int32}.Equals(System.Int32)
+  parent: System.IEquatable{System.Int32}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(int)
+  nameWithType: IEquatable<int>.Equals(int)
+  fullName: System.IEquatable<int>.Equals(int)
+  nameWithType.vb: IEquatable(Of Integer).Equals(Integer)
+  fullName.vb: System.IEquatable(Of Integer).Equals(Integer)
+  name.vb: Equals(Integer)
+  spec.csharp:
+  - uid: System.IEquatable{System.Int32}.Equals(System.Int32)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{System.Int32}.Equals(System.Int32)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector2D}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  commentId: M:System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector2D}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  parent: System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector2D}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Vector2D)
+  nameWithType: IEquatable<Vector2D>.Equals(Vector2D)
+  fullName: System.IEquatable<Cobilas.GodotEngine.Utility.Numerics.Vector2D>.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  nameWithType.vb: IEquatable(Of Vector2D).Equals(Vector2D)
+  fullName.vb: System.IEquatable(Of Cobilas.GodotEngine.Utility.Numerics.Vector2D).Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  spec.csharp:
+  - uid: System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector2D}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+    name: Vector2D
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector2D.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector2D}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+    name: Vector2D
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector2D.html
+  - name: )
+- uid: System.IEquatable{Godot.Vector2}.Equals(Godot.Vector2)
+  commentId: M:System.IEquatable{Godot.Vector2}.Equals(Godot.Vector2)
+  parent: System.IEquatable{Godot.Vector2}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Vector2)
+  nameWithType: IEquatable<Vector2>.Equals(Vector2)
+  fullName: System.IEquatable<Godot.Vector2>.Equals(Godot.Vector2)
+  nameWithType.vb: IEquatable(Of Vector2).Equals(Vector2)
+  fullName.vb: System.IEquatable(Of Godot.Vector2).Equals(Godot.Vector2)
+  spec.csharp:
+  - uid: System.IEquatable{Godot.Vector2}.Equals(Godot.Vector2)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Godot.Vector2}.Equals(Godot.Vector2)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector2DInt}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  commentId: M:System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector2DInt}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  parent: System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector2DInt}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Vector2DInt)
+  nameWithType: IEquatable<Vector2DInt>.Equals(Vector2DInt)
+  fullName: System.IEquatable<Cobilas.GodotEngine.Utility.Numerics.Vector2DInt>.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  nameWithType.vb: IEquatable(Of Vector2DInt).Equals(Vector2DInt)
+  fullName.vb: System.IEquatable(Of Cobilas.GodotEngine.Utility.Numerics.Vector2DInt).Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  spec.csharp:
+  - uid: System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector2DInt}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+    name: Vector2DInt
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector2DInt}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+    name: Vector2DInt
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt.html
+  - name: )
+- uid: System.IEquatable{Cobilas.GodotEngine.Utility.Resolution}.Equals(Cobilas.GodotEngine.Utility.Resolution)
+  commentId: M:System.IEquatable{Cobilas.GodotEngine.Utility.Resolution}.Equals(Cobilas.GodotEngine.Utility.Resolution)
+  parent: System.IEquatable{Cobilas.GodotEngine.Utility.Resolution}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Resolution)
+  nameWithType: IEquatable<Resolution>.Equals(Resolution)
+  fullName: System.IEquatable<Cobilas.GodotEngine.Utility.Resolution>.Equals(Cobilas.GodotEngine.Utility.Resolution)
+  nameWithType.vb: IEquatable(Of Resolution).Equals(Resolution)
+  fullName.vb: System.IEquatable(Of Cobilas.GodotEngine.Utility.Resolution).Equals(Cobilas.GodotEngine.Utility.Resolution)
+  spec.csharp:
+  - uid: System.IEquatable{Cobilas.GodotEngine.Utility.Resolution}.Equals(Cobilas.GodotEngine.Utility.Resolution)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Cobilas.GodotEngine.Utility.Resolution
+    name: Resolution
+    href: Cobilas.GodotEngine.Utility.Resolution.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Cobilas.GodotEngine.Utility.Resolution}.Equals(Cobilas.GodotEngine.Utility.Resolution)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Cobilas.GodotEngine.Utility.Resolution
+    name: Resolution
+    href: Cobilas.GodotEngine.Utility.Resolution.html
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.Resolution
+  commentId: T:Cobilas.GodotEngine.Utility.Resolution
+  parent: Cobilas.GodotEngine.Utility
+  href: Cobilas.GodotEngine.Utility.Resolution.html
+  name: Resolution
+  nameWithType: Resolution
+  fullName: Cobilas.GodotEngine.Utility.Resolution
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.Resolution.GetHashCode*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Resolution.GetHashCode
+  href: Cobilas.GodotEngine.Utility.Resolution.html#Cobilas_GodotEngine_Utility_Resolution_GetHashCode
+  name: GetHashCode
+  nameWithType: Resolution.GetHashCode
+  fullName: Cobilas.GodotEngine.Utility.Resolution.GetHashCode
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.Resolution.ToString*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Resolution.ToString
+  href: Cobilas.GodotEngine.Utility.Resolution.html#Cobilas_GodotEngine_Utility_Resolution_ToString
+  name: ToString
+  nameWithType: Resolution.ToString
+  fullName: Cobilas.GodotEngine.Utility.Resolution.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Cobilas.GodotEngine.Utility.Resolution.op_Equality*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Resolution.op_Equality
+  href: Cobilas.GodotEngine.Utility.Resolution.html#Cobilas_GodotEngine_Utility_Resolution_op_Equality_Cobilas_GodotEngine_Utility_Resolution_Cobilas_GodotEngine_Utility_Resolution_
+  name: operator ==
+  nameWithType: Resolution.operator ==
+  fullName: Cobilas.GodotEngine.Utility.Resolution.operator ==
+  nameWithType.vb: Resolution.=
+  fullName.vb: Cobilas.GodotEngine.Utility.Resolution.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Cobilas.GodotEngine.Utility.Resolution.op_Equality*
+    name: ==
+    href: Cobilas.GodotEngine.Utility.Resolution.html#Cobilas_GodotEngine_Utility_Resolution_op_Equality_Cobilas_GodotEngine_Utility_Resolution_Cobilas_GodotEngine_Utility_Resolution_
+- uid: Cobilas.GodotEngine.Utility.Resolution.op_Inequality*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Resolution.op_Inequality
+  href: Cobilas.GodotEngine.Utility.Resolution.html#Cobilas_GodotEngine_Utility_Resolution_op_Inequality_Cobilas_GodotEngine_Utility_Resolution_Cobilas_GodotEngine_Utility_Resolution_
+  name: operator !=
+  nameWithType: Resolution.operator !=
+  fullName: Cobilas.GodotEngine.Utility.Resolution.operator !=
+  nameWithType.vb: Resolution.<>
+  fullName.vb: Cobilas.GodotEngine.Utility.Resolution.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Cobilas.GodotEngine.Utility.Resolution.op_Inequality*
+    name: '!='
+    href: Cobilas.GodotEngine.Utility.Resolution.html#Cobilas_GodotEngine_Utility_Resolution_op_Inequality_Cobilas_GodotEngine_Utility_Resolution_Cobilas_GodotEngine_Utility_Resolution_
+- uid: Cobilas.GodotEngine.Utility.Resolution.op_Explicit*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Resolution.op_Explicit
+  name: explicit operator
+  nameWithType: Resolution.explicit operator
+  fullName: Cobilas.GodotEngine.Utility.Resolution.explicit operator
+  nameWithType.vb: Resolution.CType
+  fullName.vb: Cobilas.GodotEngine.Utility.Resolution.CType
+  name.vb: CType
+  spec.csharp:
+  - name: explicit
+  - name: " "
+  - name: operator

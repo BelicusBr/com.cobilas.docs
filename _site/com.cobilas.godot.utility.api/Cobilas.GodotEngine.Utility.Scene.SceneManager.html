@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class SceneManager | Cobilas Documentation ">
       
-      
+      <meta name="description" content="This class can be used to manage scene switching.">
       <link rel="icon" href="../images/favicon-96x96.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.godot.utility/new/main.dev/apiSpec/new?filename=Cobilas_GodotEngine_Utility_Scene_SceneManager.md&amp;value=---%0Auid%3A%20Cobilas.GodotEngine.Utility.Scene.SceneManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.godot.utility/new/main/apiSpec/new?filename=Cobilas_GodotEngine_Utility_Scene_SceneManager.md&amp;value=---%0Auid%3A%20Cobilas.GodotEngine.Utility.Scene.SceneManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Cobilas_GodotEngine_Utility_Scene_SceneManager" data-uid="Cobilas.GodotEngine.Utility.Scene.SceneManager" class="text-break">
-Class SceneManager  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/SceneManager.cs/#L8"><i class="bi bi-code-slash"></i></a>
+Class SceneManager  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/SceneManager.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,11 +97,12 @@ Class SceneManager  <a class="header-action link-secondary" title="View source" 
   <dl><dt>Assembly</dt><dd>com.cobilas.godot.utility.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>This class can be used to manage scene switching.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[RunTimeInitializationClass(&quot;SceneManager&quot;)]
+    <pre><code class="lang-csharp hljs">[RunTimeInitializationClass(&quot;SceneManager&quot;, Priority.StartBefore, 0, false)]
 public class SceneManager : Node, IDisposable</code></pre>
   </div>
 
@@ -837,10 +838,11 @@ public class SceneManager : Node, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Scene_SceneManager_LoadedScene" data-uid="Cobilas.GodotEngine.Utility.Scene.SceneManager.LoadedScene">
   LoadedScene
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/SceneManager.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/SceneManager.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This event is called when a new scene is loaded.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -867,10 +869,11 @@ public class SceneManager : Node, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Scene_SceneManager_UnloadedScene" data-uid="Cobilas.GodotEngine.Utility.Scene.SceneManager.UnloadedScene">
   UnloadedScene
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/SceneManager.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/SceneManager.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This event is called when the current scene is unloaded.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -898,14 +901,48 @@ public class SceneManager : Node, IDisposable</code></pre>
 </h2>
 
 
+  <a id="Cobilas_GodotEngine_Utility_Scene_SceneManager_BuiltScenes_" data-uid="Cobilas.GodotEngine.Utility.Scene.SceneManager.BuiltScenes*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Scene_SceneManager_BuiltScenes" data-uid="Cobilas.GodotEngine.Utility.Scene.SceneManager.BuiltScenes">
+  BuiltScenes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/SceneManager.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The compiled scenes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Scene[] BuiltScenes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Scene.Scene.html">Scene</a>[]</dt>
+    <dd><p>Returns a list of scenes that were compiled along with the project.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Cobilas_GodotEngine_Utility_Scene_SceneManager_CurrentScene_" data-uid="Cobilas.GodotEngine.Utility.Scene.SceneManager.CurrentScene*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Scene_SceneManager_CurrentScene" data-uid="Cobilas.GodotEngine.Utility.Scene.SceneManager.CurrentScene">
   CurrentScene
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/SceneManager.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/SceneManager.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The current scene.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -919,7 +956,8 @@ public class SceneManager : Node, IDisposable</code></pre>
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Scene.Scene.html">Scene</a></dt>
-    <dd></dd>
+    <dd><p>Returns the scene that is currently loaded.</p>
+</dd>
   </dl>
 
 
@@ -933,10 +971,11 @@ public class SceneManager : Node, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Scene_SceneManager_CurrentSceneNode" data-uid="Cobilas.GodotEngine.Utility.Scene.SceneManager.CurrentSceneNode">
   CurrentSceneNode
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/SceneManager.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/SceneManager.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The current scene in node form.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -950,7 +989,8 @@ public class SceneManager : Node, IDisposable</code></pre>
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><span class="xref">Node</span></dt>
-    <dd></dd>
+    <dd><p>Returns the currently loaded scene in node form.</p>
+</dd>
   </dl>
 
 
@@ -968,10 +1008,11 @@ public class SceneManager : Node, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Scene_SceneManager_DontDestroyOnLoad_Godot_Node_" data-uid="Cobilas.GodotEngine.Utility.Scene.SceneManager.DontDestroyOnLoad(Godot.Node)">
   DontDestroyOnLoad(Node)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/SceneManager.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/SceneManager.cs/#L56"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Prevents an object from being destroyed when switching scenes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -981,7 +1022,8 @@ public class SceneManager : Node, IDisposable</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>obj</code> <span class="xref">Node</span></dt>
-    <dd></dd>
+    <dd><p>The object that will be marked so as not to be destroyed when changing scenes.</p>
+</dd>
   </dl>
 
 
@@ -999,10 +1041,11 @@ public class SceneManager : Node, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Scene_SceneManager_LoadScene_System_Int32_" data-uid="Cobilas.GodotEngine.Utility.Scene.SceneManager.LoadScene(System.Int32)">
   LoadScene(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/SceneManager.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/SceneManager.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Allows you to load a specific scene.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1012,13 +1055,15 @@ public class SceneManager : Node, IDisposable</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The specific scene index.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> if the scene loaded correctly.</p>
+</dd>
   </dl>
 
 
@@ -1035,10 +1080,11 @@ public class SceneManager : Node, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Scene_SceneManager_LoadScene_System_String_" data-uid="Cobilas.GodotEngine.Utility.Scene.SceneManager.LoadScene(System.String)">
   LoadScene(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/SceneManager.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/SceneManager.cs/#L77"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Allows you to load a specific scene.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1048,13 +1094,15 @@ public class SceneManager : Node, IDisposable</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The specific scene name.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> if the scene loaded correctly.</p>
+</dd>
   </dl>
 
 
@@ -1071,7 +1119,7 @@ public class SceneManager : Node, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Scene_SceneManager__Ready" data-uid="Cobilas.GodotEngine.Utility.Scene.SceneManager._Ready">
   _Ready()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/SceneManager.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/SceneManager.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Called when the node is "ready", i.e. when both the node and its children have entered the scene tree. If the node has children, their <span class="xref">Godot.Node._Ready()</span> callbacks get triggered first, and the parent node will receive the ready notification afterwards.</p>
@@ -1101,7 +1149,7 @@ public class SceneManager : Node, IDisposable</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/SceneManager.cs/#L8" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/SceneManager.cs/#L8" class="edit-link">Edit this page</a>
         </div>
 
 

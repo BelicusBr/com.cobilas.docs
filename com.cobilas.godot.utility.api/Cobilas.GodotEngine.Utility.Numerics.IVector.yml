@@ -25,14 +25,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/IVector.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: IVector
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/IVector.cs
-    startLine: 3
+    startLine: 4
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Standardization interface for vectors.
+  example: []
   syntax:
     content: 'public interface IVector : IFormattable'
     content.vb: Public Interface IVector Inherits IFormattable
@@ -52,21 +54,27 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/IVector.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: magnitude
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/IVector.cs
-    startLine: 4
+    startLine: 6
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns the length (magnitude) of this vector.
+  example: []
   syntax:
     content: float magnitude { get; }
     parameters: []
     return:
       type: System.Single
+      description: The length of this vector.
     content.vb: ReadOnly Property magnitude As Single
   overload: Cobilas.GodotEngine.Utility.Numerics.IVector.magnitude*
+  seealso:
+  - linkId: Godot.Vector2.LengthSquared
+    commentId: M:Godot.Vector2.LengthSquared
 - uid: Cobilas.GodotEngine.Utility.Numerics.IVector.sqrMagnitude
   commentId: P:Cobilas.GodotEngine.Utility.Numerics.IVector.sqrMagnitude
   id: sqrMagnitude
@@ -81,19 +89,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/IVector.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: sqrMagnitude
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/IVector.cs
-    startLine: 5
+    startLine: 12
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: >-
+    Returns the squared length (squared magnitude) of this vector. This method runs
+        faster than <xref href="Cobilas.GodotEngine.Utility.Numerics.IVector.magnitude" data-throw-if-not-resolved="false"></xref>, so prefer it if you need to compare vectors
+        or need the squared length for some formula.
+  example: []
   syntax:
     content: float sqrMagnitude { get; }
     parameters: []
     return:
       type: System.Single
+      description: The squared length of this vector.
     content.vb: ReadOnly Property sqrMagnitude As Single
   overload: Cobilas.GodotEngine.Utility.Numerics.IVector.sqrMagnitude*
 - uid: Cobilas.GodotEngine.Utility.Numerics.IVector.floor
@@ -110,19 +124,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/IVector.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: floor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/IVector.cs
-    startLine: 6
+    startLine: 14
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns a new vector with all components rounded down (towards negative infinity).
+  example: []
   syntax:
     content: IVector floor { get; }
     parameters: []
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.IVector
+      description: A vector with <xref href="Godot.Mathf.Floor(System.Single)" data-throw-if-not-resolved="false"></xref> called on each component.
     content.vb: ReadOnly Property floor As IVector
   overload: Cobilas.GodotEngine.Utility.Numerics.IVector.floor*
 - uid: Cobilas.GodotEngine.Utility.Numerics.IVector.ceil
@@ -139,19 +156,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/IVector.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ceil
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/IVector.cs
-    startLine: 7
+    startLine: 16
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns a new vector with all components rounded up (towards positive infinity).
+  example: []
   syntax:
     content: IVector ceil { get; }
     parameters: []
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.IVector
+      description: A vector with <xref href="Godot.Mathf.Ceil(System.Single)" data-throw-if-not-resolved="false"></xref> called on each component.
     content.vb: ReadOnly Property ceil As IVector
   overload: Cobilas.GodotEngine.Utility.Numerics.IVector.ceil*
 - uid: Cobilas.GodotEngine.Utility.Numerics.IVector.aspect
@@ -168,19 +188,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/IVector.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: aspect
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/IVector.cs
-    startLine: 8
+    startLine: 19
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns the aspect ratio of this vector, the ratio of <xref href="Cobilas.GodotEngine.Utility.Numerics.IVector" data-throw-if-not-resolved="false"></xref>.x to <xref href="Cobilas.GodotEngine.Utility.Numerics.IVector" data-throw-if-not-resolved="false"></xref>.y.
+  example: []
   syntax:
     content: float aspect { get; }
     parameters: []
     return:
       type: System.Single
+      description: The <xref href="Cobilas.GodotEngine.Utility.Numerics.IVector" data-throw-if-not-resolved="false"></xref>.x component divided by the <xref href="Cobilas.GodotEngine.Utility.Numerics.IVector" data-throw-if-not-resolved="false"></xref>.y component.
     content.vb: ReadOnly Property aspect As Single
   overload: Cobilas.GodotEngine.Utility.Numerics.IVector.aspect*
 - uid: Cobilas.GodotEngine.Utility.Numerics.IVector.AxisCount
@@ -197,19 +220,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/IVector.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: AxisCount
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/IVector.cs
-    startLine: 9
+    startLine: 22
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Number of axles.
+  example: []
   syntax:
     content: int AxisCount { get; }
     parameters: []
     return:
       type: System.Int32
+      description: Returns the number of axes a vector has.
     content.vb: ReadOnly Property AxisCount As Integer
   overload: Cobilas.GodotEngine.Utility.Numerics.IVector.AxisCount*
 - uid: Cobilas.GodotEngine.Utility.Numerics.IVector.Normalized
@@ -226,19 +252,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/IVector.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Normalized
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/IVector.cs
-    startLine: 10
+    startLine: 24
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns the vector scaled to unit length. Equivalent to <code>v / v.Length()</code>.
+  example: []
   syntax:
     content: IVector Normalized { get; }
     parameters: []
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.IVector
+      description: A normalized version of the vector.
     content.vb: ReadOnly Property Normalized As IVector
   overload: Cobilas.GodotEngine.Utility.Numerics.IVector.Normalized*
 - uid: Cobilas.GodotEngine.Utility.Numerics.IVector.Item(System.Int32)
@@ -255,21 +284,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/IVector.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: this[]
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/IVector.cs
-    startLine: 12
+    startLine: 29
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Allows you to access the axes of a vector through an index.
+  example: []
   syntax:
     content: float this[int index] { get; set; }
     parameters:
     - id: index
       type: System.Int32
+      description: The axis index.
     return:
       type: System.Single
+      description: Sets the value of an axis by specifying its index.
     content.vb: Default Property this[](index As Integer) As Single
   overload: Cobilas.GodotEngine.Utility.Numerics.IVector.Item*
   nameWithType.vb: IVector.this[](Integer)
@@ -289,18 +322,24 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/IVector.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Round
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/IVector.cs
-    startLine: 14
+    startLine: 31
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: >-
+    Returns this vector with all components rounded to the nearest integer,
+
+    with halfway cases rounded towards the nearest multiple of two.
+  example: []
   syntax:
     content: IVector Round()
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.IVector
+      description: The rounded vector.
     content.vb: Function Round() As IVector
   overload: Cobilas.GodotEngine.Utility.Numerics.IVector.Round*
 - uid: Cobilas.GodotEngine.Utility.Numerics.IVector.ToString(System.String)
@@ -317,21 +356,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/IVector.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToString
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/IVector.cs
-    startLine: 15
+    startLine: 33
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Formats the value of the current instance using the specified format.
+  example: []
   syntax:
     content: string ToString(string format)
     parameters:
     - id: format
       type: System.String
+      description: The format to use.-or- A null reference (<code>Nothing</code> in Visual Basic) to use the default format defined for the type of the <xref href="System.IFormattable" data-throw-if-not-resolved="false"></xref> implementation.
     return:
       type: System.String
+      description: The value of the current instance in the specified format.
     content.vb: Function ToString(format As String) As String
   overload: Cobilas.GodotEngine.Utility.Numerics.IVector.ToString*
   nameWithType.vb: IVector.ToString(String)
@@ -436,6 +479,24 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Godot.Vector2.LengthSquared
+  commentId: M:Godot.Vector2.LengthSquared
+  isExternal: true
+  name: LengthSquared()
+  nameWithType: Vector2.LengthSquared()
+  fullName: Godot.Vector2.LengthSquared()
+  spec.csharp:
+  - uid: Godot.Vector2.LengthSquared
+    name: LengthSquared
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.Vector2.LengthSquared
+    name: LengthSquared
+    isExternal: true
+  - name: (
+  - name: )
 - uid: Cobilas.GodotEngine.Utility.Numerics.IVector.magnitude*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.IVector.magnitude
   href: Cobilas.GodotEngine.Utility.Numerics.IVector.html#Cobilas_GodotEngine_Utility_Numerics_IVector_magnitude
@@ -453,18 +514,19 @@ references:
   nameWithType.vb: Single
   fullName.vb: Single
   name.vb: Single
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVector.magnitude
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IVector.magnitude
+  parent: Cobilas.GodotEngine.Utility.Numerics.IVector
+  href: Cobilas.GodotEngine.Utility.Numerics.IVector.html#Cobilas_GodotEngine_Utility_Numerics_IVector_magnitude
+  name: magnitude
+  nameWithType: IVector.magnitude
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector.magnitude
 - uid: Cobilas.GodotEngine.Utility.Numerics.IVector.sqrMagnitude*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.IVector.sqrMagnitude
   href: Cobilas.GodotEngine.Utility.Numerics.IVector.html#Cobilas_GodotEngine_Utility_Numerics_IVector_sqrMagnitude
   name: sqrMagnitude
   nameWithType: IVector.sqrMagnitude
   fullName: Cobilas.GodotEngine.Utility.Numerics.IVector.sqrMagnitude
-- uid: Cobilas.GodotEngine.Utility.Numerics.IVector.floor*
-  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.IVector.floor
-  href: Cobilas.GodotEngine.Utility.Numerics.IVector.html#Cobilas_GodotEngine_Utility_Numerics_IVector_floor
-  name: floor
-  nameWithType: IVector.floor
-  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector.floor
 - uid: Cobilas.GodotEngine.Utility.Numerics.IVector
   commentId: T:Cobilas.GodotEngine.Utility.Numerics.IVector
   parent: Cobilas.GodotEngine.Utility.Numerics
@@ -472,6 +534,72 @@ references:
   name: IVector
   nameWithType: IVector
   fullName: Cobilas.GodotEngine.Utility.Numerics.IVector
+- uid: Godot.Mathf.Floor(System.Single)
+  commentId: M:Godot.Mathf.Floor(System.Single)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: Floor(float)
+  nameWithType: Mathf.Floor(float)
+  fullName: Godot.Mathf.Floor(float)
+  nameWithType.vb: Mathf.Floor(Single)
+  fullName.vb: Godot.Mathf.Floor(Single)
+  name.vb: Floor(Single)
+  spec.csharp:
+  - uid: Godot.Mathf.Floor(System.Single)
+    name: Floor
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Godot.Mathf.Floor(System.Single)
+    name: Floor
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVector.floor*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.IVector.floor
+  href: Cobilas.GodotEngine.Utility.Numerics.IVector.html#Cobilas_GodotEngine_Utility_Numerics_IVector_floor
+  name: floor
+  nameWithType: IVector.floor
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector.floor
+- uid: Godot.Mathf.Ceil(System.Single)
+  commentId: M:Godot.Mathf.Ceil(System.Single)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: Ceil(float)
+  nameWithType: Mathf.Ceil(float)
+  fullName: Godot.Mathf.Ceil(float)
+  nameWithType.vb: Mathf.Ceil(Single)
+  fullName.vb: Godot.Mathf.Ceil(Single)
+  name.vb: Ceil(Single)
+  spec.csharp:
+  - uid: Godot.Mathf.Ceil(System.Single)
+    name: Ceil
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Godot.Mathf.Ceil(System.Single)
+    name: Ceil
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
 - uid: Cobilas.GodotEngine.Utility.Numerics.IVector.ceil*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.IVector.ceil
   href: Cobilas.GodotEngine.Utility.Numerics.IVector.html#Cobilas_GodotEngine_Utility_Numerics_IVector_ceil

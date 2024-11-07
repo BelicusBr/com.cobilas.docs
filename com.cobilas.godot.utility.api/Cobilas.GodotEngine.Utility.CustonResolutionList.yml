@@ -1,0 +1,913 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.GodotEngine.Utility.CustonResolutionList
+  commentId: T:Cobilas.GodotEngine.Utility.CustonResolutionList
+  id: CustonResolutionList
+  parent: Cobilas.GodotEngine.Utility
+  children:
+  - Cobilas.GodotEngine.Utility.CustonResolutionList.#ctor(System.Int32@,Cobilas.GodotEngine.Utility.Resolution[]@)
+  - Cobilas.GodotEngine.Utility.CustonResolutionList.#ctor(System.Int32@,System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.Utility.Resolution}@)
+  - Cobilas.GodotEngine.Utility.CustonResolutionList.Deserialize(System.IO.Stream)
+  - Cobilas.GodotEngine.Utility.CustonResolutionList.GetEnumerator
+  - Cobilas.GodotEngine.Utility.CustonResolutionList.Serialize(Cobilas.GodotEngine.Utility.CustonResolutionList[]@,System.IO.Stream)
+  - Cobilas.GodotEngine.Utility.CustonResolutionList.op_Explicit(Cobilas.GodotEngine.Utility.CustonResolutionList)~System.Int32
+  langs:
+  - csharp
+  - vb
+  name: CustonResolutionList
+  nameWithType: CustonResolutionList
+  fullName: Cobilas.GodotEngine.Utility.CustonResolutionList
+  type: Struct
+  source:
+    remote:
+      path: GodotEngine.Utility/CustonResolutionList.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: CustonResolutionList
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/CustonResolutionList.cs
+    startLine: 12
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Stores custom resolutions.
+  remarks: Stores all custom resolutions defined in the application to be used.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public readonly struct CustonResolutionList : IEnumerable<Resolution>, IEnumerable
+    content.vb: >-
+      <Serializable>
+
+      Public Structure CustonResolutionList Implements IEnumerable(Of Resolution), IEnumerable
+  implements:
+  - System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.Utility.Resolution}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Cobilas.GodotEngine.Utility.CustonResolutionList.#ctor(System.Int32@,Cobilas.GodotEngine.Utility.Resolution[]@)
+  commentId: M:Cobilas.GodotEngine.Utility.CustonResolutionList.#ctor(System.Int32@,Cobilas.GodotEngine.Utility.Resolution[]@)
+  id: '#ctor(System.Int32@,Cobilas.GodotEngine.Utility.Resolution[]@)'
+  parent: Cobilas.GodotEngine.Utility.CustonResolutionList
+  langs:
+  - csharp
+  - vb
+  name: CustonResolutionList(in int, in Resolution[])
+  nameWithType: CustonResolutionList.CustonResolutionList(in int, in Resolution[])
+  fullName: Cobilas.GodotEngine.Utility.CustonResolutionList.CustonResolutionList(in int, in Cobilas.GodotEngine.Utility.Resolution[])
+  type: Constructor
+  source:
+    remote:
+      path: GodotEngine.Utility/CustonResolutionList.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: .ctor
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/CustonResolutionList.cs
+    startLine: 19
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Starts a new instance of the object.
+  example: []
+  syntax:
+    content: public CustonResolutionList(in int hash, in Resolution[] list)
+    parameters:
+    - id: hash
+      type: System.Int32
+    - id: list
+      type: Cobilas.GodotEngine.Utility.Resolution[]
+    content.vb: Public Sub New(hash As Integer, list As Resolution())
+  overload: Cobilas.GodotEngine.Utility.CustonResolutionList.#ctor*
+  nameWithType.vb: CustonResolutionList.New(Integer, Resolution())
+  fullName.vb: Cobilas.GodotEngine.Utility.CustonResolutionList.New(Integer, Cobilas.GodotEngine.Utility.Resolution())
+  name.vb: New(Integer, Resolution())
+- uid: Cobilas.GodotEngine.Utility.CustonResolutionList.#ctor(System.Int32@,System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.Utility.Resolution}@)
+  commentId: M:Cobilas.GodotEngine.Utility.CustonResolutionList.#ctor(System.Int32@,System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.Utility.Resolution}@)
+  id: '#ctor(System.Int32@,System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.Utility.Resolution}@)'
+  parent: Cobilas.GodotEngine.Utility.CustonResolutionList
+  langs:
+  - csharp
+  - vb
+  name: CustonResolutionList(in int, in IEnumerable<Resolution>)
+  nameWithType: CustonResolutionList.CustonResolutionList(in int, in IEnumerable<Resolution>)
+  fullName: Cobilas.GodotEngine.Utility.CustonResolutionList.CustonResolutionList(in int, in System.Collections.Generic.IEnumerable<Cobilas.GodotEngine.Utility.Resolution>)
+  type: Constructor
+  source:
+    remote:
+      path: GodotEngine.Utility/CustonResolutionList.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: .ctor
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/CustonResolutionList.cs
+    startLine: 25
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Starts a new instance of the object.
+  example: []
+  syntax:
+    content: public CustonResolutionList(in int hash, in IEnumerable<Resolution> list)
+    parameters:
+    - id: hash
+      type: System.Int32
+    - id: list
+      type: System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.Utility.Resolution}
+    content.vb: Public Sub New(hash As Integer, list As IEnumerable(Of Resolution))
+  overload: Cobilas.GodotEngine.Utility.CustonResolutionList.#ctor*
+  nameWithType.vb: CustonResolutionList.New(Integer, IEnumerable(Of Resolution))
+  fullName.vb: Cobilas.GodotEngine.Utility.CustonResolutionList.New(Integer, System.Collections.Generic.IEnumerable(Of Cobilas.GodotEngine.Utility.Resolution))
+  name.vb: New(Integer, IEnumerable(Of Resolution))
+- uid: Cobilas.GodotEngine.Utility.CustonResolutionList.Serialize(Cobilas.GodotEngine.Utility.CustonResolutionList[]@,System.IO.Stream)
+  commentId: M:Cobilas.GodotEngine.Utility.CustonResolutionList.Serialize(Cobilas.GodotEngine.Utility.CustonResolutionList[]@,System.IO.Stream)
+  id: Serialize(Cobilas.GodotEngine.Utility.CustonResolutionList[]@,System.IO.Stream)
+  parent: Cobilas.GodotEngine.Utility.CustonResolutionList
+  langs:
+  - csharp
+  - vb
+  name: Serialize(in CustonResolutionList[], Stream?)
+  nameWithType: CustonResolutionList.Serialize(in CustonResolutionList[], Stream?)
+  fullName: Cobilas.GodotEngine.Utility.CustonResolutionList.Serialize(in Cobilas.GodotEngine.Utility.CustonResolutionList[], System.IO.Stream?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/CustonResolutionList.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Serialize
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/CustonResolutionList.cs
+    startLine: 31
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Serializes a list of objects to a specified file.
+  example: []
+  syntax:
+    content: public static void Serialize(in CustonResolutionList[] list, Stream? stream)
+    parameters:
+    - id: list
+      type: Cobilas.GodotEngine.Utility.CustonResolutionList[]
+      description: The list to be serialized.
+    - id: stream
+      type: System.IO.Stream
+      description: The file that will receive the list.
+    content.vb: Public Shared Sub Serialize(list As CustonResolutionList(), stream As Stream)
+  overload: Cobilas.GodotEngine.Utility.CustonResolutionList.Serialize*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: An exception will be thrown if the parameters are null.
+  nameWithType.vb: CustonResolutionList.Serialize(CustonResolutionList(), Stream)
+  fullName.vb: Cobilas.GodotEngine.Utility.CustonResolutionList.Serialize(Cobilas.GodotEngine.Utility.CustonResolutionList(), System.IO.Stream)
+  name.vb: Serialize(CustonResolutionList(), Stream)
+- uid: Cobilas.GodotEngine.Utility.CustonResolutionList.Deserialize(System.IO.Stream)
+  commentId: M:Cobilas.GodotEngine.Utility.CustonResolutionList.Deserialize(System.IO.Stream)
+  id: Deserialize(System.IO.Stream)
+  parent: Cobilas.GodotEngine.Utility.CustonResolutionList
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(Stream?)
+  nameWithType: CustonResolutionList.Deserialize(Stream?)
+  fullName: Cobilas.GodotEngine.Utility.CustonResolutionList.Deserialize(System.IO.Stream?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/CustonResolutionList.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Deserialize
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/CustonResolutionList.cs
+    startLine: 42
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Deserializes a list of objects from a specified file.
+  example: []
+  syntax:
+    content: public static CustonResolutionList[] Deserialize(Stream? stream)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The file where the list is.
+    return:
+      type: Cobilas.GodotEngine.Utility.CustonResolutionList[]
+      description: Returns a custom resolution list.
+    content.vb: Public Shared Function Deserialize(stream As Stream) As CustonResolutionList()
+  overload: Cobilas.GodotEngine.Utility.CustonResolutionList.Deserialize*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: An exception will be thrown if the parameters are null.
+  nameWithType.vb: CustonResolutionList.Deserialize(Stream)
+  fullName.vb: Cobilas.GodotEngine.Utility.CustonResolutionList.Deserialize(System.IO.Stream)
+  name.vb: Deserialize(Stream)
+- uid: Cobilas.GodotEngine.Utility.CustonResolutionList.GetEnumerator
+  commentId: M:Cobilas.GodotEngine.Utility.CustonResolutionList.GetEnumerator
+  id: GetEnumerator
+  parent: Cobilas.GodotEngine.Utility.CustonResolutionList
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: CustonResolutionList.GetEnumerator()
+  fullName: Cobilas.GodotEngine.Utility.CustonResolutionList.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/CustonResolutionList.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetEnumerator
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/CustonResolutionList.cs
+    startLine: 49
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Returns an enumerator that iterates through the collection.
+  example: []
+  syntax:
+    content: public IEnumerator<Resolution> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{Cobilas.GodotEngine.Utility.Resolution}
+      description: An enumerator that can be used to iterate through the collection.
+    content.vb: Public Function GetEnumerator() As IEnumerator(Of Resolution)
+  overload: Cobilas.GodotEngine.Utility.CustonResolutionList.GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.Utility.Resolution}.GetEnumerator
+- uid: Cobilas.GodotEngine.Utility.CustonResolutionList.op_Explicit(Cobilas.GodotEngine.Utility.CustonResolutionList)~System.Int32
+  commentId: M:Cobilas.GodotEngine.Utility.CustonResolutionList.op_Explicit(Cobilas.GodotEngine.Utility.CustonResolutionList)~System.Int32
+  id: op_Explicit(Cobilas.GodotEngine.Utility.CustonResolutionList)~System.Int32
+  parent: Cobilas.GodotEngine.Utility.CustonResolutionList
+  langs:
+  - csharp
+  - vb
+  name: explicit operator int(CustonResolutionList)
+  nameWithType: CustonResolutionList.explicit operator int(CustonResolutionList)
+  fullName: Cobilas.GodotEngine.Utility.CustonResolutionList.explicit operator int(Cobilas.GodotEngine.Utility.CustonResolutionList)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/CustonResolutionList.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Explicit
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/CustonResolutionList.cs
+    startLine: 54
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Explicit conversion operator.(<xref href="Cobilas.GodotEngine.Utility.CustonResolutionList" data-throw-if-not-resolved="false"></xref> to <xref href="System.Int32" data-throw-if-not-resolved="false"></xref>)
+  example: []
+  syntax:
+    content: public static explicit operator int(CustonResolutionList R)
+    parameters:
+    - id: R
+      type: Cobilas.GodotEngine.Utility.CustonResolutionList
+      description: Object to be converted.
+    return:
+      type: System.Int32
+    content.vb: Public Shared Narrowing Operator CType(R As CustonResolutionList) As Integer
+  overload: Cobilas.GodotEngine.Utility.CustonResolutionList.op_Explicit*
+  nameWithType.vb: CustonResolutionList.CType(CustonResolutionList)
+  fullName.vb: Cobilas.GodotEngine.Utility.CustonResolutionList.CType(Cobilas.GodotEngine.Utility.CustonResolutionList)
+  name.vb: CType(CustonResolutionList)
+references:
+- uid: Cobilas.GodotEngine.Utility
+  commentId: N:Cobilas.GodotEngine.Utility
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Utility
+  nameWithType: Cobilas.GodotEngine.Utility
+  fullName: Cobilas.GodotEngine.Utility
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+- uid: System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.Utility.Resolution}
+  commentId: T:System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.Utility.Resolution}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Resolution>
+  nameWithType: IEnumerable<Resolution>
+  fullName: System.Collections.Generic.IEnumerable<Cobilas.GodotEngine.Utility.Resolution>
+  nameWithType.vb: IEnumerable(Of Resolution)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Cobilas.GodotEngine.Utility.Resolution)
+  name.vb: IEnumerable(Of Resolution)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Cobilas.GodotEngine.Utility.Resolution
+    name: Resolution
+    href: Cobilas.GodotEngine.Utility.Resolution.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Cobilas.GodotEngine.Utility.Resolution
+    name: Resolution
+    href: Cobilas.GodotEngine.Utility.Resolution.html
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cobilas.GodotEngine.Utility.CustonResolutionList.#ctor*
+  commentId: Overload:Cobilas.GodotEngine.Utility.CustonResolutionList.#ctor
+  href: Cobilas.GodotEngine.Utility.CustonResolutionList.html#Cobilas_GodotEngine_Utility_CustonResolutionList__ctor_System_Int32__Cobilas_GodotEngine_Utility_Resolution____
+  name: CustonResolutionList
+  nameWithType: CustonResolutionList.CustonResolutionList
+  fullName: Cobilas.GodotEngine.Utility.CustonResolutionList.CustonResolutionList
+  nameWithType.vb: CustonResolutionList.New
+  fullName.vb: Cobilas.GodotEngine.Utility.CustonResolutionList.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Cobilas.GodotEngine.Utility.Resolution[]
+  isExternal: true
+  href: Cobilas.GodotEngine.Utility.Resolution.html
+  name: Resolution[]
+  nameWithType: Resolution[]
+  fullName: Cobilas.GodotEngine.Utility.Resolution[]
+  nameWithType.vb: Resolution()
+  fullName.vb: Cobilas.GodotEngine.Utility.Resolution()
+  name.vb: Resolution()
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Utility.Resolution
+    name: Resolution
+    href: Cobilas.GodotEngine.Utility.Resolution.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Utility.Resolution
+    name: Resolution
+    href: Cobilas.GodotEngine.Utility.Resolution.html
+  - name: (
+  - name: )
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Cobilas.GodotEngine.Utility.CustonResolutionList.Serialize*
+  commentId: Overload:Cobilas.GodotEngine.Utility.CustonResolutionList.Serialize
+  href: Cobilas.GodotEngine.Utility.CustonResolutionList.html#Cobilas_GodotEngine_Utility_CustonResolutionList_Serialize_Cobilas_GodotEngine_Utility_CustonResolutionList____System_IO_Stream_
+  name: Serialize
+  nameWithType: CustonResolutionList.Serialize
+  fullName: Cobilas.GodotEngine.Utility.CustonResolutionList.Serialize
+- uid: Cobilas.GodotEngine.Utility.CustonResolutionList[]
+  isExternal: true
+  href: Cobilas.GodotEngine.Utility.CustonResolutionList.html
+  name: CustonResolutionList[]
+  nameWithType: CustonResolutionList[]
+  fullName: Cobilas.GodotEngine.Utility.CustonResolutionList[]
+  nameWithType.vb: CustonResolutionList()
+  fullName.vb: Cobilas.GodotEngine.Utility.CustonResolutionList()
+  name.vb: CustonResolutionList()
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Utility.CustonResolutionList
+    name: CustonResolutionList
+    href: Cobilas.GodotEngine.Utility.CustonResolutionList.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Utility.CustonResolutionList
+    name: CustonResolutionList
+    href: Cobilas.GodotEngine.Utility.CustonResolutionList.html
+  - name: (
+  - name: )
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: Cobilas.GodotEngine.Utility.CustonResolutionList.Deserialize*
+  commentId: Overload:Cobilas.GodotEngine.Utility.CustonResolutionList.Deserialize
+  href: Cobilas.GodotEngine.Utility.CustonResolutionList.html#Cobilas_GodotEngine_Utility_CustonResolutionList_Deserialize_System_IO_Stream_
+  name: Deserialize
+  nameWithType: CustonResolutionList.Deserialize
+  fullName: Cobilas.GodotEngine.Utility.CustonResolutionList.Deserialize
+- uid: Cobilas.GodotEngine.Utility.CustonResolutionList.GetEnumerator*
+  commentId: Overload:Cobilas.GodotEngine.Utility.CustonResolutionList.GetEnumerator
+  href: Cobilas.GodotEngine.Utility.CustonResolutionList.html#Cobilas_GodotEngine_Utility_CustonResolutionList_GetEnumerator
+  name: GetEnumerator
+  nameWithType: CustonResolutionList.GetEnumerator
+  fullName: Cobilas.GodotEngine.Utility.CustonResolutionList.GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.Utility.Resolution}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.Utility.Resolution}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.Utility.Resolution}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<Resolution>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<Cobilas.GodotEngine.Utility.Resolution>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of Resolution).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Cobilas.GodotEngine.Utility.Resolution).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.Utility.Resolution}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.Utility.Resolution}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator{Cobilas.GodotEngine.Utility.Resolution}
+  commentId: T:System.Collections.Generic.IEnumerator{Cobilas.GodotEngine.Utility.Resolution}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<Resolution>
+  nameWithType: IEnumerator<Resolution>
+  fullName: System.Collections.Generic.IEnumerator<Cobilas.GodotEngine.Utility.Resolution>
+  nameWithType.vb: IEnumerator(Of Resolution)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of Cobilas.GodotEngine.Utility.Resolution)
+  name.vb: IEnumerator(Of Resolution)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - uid: Cobilas.GodotEngine.Utility.Resolution
+    name: Resolution
+    href: Cobilas.GodotEngine.Utility.Resolution.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Cobilas.GodotEngine.Utility.Resolution
+    name: Resolution
+    href: Cobilas.GodotEngine.Utility.Resolution.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.CustonResolutionList
+  commentId: T:Cobilas.GodotEngine.Utility.CustonResolutionList
+  parent: Cobilas.GodotEngine.Utility
+  href: Cobilas.GodotEngine.Utility.CustonResolutionList.html
+  name: CustonResolutionList
+  nameWithType: CustonResolutionList
+  fullName: Cobilas.GodotEngine.Utility.CustonResolutionList
+- uid: Cobilas.GodotEngine.Utility.CustonResolutionList.op_Explicit*
+  commentId: Overload:Cobilas.GodotEngine.Utility.CustonResolutionList.op_Explicit
+  name: explicit operator
+  nameWithType: CustonResolutionList.explicit operator
+  fullName: Cobilas.GodotEngine.Utility.CustonResolutionList.explicit operator
+  nameWithType.vb: CustonResolutionList.CType
+  fullName.vb: Cobilas.GodotEngine.Utility.CustonResolutionList.CType
+  name.vb: CType
+  spec.csharp:
+  - name: explicit
+  - name: " "
+  - name: operator

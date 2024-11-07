@@ -45,14 +45,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Quaternion
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 5
+    startLine: 6
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Quaternions are used to represent rotations.
+  example: []
   syntax:
     content: >-
       [Serializable]
@@ -87,14 +89,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: x
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 7
+    startLine: 9
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: X component of the Quaternion. Don't modify this directly unless you know quaternions inside out.
+  example: []
   syntax:
     content: public float x
     return:
@@ -114,14 +118,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: y
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 8
+    startLine: 11
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Y component of the Quaternion. Don't modify this directly unless you know quaternions inside out.
+  example: []
   syntax:
     content: public float y
     return:
@@ -141,14 +147,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: z
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 9
+    startLine: 13
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Z component of the Quaternion. Don't modify this directly unless you know quaternions inside out.
+  example: []
   syntax:
     content: public float z
     return:
@@ -168,14 +176,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: w
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 10
+    startLine: 15
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: W component of the Quaternion. Do not directly modify quaternions.
+  example: []
   syntax:
     content: public float w
     return:
@@ -195,14 +205,17 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: KEpsilon
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 12
+    startLine: 20
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: A small value used to compare quaternions for equality.
+  remarks: The <code>kEpsilon</code> constant is used to determine if two quaternions are nearly equal, accounting for floating-point precision errors.
+  example: []
   syntax:
     content: public const float KEpsilon = 1E-06
     return:
@@ -222,14 +235,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Rad2Deg
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 13
+    startLine: 22
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Degrees-to-radians conversion constant (Read Only).
+  example: []
   syntax:
     content: public const double Rad2Deg = 57.29577951308232
     return:
@@ -249,14 +264,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Deg2Rad
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 14
+    startLine: 24
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Radians-to-degrees conversion constant (Read Only).
+  example: []
   syntax:
     content: public const double Deg2Rad = 0.017453292519943295
     return:
@@ -276,14 +293,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Euler
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 16
+    startLine: 26
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns or sets the euler angle representation of the rotation.
+  example: []
   syntax:
     content: public readonly Vector3D Euler { get; }
     parameters: []
@@ -305,14 +324,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Normalized
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 17
+    startLine: 28
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns this quaternion with a magnitude of 1 (Read Only).
+  example: []
   syntax:
     content: public readonly Quaternion Normalized { get; }
     parameters: []
@@ -334,14 +355,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Identity
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 21
+    startLine: 32
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: The identity rotation (Read Only).
+  example: []
   syntax:
     content: public static Quaternion Identity { get; }
     parameters: []
@@ -363,14 +386,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 23
+    startLine: 34
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Starts a new instance of the object.
+  example: []
   syntax:
     content: public Quaternion(float x, float y)
     parameters:
@@ -397,14 +422,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 25
+    startLine: 36
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Starts a new instance of the object.
+  example: []
   syntax:
     content: public Quaternion(float x, float y, float z)
     parameters:
@@ -433,14 +460,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 27
+    startLine: 38
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Starts a new instance of the object.
+  example: []
   syntax:
     content: public Quaternion(float x, float y, float z, float w)
     parameters:
@@ -471,14 +500,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 34
+    startLine: 45
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Starts a new instance of the object.
+  example: []
   syntax:
     content: public Quaternion(Quaternion vector)
     parameters:
@@ -503,14 +534,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 36
+    startLine: 47
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Starts a new instance of the object.
+  example: []
   syntax:
     content: public Quaternion(Vector4D vector)
     parameters:
@@ -535,11 +568,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Equals
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 38
+    startLine: 50
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -572,11 +605,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Equals
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 41
+    startLine: 53
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -611,11 +644,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetHashCode
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 44
+    startLine: 56
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -643,11 +676,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToString
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 47
+    startLine: 59
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -675,21 +708,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToString
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 49
+    startLine: 61
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Formats the value of the current instance using the specified format.
+  example: []
   syntax:
     content: public readonly string ToString(string format)
     parameters:
     - id: format
       type: System.String
+      description: The format to use.-or- A null reference (<code>Nothing</code> in Visual Basic) to use the default format defined for the type of the <xref href="System.IFormattable" data-throw-if-not-resolved="false"></xref> implementation.
     return:
       type: System.String
+      description: The value of the current instance in the specified format.
     content.vb: Public Function ToString(format As String) As String
   overload: Cobilas.GodotEngine.Utility.Numerics.Quaternion.ToString*
   nameWithType.vb: Quaternion.ToString(String)
@@ -709,11 +746,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToString
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 51
+    startLine: 63
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -752,21 +789,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Normalize
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 55
+    startLine: 70
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Converts this quaternion to one with the same orientation but with a magnitude of 1.
+  example: []
   syntax:
     content: public static Quaternion Normalize(Quaternion q)
     parameters:
     - id: q
       type: Cobilas.GodotEngine.Utility.Numerics.Quaternion
+      description: The Quaternion that will be normalized.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Quaternion
+      description: Returns an already normalized Quaternion.
     content.vb: Public Shared Function Normalize(q As Quaternion) As Quaternion
   overload: Cobilas.GodotEngine.Utility.Numerics.Quaternion.Normalize*
 - uid: Cobilas.GodotEngine.Utility.Numerics.Quaternion.Angle(Cobilas.GodotEngine.Utility.Numerics.Quaternion,Cobilas.GodotEngine.Utility.Numerics.Quaternion)
@@ -783,23 +824,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Angle
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 60
+    startLine: 78
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns the angle in degrees between two rotations a and b.
+  example: []
   syntax:
     content: public static float Angle(Quaternion a, Quaternion b)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Quaternion
+      description: Object to be compared.
     - id: b
       type: Cobilas.GodotEngine.Utility.Numerics.Quaternion
+      description: Object of comparison.
     return:
       type: System.Single
+      description: The floating point angle.
     content.vb: Public Shared Function Angle(a As Quaternion, b As Quaternion) As Single
   overload: Cobilas.GodotEngine.Utility.Numerics.Quaternion.Angle*
 - uid: Cobilas.GodotEngine.Utility.Numerics.Quaternion.Dot(Cobilas.GodotEngine.Utility.Numerics.Quaternion,Cobilas.GodotEngine.Utility.Numerics.Quaternion)
@@ -816,23 +862,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Dot
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 65
+    startLine: 86
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: The dot product between two rotations.
+  example: []
   syntax:
     content: public static float Dot(Quaternion a, Quaternion b)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Quaternion
+      description: Object to be compared.
     - id: b
       type: Cobilas.GodotEngine.Utility.Numerics.Quaternion
+      description: Object of comparison.
     return:
       type: System.Single
+      description: Returns the dot product of two quaternions.
     content.vb: Public Shared Function Dot(a As Quaternion, b As Quaternion) As Single
   overload: Cobilas.GodotEngine.Utility.Numerics.Quaternion.Dot*
 - uid: Cobilas.GodotEngine.Utility.Numerics.Quaternion.ToQuaternion(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
@@ -849,21 +900,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToQuaternion
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 70
+    startLine: 91
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Convert euler-angle to quaternion.
+  example: []
   syntax:
     content: public static Quaternion ToQuaternion(Vector3D vector)
     parameters:
     - id: vector
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+      description: Euler-angle that will be converted.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Quaternion
+      description: Return result of euler to quaternion conversion.
     content.vb: Public Shared Function ToQuaternion(vector As Vector3D) As Quaternion
   overload: Cobilas.GodotEngine.Utility.Numerics.Quaternion.ToQuaternion*
 - uid: Cobilas.GodotEngine.Utility.Numerics.Quaternion.ToEuler(Cobilas.GodotEngine.Utility.Numerics.Quaternion)
@@ -880,21 +935,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToEuler
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 86
+    startLine: 109
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Convert quaternion to euler-angle.
+  example: []
   syntax:
     content: public static Vector3D ToEuler(Quaternion quaternion)
     parameters:
     - id: quaternion
       type: Cobilas.GodotEngine.Utility.Numerics.Quaternion
+      description: The quaternion that will be converted.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+      description: The result of the conversion from quaternion to euler.
     content.vb: Public Shared Function ToEuler(quaternion As Quaternion) As Vector3D
   overload: Cobilas.GodotEngine.Utility.Numerics.Quaternion.ToEuler*
 - uid: Cobilas.GodotEngine.Utility.Numerics.Quaternion.op_Multiply(Cobilas.GodotEngine.Utility.Numerics.Quaternion,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
@@ -911,23 +970,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Multiply
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 108
+    startLine: 137
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Multiplication operation between two values.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Quaternion" data-throw-if-not-resolved="false"></xref> * <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3D" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static Vector3D operator *(Quaternion rotation, Vector3D point)
     parameters:
     - id: rotation
       type: Cobilas.GodotEngine.Utility.Numerics.Quaternion
+      description: First module.
     - id: point
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+      description: Second module.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+      description: The result of the multiplication.
     content.vb: Public Shared Operator *(rotation As Quaternion, point As Vector3D) As Vector3D
   overload: Cobilas.GodotEngine.Utility.Numerics.Quaternion.op_Multiply*
   nameWithType.vb: Quaternion.*(Quaternion, Vector3D)
@@ -947,23 +1011,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Multiply
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 128
+    startLine: 160
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Multiplication operation between two values.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Quaternion" data-throw-if-not-resolved="false"></xref> * <xref href="Cobilas.GodotEngine.Utility.Numerics.Quaternion" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static Quaternion operator *(Quaternion lhs, Quaternion rhs)
     parameters:
     - id: lhs
       type: Cobilas.GodotEngine.Utility.Numerics.Quaternion
+      description: First module.
     - id: rhs
       type: Cobilas.GodotEngine.Utility.Numerics.Quaternion
+      description: Second module.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Quaternion
+      description: The result of the multiplication.
     content.vb: Public Shared Operator *(lhs As Quaternion, rhs As Quaternion) As Quaternion
   overload: Cobilas.GodotEngine.Utility.Numerics.Quaternion.op_Multiply*
   nameWithType.vb: Quaternion.*(Quaternion, Quaternion)
@@ -983,23 +1052,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Equality
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 134
+    startLine: 169
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Indicates whether this instance is equal to another instance of the same type.
+  example: []
   syntax:
     content: public static bool operator ==(Quaternion lhs, Quaternion rhs)
     parameters:
     - id: lhs
       type: Cobilas.GodotEngine.Utility.Numerics.Quaternion
+      description: Object to be compared.
     - id: rhs
       type: Cobilas.GodotEngine.Utility.Numerics.Quaternion
+      description: Object of comparison.
     return:
       type: System.Boolean
+      description: Returns the result of the comparison.
     content.vb: Public Shared Operator =(lhs As Quaternion, rhs As Quaternion) As Boolean
   overload: Cobilas.GodotEngine.Utility.Numerics.Quaternion.op_Equality*
   nameWithType.vb: Quaternion.=(Quaternion, Quaternion)
@@ -1019,23 +1093,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Inequality
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 135
+    startLine: 174
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Indicates whether this instance is different from another instance of the same type.
+  example: []
   syntax:
     content: public static bool operator !=(Quaternion lhs, Quaternion rhs)
     parameters:
     - id: lhs
       type: Cobilas.GodotEngine.Utility.Numerics.Quaternion
+      description: Object to be compared.
     - id: rhs
       type: Cobilas.GodotEngine.Utility.Numerics.Quaternion
+      description: Object of comparison.
     return:
       type: System.Boolean
+      description: Returns the result of the comparison.
     content.vb: Public Shared Operator <>(lhs As Quaternion, rhs As Quaternion) As Boolean
   overload: Cobilas.GodotEngine.Utility.Numerics.Quaternion.op_Inequality*
   nameWithType.vb: Quaternion.<>(Quaternion, Quaternion)

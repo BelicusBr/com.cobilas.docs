@@ -18,7 +18,7 @@ items:
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.Dot(Cobilas.GodotEngine.Utility.Numerics.Vector4D@,Cobilas.GodotEngine.Utility.Numerics.Vector4D@)
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector4D)
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.Equals(System.Object)
-  - Cobilas.GodotEngine.Utility.Numerics.Vector4D.Floor(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  - Cobilas.GodotEngine.Utility.Numerics.Vector4D.Floor(Cobilas.GodotEngine.Utility.Numerics.Vector4D@)
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.GetHashCode
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.IsNormalized(Cobilas.GodotEngine.Utility.Numerics.IVector@)
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.Item(System.Int32)
@@ -37,6 +37,7 @@ items:
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.ToString(System.String)
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.ToString(System.String,System.IFormatProvider)
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.Zero
+  - Cobilas.GodotEngine.Utility.Numerics.Vector4D.aspect
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.ceil
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.floor
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.magnitude
@@ -44,12 +45,14 @@ items:
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Division(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Division(Cobilas.GodotEngine.Utility.Numerics.Vector4D,System.Single)
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Division(System.Single,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  - Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Equality(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Implicit(Cobilas.GodotEngine.Utility.Numerics.Vector4D)~Cobilas.GodotEngine.Utility.Numerics.Vector2D
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Implicit(Cobilas.GodotEngine.Utility.Numerics.Vector4D)~Cobilas.GodotEngine.Utility.Numerics.Vector3D
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Implicit(Cobilas.GodotEngine.Utility.Numerics.Vector4D)~Godot.Vector2
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Implicit(Cobilas.GodotEngine.Utility.Numerics.Vector4D)~Godot.Vector3
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Implicit(Godot.Vector2)~Cobilas.GodotEngine.Utility.Numerics.Vector4D
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Implicit(Godot.Vector3)~Cobilas.GodotEngine.Utility.Numerics.Vector4D
+  - Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Inequality(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Multiply(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Multiply(Cobilas.GodotEngine.Utility.Numerics.Vector4D,System.Single)
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Multiply(System.Single,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
@@ -69,14 +72,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Vector4D
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 5
+    startLine: 6
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Represents a four-dimensional vector.(Four-axis vector)
+  example: []
   syntax:
     content: >-
       [Serializable]
@@ -113,14 +118,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: x
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 7
+    startLine: 9
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: X component of the vector.
+  example: []
   syntax:
     content: public float x
     return:
@@ -140,14 +147,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: y
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 8
+    startLine: 11
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Y component of the vector.
+  example: []
   syntax:
     content: public float y
     return:
@@ -167,14 +176,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: z
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 9
+    startLine: 13
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Z component of the vector.
+  example: []
   syntax:
     content: public float z
     return:
@@ -194,14 +205,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: w
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 10
+    startLine: 15
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: W component of the vector.
+  example: []
   syntax:
     content: public float w
     return:
@@ -221,14 +234,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Zero
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 15
+    startLine: 20
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Shorthand for writing Vector4(0,0,0,0).
+  example: []
   syntax:
     content: public static Vector4D Zero { get; }
     parameters: []
@@ -250,14 +265,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: One
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 16
+    startLine: 22
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Shorthand for writing Vector4(1,1,1,1).
+  example: []
   syntax:
     content: public static Vector4D One { get; }
     parameters: []
@@ -279,20 +296,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Normalized
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 18
+    startLine: 24
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns the vector scaled to unit length. Equivalent to <code>v / v.Length()</code>.
   example: []
   syntax:
     content: public readonly Vector4D Normalized { get; }
     parameters: []
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: A normalized version of the vector.
     content.vb: Public ReadOnly Property Normalized As Vector4D
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Normalized*
   implements:
@@ -311,20 +330,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: floor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 19
+    startLine: 26
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns a new vector with all components rounded down (towards negative infinity).
   example: []
   syntax:
     content: public readonly Vector4D floor { get; }
     parameters: []
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: A vector with <xref href="Godot.Mathf.Floor(System.Single)" data-throw-if-not-resolved="false"></xref> called on each component.
     content.vb: Public ReadOnly Property floor As Vector4D
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.floor*
   implements:
@@ -343,20 +364,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ceil
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 20
+    startLine: 28
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns a new vector with all components rounded up (towards positive infinity).
   example: []
   syntax:
     content: public readonly Vector4D ceil { get; }
     parameters: []
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: A vector with <xref href="Godot.Mathf.Ceil(System.Single)" data-throw-if-not-resolved="false"></xref> called on each component.
     content.vb: Public ReadOnly Property ceil As Vector4D
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.ceil*
   implements:
@@ -375,22 +398,27 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: magnitude
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 21
+    startLine: 30
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns the length (magnitude) of this vector.
   example: []
   syntax:
     content: public readonly float magnitude { get; }
     parameters: []
     return:
       type: System.Single
+      description: The length of this vector.
     content.vb: Public ReadOnly Property magnitude As Single
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.magnitude*
+  seealso:
+  - linkId: Godot.Vector2.LengthSquared
+    commentId: M:Godot.Vector2.LengthSquared
   implements:
   - Cobilas.GodotEngine.Utility.Numerics.IVector.magnitude
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.sqrMagnitude
@@ -407,20 +435,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: sqrMagnitude
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 22
+    startLine: 32
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: >-
+    Returns the squared length (squared magnitude) of this vector. This method runs
+        faster than <xref href="Cobilas.GodotEngine.Utility.Numerics.IVector.magnitude" data-throw-if-not-resolved="false"></xref>, so prefer it if you need to compare vectors
+        or need the squared length for some formula.
   example: []
   syntax:
     content: public readonly float sqrMagnitude { get; }
     parameters: []
     return:
       type: System.Single
+      description: The squared length of this vector.
     content.vb: Public ReadOnly Property sqrMagnitude As Single
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.sqrMagnitude*
   implements:
@@ -439,24 +472,60 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: AxisCount
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 23
+    startLine: 34
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Number of axles.
   example: []
   syntax:
     content: public readonly int AxisCount { get; }
     parameters: []
     return:
       type: System.Int32
+      description: Returns the number of axes a vector has.
     content.vb: Public ReadOnly Property AxisCount As Integer
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.AxisCount*
   implements:
   - Cobilas.GodotEngine.Utility.Numerics.IVector.AxisCount
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.aspect
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.Vector4D.aspect
+  id: aspect
+  parent: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+  langs:
+  - csharp
+  - vb
+  name: aspect
+  nameWithType: Vector4D.aspect
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector4D.aspect
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Vector4D.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: aspect
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
+    startLine: 36
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns the aspect ratio of this vector, the ratio of <xref href="Cobilas.GodotEngine.Utility.Numerics.IVector" data-throw-if-not-resolved="false"></xref>.x to <xref href="Cobilas.GodotEngine.Utility.Numerics.IVector" data-throw-if-not-resolved="false"></xref>.y.
+  example: []
+  syntax:
+    content: public readonly float aspect { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: The <xref href="Cobilas.GodotEngine.Utility.Numerics.IVector" data-throw-if-not-resolved="false"></xref>.x component divided by the <xref href="Cobilas.GodotEngine.Utility.Numerics.IVector" data-throw-if-not-resolved="false"></xref>.y component.
+    content.vb: Public ReadOnly Property aspect As Single
+  overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.aspect*
+  implements:
+  - Cobilas.GodotEngine.Utility.Numerics.IVector.aspect
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Item(System.Int32)
   commentId: P:Cobilas.GodotEngine.Utility.Numerics.Vector4D.Item(System.Int32)
   id: Item(System.Int32)
@@ -471,22 +540,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: this[]
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 30
+    startLine: 42
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Allows you to access the axes of a vector through an index.
   example: []
   syntax:
     content: public float this[int index] { readonly get; set; }
     parameters:
     - id: index
       type: System.Int32
+      description: The axis index.
     return:
       type: System.Single
+      description: Sets the value of an axis by specifying its index.
     content.vb: Public Default Property this[](index As Integer) As Single
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Item*
   implements:
@@ -508,14 +580,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 50
+    startLine: 62
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Starts a new instance of the object.
+  example: []
   syntax:
     content: public Vector4D(float x, float y)
     parameters:
@@ -542,14 +616,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 52
+    startLine: 64
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Starts a new instance of the object.
+  example: []
   syntax:
     content: public Vector4D(float x, float y, float z)
     parameters:
@@ -578,14 +654,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 54
+    startLine: 66
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Starts a new instance of the object.
+  example: []
   syntax:
     content: public Vector4D(float x, float y, float z, float w)
     parameters:
@@ -616,14 +694,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 61
+    startLine: 73
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Starts a new instance of the object.
+  example: []
   syntax:
     content: public Vector4D(Vector4D vector)
     parameters:
@@ -648,14 +728,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 63
+    startLine: 75
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Starts a new instance of the object.
+  example: []
   syntax:
     content: public Vector4D(Quaternion vector)
     parameters:
@@ -680,27 +762,34 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Abs
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 65
+    startLine: 82
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns an absolute value of the vector.
+  example: []
   syntax:
     content: public readonly Vector4D Abs(bool absX = true, bool absY = true, bool absZ = true, bool absW = true)
     parameters:
     - id: absX
       type: System.Boolean
+      description: The X axis becomes absolute.
     - id: absY
       type: System.Boolean
+      description: The Y axis becomes absolute.
     - id: absZ
       type: System.Boolean
+      description: The Z axis becomes absolute.
     - id: absW
       type: System.Boolean
+      description: The W axis becomes absolute.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: Returns the vector with its absolute value axes.
     content.vb: Public Function Abs(absX As Boolean = True, absY As Boolean = True, absZ As Boolean = True, absW As Boolean = True) As Vector4D
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Abs*
   nameWithType.vb: Vector4D.Abs(Boolean, Boolean, Boolean, Boolean)
@@ -720,27 +809,34 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Neg
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 74
+    startLine: 96
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Inverts the values ​​of a vector.
+  example: []
   syntax:
     content: public readonly Vector4D Neg(bool negX = true, bool negY = true, bool negZ = true, bool negW = true)
     parameters:
     - id: negX
       type: System.Boolean
+      description: The X axis becomes inverted.
     - id: negY
       type: System.Boolean
+      description: The Y axis becomes inverted.
     - id: negZ
       type: System.Boolean
+      description: The Z axis becomes inverted.
     - id: negW
       type: System.Boolean
+      description: The W axis becomes inverted.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: Returns the axes of an inverted vector.
     content.vb: Public Function Neg(negX As Boolean = True, negY As Boolean = True, negZ As Boolean = True, negW As Boolean = True) As Vector4D
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Neg*
   nameWithType.vb: Vector4D.Neg(Boolean, Boolean, Boolean, Boolean)
@@ -760,11 +856,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Equals
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 83
+    startLine: 105
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -797,11 +893,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToString
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 86
+    startLine: 108
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -840,22 +936,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToString
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 89
+    startLine: 111
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Formats the value of the current instance using the specified format.
   example: []
   syntax:
     content: public readonly string ToString(string format)
     parameters:
     - id: format
       type: System.String
+      description: The format to use.-or- A null reference (<code>Nothing</code> in Visual Basic) to use the default format defined for the type of the <xref href="System.IFormattable" data-throw-if-not-resolved="false"></xref> implementation.
     return:
       type: System.String
+      description: The value of the current instance in the specified format.
     content.vb: Public Function ToString(format As String) As String
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.ToString*
   implements:
@@ -877,11 +976,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToString
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 91
+    startLine: 113
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -909,11 +1008,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Equals
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 93
+    startLine: 115
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -948,11 +1047,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetHashCode
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 96
+    startLine: 118
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -980,19 +1079,24 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Round
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 98
+    startLine: 120
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: >-
+    Returns this vector with all components rounded to the nearest integer,
+
+    with halfway cases rounded towards the nearest multiple of two.
   example: []
   syntax:
     content: public readonly Vector4D Round()
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: The rounded vector.
     content.vb: Public Function Round() As Vector4D
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Round*
   implements:
@@ -1011,21 +1115,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SqrMagnitude
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 101
+    startLine: 125
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns the squared length of this vector
+  example: []
   syntax:
     content: public static float SqrMagnitude(in Vector4D a)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: One of the values.
     return:
       type: System.Single
+      description: square length of the vector.
     content.vb: Public Shared Function SqrMagnitude(a As Vector4D) As Single
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.SqrMagnitude*
   nameWithType.vb: Vector4D.SqrMagnitude(Vector4D)
@@ -1045,21 +1153,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Neg
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 102
+    startLine: 128
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Inverts the values ​​of a vector.
+  example: []
   syntax:
     content: public static Vector4D Neg(in Vector4D a)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: The vector to be inverted.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: Returns the axes of an inverted vector.
     content.vb: Public Shared Function Neg(a As Vector4D) As Vector4D
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Neg*
   nameWithType.vb: Vector4D.Neg(Vector4D)
@@ -1079,23 +1191,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Distance
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 103
+    startLine: 133
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns the distance between a and b.
+  example: []
   syntax:
     content: public static float Distance(in Vector4D a, Vector4D b)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: One of the values.
     - id: b
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: The other value.
     return:
       type: System.Single
+      description: The distance between two vectors.
     content.vb: Public Shared Function Distance(a As Vector4D, b As Vector4D) As Single
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Distance*
   nameWithType.vb: Vector4D.Distance(Vector4D, Vector4D)
@@ -1115,21 +1232,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Magnitude
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 104
+    startLine: 137
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns the length of this vector
+  example: []
   syntax:
     content: public static float Magnitude(in Vector4D a)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: One of the values.
     return:
       type: System.Single
+      description: vector length.
     content.vb: Public Shared Function Magnitude(a As Vector4D) As Single
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Magnitude*
   nameWithType.vb: Vector4D.Magnitude(Vector4D)
@@ -1149,21 +1270,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: IsNormalized
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 105
+    startLine: 141
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Checks if the vector is normalized.
+  example: []
   syntax:
     content: public static bool IsNormalized(in IVector a)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.IVector
+      description: The vector to be checked.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when vector is normalized.
     content.vb: Public Shared Function IsNormalized(a As IVector) As Boolean
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.IsNormalized*
   nameWithType.vb: Vector4D.IsNormalized(IVector)
@@ -1183,21 +1308,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Abs
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 106
+    startLine: 144
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns an absolute value of the vector.
+  example: []
   syntax:
     content: public static Vector4D Abs(in Vector4D a)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: The vector to become absolute.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: Returns the vector with its absolute value axes.
     content.vb: Public Shared Function Abs(a As Vector4D) As Vector4D
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Abs*
   nameWithType.vb: Vector4D.Abs(Vector4D)
@@ -1217,21 +1346,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Round
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 107
+    startLine: 147
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: >-
+    Returns this vector with all components rounded to the nearest integer,
+
+    with halfway cases rounded towards the nearest multiple of two.
+  example: []
   syntax:
     content: public static Vector4D Round(in Vector4D a)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: the vector to be rounded
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: The rounded vector.
     content.vb: Public Shared Function Round(a As Vector4D) As Vector4D
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Round*
   nameWithType.vb: Vector4D.Round(Vector4D)
@@ -1251,23 +1387,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Dot
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 108
+    startLine: 152
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Dot Product of two vectors.
+  example: []
   syntax:
     content: public static float Dot(in Vector4D a, in Vector4D b)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: One of the values.
     - id: b
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: The other value.
     return:
       type: System.Single
+      description: returns the result of the dot product.
     content.vb: Public Shared Function Dot(a As Vector4D, b As Vector4D) As Single
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Dot*
   nameWithType.vb: Vector4D.Dot(Vector4D, Vector4D)
@@ -1287,21 +1428,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Normalize
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 110
+    startLine: 156
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Makes this vector have a magnitude of 1.
+  example: []
   syntax:
     content: public static Vector4D Normalize(in Vector4D a)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: The vector to be normalized.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: Returns the already normalized vector.
     content.vb: Public Shared Function Normalize(a As Vector4D) As Vector4D
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Normalize*
   nameWithType.vb: Vector4D.Normalize(Vector4D)
@@ -1321,23 +1466,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Min
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 115
+    startLine: 164
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns a vector that is made from the smallest components of two vectors.
+  example: []
   syntax:
     content: public static Vector4D Min(in Vector4D lhs, in Vector4D rhs)
     parameters:
     - id: lhs
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: One of the values.
     - id: rhs
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: The other value.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: Whichever of the two values is lower.
     content.vb: Public Shared Function Min(lhs As Vector4D, rhs As Vector4D) As Vector4D
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Min*
   nameWithType.vb: Vector4D.Min(Vector4D, Vector4D)
@@ -1357,23 +1507,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Max
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 116
+    startLine: 169
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns a vector that is made from the largest components of two vectors.
+  example: []
   syntax:
     content: public static Vector4D Max(in Vector4D lhs, in Vector4D rhs)
     parameters:
     - id: lhs
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: One of the values.
     - id: rhs
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: The other value.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: Whichever of the two values is higher.
     content.vb: Public Shared Function Max(lhs As Vector4D, rhs As Vector4D) As Vector4D
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Max*
   nameWithType.vb: Vector4D.Max(Vector4D, Vector4D)
@@ -1393,60 +1548,150 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Ceil
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 118
+    startLine: 172
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns a new vector with all components rounded up (towards positive infinity).
+  example: []
   syntax:
     content: public static Vector4D Ceil(in Vector4D a)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: The vector that will be the ceiling.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: A vector with <xref href="Godot.Mathf.Ceil(System.Single)" data-throw-if-not-resolved="false"></xref> called on each component.
     content.vb: Public Shared Function Ceil(a As Vector4D) As Vector4D
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Ceil*
   nameWithType.vb: Vector4D.Ceil(Vector4D)
   fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Ceil(Cobilas.GodotEngine.Utility.Numerics.Vector4D)
   name.vb: Ceil(Vector4D)
-- uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Floor(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
-  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector4D.Floor(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
-  id: Floor(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Floor(Cobilas.GodotEngine.Utility.Numerics.Vector4D@)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector4D.Floor(Cobilas.GodotEngine.Utility.Numerics.Vector4D@)
+  id: Floor(Cobilas.GodotEngine.Utility.Numerics.Vector4D@)
   parent: Cobilas.GodotEngine.Utility.Numerics.Vector4D
   langs:
   - csharp
   - vb
-  name: Floor(in Vector3D)
-  nameWithType: Vector4D.Floor(in Vector3D)
-  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Floor(in Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  name: Floor(in Vector4D)
+  nameWithType: Vector4D.Floor(in Vector4D)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Floor(in Cobilas.GodotEngine.Utility.Numerics.Vector4D)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Floor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 127
+    startLine: 182
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns a new vector with all components rounded down (towards negative infinity).
+  example: []
   syntax:
-    content: public static Vector3D Floor(in Vector3D a)
+    content: public static Vector4D Floor(in Vector4D a)
     parameters:
     - id: a
-      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: The vector that will be the floor.
     return:
-      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-    content.vb: Public Shared Function Floor(a As Vector3D) As Vector3D
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: A vector with <xref href="Godot.Mathf.Floor(System.Single)" data-throw-if-not-resolved="false"></xref> called on each component.
+    content.vb: Public Shared Function Floor(a As Vector4D) As Vector4D
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Floor*
-  nameWithType.vb: Vector4D.Floor(Vector3D)
-  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Floor(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
-  name.vb: Floor(Vector3D)
+  nameWithType.vb: Vector4D.Floor(Vector4D)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Floor(Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  name.vb: Floor(Vector4D)
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Equality(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Equality(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  id: op_Equality(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  parent: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Vector4D, Vector4D)
+  nameWithType: Vector4D.operator ==(Vector4D, Vector4D)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector4D.operator ==(Cobilas.GodotEngine.Utility.Numerics.Vector4D, Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Vector4D.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Equality
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
+    startLine: 194
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Indicates whether this instance is equal to another instance of the same type.
+  example: []
+  syntax:
+    content: public static bool operator ==(Vector4D A, Vector4D B)
+    parameters:
+    - id: A
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: Object to be compared.
+    - id: B
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: Object of comparison.
+    return:
+      type: System.Boolean
+      description: Returns the result of the comparison.
+    content.vb: Public Shared Operator =(A As Vector4D, B As Vector4D) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Equality*
+  nameWithType.vb: Vector4D.=(Vector4D, Vector4D)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector4D.=(Cobilas.GodotEngine.Utility.Numerics.Vector4D, Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  name.vb: =(Vector4D, Vector4D)
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Inequality(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Inequality(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  id: op_Inequality(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  parent: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Vector4D, Vector4D)
+  nameWithType: Vector4D.operator !=(Vector4D, Vector4D)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector4D.operator !=(Cobilas.GodotEngine.Utility.Numerics.Vector4D, Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Vector4D.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Inequality
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
+    startLine: 199
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Indicates whether this instance is different from another instance of the same type.
+  example: []
+  syntax:
+    content: public static bool operator !=(Vector4D A, Vector4D B)
+    parameters:
+    - id: A
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: Object to be compared.
+    - id: B
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: Object of comparison.
+    return:
+      type: System.Boolean
+      description: Returns the result of the comparison.
+    content.vb: Public Shared Operator <>(A As Vector4D, B As Vector4D) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Inequality*
+  nameWithType.vb: Vector4D.<>(Vector4D, Vector4D)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector4D.<>(Cobilas.GodotEngine.Utility.Numerics.Vector4D, Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  name.vb: <>(Vector4D, Vector4D)
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Addition(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
   commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Addition(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
   id: op_Addition(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
@@ -1461,23 +1706,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Addition
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 136
+    startLine: 204
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Addition operation between two values.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector4D" data-throw-if-not-resolved="false"></xref> + <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector4D" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static Vector4D operator +(Vector4D a, Vector4D b)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: First module.
     - id: b
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: Second module.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: The result of the addition.
     content.vb: Public Shared Operator +(a As Vector4D, b As Vector4D) As Vector4D
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Addition*
   nameWithType.vb: Vector4D.+(Vector4D, Vector4D)
@@ -1497,23 +1747,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Subtraction
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 137
+    startLine: 209
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Subtraction operation between two values.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector4D" data-throw-if-not-resolved="false"></xref> - <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector4D" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static Vector4D operator -(Vector4D a, Vector4D b)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: First module.
     - id: b
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: Second module.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: The result of the subtraction.
     content.vb: Public Shared Operator -(a As Vector4D, b As Vector4D) As Vector4D
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Subtraction*
   nameWithType.vb: Vector4D.-(Vector4D, Vector4D)
@@ -1533,23 +1788,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Division
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 138
+    startLine: 214
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Division operation between two values.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector4D" data-throw-if-not-resolved="false"></xref> / <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector4D" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static Vector4D operator /(Vector4D a, Vector4D b)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: First module.
     - id: b
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: Second module.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: The result of the division.
     content.vb: Public Shared Operator /(a As Vector4D, b As Vector4D) As Vector4D
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Division*
   nameWithType.vb: Vector4D./(Vector4D, Vector4D)
@@ -1569,23 +1829,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Multiply
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 139
+    startLine: 219
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Multiplication operation between two values.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector4D" data-throw-if-not-resolved="false"></xref> * <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector4D" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static Vector4D operator *(Vector4D a, Vector4D b)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: First module.
     - id: b
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: Second module.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: The result of the multiplication.
     content.vb: Public Shared Operator *(a As Vector4D, b As Vector4D) As Vector4D
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Multiply*
   nameWithType.vb: Vector4D.*(Vector4D, Vector4D)
@@ -1605,23 +1870,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Division
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 140
+    startLine: 224
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Division operation between two values.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector4D" data-throw-if-not-resolved="false"></xref> / <xref href="System.Single" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static Vector4D operator /(Vector4D a, float b)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: First module.
     - id: b
       type: System.Single
+      description: Second module.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: The result of the division.
     content.vb: Public Shared Operator /(a As Vector4D, b As Single) As Vector4D
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Division*
   nameWithType.vb: Vector4D./(Vector4D, Single)
@@ -1641,23 +1911,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Multiply
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 141
+    startLine: 229
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Multiplication operation between two values.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector4D" data-throw-if-not-resolved="false"></xref> * <xref href="System.Single" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static Vector4D operator *(Vector4D a, float b)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: First module.
     - id: b
       type: System.Single
+      description: Second module.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: The result of the multiplication.
     content.vb: Public Shared Operator *(a As Vector4D, b As Single) As Vector4D
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Multiply*
   nameWithType.vb: Vector4D.*(Vector4D, Single)
@@ -1677,23 +1952,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Division
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 142
+    startLine: 234
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Division operation between two values.(<xref href="System.Single" data-throw-if-not-resolved="false"></xref> / <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector4D" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static Vector4D operator /(float a, Vector4D b)
     parameters:
     - id: a
       type: System.Single
+      description: First module.
     - id: b
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: Second module.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: The result of the division.
     content.vb: Public Shared Operator /(a As Single, b As Vector4D) As Vector4D
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Division*
   nameWithType.vb: Vector4D./(Single, Vector4D)
@@ -1713,23 +1993,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Multiply
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 143
+    startLine: 239
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Multiplication operation between two values.(<xref href="System.Single" data-throw-if-not-resolved="false"></xref> * <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector4D" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static Vector4D operator *(float a, Vector4D b)
     parameters:
     - id: a
       type: System.Single
+      description: First module.
     - id: b
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: Second module.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: The result of the multiplication.
     content.vb: Public Shared Operator *(a As Single, b As Vector4D) As Vector4D
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Multiply*
   nameWithType.vb: Vector4D.*(Single, Vector4D)
@@ -1749,19 +2034,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 145
+    startLine: 242
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Implicit conversion operator.(<xref href="Godot.Vector3" data-throw-if-not-resolved="false"></xref> to <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector4D" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static implicit operator Vector4D(Vector3 v)
     parameters:
     - id: v
       type: Godot.Vector3
+      description: Object to be converted.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
     content.vb: Public Shared Widening Operator CType(v As Vector3) As Vector4D
@@ -1783,19 +2071,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 146
+    startLine: 245
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Implicit conversion operator.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector4D" data-throw-if-not-resolved="false"></xref> to <xref href="Godot.Vector3" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static implicit operator Vector3(Vector4D v)
     parameters:
     - id: v
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: Object to be converted.
     return:
       type: Godot.Vector3
     content.vb: Public Shared Widening Operator CType(v As Vector4D) As Vector3
@@ -1817,19 +2108,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 148
+    startLine: 248
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Implicit conversion operator.(<xref href="Godot.Vector2" data-throw-if-not-resolved="false"></xref> to <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector4D" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static implicit operator Vector4D(Vector2 v)
     parameters:
     - id: v
       type: Godot.Vector2
+      description: Object to be converted.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
     content.vb: Public Shared Widening Operator CType(v As Vector2) As Vector4D
@@ -1851,19 +2145,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 149
+    startLine: 251
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Implicit conversion operator.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector4D" data-throw-if-not-resolved="false"></xref> to <xref href="Godot.Vector2" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static implicit operator Vector2(Vector4D v)
     parameters:
     - id: v
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: Object to be converted.
     return:
       type: Godot.Vector2
     content.vb: Public Shared Widening Operator CType(v As Vector4D) As Vector2
@@ -1885,19 +2182,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 151
+    startLine: 254
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Implicit conversion operator.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector4D" data-throw-if-not-resolved="false"></xref> to <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector2D" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static implicit operator Vector2D(Vector4D v)
     parameters:
     - id: v
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: Object to be converted.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
     content.vb: Public Shared Widening Operator CType(v As Vector4D) As Vector2D
@@ -1919,19 +2219,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector4D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 152
+    startLine: 257
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Implicit conversion operator.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector4D" data-throw-if-not-resolved="false"></xref> to <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3D" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static implicit operator Vector3D(Vector4D v)
     parameters:
     - id: v
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: Object to be converted.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
     content.vb: Public Shared Widening Operator CType(v As Vector4D) As Vector3D
@@ -2296,6 +2599,36 @@ references:
   fullName: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric<TVector>.Normalized
   nameWithType.vb: IVectorGeneric(Of TVector).Normalized
   fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric(Of TVector).Normalized
+- uid: Godot.Mathf.Floor(System.Single)
+  commentId: M:Godot.Mathf.Floor(System.Single)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: Floor(float)
+  nameWithType: Mathf.Floor(float)
+  fullName: Godot.Mathf.Floor(float)
+  nameWithType.vb: Mathf.Floor(Single)
+  fullName.vb: Godot.Mathf.Floor(Single)
+  name.vb: Floor(Single)
+  spec.csharp:
+  - uid: Godot.Mathf.Floor(System.Single)
+    name: Floor
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Godot.Mathf.Floor(System.Single)
+    name: Floor
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.floor*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector4D.floor
   href: Cobilas.GodotEngine.Utility.Numerics.Vector4D.html#Cobilas_GodotEngine_Utility_Numerics_Vector4D_floor
@@ -2320,6 +2653,36 @@ references:
   fullName: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric<TVector>.floor
   nameWithType.vb: IVectorGeneric(Of TVector).floor
   fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric(Of TVector).floor
+- uid: Godot.Mathf.Ceil(System.Single)
+  commentId: M:Godot.Mathf.Ceil(System.Single)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: Ceil(float)
+  nameWithType: Mathf.Ceil(float)
+  fullName: Godot.Mathf.Ceil(float)
+  nameWithType.vb: Mathf.Ceil(Single)
+  fullName.vb: Godot.Mathf.Ceil(Single)
+  name.vb: Ceil(Single)
+  spec.csharp:
+  - uid: Godot.Mathf.Ceil(System.Single)
+    name: Ceil
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Godot.Mathf.Ceil(System.Single)
+    name: Ceil
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.ceil*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector4D.ceil
   href: Cobilas.GodotEngine.Utility.Numerics.Vector4D.html#Cobilas_GodotEngine_Utility_Numerics_Vector4D_ceil
@@ -2344,6 +2707,24 @@ references:
   fullName: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric<TVector>.ceil
   nameWithType.vb: IVectorGeneric(Of TVector).ceil
   fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric(Of TVector).ceil
+- uid: Godot.Vector2.LengthSquared
+  commentId: M:Godot.Vector2.LengthSquared
+  isExternal: true
+  name: LengthSquared()
+  nameWithType: Vector2.LengthSquared()
+  fullName: Godot.Vector2.LengthSquared()
+  spec.csharp:
+  - uid: Godot.Vector2.LengthSquared
+    name: LengthSquared
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.Vector2.LengthSquared
+    name: LengthSquared
+    isExternal: true
+  - name: (
+  - name: )
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.magnitude*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector4D.magnitude
   href: Cobilas.GodotEngine.Utility.Numerics.Vector4D.html#Cobilas_GodotEngine_Utility_Numerics_Vector4D_magnitude
@@ -2394,6 +2775,19 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.aspect*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector4D.aspect
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector4D.html#Cobilas_GodotEngine_Utility_Numerics_Vector4D_aspect
+  name: aspect
+  nameWithType: Vector4D.aspect
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector4D.aspect
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVector.aspect
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IVector.aspect
+  parent: Cobilas.GodotEngine.Utility.Numerics.IVector
+  href: Cobilas.GodotEngine.Utility.Numerics.IVector.html#Cobilas_GodotEngine_Utility_Numerics_IVector_aspect
+  name: aspect
+  nameWithType: IVector.aspect
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector.aspect
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Item*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector4D.Item
   href: Cobilas.GodotEngine.Utility.Numerics.Vector4D.html#Cobilas_GodotEngine_Utility_Numerics_Vector4D_Item_System_Int32_
@@ -2828,17 +3222,40 @@ references:
   fullName: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Ceil
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Floor*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector4D.Floor
-  href: Cobilas.GodotEngine.Utility.Numerics.Vector4D.html#Cobilas_GodotEngine_Utility_Numerics_Vector4D_Floor_Cobilas_GodotEngine_Utility_Numerics_Vector3D__
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector4D.html#Cobilas_GodotEngine_Utility_Numerics_Vector4D_Floor_Cobilas_GodotEngine_Utility_Numerics_Vector4D__
   name: Floor
   nameWithType: Vector4D.Floor
   fullName: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Floor
-- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-  commentId: T:Cobilas.GodotEngine.Utility.Numerics.Vector3D
-  parent: Cobilas.GodotEngine.Utility.Numerics
-  href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html
-  name: Vector3D
-  nameWithType: Vector3D
-  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Equality*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Equality
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector4D.html#Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Equality_Cobilas_GodotEngine_Utility_Numerics_Vector4D_Cobilas_GodotEngine_Utility_Numerics_Vector4D_
+  name: operator ==
+  nameWithType: Vector4D.operator ==
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector4D.operator ==
+  nameWithType.vb: Vector4D.=
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector4D.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Equality*
+    name: ==
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector4D.html#Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Equality_Cobilas_GodotEngine_Utility_Numerics_Vector4D_Cobilas_GodotEngine_Utility_Numerics_Vector4D_
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Inequality*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Inequality
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector4D.html#Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Inequality_Cobilas_GodotEngine_Utility_Numerics_Vector4D_Cobilas_GodotEngine_Utility_Numerics_Vector4D_
+  name: operator !=
+  nameWithType: Vector4D.operator !=
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector4D.operator !=
+  nameWithType.vb: Vector4D.<>
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector4D.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Inequality*
+    name: '!='
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector4D.html#Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Inequality_Cobilas_GodotEngine_Utility_Numerics_Vector4D_Cobilas_GodotEngine_Utility_Numerics_Vector4D_
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Addition*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Addition
   href: Cobilas.GodotEngine.Utility.Numerics.Vector4D.html#Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Addition_Cobilas_GodotEngine_Utility_Numerics_Vector4D_Cobilas_GodotEngine_Utility_Numerics_Vector4D_
@@ -2899,6 +3316,13 @@ references:
   - uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Multiply*
     name: '*'
     href: Cobilas.GodotEngine.Utility.Numerics.Vector4D.html#Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Multiply_Cobilas_GodotEngine_Utility_Numerics_Vector4D_Cobilas_GodotEngine_Utility_Numerics_Vector4D_
+- uid: Godot.Vector3
+  commentId: T:Godot.Vector3
+  parent: Godot
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Godot.Vector3
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Implicit*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Implicit
   name: implicit operator
@@ -2911,13 +3335,6 @@ references:
   - name: implicit
   - name: " "
   - name: operator
-- uid: Godot.Vector3
-  commentId: T:Godot.Vector3
-  parent: Godot
-  isExternal: true
-  name: Vector3
-  nameWithType: Vector3
-  fullName: Godot.Vector3
 - uid: Godot
   commentId: N:Godot
   href: Godot.html
@@ -2938,3 +3355,10 @@ references:
   name: Vector2D
   nameWithType: Vector2D
   fullName: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+  commentId: T:Cobilas.GodotEngine.Utility.Numerics.Vector3D
+  parent: Cobilas.GodotEngine.Utility.Numerics
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html
+  name: Vector3D
+  nameWithType: Vector3D
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D

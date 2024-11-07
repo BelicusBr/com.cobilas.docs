@@ -1,0 +1,1449 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct PeripheralItem | Cobilas Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct PeripheralItem | Cobilas Documentation ">
+      
+      <meta name="description" content="Responsible for maintaining the status information of a peripheral.">
+      <link rel="icon" href="../images/favicon-96x96.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.godot.utility/new/main/apiSpec/new?filename=Cobilas_GodotEngine_Utility_Input_PeripheralItem.md&amp;value=---%0Auid%3A%20Cobilas.GodotEngine.Utility.Input.PeripheralItem%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/apple-icon-57x57.png" alt="Cobilas Documentation">
+            Cobilas Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem">
+
+
+
+  <h1 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem" class="text-break">
+Struct PeripheralItem  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Cobilas.html">Cobilas</a>.<a class="xref" href="Cobilas.GodotEngine.html">GodotEngine</a>.<a class="xref" href="Cobilas.GodotEngine.Utility.html">Utility</a>.<a class="xref" href="Cobilas.GodotEngine.Utility.Input.html">Input</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>com.cobilas.godot.utility.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Responsible for maintaining the status information of a peripheral.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct PeripheralItem : IEquatable&lt;PeripheralItem&gt;, IEquatable&lt;KeyCode&gt;, IEquatable&lt;KeyList&gt;, IEquatable&lt;MouseButton&gt;, IEquatable&lt;KeyStatus&gt;, IEquatable&lt;ulong&gt;</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.Input.KeyCode.html">KeyCode</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">KeyList</span>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.Input.MouseButton.html">MouseButton</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.Input.KeyStatus.html">KeyStatus</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem__ctor_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.#ctor*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem__ctor_Cobilas_GodotEngine_Utility_Input_KeyCode_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.#ctor(Cobilas.GodotEngine.Utility.Input.KeyCode)">
+  PeripheralItem(KeyCode)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts a new instance of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PeripheralItem(KeyCode keyCode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyCode</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.KeyCode.html">KeyCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem__ctor_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.#ctor*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem__ctor_Cobilas_GodotEngine_Utility_Input_KeyCode_Cobilas_GodotEngine_Utility_Input_KeyStatus_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.#ctor(Cobilas.GodotEngine.Utility.Input.KeyCode,Cobilas.GodotEngine.Utility.Input.KeyStatus)">
+  PeripheralItem(KeyCode, KeyStatus)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts a new instance of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PeripheralItem(KeyCode keyCode, KeyStatus keyStatus)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyCode</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.KeyCode.html">KeyCode</a></dt>
+    <dd></dd>
+    <dt><code>keyStatus</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.KeyStatus.html">KeyStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_Empty_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.Empty*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_Empty" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.Empty">
+  Empty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Represents an empty PeripheralItem.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PeripheralItem Empty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a></dt>
+    <dd><p>Returns an empty representation of PeripheralItem.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_IsMouseButton_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.IsMouseButton*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_IsMouseButton" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.IsMouseButton">
+  IsMouseButton
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether it is a mouse trigger.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool IsMouseButton { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns <code>true</code> when the object is a mouse trigger.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_KeyCode_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.KeyCode*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_KeyCode" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.KeyCode">
+  KeyCode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Represents a keyboard or mouse input.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly KeyCode KeyCode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Input.KeyCode.html">KeyCode</a></dt>
+    <dd><p>Returns a representation of a peripheral input.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_ScanCode_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.ScanCode*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_ScanCode" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.ScanCode">
+  ScanCode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ScanCode is a representation of the <a class="xref" href="Cobilas.GodotEngine.Utility.Input.KeyCode.html">KeyCode</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly ulong ScanCode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd><p>Returns a code representing a <a class="xref" href="Cobilas.GodotEngine.Utility.Input.KeyCode.html">KeyCode</a> key.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_Status_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.Status*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_Status" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.Status">
+  Status
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Represents the status of a peripheral input.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KeyStatus Status { readonly get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Input.KeyStatus.html">KeyStatus</a></dt>
+    <dd><p>Allows you to change the status of the object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_Equals_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.Equals*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_Equals_Cobilas_GodotEngine_Utility_Input_KeyCode_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.Equals(Cobilas.GodotEngine.Utility.Input.KeyCode)">
+  Equals(KeyCode)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool Equals(KeyCode other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.KeyCode.html">KeyCode</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_Equals_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.Equals*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_Equals_Cobilas_GodotEngine_Utility_Input_KeyStatus_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.Equals(Cobilas.GodotEngine.Utility.Input.KeyStatus)">
+  Equals(KeyStatus)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool Equals(KeyStatus other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.KeyStatus.html">KeyStatus</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_Equals_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.Equals*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_Equals_Cobilas_GodotEngine_Utility_Input_MouseButton_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.Equals(Cobilas.GodotEngine.Utility.Input.MouseButton)">
+  Equals(MouseButton)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool Equals(MouseButton other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.MouseButton.html">MouseButton</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_Equals_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.Equals*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_Equals_Cobilas_GodotEngine_Utility_Input_PeripheralItem_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.Equals(Cobilas.GodotEngine.Utility.Input.PeripheralItem)">
+  Equals(PeripheralItem)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool Equals(PeripheralItem other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_Equals_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.Equals*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_Equals_Godot_KeyList_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.Equals(Godot.KeyList)">
+  Equals(KeyList)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool Equals(KeyList other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <span class="xref">KeyList</span></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_Equals_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.Equals*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_Equals_System_Object_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance and a specified object are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override readonly bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current instance.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_Equals_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.Equals*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_Equals_System_UInt64_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.Equals(System.UInt64)">
+  Equals(ulong)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool Equals(ulong other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_GetHashCode_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.GetHashCode*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_GetHashCode" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the hash code for this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override readonly int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A 32-bit signed integer that is the hash code for this instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_ToString_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.ToString*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_ToString" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the fully qualified type name of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override readonly string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The fully qualified type name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Equality_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Equality*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Equality_Cobilas_GodotEngine_Utility_Input_PeripheralItem_Cobilas_GodotEngine_Utility_Input_KeyCode_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Equality(Cobilas.GodotEngine.Utility.Input.PeripheralItem,Cobilas.GodotEngine.Utility.Input.KeyCode)">
+  operator ==(PeripheralItem, KeyCode)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance is equal to another instance of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(PeripheralItem A, KeyCode B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a></dt>
+    <dd><p>Object to be compared.</p>
+</dd>
+    <dt><code>B</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.KeyCode.html">KeyCode</a></dt>
+    <dd><p>Object of comparison.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns the result of the comparison.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Equality_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Equality*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Equality_Cobilas_GodotEngine_Utility_Input_PeripheralItem_Cobilas_GodotEngine_Utility_Input_KeyStatus_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Equality(Cobilas.GodotEngine.Utility.Input.PeripheralItem,Cobilas.GodotEngine.Utility.Input.KeyStatus)">
+  operator ==(PeripheralItem, KeyStatus)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance is equal to another instance of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(PeripheralItem A, KeyStatus B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a></dt>
+    <dd><p>Object to be compared.</p>
+</dd>
+    <dt><code>B</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.KeyStatus.html">KeyStatus</a></dt>
+    <dd><p>Object of comparison.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns the result of the comparison.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Equality_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Equality*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Equality_Cobilas_GodotEngine_Utility_Input_PeripheralItem_Cobilas_GodotEngine_Utility_Input_MouseButton_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Equality(Cobilas.GodotEngine.Utility.Input.PeripheralItem,Cobilas.GodotEngine.Utility.Input.MouseButton)">
+  operator ==(PeripheralItem, MouseButton)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance is equal to another instance of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(PeripheralItem A, MouseButton B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a></dt>
+    <dd><p>Object to be compared.</p>
+</dd>
+    <dt><code>B</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.MouseButton.html">MouseButton</a></dt>
+    <dd><p>Object of comparison.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns the result of the comparison.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Equality_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Equality*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Equality_Cobilas_GodotEngine_Utility_Input_PeripheralItem_Cobilas_GodotEngine_Utility_Input_PeripheralItem_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Equality(Cobilas.GodotEngine.Utility.Input.PeripheralItem,Cobilas.GodotEngine.Utility.Input.PeripheralItem)">
+  operator ==(PeripheralItem, PeripheralItem)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance is equal to another instance of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(PeripheralItem A, PeripheralItem B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a></dt>
+    <dd><p>Object to be compared.</p>
+</dd>
+    <dt><code>B</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a></dt>
+    <dd><p>Object of comparison.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns the result of the comparison.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Equality_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Equality*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Equality_Cobilas_GodotEngine_Utility_Input_PeripheralItem_Godot_KeyList_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Equality(Cobilas.GodotEngine.Utility.Input.PeripheralItem,Godot.KeyList)">
+  operator ==(PeripheralItem, KeyList)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance is equal to another instance of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(PeripheralItem A, KeyList B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a></dt>
+    <dd><p>Object to be compared.</p>
+</dd>
+    <dt><code>B</code> <span class="xref">KeyList</span></dt>
+    <dd><p>Object of comparison.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns the result of the comparison.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Equality_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Equality*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Equality_Cobilas_GodotEngine_Utility_Input_PeripheralItem_System_UInt64_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Equality(Cobilas.GodotEngine.Utility.Input.PeripheralItem,System.UInt64)">
+  operator ==(PeripheralItem, ulong)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance is equal to another instance of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(PeripheralItem A, ulong B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a></dt>
+    <dd><p>Object to be compared.</p>
+</dd>
+    <dt><code>B</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd><p>Object of comparison.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns the result of the comparison.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Explicit_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Explicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Explicit_Cobilas_GodotEngine_Utility_Input_PeripheralItem__Cobilas_GodotEngine_Utility_Input_KeyCode" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Explicit(Cobilas.GodotEngine.Utility.Input.PeripheralItem)~Cobilas.GodotEngine.Utility.Input.KeyCode">
+  explicit operator KeyCode(PeripheralItem)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Explicit conversion operator.(<a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a> to <a class="xref" href="Cobilas.GodotEngine.Utility.Input.KeyCode.html">KeyCode</a>)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator KeyCode(PeripheralItem A)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a></dt>
+    <dd><p>Object to be converted.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Input.KeyCode.html">KeyCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Explicit_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Explicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Explicit_Cobilas_GodotEngine_Utility_Input_PeripheralItem__Cobilas_GodotEngine_Utility_Input_KeyStatus" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Explicit(Cobilas.GodotEngine.Utility.Input.PeripheralItem)~Cobilas.GodotEngine.Utility.Input.KeyStatus">
+  explicit operator KeyStatus(PeripheralItem)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Explicit conversion operator.(<a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a> to <a class="xref" href="Cobilas.GodotEngine.Utility.Input.KeyStatus.html">KeyStatus</a>)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator KeyStatus(PeripheralItem A)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a></dt>
+    <dd><p>Object to be converted.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Input.KeyStatus.html">KeyStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Explicit_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Explicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Explicit_Cobilas_GodotEngine_Utility_Input_PeripheralItem__Cobilas_GodotEngine_Utility_Input_MouseButton" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Explicit(Cobilas.GodotEngine.Utility.Input.PeripheralItem)~Cobilas.GodotEngine.Utility.Input.MouseButton">
+  explicit operator MouseButton(PeripheralItem)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Explicit conversion operator.(<a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a> to <a class="xref" href="Cobilas.GodotEngine.Utility.Input.MouseButton.html">MouseButton</a>)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator MouseButton(PeripheralItem A)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a></dt>
+    <dd><p>Object to be converted.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Input.MouseButton.html">MouseButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Explicit_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Explicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Explicit_Cobilas_GodotEngine_Utility_Input_PeripheralItem__Godot_KeyList" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Explicit(Cobilas.GodotEngine.Utility.Input.PeripheralItem)~Godot.KeyList">
+  explicit operator KeyList(PeripheralItem)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Explicit conversion operator.(<a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a> to <span class="xref">Godot.KeyList</span>)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator KeyList(PeripheralItem A)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a></dt>
+    <dd><p>Object to be converted.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">KeyList</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Explicit_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Explicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Explicit_Cobilas_GodotEngine_Utility_Input_PeripheralItem__System_UInt64" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Explicit(Cobilas.GodotEngine.Utility.Input.PeripheralItem)~System.UInt64">
+  explicit operator ulong(PeripheralItem)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Explicit conversion operator.(<a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a> to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a>)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator ulong(PeripheralItem A)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a></dt>
+    <dd><p>Object to be converted.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Inequality_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Inequality*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Inequality_Cobilas_GodotEngine_Utility_Input_PeripheralItem_Cobilas_GodotEngine_Utility_Input_KeyCode_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Inequality(Cobilas.GodotEngine.Utility.Input.PeripheralItem,Cobilas.GodotEngine.Utility.Input.KeyCode)">
+  operator !=(PeripheralItem, KeyCode)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance is different from another instance of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(PeripheralItem A, KeyCode B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a></dt>
+    <dd><p>Object to be compared.</p>
+</dd>
+    <dt><code>B</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.KeyCode.html">KeyCode</a></dt>
+    <dd><p>Object of comparison.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns the result of the comparison.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Inequality_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Inequality*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Inequality_Cobilas_GodotEngine_Utility_Input_PeripheralItem_Cobilas_GodotEngine_Utility_Input_KeyStatus_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Inequality(Cobilas.GodotEngine.Utility.Input.PeripheralItem,Cobilas.GodotEngine.Utility.Input.KeyStatus)">
+  operator !=(PeripheralItem, KeyStatus)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance is different from another instance of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(PeripheralItem A, KeyStatus B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a></dt>
+    <dd><p>Object to be compared.</p>
+</dd>
+    <dt><code>B</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.KeyStatus.html">KeyStatus</a></dt>
+    <dd><p>Object of comparison.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns the result of the comparison.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Inequality_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Inequality*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Inequality_Cobilas_GodotEngine_Utility_Input_PeripheralItem_Cobilas_GodotEngine_Utility_Input_MouseButton_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Inequality(Cobilas.GodotEngine.Utility.Input.PeripheralItem,Cobilas.GodotEngine.Utility.Input.MouseButton)">
+  operator !=(PeripheralItem, MouseButton)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance is different from another instance of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(PeripheralItem A, MouseButton B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a></dt>
+    <dd><p>Object to be compared.</p>
+</dd>
+    <dt><code>B</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.MouseButton.html">MouseButton</a></dt>
+    <dd><p>Object of comparison.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns the result of the comparison.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Inequality_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Inequality*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Inequality_Cobilas_GodotEngine_Utility_Input_PeripheralItem_Cobilas_GodotEngine_Utility_Input_PeripheralItem_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Inequality(Cobilas.GodotEngine.Utility.Input.PeripheralItem,Cobilas.GodotEngine.Utility.Input.PeripheralItem)">
+  operator !=(PeripheralItem, PeripheralItem)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance is different from another instance of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(PeripheralItem A, PeripheralItem B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a></dt>
+    <dd><p>Object to be compared.</p>
+</dd>
+    <dt><code>B</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a></dt>
+    <dd><p>Object of comparison.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns the result of the comparison.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Inequality_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Inequality*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Inequality_Cobilas_GodotEngine_Utility_Input_PeripheralItem_Godot_KeyList_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Inequality(Cobilas.GodotEngine.Utility.Input.PeripheralItem,Godot.KeyList)">
+  operator !=(PeripheralItem, KeyList)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance is different from another instance of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(PeripheralItem A, KeyList B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a></dt>
+    <dd><p>Object to be compared.</p>
+</dd>
+    <dt><code>B</code> <span class="xref">KeyList</span></dt>
+    <dd><p>Object of comparison.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns the result of the comparison.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Inequality_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Inequality*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Input_PeripheralItem_op_Inequality_Cobilas_GodotEngine_Utility_Input_PeripheralItem_System_UInt64_" data-uid="Cobilas.GodotEngine.Utility.Input.PeripheralItem.op_Inequality(Cobilas.GodotEngine.Utility.Input.PeripheralItem,System.UInt64)">
+  operator !=(PeripheralItem, ulong)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance is different from another instance of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(PeripheralItem A, ulong B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Input.PeripheralItem.html">PeripheralItem</a></dt>
+    <dd><p>Object to be compared.</p>
+</dd>
+    <dt><code>B</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd><p>Object of comparison.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns the result of the comparison.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/PeripheralItem.cs/#L6" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

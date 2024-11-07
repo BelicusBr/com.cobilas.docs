@@ -5,8 +5,6 @@ items:
   id: RunTimeInitialization
   parent: Cobilas.GodotEngine.Utility.Runtime
   children:
-  - Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization.DeltaTime
-  - Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization.FixedDeltaTime
   - Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._Ready
   langs:
   - csharp
@@ -18,7 +16,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Runtime/RunTimeInitialization.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RunTimeInitialization
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitialization.cs
@@ -293,88 +291,6 @@ items:
   - Godot.Node.Godot.Node_GD_CB_Extension.SetNodePosition(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   - Godot.Node.Godot.Node_GD_CB_Extension.SetNodeRotation(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   - Godot.Node.Godot.Node_GD_CB_Extension.SetNodeScale(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
-- uid: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization.DeltaTime
-  commentId: F:Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization.DeltaTime
-  id: DeltaTime
-  parent: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization
-  langs:
-  - csharp
-  - vb
-  name: DeltaTime
-  nameWithType: RunTimeInitialization.DeltaTime
-  fullName: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization.DeltaTime
-  type: Field
-  source:
-    remote:
-      path: GodotEngine.Utility/Runtime/RunTimeInitialization.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: DeltaTime
-    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitialization.cs
-    startLine: 29
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.Runtime
-  summary: The interval in seconds from the last frame to the current one (Read Only)
-  example: []
-  syntax:
-    content: >-
-      [Obsolete("Use RunTime.DeltaTime")]
-
-      public const float DeltaTime = 0.33333334
-    return:
-      type: System.Single
-    content.vb: >-
-      <Obsolete("Use RunTime.DeltaTime")>
-
-      Public Const DeltaTime As Single = 0.33333334
-  attributes:
-  - type: System.ObsoleteAttribute
-    ctor: System.ObsoleteAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Use RunTime.DeltaTime
-- uid: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization.FixedDeltaTime
-  commentId: F:Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization.FixedDeltaTime
-  id: FixedDeltaTime
-  parent: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization
-  langs:
-  - csharp
-  - vb
-  name: FixedDeltaTime
-  nameWithType: RunTimeInitialization.FixedDeltaTime
-  fullName: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization.FixedDeltaTime
-  type: Field
-  source:
-    remote:
-      path: GodotEngine.Utility/Runtime/RunTimeInitialization.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: FixedDeltaTime
-    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitialization.cs
-    startLine: 32
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.Runtime
-  summary: The interval in seconds of in-game time at which physics and other fixed frame rate updates  are performed.
-  example: []
-  syntax:
-    content: >-
-      [Obsolete("Use RunTime.FixedDeltaTime")]
-
-      public const float FixedDeltaTime = 0.02
-    return:
-      type: System.Single
-    content.vb: >-
-      <Obsolete("Use RunTime.FixedDeltaTime")>
-
-      Public Const FixedDeltaTime As Single = 0.02
-  attributes:
-  - type: System.ObsoleteAttribute
-    ctor: System.ObsoleteAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Use RunTime.FixedDeltaTime
 - uid: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._Ready
   commentId: M:Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._Ready
   id: _Ready
@@ -389,11 +305,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Runtime/RunTimeInitialization.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: _Ready
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitialization.cs
-    startLine: 35
+    startLine: 28
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime
@@ -7081,17 +6997,6 @@ references:
     name: Vector3D
     href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html
   - name: )
-- uid: System.Single
-  commentId: T:System.Single
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.single
-  name: float
-  nameWithType: float
-  fullName: float
-  nameWithType.vb: Single
-  fullName.vb: Single
-  name.vb: Single
 - uid: Godot.Node._Ready
   commentId: M:Godot.Node._Ready
   parent: Godot.Node

@@ -5,14 +5,27 @@ items:
   id: Screen
   parent: Cobilas.GodotEngine.Utility
   children:
-  - Cobilas.GodotEngine.Utility.Screen.AddResolution(System.Int32,System.Int32)
+  - Cobilas.GodotEngine.Utility.Screen.AddResolution(System.Single@,System.Single@)
+  - Cobilas.GodotEngine.Utility.Screen.AddResolution(System.Single@,System.Single@,System.Int32@)
+  - Cobilas.GodotEngine.Utility.Screen.CurrentDisplay
   - Cobilas.GodotEngine.Utility.Screen.CurrentResolution
+  - Cobilas.GodotEngine.Utility.Screen.DisplayCount
+  - Cobilas.GodotEngine.Utility.Screen.Displays
   - Cobilas.GodotEngine.Utility.Screen.Mode
+  - Cobilas.GodotEngine.Utility.Screen.OrphanList
   - Cobilas.GodotEngine.Utility.Screen.Resolutions
-  - Cobilas.GodotEngine.Utility.Screen.SetResolution(Godot.Vector2)
-  - Cobilas.GodotEngine.Utility.Screen.SetResolution(Godot.Vector2,Cobilas.GodotEngine.Utility.ScreenMode)
-  - Cobilas.GodotEngine.Utility.Screen.SetResolution(System.Int32,System.Int32)
-  - Cobilas.GodotEngine.Utility.Screen.SetResolution(System.Int32,System.Int32,Cobilas.GodotEngine.Utility.ScreenMode)
+  - Cobilas.GodotEngine.Utility.Screen.ScreenRefreshRate
+  - Cobilas.GodotEngine.Utility.Screen.SetCurrentDisplay(System.Int32@)
+  - Cobilas.GodotEngine.Utility.Screen.SetResolution(Cobilas.GodotEngine.Utility.Resolution@)
+  - Cobilas.GodotEngine.Utility.Screen.SetResolution(Cobilas.GodotEngine.Utility.Resolution@,Cobilas.GodotEngine.Utility.ScreenMode@)
+  - Cobilas.GodotEngine.Utility.Screen.SetResolution(Godot.Vector2@)
+  - Cobilas.GodotEngine.Utility.Screen.SetResolution(Godot.Vector2@,Cobilas.GodotEngine.Utility.ScreenMode@)
+  - Cobilas.GodotEngine.Utility.Screen.SetResolution(Godot.Vector2@,System.Int32@)
+  - Cobilas.GodotEngine.Utility.Screen.SetResolution(Godot.Vector2@,System.Int32@,Cobilas.GodotEngine.Utility.ScreenMode@)
+  - Cobilas.GodotEngine.Utility.Screen.SetResolution(System.Single@,System.Single@)
+  - Cobilas.GodotEngine.Utility.Screen.SetResolution(System.Single@,System.Single@,Cobilas.GodotEngine.Utility.ScreenMode@)
+  - Cobilas.GodotEngine.Utility.Screen.SetResolution(System.Single@,System.Single@,System.Int32@)
+  - Cobilas.GodotEngine.Utility.Screen.SetResolution(System.Single@,System.Single@,System.Int32@,Cobilas.GodotEngine.Utility.ScreenMode@)
   langs:
   - csharp
   - vb
@@ -23,7 +36,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Screen
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
@@ -31,6 +44,8 @@ items:
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Gets or changes game screen information.
+  example: []
   syntax:
     content: public static class Screen
     content.vb: Public Module Screen
@@ -44,6 +59,137 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+- uid: Cobilas.GodotEngine.Utility.Screen.Displays
+  commentId: P:Cobilas.GodotEngine.Utility.Screen.Displays
+  id: Displays
+  parent: Cobilas.GodotEngine.Utility.Screen
+  langs:
+  - csharp
+  - vb
+  name: Displays
+  nameWithType: Screen.Displays
+  fullName: Cobilas.GodotEngine.Utility.Screen.Displays
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/Screen.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Displays
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
+    startLine: 19
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Gets all detected screens.
+  remarks: >-
+    This property will only return all screens that were detected from the start of the application,
+        if another screen is connected during the execution of the application it will not be detected.
+  example: []
+  syntax:
+    content: public static DisplayInfo[] Displays { get; }
+    parameters: []
+    return:
+      type: Cobilas.GodotEngine.Utility.DisplayInfo[]
+      description: Returns all screens that were detected.
+    content.vb: Public Shared Property Displays As DisplayInfo()
+  overload: Cobilas.GodotEngine.Utility.Screen.Displays*
+- uid: Cobilas.GodotEngine.Utility.Screen.CurrentDisplay
+  commentId: P:Cobilas.GodotEngine.Utility.Screen.CurrentDisplay
+  id: CurrentDisplay
+  parent: Cobilas.GodotEngine.Utility.Screen
+  langs:
+  - csharp
+  - vb
+  name: CurrentDisplay
+  nameWithType: Screen.CurrentDisplay
+  fullName: Cobilas.GodotEngine.Utility.Screen.CurrentDisplay
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/Screen.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: CurrentDisplay
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
+    startLine: 22
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: The current screen.
+  example: []
+  syntax:
+    content: public static DisplayInfo CurrentDisplay { get; }
+    parameters: []
+    return:
+      type: Cobilas.GodotEngine.Utility.DisplayInfo
+      description: Returns a <xref href="Cobilas.GodotEngine.Utility.DisplayInfo" data-throw-if-not-resolved="false"></xref> with the information of the current screen.
+    content.vb: Public Shared ReadOnly Property CurrentDisplay As DisplayInfo
+  overload: Cobilas.GodotEngine.Utility.Screen.CurrentDisplay*
+- uid: Cobilas.GodotEngine.Utility.Screen.DisplayCount
+  commentId: P:Cobilas.GodotEngine.Utility.Screen.DisplayCount
+  id: DisplayCount
+  parent: Cobilas.GodotEngine.Utility.Screen
+  langs:
+  - csharp
+  - vb
+  name: DisplayCount
+  nameWithType: Screen.DisplayCount
+  fullName: Cobilas.GodotEngine.Utility.Screen.DisplayCount
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/Screen.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: DisplayCount
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
+    startLine: 25
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Number of screens detected.
+  example: []
+  syntax:
+    content: public static int DisplayCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: Returns the number of screens detected when starting the application.
+    content.vb: Public Shared ReadOnly Property DisplayCount As Integer
+  overload: Cobilas.GodotEngine.Utility.Screen.DisplayCount*
+- uid: Cobilas.GodotEngine.Utility.Screen.OrphanList
+  commentId: P:Cobilas.GodotEngine.Utility.Screen.OrphanList
+  id: OrphanList
+  parent: Cobilas.GodotEngine.Utility.Screen
+  langs:
+  - csharp
+  - vb
+  name: OrphanList
+  nameWithType: Screen.OrphanList
+  fullName: Cobilas.GodotEngine.Utility.Screen.OrphanList
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/Screen.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: OrphanList
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
+    startLine: 28
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: This property contains all custom resolution lists that are not tied to a <xref href="Cobilas.GodotEngine.Utility.DisplayInfo" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static CustonResolutionList[] OrphanList { get; }
+    parameters: []
+    return:
+      type: Cobilas.GodotEngine.Utility.CustonResolutionList[]
+      description: Returns lists of custom resolutions that are not tied to a <xref href="Cobilas.GodotEngine.Utility.DisplayInfo" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Property OrphanList As CustonResolutionList()
+  overload: Cobilas.GodotEngine.Utility.Screen.OrphanList*
 - uid: Cobilas.GodotEngine.Utility.Screen.Mode
   commentId: P:Cobilas.GodotEngine.Utility.Screen.Mode
   id: Mode
@@ -58,19 +204,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Mode
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 16
+    startLine: 32
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Represents current game screen mode.
+  example: []
   syntax:
     content: public static ScreenMode Mode { get; set; }
     parameters: []
     return:
       type: Cobilas.GodotEngine.Utility.ScreenMode
+      description: The current game screen mode.
     content.vb: Public Shared Property Mode As ScreenMode
   overload: Cobilas.GodotEngine.Utility.Screen.Mode*
 - uid: Cobilas.GodotEngine.Utility.Screen.CurrentResolution
@@ -87,21 +236,56 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: CurrentResolution
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 28
+    startLine: 46
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: The current resolution of the game screen.
+  example: []
   syntax:
-    content: public static Vector2 CurrentResolution { get; }
+    content: public static Resolution CurrentResolution { get; }
     parameters: []
     return:
-      type: Godot.Vector2
-    content.vb: Public Shared ReadOnly Property CurrentResolution As Vector2
+      type: Cobilas.GodotEngine.Utility.Resolution
+      description: Returns the current resolution of the game screen as Vector2D.
+    content.vb: Public Shared ReadOnly Property CurrentResolution As Resolution
   overload: Cobilas.GodotEngine.Utility.Screen.CurrentResolution*
+- uid: Cobilas.GodotEngine.Utility.Screen.ScreenRefreshRate
+  commentId: P:Cobilas.GodotEngine.Utility.Screen.ScreenRefreshRate
+  id: ScreenRefreshRate
+  parent: Cobilas.GodotEngine.Utility.Screen
+  langs:
+  - csharp
+  - vb
+  name: ScreenRefreshRate
+  nameWithType: Screen.ScreenRefreshRate
+  fullName: Cobilas.GodotEngine.Utility.Screen.ScreenRefreshRate
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/Screen.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ScreenRefreshRate
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
+    startLine: 49
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: The current frequency of the game screen.
+  example: []
+  syntax:
+    content: public static float ScreenRefreshRate { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: Returns the current game screen frequency as a floating point.
+    content.vb: Public Shared ReadOnly Property ScreenRefreshRate As Single
+  overload: Cobilas.GodotEngine.Utility.Screen.ScreenRefreshRate*
 - uid: Cobilas.GodotEngine.Utility.Screen.Resolutions
   commentId: P:Cobilas.GodotEngine.Utility.Screen.Resolutions
   id: Resolutions
@@ -116,185 +300,531 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Resolutions
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 29
+    startLine: 52
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Represents the game screen resolutions.
+  example: []
   syntax:
-    content: public static Vector2[] Resolutions { get; }
+    content: public static Resolution[] Resolutions { get; }
     parameters: []
     return:
-      type: Godot.Vector2[]
-    content.vb: Public Shared ReadOnly Property Resolutions As Vector2()
+      type: Cobilas.GodotEngine.Utility.Resolution[]
+      description: Returns all stored resolutions.
+    content.vb: Public Shared ReadOnly Property Resolutions As Resolution()
   overload: Cobilas.GodotEngine.Utility.Screen.Resolutions*
-- uid: Cobilas.GodotEngine.Utility.Screen.AddResolution(System.Int32,System.Int32)
-  commentId: M:Cobilas.GodotEngine.Utility.Screen.AddResolution(System.Int32,System.Int32)
-  id: AddResolution(System.Int32,System.Int32)
+- uid: Cobilas.GodotEngine.Utility.Screen.AddResolution(System.Single@,System.Single@)
+  commentId: M:Cobilas.GodotEngine.Utility.Screen.AddResolution(System.Single@,System.Single@)
+  id: AddResolution(System.Single@,System.Single@)
   parent: Cobilas.GodotEngine.Utility.Screen
   langs:
   - csharp
   - vb
-  name: AddResolution(int, int)
-  nameWithType: Screen.AddResolution(int, int)
-  fullName: Cobilas.GodotEngine.Utility.Screen.AddResolution(int, int)
+  name: AddResolution(in float, in float)
+  nameWithType: Screen.AddResolution(in float, in float)
+  fullName: Cobilas.GodotEngine.Utility.Screen.AddResolution(in float, in float)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: AddResolution
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 53
+    startLine: 82
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Add a custom resolution.
+  example: []
   syntax:
-    content: public static void AddResolution(int width, int height)
+    content: public static void AddResolution(in float width, in float height)
     parameters:
     - id: width
-      type: System.Int32
+      type: System.Single
+      description: The width of the screen.
     - id: height
-      type: System.Int32
-    content.vb: Public Shared Sub AddResolution(width As Integer, height As Integer)
+      type: System.Single
+      description: The height of the screen.
+    content.vb: Public Shared Sub AddResolution(width As Single, height As Single)
   overload: Cobilas.GodotEngine.Utility.Screen.AddResolution*
-  nameWithType.vb: Screen.AddResolution(Integer, Integer)
-  fullName.vb: Cobilas.GodotEngine.Utility.Screen.AddResolution(Integer, Integer)
-  name.vb: AddResolution(Integer, Integer)
-- uid: Cobilas.GodotEngine.Utility.Screen.SetResolution(Godot.Vector2,Cobilas.GodotEngine.Utility.ScreenMode)
-  commentId: M:Cobilas.GodotEngine.Utility.Screen.SetResolution(Godot.Vector2,Cobilas.GodotEngine.Utility.ScreenMode)
-  id: SetResolution(Godot.Vector2,Cobilas.GodotEngine.Utility.ScreenMode)
+  nameWithType.vb: Screen.AddResolution(Single, Single)
+  fullName.vb: Cobilas.GodotEngine.Utility.Screen.AddResolution(Single, Single)
+  name.vb: AddResolution(Single, Single)
+- uid: Cobilas.GodotEngine.Utility.Screen.AddResolution(System.Single@,System.Single@,System.Int32@)
+  commentId: M:Cobilas.GodotEngine.Utility.Screen.AddResolution(System.Single@,System.Single@,System.Int32@)
+  id: AddResolution(System.Single@,System.Single@,System.Int32@)
   parent: Cobilas.GodotEngine.Utility.Screen
   langs:
   - csharp
   - vb
-  name: SetResolution(Vector2, ScreenMode)
-  nameWithType: Screen.SetResolution(Vector2, ScreenMode)
-  fullName: Cobilas.GodotEngine.Utility.Screen.SetResolution(Godot.Vector2, Cobilas.GodotEngine.Utility.ScreenMode)
+  name: AddResolution(in float, in float, in int)
+  nameWithType: Screen.AddResolution(in float, in float, in int)
+  fullName: Cobilas.GodotEngine.Utility.Screen.AddResolution(in float, in float, in int)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: SetResolution
+    id: AddResolution
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 61
+    startLine: 88
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Add a custom resolution.
+  example: []
   syntax:
-    content: public static void SetResolution(Vector2 size, ScreenMode mode)
+    content: public static void AddResolution(in float width, in float height, in int refreshRate)
+    parameters:
+    - id: width
+      type: System.Single
+      description: The width of the screen.
+    - id: height
+      type: System.Single
+      description: The height of the screen.
+    - id: refreshRate
+      type: System.Int32
+      description: The refresh rate of the monitor.
+    content.vb: Public Shared Sub AddResolution(width As Single, height As Single, refreshRate As Integer)
+  overload: Cobilas.GodotEngine.Utility.Screen.AddResolution*
+  nameWithType.vb: Screen.AddResolution(Single, Single, Integer)
+  fullName.vb: Cobilas.GodotEngine.Utility.Screen.AddResolution(Single, Single, Integer)
+  name.vb: AddResolution(Single, Single, Integer)
+- uid: Cobilas.GodotEngine.Utility.Screen.SetCurrentDisplay(System.Int32@)
+  commentId: M:Cobilas.GodotEngine.Utility.Screen.SetCurrentDisplay(System.Int32@)
+  id: SetCurrentDisplay(System.Int32@)
+  parent: Cobilas.GodotEngine.Utility.Screen
+  langs:
+  - csharp
+  - vb
+  name: SetCurrentDisplay(in int)
+  nameWithType: Screen.SetCurrentDisplay(in int)
+  fullName: Cobilas.GodotEngine.Utility.Screen.SetCurrentDisplay(in int)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Screen.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: SetCurrentDisplay
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
+    startLine: 100
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Defines which screen will be used.
+  example: []
+  syntax:
+    content: public static void SetCurrentDisplay(in int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The target index of the screen.
+    content.vb: Public Shared Sub SetCurrentDisplay(index As Integer)
+  overload: Cobilas.GodotEngine.Utility.Screen.SetCurrentDisplay*
+  nameWithType.vb: Screen.SetCurrentDisplay(Integer)
+  fullName.vb: Cobilas.GodotEngine.Utility.Screen.SetCurrentDisplay(Integer)
+  name.vb: SetCurrentDisplay(Integer)
+- uid: Cobilas.GodotEngine.Utility.Screen.SetResolution(Godot.Vector2@,System.Int32@,Cobilas.GodotEngine.Utility.ScreenMode@)
+  commentId: M:Cobilas.GodotEngine.Utility.Screen.SetResolution(Godot.Vector2@,System.Int32@,Cobilas.GodotEngine.Utility.ScreenMode@)
+  id: SetResolution(Godot.Vector2@,System.Int32@,Cobilas.GodotEngine.Utility.ScreenMode@)
+  parent: Cobilas.GodotEngine.Utility.Screen
+  langs:
+  - csharp
+  - vb
+  name: SetResolution(in Vector2, in int, in ScreenMode)
+  nameWithType: Screen.SetResolution(in Vector2, in int, in ScreenMode)
+  fullName: Cobilas.GodotEngine.Utility.Screen.SetResolution(in Godot.Vector2, in int, in Cobilas.GodotEngine.Utility.ScreenMode)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Screen.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: SetResolution
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
+    startLine: 106
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: sets the current screen resolution.
+  example: []
+  syntax:
+    content: public static void SetResolution(in Vector2 size, in int refreshRate, in ScreenMode mode)
     parameters:
     - id: size
       type: Godot.Vector2
+      description: The size of the screen.
+    - id: refreshRate
+      type: System.Int32
+      description: The refresh rate of the monitor.
     - id: mode
       type: Cobilas.GodotEngine.Utility.ScreenMode
+      description: Screen display mode.
+    content.vb: Public Shared Sub SetResolution(size As Vector2, refreshRate As Integer, mode As ScreenMode)
+  overload: Cobilas.GodotEngine.Utility.Screen.SetResolution*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: description
+  nameWithType.vb: Screen.SetResolution(Vector2, Integer, ScreenMode)
+  fullName.vb: Cobilas.GodotEngine.Utility.Screen.SetResolution(Godot.Vector2, Integer, Cobilas.GodotEngine.Utility.ScreenMode)
+  name.vb: SetResolution(Vector2, Integer, ScreenMode)
+- uid: Cobilas.GodotEngine.Utility.Screen.SetResolution(Godot.Vector2@,Cobilas.GodotEngine.Utility.ScreenMode@)
+  commentId: M:Cobilas.GodotEngine.Utility.Screen.SetResolution(Godot.Vector2@,Cobilas.GodotEngine.Utility.ScreenMode@)
+  id: SetResolution(Godot.Vector2@,Cobilas.GodotEngine.Utility.ScreenMode@)
+  parent: Cobilas.GodotEngine.Utility.Screen
+  langs:
+  - csharp
+  - vb
+  name: SetResolution(in Vector2, in ScreenMode)
+  nameWithType: Screen.SetResolution(in Vector2, in ScreenMode)
+  fullName: Cobilas.GodotEngine.Utility.Screen.SetResolution(in Godot.Vector2, in Cobilas.GodotEngine.Utility.ScreenMode)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Screen.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: SetResolution
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
+    startLine: 120
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: sets the current screen resolution.
+  example: []
+  syntax:
+    content: public static void SetResolution(in Vector2 size, in ScreenMode mode)
+    parameters:
+    - id: size
+      type: Godot.Vector2
+      description: The size of the screen.
+    - id: mode
+      type: Cobilas.GodotEngine.Utility.ScreenMode
+      description: Screen display mode.
     content.vb: Public Shared Sub SetResolution(size As Vector2, mode As ScreenMode)
   overload: Cobilas.GodotEngine.Utility.Screen.SetResolution*
-- uid: Cobilas.GodotEngine.Utility.Screen.SetResolution(System.Int32,System.Int32,Cobilas.GodotEngine.Utility.ScreenMode)
-  commentId: M:Cobilas.GodotEngine.Utility.Screen.SetResolution(System.Int32,System.Int32,Cobilas.GodotEngine.Utility.ScreenMode)
-  id: SetResolution(System.Int32,System.Int32,Cobilas.GodotEngine.Utility.ScreenMode)
+  nameWithType.vb: Screen.SetResolution(Vector2, ScreenMode)
+  fullName.vb: Cobilas.GodotEngine.Utility.Screen.SetResolution(Godot.Vector2, Cobilas.GodotEngine.Utility.ScreenMode)
+  name.vb: SetResolution(Vector2, ScreenMode)
+- uid: Cobilas.GodotEngine.Utility.Screen.SetResolution(System.Single@,System.Single@,System.Int32@,Cobilas.GodotEngine.Utility.ScreenMode@)
+  commentId: M:Cobilas.GodotEngine.Utility.Screen.SetResolution(System.Single@,System.Single@,System.Int32@,Cobilas.GodotEngine.Utility.ScreenMode@)
+  id: SetResolution(System.Single@,System.Single@,System.Int32@,Cobilas.GodotEngine.Utility.ScreenMode@)
   parent: Cobilas.GodotEngine.Utility.Screen
   langs:
   - csharp
   - vb
-  name: SetResolution(int, int, ScreenMode)
-  nameWithType: Screen.SetResolution(int, int, ScreenMode)
-  fullName: Cobilas.GodotEngine.Utility.Screen.SetResolution(int, int, Cobilas.GodotEngine.Utility.ScreenMode)
+  name: SetResolution(in float, in float, in int, in ScreenMode)
+  nameWithType: Screen.SetResolution(in float, in float, in int, in ScreenMode)
+  fullName: Cobilas.GodotEngine.Utility.Screen.SetResolution(in float, in float, in int, in Cobilas.GodotEngine.Utility.ScreenMode)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SetResolution
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 66
+    startLine: 127
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: sets the current screen resolution.
+  example: []
   syntax:
-    content: public static void SetResolution(int width, int height, ScreenMode mode)
+    content: public static void SetResolution(in float width, in float height, in int refreshRate, in ScreenMode mode)
     parameters:
     - id: width
-      type: System.Int32
+      type: System.Single
+      description: The width of the screen.
     - id: height
+      type: System.Single
+      description: The height of the screen.
+    - id: refreshRate
       type: System.Int32
+      description: The refresh rate of the monitor.
     - id: mode
       type: Cobilas.GodotEngine.Utility.ScreenMode
-    content.vb: Public Shared Sub SetResolution(width As Integer, height As Integer, mode As ScreenMode)
+      description: Screen display mode.
+    content.vb: Public Shared Sub SetResolution(width As Single, height As Single, refreshRate As Integer, mode As ScreenMode)
   overload: Cobilas.GodotEngine.Utility.Screen.SetResolution*
-  nameWithType.vb: Screen.SetResolution(Integer, Integer, ScreenMode)
-  fullName.vb: Cobilas.GodotEngine.Utility.Screen.SetResolution(Integer, Integer, Cobilas.GodotEngine.Utility.ScreenMode)
-  name.vb: SetResolution(Integer, Integer, ScreenMode)
-- uid: Cobilas.GodotEngine.Utility.Screen.SetResolution(Godot.Vector2)
-  commentId: M:Cobilas.GodotEngine.Utility.Screen.SetResolution(Godot.Vector2)
-  id: SetResolution(Godot.Vector2)
+  nameWithType.vb: Screen.SetResolution(Single, Single, Integer, ScreenMode)
+  fullName.vb: Cobilas.GodotEngine.Utility.Screen.SetResolution(Single, Single, Integer, Cobilas.GodotEngine.Utility.ScreenMode)
+  name.vb: SetResolution(Single, Single, Integer, ScreenMode)
+- uid: Cobilas.GodotEngine.Utility.Screen.SetResolution(System.Single@,System.Single@,Cobilas.GodotEngine.Utility.ScreenMode@)
+  commentId: M:Cobilas.GodotEngine.Utility.Screen.SetResolution(System.Single@,System.Single@,Cobilas.GodotEngine.Utility.ScreenMode@)
+  id: SetResolution(System.Single@,System.Single@,Cobilas.GodotEngine.Utility.ScreenMode@)
   parent: Cobilas.GodotEngine.Utility.Screen
   langs:
   - csharp
   - vb
-  name: SetResolution(Vector2)
-  nameWithType: Screen.SetResolution(Vector2)
-  fullName: Cobilas.GodotEngine.Utility.Screen.SetResolution(Godot.Vector2)
+  name: SetResolution(in float, in float, in ScreenMode)
+  nameWithType: Screen.SetResolution(in float, in float, in ScreenMode)
+  fullName: Cobilas.GodotEngine.Utility.Screen.SetResolution(in float, in float, in Cobilas.GodotEngine.Utility.ScreenMode)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SetResolution
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 69
+    startLine: 133
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: sets the current screen resolution.
+  example: []
   syntax:
-    content: public static void SetResolution(Vector2 size)
+    content: public static void SetResolution(in float width, in float height, in ScreenMode mode)
+    parameters:
+    - id: width
+      type: System.Single
+      description: The width of the screen.
+    - id: height
+      type: System.Single
+      description: The height of the screen.
+    - id: mode
+      type: Cobilas.GodotEngine.Utility.ScreenMode
+      description: Screen display mode.
+    content.vb: Public Shared Sub SetResolution(width As Single, height As Single, mode As ScreenMode)
+  overload: Cobilas.GodotEngine.Utility.Screen.SetResolution*
+  nameWithType.vb: Screen.SetResolution(Single, Single, ScreenMode)
+  fullName.vb: Cobilas.GodotEngine.Utility.Screen.SetResolution(Single, Single, Cobilas.GodotEngine.Utility.ScreenMode)
+  name.vb: SetResolution(Single, Single, ScreenMode)
+- uid: Cobilas.GodotEngine.Utility.Screen.SetResolution(Godot.Vector2@,System.Int32@)
+  commentId: M:Cobilas.GodotEngine.Utility.Screen.SetResolution(Godot.Vector2@,System.Int32@)
+  id: SetResolution(Godot.Vector2@,System.Int32@)
+  parent: Cobilas.GodotEngine.Utility.Screen
+  langs:
+  - csharp
+  - vb
+  name: SetResolution(in Vector2, in int)
+  nameWithType: Screen.SetResolution(in Vector2, in int)
+  fullName: Cobilas.GodotEngine.Utility.Screen.SetResolution(in Godot.Vector2, in int)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Screen.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: SetResolution
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
+    startLine: 138
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: sets the current screen resolution.
+  example: []
+  syntax:
+    content: public static void SetResolution(in Vector2 size, in int refreshRate)
     parameters:
     - id: size
       type: Godot.Vector2
-    content.vb: Public Shared Sub SetResolution(size As Vector2)
+      description: The size of the screen.
+    - id: refreshRate
+      type: System.Int32
+      description: The refresh rate of the monitor.
+    content.vb: Public Shared Sub SetResolution(size As Vector2, refreshRate As Integer)
   overload: Cobilas.GodotEngine.Utility.Screen.SetResolution*
-- uid: Cobilas.GodotEngine.Utility.Screen.SetResolution(System.Int32,System.Int32)
-  commentId: M:Cobilas.GodotEngine.Utility.Screen.SetResolution(System.Int32,System.Int32)
-  id: SetResolution(System.Int32,System.Int32)
+  nameWithType.vb: Screen.SetResolution(Vector2, Integer)
+  fullName.vb: Cobilas.GodotEngine.Utility.Screen.SetResolution(Godot.Vector2, Integer)
+  name.vb: SetResolution(Vector2, Integer)
+- uid: Cobilas.GodotEngine.Utility.Screen.SetResolution(Godot.Vector2@)
+  commentId: M:Cobilas.GodotEngine.Utility.Screen.SetResolution(Godot.Vector2@)
+  id: SetResolution(Godot.Vector2@)
   parent: Cobilas.GodotEngine.Utility.Screen
   langs:
   - csharp
   - vb
-  name: SetResolution(int, int)
-  nameWithType: Screen.SetResolution(int, int)
-  fullName: Cobilas.GodotEngine.Utility.Screen.SetResolution(int, int)
+  name: SetResolution(in Vector2)
+  nameWithType: Screen.SetResolution(in Vector2)
+  fullName: Cobilas.GodotEngine.Utility.Screen.SetResolution(in Godot.Vector2)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SetResolution
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 72
+    startLine: 142
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: sets the current screen resolution.
+  example: []
   syntax:
-    content: public static void SetResolution(int width, int height)
+    content: public static void SetResolution(in Vector2 size)
+    parameters:
+    - id: size
+      type: Godot.Vector2
+      description: The size of the screen.
+    content.vb: Public Shared Sub SetResolution(size As Vector2)
+  overload: Cobilas.GodotEngine.Utility.Screen.SetResolution*
+  nameWithType.vb: Screen.SetResolution(Vector2)
+  fullName.vb: Cobilas.GodotEngine.Utility.Screen.SetResolution(Godot.Vector2)
+  name.vb: SetResolution(Vector2)
+- uid: Cobilas.GodotEngine.Utility.Screen.SetResolution(System.Single@,System.Single@)
+  commentId: M:Cobilas.GodotEngine.Utility.Screen.SetResolution(System.Single@,System.Single@)
+  id: SetResolution(System.Single@,System.Single@)
+  parent: Cobilas.GodotEngine.Utility.Screen
+  langs:
+  - csharp
+  - vb
+  name: SetResolution(in float, in float)
+  nameWithType: Screen.SetResolution(in float, in float)
+  fullName: Cobilas.GodotEngine.Utility.Screen.SetResolution(in float, in float)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Screen.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: SetResolution
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
+    startLine: 147
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: sets the current screen resolution.
+  example: []
+  syntax:
+    content: public static void SetResolution(in float width, in float height)
     parameters:
     - id: width
-      type: System.Int32
+      type: System.Single
+      description: The width of the screen.
     - id: height
-      type: System.Int32
-    content.vb: Public Shared Sub SetResolution(width As Integer, height As Integer)
+      type: System.Single
+      description: The height of the screen.
+    content.vb: Public Shared Sub SetResolution(width As Single, height As Single)
   overload: Cobilas.GodotEngine.Utility.Screen.SetResolution*
-  nameWithType.vb: Screen.SetResolution(Integer, Integer)
-  fullName.vb: Cobilas.GodotEngine.Utility.Screen.SetResolution(Integer, Integer)
-  name.vb: SetResolution(Integer, Integer)
+  nameWithType.vb: Screen.SetResolution(Single, Single)
+  fullName.vb: Cobilas.GodotEngine.Utility.Screen.SetResolution(Single, Single)
+  name.vb: SetResolution(Single, Single)
+- uid: Cobilas.GodotEngine.Utility.Screen.SetResolution(System.Single@,System.Single@,System.Int32@)
+  commentId: M:Cobilas.GodotEngine.Utility.Screen.SetResolution(System.Single@,System.Single@,System.Int32@)
+  id: SetResolution(System.Single@,System.Single@,System.Int32@)
+  parent: Cobilas.GodotEngine.Utility.Screen
+  langs:
+  - csharp
+  - vb
+  name: SetResolution(in float, in float, in int)
+  nameWithType: Screen.SetResolution(in float, in float, in int)
+  fullName: Cobilas.GodotEngine.Utility.Screen.SetResolution(in float, in float, in int)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Screen.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: SetResolution
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
+    startLine: 153
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: sets the current screen resolution.
+  example: []
+  syntax:
+    content: public static void SetResolution(in float width, in float height, in int refreshRate)
+    parameters:
+    - id: width
+      type: System.Single
+      description: The width of the screen.
+    - id: height
+      type: System.Single
+      description: The height of the screen.
+    - id: refreshRate
+      type: System.Int32
+      description: The refresh rate of the monitor.
+    content.vb: Public Shared Sub SetResolution(width As Single, height As Single, refreshRate As Integer)
+  overload: Cobilas.GodotEngine.Utility.Screen.SetResolution*
+  nameWithType.vb: Screen.SetResolution(Single, Single, Integer)
+  fullName.vb: Cobilas.GodotEngine.Utility.Screen.SetResolution(Single, Single, Integer)
+  name.vb: SetResolution(Single, Single, Integer)
+- uid: Cobilas.GodotEngine.Utility.Screen.SetResolution(Cobilas.GodotEngine.Utility.Resolution@,Cobilas.GodotEngine.Utility.ScreenMode@)
+  commentId: M:Cobilas.GodotEngine.Utility.Screen.SetResolution(Cobilas.GodotEngine.Utility.Resolution@,Cobilas.GodotEngine.Utility.ScreenMode@)
+  id: SetResolution(Cobilas.GodotEngine.Utility.Resolution@,Cobilas.GodotEngine.Utility.ScreenMode@)
+  parent: Cobilas.GodotEngine.Utility.Screen
+  langs:
+  - csharp
+  - vb
+  name: SetResolution(in Resolution, in ScreenMode)
+  nameWithType: Screen.SetResolution(in Resolution, in ScreenMode)
+  fullName: Cobilas.GodotEngine.Utility.Screen.SetResolution(in Cobilas.GodotEngine.Utility.Resolution, in Cobilas.GodotEngine.Utility.ScreenMode)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Screen.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: SetResolution
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
+    startLine: 158
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: sets the current screen resolution.
+  example: []
+  syntax:
+    content: public static void SetResolution(in Resolution resolution, in ScreenMode mode)
+    parameters:
+    - id: resolution
+      type: Cobilas.GodotEngine.Utility.Resolution
+      description: The new screen resolution.
+    - id: mode
+      type: Cobilas.GodotEngine.Utility.ScreenMode
+      description: Screen display mode.
+    content.vb: Public Shared Sub SetResolution(resolution As Resolution, mode As ScreenMode)
+  overload: Cobilas.GodotEngine.Utility.Screen.SetResolution*
+  nameWithType.vb: Screen.SetResolution(Resolution, ScreenMode)
+  fullName.vb: Cobilas.GodotEngine.Utility.Screen.SetResolution(Cobilas.GodotEngine.Utility.Resolution, Cobilas.GodotEngine.Utility.ScreenMode)
+  name.vb: SetResolution(Resolution, ScreenMode)
+- uid: Cobilas.GodotEngine.Utility.Screen.SetResolution(Cobilas.GodotEngine.Utility.Resolution@)
+  commentId: M:Cobilas.GodotEngine.Utility.Screen.SetResolution(Cobilas.GodotEngine.Utility.Resolution@)
+  id: SetResolution(Cobilas.GodotEngine.Utility.Resolution@)
+  parent: Cobilas.GodotEngine.Utility.Screen
+  langs:
+  - csharp
+  - vb
+  name: SetResolution(in Resolution)
+  nameWithType: Screen.SetResolution(in Resolution)
+  fullName: Cobilas.GodotEngine.Utility.Screen.SetResolution(in Cobilas.GodotEngine.Utility.Resolution)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Screen.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: SetResolution
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
+    startLine: 162
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: sets the current screen resolution.
+  example: []
+  syntax:
+    content: public static void SetResolution(in Resolution resolution)
+    parameters:
+    - id: resolution
+      type: Cobilas.GodotEngine.Utility.Resolution
+      description: The new screen resolution.
+    content.vb: Public Shared Sub SetResolution(resolution As Resolution)
+  overload: Cobilas.GodotEngine.Utility.Screen.SetResolution*
+  nameWithType.vb: Screen.SetResolution(Resolution)
+  fullName.vb: Cobilas.GodotEngine.Utility.Screen.SetResolution(Cobilas.GodotEngine.Utility.Resolution)
+  name.vb: SetResolution(Resolution)
 references:
 - uid: Cobilas.GodotEngine.Utility
   commentId: N:Cobilas.GodotEngine.Utility
@@ -563,6 +1093,90 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Cobilas.GodotEngine.Utility.Screen.Displays*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Screen.Displays
+  href: Cobilas.GodotEngine.Utility.Screen.html#Cobilas_GodotEngine_Utility_Screen_Displays
+  name: Displays
+  nameWithType: Screen.Displays
+  fullName: Cobilas.GodotEngine.Utility.Screen.Displays
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo[]
+  isExternal: true
+  href: Cobilas.GodotEngine.Utility.DisplayInfo.html
+  name: DisplayInfo[]
+  nameWithType: DisplayInfo[]
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo[]
+  nameWithType.vb: DisplayInfo()
+  fullName.vb: Cobilas.GodotEngine.Utility.DisplayInfo()
+  name.vb: DisplayInfo()
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Utility.DisplayInfo
+    name: DisplayInfo
+    href: Cobilas.GodotEngine.Utility.DisplayInfo.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Utility.DisplayInfo
+    name: DisplayInfo
+    href: Cobilas.GodotEngine.Utility.DisplayInfo.html
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo
+  commentId: T:Cobilas.GodotEngine.Utility.DisplayInfo
+  parent: Cobilas.GodotEngine.Utility
+  href: Cobilas.GodotEngine.Utility.DisplayInfo.html
+  name: DisplayInfo
+  nameWithType: DisplayInfo
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo
+- uid: Cobilas.GodotEngine.Utility.Screen.CurrentDisplay*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Screen.CurrentDisplay
+  href: Cobilas.GodotEngine.Utility.Screen.html#Cobilas_GodotEngine_Utility_Screen_CurrentDisplay
+  name: CurrentDisplay
+  nameWithType: Screen.CurrentDisplay
+  fullName: Cobilas.GodotEngine.Utility.Screen.CurrentDisplay
+- uid: Cobilas.GodotEngine.Utility.Screen.DisplayCount*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Screen.DisplayCount
+  href: Cobilas.GodotEngine.Utility.Screen.html#Cobilas_GodotEngine_Utility_Screen_DisplayCount
+  name: DisplayCount
+  nameWithType: Screen.DisplayCount
+  fullName: Cobilas.GodotEngine.Utility.Screen.DisplayCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Cobilas.GodotEngine.Utility.Screen.OrphanList*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Screen.OrphanList
+  href: Cobilas.GodotEngine.Utility.Screen.html#Cobilas_GodotEngine_Utility_Screen_OrphanList
+  name: OrphanList
+  nameWithType: Screen.OrphanList
+  fullName: Cobilas.GodotEngine.Utility.Screen.OrphanList
+- uid: Cobilas.GodotEngine.Utility.CustonResolutionList[]
+  isExternal: true
+  href: Cobilas.GodotEngine.Utility.CustonResolutionList.html
+  name: CustonResolutionList[]
+  nameWithType: CustonResolutionList[]
+  fullName: Cobilas.GodotEngine.Utility.CustonResolutionList[]
+  nameWithType.vb: CustonResolutionList()
+  fullName.vb: Cobilas.GodotEngine.Utility.CustonResolutionList()
+  name.vb: CustonResolutionList()
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Utility.CustonResolutionList
+    name: CustonResolutionList
+    href: Cobilas.GodotEngine.Utility.CustonResolutionList.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Utility.CustonResolutionList
+    name: CustonResolutionList
+    href: Cobilas.GodotEngine.Utility.CustonResolutionList.html
+  - name: (
+  - name: )
 - uid: Cobilas.GodotEngine.Utility.Screen.Mode*
   commentId: Overload:Cobilas.GodotEngine.Utility.Screen.Mode
   href: Cobilas.GodotEngine.Utility.Screen.html#Cobilas_GodotEngine_Utility_Screen_Mode
@@ -582,6 +1196,82 @@ references:
   name: CurrentResolution
   nameWithType: Screen.CurrentResolution
   fullName: Cobilas.GodotEngine.Utility.Screen.CurrentResolution
+- uid: Cobilas.GodotEngine.Utility.Resolution
+  commentId: T:Cobilas.GodotEngine.Utility.Resolution
+  parent: Cobilas.GodotEngine.Utility
+  href: Cobilas.GodotEngine.Utility.Resolution.html
+  name: Resolution
+  nameWithType: Resolution
+  fullName: Cobilas.GodotEngine.Utility.Resolution
+- uid: Cobilas.GodotEngine.Utility.Screen.ScreenRefreshRate*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Screen.ScreenRefreshRate
+  href: Cobilas.GodotEngine.Utility.Screen.html#Cobilas_GodotEngine_Utility_Screen_ScreenRefreshRate
+  name: ScreenRefreshRate
+  nameWithType: Screen.ScreenRefreshRate
+  fullName: Cobilas.GodotEngine.Utility.Screen.ScreenRefreshRate
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Cobilas.GodotEngine.Utility.Screen.Resolutions*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Screen.Resolutions
+  href: Cobilas.GodotEngine.Utility.Screen.html#Cobilas_GodotEngine_Utility_Screen_Resolutions
+  name: Resolutions
+  nameWithType: Screen.Resolutions
+  fullName: Cobilas.GodotEngine.Utility.Screen.Resolutions
+- uid: Cobilas.GodotEngine.Utility.Resolution[]
+  isExternal: true
+  href: Cobilas.GodotEngine.Utility.Resolution.html
+  name: Resolution[]
+  nameWithType: Resolution[]
+  fullName: Cobilas.GodotEngine.Utility.Resolution[]
+  nameWithType.vb: Resolution()
+  fullName.vb: Cobilas.GodotEngine.Utility.Resolution()
+  name.vb: Resolution()
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Utility.Resolution
+    name: Resolution
+    href: Cobilas.GodotEngine.Utility.Resolution.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Utility.Resolution
+    name: Resolution
+    href: Cobilas.GodotEngine.Utility.Resolution.html
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.Screen.AddResolution*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Screen.AddResolution
+  href: Cobilas.GodotEngine.Utility.Screen.html#Cobilas_GodotEngine_Utility_Screen_AddResolution_System_Single__System_Single__
+  name: AddResolution
+  nameWithType: Screen.AddResolution
+  fullName: Cobilas.GodotEngine.Utility.Screen.AddResolution
+- uid: Cobilas.GodotEngine.Utility.Screen.SetCurrentDisplay*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Screen.SetCurrentDisplay
+  href: Cobilas.GodotEngine.Utility.Screen.html#Cobilas_GodotEngine_Utility_Screen_SetCurrentDisplay_System_Int32__
+  name: SetCurrentDisplay
+  nameWithType: Screen.SetCurrentDisplay
+  fullName: Cobilas.GodotEngine.Utility.Screen.SetCurrentDisplay
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: Cobilas.GodotEngine.Utility.Screen.SetResolution*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Screen.SetResolution
+  href: Cobilas.GodotEngine.Utility.Screen.html#Cobilas_GodotEngine_Utility_Screen_SetResolution_Godot_Vector2__System_Int32__Cobilas_GodotEngine_Utility_ScreenMode__
+  name: SetResolution
+  nameWithType: Screen.SetResolution
+  fullName: Cobilas.GodotEngine.Utility.Screen.SetResolution
 - uid: Godot.Vector2
   commentId: T:Godot.Vector2
   parent: Godot
@@ -595,52 +1285,3 @@ references:
   name: Godot
   nameWithType: Godot
   fullName: Godot
-- uid: Cobilas.GodotEngine.Utility.Screen.Resolutions*
-  commentId: Overload:Cobilas.GodotEngine.Utility.Screen.Resolutions
-  href: Cobilas.GodotEngine.Utility.Screen.html#Cobilas_GodotEngine_Utility_Screen_Resolutions
-  name: Resolutions
-  nameWithType: Screen.Resolutions
-  fullName: Cobilas.GodotEngine.Utility.Screen.Resolutions
-- uid: Godot.Vector2[]
-  isExternal: true
-  name: Vector2[]
-  nameWithType: Vector2[]
-  fullName: Godot.Vector2[]
-  nameWithType.vb: Vector2()
-  fullName.vb: Godot.Vector2()
-  name.vb: Vector2()
-  spec.csharp:
-  - uid: Godot.Vector2
-    name: Vector2
-    isExternal: true
-  - name: '['
-  - name: ']'
-  spec.vb:
-  - uid: Godot.Vector2
-    name: Vector2
-    isExternal: true
-  - name: (
-  - name: )
-- uid: Cobilas.GodotEngine.Utility.Screen.AddResolution*
-  commentId: Overload:Cobilas.GodotEngine.Utility.Screen.AddResolution
-  href: Cobilas.GodotEngine.Utility.Screen.html#Cobilas_GodotEngine_Utility_Screen_AddResolution_System_Int32_System_Int32_
-  name: AddResolution
-  nameWithType: Screen.AddResolution
-  fullName: Cobilas.GodotEngine.Utility.Screen.AddResolution
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
-- uid: Cobilas.GodotEngine.Utility.Screen.SetResolution*
-  commentId: Overload:Cobilas.GodotEngine.Utility.Screen.SetResolution
-  href: Cobilas.GodotEngine.Utility.Screen.html#Cobilas_GodotEngine_Utility_Screen_SetResolution_Godot_Vector2_Cobilas_GodotEngine_Utility_ScreenMode_
-  name: SetResolution
-  nameWithType: Screen.SetResolution
-  fullName: Cobilas.GodotEngine.Utility.Screen.SetResolution

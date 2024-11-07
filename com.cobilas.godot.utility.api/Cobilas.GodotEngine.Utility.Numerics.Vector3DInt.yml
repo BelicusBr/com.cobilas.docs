@@ -12,12 +12,12 @@ items:
   - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Abs(System.Boolean,System.Boolean,System.Boolean)
   - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.AxisCount
   - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Back
-  - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.CeilToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt@)
+  - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.CeilToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
   - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Distance(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt@,Cobilas.GodotEngine.Utility.Numerics.Vector3DInt@)
   - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Down
   - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
   - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Equals(System.Object)
-  - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.FloorToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt@)
+  - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.FloorToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
   - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Forward
   - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.GetHashCode
   - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Item(System.Int32)
@@ -29,14 +29,14 @@ items:
   - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Neg(System.Boolean,System.Boolean,System.Boolean)
   - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.One
   - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Right
-  - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.RoundToInt
-  - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.RoundToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt@)
+  - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.RoundToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
   - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.SqrMagnitude(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt@)
   - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.ToString
   - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.ToString(System.String)
   - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.ToString(System.String,System.IFormatProvider)
   - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Up
   - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Zero
+  - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.aspect
   - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.ceilToInt
   - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.floorToInt
   - Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.magnitude
@@ -71,7 +71,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Vector3DInt
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
@@ -79,18 +79,18 @@ items:
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Representation of a three-dimensional vector using integers.
+  example: []
   syntax:
     content: >-
       [Serializable]
 
-      public struct Vector3DInt : IIntVectorGeneric<Vector3DInt>, IEquatable<Vector3DInt>, IIntVector, IFormattable
+      public struct Vector3DInt : IIntVector, IFormattable
     content.vb: >-
       <Serializable>
 
-      Public Structure Vector3DInt Implements IIntVectorGeneric(Of Vector3DInt), IEquatable(Of Vector3DInt), IIntVector, IFormattable
+      Public Structure Vector3DInt Implements IIntVector, IFormattable
   implements:
-  - Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}
-  - System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}
   - Cobilas.GodotEngine.Utility.Numerics.IIntVector
   - System.IFormattable
   inheritedMembers:
@@ -115,14 +115,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: x
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 8
+    startLine: 9
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: X component of the vector.
+  example: []
   syntax:
     content: public int x
     return:
@@ -142,14 +144,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: y
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 9
+    startLine: 11
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Y component of the vector.
+  example: []
   syntax:
     content: public int y
     return:
@@ -169,14 +173,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: z
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 10
+    startLine: 13
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Z component of the vector.
+  example: []
   syntax:
     content: public int z
     return:
@@ -196,20 +202,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: AxisCount
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 12
+    startLine: 15
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Number of axles.
   example: []
   syntax:
     content: public readonly int AxisCount { get; }
     parameters: []
     return:
       type: System.Int32
+      description: Returns the number of axes a vector has.
     content.vb: Public ReadOnly Property AxisCount As Integer
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.AxisCount*
   implements:
@@ -228,24 +236,63 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: magnitude
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 13
+    startLine: 17
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns the length (magnitude) of this vector.
   example: []
   syntax:
     content: public readonly float magnitude { get; }
     parameters: []
     return:
       type: System.Single
+      description: The length of this vector.
     content.vb: Public ReadOnly Property magnitude As Single
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.magnitude*
+  seealso:
+  - linkId: Godot.Vector2.LengthSquared
+    commentId: M:Godot.Vector2.LengthSquared
   implements:
   - Cobilas.GodotEngine.Utility.Numerics.IIntVector.magnitude
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.aspect
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.aspect
+  id: aspect
+  parent: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+  langs:
+  - csharp
+  - vb
+  name: aspect
+  nameWithType: Vector3DInt.aspect
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.aspect
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Vector3DInt.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: aspect
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
+    startLine: 19
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns the aspect ratio of this vector, the ratio of <xref href="Cobilas.GodotEngine.Utility.Numerics.IVector" data-throw-if-not-resolved="false"></xref>.x to <xref href="Cobilas.GodotEngine.Utility.Numerics.IVector" data-throw-if-not-resolved="false"></xref>.y.
+  example: []
+  syntax:
+    content: public readonly float aspect { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: The <xref href="Cobilas.GodotEngine.Utility.Numerics.IVector" data-throw-if-not-resolved="false"></xref>.x component divided by the <xref href="Cobilas.GodotEngine.Utility.Numerics.IVector" data-throw-if-not-resolved="false"></xref>.y component.
+    content.vb: Public ReadOnly Property aspect As Single
+  overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.aspect*
+  implements:
+  - Cobilas.GodotEngine.Utility.Numerics.IIntVector.aspect
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.sqrMagnitude
   commentId: P:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.sqrMagnitude
   id: sqrMagnitude
@@ -260,20 +307,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: sqrMagnitude
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 14
+    startLine: 21
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: >-
+    Returns the squared length (squared magnitude) of this vector. This method runs
+        faster than <xref href="Cobilas.GodotEngine.Utility.Numerics.IVector.magnitude" data-throw-if-not-resolved="false"></xref>, so prefer it if you need to compare vectors
+        or need the squared length for some formula.
   example: []
   syntax:
     content: public readonly int sqrMagnitude { get; }
     parameters: []
     return:
       type: System.Int32
+      description: The squared length of this vector.
     content.vb: Public ReadOnly Property sqrMagnitude As Integer
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.sqrMagnitude*
   implements:
@@ -292,11 +344,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ceilToInt
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 15
+    startLine: 23
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -308,8 +360,6 @@ items:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
     content.vb: Public ReadOnly Property ceilToInt As Vector3DInt
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.ceilToInt*
-  implements:
-  - Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.ceilToInt
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.floorToInt
   commentId: P:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.floorToInt
   id: floorToInt
@@ -324,11 +374,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: floorToInt
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 16
+    startLine: 25
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -340,8 +390,6 @@ items:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
     content.vb: Public ReadOnly Property floorToInt As Vector3DInt
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.floorToInt*
-  implements:
-  - Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.floorToInt
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Zero
   commentId: P:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Zero
   id: Zero
@@ -356,14 +404,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Zero
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 30
+    startLine: 36
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Shorthand for writing Vector3(0,0,0).
+  example: []
   syntax:
     content: public static Vector3DInt Zero { get; }
     parameters: []
@@ -385,14 +435,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: One
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 31
+    startLine: 38
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Shorthand for writing Vector3(1,1,1).
+  example: []
   syntax:
     content: public static Vector3DInt One { get; }
     parameters: []
@@ -414,14 +466,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Up
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 32
+    startLine: 40
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Shorthand for writing Vector3(0,-1,0).
+  example: []
   syntax:
     content: public static Vector3DInt Up { get; }
     parameters: []
@@ -443,14 +497,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Down
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 33
+    startLine: 42
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Shorthand for writing Vector3(0,1,0).
+  example: []
   syntax:
     content: public static Vector3DInt Down { get; }
     parameters: []
@@ -472,14 +528,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Right
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 34
+    startLine: 44
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Shorthand for writing Vector3(1,0,0).
+  example: []
   syntax:
     content: public static Vector3DInt Right { get; }
     parameters: []
@@ -501,14 +559,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Left
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 35
+    startLine: 46
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Shorthand for writing Vector3(-1,0,0).
+  example: []
   syntax:
     content: public static Vector3DInt Left { get; }
     parameters: []
@@ -530,14 +590,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Forward
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 36
+    startLine: 48
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Shorthand for writing Vector3(0,0,1).
+  example: []
   syntax:
     content: public static Vector3DInt Forward { get; }
     parameters: []
@@ -559,14 +621,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Back
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 37
+    startLine: 50
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Shorthand for writing Vector3(0,0,-1).
+  example: []
   syntax:
     content: public static Vector3DInt Back { get; }
     parameters: []
@@ -588,22 +652,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: this[]
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 39
+    startLine: 52
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Allows you to access the axes of a vector through an index.
   example: []
   syntax:
     content: public int this[int index] { readonly get; set; }
     parameters:
     - id: index
       type: System.Int32
+      description: The axis index.
     return:
       type: System.Int32
+      description: Sets the value of an axis by specifying its index.
     content.vb: Public Default Property this[](index As Integer) As Integer
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Item*
   implements:
@@ -625,14 +692,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 56
+    startLine: 69
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Starts a new instance of the object.
+  example: []
   syntax:
     content: public Vector3DInt(in int x, in int y, in int z)
     parameters:
@@ -661,14 +730,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 62
+    startLine: 75
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Starts a new instance of the object.
+  example: []
   syntax:
     content: public Vector3DInt(in int x, in int y)
     parameters:
@@ -695,14 +766,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 64
+    startLine: 77
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Starts a new instance of the object.
+  example: []
   syntax:
     content: public Vector3DInt(in Vector3DInt vector)
     parameters:
@@ -727,11 +800,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Equals
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 66
+    startLine: 79
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -766,29 +839,24 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Equals
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 67
+    startLine: 81
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
-  summary: Indicates whether the current object is equal to another object of the same type.
   example: []
   syntax:
     content: public readonly bool Equals(Vector3DInt other)
     parameters:
     - id: other
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
-      description: An object to compare with this object.
     return:
       type: System.Boolean
-      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Public Function Equals(other As Vector3DInt) As Boolean
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Equals*
-  implements:
-  - System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.GetHashCode
   commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.GetHashCode
   id: GetHashCode
@@ -803,11 +871,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetHashCode
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 68
+    startLine: 83
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -835,11 +903,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToString
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 69
+    startLine: 85
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -878,22 +946,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToString
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 70
+    startLine: 87
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Formats the value of the current instance using the specified format.
   example: []
   syntax:
     content: public readonly string ToString(string format)
     parameters:
     - id: format
       type: System.String
+      description: The format to use.-or- A null reference (<code>Nothing</code> in Visual Basic) to use the default format defined for the type of the <xref href="System.IFormattable" data-throw-if-not-resolved="false"></xref> implementation.
     return:
       type: System.String
+      description: The value of the current instance in the specified format.
     content.vb: Public Function ToString(format As String) As String
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.ToString*
   implements:
@@ -915,11 +986,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToString
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 71
+    startLine: 89
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -947,25 +1018,31 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Abs
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 73
+    startLine: 91
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns an absolute value of the vector.
+  example: []
   syntax:
     content: public readonly Vector3DInt Abs(bool absX = true, bool absY = true, bool absZ = true)
     parameters:
     - id: absX
       type: System.Boolean
+      description: The X axis becomes absolute.
     - id: absY
       type: System.Boolean
+      description: The Y axis becomes absolute.
     - id: absZ
       type: System.Boolean
+      description: The Z axis becomes absolute.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: Returns the vector with its absolute value axes.
     content.vb: Public Function Abs(absX As Boolean = True, absY As Boolean = True, absZ As Boolean = True) As Vector3DInt
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Abs*
   nameWithType.vb: Vector3DInt.Abs(Boolean, Boolean, Boolean)
@@ -985,61 +1062,36 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Neg
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 81
+    startLine: 99
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Inverts the values ​​of a vector.
+  example: []
   syntax:
     content: public readonly Vector3DInt Neg(bool negX = true, bool negY = true, bool negZ = true)
     parameters:
     - id: negX
       type: System.Boolean
+      description: The X axis becomes inverted.
     - id: negY
       type: System.Boolean
+      description: The Y axis becomes inverted.
     - id: negZ
       type: System.Boolean
+      description: The Z axis becomes inverted.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: Returns the axes of an inverted vector.
     content.vb: Public Function Neg(negX As Boolean = True, negY As Boolean = True, negZ As Boolean = True) As Vector3DInt
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Neg*
   nameWithType.vb: Vector3DInt.Neg(Boolean, Boolean, Boolean)
   fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Neg(Boolean, Boolean, Boolean)
   name.vb: Neg(Boolean, Boolean, Boolean)
-- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.RoundToInt
-  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.RoundToInt
-  id: RoundToInt
-  parent: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
-  langs:
-  - csharp
-  - vb
-  name: RoundToInt()
-  nameWithType: Vector3DInt.RoundToInt()
-  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.RoundToInt()
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: RoundToInt
-    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 89
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.Numerics
-  example: []
-  syntax:
-    content: public readonly Vector3DInt RoundToInt()
-    return:
-      type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
-    content.vb: Public Function RoundToInt() As Vector3DInt
-  overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.RoundToInt*
-  implements:
-  - Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.RoundToInt
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Neg(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt@)
   commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Neg(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt@)
   id: Neg(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt@)
@@ -1054,21 +1106,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Neg
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 92
+    startLine: 107
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Inverts the values ​​of a vector.
+  example: []
   syntax:
     content: public static Vector3DInt Neg(in Vector3DInt a)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: The vector to be inverted.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: Returns the axes of an inverted vector.
     content.vb: Public Shared Function Neg(a As Vector3DInt) As Vector3DInt
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Neg*
   nameWithType.vb: Vector3DInt.Neg(Vector3DInt)
@@ -1088,21 +1144,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Magnitude
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 93
+    startLine: 109
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns the length of this vector
+  example: []
   syntax:
     content: public static float Magnitude(in Vector3DInt a)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: One of the values.
     return:
       type: System.Single
+      description: vector length.
     content.vb: Public Shared Function Magnitude(a As Vector3DInt) As Single
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Magnitude*
   nameWithType.vb: Vector3DInt.Magnitude(Vector3DInt)
@@ -1122,23 +1182,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Distance
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 94
+    startLine: 111
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns the distance between a and b.
+  example: []
   syntax:
     content: public static float Distance(in Vector3DInt a, in Vector3DInt b)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: One of the values.
     - id: b
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: The other value.
     return:
       type: System.Single
+      description: The distance between two vectors.
     content.vb: Public Shared Function Distance(a As Vector3DInt, b As Vector3DInt) As Single
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Distance*
   nameWithType.vb: Vector3DInt.Distance(Vector3DInt, Vector3DInt)
@@ -1158,21 +1223,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SqrMagnitude
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 95
+    startLine: 113
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns the squared length of this vector
+  example: []
   syntax:
     content: public static int SqrMagnitude(in Vector3DInt a)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: One of the values.
     return:
       type: System.Int32
+      description: square length of the vector.
     content.vb: Public Shared Function SqrMagnitude(a As Vector3DInt) As Integer
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.SqrMagnitude*
   nameWithType.vb: Vector3DInt.SqrMagnitude(Vector3DInt)
@@ -1192,60 +1261,68 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Abs
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 96
+    startLine: 115
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns an absolute value of the vector.
+  example: []
   syntax:
     content: public static Vector3DInt Abs(in Vector3DInt a)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: The vector to become absolute.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: Returns the vector with its absolute value axes.
     content.vb: Public Shared Function Abs(a As Vector3DInt) As Vector3DInt
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Abs*
   nameWithType.vb: Vector3DInt.Abs(Vector3DInt)
   fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Abs(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
   name.vb: Abs(Vector3DInt)
-- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.RoundToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt@)
-  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.RoundToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt@)
-  id: RoundToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt@)
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.RoundToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.RoundToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  id: RoundToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
   parent: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
   langs:
   - csharp
   - vb
-  name: RoundToInt(in Vector3DInt)
-  nameWithType: Vector3DInt.RoundToInt(in Vector3DInt)
-  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.RoundToInt(in Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
+  name: RoundToInt(in Vector3D)
+  nameWithType: Vector3DInt.RoundToInt(in Vector3D)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.RoundToInt(in Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RoundToInt
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 97
+    startLine: 119
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Converts a floating-point vector to an integer vector by performing a Round for each value.
+  example: []
   syntax:
-    content: public static Vector3DInt RoundToInt(in Vector3DInt a)
+    content: public static Vector3DInt RoundToInt(in Vector3D a)
     parameters:
     - id: a
-      type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+      description: The vector that will be converted and rounded
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
-    content.vb: Public Shared Function RoundToInt(a As Vector3DInt) As Vector3DInt
+      description: Returns the converted and rounded vector
+    content.vb: Public Shared Function RoundToInt(a As Vector3D) As Vector3DInt
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.RoundToInt*
-  nameWithType.vb: Vector3DInt.RoundToInt(Vector3DInt)
-  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.RoundToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
-  name.vb: RoundToInt(Vector3DInt)
+  nameWithType.vb: Vector3DInt.RoundToInt(Vector3D)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.RoundToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  name.vb: RoundToInt(Vector3D)
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Min(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt,Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
   commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Min(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt,Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
   id: Min(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt,Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
@@ -1260,23 +1337,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Min
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 98
+    startLine: 121
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns a vector that is made from the smallest components of two vectors.
+  example: []
   syntax:
     content: public static Vector3DInt Min(Vector3DInt lhs, Vector3DInt rhs)
     parameters:
     - id: lhs
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: One of the values.
     - id: rhs
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: The other value.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: Whichever of the two values is lower.
     content.vb: Public Shared Function Min(lhs As Vector3DInt, rhs As Vector3DInt) As Vector3DInt
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Min*
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Max(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt,Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
@@ -1293,93 +1375,106 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Max
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 99
+    startLine: 123
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns a vector that is made from the largest components of two vectors.
+  example: []
   syntax:
     content: public static Vector3DInt Max(Vector3DInt lhs, Vector3DInt rhs)
     parameters:
     - id: lhs
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: One of the values.
     - id: rhs
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: The other value.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: Whichever of the two values is higher.
     content.vb: Public Shared Function Max(lhs As Vector3DInt, rhs As Vector3DInt) As Vector3DInt
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Max*
-- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.FloorToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt@)
-  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.FloorToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt@)
-  id: FloorToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt@)
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.FloorToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.FloorToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  id: FloorToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
   parent: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
   langs:
   - csharp
   - vb
-  name: FloorToInt(in Vector3DInt)
-  nameWithType: Vector3DInt.FloorToInt(in Vector3DInt)
-  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.FloorToInt(in Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
+  name: FloorToInt(in Vector3D)
+  nameWithType: Vector3DInt.FloorToInt(in Vector3D)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.FloorToInt(in Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: FloorToInt
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 101
+    startLine: 127
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Converts a floating-point vector to an integer vector and applies a Floor to each value.
+  example: []
   syntax:
-    content: public static Vector3DInt FloorToInt(in Vector3DInt a)
+    content: public static Vector3DInt FloorToInt(in Vector3D a)
     parameters:
     - id: a
-      type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+      description: The vector to be converted is floor
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
-    content.vb: Public Shared Function FloorToInt(a As Vector3DInt) As Vector3DInt
+      description: Returns the converted vector and floor
+    content.vb: Public Shared Function FloorToInt(a As Vector3D) As Vector3DInt
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.FloorToInt*
-  nameWithType.vb: Vector3DInt.FloorToInt(Vector3DInt)
-  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.FloorToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
-  name.vb: FloorToInt(Vector3DInt)
-- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.CeilToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt@)
-  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.CeilToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt@)
-  id: CeilToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt@)
+  nameWithType.vb: Vector3DInt.FloorToInt(Vector3D)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.FloorToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  name.vb: FloorToInt(Vector3D)
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.CeilToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.CeilToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
+  id: CeilToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3D@)
   parent: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
   langs:
   - csharp
   - vb
-  name: CeilToInt(in Vector3DInt)
-  nameWithType: Vector3DInt.CeilToInt(in Vector3DInt)
-  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.CeilToInt(in Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
+  name: CeilToInt(in Vector3D)
+  nameWithType: Vector3DInt.CeilToInt(in Vector3D)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.CeilToInt(in Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: CeilToInt
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 109
+    startLine: 137
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Converts a floating-point vector to an integer vector and applies a Ceiling to each value.
+  example: []
   syntax:
-    content: public static Vector3DInt CeilToInt(in Vector3DInt a)
+    content: public static Vector3DInt CeilToInt(in Vector3D a)
     parameters:
     - id: a
-      type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+      description: The vector to be converted is ceiling
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
-    content.vb: Public Shared Function CeilToInt(a As Vector3DInt) As Vector3DInt
+      description: Returns the converted vector and ceiling
+    content.vb: Public Shared Function CeilToInt(a As Vector3D) As Vector3DInt
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.CeilToInt*
-  nameWithType.vb: Vector3DInt.CeilToInt(Vector3DInt)
-  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.CeilToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
-  name.vb: CeilToInt(Vector3DInt)
+  nameWithType.vb: Vector3DInt.CeilToInt(Vector3D)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.CeilToInt(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  name.vb: CeilToInt(Vector3D)
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.op_Addition(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt,Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
   commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.op_Addition(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt,Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
   id: op_Addition(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt,Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
@@ -1394,23 +1489,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Addition
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 117
+    startLine: 148
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Addition operation between two values.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3DInt" data-throw-if-not-resolved="false"></xref> + <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3DInt" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static Vector3DInt operator +(Vector3DInt a, Vector3DInt b)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: First module.
     - id: b
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: Second module.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: The result of the addition.
     content.vb: Public Shared Operator +(a As Vector3DInt, b As Vector3DInt) As Vector3DInt
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.op_Addition*
   nameWithType.vb: Vector3DInt.+(Vector3DInt, Vector3DInt)
@@ -1430,23 +1530,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Subtraction
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 125
+    startLine: 159
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Subtraction operation between two values.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3DInt" data-throw-if-not-resolved="false"></xref> - <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3DInt" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static Vector3DInt operator -(Vector3DInt a, Vector3DInt b)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: First module.
     - id: b
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: Second module.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: The result of the subtraction.
     content.vb: Public Shared Operator -(a As Vector3DInt, b As Vector3DInt) As Vector3DInt
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.op_Subtraction*
   nameWithType.vb: Vector3DInt.-(Vector3DInt, Vector3DInt)
@@ -1466,23 +1571,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Division
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 133
+    startLine: 170
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Division operation between two values.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3DInt" data-throw-if-not-resolved="false"></xref> / <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3DInt" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static Vector3DInt operator /(Vector3DInt a, Vector3DInt b)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: First module.
     - id: b
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: Second module.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: The result of the division.
     content.vb: Public Shared Operator /(a As Vector3DInt, b As Vector3DInt) As Vector3DInt
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.op_Division*
   nameWithType.vb: Vector3DInt./(Vector3DInt, Vector3DInt)
@@ -1502,23 +1612,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Multiply
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 141
+    startLine: 181
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Multiplication operation between two values.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3DInt" data-throw-if-not-resolved="false"></xref> * <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3DInt" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static Vector3DInt operator *(Vector3DInt a, Vector3DInt b)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: First module.
     - id: b
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: Second module.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: The result of the multiplication.
     content.vb: Public Shared Operator *(a As Vector3DInt, b As Vector3DInt) As Vector3DInt
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.op_Multiply*
   nameWithType.vb: Vector3DInt.*(Vector3DInt, Vector3DInt)
@@ -1538,23 +1653,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Division
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 149
+    startLine: 192
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Division operation between two values.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3DInt" data-throw-if-not-resolved="false"></xref> / <xref href="System.Int32" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static Vector3DInt operator /(Vector3DInt a, int b)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: First module.
     - id: b
       type: System.Int32
+      description: Second module.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: The result of the division.
     content.vb: Public Shared Operator /(a As Vector3DInt, b As Integer) As Vector3DInt
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.op_Division*
   nameWithType.vb: Vector3DInt./(Vector3DInt, Integer)
@@ -1574,23 +1694,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Multiply
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 157
+    startLine: 203
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Multiplication operation between two values.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3DInt" data-throw-if-not-resolved="false"></xref> * <xref href="System.Int32" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static Vector3DInt operator *(Vector3DInt a, int b)
     parameters:
     - id: a
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: First module.
     - id: b
       type: System.Int32
+      description: Second module.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: The result of the multiplication.
     content.vb: Public Shared Operator *(a As Vector3DInt, b As Integer) As Vector3DInt
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.op_Multiply*
   nameWithType.vb: Vector3DInt.*(Vector3DInt, Integer)
@@ -1610,23 +1735,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Equality
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 165
+    startLine: 214
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Indicates whether this instance is equal to another instance of the same type.
+  example: []
   syntax:
     content: public static bool operator ==(in Vector3DInt lhs, in Vector3DInt rhs)
     parameters:
     - id: lhs
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: Object to be compared.
     - id: rhs
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: Object of comparison.
     return:
       type: System.Boolean
+      description: Returns the result of the comparison.
     content.vb: Public Shared Operator =(lhs As Vector3DInt, rhs As Vector3DInt) As Boolean
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.op_Equality*
   nameWithType.vb: Vector3DInt.=(Vector3DInt, Vector3DInt)
@@ -1646,23 +1776,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Inequality
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 166
+    startLine: 219
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Indicates whether this instance is different from another instance of the same type.
+  example: []
   syntax:
     content: public static bool operator !=(in Vector3DInt lhs, in Vector3DInt rhs)
     parameters:
     - id: lhs
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: Object to be compared.
     - id: rhs
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: Object of comparison.
     return:
       type: System.Boolean
+      description: Returns the result of the comparison.
     content.vb: Public Shared Operator <>(lhs As Vector3DInt, rhs As Vector3DInt) As Boolean
   overload: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.op_Inequality*
   nameWithType.vb: Vector3DInt.<>(Vector3DInt, Vector3DInt)
@@ -1682,19 +1817,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 168
+    startLine: 222
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Implicit conversion operator.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3DInt" data-throw-if-not-resolved="false"></xref> to <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector2DInt" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static implicit operator Vector2DInt(Vector3DInt v)
     parameters:
     - id: v
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: Object to be converted.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
     content.vb: Public Shared Widening Operator CType(v As Vector3DInt) As Vector2DInt
@@ -1716,19 +1854,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 170
+    startLine: 225
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Implicit conversion operator.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3DInt" data-throw-if-not-resolved="false"></xref> to <xref href="Godot.Vector2" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static implicit operator Vector2(Vector3DInt v)
     parameters:
     - id: v
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: Object to be converted.
     return:
       type: Godot.Vector2
     content.vb: Public Shared Widening Operator CType(v As Vector3DInt) As Vector2
@@ -1750,19 +1891,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 171
+    startLine: 228
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Implicit conversion operator.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3DInt" data-throw-if-not-resolved="false"></xref> to <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector2D" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static implicit operator Vector2D(Vector3DInt v)
     parameters:
     - id: v
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: Object to be converted.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
     content.vb: Public Shared Widening Operator CType(v As Vector3DInt) As Vector2D
@@ -1784,19 +1928,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 172
+    startLine: 231
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Implicit conversion operator.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3DInt" data-throw-if-not-resolved="false"></xref> to <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3D" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static implicit operator Vector3D(Vector3DInt v)
     parameters:
     - id: v
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: Object to be converted.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
     content.vb: Public Shared Widening Operator CType(v As Vector3DInt) As Vector3D
@@ -1818,19 +1965,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 173
+    startLine: 234
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Implicit conversion operator.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3DInt" data-throw-if-not-resolved="false"></xref> to <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector4D" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static implicit operator Vector4D(Vector3DInt v)
     parameters:
     - id: v
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
+      description: Object to be converted.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
     content.vb: Public Shared Widening Operator CType(v As Vector3DInt) As Vector4D
@@ -1852,19 +2002,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Explicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 175
+    startLine: 237
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Explicit conversion operator.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector2D" data-throw-if-not-resolved="false"></xref> to <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3DInt" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static explicit operator Vector3DInt(Vector2D v)
     parameters:
     - id: v
       type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+      description: Object to be converted.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
     content.vb: Public Shared Narrowing Operator CType(v As Vector2D) As Vector3DInt
@@ -1886,19 +2039,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Explicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 176
+    startLine: 240
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Explicit conversion operator.(<xref href="Godot.Vector2" data-throw-if-not-resolved="false"></xref> to <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3DInt" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static explicit operator Vector3DInt(Vector2 v)
     parameters:
     - id: v
       type: Godot.Vector2
+      description: Object to be converted.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
     content.vb: Public Shared Narrowing Operator CType(v As Vector2) As Vector3DInt
@@ -1920,19 +2076,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Explicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 177
+    startLine: 243
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Explicit conversion operator.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3D" data-throw-if-not-resolved="false"></xref> to <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3DInt" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static explicit operator Vector3DInt(Vector3D v)
     parameters:
     - id: v
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+      description: Object to be converted.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
     content.vb: Public Shared Narrowing Operator CType(v As Vector3D) As Vector3DInt
@@ -1954,19 +2113,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3DInt.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Explicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3DInt.cs
-    startLine: 178
+    startLine: 246
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Explicit conversion operator.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector4D" data-throw-if-not-resolved="false"></xref> to <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3DInt" data-throw-if-not-resolved="false"></xref>)
+  example: []
   syntax:
     content: public static explicit operator Vector3DInt(Vector4D v)
     parameters:
     - id: v
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: Object to be converted.
     return:
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
     content.vb: Public Shared Narrowing Operator CType(v As Vector4D) As Vector3DInt
@@ -2013,70 +2175,6 @@ references:
   - uid: Cobilas.GodotEngine.Utility.Numerics
     name: Numerics
     href: Cobilas.GodotEngine.Utility.Numerics.html
-- uid: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}
-  commentId: T:Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}
-  parent: Cobilas.GodotEngine.Utility.Numerics
-  definition: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1
-  href: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric-1.html
-  name: IIntVectorGeneric<Vector3DInt>
-  nameWithType: IIntVectorGeneric<Vector3DInt>
-  fullName: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric<Cobilas.GodotEngine.Utility.Numerics.Vector3DInt>
-  nameWithType.vb: IIntVectorGeneric(Of Vector3DInt)
-  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric(Of Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
-  name.vb: IIntVectorGeneric(Of Vector3DInt)
-  spec.csharp:
-  - uid: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1
-    name: IIntVectorGeneric
-    href: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric-1.html
-  - name: <
-  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
-    name: Vector3DInt
-    href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html
-  - name: '>'
-  spec.vb:
-  - uid: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1
-    name: IIntVectorGeneric
-    href: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric-1.html
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
-    name: Vector3DInt
-    href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html
-  - name: )
-- uid: System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}
-  commentId: T:System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}
-  parent: System
-  definition: System.IEquatable`1
-  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  name: IEquatable<Vector3DInt>
-  nameWithType: IEquatable<Vector3DInt>
-  fullName: System.IEquatable<Cobilas.GodotEngine.Utility.Numerics.Vector3DInt>
-  nameWithType.vb: IEquatable(Of Vector3DInt)
-  fullName.vb: System.IEquatable(Of Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
-  name.vb: IEquatable(Of Vector3DInt)
-  spec.csharp:
-  - uid: System.IEquatable`1
-    name: IEquatable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  - name: <
-  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
-    name: Vector3DInt
-    href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html
-  - name: '>'
-  spec.vb:
-  - uid: System.IEquatable`1
-    name: IEquatable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
-    name: Vector3DInt
-    href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html
-  - name: )
 - uid: Cobilas.GodotEngine.Utility.Numerics.IIntVector
   commentId: T:Cobilas.GodotEngine.Utility.Numerics.IIntVector
   parent: Cobilas.GodotEngine.Utility.Numerics
@@ -2206,59 +2304,6 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.gettype
   - name: (
   - name: )
-- uid: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1
-  commentId: T:Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1
-  href: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric-1.html
-  name: IIntVectorGeneric<TVector>
-  nameWithType: IIntVectorGeneric<TVector>
-  fullName: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric<TVector>
-  nameWithType.vb: IIntVectorGeneric(Of TVector)
-  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric(Of TVector)
-  name.vb: IIntVectorGeneric(Of TVector)
-  spec.csharp:
-  - uid: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1
-    name: IIntVectorGeneric
-    href: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric-1.html
-  - name: <
-  - name: TVector
-  - name: '>'
-  spec.vb:
-  - uid: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1
-    name: IIntVectorGeneric
-    href: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric-1.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TVector
-  - name: )
-- uid: System.IEquatable`1
-  commentId: T:System.IEquatable`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  name: IEquatable<T>
-  nameWithType: IEquatable<T>
-  fullName: System.IEquatable<T>
-  nameWithType.vb: IEquatable(Of T)
-  fullName.vb: System.IEquatable(Of T)
-  name.vb: IEquatable(Of T)
-  spec.csharp:
-  - uid: System.IEquatable`1
-    name: IEquatable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.IEquatable`1
-    name: IEquatable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
 - uid: System
   commentId: N:System
   isExternal: true
@@ -2301,6 +2346,24 @@ references:
   name: AxisCount
   nameWithType: IIntVector.AxisCount
   fullName: Cobilas.GodotEngine.Utility.Numerics.IIntVector.AxisCount
+- uid: Godot.Vector2.LengthSquared
+  commentId: M:Godot.Vector2.LengthSquared
+  isExternal: true
+  name: LengthSquared()
+  nameWithType: Vector2.LengthSquared()
+  fullName: Godot.Vector2.LengthSquared()
+  spec.csharp:
+  - uid: Godot.Vector2.LengthSquared
+    name: LengthSquared
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.Vector2.LengthSquared
+    name: LengthSquared
+    isExternal: true
+  - name: (
+  - name: )
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.magnitude*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.magnitude
   href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html#Cobilas_GodotEngine_Utility_Numerics_Vector3DInt_magnitude
@@ -2325,6 +2388,33 @@ references:
   nameWithType.vb: Single
   fullName.vb: Single
   name.vb: Single
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVector
+  commentId: T:Cobilas.GodotEngine.Utility.Numerics.IVector
+  parent: Cobilas.GodotEngine.Utility.Numerics
+  href: Cobilas.GodotEngine.Utility.Numerics.IVector.html
+  name: IVector
+  nameWithType: IVector
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.aspect*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.aspect
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html#Cobilas_GodotEngine_Utility_Numerics_Vector3DInt_aspect
+  name: aspect
+  nameWithType: Vector3DInt.aspect
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.aspect
+- uid: Cobilas.GodotEngine.Utility.Numerics.IIntVector.aspect
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IIntVector.aspect
+  parent: Cobilas.GodotEngine.Utility.Numerics.IIntVector
+  href: Cobilas.GodotEngine.Utility.Numerics.IIntVector.html#Cobilas_GodotEngine_Utility_Numerics_IIntVector_aspect
+  name: aspect
+  nameWithType: IIntVector.aspect
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IIntVector.aspect
+- uid: Cobilas.GodotEngine.Utility.Numerics.IVector.magnitude
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IVector.magnitude
+  parent: Cobilas.GodotEngine.Utility.Numerics.IVector
+  href: Cobilas.GodotEngine.Utility.Numerics.IVector.html#Cobilas_GodotEngine_Utility_Numerics_IVector_magnitude
+  name: magnitude
+  nameWithType: IVector.magnitude
+  fullName: Cobilas.GodotEngine.Utility.Numerics.IVector.magnitude
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.sqrMagnitude*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.sqrMagnitude
   href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html#Cobilas_GodotEngine_Utility_Numerics_Vector3DInt_sqrMagnitude
@@ -2344,16 +2434,6 @@ references:
   name: ceilToInt
   nameWithType: Vector3DInt.ceilToInt
   fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.ceilToInt
-- uid: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.ceilToInt
-  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.ceilToInt
-  parent: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}
-  definition: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.ceilToInt
-  href: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IIntVectorGeneric_1_ceilToInt
-  name: ceilToInt
-  nameWithType: IIntVectorGeneric<Vector3DInt>.ceilToInt
-  fullName: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric<Cobilas.GodotEngine.Utility.Numerics.Vector3DInt>.ceilToInt
-  nameWithType.vb: IIntVectorGeneric(Of Vector3DInt).ceilToInt
-  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric(Of Cobilas.GodotEngine.Utility.Numerics.Vector3DInt).ceilToInt
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
   commentId: T:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
   parent: Cobilas.GodotEngine.Utility.Numerics
@@ -2361,38 +2441,12 @@ references:
   name: Vector3DInt
   nameWithType: Vector3DInt
   fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
-- uid: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.ceilToInt
-  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.ceilToInt
-  href: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IIntVectorGeneric_1_ceilToInt
-  name: ceilToInt
-  nameWithType: IIntVectorGeneric<TVector>.ceilToInt
-  fullName: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric<TVector>.ceilToInt
-  nameWithType.vb: IIntVectorGeneric(Of TVector).ceilToInt
-  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric(Of TVector).ceilToInt
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.floorToInt*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.floorToInt
   href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html#Cobilas_GodotEngine_Utility_Numerics_Vector3DInt_floorToInt
   name: floorToInt
   nameWithType: Vector3DInt.floorToInt
   fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.floorToInt
-- uid: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.floorToInt
-  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.floorToInt
-  parent: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}
-  definition: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.floorToInt
-  href: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IIntVectorGeneric_1_floorToInt
-  name: floorToInt
-  nameWithType: IIntVectorGeneric<Vector3DInt>.floorToInt
-  fullName: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric<Cobilas.GodotEngine.Utility.Numerics.Vector3DInt>.floorToInt
-  nameWithType.vb: IIntVectorGeneric(Of Vector3DInt).floorToInt
-  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric(Of Cobilas.GodotEngine.Utility.Numerics.Vector3DInt).floorToInt
-- uid: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.floorToInt
-  commentId: P:Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.floorToInt
-  href: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IIntVectorGeneric_1_floorToInt
-  name: floorToInt
-  nameWithType: IIntVectorGeneric<TVector>.floorToInt
-  fullName: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric<TVector>.floorToInt
-  nameWithType.vb: IIntVectorGeneric(Of TVector).floorToInt
-  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric(Of TVector).floorToInt
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Zero*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Zero
   href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html#Cobilas_GodotEngine_Utility_Numerics_Vector3DInt_Zero
@@ -2546,61 +2600,6 @@ references:
   name: ValueType
   nameWithType: ValueType
   fullName: System.ValueType
-- uid: System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
-  commentId: M:System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
-  parent: System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}
-  definition: System.IEquatable`1.Equals(`0)
-  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
-  name: Equals(Vector3DInt)
-  nameWithType: IEquatable<Vector3DInt>.Equals(Vector3DInt)
-  fullName: System.IEquatable<Cobilas.GodotEngine.Utility.Numerics.Vector3DInt>.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
-  nameWithType.vb: IEquatable(Of Vector3DInt).Equals(Vector3DInt)
-  fullName.vb: System.IEquatable(Of Cobilas.GodotEngine.Utility.Numerics.Vector3DInt).Equals(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
-  spec.csharp:
-  - uid: System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
-    name: Equals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
-  - name: (
-  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
-    name: Vector3DInt
-    href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html
-  - name: )
-  spec.vb:
-  - uid: System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
-    name: Equals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
-  - name: (
-  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
-    name: Vector3DInt
-    href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html
-  - name: )
-- uid: System.IEquatable`1.Equals(`0)
-  commentId: M:System.IEquatable`1.Equals(`0)
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
-  name: Equals(T)
-  nameWithType: IEquatable<T>.Equals(T)
-  fullName: System.IEquatable<T>.Equals(T)
-  nameWithType.vb: IEquatable(Of T).Equals(T)
-  fullName.vb: System.IEquatable(Of T).Equals(T)
-  spec.csharp:
-  - uid: System.IEquatable`1.Equals(`0)
-    name: Equals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
-  - name: (
-  - name: T
-  - name: )
-  spec.vb:
-  - uid: System.IEquatable`1.Equals(`0)
-    name: Equals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
-  - name: (
-  - name: T
-  - name: )
 - uid: System.ValueType.GetHashCode
   commentId: M:System.ValueType.GetHashCode
   parent: System.ValueType
@@ -2764,54 +2763,6 @@ references:
   name: Neg
   nameWithType: Vector3DInt.Neg
   fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Neg
-- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.RoundToInt*
-  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.RoundToInt
-  href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html#Cobilas_GodotEngine_Utility_Numerics_Vector3DInt_RoundToInt
-  name: RoundToInt
-  nameWithType: Vector3DInt.RoundToInt
-  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.RoundToInt
-- uid: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.RoundToInt
-  commentId: M:Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.RoundToInt
-  parent: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}
-  definition: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.RoundToInt
-  href: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IIntVectorGeneric_1_RoundToInt
-  name: RoundToInt()
-  nameWithType: IIntVectorGeneric<Vector3DInt>.RoundToInt()
-  fullName: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric<Cobilas.GodotEngine.Utility.Numerics.Vector3DInt>.RoundToInt()
-  nameWithType.vb: IIntVectorGeneric(Of Vector3DInt).RoundToInt()
-  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric(Of Cobilas.GodotEngine.Utility.Numerics.Vector3DInt).RoundToInt()
-  spec.csharp:
-  - uid: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.RoundToInt
-    name: RoundToInt
-    href: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IIntVectorGeneric_1_RoundToInt
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.RoundToInt
-    name: RoundToInt
-    href: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IIntVectorGeneric_1_RoundToInt
-  - name: (
-  - name: )
-- uid: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.RoundToInt
-  commentId: M:Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.RoundToInt
-  href: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IIntVectorGeneric_1_RoundToInt
-  name: RoundToInt()
-  nameWithType: IIntVectorGeneric<TVector>.RoundToInt()
-  fullName: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric<TVector>.RoundToInt()
-  nameWithType.vb: IIntVectorGeneric(Of TVector).RoundToInt()
-  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric(Of TVector).RoundToInt()
-  spec.csharp:
-  - uid: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.RoundToInt
-    name: RoundToInt
-    href: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IIntVectorGeneric_1_RoundToInt
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric`1.RoundToInt
-    name: RoundToInt
-    href: Cobilas.GodotEngine.Utility.Numerics.IIntVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IIntVectorGeneric_1_RoundToInt
-  - name: (
-  - name: )
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Magnitude*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Magnitude
   href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html#Cobilas_GodotEngine_Utility_Numerics_Vector3DInt_Magnitude_Cobilas_GodotEngine_Utility_Numerics_Vector3DInt__
@@ -2830,6 +2781,19 @@ references:
   name: SqrMagnitude
   nameWithType: Vector3DInt.SqrMagnitude
   fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.SqrMagnitude
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.RoundToInt*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.RoundToInt
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html#Cobilas_GodotEngine_Utility_Numerics_Vector3DInt_RoundToInt_Cobilas_GodotEngine_Utility_Numerics_Vector3D__
+  name: RoundToInt
+  nameWithType: Vector3DInt.RoundToInt
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.RoundToInt
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+  commentId: T:Cobilas.GodotEngine.Utility.Numerics.Vector3D
+  parent: Cobilas.GodotEngine.Utility.Numerics
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html
+  name: Vector3D
+  nameWithType: Vector3D
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Min*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Min
   href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html#Cobilas_GodotEngine_Utility_Numerics_Vector3DInt_Min_Cobilas_GodotEngine_Utility_Numerics_Vector3DInt_Cobilas_GodotEngine_Utility_Numerics_Vector3DInt_
@@ -2844,13 +2808,13 @@ references:
   fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.Max
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.FloorToInt*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.FloorToInt
-  href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html#Cobilas_GodotEngine_Utility_Numerics_Vector3DInt_FloorToInt_Cobilas_GodotEngine_Utility_Numerics_Vector3DInt__
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html#Cobilas_GodotEngine_Utility_Numerics_Vector3DInt_FloorToInt_Cobilas_GodotEngine_Utility_Numerics_Vector3D__
   name: FloorToInt
   nameWithType: Vector3DInt.FloorToInt
   fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.FloorToInt
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.CeilToInt*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.CeilToInt
-  href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html#Cobilas_GodotEngine_Utility_Numerics_Vector3DInt_CeilToInt_Cobilas_GodotEngine_Utility_Numerics_Vector3DInt__
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html#Cobilas_GodotEngine_Utility_Numerics_Vector3DInt_CeilToInt_Cobilas_GodotEngine_Utility_Numerics_Vector3D__
   name: CeilToInt
   nameWithType: Vector3DInt.CeilToInt
   fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.CeilToInt
@@ -2944,6 +2908,13 @@ references:
   - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.op_Inequality*
     name: '!='
     href: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.html#Cobilas_GodotEngine_Utility_Numerics_Vector3DInt_op_Inequality_Cobilas_GodotEngine_Utility_Numerics_Vector3DInt__Cobilas_GodotEngine_Utility_Numerics_Vector3DInt__
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+  commentId: T:Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+  parent: Cobilas.GodotEngine.Utility.Numerics
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt.html
+  name: Vector2DInt
+  nameWithType: Vector2DInt
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.op_Implicit*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector3DInt.op_Implicit
   name: implicit operator
@@ -2956,13 +2927,6 @@ references:
   - name: implicit
   - name: " "
   - name: operator
-- uid: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
-  commentId: T:Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
-  parent: Cobilas.GodotEngine.Utility.Numerics
-  href: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt.html
-  name: Vector2DInt
-  nameWithType: Vector2DInt
-  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
 - uid: Godot.Vector2
   commentId: T:Godot.Vector2
   parent: Godot
@@ -2983,13 +2947,6 @@ references:
   name: Vector2D
   nameWithType: Vector2D
   fullName: Cobilas.GodotEngine.Utility.Numerics.Vector2D
-- uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-  commentId: T:Cobilas.GodotEngine.Utility.Numerics.Vector3D
-  parent: Cobilas.GodotEngine.Utility.Numerics
-  href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html
-  name: Vector3D
-  nameWithType: Vector3D
-  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3D
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D
   commentId: T:Cobilas.GodotEngine.Utility.Numerics.Vector4D
   parent: Cobilas.GodotEngine.Utility.Numerics

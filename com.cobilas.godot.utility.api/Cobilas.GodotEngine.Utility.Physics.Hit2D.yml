@@ -6,10 +6,15 @@ items:
   parent: Cobilas.GodotEngine.Utility.Physics
   children:
   - Cobilas.GodotEngine.Utility.Physics.Hit2D.Collision
+  - Cobilas.GodotEngine.Utility.Physics.Hit2D.Collision_Key
   - Cobilas.GodotEngine.Utility.Physics.Hit2D.ID
+  - Cobilas.GodotEngine.Utility.Physics.Hit2D.ID_Key
+  - Cobilas.GodotEngine.Utility.Physics.Hit2D.IsValid(Godot.Collections.Dictionary)
   - Cobilas.GodotEngine.Utility.Physics.Hit2D.MetaData
+  - Cobilas.GodotEngine.Utility.Physics.Hit2D.MetaData_Key
   - Cobilas.GodotEngine.Utility.Physics.Hit2D.Name
   - Cobilas.GodotEngine.Utility.Physics.Hit2D.RID
+  - Cobilas.GodotEngine.Utility.Physics.Hit2D.RID_Key
   - Cobilas.GodotEngine.Utility.Physics.Hit2D.op_Explicit(Godot.Collections.Dictionary)~Cobilas.GodotEngine.Utility.Physics.Hit2D
   langs:
   - csharp
@@ -21,14 +26,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Physics/Hit2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Hit2D
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Hit2D.cs
-    startLine: 4
+    startLine: 6
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Responsible for storing information about a 2D collision.
+  example: []
   syntax:
     content: public struct Hit2D
     content.vb: Public Structure Hit2D
@@ -39,6 +46,122 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetType
+- uid: Cobilas.GodotEngine.Utility.Physics.Hit2D.ID_Key
+  commentId: F:Cobilas.GodotEngine.Utility.Physics.Hit2D.ID_Key
+  id: ID_Key
+  parent: Cobilas.GodotEngine.Utility.Physics.Hit2D
+  langs:
+  - csharp
+  - vb
+  name: ID_Key
+  nameWithType: Hit2D.ID_Key
+  fullName: Cobilas.GodotEngine.Utility.Physics.Hit2D.ID_Key
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/Physics/Hit2D.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ID_Key
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Hit2D.cs
+    startLine: 8
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Represents the collider_id key.
+  example: []
+  syntax:
+    content: public const string ID_Key = "collider_id"
+    return:
+      type: System.String
+    content.vb: Public Const ID_Key As String = "collider_id"
+- uid: Cobilas.GodotEngine.Utility.Physics.Hit2D.RID_Key
+  commentId: F:Cobilas.GodotEngine.Utility.Physics.Hit2D.RID_Key
+  id: RID_Key
+  parent: Cobilas.GodotEngine.Utility.Physics.Hit2D
+  langs:
+  - csharp
+  - vb
+  name: RID_Key
+  nameWithType: Hit2D.RID_Key
+  fullName: Cobilas.GodotEngine.Utility.Physics.Hit2D.RID_Key
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/Physics/Hit2D.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: RID_Key
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Hit2D.cs
+    startLine: 10
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Represents the rid key.
+  example: []
+  syntax:
+    content: public const string RID_Key = "rid"
+    return:
+      type: System.String
+    content.vb: Public Const RID_Key As String = "rid"
+- uid: Cobilas.GodotEngine.Utility.Physics.Hit2D.Collision_Key
+  commentId: F:Cobilas.GodotEngine.Utility.Physics.Hit2D.Collision_Key
+  id: Collision_Key
+  parent: Cobilas.GodotEngine.Utility.Physics.Hit2D
+  langs:
+  - csharp
+  - vb
+  name: Collision_Key
+  nameWithType: Hit2D.Collision_Key
+  fullName: Cobilas.GodotEngine.Utility.Physics.Hit2D.Collision_Key
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/Physics/Hit2D.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Collision_Key
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Hit2D.cs
+    startLine: 12
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Represents the collider key.
+  example: []
+  syntax:
+    content: public const string Collision_Key = "collider"
+    return:
+      type: System.String
+    content.vb: Public Const Collision_Key As String = "collider"
+- uid: Cobilas.GodotEngine.Utility.Physics.Hit2D.MetaData_Key
+  commentId: F:Cobilas.GodotEngine.Utility.Physics.Hit2D.MetaData_Key
+  id: MetaData_Key
+  parent: Cobilas.GodotEngine.Utility.Physics.Hit2D
+  langs:
+  - csharp
+  - vb
+  name: MetaData_Key
+  nameWithType: Hit2D.MetaData_Key
+  fullName: Cobilas.GodotEngine.Utility.Physics.Hit2D.MetaData_Key
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/Physics/Hit2D.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: MetaData_Key
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Hit2D.cs
+    startLine: 14
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Represents the metadata key.
+  example: []
+  syntax:
+    content: public const string MetaData_Key = "metadata"
+    return:
+      type: System.String
+    content.vb: Public Const MetaData_Key As String = "metadata"
 - uid: Cobilas.GodotEngine.Utility.Physics.Hit2D.ID
   commentId: P:Cobilas.GodotEngine.Utility.Physics.Hit2D.ID
   id: ID
@@ -53,19 +176,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Physics/Hit2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ID
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Hit2D.cs
-    startLine: 5
+    startLine: 18
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: The colliding object's ID.
+  example: []
   syntax:
     content: public readonly int ID { get; }
     parameters: []
     return:
       type: System.Int32
+      description: Returns the object ID.
     content.vb: Public Property ID As Integer
   overload: Cobilas.GodotEngine.Utility.Physics.Hit2D.ID*
 - uid: Cobilas.GodotEngine.Utility.Physics.Hit2D.RID
@@ -82,19 +208,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Physics/Hit2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RID
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Hit2D.cs
-    startLine: 6
+    startLine: 21
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: The intersecting object's <xref href="Godot.RID" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public readonly RID RID { get; }
     parameters: []
     return:
       type: Godot.RID
+      description: Returns the RID of the object.
     content.vb: Public Property RID As RID
   overload: Cobilas.GodotEngine.Utility.Physics.Hit2D.RID*
 - uid: Cobilas.GodotEngine.Utility.Physics.Hit2D.Collision
@@ -111,19 +240,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Physics/Hit2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Collision
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Hit2D.cs
-    startLine: 7
+    startLine: 24
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: The colliding object.
+  example: []
   syntax:
     content: public readonly Node Collision { get; }
     parameters: []
     return:
       type: Godot.Node
+      description: Returns the collider of the object.
     content.vb: Public Property Collision As Node
   overload: Cobilas.GodotEngine.Utility.Physics.Hit2D.Collision*
 - uid: Cobilas.GodotEngine.Utility.Physics.Hit2D.MetaData
@@ -140,19 +272,24 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Physics/Hit2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: MetaData
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Hit2D.cs
-    startLine: 8
+    startLine: 28
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: >-
+    The intersecting shape's metadata. This metadata is different from
+        <xref href="Godot.Object.GetMeta(System.String%2cSystem.Object)" data-throw-if-not-resolved="false"></xref> , and is set with <xref href="Godot.Physics2DServer.ShapeSetData(Godot.RID%2cSystem.Object)" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public readonly object MetaData { get; }
     parameters: []
     return:
       type: System.Object
+      description: Returns the object's metadata.
     content.vb: Public Property MetaData As Object
   overload: Cobilas.GodotEngine.Utility.Physics.Hit2D.MetaData*
 - uid: Cobilas.GodotEngine.Utility.Physics.Hit2D.Name
@@ -169,21 +306,62 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Physics/Hit2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Name
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Hit2D.cs
-    startLine: 9
+    startLine: 31
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: The name of the object.
+  example: []
   syntax:
     content: public readonly string Name { get; }
     parameters: []
     return:
       type: System.String
+      description: Returns the name of the object.
     content.vb: Public ReadOnly Property Name As String
   overload: Cobilas.GodotEngine.Utility.Physics.Hit2D.Name*
+- uid: Cobilas.GodotEngine.Utility.Physics.Hit2D.IsValid(Godot.Collections.Dictionary)
+  commentId: M:Cobilas.GodotEngine.Utility.Physics.Hit2D.IsValid(Godot.Collections.Dictionary)
+  id: IsValid(Godot.Collections.Dictionary)
+  parent: Cobilas.GodotEngine.Utility.Physics.Hit2D
+  langs:
+  - csharp
+  - vb
+  name: IsValid(Dictionary?)
+  nameWithType: Hit2D.IsValid(Dictionary?)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Hit2D.IsValid(Godot.Collections.Dictionary?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Physics/Hit2D.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: IsValid
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Hit2D.cs
+    startLine: 42
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Checks if the <xref href="Godot.Collections.Dictionary" data-throw-if-not-resolved="false"></xref> type value is valid for conversion.
+  example: []
+  syntax:
+    content: public static bool IsValid(Dictionary? dictionary)
+    parameters:
+    - id: dictionary
+      type: Godot.Collections.Dictionary
+      description: The object to be checked.
+    return:
+      type: System.Boolean
+      description: Returns <code>true</code> when the <xref href="Godot.Collections.Dictionary" data-throw-if-not-resolved="false"></xref> type value is valid.
+    content.vb: Public Shared Function IsValid(dictionary As Dictionary) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Physics.Hit2D.IsValid*
+  nameWithType.vb: Hit2D.IsValid(Dictionary)
+  fullName.vb: Cobilas.GodotEngine.Utility.Physics.Hit2D.IsValid(Godot.Collections.Dictionary)
+  name.vb: IsValid(Dictionary)
 - uid: Cobilas.GodotEngine.Utility.Physics.Hit2D.op_Explicit(Godot.Collections.Dictionary)~Cobilas.GodotEngine.Utility.Physics.Hit2D
   commentId: M:Cobilas.GodotEngine.Utility.Physics.Hit2D.op_Explicit(Godot.Collections.Dictionary)~Cobilas.GodotEngine.Utility.Physics.Hit2D
   id: op_Explicit(Godot.Collections.Dictionary)~Cobilas.GodotEngine.Utility.Physics.Hit2D
@@ -198,23 +376,34 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Physics/Hit2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Explicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Hit2D.cs
-    startLine: 18
+    startLine: 54
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Explicit conversion operator.(<xref href="Godot.Collections.Dictionary" data-throw-if-not-resolved="false"></xref> to <xref href="Cobilas.GodotEngine.Utility.Physics.Hit2D" data-throw-if-not-resolved="false"></xref>)
+  remarks: The conversion from <xref href="Godot.Collections.Dictionary" data-throw-if-not-resolved="false"></xref> to <xref href="Cobilas.GodotEngine.Utility.Physics.Hit2D" data-throw-if-not-resolved="false"></xref> will be valid when <xref href="Godot.Collections.Dictionary" data-throw-if-not-resolved="false"></xref> contains the keys ​​"collider_id", "rid", "metadata" and "collider".
+  example: []
   syntax:
     content: public static explicit operator Hit2D(Dictionary? D)
     parameters:
     - id: D
       type: Godot.Collections.Dictionary
+      description: Object to be converted.
     return:
       type: Cobilas.GodotEngine.Utility.Physics.Hit2D
     content.vb: Public Shared Narrowing Operator CType(D As Dictionary) As Hit2D
   overload: Cobilas.GodotEngine.Utility.Physics.Hit2D.op_Explicit*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Collections.Dictionary" data-throw-if-not-resolved="false"></xref> object is null.
+  - type: System.InvalidCastException
+    commentId: T:System.InvalidCastException
+    description: The exception is called when the Dictionary object is not valid for conversion because it does not contain the keys "collider_id", "rid", "metadata" and "collider".
   nameWithType.vb: Hit2D.CType(Dictionary)
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Hit2D.CType(Godot.Collections.Dictionary)
   name.vb: CType(Dictionary)
@@ -474,6 +663,17 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
 - uid: Cobilas.GodotEngine.Utility.Physics.Hit2D.ID*
   commentId: Overload:Cobilas.GodotEngine.Utility.Physics.Hit2D.ID
   href: Cobilas.GodotEngine.Utility.Physics.Hit2D.html#Cobilas_GodotEngine_Utility_Physics_Hit2D_ID
@@ -491,12 +691,6 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
-- uid: Cobilas.GodotEngine.Utility.Physics.Hit2D.RID*
-  commentId: Overload:Cobilas.GodotEngine.Utility.Physics.Hit2D.RID
-  href: Cobilas.GodotEngine.Utility.Physics.Hit2D.html#Cobilas_GodotEngine_Utility_Physics_Hit2D_RID
-  name: RID
-  nameWithType: Hit2D.RID
-  fullName: Cobilas.GodotEngine.Utility.Physics.Hit2D.RID
 - uid: Godot.RID
   commentId: T:Godot.RID
   parent: Godot
@@ -504,6 +698,12 @@ references:
   name: RID
   nameWithType: RID
   fullName: Godot.RID
+- uid: Cobilas.GodotEngine.Utility.Physics.Hit2D.RID*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Physics.Hit2D.RID
+  href: Cobilas.GodotEngine.Utility.Physics.Hit2D.html#Cobilas_GodotEngine_Utility_Physics_Hit2D_RID
+  name: RID
+  nameWithType: Hit2D.RID
+  fullName: Cobilas.GodotEngine.Utility.Physics.Hit2D.RID
 - uid: Godot
   commentId: N:Godot
   href: Godot.html
@@ -523,41 +723,108 @@ references:
   name: Node
   nameWithType: Node
   fullName: Godot.Node
+- uid: Godot.Object.GetMeta(System.String,System.Object)
+  commentId: M:Godot.Object.GetMeta(System.String,System.Object)
+  parent: Godot.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetMeta(string, object)
+  nameWithType: Object.GetMeta(string, object)
+  fullName: Godot.Object.GetMeta(string, object)
+  nameWithType.vb: Object.GetMeta(String, Object)
+  fullName.vb: Godot.Object.GetMeta(String, Object)
+  name.vb: GetMeta(String, Object)
+  spec.csharp:
+  - uid: Godot.Object.GetMeta(System.String,System.Object)
+    name: GetMeta
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Godot.Object.GetMeta(System.String,System.Object)
+    name: GetMeta
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Godot.Physics2DServer.ShapeSetData(Godot.RID,System.Object)
+  commentId: M:Godot.Physics2DServer.ShapeSetData(Godot.RID,System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: ShapeSetData(RID, object)
+  nameWithType: Physics2DServer.ShapeSetData(RID, object)
+  fullName: Godot.Physics2DServer.ShapeSetData(Godot.RID, object)
+  nameWithType.vb: Physics2DServer.ShapeSetData(RID, Object)
+  fullName.vb: Godot.Physics2DServer.ShapeSetData(Godot.RID, Object)
+  name.vb: ShapeSetData(RID, Object)
+  spec.csharp:
+  - uid: Godot.Physics2DServer.ShapeSetData(Godot.RID,System.Object)
+    name: ShapeSetData
+    isExternal: true
+  - name: (
+  - uid: Godot.RID
+    name: RID
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Godot.Physics2DServer.ShapeSetData(Godot.RID,System.Object)
+    name: ShapeSetData
+    isExternal: true
+  - name: (
+  - uid: Godot.RID
+    name: RID
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
 - uid: Cobilas.GodotEngine.Utility.Physics.Hit2D.MetaData*
   commentId: Overload:Cobilas.GodotEngine.Utility.Physics.Hit2D.MetaData
   href: Cobilas.GodotEngine.Utility.Physics.Hit2D.html#Cobilas_GodotEngine_Utility_Physics_Hit2D_MetaData
   name: MetaData
   nameWithType: Hit2D.MetaData
   fullName: Cobilas.GodotEngine.Utility.Physics.Hit2D.MetaData
+- uid: Godot.Object
+  commentId: T:Godot.Object
+  parent: Godot
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: Godot.Object
 - uid: Cobilas.GodotEngine.Utility.Physics.Hit2D.Name*
   commentId: Overload:Cobilas.GodotEngine.Utility.Physics.Hit2D.Name
   href: Cobilas.GodotEngine.Utility.Physics.Hit2D.html#Cobilas_GodotEngine_Utility_Physics_Hit2D_Name
   name: Name
   nameWithType: Hit2D.Name
   fullName: Cobilas.GodotEngine.Utility.Physics.Hit2D.Name
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
-- uid: Cobilas.GodotEngine.Utility.Physics.Hit2D.op_Explicit*
-  commentId: Overload:Cobilas.GodotEngine.Utility.Physics.Hit2D.op_Explicit
-  name: explicit operator
-  nameWithType: Hit2D.explicit operator
-  fullName: Cobilas.GodotEngine.Utility.Physics.Hit2D.explicit operator
-  nameWithType.vb: Hit2D.CType
-  fullName.vb: Cobilas.GodotEngine.Utility.Physics.Hit2D.CType
-  name.vb: CType
-  spec.csharp:
-  - name: explicit
-  - name: " "
-  - name: operator
 - uid: Godot.Collections.Dictionary
   commentId: T:Godot.Collections.Dictionary
   parent: Godot.Collections
@@ -565,13 +832,23 @@ references:
   name: Dictionary
   nameWithType: Dictionary
   fullName: Godot.Collections.Dictionary
-- uid: Cobilas.GodotEngine.Utility.Physics.Hit2D
-  commentId: T:Cobilas.GodotEngine.Utility.Physics.Hit2D
-  parent: Cobilas.GodotEngine.Utility.Physics
-  href: Cobilas.GodotEngine.Utility.Physics.Hit2D.html
-  name: Hit2D
-  nameWithType: Hit2D
-  fullName: Cobilas.GodotEngine.Utility.Physics.Hit2D
+- uid: Cobilas.GodotEngine.Utility.Physics.Hit2D.IsValid*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Physics.Hit2D.IsValid
+  href: Cobilas.GodotEngine.Utility.Physics.Hit2D.html#Cobilas_GodotEngine_Utility_Physics_Hit2D_IsValid_Godot_Collections_Dictionary_
+  name: IsValid
+  nameWithType: Hit2D.IsValid
+  fullName: Cobilas.GodotEngine.Utility.Physics.Hit2D.IsValid
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: Godot.Collections
   commentId: N:Godot.Collections
   isExternal: true
@@ -594,3 +871,36 @@ references:
   - uid: Godot.Collections
     name: Collections
     isExternal: true
+- uid: Cobilas.GodotEngine.Utility.Physics.Hit2D
+  commentId: T:Cobilas.GodotEngine.Utility.Physics.Hit2D
+  parent: Cobilas.GodotEngine.Utility.Physics
+  href: Cobilas.GodotEngine.Utility.Physics.Hit2D.html
+  name: Hit2D
+  nameWithType: Hit2D
+  fullName: Cobilas.GodotEngine.Utility.Physics.Hit2D
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.InvalidCastException
+  commentId: T:System.InvalidCastException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidcastexception
+  name: InvalidCastException
+  nameWithType: InvalidCastException
+  fullName: System.InvalidCastException
+- uid: Cobilas.GodotEngine.Utility.Physics.Hit2D.op_Explicit*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Physics.Hit2D.op_Explicit
+  name: explicit operator
+  nameWithType: Hit2D.explicit operator
+  fullName: Cobilas.GodotEngine.Utility.Physics.Hit2D.explicit operator
+  nameWithType.vb: Hit2D.CType
+  fullName.vb: Cobilas.GodotEngine.Utility.Physics.Hit2D.CType
+  name.vb: CType
+  spec.csharp:
+  - name: explicit
+  - name: " "
+  - name: operator

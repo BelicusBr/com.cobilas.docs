@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Coroutine/CoroutineManager.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: CoroutineManager
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/CoroutineManager.cs
@@ -30,13 +30,15 @@ items:
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: This class is responsible for managing all coroutines.
+  example: []
   syntax:
     content: >-
-      [RunTimeInitializationClass("CoroutineManager")]
+      [RunTimeInitializationClass("CoroutineManager", Priority.StartBefore, 0, false)]
 
       public class CoroutineManager : Node, IDisposable
     content.vb: >-
-      <RunTimeInitializationClass("CoroutineManager")>
+      <RunTimeInitializationClass("CoroutineManager", Priority.StartBefore, 0, False)>
 
       Public Class CoroutineManager Inherits Node Implements IDisposable
   inheritance:
@@ -277,10 +279,16 @@ items:
   - Godot.Node.Godot.Node_GD_CB_Extension.SetNodeScale(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   attributes:
   - type: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute
-    ctor: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.#ctor(System.String)
+    ctor: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.#ctor(System.String,Cobilas.GodotEngine.Utility.Runtime.Priority,System.Int32,System.Boolean)
     arguments:
     - type: System.String
       value: CoroutineManager
+    - type: Cobilas.GodotEngine.Utility.Runtime.Priority
+      value: 0
+    - type: System.Int32
+      value: 0
+    - type: System.Boolean
+      value: false
 - uid: Cobilas.GodotEngine.Utility.CoroutineManager._Ready
   commentId: M:Cobilas.GodotEngine.Utility.CoroutineManager._Ready
   id: _Ready
@@ -295,7 +303,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Coroutine/CoroutineManager.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: _Ready
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/CoroutineManager.cs
@@ -331,7 +339,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Coroutine/CoroutineManager.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: _Process
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/CoroutineManager.cs
@@ -373,7 +381,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Coroutine/CoroutineManager.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: _PhysicsProcess
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/CoroutineManager.cs
@@ -415,11 +423,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Coroutine/CoroutineManager.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: StartCoroutine
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/CoroutineManager.cs
-    startLine: 39
+    startLine: 41
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -430,10 +438,16 @@ items:
     parameters:
     - id: enumerator
       type: System.Collections.IEnumerator
+      description: The <xref href="System.Collections.IEnumerator" data-throw-if-not-resolved="false"></xref> that will be used to start the <xref href="Cobilas.GodotEngine.Utility.Coroutine" data-throw-if-not-resolved="false"></xref>.
     return:
       type: Cobilas.GodotEngine.Utility.Coroutine
+      description: Returns the <xref href="Cobilas.GodotEngine.Utility.Coroutine" data-throw-if-not-resolved="false"></xref> process that was started.
     content.vb: Public Shared Function StartCoroutine(enumerator As IEnumerator) As Coroutine
   overload: Cobilas.GodotEngine.Utility.CoroutineManager.StartCoroutine*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When the object is null.
   nameWithType.vb: CoroutineManager.StartCoroutine(IEnumerator)
   fullName.vb: Cobilas.GodotEngine.Utility.CoroutineManager.StartCoroutine(System.Collections.IEnumerator)
   name.vb: StartCoroutine(IEnumerator)
@@ -451,11 +465,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Coroutine/CoroutineManager.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: StopCoroutine
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/CoroutineManager.cs
-    startLine: 48
+    startLine: 53
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -466,6 +480,7 @@ items:
     parameters:
     - id: Coroutine
       type: Cobilas.GodotEngine.Utility.Coroutine
+      description: The <xref href="Cobilas.GodotEngine.Utility.Coroutine" data-throw-if-not-resolved="false"></xref> that will be closed.
     content.vb: Public Shared Sub StopCoroutine(Coroutine As Coroutine)
   overload: Cobilas.GodotEngine.Utility.CoroutineManager.StopCoroutine*
   nameWithType.vb: CoroutineManager.StopCoroutine(Coroutine)
@@ -485,11 +500,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Coroutine/CoroutineManager.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: StopAllCoroutines
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/CoroutineManager.cs
-    startLine: 59
+    startLine: 63
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -513,20 +528,21 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Coroutine/CoroutineManager.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GenID
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/CoroutineManager.cs
-    startLine: 65
+    startLine: 70
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
-  summary: Generates an ID to be used in a coroutine.
+  summary: Generates an ID to be used in a <xref href="Cobilas.GodotEngine.Utility.Coroutine" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public static string GenID()
     return:
       type: System.String
+      description: Returns in <xref href="System.String" data-throw-if-not-resolved="false"></xref> form the ID generated.
     content.vb: Public Shared Function GenID() As String
   overload: Cobilas.GodotEngine.Utility.CoroutineManager.GenID*
 references:
@@ -7240,12 +7256,6 @@ references:
   name: IEnumerator
   nameWithType: IEnumerator
   fullName: System.Collections.IEnumerator
-- uid: Cobilas.GodotEngine.Utility.CoroutineManager.StartCoroutine*
-  commentId: Overload:Cobilas.GodotEngine.Utility.CoroutineManager.StartCoroutine
-  href: Cobilas.GodotEngine.Utility.CoroutineManager.html#Cobilas_GodotEngine_Utility_CoroutineManager_StartCoroutine_System_Collections_IEnumerator_
-  name: StartCoroutine
-  nameWithType: CoroutineManager.StartCoroutine
-  fullName: Cobilas.GodotEngine.Utility.CoroutineManager.StartCoroutine
 - uid: Cobilas.GodotEngine.Utility.Coroutine
   commentId: T:Cobilas.GodotEngine.Utility.Coroutine
   parent: Cobilas.GodotEngine.Utility
@@ -7253,6 +7263,19 @@ references:
   name: Coroutine
   nameWithType: Coroutine
   fullName: Cobilas.GodotEngine.Utility.Coroutine
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Cobilas.GodotEngine.Utility.CoroutineManager.StartCoroutine*
+  commentId: Overload:Cobilas.GodotEngine.Utility.CoroutineManager.StartCoroutine
+  href: Cobilas.GodotEngine.Utility.CoroutineManager.html#Cobilas_GodotEngine_Utility_CoroutineManager_StartCoroutine_System_Collections_IEnumerator_
+  name: StartCoroutine
+  nameWithType: CoroutineManager.StartCoroutine
+  fullName: Cobilas.GodotEngine.Utility.CoroutineManager.StartCoroutine
 - uid: System.Collections
   commentId: N:System.Collections
   isExternal: true
@@ -7292,12 +7315,6 @@ references:
   name: StopAllCoroutines
   nameWithType: CoroutineManager.StopAllCoroutines
   fullName: Cobilas.GodotEngine.Utility.CoroutineManager.StopAllCoroutines
-- uid: Cobilas.GodotEngine.Utility.CoroutineManager.GenID*
-  commentId: Overload:Cobilas.GodotEngine.Utility.CoroutineManager.GenID
-  href: Cobilas.GodotEngine.Utility.CoroutineManager.html#Cobilas_GodotEngine_Utility_CoroutineManager_GenID
-  name: GenID
-  nameWithType: CoroutineManager.GenID
-  fullName: Cobilas.GodotEngine.Utility.CoroutineManager.GenID
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -7309,3 +7326,9 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: Cobilas.GodotEngine.Utility.CoroutineManager.GenID*
+  commentId: Overload:Cobilas.GodotEngine.Utility.CoroutineManager.GenID
+  href: Cobilas.GodotEngine.Utility.CoroutineManager.html#Cobilas_GodotEngine_Utility_CoroutineManager_GenID
+  name: GenID
+  nameWithType: CoroutineManager.GenID
+  fullName: Cobilas.GodotEngine.Utility.CoroutineManager.GenID

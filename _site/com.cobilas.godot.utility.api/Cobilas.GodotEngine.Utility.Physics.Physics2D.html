@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Physics2D | Cobilas Documentation ">
       
-      
+      <meta name="description" content="This class provides methods for detecting 2D physics bodies.">
       <link rel="icon" href="../images/favicon-96x96.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.godot.utility/new/main.dev/apiSpec/new?filename=Cobilas_GodotEngine_Utility_Physics_Physics2D.md&amp;value=---%0Auid%3A%20Cobilas.GodotEngine.Utility.Physics.Physics2D%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.godot.utility/new/main/apiSpec/new?filename=Cobilas_GodotEngine_Utility_Physics_Physics2D.md&amp;value=---%0Auid%3A%20Cobilas.GodotEngine.Utility.Physics.Physics2D%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Cobilas_GodotEngine_Utility_Physics_Physics2D" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D" class="text-break">
-Class Physics2D  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class Physics2D  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,11 +97,12 @@ Class Physics2D  <a class="header-action link-secondary" title="View source" hre
   <dl><dt>Assembly</dt><dd>com.cobilas.godot.utility.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>This class provides methods for detecting 2D physics bodies.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[RunTimeInitializationClass(&quot;Physics2D&quot;)]
+    <pre><code class="lang-csharp hljs">[RunTimeInitializationClass(&quot;Physics2D&quot;, Priority.StartBefore, 0, false)]
 public class Physics2D : Node2D, IDisposable</code></pre>
   </div>
 
@@ -1196,33 +1197,39 @@ public class Physics2D : Node2D, IDisposable</code></pre>
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCast_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCast*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCast_Godot_Camera2D_Godot_Vector2_Godot_Vector2_Cobilas_GodotEngine_Utility_Physics_RayHit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCast(Godot.Camera2D,Godot.Vector2,Godot.Vector2,Cobilas.GodotEngine.Utility.Physics.RayHit2D@)">
-  RayCast(Camera2D, Vector2, Vector2, out RayHit2D)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  RayCast(Camera2D?, Vector2, Vector2, out RayHit2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L214"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Projects a ray that intersects the collider of a 2d object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCast(Camera2D camera, Vector2 from, Vector2 to, out RayHit2D hit)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCast(Camera2D? camera, Vector2 from, Vector2 to, out RayHit2D hit)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>from</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The starting point of the collision ray.</p>
+</dd>
     <dt><code>to</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The endpoint of the collision ray.</p>
+</dd>
     <dt><code>hit</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Physics.RayHit2D.html">RayHit2D</a></dt>
-    <dd></dd>
+    <dd><p>The output parameter for the object's collision information.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when any 2d object is detected.</p>
+</dd>
   </dl>
 
 
@@ -1232,41 +1239,54 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCast_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCast*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCast_Godot_Camera2D_Godot_Vector2_Godot_Vector2_Godot_CollisionObject2D___Cobilas_GodotEngine_Utility_Physics_RayHit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCast(Godot.Camera2D,Godot.Vector2,Godot.Vector2,Godot.CollisionObject2D[],Cobilas.GodotEngine.Utility.Physics.RayHit2D@)">
-  RayCast(Camera2D, Vector2, Vector2, CollisionObject2D[], out RayHit2D)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  RayCast(Camera2D?, Vector2, Vector2, CollisionObject2D[]?, out RayHit2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L220"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Projects a ray that intersects the collider of a 2d object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCast(Camera2D camera, Vector2 from, Vector2 to, CollisionObject2D[] exclude, out RayHit2D hit)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCast(Camera2D? camera, Vector2 from, Vector2 to, CollisionObject2D[]? exclude, out RayHit2D hit)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>from</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The starting point of the collision ray.</p>
+</dd>
     <dt><code>to</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The endpoint of the collision ray.</p>
+</dd>
     <dt><code>exclude</code> <span class="xref">CollisionObject2D</span>[]</dt>
-    <dd></dd>
+    <dd><p>The objects that will be excluded from the search.</p>
+</dd>
     <dt><code>hit</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Physics.RayHit2D.html">RayHit2D</a></dt>
-    <dd></dd>
+    <dd><p>The output parameter for the object's collision information.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when any 2d object is detected.</p>
+</dd>
   </dl>
 
 
@@ -1276,6 +1296,12 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+  </dl>
 
 
 
@@ -1283,10 +1309,11 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCast_Godot_Camera2D_Godot_Vector2_Godot_Vector2_Godot_CollisionObject2D___System_UInt32_Cobilas_GodotEngine_Utility_Physics_RayHit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCast(Godot.Camera2D,Godot.Vector2,Godot.Vector2,Godot.CollisionObject2D[],System.UInt32,Cobilas.GodotEngine.Utility.Physics.RayHit2D@)">
   RayCast(Camera2D?, Vector2, Vector2, CollisionObject2D[]?, uint, out RayHit2D)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L231"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Projects a ray that intersects the collider of a 2d object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1296,23 +1323,30 @@ public class Physics2D : Node2D, IDisposable</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>from</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The starting point of the collision ray.</p>
+</dd>
     <dt><code>to</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The endpoint of the collision ray.</p>
+</dd>
     <dt><code>exclude</code> <span class="xref">CollisionObject2D</span>[]</dt>
-    <dd></dd>
+    <dd><p>The objects that will be excluded from the search.</p>
+</dd>
     <dt><code>collisionLayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
+    <dd><p>The collision layers that will be checked by the 2D physical body detection methods.</p>
+</dd>
     <dt><code>hit</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Physics.RayHit2D.html">RayHit2D</a></dt>
-    <dd></dd>
+    <dd><p>The output parameter for the object's collision information.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when any 2d object is detected.</p>
+</dd>
   </dl>
 
 
@@ -1322,41 +1356,54 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCast_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCast*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCast_Godot_Camera2D_Godot_Vector2_Godot_Vector2_System_UInt32_Cobilas_GodotEngine_Utility_Physics_RayHit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCast(Godot.Camera2D,Godot.Vector2,Godot.Vector2,System.UInt32,Cobilas.GodotEngine.Utility.Physics.RayHit2D@)">
-  RayCast(Camera2D, Vector2, Vector2, uint, out RayHit2D)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  RayCast(Camera2D?, Vector2, Vector2, uint, out RayHit2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L217"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Projects a ray that intersects the collider of a 2d object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCast(Camera2D camera, Vector2 from, Vector2 to, uint collisionLayer, out RayHit2D hit)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCast(Camera2D? camera, Vector2 from, Vector2 to, uint collisionLayer, out RayHit2D hit)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>from</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The starting point of the collision ray.</p>
+</dd>
     <dt><code>to</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The endpoint of the collision ray.</p>
+</dd>
     <dt><code>collisionLayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
+    <dd><p>The collision layers that will be checked by the 2D physical body detection methods.</p>
+</dd>
     <dt><code>hit</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Physics.RayHit2D.html">RayHit2D</a></dt>
-    <dd></dd>
+    <dd><p>The output parameter for the object's collision information.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when any 2d object is detected.</p>
+</dd>
   </dl>
 
 
@@ -1366,41 +1413,54 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastAllBox_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllBox*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastAllBox_Godot_Camera2D_Godot_Vector2_Godot_Vector2_Godot_CollisionObject2D___System_Collections_Generic_List_Cobilas_GodotEngine_Utility_Physics_Hit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllBox(Godot.Camera2D,Godot.Vector2,Godot.Vector2,Godot.CollisionObject2D[],System.Collections.Generic.List{Cobilas.GodotEngine.Utility.Physics.Hit2D})">
-  RayCastAllBox(Camera2D, Vector2, Vector2, CollisionObject2D[], List&lt;Hit2D&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  RayCastAllBox(Camera2D?, Vector2, Vector2, CollisionObject2D[]?, List&lt;Hit2D&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L127"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a 2D box that allows you to detect multiple objects in 2D space simultaneously.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCastAllBox(Camera2D camera, Vector2 mousePosition, Vector2 size, CollisionObject2D[] exclude, List&lt;Hit2D&gt; list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCastAllBox(Camera2D? camera, Vector2 mousePosition, Vector2 size, CollisionObject2D[]? exclude, List&lt;Hit2D&gt;? list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>mousePosition</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The point from which the ray will be thrown.</p>
+</dd>
     <dt><code>size</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The size of the 2d collision box.</p>
+</dd>
     <dt><code>exclude</code> <span class="xref">CollisionObject2D</span>[]</dt>
-    <dd></dd>
+    <dd><p>The objects that will be excluded from the search.</p>
+</dd>
     <dt><code>list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.Physics.Hit2D.html">Hit2D</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Here the objects that were detected by the 2d collision ray will be added.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when multiple 2D objects are detected.</p>
+</dd>
   </dl>
 
 
@@ -1410,43 +1470,60 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a> object is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastAllBox_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllBox*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastAllBox_Godot_Camera2D_Godot_Vector2_Godot_Vector2_Godot_CollisionObject2D___System_UInt32_System_Collections_Generic_List_Cobilas_GodotEngine_Utility_Physics_Hit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllBox(Godot.Camera2D,Godot.Vector2,Godot.Vector2,Godot.CollisionObject2D[],System.UInt32,System.Collections.Generic.List{Cobilas.GodotEngine.Utility.Physics.Hit2D})">
-  RayCastAllBox(Camera2D?, Vector2, Vector2, CollisionObject2D[]?, uint, List&lt;Hit2D&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  RayCastAllBox(Camera2D?, Vector2, Vector2, CollisionObject2D[]?, uint, List&lt;Hit2D&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a 2D box that allows you to detect multiple objects in 2D space simultaneously.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCastAllBox(Camera2D? camera, Vector2 mousePosition, Vector2 size, CollisionObject2D[]? exclude, uint collisionLayer, List&lt;Hit2D&gt; list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCastAllBox(Camera2D? camera, Vector2 mousePosition, Vector2 size, CollisionObject2D[]? exclude, uint collisionLayer, List&lt;Hit2D&gt;? list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>mousePosition</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The point from which the ray will be thrown.</p>
+</dd>
     <dt><code>size</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The size of the 2d collision box.</p>
+</dd>
     <dt><code>exclude</code> <span class="xref">CollisionObject2D</span>[]</dt>
-    <dd></dd>
+    <dd><p>The objects that will be excluded from the search.</p>
+</dd>
     <dt><code>collisionLayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
+    <dd><p>The collision layers that will be checked by the 2D physical body detection methods.</p>
+</dd>
     <dt><code>list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.Physics.Hit2D.html">Hit2D</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Here the objects that were detected by the 2d collision ray will be added.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when multiple 2D objects are detected.</p>
+</dd>
   </dl>
 
 
@@ -1456,39 +1533,54 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a> object is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastAllBox_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllBox*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastAllBox_Godot_Camera2D_Godot_Vector2_Godot_Vector2_System_Collections_Generic_List_Cobilas_GodotEngine_Utility_Physics_Hit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllBox(Godot.Camera2D,Godot.Vector2,Godot.Vector2,System.Collections.Generic.List{Cobilas.GodotEngine.Utility.Physics.Hit2D})">
-  RayCastAllBox(Camera2D, Vector2, Vector2, List&lt;Hit2D&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  RayCastAllBox(Camera2D?, Vector2, Vector2, List&lt;Hit2D&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L121"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a 2D box that allows you to detect multiple objects in 2D space simultaneously.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCastAllBox(Camera2D camera, Vector2 mousePosition, Vector2 size, List&lt;Hit2D&gt; list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCastAllBox(Camera2D? camera, Vector2 mousePosition, Vector2 size, List&lt;Hit2D&gt;? list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>mousePosition</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The point from which the ray will be thrown.</p>
+</dd>
     <dt><code>size</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The size of the 2d collision box.</p>
+</dd>
     <dt><code>list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.Physics.Hit2D.html">Hit2D</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Here the objects that were detected by the 2d collision ray will be added.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when multiple 2D objects are detected.</p>
+</dd>
   </dl>
 
 
@@ -1498,41 +1590,57 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a> object is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastAllBox_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllBox*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastAllBox_Godot_Camera2D_Godot_Vector2_Godot_Vector2_System_UInt32_System_Collections_Generic_List_Cobilas_GodotEngine_Utility_Physics_Hit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllBox(Godot.Camera2D,Godot.Vector2,Godot.Vector2,System.UInt32,System.Collections.Generic.List{Cobilas.GodotEngine.Utility.Physics.Hit2D})">
-  RayCastAllBox(Camera2D, Vector2, Vector2, uint, List&lt;Hit2D&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  RayCastAllBox(Camera2D?, Vector2, Vector2, uint, List&lt;Hit2D&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L124"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a 2D box that allows you to detect multiple objects in 2D space simultaneously.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCastAllBox(Camera2D camera, Vector2 mousePosition, Vector2 size, uint collisionLayer, List&lt;Hit2D&gt; list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCastAllBox(Camera2D? camera, Vector2 mousePosition, Vector2 size, uint collisionLayer, List&lt;Hit2D&gt;? list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>mousePosition</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The point from which the ray will be thrown.</p>
+</dd>
     <dt><code>size</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The size of the 2d collision box.</p>
+</dd>
     <dt><code>collisionLayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
+    <dd><p>The collision layers that will be checked by the 2D physical body detection methods.</p>
+</dd>
     <dt><code>list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.Physics.Hit2D.html">Hit2D</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Here the objects that were detected by the 2d collision ray will be added.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when multiple 2D objects are detected.</p>
+</dd>
   </dl>
 
 
@@ -1542,41 +1650,57 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a> object is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastAllCircle_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllCircle*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastAllCircle_Godot_Camera2D_Godot_Vector2_System_Single_Godot_CollisionObject2D___System_Collections_Generic_List_Cobilas_GodotEngine_Utility_Physics_Hit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllCircle(Godot.Camera2D,Godot.Vector2,System.Single,Godot.CollisionObject2D[],System.Collections.Generic.List{Cobilas.GodotEngine.Utility.Physics.Hit2D})">
-  RayCastAllCircle(Camera2D, Vector2, float, CollisionObject2D[], List&lt;Hit2D&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  RayCastAllCircle(Camera2D?, Vector2, float, CollisionObject2D[]?, List&lt;Hit2D&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a 2D circle that allows you to detect multiple objects in 2D space simultaneously.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCastAllCircle(Camera2D camera, Vector2 mousePosition, float radius, CollisionObject2D[] exclude, List&lt;Hit2D&gt; list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCastAllCircle(Camera2D? camera, Vector2 mousePosition, float radius, CollisionObject2D[]? exclude, List&lt;Hit2D&gt;? list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>mousePosition</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The point from which the ray will be thrown.</p>
+</dd>
     <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd><p>Defines the radius of the 2d collision circle.</p>
+</dd>
     <dt><code>exclude</code> <span class="xref">CollisionObject2D</span>[]</dt>
-    <dd></dd>
+    <dd><p>The objects that will be excluded from the search.</p>
+</dd>
     <dt><code>list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.Physics.Hit2D.html">Hit2D</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Here the objects that were detected by the 2d collision ray will be added.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when multiple 2D objects are detected.</p>
+</dd>
   </dl>
 
 
@@ -1586,43 +1710,60 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a> object is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastAllCircle_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllCircle*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastAllCircle_Godot_Camera2D_Godot_Vector2_System_Single_Godot_CollisionObject2D___System_UInt32_System_Collections_Generic_List_Cobilas_GodotEngine_Utility_Physics_Hit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllCircle(Godot.Camera2D,Godot.Vector2,System.Single,Godot.CollisionObject2D[],System.UInt32,System.Collections.Generic.List{Cobilas.GodotEngine.Utility.Physics.Hit2D})">
-  RayCastAllCircle(Camera2D?, Vector2, float, CollisionObject2D[]?, uint, List&lt;Hit2D&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  RayCastAllCircle(Camera2D?, Vector2, float, CollisionObject2D[]?, uint, List&lt;Hit2D&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L77"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a 2D circle that allows you to detect multiple objects in 2D space simultaneously.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCastAllCircle(Camera2D? camera, Vector2 mousePosition, float radius, CollisionObject2D[]? exclude, uint collisionLayer, List&lt;Hit2D&gt; list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCastAllCircle(Camera2D? camera, Vector2 mousePosition, float radius, CollisionObject2D[]? exclude, uint collisionLayer, List&lt;Hit2D&gt;? list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>mousePosition</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The point from which the ray will be thrown.</p>
+</dd>
     <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd><p>Defines the radius of the 2d collision circle.</p>
+</dd>
     <dt><code>exclude</code> <span class="xref">CollisionObject2D</span>[]</dt>
-    <dd></dd>
+    <dd><p>The objects that will be excluded from the search.</p>
+</dd>
     <dt><code>collisionLayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
+    <dd><p>The collision layers that will be checked by the 2D physical body detection methods.</p>
+</dd>
     <dt><code>list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.Physics.Hit2D.html">Hit2D</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Here the objects that were detected by the 2d collision ray will be added.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when multiple 2D objects are detected.</p>
+</dd>
   </dl>
 
 
@@ -1632,39 +1773,54 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a> object is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastAllCircle_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllCircle*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastAllCircle_Godot_Camera2D_Godot_Vector2_System_Single_System_Collections_Generic_List_Cobilas_GodotEngine_Utility_Physics_Hit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllCircle(Godot.Camera2D,Godot.Vector2,System.Single,System.Collections.Generic.List{Cobilas.GodotEngine.Utility.Physics.Hit2D})">
-  RayCastAllCircle(Camera2D, Vector2, float, List&lt;Hit2D&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  RayCastAllCircle(Camera2D?, Vector2, float, List&lt;Hit2D&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a 2D circle that allows you to detect multiple objects in 2D space simultaneously.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCastAllCircle(Camera2D camera, Vector2 mousePosition, float radius, List&lt;Hit2D&gt; list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCastAllCircle(Camera2D? camera, Vector2 mousePosition, float radius, List&lt;Hit2D&gt;? list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>mousePosition</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The point from which the ray will be thrown.</p>
+</dd>
     <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd><p>Defines the radius of the 2d collision circle.</p>
+</dd>
     <dt><code>list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.Physics.Hit2D.html">Hit2D</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Here the objects that were detected by the 2d collision ray will be added.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when multiple 2D objects are detected.</p>
+</dd>
   </dl>
 
 
@@ -1674,41 +1830,57 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a> object is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastAllCircle_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllCircle*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastAllCircle_Godot_Camera2D_Godot_Vector2_System_Single_System_UInt32_System_Collections_Generic_List_Cobilas_GodotEngine_Utility_Physics_Hit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllCircle(Godot.Camera2D,Godot.Vector2,System.Single,System.UInt32,System.Collections.Generic.List{Cobilas.GodotEngine.Utility.Physics.Hit2D})">
-  RayCastAllCircle(Camera2D, Vector2, float, uint, List&lt;Hit2D&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  RayCastAllCircle(Camera2D?, Vector2, float, uint, List&lt;Hit2D&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a 2D circle that allows you to detect multiple objects in 2D space simultaneously.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCastAllCircle(Camera2D camera, Vector2 mousePosition, float radius, uint collisionLayer, List&lt;Hit2D&gt; list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCastAllCircle(Camera2D? camera, Vector2 mousePosition, float radius, uint collisionLayer, List&lt;Hit2D&gt;? list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>mousePosition</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The point from which the ray will be thrown.</p>
+</dd>
     <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd><p>Defines the radius of the 2d collision circle.</p>
+</dd>
     <dt><code>collisionLayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
+    <dd><p>The collision layers that will be checked by the 2D physical body detection methods.</p>
+</dd>
     <dt><code>list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.Physics.Hit2D.html">Hit2D</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Here the objects that were detected by the 2d collision ray will be added.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when multiple 2D objects are detected.</p>
+</dd>
   </dl>
 
 
@@ -1718,39 +1890,54 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a> object is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastBox_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastBox*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastBox_Godot_Camera2D_Godot_Vector2_Godot_Vector2_Cobilas_GodotEngine_Utility_Physics_Hit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastBox(Godot.Camera2D,Godot.Vector2,Godot.Vector2,Cobilas.GodotEngine.Utility.Physics.Hit2D@)">
-  RayCastBox(Camera2D, Vector2, Vector2, out Hit2D)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  RayCastBox(Camera2D?, Vector2, Vector2, out Hit2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L94"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a 2D box that allows you to detect an object in 2D space.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCastBox(Camera2D camera, Vector2 mousePosition, Vector2 size, out Hit2D hit)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCastBox(Camera2D? camera, Vector2 mousePosition, Vector2 size, out Hit2D hit)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>mousePosition</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The point from which the ray will be thrown.</p>
+</dd>
     <dt><code>size</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The size of the 2d collision box.</p>
+</dd>
     <dt><code>hit</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Physics.Hit2D.html">Hit2D</a></dt>
-    <dd></dd>
+    <dd><p>The output parameter for the object's collision information.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when any 2d object is detected.</p>
+</dd>
   </dl>
 
 
@@ -1760,41 +1947,54 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastBox_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastBox*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastBox_Godot_Camera2D_Godot_Vector2_Godot_Vector2_Godot_CollisionObject2D___Cobilas_GodotEngine_Utility_Physics_Hit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastBox(Godot.Camera2D,Godot.Vector2,Godot.Vector2,Godot.CollisionObject2D[],Cobilas.GodotEngine.Utility.Physics.Hit2D@)">
-  RayCastBox(Camera2D, Vector2, Vector2, CollisionObject2D[], out Hit2D)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  RayCastBox(Camera2D?, Vector2, Vector2, CollisionObject2D[]?, out Hit2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a 2D box that allows you to detect an object in 2D space.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCastBox(Camera2D camera, Vector2 mousePosition, Vector2 size, CollisionObject2D[] exclude, out Hit2D hit)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCastBox(Camera2D? camera, Vector2 mousePosition, Vector2 size, CollisionObject2D[]? exclude, out Hit2D hit)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>mousePosition</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The point from which the ray will be thrown.</p>
+</dd>
     <dt><code>size</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The size of the 2d collision box.</p>
+</dd>
     <dt><code>exclude</code> <span class="xref">CollisionObject2D</span>[]</dt>
-    <dd></dd>
+    <dd><p>The objects that will be excluded from the search.</p>
+</dd>
     <dt><code>hit</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Physics.Hit2D.html">Hit2D</a></dt>
-    <dd></dd>
+    <dd><p>The output parameter for the object's collision information.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when any 2d object is detected.</p>
+</dd>
   </dl>
 
 
@@ -1804,43 +2004,57 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastBox_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastBox*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastBox_Godot_Camera2D_Godot_Vector2_Godot_Vector2_Godot_CollisionObject2D___System_UInt32_Cobilas_GodotEngine_Utility_Physics_Hit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastBox(Godot.Camera2D,Godot.Vector2,Godot.Vector2,Godot.CollisionObject2D[],System.UInt32,Cobilas.GodotEngine.Utility.Physics.Hit2D@)">
-  RayCastBox(Camera2D, Vector2, Vector2, CollisionObject2D[]?, uint, out Hit2D)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  RayCastBox(Camera2D?, Vector2, Vector2, CollisionObject2D[]?, uint, out Hit2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L111"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a 2D box that allows you to detect an object in 2D space.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCastBox(Camera2D camera, Vector2 mousePosition, Vector2 size, CollisionObject2D[]? exclude, uint collisionLayer, out Hit2D hit)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCastBox(Camera2D? camera, Vector2 mousePosition, Vector2 size, CollisionObject2D[]? exclude, uint collisionLayer, out Hit2D hit)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>mousePosition</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The point from which the ray will be thrown.</p>
+</dd>
     <dt><code>size</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The size of the 2d collision box.</p>
+</dd>
     <dt><code>exclude</code> <span class="xref">CollisionObject2D</span>[]</dt>
-    <dd></dd>
+    <dd><p>The objects that will be excluded from the search.</p>
+</dd>
     <dt><code>collisionLayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
+    <dd><p>The collision layers that will be checked by the 2D physical body detection methods.</p>
+</dd>
     <dt><code>hit</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Physics.Hit2D.html">Hit2D</a></dt>
-    <dd></dd>
+    <dd><p>The output parameter for the object's collision information.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when any 2d object is detected.</p>
+</dd>
   </dl>
 
 
@@ -1850,41 +2064,54 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastBox_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastBox*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastBox_Godot_Camera2D_Godot_Vector2_Godot_Vector2_System_UInt32_Cobilas_GodotEngine_Utility_Physics_Hit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastBox(Godot.Camera2D,Godot.Vector2,Godot.Vector2,System.UInt32,Cobilas.GodotEngine.Utility.Physics.Hit2D@)">
-  RayCastBox(Camera2D, Vector2, Vector2, uint, out Hit2D)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  RayCastBox(Camera2D?, Vector2, Vector2, uint, out Hit2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L97"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a 2D box that allows you to detect an object in 2D space.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCastBox(Camera2D camera, Vector2 mousePosition, Vector2 size, uint collisionLayer, out Hit2D hit)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCastBox(Camera2D? camera, Vector2 mousePosition, Vector2 size, uint collisionLayer, out Hit2D hit)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>mousePosition</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The point from which the ray will be thrown.</p>
+</dd>
     <dt><code>size</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The size of the 2d collision box.</p>
+</dd>
     <dt><code>collisionLayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
+    <dd><p>The collision layers that will be checked by the 2D physical body detection methods.</p>
+</dd>
     <dt><code>hit</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Physics.Hit2D.html">Hit2D</a></dt>
-    <dd></dd>
+    <dd><p>The output parameter for the object's collision information.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when any 2d object is detected.</p>
+</dd>
   </dl>
 
 
@@ -1894,39 +2121,51 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastCircle_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastCircle_Godot_Camera2D_Godot_Vector2_System_Single_Cobilas_GodotEngine_Utility_Physics_Hit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle(Godot.Camera2D,Godot.Vector2,System.Single,Cobilas.GodotEngine.Utility.Physics.Hit2D@)">
-  RayCastCircle(Camera2D, Vector2, float, out Hit2D)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  RayCastCircle(Camera2D?, Vector2, float, out Hit2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a 2D circle that allows you to detect an object in 2D space.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCastCircle(Camera2D camera, Vector2 mousePosition, float radius, out Hit2D hit)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCastCircle(Camera2D? camera, Vector2 mousePosition, float radius, out Hit2D hit)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>mousePosition</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The point from which the ray will be thrown.</p>
+</dd>
     <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd><p>Defines the radius of the 2d collision circle.</p>
+</dd>
     <dt><code>hit</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Physics.Hit2D.html">Hit2D</a></dt>
-    <dd></dd>
+    <dd><p>The output parameter for the object's collision information.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when any 2d object is detected.</p>
+</dd>
   </dl>
 
 
@@ -1936,41 +2175,54 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastCircle_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastCircle_Godot_Camera2D_Godot_Vector2_System_Single_Godot_CollisionObject2D___Cobilas_GodotEngine_Utility_Physics_Hit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle(Godot.Camera2D,Godot.Vector2,System.Single,Godot.CollisionObject2D[],Cobilas.GodotEngine.Utility.Physics.Hit2D@)">
-  RayCastCircle(Camera2D, Vector2, float, CollisionObject2D[], out Hit2D)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  RayCastCircle(Camera2D?, Vector2, float, CollisionObject2D[]?, out Hit2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a 2D circle that allows you to detect an object in 2D space.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCastCircle(Camera2D camera, Vector2 mousePosition, float radius, CollisionObject2D[] exclude, out Hit2D hit)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCastCircle(Camera2D? camera, Vector2 mousePosition, float radius, CollisionObject2D[]? exclude, out Hit2D hit)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>mousePosition</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The point from which the ray will be thrown.</p>
+</dd>
     <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd><p>Defines the radius of the 2d collision circle.</p>
+</dd>
     <dt><code>exclude</code> <span class="xref">CollisionObject2D</span>[]</dt>
-    <dd></dd>
+    <dd><p>The objects that will be excluded from the search.</p>
+</dd>
     <dt><code>hit</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Physics.Hit2D.html">Hit2D</a></dt>
-    <dd></dd>
+    <dd><p>The output parameter for the object's collision information.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when any 2d object is detected.</p>
+</dd>
   </dl>
 
 
@@ -1980,43 +2232,57 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastCircle_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastCircle_Godot_Camera2D_Godot_Vector2_System_Single_Godot_CollisionObject2D___System_UInt32_Cobilas_GodotEngine_Utility_Physics_Hit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle(Godot.Camera2D,Godot.Vector2,System.Single,Godot.CollisionObject2D[],System.UInt32,Cobilas.GodotEngine.Utility.Physics.Hit2D@)">
-  RayCastCircle(Camera2D, Vector2, float, CollisionObject2D[]?, uint, out Hit2D)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  RayCastCircle(Camera2D?, Vector2, float, CollisionObject2D[]?, uint, out Hit2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a 2D circle that allows you to detect an object in 2D space.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCastCircle(Camera2D camera, Vector2 mousePosition, float radius, CollisionObject2D[]? exclude, uint collisionLayer, out Hit2D hit)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCastCircle(Camera2D? camera, Vector2 mousePosition, float radius, CollisionObject2D[]? exclude, uint collisionLayer, out Hit2D hit)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>mousePosition</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The point from which the ray will be thrown.</p>
+</dd>
     <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd><p>Defines the radius of the 2d collision circle.</p>
+</dd>
     <dt><code>exclude</code> <span class="xref">CollisionObject2D</span>[]</dt>
-    <dd></dd>
+    <dd><p>The objects that will be excluded from the search.</p>
+</dd>
     <dt><code>collisionLayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
+    <dd><p>The collision layers that will be checked by the 2D physical body detection methods.</p>
+</dd>
     <dt><code>hit</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Physics.Hit2D.html">Hit2D</a></dt>
-    <dd></dd>
+    <dd><p>The output parameter for the object's collision information.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when any 2d object is detected.</p>
+</dd>
   </dl>
 
 
@@ -2026,41 +2292,54 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastCircle_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastCircle_Godot_Camera2D_Godot_Vector2_System_Single_System_UInt32_Cobilas_GodotEngine_Utility_Physics_Hit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle(Godot.Camera2D,Godot.Vector2,System.Single,System.UInt32,Cobilas.GodotEngine.Utility.Physics.Hit2D@)">
-  RayCastCircle(Camera2D, Vector2, float, uint, out Hit2D)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  RayCastCircle(Camera2D?, Vector2, float, uint, out Hit2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a 2D circle that allows you to detect an object in 2D space.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCastCircle(Camera2D camera, Vector2 mousePosition, float radius, uint collisionLayer, out Hit2D hit)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCastCircle(Camera2D? camera, Vector2 mousePosition, float radius, uint collisionLayer, out Hit2D hit)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>mousePosition</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The point from which the ray will be thrown.</p>
+</dd>
     <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd><p>Defines the radius of the 2d collision circle.</p>
+</dd>
     <dt><code>collisionLayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
+    <dd><p>The collision layers that will be checked by the 2D physical body detection methods.</p>
+</dd>
     <dt><code>hit</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Physics.Hit2D.html">Hit2D</a></dt>
-    <dd></dd>
+    <dd><p>The output parameter for the object's collision information.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when any 2d object is detected.</p>
+</dd>
   </dl>
 
 
@@ -2070,37 +2349,48 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastHit_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHit*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastHit_Godot_Camera2D_Godot_Vector2_Cobilas_GodotEngine_Utility_Physics_Hit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHit(Godot.Camera2D,Godot.Vector2,Cobilas.GodotEngine.Utility.Physics.Hit2D@)">
-  RayCastHit(Camera2D, Vector2, out Hit2D)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  RayCastHit(Camera2D?, Vector2, out Hit2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L157"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a 2D ray that allows you to detect an object in 2D space.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCastHit(Camera2D camera, Vector2 mousePosition, out Hit2D hit)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCastHit(Camera2D? camera, Vector2 mousePosition, out Hit2D hit)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>mousePosition</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The point from which the ray will be thrown.</p>
+</dd>
     <dt><code>hit</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Physics.Hit2D.html">Hit2D</a></dt>
-    <dd></dd>
+    <dd><p>The output parameter for the object's collision information.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when any 2d object is detected.</p>
+</dd>
   </dl>
 
 
@@ -2110,39 +2400,51 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastHit_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHit*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastHit_Godot_Camera2D_Godot_Vector2_Godot_CollisionObject2D___Cobilas_GodotEngine_Utility_Physics_Hit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHit(Godot.Camera2D,Godot.Vector2,Godot.CollisionObject2D[],Cobilas.GodotEngine.Utility.Physics.Hit2D@)">
-  RayCastHit(Camera2D, Vector2, CollisionObject2D[], out Hit2D)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  RayCastHit(Camera2D?, Vector2, CollisionObject2D[]?, out Hit2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L163"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a 2D ray that allows you to detect an object in 2D space.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCastHit(Camera2D camera, Vector2 mousePosition, CollisionObject2D[] exclude, out Hit2D hit)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCastHit(Camera2D? camera, Vector2 mousePosition, CollisionObject2D[]? exclude, out Hit2D hit)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>mousePosition</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The point from which the ray will be thrown.</p>
+</dd>
     <dt><code>exclude</code> <span class="xref">CollisionObject2D</span>[]</dt>
-    <dd></dd>
+    <dd><p>The objects that will be excluded from the search.</p>
+</dd>
     <dt><code>hit</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Physics.Hit2D.html">Hit2D</a></dt>
-    <dd></dd>
+    <dd><p>The output parameter for the object's collision information.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when any 2d object is detected.</p>
+</dd>
   </dl>
 
 
@@ -2152,41 +2454,54 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastHit_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHit*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastHit_Godot_Camera2D_Godot_Vector2_Godot_CollisionObject2D___System_UInt32_Cobilas_GodotEngine_Utility_Physics_Hit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHit(Godot.Camera2D,Godot.Vector2,Godot.CollisionObject2D[],System.UInt32,Cobilas.GodotEngine.Utility.Physics.Hit2D@)">
-  RayCastHit(Camera2D, Vector2, CollisionObject2D[]?, uint, out Hit2D)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  RayCastHit(Camera2D?, Vector2, CollisionObject2D[]?, uint, out Hit2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L173"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a 2D ray that allows you to detect an object in 2D space.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCastHit(Camera2D camera, Vector2 mousePosition, CollisionObject2D[]? exclude, uint collisionLayer, out Hit2D hit)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCastHit(Camera2D? camera, Vector2 mousePosition, CollisionObject2D[]? exclude, uint collisionLayer, out Hit2D hit)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>mousePosition</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The point from which the ray will be thrown.</p>
+</dd>
     <dt><code>exclude</code> <span class="xref">CollisionObject2D</span>[]</dt>
-    <dd></dd>
+    <dd><p>The objects that will be excluded from the search.</p>
+</dd>
     <dt><code>collisionLayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
+    <dd><p>The collision layers that will be checked by the 2D physical body detection methods.</p>
+</dd>
     <dt><code>hit</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Physics.Hit2D.html">Hit2D</a></dt>
-    <dd></dd>
+    <dd><p>The output parameter for the object's collision information.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when any 2d object is detected.</p>
+</dd>
   </dl>
 
 
@@ -2196,39 +2511,51 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastHit_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHit*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastHit_Godot_Camera2D_Godot_Vector2_System_UInt32_Cobilas_GodotEngine_Utility_Physics_Hit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHit(Godot.Camera2D,Godot.Vector2,System.UInt32,Cobilas.GodotEngine.Utility.Physics.Hit2D@)">
-  RayCastHit(Camera2D, Vector2, uint, out Hit2D)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  RayCastHit(Camera2D?, Vector2, uint, out Hit2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L160"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a 2D ray that allows you to detect an object in 2D space.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCastHit(Camera2D camera, Vector2 mousePosition, uint collisionLayer, out Hit2D hit)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCastHit(Camera2D? camera, Vector2 mousePosition, uint collisionLayer, out Hit2D hit)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>mousePosition</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The point from which the ray will be thrown.</p>
+</dd>
     <dt><code>collisionLayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
+    <dd><p>The collision layers that will be checked by the 2D physical body detection methods.</p>
+</dd>
     <dt><code>hit</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Physics.Hit2D.html">Hit2D</a></dt>
-    <dd></dd>
+    <dd><p>The output parameter for the object's collision information.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when any 2d object is detected.</p>
+</dd>
   </dl>
 
 
@@ -2238,39 +2565,51 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastHitAll_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHitAll*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastHitAll_Godot_Camera2D_Godot_Vector2_Godot_CollisionObject2D___System_Collections_Generic_List_Cobilas_GodotEngine_Utility_Physics_Hit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHitAll(Godot.Camera2D,Godot.Vector2,Godot.CollisionObject2D[],System.Collections.Generic.List{Cobilas.GodotEngine.Utility.Physics.Hit2D})">
-  RayCastHitAll(Camera2D, Vector2, CollisionObject2D[], List&lt;Hit2D&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  RayCastHitAll(Camera2D?, Vector2, CollisionObject2D[]?, List&lt;Hit2D&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L189"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a 2D ray that allows detecting multiple objects in 2D space simultaneously.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCastHitAll(Camera2D camera, Vector2 mousePosition, CollisionObject2D[] exclude, List&lt;Hit2D&gt; list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCastHitAll(Camera2D? camera, Vector2 mousePosition, CollisionObject2D[]? exclude, List&lt;Hit2D&gt;? list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>mousePosition</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The point from which the ray will be thrown.</p>
+</dd>
     <dt><code>exclude</code> <span class="xref">CollisionObject2D</span>[]</dt>
-    <dd></dd>
+    <dd><p>The objects that will be excluded from the search.</p>
+</dd>
     <dt><code>list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.Physics.Hit2D.html">Hit2D</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Here the objects that were detected by the 2d collision ray will be added.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when multiple 2D objects are detected.</p>
+</dd>
   </dl>
 
 
@@ -2280,41 +2619,57 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a> object is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastHitAll_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHitAll*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastHitAll_Godot_Camera2D_Godot_Vector2_Godot_CollisionObject2D___System_UInt32_System_Collections_Generic_List_Cobilas_GodotEngine_Utility_Physics_Hit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHitAll(Godot.Camera2D,Godot.Vector2,Godot.CollisionObject2D[],System.UInt32,System.Collections.Generic.List{Cobilas.GodotEngine.Utility.Physics.Hit2D})">
-  RayCastHitAll(Camera2D?, Vector2, CollisionObject2D[]?, uint, List&lt;Hit2D&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  RayCastHitAll(Camera2D?, Vector2, CollisionObject2D[]?, uint, List&lt;Hit2D&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L200"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a 2D ray that allows detecting multiple objects in 2D space simultaneously.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCastHitAll(Camera2D? camera, Vector2 mousePosition, CollisionObject2D[]? exclude, uint collisionLayer, List&lt;Hit2D&gt; list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCastHitAll(Camera2D? camera, Vector2 mousePosition, CollisionObject2D[]? exclude, uint collisionLayer, List&lt;Hit2D&gt;? list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>mousePosition</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The point from which the ray will be thrown.</p>
+</dd>
     <dt><code>exclude</code> <span class="xref">CollisionObject2D</span>[]</dt>
-    <dd></dd>
+    <dd><p>The objects that will be excluded from the search.</p>
+</dd>
     <dt><code>collisionLayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
+    <dd><p>The collision layers that will be checked by the 2D physical body detection methods.</p>
+</dd>
     <dt><code>list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.Physics.Hit2D.html">Hit2D</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Here the objects that were detected by the 2d collision ray will be added.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when multiple 2D objects are detected.</p>
+</dd>
   </dl>
 
 
@@ -2324,37 +2679,51 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a> object is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastHitAll_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHitAll*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastHitAll_Godot_Camera2D_Godot_Vector2_System_Collections_Generic_List_Cobilas_GodotEngine_Utility_Physics_Hit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHitAll(Godot.Camera2D,Godot.Vector2,System.Collections.Generic.List{Cobilas.GodotEngine.Utility.Physics.Hit2D})">
-  RayCastHitAll(Camera2D, Vector2, List&lt;Hit2D&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  RayCastHitAll(Camera2D?, Vector2, List&lt;Hit2D&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L183"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a 2D ray that allows detecting multiple objects in 2D space simultaneously.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCastHitAll(Camera2D camera, Vector2 mousePosition, List&lt;Hit2D&gt; list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCastHitAll(Camera2D? camera, Vector2 mousePosition, List&lt;Hit2D&gt;? list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>mousePosition</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The point from which the ray will be thrown.</p>
+</dd>
     <dt><code>list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.Physics.Hit2D.html">Hit2D</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Here the objects that were detected by the 2d collision ray will be added.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when multiple 2D objects are detected.</p>
+</dd>
   </dl>
 
 
@@ -2364,39 +2733,54 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a> object is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastHitAll_" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHitAll*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastHitAll_Godot_Camera2D_Godot_Vector2_System_UInt32_System_Collections_Generic_List_Cobilas_GodotEngine_Utility_Physics_Hit2D__" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHitAll(Godot.Camera2D,Godot.Vector2,System.UInt32,System.Collections.Generic.List{Cobilas.GodotEngine.Utility.Physics.Hit2D})">
-  RayCastHitAll(Camera2D, Vector2, uint, List&lt;Hit2D&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  RayCastHitAll(Camera2D?, Vector2, uint, List&lt;Hit2D&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L186"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a 2D ray that allows detecting multiple objects in 2D space simultaneously.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RayCastHitAll(Camera2D camera, Vector2 mousePosition, uint collisionLayer, List&lt;Hit2D&gt; list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool RayCastHitAll(Camera2D? camera, Vector2 mousePosition, uint collisionLayer, List&lt;Hit2D&gt;? list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>camera</code> <span class="xref">Camera2D</span></dt>
-    <dd></dd>
+    <dd><p>Camera that will be used to convert a point on the screen to a point in the 2d world.</p>
+</dd>
     <dt><code>mousePosition</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The point from which the ray will be thrown.</p>
+</dd>
     <dt><code>collisionLayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
-    <dd></dd>
+    <dd><p>The collision layers that will be checked by the 2D physical body detection methods.</p>
+</dd>
     <dt><code>list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.Physics.Hit2D.html">Hit2D</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Here the objects that were detected by the 2d collision ray will be added.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Returns <code>true</code> when multiple 2D objects are detected.</p>
+</dd>
   </dl>
 
 
@@ -2406,6 +2790,15 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <span class="xref">Godot.Camera2D</span> object is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The exception is thrown when <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a> object is null.</p>
+</dd>
+  </dl>
 
 
 
@@ -2413,7 +2806,7 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Physics_Physics2D__Ready" data-uid="Cobilas.GodotEngine.Utility.Physics.Physics2D._Ready">
   _Ready()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Called when the node is "ready", i.e. when both the node and its children have entered the scene tree. If the node has children, their <span class="xref">Godot.Node._Ready()</span> callbacks get triggered first, and the parent node will receive the ready notification afterwards.</p>
@@ -2443,7 +2836,7 @@ public class Physics2D : Node2D, IDisposable</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Physics/Physics2D.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Physics/Physics2D.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFileBase.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GDFileBase
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFileBase.cs
@@ -30,6 +30,8 @@ items:
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: This is a base class for other classes that represent files or directory files.
+  example: []
   syntax:
     content: 'public abstract class GDFileBase : IDisposable'
     content.vb: Public MustInherit Class GDFileBase Implements IDisposable
@@ -63,19 +65,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFileBase.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Name
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFileBase.cs
-    startLine: 5
+    startLine: 7
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Item name.
+  example: []
   syntax:
     content: public abstract string Name { get; }
     parameters: []
     return:
       type: System.String
+      description: Returns the name of the item.
     content.vb: Public MustOverride ReadOnly Property Name As String
   overload: Cobilas.GodotEngine.Utility.GDFileBase.Name*
 - uid: Cobilas.GodotEngine.Utility.GDFileBase.Path
@@ -92,19 +97,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFileBase.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Path
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFileBase.cs
-    startLine: 6
+    startLine: 10
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: The path of the item.
+  example: []
   syntax:
     content: public abstract string Path { get; protected set; }
     parameters: []
     return:
       type: System.String
+      description: Returns the full or relative path of the item.
     content.vb: Public MustOverride Property Path As String
   overload: Cobilas.GodotEngine.Utility.GDFileBase.Path*
 - uid: Cobilas.GodotEngine.Utility.GDFileBase.NameWithoutExtension
@@ -121,19 +129,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFileBase.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: NameWithoutExtension
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFileBase.cs
-    startLine: 7
+    startLine: 13
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: The name of the item without extension.
+  example: []
   syntax:
     content: public abstract string NameWithoutExtension { get; }
     parameters: []
     return:
       type: System.String
+      description: Returns the item name without its extension.
     content.vb: Public MustOverride ReadOnly Property NameWithoutExtension As String
   overload: Cobilas.GodotEngine.Utility.GDFileBase.NameWithoutExtension*
 - uid: Cobilas.GodotEngine.Utility.GDFileBase.Parent
@@ -150,19 +161,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFileBase.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Parent
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFileBase.cs
-    startLine: 8
+    startLine: 16
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: The item's parent <xref href="Cobilas.GodotEngine.Utility.GDFileBase" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public abstract GDFileBase Parent { get; protected set; }
     parameters: []
     return:
       type: Cobilas.GodotEngine.Utility.GDFileBase
+      description: Returns the parent GDFileBase that the item is affiliated with.
     content.vb: Public MustOverride Property Parent As GDFileBase
   overload: Cobilas.GodotEngine.Utility.GDFileBase.Parent*
 - uid: Cobilas.GodotEngine.Utility.GDFileBase.Attribute
@@ -179,19 +193,24 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFileBase.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Attribute
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFileBase.cs
-    startLine: 9
+    startLine: 23
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: The type of the item.
+  example: []
   syntax:
     content: public abstract GDFileAttributes Attribute { get; protected set; }
     parameters: []
     return:
       type: Cobilas.GodotEngine.Utility.GDFileAttributes
+      description: >-
+        Returns the type of attribute the item has.
+            <p><code>Null</code>: Indicates that the item is a representation of a null file.</p><p><code>File</code>: Indicates that the item is a representation of a file.</p><p><code>Directory</code>: Indicates that the item is a representation of a directory file.</p>
     content.vb: Public MustOverride Property Attribute As GDFileAttributes
   overload: Cobilas.GodotEngine.Utility.GDFileBase.Attribute*
 - uid: Cobilas.GodotEngine.Utility.GDFileBase.Null
@@ -208,19 +227,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFileBase.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: "Null"
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFileBase.cs
-    startLine: 11
+    startLine: 26
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: A null item.
+  example: []
   syntax:
     content: public static GDFileBase Null { get; }
     parameters: []
     return:
       type: Cobilas.GodotEngine.Utility.GDFileBase
+      description: Returns a representation of a null item.
     content.vb: Public Shared ReadOnly Property Null As GDFileBase
   overload: Cobilas.GodotEngine.Utility.GDFileBase.Null*
 - uid: Cobilas.GodotEngine.Utility.GDFileBase.Dispose
@@ -237,11 +259,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFileBase.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Dispose
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFileBase.cs
-    startLine: 13
+    startLine: 28
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -558,12 +580,6 @@ references:
   name: NameWithoutExtension
   nameWithType: GDFileBase.NameWithoutExtension
   fullName: Cobilas.GodotEngine.Utility.GDFileBase.NameWithoutExtension
-- uid: Cobilas.GodotEngine.Utility.GDFileBase.Parent*
-  commentId: Overload:Cobilas.GodotEngine.Utility.GDFileBase.Parent
-  href: Cobilas.GodotEngine.Utility.GDFileBase.html#Cobilas_GodotEngine_Utility_GDFileBase_Parent
-  name: Parent
-  nameWithType: GDFileBase.Parent
-  fullName: Cobilas.GodotEngine.Utility.GDFileBase.Parent
 - uid: Cobilas.GodotEngine.Utility.GDFileBase
   commentId: T:Cobilas.GodotEngine.Utility.GDFileBase
   parent: Cobilas.GodotEngine.Utility
@@ -571,6 +587,12 @@ references:
   name: GDFileBase
   nameWithType: GDFileBase
   fullName: Cobilas.GodotEngine.Utility.GDFileBase
+- uid: Cobilas.GodotEngine.Utility.GDFileBase.Parent*
+  commentId: Overload:Cobilas.GodotEngine.Utility.GDFileBase.Parent
+  href: Cobilas.GodotEngine.Utility.GDFileBase.html#Cobilas_GodotEngine_Utility_GDFileBase_Parent
+  name: Parent
+  nameWithType: GDFileBase.Parent
+  fullName: Cobilas.GodotEngine.Utility.GDFileBase.Parent
 - uid: Cobilas.GodotEngine.Utility.GDFileBase.Attribute*
   commentId: Overload:Cobilas.GodotEngine.Utility.GDFileBase.Attribute
   href: Cobilas.GodotEngine.Utility.GDFileBase.html#Cobilas_GodotEngine_Utility_GDFileBase_Attribute

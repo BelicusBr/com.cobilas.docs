@@ -5,6 +5,7 @@ items:
   id: SceneManager
   parent: Cobilas.GodotEngine.Utility.Scene
   children:
+  - Cobilas.GodotEngine.Utility.Scene.SceneManager.BuiltScenes
   - Cobilas.GodotEngine.Utility.Scene.SceneManager.CurrentScene
   - Cobilas.GodotEngine.Utility.Scene.SceneManager.CurrentSceneNode
   - Cobilas.GodotEngine.Utility.Scene.SceneManager.DontDestroyOnLoad(Godot.Node)
@@ -23,7 +24,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Scene/SceneManager.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SceneManager
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/SceneManager.cs
@@ -31,13 +32,15 @@ items:
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: This class can be used to manage scene switching.
+  example: []
   syntax:
     content: >-
-      [RunTimeInitializationClass("SceneManager")]
+      [RunTimeInitializationClass("SceneManager", Priority.StartBefore, 0, false)]
 
       public class SceneManager : Node, IDisposable
     content.vb: >-
-      <RunTimeInitializationClass("SceneManager")>
+      <RunTimeInitializationClass("SceneManager", Priority.StartBefore, 0, False)>
 
       Public Class SceneManager Inherits Node Implements IDisposable
   inheritance:
@@ -280,10 +283,16 @@ items:
   - Godot.Node.Godot.Node_GD_CB_Extension.SetNodeScale(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   attributes:
   - type: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute
-    ctor: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.#ctor(System.String)
+    ctor: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.#ctor(System.String,Cobilas.GodotEngine.Utility.Runtime.Priority,System.Int32,System.Boolean)
     arguments:
     - type: System.String
       value: SceneManager
+    - type: Cobilas.GodotEngine.Utility.Runtime.Priority
+      value: 0
+    - type: System.Int32
+      value: 0
+    - type: System.Boolean
+      value: false
 - uid: Cobilas.GodotEngine.Utility.Scene.SceneManager.LoadedScene
   commentId: F:Cobilas.GodotEngine.Utility.Scene.SceneManager.LoadedScene
   id: LoadedScene
@@ -298,7 +307,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Scene/SceneManager.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: LoadedScene
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/SceneManager.cs
@@ -306,6 +315,8 @@ items:
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: This event is called when a new scene is loaded.
+  example: []
   syntax:
     content: public static Action<Scene>? LoadedScene
     return:
@@ -325,14 +336,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Scene/SceneManager.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: UnloadedScene
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/SceneManager.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: This event is called when the current scene is unloaded.
+  example: []
   syntax:
     content: public static Action<Scene>? UnloadedScene
     return:
@@ -352,21 +365,56 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Scene/SceneManager.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: CurrentScene
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/SceneManager.cs
-    startLine: 17
+    startLine: 19
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: The current scene.
+  example: []
   syntax:
     content: public static Scene CurrentScene { get; }
     parameters: []
     return:
       type: Cobilas.GodotEngine.Utility.Scene.Scene
-    content.vb: Public Shared Property CurrentScene As Scene
+      description: Returns the scene that is currently loaded.
+    content.vb: Public Shared ReadOnly Property CurrentScene As Scene
   overload: Cobilas.GodotEngine.Utility.Scene.SceneManager.CurrentScene*
+- uid: Cobilas.GodotEngine.Utility.Scene.SceneManager.BuiltScenes
+  commentId: P:Cobilas.GodotEngine.Utility.Scene.SceneManager.BuiltScenes
+  id: BuiltScenes
+  parent: Cobilas.GodotEngine.Utility.Scene.SceneManager
+  langs:
+  - csharp
+  - vb
+  name: BuiltScenes
+  nameWithType: SceneManager.BuiltScenes
+  fullName: Cobilas.GodotEngine.Utility.Scene.SceneManager.BuiltScenes
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/Scene/SceneManager.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: BuiltScenes
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/SceneManager.cs
+    startLine: 22
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: The compiled scenes.
+  example: []
+  syntax:
+    content: public static Scene[] BuiltScenes { get; }
+    parameters: []
+    return:
+      type: Cobilas.GodotEngine.Utility.Scene.Scene[]
+      description: Returns a list of scenes that were compiled along with the project.
+    content.vb: Public Shared ReadOnly Property BuiltScenes As Scene()
+  overload: Cobilas.GodotEngine.Utility.Scene.SceneManager.BuiltScenes*
 - uid: Cobilas.GodotEngine.Utility.Scene.SceneManager.CurrentSceneNode
   commentId: P:Cobilas.GodotEngine.Utility.Scene.SceneManager.CurrentSceneNode
   id: CurrentSceneNode
@@ -381,19 +429,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Scene/SceneManager.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: CurrentSceneNode
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/SceneManager.cs
-    startLine: 18
+    startLine: 25
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: The current scene in node form.
+  example: []
   syntax:
     content: public static Node? CurrentSceneNode { get; }
     parameters: []
     return:
       type: Godot.Node
+      description: Returns the currently loaded scene in node form.
     content.vb: Public Shared Property CurrentSceneNode As Node
   overload: Cobilas.GodotEngine.Utility.Scene.SceneManager.CurrentSceneNode*
 - uid: Cobilas.GodotEngine.Utility.Scene.SceneManager._Ready
@@ -410,11 +461,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Scene/SceneManager.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: _Ready
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/SceneManager.cs
-    startLine: 20
+    startLine: 27
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Scene
@@ -446,19 +497,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Scene/SceneManager.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: DontDestroyOnLoad
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/SceneManager.cs
-    startLine: 36
+    startLine: 55
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: Prevents an object from being destroyed when switching scenes.
+  example: []
   syntax:
     content: public static void DontDestroyOnLoad(Node obj)
     parameters:
     - id: obj
       type: Godot.Node
+      description: The object that will be marked so as not to be destroyed when changing scenes.
     content.vb: Public Shared Sub DontDestroyOnLoad(obj As Node)
   overload: Cobilas.GodotEngine.Utility.Scene.SceneManager.DontDestroyOnLoad*
 - uid: Cobilas.GodotEngine.Utility.Scene.SceneManager.LoadScene(System.Int32)
@@ -475,21 +529,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Scene/SceneManager.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: LoadScene
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/SceneManager.cs
-    startLine: 41
+    startLine: 62
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: Allows you to load a specific scene.
+  example: []
   syntax:
     content: public static bool LoadScene(int index)
     parameters:
     - id: index
       type: System.Int32
+      description: The specific scene index.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> if the scene loaded correctly.
     content.vb: Public Shared Function LoadScene(index As Integer) As Boolean
   overload: Cobilas.GodotEngine.Utility.Scene.SceneManager.LoadScene*
   nameWithType.vb: SceneManager.LoadScene(Integer)
@@ -509,21 +567,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Scene/SceneManager.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: LoadScene
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/SceneManager.cs
-    startLine: 55
+    startLine: 76
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: Allows you to load a specific scene.
+  example: []
   syntax:
     content: public static bool LoadScene(string name)
     parameters:
     - id: name
       type: System.String
+      description: The specific scene name.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> if the scene loaded correctly.
     content.vb: Public Shared Function LoadScene(name As String) As Boolean
   overload: Cobilas.GodotEngine.Utility.Scene.SceneManager.LoadScene*
   nameWithType.vb: SceneManager.LoadScene(String)
@@ -7266,6 +7328,33 @@ references:
   name: Scene
   nameWithType: Scene
   fullName: Cobilas.GodotEngine.Utility.Scene.Scene
+- uid: Cobilas.GodotEngine.Utility.Scene.SceneManager.BuiltScenes*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Scene.SceneManager.BuiltScenes
+  href: Cobilas.GodotEngine.Utility.Scene.SceneManager.html#Cobilas_GodotEngine_Utility_Scene_SceneManager_BuiltScenes
+  name: BuiltScenes
+  nameWithType: SceneManager.BuiltScenes
+  fullName: Cobilas.GodotEngine.Utility.Scene.SceneManager.BuiltScenes
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene[]
+  isExternal: true
+  href: Cobilas.GodotEngine.Utility.Scene.Scene.html
+  name: Scene[]
+  nameWithType: Scene[]
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene[]
+  nameWithType.vb: Scene()
+  fullName.vb: Cobilas.GodotEngine.Utility.Scene.Scene()
+  name.vb: Scene()
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Utility.Scene.Scene
+    name: Scene
+    href: Cobilas.GodotEngine.Utility.Scene.Scene.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Utility.Scene.Scene
+    name: Scene
+    href: Cobilas.GodotEngine.Utility.Scene.Scene.html
+  - name: (
+  - name: )
 - uid: Cobilas.GodotEngine.Utility.Scene.SceneManager.CurrentSceneNode*
   commentId: Overload:Cobilas.GodotEngine.Utility.Scene.SceneManager.CurrentSceneNode
   href: Cobilas.GodotEngine.Utility.Scene.SceneManager.html#Cobilas_GodotEngine_Utility_Scene_SceneManager_CurrentSceneNode

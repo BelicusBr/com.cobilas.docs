@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Coroutine/IYieldUpdate.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: IYieldUpdate
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/IYieldUpdate.cs
@@ -23,12 +23,46 @@ items:
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Yield Class to be excited in the <xref href="Godot.Node._Process(System.Single)" data-throw-if-not-resolved="false"></xref>
+  example: []
   syntax:
     content: 'public interface IYieldUpdate : IYieldCoroutine'
     content.vb: Public Interface IYieldUpdate Inherits IYieldCoroutine
   inheritedMembers:
   - Cobilas.GodotEngine.Utility.IYieldCoroutine.Delay
+  - Cobilas.GodotEngine.Utility.IYieldCoroutine.IsLastCoroutine
 references:
+- uid: Godot.Node._Process(System.Single)
+  commentId: M:Godot.Node._Process(System.Single)
+  parent: Godot.Node
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: _Process(float)
+  nameWithType: Node._Process(float)
+  fullName: Godot.Node._Process(float)
+  nameWithType.vb: Node._Process(Single)
+  fullName.vb: Godot.Node._Process(Single)
+  name.vb: _Process(Single)
+  spec.csharp:
+  - uid: Godot.Node._Process(System.Single)
+    name: _Process
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Godot.Node._Process(System.Single)
+    name: _Process
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
 - uid: Cobilas.GodotEngine.Utility
   commentId: N:Cobilas.GodotEngine.Utility
   href: Cobilas.html
@@ -66,6 +100,20 @@ references:
   name: Delay
   nameWithType: IYieldCoroutine.Delay
   fullName: Cobilas.GodotEngine.Utility.IYieldCoroutine.Delay
+- uid: Cobilas.GodotEngine.Utility.IYieldCoroutine.IsLastCoroutine
+  commentId: P:Cobilas.GodotEngine.Utility.IYieldCoroutine.IsLastCoroutine
+  parent: Cobilas.GodotEngine.Utility.IYieldCoroutine
+  href: Cobilas.GodotEngine.Utility.IYieldCoroutine.html#Cobilas_GodotEngine_Utility_IYieldCoroutine_IsLastCoroutine
+  name: IsLastCoroutine
+  nameWithType: IYieldCoroutine.IsLastCoroutine
+  fullName: Cobilas.GodotEngine.Utility.IYieldCoroutine.IsLastCoroutine
+- uid: Godot.Node
+  commentId: T:Godot.Node
+  parent: Godot
+  isExternal: true
+  name: Node
+  nameWithType: Node
+  fullName: Godot.Node
 - uid: Cobilas.GodotEngine.Utility.IYieldCoroutine
   commentId: T:Cobilas.GodotEngine.Utility.IYieldCoroutine
   parent: Cobilas.GodotEngine.Utility
@@ -73,3 +121,9 @@ references:
   name: IYieldCoroutine
   nameWithType: IYieldCoroutine
   fullName: Cobilas.GodotEngine.Utility.IYieldCoroutine
+- uid: Godot
+  commentId: N:Godot
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot

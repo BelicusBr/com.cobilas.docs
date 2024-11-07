@@ -33,7 +33,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDDirectory.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GDDirectory
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
@@ -41,6 +41,8 @@ items:
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Represents a directory file.
+  example: []
   syntax:
     content: 'public sealed class GDDirectory : GDFileBase, IDisposable'
     content.vb: Public NotInheritable Class GDDirectory Inherits GDFileBase Implements IDisposable
@@ -70,7 +72,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDDirectory.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Path
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
@@ -78,12 +80,14 @@ items:
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: The path of the item.
   example: []
   syntax:
     content: public override string Path { get; protected set; }
     parameters: []
     return:
       type: System.String
+      description: Returns the full or relative path of the item.
     content.vb: Public Overrides Property Path As String
   overridden: Cobilas.GodotEngine.Utility.GDFileBase.Path
   overload: Cobilas.GodotEngine.Utility.GDDirectory.Path*
@@ -101,20 +105,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDDirectory.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: NameWithoutExtension
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
-    startLine: 15
+    startLine: 16
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: The name of the item without extension.
   example: []
   syntax:
     content: public override string NameWithoutExtension { get; }
     parameters: []
     return:
       type: System.String
+      description: Returns the item name without its extension.
     content.vb: Public Overrides ReadOnly Property NameWithoutExtension As String
   overridden: Cobilas.GodotEngine.Utility.GDFileBase.NameWithoutExtension
   overload: Cobilas.GodotEngine.Utility.GDDirectory.NameWithoutExtension*
@@ -132,20 +138,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDDirectory.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Name
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
-    startLine: 16
+    startLine: 18
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Item name.
   example: []
   syntax:
     content: public override string Name { get; }
     parameters: []
     return:
       type: System.String
+      description: Returns the name of the item.
     content.vb: Public Overrides ReadOnly Property Name As String
   overridden: Cobilas.GodotEngine.Utility.GDFileBase.Name
   overload: Cobilas.GodotEngine.Utility.GDDirectory.Name*
@@ -163,19 +171,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDDirectory.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Count
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
-    startLine: 17
+    startLine: 21
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Subdirectory count.
+  example: []
   syntax:
     content: public int Count { get; }
     parameters: []
     return:
       type: System.Int32
+      description: Returns the number of subdirectories present in this directory.
     content.vb: Public ReadOnly Property Count As Integer
   overload: Cobilas.GodotEngine.Utility.GDDirectory.Count*
 - uid: Cobilas.GodotEngine.Utility.GDDirectory.Parent
@@ -192,20 +203,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDDirectory.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Parent
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
-    startLine: 18
+    startLine: 23
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: The item's parent <xref href="Cobilas.GodotEngine.Utility.GDFileBase" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public override GDFileBase Parent { get; protected set; }
     parameters: []
     return:
       type: Cobilas.GodotEngine.Utility.GDFileBase
+      description: Returns the parent GDFileBase that the item is affiliated with.
     content.vb: Public Overrides Property Parent As GDFileBase
   overridden: Cobilas.GodotEngine.Utility.GDFileBase.Parent
   overload: Cobilas.GodotEngine.Utility.GDDirectory.Parent*
@@ -223,20 +236,24 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDDirectory.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Attribute
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
-    startLine: 19
+    startLine: 25
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: The type of the item.
   example: []
   syntax:
     content: public override GDFileAttributes Attribute { get; protected set; }
     parameters: []
     return:
       type: Cobilas.GodotEngine.Utility.GDFileAttributes
+      description: >-
+        Returns the type of attribute the item has.
+            <p><code>Null</code>: Indicates that the item is a representation of a null file.</p><p><code>File</code>: Indicates that the item is a representation of a file.</p><p><code>Directory</code>: Indicates that the item is a representation of a directory file.</p>
     content.vb: Public Overrides Property Attribute As GDFileAttributes
   overridden: Cobilas.GodotEngine.Utility.GDFileBase.Attribute
   overload: Cobilas.GodotEngine.Utility.GDDirectory.Attribute*
@@ -254,14 +271,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDDirectory.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Finalize
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
-    startLine: 32
+    startLine: 38
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: The finalizer allows the disposal of unmanageable code.
+  example: []
   syntax:
     content: protected ~GDDirectory()
     content.vb: 'Protected '
@@ -283,11 +302,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDDirectory.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Dispose
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
-    startLine: 34
+    startLine: 40
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -312,28 +331,69 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDDirectory.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetDirectory
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
-    startLine: 39
+    startLine: 49
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Gets a specific directory.
+  example: []
   syntax:
     content: public GDDirectory? GetDirectory(string? relativePath, bool isSubdirectory = false)
     parameters:
     - id: relativePath
       type: System.String
+      description: The name of the directory to search.
     - id: isSubdirectory
       type: System.Boolean
+      description: Allows the method to search subdirectories.
     return:
       type: Cobilas.GodotEngine.Utility.GDDirectory
+      description: ''
     content.vb: Public Function GetDirectory(relativePath As String, isSubdirectory As Boolean = False) As GDDirectory
   overload: Cobilas.GodotEngine.Utility.GDDirectory.GetDirectory*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="System.String" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: GDDirectory.GetDirectory(String, Boolean)
   fullName.vb: Cobilas.GodotEngine.Utility.GDDirectory.GetDirectory(String, Boolean)
   name.vb: GetDirectory(String, Boolean)
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.GetDirectories
+  commentId: M:Cobilas.GodotEngine.Utility.GDDirectory.GetDirectories
+  id: GetDirectories
+  parent: Cobilas.GodotEngine.Utility.GDDirectory
+  langs:
+  - csharp
+  - vb
+  name: GetDirectories()
+  nameWithType: GDDirectory.GetDirectories()
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.GetDirectories()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/GDDirectory.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetDirectories
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
+    startLine: 67
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Get all directories.
+  remarks: Subdirectories of directories already obtained will not be included.
+  example: []
+  syntax:
+    content: public GDDirectory[] GetDirectories()
+    return:
+      type: Cobilas.GodotEngine.Utility.GDDirectory[]
+      description: If no directory is found an empty list will be returned.
+    content.vb: Public Function GetDirectories() As GDDirectory()
+  overload: Cobilas.GodotEngine.Utility.GDDirectory.GetDirectories*
 - uid: Cobilas.GodotEngine.Utility.GDDirectory.CreateDirectory(System.String)
   commentId: M:Cobilas.GodotEngine.Utility.GDDirectory.CreateDirectory(System.String)
   id: CreateDirectory(System.String)
@@ -348,23 +408,31 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDDirectory.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: CreateDirectory
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
-    startLine: 55
+    startLine: 78
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Allows you to create a new directory.
+  example: []
   syntax:
     content: public bool CreateDirectory(string? directoryName)
     parameters:
     - id: directoryName
       type: System.String
+      description: The name of the new directory.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> if the directory was created successfully.
     content.vb: Public Function CreateDirectory(directoryName As String) As Boolean
   overload: Cobilas.GodotEngine.Utility.GDDirectory.CreateDirectory*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="System.String" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: GDDirectory.CreateDirectory(String)
   fullName.vb: Cobilas.GodotEngine.Utility.GDDirectory.CreateDirectory(String)
   name.vb: CreateDirectory(String)
@@ -382,23 +450,31 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDDirectory.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RemoveDirectory
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
-    startLine: 66
+    startLine: 92
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Allows you to remove a specific directory.
+  example: []
   syntax:
     content: public bool RemoveDirectory(string? directoryName)
     parameters:
     - id: directoryName
       type: System.String
+      description: The directory to be removed.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> if the directory was deleted successfully.
     content.vb: Public Function RemoveDirectory(directoryName As String) As Boolean
   overload: Cobilas.GodotEngine.Utility.GDDirectory.RemoveDirectory*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="System.String" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: GDDirectory.RemoveDirectory(String)
   fullName.vb: Cobilas.GodotEngine.Utility.GDDirectory.RemoveDirectory(String)
   name.vb: RemoveDirectory(String)
@@ -416,54 +492,34 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDDirectory.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RemoveFile
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
-    startLine: 81
+    startLine: 110
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Allows the removal of a specific file.
+  example: []
   syntax:
     content: public bool RemoveFile(string? fileName)
     parameters:
     - id: fileName
       type: System.String
+      description: The name of the file to be deleted.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> if the file was deleted successfully.
     content.vb: Public Function RemoveFile(fileName As String) As Boolean
   overload: Cobilas.GodotEngine.Utility.GDDirectory.RemoveFile*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="System.String" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: GDDirectory.RemoveFile(String)
   fullName.vb: Cobilas.GodotEngine.Utility.GDDirectory.RemoveFile(String)
   name.vb: RemoveFile(String)
-- uid: Cobilas.GodotEngine.Utility.GDDirectory.GetDirectories
-  commentId: M:Cobilas.GodotEngine.Utility.GDDirectory.GetDirectories
-  id: GetDirectories
-  parent: Cobilas.GodotEngine.Utility.GDDirectory
-  langs:
-  - csharp
-  - vb
-  name: GetDirectories()
-  nameWithType: GDDirectory.GetDirectories()
-  fullName: Cobilas.GodotEngine.Utility.GDDirectory.GetDirectories()
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/GDDirectory.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: GetDirectories
-    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
-    startLine: 97
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility
-  syntax:
-    content: public GDDirectory[] GetDirectories()
-    return:
-      type: Cobilas.GodotEngine.Utility.GDDirectory[]
-    content.vb: Public Function GetDirectories() As GDDirectory()
-  overload: Cobilas.GodotEngine.Utility.GDDirectory.GetDirectories*
 - uid: Cobilas.GodotEngine.Utility.GDDirectory.GetFiles(System.Boolean)
   commentId: M:Cobilas.GodotEngine.Utility.GDDirectory.GetFiles(System.Boolean)
   id: GetFiles(System.Boolean)
@@ -478,21 +534,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDDirectory.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetFiles
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
-    startLine: 105
+    startLine: 128
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Gets multiple files in the same directory.
+  example: []
   syntax:
     content: public GDFile[] GetFiles(bool isSubdirectory = false)
     parameters:
     - id: isSubdirectory
       type: System.Boolean
+      description: Allows the method to search subdirectories.
     return:
       type: Cobilas.GodotEngine.Utility.GDFile[]
+      description: If no files are found, an empty list will be returned.
     content.vb: Public Function GetFiles(isSubdirectory As Boolean = False) As GDFile()
   overload: Cobilas.GodotEngine.Utility.GDDirectory.GetFiles*
   nameWithType.vb: GDDirectory.GetFiles(Boolean)
@@ -512,25 +572,34 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDDirectory.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetFile
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
-    startLine: 119
+    startLine: 146
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Gets a specific file.
+  example: []
   syntax:
     content: public GDFile? GetFile(string? name, bool isSubdirectory = false)
     parameters:
     - id: name
       type: System.String
+      description: The name of the file to search for.
     - id: isSubdirectory
       type: System.Boolean
+      description: Allows the method to search subdirectories.
     return:
       type: Cobilas.GodotEngine.Utility.GDFile
+      description: If the directory is not found, a <xref href="Cobilas.GodotEngine.Utility.GDDirectory" data-throw-if-not-resolved="false"></xref> marked as <xref href="Cobilas.GodotEngine.Utility.GDFileAttributes.Null" data-throw-if-not-resolved="false"></xref> will be returned.
     content.vb: Public Function GetFile(name As String, isSubdirectory As Boolean = False) As GDFile
   overload: Cobilas.GodotEngine.Utility.GDDirectory.GetFile*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="System.String" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: GDDirectory.GetFile(String, Boolean)
   fullName.vb: Cobilas.GodotEngine.Utility.GDDirectory.GetFile(String, Boolean)
   name.vb: GetFile(String, Boolean)
@@ -548,11 +617,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDDirectory.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToString
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
-    startLine: 136
+    startLine: 163
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -580,14 +649,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDDirectory.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetGDDirectory
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
-    startLine: 158
+    startLine: 185
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Opens an existing directory of the filesystem.
+  example: []
   syntax:
     content: public static GDDirectory? GetGDDirectory()
     return:
@@ -608,26 +679,27 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDDirectory.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetGDDirectory
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDDirectory.cs
-    startLine: 166
+    startLine: 193
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
-  summary: >-
-    <br>Opens an existing directory of the filesystem. The path argument can be within</br>
-
-    <br>the project tree (<code>res://folder</code>), the user directory (<code>user://folder</code>) or an absolute</br>
-
-    <br>path of the user filesystem (e.g. <code>/tmp/folder</code> or <code>C:\tmp\folder</code>).</br>
+  summary: Opens an existing directory of the filesystem.
   example: []
   syntax:
     content: public static GDDirectory? GetGDDirectory(string? path)
     parameters:
     - id: path
       type: System.String
+      description: >-
+        The path argument can be within the project tree (<code>res://folder</code>), 
+
+        the user directory (<code>user://folder</code>) or an absolute
+
+        path of the user filesystem (e.g. <code>/tmp/folder</code> or <code>C:\tmp\folder</code>).
     return:
       type: Cobilas.GodotEngine.Utility.GDDirectory
     content.vb: Public Shared Function GetGDDirectory(path As String) As GDDirectory
@@ -1013,6 +1085,13 @@ references:
   name: Dispose
   nameWithType: GDDirectory.Dispose
   fullName: Cobilas.GodotEngine.Utility.GDDirectory.Dispose
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
 - uid: Cobilas.GodotEngine.Utility.GDDirectory.GetDirectory*
   commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.GetDirectory
   href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_GetDirectory_System_String_System_Boolean_
@@ -1037,24 +1116,6 @@ references:
   name: GDDirectory
   nameWithType: GDDirectory
   fullName: Cobilas.GodotEngine.Utility.GDDirectory
-- uid: Cobilas.GodotEngine.Utility.GDDirectory.CreateDirectory*
-  commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.CreateDirectory
-  href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_CreateDirectory_System_String_
-  name: CreateDirectory
-  nameWithType: GDDirectory.CreateDirectory
-  fullName: Cobilas.GodotEngine.Utility.GDDirectory.CreateDirectory
-- uid: Cobilas.GodotEngine.Utility.GDDirectory.RemoveDirectory*
-  commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.RemoveDirectory
-  href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_RemoveDirectory_System_String_
-  name: RemoveDirectory
-  nameWithType: GDDirectory.RemoveDirectory
-  fullName: Cobilas.GodotEngine.Utility.GDDirectory.RemoveDirectory
-- uid: Cobilas.GodotEngine.Utility.GDDirectory.RemoveFile*
-  commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.RemoveFile
-  href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_RemoveFile_System_String_
-  name: RemoveFile
-  nameWithType: GDDirectory.RemoveFile
-  fullName: Cobilas.GodotEngine.Utility.GDDirectory.RemoveFile
 - uid: Cobilas.GodotEngine.Utility.GDDirectory.GetDirectories*
   commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.GetDirectories
   href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_GetDirectories
@@ -1082,6 +1143,24 @@ references:
     href: Cobilas.GodotEngine.Utility.GDDirectory.html
   - name: (
   - name: )
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.CreateDirectory*
+  commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.CreateDirectory
+  href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_CreateDirectory_System_String_
+  name: CreateDirectory
+  nameWithType: GDDirectory.CreateDirectory
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.CreateDirectory
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.RemoveDirectory*
+  commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.RemoveDirectory
+  href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_RemoveDirectory_System_String_
+  name: RemoveDirectory
+  nameWithType: GDDirectory.RemoveDirectory
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.RemoveDirectory
+- uid: Cobilas.GodotEngine.Utility.GDDirectory.RemoveFile*
+  commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.RemoveFile
+  href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_RemoveFile_System_String_
+  name: RemoveFile
+  nameWithType: GDDirectory.RemoveFile
+  fullName: Cobilas.GodotEngine.Utility.GDDirectory.RemoveFile
 - uid: Cobilas.GodotEngine.Utility.GDDirectory.GetFiles*
   commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.GetFiles
   href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_GetFiles_System_Boolean_
@@ -1109,6 +1188,12 @@ references:
     href: Cobilas.GodotEngine.Utility.GDFile.html
   - name: (
   - name: )
+- uid: Cobilas.GodotEngine.Utility.GDFileAttributes.Null
+  commentId: F:Cobilas.GodotEngine.Utility.GDFileAttributes.Null
+  href: Cobilas.GodotEngine.Utility.GDFileAttributes.html#Cobilas_GodotEngine_Utility_GDFileAttributes_Null
+  name: "Null"
+  nameWithType: GDFileAttributes.Null
+  fullName: Cobilas.GodotEngine.Utility.GDFileAttributes.Null
 - uid: Cobilas.GodotEngine.Utility.GDDirectory.GetFile*
   commentId: Overload:Cobilas.GodotEngine.Utility.GDDirectory.GetFile
   href: Cobilas.GodotEngine.Utility.GDDirectory.html#Cobilas_GodotEngine_Utility_GDDirectory_GetFile_System_String_System_Boolean_

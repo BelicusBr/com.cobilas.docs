@@ -5,11 +5,27 @@ items:
   id: Scene
   parent: Cobilas.GodotEngine.Utility.Scene
   children:
-  - Cobilas.GodotEngine.Utility.Scene.Scene.#ctor(System.String,System.Int32)
+  - Cobilas.GodotEngine.Utility.Scene.Scene.#ctor(System.String,System.Int32,Godot.Node)
+  - Cobilas.GodotEngine.Utility.Scene.Scene.Empty
+  - Cobilas.GodotEngine.Utility.Scene.Scene.Equals(Cobilas.GodotEngine.Utility.Scene.Scene)
+  - Cobilas.GodotEngine.Utility.Scene.Scene.Equals(System.Int32)
+  - Cobilas.GodotEngine.Utility.Scene.Scene.Equals(System.Object)
+  - Cobilas.GodotEngine.Utility.Scene.Scene.Equals(System.String)
+  - Cobilas.GodotEngine.Utility.Scene.Scene.GetHashCode
   - Cobilas.GodotEngine.Utility.Scene.Scene.Index
   - Cobilas.GodotEngine.Utility.Scene.Scene.Name
   - Cobilas.GodotEngine.Utility.Scene.Scene.NameWithoutExtension
+  - Cobilas.GodotEngine.Utility.Scene.Scene.SceneNode
   - Cobilas.GodotEngine.Utility.Scene.Scene.ScenePath
+  - Cobilas.GodotEngine.Utility.Scene.Scene.ToString
+  - Cobilas.GodotEngine.Utility.Scene.Scene.op_Equality(Cobilas.GodotEngine.Utility.Scene.Scene,Cobilas.GodotEngine.Utility.Scene.Scene)
+  - Cobilas.GodotEngine.Utility.Scene.Scene.op_Equality(Cobilas.GodotEngine.Utility.Scene.Scene,System.Int32)
+  - Cobilas.GodotEngine.Utility.Scene.Scene.op_Equality(Cobilas.GodotEngine.Utility.Scene.Scene,System.String)
+  - Cobilas.GodotEngine.Utility.Scene.Scene.op_Explicit(Cobilas.GodotEngine.Utility.Scene.Scene)~System.Int32
+  - Cobilas.GodotEngine.Utility.Scene.Scene.op_Explicit(Cobilas.GodotEngine.Utility.Scene.Scene)~System.String
+  - Cobilas.GodotEngine.Utility.Scene.Scene.op_Inequality(Cobilas.GodotEngine.Utility.Scene.Scene,Cobilas.GodotEngine.Utility.Scene.Scene)
+  - Cobilas.GodotEngine.Utility.Scene.Scene.op_Inequality(Cobilas.GodotEngine.Utility.Scene.Scene,System.Int32)
+  - Cobilas.GodotEngine.Utility.Scene.Scene.op_Inequality(Cobilas.GodotEngine.Utility.Scene.Scene,System.String)
   langs:
   - csharp
   - vb
@@ -20,21 +36,24 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Scene/Scene.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Scene
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
-    startLine: 4
+    startLine: 5
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: Contains the scene information.
+  example: []
   syntax:
-    content: public struct Scene
-    content.vb: Public Structure Scene
+    content: 'public struct Scene : IEquatable<Scene>, IEquatable<int>, IEquatable<string>'
+    content.vb: Public Structure Scene Implements IEquatable(Of Scene), IEquatable(Of Integer), IEquatable(Of String)
+  implements:
+  - System.IEquatable{Cobilas.GodotEngine.Utility.Scene.Scene}
+  - System.IEquatable{System.Int32}
+  - System.IEquatable{System.String}
   inheritedMembers:
-  - System.ValueType.Equals(System.Object)
-  - System.ValueType.GetHashCode
-  - System.ValueType.ToString
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetType
@@ -52,21 +71,56 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Scene/Scene.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Index
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
-    startLine: 5
+    startLine: 8
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: The scene index.
+  example: []
   syntax:
     content: public readonly int Index { get; }
     parameters: []
     return:
       type: System.Int32
+      description: Returns the scene index.
     content.vb: Public Property Index As Integer
   overload: Cobilas.GodotEngine.Utility.Scene.Scene.Index*
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene.SceneNode
+  commentId: P:Cobilas.GodotEngine.Utility.Scene.Scene.SceneNode
+  id: SceneNode
+  parent: Cobilas.GodotEngine.Utility.Scene.Scene
+  langs:
+  - csharp
+  - vb
+  name: SceneNode
+  nameWithType: Scene.SceneNode
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.SceneNode
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/Scene/Scene.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: SceneNode
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
+    startLine: 11
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: Stores the root <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref> of the scenario.
+  example: []
+  syntax:
+    content: public readonly Node SceneNode { get; }
+    parameters: []
+    return:
+      type: Godot.Node
+      description: Returns a <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref> type object that is the root of the scenario.
+    content.vb: Public Property SceneNode As Node
+  overload: Cobilas.GodotEngine.Utility.Scene.Scene.SceneNode*
 - uid: Cobilas.GodotEngine.Utility.Scene.Scene.ScenePath
   commentId: P:Cobilas.GodotEngine.Utility.Scene.Scene.ScenePath
   id: ScenePath
@@ -81,19 +135,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Scene/Scene.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ScenePath
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
-    startLine: 6
+    startLine: 14
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: The path of the scene file.
+  example: []
   syntax:
     content: public readonly string ScenePath { get; }
     parameters: []
     return:
       type: System.String
+      description: Returns the full or relative path of the scene file.
     content.vb: Public Property ScenePath As String
   overload: Cobilas.GodotEngine.Utility.Scene.Scene.ScenePath*
 - uid: Cobilas.GodotEngine.Utility.Scene.Scene.Name
@@ -110,21 +167,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Scene/Scene.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Name
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
-    startLine: 7
+    startLine: 18
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: The name of the scene file.
+  example: []
   syntax:
     content: public readonly string Name { get; }
     parameters: []
     return:
       type: System.String
+      description: Returns a string containing the name of the scene file with its extension.
     content.vb: Public ReadOnly Property Name As String
   overload: Cobilas.GodotEngine.Utility.Scene.Scene.Name*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: path contains one or more of the invalid characters defined in <xref href="System.IO.Path.GetInvalidPathChars" data-throw-if-not-resolved="false"></xref>.
 - uid: Cobilas.GodotEngine.Utility.Scene.Scene.NameWithoutExtension
   commentId: P:Cobilas.GodotEngine.Utility.Scene.Scene.NameWithoutExtension
   id: NameWithoutExtension
@@ -139,55 +203,638 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Scene/Scene.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: NameWithoutExtension
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
-    startLine: 8
+    startLine: 22
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: The name of the scene file without the extension.
+  example: []
   syntax:
     content: public readonly string NameWithoutExtension { get; }
     parameters: []
     return:
       type: System.String
+      description: Returns a string containing the name of the scene file without its extension.
     content.vb: Public ReadOnly Property NameWithoutExtension As String
   overload: Cobilas.GodotEngine.Utility.Scene.Scene.NameWithoutExtension*
-- uid: Cobilas.GodotEngine.Utility.Scene.Scene.#ctor(System.String,System.Int32)
-  commentId: M:Cobilas.GodotEngine.Utility.Scene.Scene.#ctor(System.String,System.Int32)
-  id: '#ctor(System.String,System.Int32)'
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: path contains one or more of the invalid characters defined in <xref href="System.IO.Path.GetInvalidPathChars" data-throw-if-not-resolved="false"></xref>.
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene.Empty
+  commentId: P:Cobilas.GodotEngine.Utility.Scene.Scene.Empty
+  id: Empty
   parent: Cobilas.GodotEngine.Utility.Scene.Scene
   langs:
   - csharp
   - vb
-  name: Scene(string, int)
-  nameWithType: Scene.Scene(string, int)
-  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.Scene(string, int)
+  name: Empty
+  nameWithType: Scene.Empty
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.Empty
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/Scene/Scene.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Empty
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
+    startLine: 27
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: Empty scenario.
+  example: []
+  syntax:
+    content: public static Scene Empty { get; }
+    parameters: []
+    return:
+      type: Cobilas.GodotEngine.Utility.Scene.Scene
+      description: Returns a representation of an empty scenario.
+    content.vb: Public Shared ReadOnly Property Empty As Scene
+  overload: Cobilas.GodotEngine.Utility.Scene.Scene.Empty*
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene.#ctor(System.String,System.Int32,Godot.Node)
+  commentId: M:Cobilas.GodotEngine.Utility.Scene.Scene.#ctor(System.String,System.Int32,Godot.Node)
+  id: '#ctor(System.String,System.Int32,Godot.Node)'
+  parent: Cobilas.GodotEngine.Utility.Scene.Scene
+  langs:
+  - csharp
+  - vb
+  name: Scene(string, int, Node)
+  nameWithType: Scene.Scene(string, int, Node)
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.Scene(string, int, Godot.Node)
   type: Constructor
   source:
     remote:
       path: GodotEngine.Utility/Scene/Scene.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
-    startLine: 10
+    startLine: 29
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: Starts a new instance of the object.
+  example: []
   syntax:
-    content: public Scene(string scenePath, int index)
+    content: public Scene(string scenePath, int index, Node sceneNode)
     parameters:
     - id: scenePath
       type: System.String
     - id: index
       type: System.Int32
-    content.vb: Public Sub New(scenePath As String, index As Integer)
+    - id: sceneNode
+      type: Godot.Node
+    content.vb: Public Sub New(scenePath As String, index As Integer, sceneNode As Node)
   overload: Cobilas.GodotEngine.Utility.Scene.Scene.#ctor*
-  nameWithType.vb: Scene.New(String, Integer)
-  fullName.vb: Cobilas.GodotEngine.Utility.Scene.Scene.New(String, Integer)
-  name.vb: New(String, Integer)
+  nameWithType.vb: Scene.New(String, Integer, Node)
+  fullName.vb: Cobilas.GodotEngine.Utility.Scene.Scene.New(String, Integer, Godot.Node)
+  name.vb: New(String, Integer, Node)
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene.Equals(System.Int32)
+  commentId: M:Cobilas.GodotEngine.Utility.Scene.Scene.Equals(System.Int32)
+  id: Equals(System.Int32)
+  parent: Cobilas.GodotEngine.Utility.Scene.Scene
+  langs:
+  - csharp
+  - vb
+  name: Equals(int)
+  nameWithType: Scene.Equals(int)
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.Equals(int)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Scene/Scene.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Equals
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
+    startLine: 35
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public readonly bool Equals(int other)
+    parameters:
+    - id: other
+      type: System.Int32
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As Integer) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Scene.Scene.Equals*
+  implements:
+  - System.IEquatable{System.Int32}.Equals(System.Int32)
+  nameWithType.vb: Scene.Equals(Integer)
+  fullName.vb: Cobilas.GodotEngine.Utility.Scene.Scene.Equals(Integer)
+  name.vb: Equals(Integer)
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene.Equals(Cobilas.GodotEngine.Utility.Scene.Scene)
+  commentId: M:Cobilas.GodotEngine.Utility.Scene.Scene.Equals(Cobilas.GodotEngine.Utility.Scene.Scene)
+  id: Equals(Cobilas.GodotEngine.Utility.Scene.Scene)
+  parent: Cobilas.GodotEngine.Utility.Scene.Scene
+  langs:
+  - csharp
+  - vb
+  name: Equals(Scene)
+  nameWithType: Scene.Equals(Scene)
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.Equals(Cobilas.GodotEngine.Utility.Scene.Scene)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Scene/Scene.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Equals
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
+    startLine: 37
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public readonly bool Equals(Scene other)
+    parameters:
+    - id: other
+      type: Cobilas.GodotEngine.Utility.Scene.Scene
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As Scene) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Scene.Scene.Equals*
+  implements:
+  - System.IEquatable{Cobilas.GodotEngine.Utility.Scene.Scene}.Equals(Cobilas.GodotEngine.Utility.Scene.Scene)
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene.Equals(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.Scene.Scene.Equals(System.String)
+  id: Equals(System.String)
+  parent: Cobilas.GodotEngine.Utility.Scene.Scene
+  langs:
+  - csharp
+  - vb
+  name: Equals(string)
+  nameWithType: Scene.Equals(string)
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.Equals(string)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Scene/Scene.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Equals
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
+    startLine: 39
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public readonly bool Equals(string other)
+    parameters:
+    - id: other
+      type: System.String
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As String) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Scene.Scene.Equals*
+  implements:
+  - System.IEquatable{System.String}.Equals(System.String)
+  nameWithType.vb: Scene.Equals(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.Scene.Scene.Equals(String)
+  name.vb: Equals(String)
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene.Equals(System.Object)
+  commentId: M:Cobilas.GodotEngine.Utility.Scene.Scene.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Cobilas.GodotEngine.Utility.Scene.Scene
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: Scene.Equals(object)
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Scene/Scene.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Equals
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
+    startLine: 41
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: Indicates whether this instance and a specified object are equal.
+  example: []
+  syntax:
+    content: public override readonly bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current instance.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Cobilas.GodotEngine.Utility.Scene.Scene.Equals*
+  nameWithType.vb: Scene.Equals(Object)
+  fullName.vb: Cobilas.GodotEngine.Utility.Scene.Scene.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene.GetHashCode
+  commentId: M:Cobilas.GodotEngine.Utility.Scene.Scene.GetHashCode
+  id: GetHashCode
+  parent: Cobilas.GodotEngine.Utility.Scene.Scene
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Scene.GetHashCode()
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Scene/Scene.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetHashCode
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
+    startLine: 53
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: Returns the hash code for this instance.
+  example: []
+  syntax:
+    content: public override readonly int GetHashCode()
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer that is the hash code for this instance.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Cobilas.GodotEngine.Utility.Scene.Scene.GetHashCode*
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene.ToString
+  commentId: M:Cobilas.GodotEngine.Utility.Scene.Scene.ToString
+  id: ToString
+  parent: Cobilas.GodotEngine.Utility.Scene.Scene
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Scene.ToString()
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.ToString()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Scene/Scene.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ToString
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
+    startLine: 56
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: Returns the fully qualified type name of this instance.
+  example: []
+  syntax:
+    content: public override readonly string ToString()
+    return:
+      type: System.String
+      description: The fully qualified type name.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: Cobilas.GodotEngine.Utility.Scene.Scene.ToString*
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene.op_Equality(Cobilas.GodotEngine.Utility.Scene.Scene,Cobilas.GodotEngine.Utility.Scene.Scene)
+  commentId: M:Cobilas.GodotEngine.Utility.Scene.Scene.op_Equality(Cobilas.GodotEngine.Utility.Scene.Scene,Cobilas.GodotEngine.Utility.Scene.Scene)
+  id: op_Equality(Cobilas.GodotEngine.Utility.Scene.Scene,Cobilas.GodotEngine.Utility.Scene.Scene)
+  parent: Cobilas.GodotEngine.Utility.Scene.Scene
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Scene, Scene)
+  nameWithType: Scene.operator ==(Scene, Scene)
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.operator ==(Cobilas.GodotEngine.Utility.Scene.Scene, Cobilas.GodotEngine.Utility.Scene.Scene)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/Scene/Scene.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Equality
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
+    startLine: 62
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: Indicates whether this instance is equal to another instance of the same type.
+  example: []
+  syntax:
+    content: public static bool operator ==(Scene left, Scene right)
+    parameters:
+    - id: left
+      type: Cobilas.GodotEngine.Utility.Scene.Scene
+      description: Object to be compared.
+    - id: right
+      type: Cobilas.GodotEngine.Utility.Scene.Scene
+      description: Object of comparison.
+    return:
+      type: System.Boolean
+      description: Returns the result of the comparison.
+    content.vb: Public Shared Operator =(left As Scene, right As Scene) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Scene.Scene.op_Equality*
+  nameWithType.vb: Scene.=(Scene, Scene)
+  fullName.vb: Cobilas.GodotEngine.Utility.Scene.Scene.=(Cobilas.GodotEngine.Utility.Scene.Scene, Cobilas.GodotEngine.Utility.Scene.Scene)
+  name.vb: =(Scene, Scene)
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene.op_Inequality(Cobilas.GodotEngine.Utility.Scene.Scene,Cobilas.GodotEngine.Utility.Scene.Scene)
+  commentId: M:Cobilas.GodotEngine.Utility.Scene.Scene.op_Inequality(Cobilas.GodotEngine.Utility.Scene.Scene,Cobilas.GodotEngine.Utility.Scene.Scene)
+  id: op_Inequality(Cobilas.GodotEngine.Utility.Scene.Scene,Cobilas.GodotEngine.Utility.Scene.Scene)
+  parent: Cobilas.GodotEngine.Utility.Scene.Scene
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Scene, Scene)
+  nameWithType: Scene.operator !=(Scene, Scene)
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.operator !=(Cobilas.GodotEngine.Utility.Scene.Scene, Cobilas.GodotEngine.Utility.Scene.Scene)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/Scene/Scene.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Inequality
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
+    startLine: 67
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: Indicates whether this instance is different from another instance of the same type.
+  example: []
+  syntax:
+    content: public static bool operator !=(Scene left, Scene right)
+    parameters:
+    - id: left
+      type: Cobilas.GodotEngine.Utility.Scene.Scene
+      description: Object to be compared.
+    - id: right
+      type: Cobilas.GodotEngine.Utility.Scene.Scene
+      description: Object of comparison.
+    return:
+      type: System.Boolean
+      description: Returns the result of the comparison.
+    content.vb: Public Shared Operator <>(left As Scene, right As Scene) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Scene.Scene.op_Inequality*
+  nameWithType.vb: Scene.<>(Scene, Scene)
+  fullName.vb: Cobilas.GodotEngine.Utility.Scene.Scene.<>(Cobilas.GodotEngine.Utility.Scene.Scene, Cobilas.GodotEngine.Utility.Scene.Scene)
+  name.vb: <>(Scene, Scene)
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene.op_Equality(Cobilas.GodotEngine.Utility.Scene.Scene,System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.Scene.Scene.op_Equality(Cobilas.GodotEngine.Utility.Scene.Scene,System.String)
+  id: op_Equality(Cobilas.GodotEngine.Utility.Scene.Scene,System.String)
+  parent: Cobilas.GodotEngine.Utility.Scene.Scene
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Scene, string)
+  nameWithType: Scene.operator ==(Scene, string)
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.operator ==(Cobilas.GodotEngine.Utility.Scene.Scene, string)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/Scene/Scene.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Equality
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
+    startLine: 72
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: Indicates whether this instance is equal to another instance of the same type.
+  example: []
+  syntax:
+    content: public static bool operator ==(Scene left, string right)
+    parameters:
+    - id: left
+      type: Cobilas.GodotEngine.Utility.Scene.Scene
+      description: Object to be compared.
+    - id: right
+      type: System.String
+      description: Object of comparison.
+    return:
+      type: System.Boolean
+      description: Returns the result of the comparison.
+    content.vb: Public Shared Operator =(left As Scene, right As String) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Scene.Scene.op_Equality*
+  nameWithType.vb: Scene.=(Scene, String)
+  fullName.vb: Cobilas.GodotEngine.Utility.Scene.Scene.=(Cobilas.GodotEngine.Utility.Scene.Scene, String)
+  name.vb: =(Scene, String)
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene.op_Inequality(Cobilas.GodotEngine.Utility.Scene.Scene,System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.Scene.Scene.op_Inequality(Cobilas.GodotEngine.Utility.Scene.Scene,System.String)
+  id: op_Inequality(Cobilas.GodotEngine.Utility.Scene.Scene,System.String)
+  parent: Cobilas.GodotEngine.Utility.Scene.Scene
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Scene, string)
+  nameWithType: Scene.operator !=(Scene, string)
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.operator !=(Cobilas.GodotEngine.Utility.Scene.Scene, string)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/Scene/Scene.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Inequality
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
+    startLine: 77
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: Indicates whether this instance is different from another instance of the same type.
+  example: []
+  syntax:
+    content: public static bool operator !=(Scene left, string right)
+    parameters:
+    - id: left
+      type: Cobilas.GodotEngine.Utility.Scene.Scene
+      description: Object to be compared.
+    - id: right
+      type: System.String
+      description: Object of comparison.
+    return:
+      type: System.Boolean
+      description: Returns the result of the comparison.
+    content.vb: Public Shared Operator <>(left As Scene, right As String) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Scene.Scene.op_Inequality*
+  nameWithType.vb: Scene.<>(Scene, String)
+  fullName.vb: Cobilas.GodotEngine.Utility.Scene.Scene.<>(Cobilas.GodotEngine.Utility.Scene.Scene, String)
+  name.vb: <>(Scene, String)
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene.op_Equality(Cobilas.GodotEngine.Utility.Scene.Scene,System.Int32)
+  commentId: M:Cobilas.GodotEngine.Utility.Scene.Scene.op_Equality(Cobilas.GodotEngine.Utility.Scene.Scene,System.Int32)
+  id: op_Equality(Cobilas.GodotEngine.Utility.Scene.Scene,System.Int32)
+  parent: Cobilas.GodotEngine.Utility.Scene.Scene
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Scene, int)
+  nameWithType: Scene.operator ==(Scene, int)
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.operator ==(Cobilas.GodotEngine.Utility.Scene.Scene, int)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/Scene/Scene.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Equality
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
+    startLine: 82
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: Indicates whether this instance is equal to another instance of the same type.
+  example: []
+  syntax:
+    content: public static bool operator ==(Scene left, int right)
+    parameters:
+    - id: left
+      type: Cobilas.GodotEngine.Utility.Scene.Scene
+      description: Object to be compared.
+    - id: right
+      type: System.Int32
+      description: Object of comparison.
+    return:
+      type: System.Boolean
+      description: Returns the result of the comparison.
+    content.vb: Public Shared Operator =(left As Scene, right As Integer) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Scene.Scene.op_Equality*
+  nameWithType.vb: Scene.=(Scene, Integer)
+  fullName.vb: Cobilas.GodotEngine.Utility.Scene.Scene.=(Cobilas.GodotEngine.Utility.Scene.Scene, Integer)
+  name.vb: =(Scene, Integer)
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene.op_Inequality(Cobilas.GodotEngine.Utility.Scene.Scene,System.Int32)
+  commentId: M:Cobilas.GodotEngine.Utility.Scene.Scene.op_Inequality(Cobilas.GodotEngine.Utility.Scene.Scene,System.Int32)
+  id: op_Inequality(Cobilas.GodotEngine.Utility.Scene.Scene,System.Int32)
+  parent: Cobilas.GodotEngine.Utility.Scene.Scene
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Scene, int)
+  nameWithType: Scene.operator !=(Scene, int)
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.operator !=(Cobilas.GodotEngine.Utility.Scene.Scene, int)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/Scene/Scene.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Inequality
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
+    startLine: 87
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: Indicates whether this instance is different from another instance of the same type.
+  example: []
+  syntax:
+    content: public static bool operator !=(Scene left, int right)
+    parameters:
+    - id: left
+      type: Cobilas.GodotEngine.Utility.Scene.Scene
+      description: Object to be compared.
+    - id: right
+      type: System.Int32
+      description: Object of comparison.
+    return:
+      type: System.Boolean
+      description: Returns the result of the comparison.
+    content.vb: Public Shared Operator <>(left As Scene, right As Integer) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Scene.Scene.op_Inequality*
+  nameWithType.vb: Scene.<>(Scene, Integer)
+  fullName.vb: Cobilas.GodotEngine.Utility.Scene.Scene.<>(Cobilas.GodotEngine.Utility.Scene.Scene, Integer)
+  name.vb: <>(Scene, Integer)
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene.op_Explicit(Cobilas.GodotEngine.Utility.Scene.Scene)~System.Int32
+  commentId: M:Cobilas.GodotEngine.Utility.Scene.Scene.op_Explicit(Cobilas.GodotEngine.Utility.Scene.Scene)~System.Int32
+  id: op_Explicit(Cobilas.GodotEngine.Utility.Scene.Scene)~System.Int32
+  parent: Cobilas.GodotEngine.Utility.Scene.Scene
+  langs:
+  - csharp
+  - vb
+  name: explicit operator int(Scene)
+  nameWithType: Scene.explicit operator int(Scene)
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.explicit operator int(Cobilas.GodotEngine.Utility.Scene.Scene)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/Scene/Scene.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Explicit
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
+    startLine: 90
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: Explicit conversion operator.(<xref href="Cobilas.GodotEngine.Utility.Scene.Scene" data-throw-if-not-resolved="false"></xref> to <xref href="System.Int32" data-throw-if-not-resolved="false"></xref>)
+  example: []
+  syntax:
+    content: public static explicit operator int(Scene scene)
+    parameters:
+    - id: scene
+      type: Cobilas.GodotEngine.Utility.Scene.Scene
+      description: Object to be converted.
+    return:
+      type: System.Int32
+    content.vb: Public Shared Narrowing Operator CType(scene As Scene) As Integer
+  overload: Cobilas.GodotEngine.Utility.Scene.Scene.op_Explicit*
+  nameWithType.vb: Scene.CType(Scene)
+  fullName.vb: Cobilas.GodotEngine.Utility.Scene.Scene.CType(Cobilas.GodotEngine.Utility.Scene.Scene)
+  name.vb: CType(Scene)
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene.op_Explicit(Cobilas.GodotEngine.Utility.Scene.Scene)~System.String
+  commentId: M:Cobilas.GodotEngine.Utility.Scene.Scene.op_Explicit(Cobilas.GodotEngine.Utility.Scene.Scene)~System.String
+  id: op_Explicit(Cobilas.GodotEngine.Utility.Scene.Scene)~System.String
+  parent: Cobilas.GodotEngine.Utility.Scene.Scene
+  langs:
+  - csharp
+  - vb
+  name: explicit operator string(Scene)
+  nameWithType: Scene.explicit operator string(Scene)
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.explicit operator string(Cobilas.GodotEngine.Utility.Scene.Scene)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/Scene/Scene.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Explicit
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
+    startLine: 93
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Scene
+  summary: Explicit conversion operator.(<xref href="Cobilas.GodotEngine.Utility.Scene.Scene" data-throw-if-not-resolved="false"></xref> to <xref href="System.String" data-throw-if-not-resolved="false"></xref>)
+  example: []
+  syntax:
+    content: public static explicit operator string(Scene value)
+    parameters:
+    - id: value
+      type: Cobilas.GodotEngine.Utility.Scene.Scene
+      description: Object to be converted.
+    return:
+      type: System.String
+    content.vb: Public Shared Narrowing Operator CType(value As Scene) As String
+  overload: Cobilas.GodotEngine.Utility.Scene.Scene.op_Explicit*
+  nameWithType.vb: Scene.CType(Scene)
+  fullName.vb: Cobilas.GodotEngine.Utility.Scene.Scene.CType(Cobilas.GodotEngine.Utility.Scene.Scene)
+  name.vb: CType(Scene)
 references:
 - uid: Cobilas.GodotEngine.Utility.Scene
   commentId: N:Cobilas.GodotEngine.Utility.Scene
@@ -227,82 +874,108 @@ references:
   - uid: Cobilas.GodotEngine.Utility.Scene
     name: Scene
     href: Cobilas.GodotEngine.Utility.Scene.html
-- uid: System.ValueType.Equals(System.Object)
-  commentId: M:System.ValueType.Equals(System.Object)
-  parent: System.ValueType
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
-  name: Equals(object)
-  nameWithType: ValueType.Equals(object)
-  fullName: System.ValueType.Equals(object)
-  nameWithType.vb: ValueType.Equals(Object)
-  fullName.vb: System.ValueType.Equals(Object)
-  name.vb: Equals(Object)
+- uid: System.IEquatable{Cobilas.GodotEngine.Utility.Scene.Scene}
+  commentId: T:System.IEquatable{Cobilas.GodotEngine.Utility.Scene.Scene}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Scene>
+  nameWithType: IEquatable<Scene>
+  fullName: System.IEquatable<Cobilas.GodotEngine.Utility.Scene.Scene>
+  nameWithType.vb: IEquatable(Of Scene)
+  fullName.vb: System.IEquatable(Of Cobilas.GodotEngine.Utility.Scene.Scene)
+  name.vb: IEquatable(Of Scene)
   spec.csharp:
-  - uid: System.ValueType.Equals(System.Object)
-    name: Equals
+  - uid: System.IEquatable`1
+    name: IEquatable
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Cobilas.GodotEngine.Utility.Scene.Scene
+    name: Scene
+    href: Cobilas.GodotEngine.Utility.Scene.Scene.html
+  - name: '>'
   spec.vb:
-  - uid: System.ValueType.Equals(System.Object)
-    name: Equals
+  - uid: System.IEquatable`1
+    name: IEquatable
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
   - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: Of
+  - name: " "
+  - uid: Cobilas.GodotEngine.Utility.Scene.Scene
+    name: Scene
+    href: Cobilas.GodotEngine.Utility.Scene.Scene.html
   - name: )
-- uid: System.ValueType.GetHashCode
-  commentId: M:System.ValueType.GetHashCode
-  parent: System.ValueType
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
-  name: GetHashCode()
-  nameWithType: ValueType.GetHashCode()
-  fullName: System.ValueType.GetHashCode()
+- uid: System.IEquatable{System.Int32}
+  commentId: T:System.IEquatable{System.Int32}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<int>
+  nameWithType: IEquatable<int>
+  fullName: System.IEquatable<int>
+  nameWithType.vb: IEquatable(Of Integer)
+  fullName.vb: System.IEquatable(Of Integer)
+  name.vb: IEquatable(Of Integer)
   spec.csharp:
-  - uid: System.ValueType.GetHashCode
-    name: GetHashCode
+  - uid: System.IEquatable`1
+    name: IEquatable
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
-  - name: (
-  - name: )
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
   spec.vb:
-  - uid: System.ValueType.GetHashCode
-    name: GetHashCode
+  - uid: System.IEquatable`1
+    name: IEquatable
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
   - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
-- uid: System.ValueType.ToString
-  commentId: M:System.ValueType.ToString
-  parent: System.ValueType
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
-  name: ToString()
-  nameWithType: ValueType.ToString()
-  fullName: System.ValueType.ToString()
+- uid: System.IEquatable{System.String}
+  commentId: T:System.IEquatable{System.String}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<string>
+  nameWithType: IEquatable<string>
+  fullName: System.IEquatable<string>
+  nameWithType.vb: IEquatable(Of String)
+  fullName.vb: System.IEquatable(Of String)
+  name.vb: IEquatable(Of String)
   spec.csharp:
-  - uid: System.ValueType.ToString
-    name: ToString
+  - uid: System.IEquatable`1
+    name: IEquatable
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
-  - name: (
-  - name: )
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
   spec.vb:
-  - uid: System.ValueType.ToString
-    name: ToString
+  - uid: System.IEquatable`1
+    name: IEquatable
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
   - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: System.Object.Equals(System.Object,System.Object)
   commentId: M:System.Object.Equals(System.Object,System.Object)
@@ -418,14 +1091,41 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.gettype
   - name: (
   - name: )
-- uid: System.ValueType
-  commentId: T:System.ValueType
-  parent: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.valuetype
-  name: ValueType
-  nameWithType: ValueType
-  fullName: System.ValueType
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -437,13 +1137,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: System
-  commentId: N:System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System
-  nameWithType: System
-  fullName: System
 - uid: Cobilas.GodotEngine.Utility.Scene.Scene.Index*
   commentId: Overload:Cobilas.GodotEngine.Utility.Scene.Scene.Index
   href: Cobilas.GodotEngine.Utility.Scene.Scene.html#Cobilas_GodotEngine_Utility_Scene_Scene_Index
@@ -461,6 +1154,25 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: Godot.Node
+  commentId: T:Godot.Node
+  parent: Godot
+  isExternal: true
+  name: Node
+  nameWithType: Node
+  fullName: Godot.Node
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene.SceneNode*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Scene.Scene.SceneNode
+  href: Cobilas.GodotEngine.Utility.Scene.Scene.html#Cobilas_GodotEngine_Utility_Scene_Scene_SceneNode
+  name: SceneNode
+  nameWithType: Scene.SceneNode
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.SceneNode
+- uid: Godot
+  commentId: N:Godot
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
 - uid: Cobilas.GodotEngine.Utility.Scene.Scene.ScenePath*
   commentId: Overload:Cobilas.GodotEngine.Utility.Scene.Scene.ScenePath
   href: Cobilas.GodotEngine.Utility.Scene.Scene.html#Cobilas_GodotEngine_Utility_Scene_Scene_ScenePath
@@ -478,6 +1190,34 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: System.IO.Path.GetInvalidPathChars
+  commentId: M:System.IO.Path.GetInvalidPathChars
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.path.getinvalidpathchars
+  name: GetInvalidPathChars()
+  nameWithType: Path.GetInvalidPathChars()
+  fullName: System.IO.Path.GetInvalidPathChars()
+  spec.csharp:
+  - uid: System.IO.Path.GetInvalidPathChars
+    name: GetInvalidPathChars
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.path.getinvalidpathchars
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IO.Path.GetInvalidPathChars
+    name: GetInvalidPathChars
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.path.getinvalidpathchars
+  - name: (
+  - name: )
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
 - uid: Cobilas.GodotEngine.Utility.Scene.Scene.Name*
   commentId: Overload:Cobilas.GodotEngine.Utility.Scene.Scene.Name
   href: Cobilas.GodotEngine.Utility.Scene.Scene.html#Cobilas_GodotEngine_Utility_Scene_Scene_Name
@@ -490,12 +1230,302 @@ references:
   name: NameWithoutExtension
   nameWithType: Scene.NameWithoutExtension
   fullName: Cobilas.GodotEngine.Utility.Scene.Scene.NameWithoutExtension
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene.Empty*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Scene.Scene.Empty
+  href: Cobilas.GodotEngine.Utility.Scene.Scene.html#Cobilas_GodotEngine_Utility_Scene_Scene_Empty
+  name: Empty
+  nameWithType: Scene.Empty
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.Empty
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene
+  commentId: T:Cobilas.GodotEngine.Utility.Scene.Scene
+  parent: Cobilas.GodotEngine.Utility.Scene
+  href: Cobilas.GodotEngine.Utility.Scene.Scene.html
+  name: Scene
+  nameWithType: Scene
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene
 - uid: Cobilas.GodotEngine.Utility.Scene.Scene.#ctor*
   commentId: Overload:Cobilas.GodotEngine.Utility.Scene.Scene.#ctor
-  href: Cobilas.GodotEngine.Utility.Scene.Scene.html#Cobilas_GodotEngine_Utility_Scene_Scene__ctor_System_String_System_Int32_
+  href: Cobilas.GodotEngine.Utility.Scene.Scene.html#Cobilas_GodotEngine_Utility_Scene_Scene__ctor_System_String_System_Int32_Godot_Node_
   name: Scene
   nameWithType: Scene.Scene
   fullName: Cobilas.GodotEngine.Utility.Scene.Scene.Scene
   nameWithType.vb: Scene.New
   fullName.vb: Cobilas.GodotEngine.Utility.Scene.Scene.New
   name.vb: New
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene.Equals*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Scene.Scene.Equals
+  href: Cobilas.GodotEngine.Utility.Scene.Scene.html#Cobilas_GodotEngine_Utility_Scene_Scene_Equals_System_Int32_
+  name: Equals
+  nameWithType: Scene.Equals
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.Equals
+- uid: System.IEquatable{System.Int32}.Equals(System.Int32)
+  commentId: M:System.IEquatable{System.Int32}.Equals(System.Int32)
+  parent: System.IEquatable{System.Int32}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(int)
+  nameWithType: IEquatable<int>.Equals(int)
+  fullName: System.IEquatable<int>.Equals(int)
+  nameWithType.vb: IEquatable(Of Integer).Equals(Integer)
+  fullName.vb: System.IEquatable(Of Integer).Equals(Integer)
+  name.vb: Equals(Integer)
+  spec.csharp:
+  - uid: System.IEquatable{System.Int32}.Equals(System.Int32)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{System.Int32}.Equals(System.Int32)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IEquatable{Cobilas.GodotEngine.Utility.Scene.Scene}.Equals(Cobilas.GodotEngine.Utility.Scene.Scene)
+  commentId: M:System.IEquatable{Cobilas.GodotEngine.Utility.Scene.Scene}.Equals(Cobilas.GodotEngine.Utility.Scene.Scene)
+  parent: System.IEquatable{Cobilas.GodotEngine.Utility.Scene.Scene}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Scene)
+  nameWithType: IEquatable<Scene>.Equals(Scene)
+  fullName: System.IEquatable<Cobilas.GodotEngine.Utility.Scene.Scene>.Equals(Cobilas.GodotEngine.Utility.Scene.Scene)
+  nameWithType.vb: IEquatable(Of Scene).Equals(Scene)
+  fullName.vb: System.IEquatable(Of Cobilas.GodotEngine.Utility.Scene.Scene).Equals(Cobilas.GodotEngine.Utility.Scene.Scene)
+  spec.csharp:
+  - uid: System.IEquatable{Cobilas.GodotEngine.Utility.Scene.Scene}.Equals(Cobilas.GodotEngine.Utility.Scene.Scene)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Cobilas.GodotEngine.Utility.Scene.Scene
+    name: Scene
+    href: Cobilas.GodotEngine.Utility.Scene.Scene.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Cobilas.GodotEngine.Utility.Scene.Scene}.Equals(Cobilas.GodotEngine.Utility.Scene.Scene)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Cobilas.GodotEngine.Utility.Scene.Scene
+    name: Scene
+    href: Cobilas.GodotEngine.Utility.Scene.Scene.html
+  - name: )
+- uid: System.IEquatable{System.String}.Equals(System.String)
+  commentId: M:System.IEquatable{System.String}.Equals(System.String)
+  parent: System.IEquatable{System.String}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(string)
+  nameWithType: IEquatable<string>.Equals(string)
+  fullName: System.IEquatable<string>.Equals(string)
+  nameWithType.vb: IEquatable(Of String).Equals(String)
+  fullName.vb: System.IEquatable(Of String).Equals(String)
+  name.vb: Equals(String)
+  spec.csharp:
+  - uid: System.IEquatable{System.String}.Equals(System.String)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{System.String}.Equals(System.String)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene.GetHashCode*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Scene.Scene.GetHashCode
+  href: Cobilas.GodotEngine.Utility.Scene.Scene.html#Cobilas_GodotEngine_Utility_Scene_Scene_GetHashCode
+  name: GetHashCode
+  nameWithType: Scene.GetHashCode
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.GetHashCode
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene.ToString*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Scene.Scene.ToString
+  href: Cobilas.GodotEngine.Utility.Scene.Scene.html#Cobilas_GodotEngine_Utility_Scene_Scene_ToString
+  name: ToString
+  nameWithType: Scene.ToString
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.ToString
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene.op_Equality*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Scene.Scene.op_Equality
+  href: Cobilas.GodotEngine.Utility.Scene.Scene.html#Cobilas_GodotEngine_Utility_Scene_Scene_op_Equality_Cobilas_GodotEngine_Utility_Scene_Scene_Cobilas_GodotEngine_Utility_Scene_Scene_
+  name: operator ==
+  nameWithType: Scene.operator ==
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.operator ==
+  nameWithType.vb: Scene.=
+  fullName.vb: Cobilas.GodotEngine.Utility.Scene.Scene.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Cobilas.GodotEngine.Utility.Scene.Scene.op_Equality*
+    name: ==
+    href: Cobilas.GodotEngine.Utility.Scene.Scene.html#Cobilas_GodotEngine_Utility_Scene_Scene_op_Equality_Cobilas_GodotEngine_Utility_Scene_Scene_Cobilas_GodotEngine_Utility_Scene_Scene_
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene.op_Inequality*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Scene.Scene.op_Inequality
+  href: Cobilas.GodotEngine.Utility.Scene.Scene.html#Cobilas_GodotEngine_Utility_Scene_Scene_op_Inequality_Cobilas_GodotEngine_Utility_Scene_Scene_Cobilas_GodotEngine_Utility_Scene_Scene_
+  name: operator !=
+  nameWithType: Scene.operator !=
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.operator !=
+  nameWithType.vb: Scene.<>
+  fullName.vb: Cobilas.GodotEngine.Utility.Scene.Scene.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Cobilas.GodotEngine.Utility.Scene.Scene.op_Inequality*
+    name: '!='
+    href: Cobilas.GodotEngine.Utility.Scene.Scene.html#Cobilas_GodotEngine_Utility_Scene_Scene_op_Inequality_Cobilas_GodotEngine_Utility_Scene_Scene_Cobilas_GodotEngine_Utility_Scene_Scene_
+- uid: Cobilas.GodotEngine.Utility.Scene.Scene.op_Explicit*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Scene.Scene.op_Explicit
+  name: explicit operator
+  nameWithType: Scene.explicit operator
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.explicit operator
+  nameWithType.vb: Scene.CType
+  fullName.vb: Cobilas.GodotEngine.Utility.Scene.Scene.CType
+  name.vb: CType
+  spec.csharp:
+  - name: explicit
+  - name: " "
+  - name: operator

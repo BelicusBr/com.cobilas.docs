@@ -6,7 +6,6 @@ items:
   parent: Godot
   children:
   - Godot.Rect2_GD_CB_Extension.Bottom(Godot.Rect2)
-  - Godot.Rect2_GD_CB_Extension.Center(Godot.Rect2)
   - Godot.Rect2_GD_CB_Extension.Left(Godot.Rect2)
   - Godot.Rect2_GD_CB_Extension.Right(Godot.Rect2)
   - Godot.Rect2_GD_CB_Extension.Top(Godot.Rect2)
@@ -19,15 +18,17 @@ items:
   type: Class
   source:
     remote:
-      path: GodotEngine.Utility/Extension/Rect2_GD_CB_Extension.cs
-      branch: main.dev
+      path: Godot/Rect2_GD_CB_Extension.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Rect2_GD_CB_Extension
-    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Extension/Rect2_GD_CB_Extension.cs
+    path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Rect2_GD_CB_Extension.cs
     startLine: 2
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
+  summary: Extension to the <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref> struct.
+  example: []
   syntax:
     content: public static class Rect2_GD_CB_Extension
     content.vb: Public Module Rect2_GD_CB_Extension
@@ -55,22 +56,26 @@ items:
   type: Method
   source:
     remote:
-      path: GodotEngine.Utility/Extension/Rect2_GD_CB_Extension.cs
-      branch: main.dev
+      path: Godot/Rect2_GD_CB_Extension.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Top
-    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Extension/Rect2_GD_CB_Extension.cs
-    startLine: 3
+    path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Rect2_GD_CB_Extension.cs
+    startLine: 6
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
+  summary: Gets the top position of <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public static float Top(this Rect2 R)
     parameters:
     - id: R
       type: Godot.Rect2
+      description: <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref> that will be used.
     return:
       type: System.Single
+      description: Returns a floating-point with the top position of <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function Top(R As Rect2) As Single
   overload: Godot.Rect2_GD_CB_Extension.Top*
 - uid: Godot.Rect2_GD_CB_Extension.Bottom(Godot.Rect2)
@@ -87,22 +92,26 @@ items:
   type: Method
   source:
     remote:
-      path: GodotEngine.Utility/Extension/Rect2_GD_CB_Extension.cs
-      branch: main.dev
+      path: Godot/Rect2_GD_CB_Extension.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Bottom
-    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Extension/Rect2_GD_CB_Extension.cs
-    startLine: 4
+    path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Rect2_GD_CB_Extension.cs
+    startLine: 10
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
+  summary: Gets the bottom position of <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public static float Bottom(this Rect2 R)
     parameters:
     - id: R
       type: Godot.Rect2
+      description: <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref> that will be used.
     return:
       type: System.Single
+      description: Returns a floating-point value with the bottom position of <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function Bottom(R As Rect2) As Single
   overload: Godot.Rect2_GD_CB_Extension.Bottom*
 - uid: Godot.Rect2_GD_CB_Extension.Left(Godot.Rect2)
@@ -119,22 +128,26 @@ items:
   type: Method
   source:
     remote:
-      path: GodotEngine.Utility/Extension/Rect2_GD_CB_Extension.cs
-      branch: main.dev
+      path: Godot/Rect2_GD_CB_Extension.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Left
-    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Extension/Rect2_GD_CB_Extension.cs
-    startLine: 5
+    path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Rect2_GD_CB_Extension.cs
+    startLine: 14
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
+  summary: Gets the left position of <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public static float Left(this Rect2 R)
     parameters:
     - id: R
       type: Godot.Rect2
+      description: <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref> that will be used.
     return:
       type: System.Single
+      description: Returns a floating-point left position of <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function Left(R As Rect2) As Single
   overload: Godot.Rect2_GD_CB_Extension.Left*
 - uid: Godot.Rect2_GD_CB_Extension.Right(Godot.Rect2)
@@ -151,69 +164,36 @@ items:
   type: Method
   source:
     remote:
-      path: GodotEngine.Utility/Extension/Rect2_GD_CB_Extension.cs
-      branch: main.dev
+      path: Godot/Rect2_GD_CB_Extension.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Right
-    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Extension/Rect2_GD_CB_Extension.cs
-    startLine: 6
+    path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Rect2_GD_CB_Extension.cs
+    startLine: 18
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
+  summary: Gets the right position of <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public static float Right(this Rect2 R)
     parameters:
     - id: R
       type: Godot.Rect2
+      description: <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref> that will be used.
     return:
       type: System.Single
+      description: Returns a floating-point right position of <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function Right(R As Rect2) As Single
   overload: Godot.Rect2_GD_CB_Extension.Right*
-- uid: Godot.Rect2_GD_CB_Extension.Center(Godot.Rect2)
-  commentId: M:Godot.Rect2_GD_CB_Extension.Center(Godot.Rect2)
-  id: Center(Godot.Rect2)
-  isExtensionMethod: true
-  parent: Godot.Rect2_GD_CB_Extension
-  langs:
-  - csharp
-  - vb
-  name: Center(Rect2)
-  nameWithType: Rect2_GD_CB_Extension.Center(Rect2)
-  fullName: Godot.Rect2_GD_CB_Extension.Center(Godot.Rect2)
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/Extension/Rect2_GD_CB_Extension.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Center
-    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Extension/Rect2_GD_CB_Extension.cs
-    startLine: 7
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Godot
-  syntax:
-    content: >-
-      [Obsolete("Use Rect2.GetCenter()")]
-
-      public static Vector2 Center(this Rect2 R)
-    parameters:
-    - id: R
-      type: Godot.Rect2
-    return:
-      type: Godot.Vector2
-    content.vb: >-
-      <Obsolete("Use Rect2.GetCenter()")>
-
-      Public Shared Function Center(R As Rect2) As Vector2
-  overload: Godot.Rect2_GD_CB_Extension.Center*
-  attributes:
-  - type: System.ObsoleteAttribute
-    ctor: System.ObsoleteAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Use Rect2.GetCenter()
 references:
+- uid: Godot.Rect2
+  commentId: T:Godot.Rect2
+  parent: Godot
+  isExternal: true
+  name: Rect2
+  nameWithType: Rect2
+  fullName: Godot.Rect2
 - uid: Godot
   commentId: N:Godot
   href: Godot.html
@@ -463,13 +443,6 @@ references:
   name: Top
   nameWithType: Rect2_GD_CB_Extension.Top
   fullName: Godot.Rect2_GD_CB_Extension.Top
-- uid: Godot.Rect2
-  commentId: T:Godot.Rect2
-  parent: Godot
-  isExternal: true
-  name: Rect2
-  nameWithType: Rect2
-  fullName: Godot.Rect2
 - uid: System.Single
   commentId: T:System.Single
   parent: System
@@ -499,16 +472,3 @@ references:
   name: Right
   nameWithType: Rect2_GD_CB_Extension.Right
   fullName: Godot.Rect2_GD_CB_Extension.Right
-- uid: Godot.Rect2_GD_CB_Extension.Center*
-  commentId: Overload:Godot.Rect2_GD_CB_Extension.Center
-  href: Godot.Rect2_GD_CB_Extension.html#Godot_Rect2_GD_CB_Extension_Center_Godot_Rect2_
-  name: Center
-  nameWithType: Rect2_GD_CB_Extension.Center
-  fullName: Godot.Rect2_GD_CB_Extension.Center
-- uid: Godot.Vector2
-  commentId: T:Godot.Vector2
-  parent: Godot
-  isExternal: true
-  name: Vector2
-  nameWithType: Vector2
-  fullName: Godot.Vector2

@@ -44,7 +44,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Physics2D
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
@@ -52,13 +52,15 @@ items:
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: This class provides methods for detecting 2D physics bodies.
+  example: []
   syntax:
     content: >-
-      [RunTimeInitializationClass("Physics2D")]
+      [RunTimeInitializationClass("Physics2D", Priority.StartBefore, 0, false)]
 
       public class Physics2D : Node2D, IDisposable
     content.vb: >-
-      <RunTimeInitializationClass("Physics2D")>
+      <RunTimeInitializationClass("Physics2D", Priority.StartBefore, 0, False)>
 
       Public Class Physics2D Inherits Node2D Implements IDisposable
   inheritance:
@@ -422,10 +424,16 @@ items:
   - Godot.Node.Godot.Node_GD_CB_Extension.SetNodeScale(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   attributes:
   - type: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute
-    ctor: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.#ctor(System.String)
+    ctor: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.#ctor(System.String,Cobilas.GodotEngine.Utility.Runtime.Priority,System.Int32,System.Boolean)
     arguments:
     - type: System.String
       value: Physics2D
+    - type: Cobilas.GodotEngine.Utility.Runtime.Priority
+      value: 0
+    - type: System.Int32
+      value: 0
+    - type: System.Boolean
+      value: false
 - uid: Cobilas.GodotEngine.Utility.Physics.Physics2D._Ready
   commentId: M:Cobilas.GodotEngine.Utility.Physics.Physics2D._Ready
   id: _Ready
@@ -440,7 +448,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: _Ready
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
@@ -469,14 +477,14 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCastCircle(Camera2D, Vector2, float, out Hit2D)
-  nameWithType: Physics2D.RayCastCircle(Camera2D, Vector2, float, out Hit2D)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle(Godot.Camera2D, Godot.Vector2, float, out Cobilas.GodotEngine.Utility.Physics.Hit2D)
+  name: RayCastCircle(Camera2D?, Vector2, float, out Hit2D)
+  nameWithType: Physics2D.RayCastCircle(Camera2D?, Vector2, float, out Hit2D)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle(Godot.Camera2D?, Godot.Vector2, float, out Cobilas.GodotEngine.Utility.Physics.Hit2D)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCastCircle
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
@@ -484,21 +492,32 @@ items:
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Creates a 2D circle that allows you to detect an object in 2D space.
+  example: []
   syntax:
-    content: public static bool RayCastCircle(Camera2D camera, Vector2 mousePosition, float radius, out Hit2D hit)
+    content: public static bool RayCastCircle(Camera2D? camera, Vector2 mousePosition, float radius, out Hit2D hit)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: mousePosition
       type: Godot.Vector2
+      description: The point from which the ray will be thrown.
     - id: radius
       type: System.Single
+      description: Defines the radius of the 2d collision circle.
     - id: hit
       type: Cobilas.GodotEngine.Utility.Physics.Hit2D
+      description: The output parameter for the object's collision information.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when any 2d object is detected.
     content.vb: Public Shared Function RayCastCircle(camera As Camera2D, mousePosition As Vector2, radius As Single, hit As Hit2D) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCastCircle(Camera2D, Vector2, Single, Hit2D)
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle(Godot.Camera2D, Godot.Vector2, Single, Cobilas.GodotEngine.Utility.Physics.Hit2D)
   name.vb: RayCastCircle(Camera2D, Vector2, Single, Hit2D)
@@ -509,14 +528,14 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCastCircle(Camera2D, Vector2, float, uint, out Hit2D)
-  nameWithType: Physics2D.RayCastCircle(Camera2D, Vector2, float, uint, out Hit2D)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle(Godot.Camera2D, Godot.Vector2, float, uint, out Cobilas.GodotEngine.Utility.Physics.Hit2D)
+  name: RayCastCircle(Camera2D?, Vector2, float, uint, out Hit2D)
+  nameWithType: Physics2D.RayCastCircle(Camera2D?, Vector2, float, uint, out Hit2D)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle(Godot.Camera2D?, Godot.Vector2, float, uint, out Cobilas.GodotEngine.Utility.Physics.Hit2D)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCastCircle
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
@@ -524,23 +543,35 @@ items:
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Creates a 2D circle that allows you to detect an object in 2D space.
+  example: []
   syntax:
-    content: public static bool RayCastCircle(Camera2D camera, Vector2 mousePosition, float radius, uint collisionLayer, out Hit2D hit)
+    content: public static bool RayCastCircle(Camera2D? camera, Vector2 mousePosition, float radius, uint collisionLayer, out Hit2D hit)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: mousePosition
       type: Godot.Vector2
+      description: The point from which the ray will be thrown.
     - id: radius
       type: System.Single
+      description: Defines the radius of the 2d collision circle.
     - id: collisionLayer
       type: System.UInt32
+      description: The collision layers that will be checked by the 2D physical body detection methods.
     - id: hit
       type: Cobilas.GodotEngine.Utility.Physics.Hit2D
+      description: The output parameter for the object's collision information.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when any 2d object is detected.
     content.vb: Public Shared Function RayCastCircle(camera As Camera2D, mousePosition As Vector2, radius As Single, collisionLayer As UInteger, hit As Hit2D) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCastCircle(Camera2D, Vector2, Single, UInteger, Hit2D)
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle(Godot.Camera2D, Godot.Vector2, Single, UInteger, Cobilas.GodotEngine.Utility.Physics.Hit2D)
   name.vb: RayCastCircle(Camera2D, Vector2, Single, UInteger, Hit2D)
@@ -551,14 +582,14 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCastCircle(Camera2D, Vector2, float, CollisionObject2D[], out Hit2D)
-  nameWithType: Physics2D.RayCastCircle(Camera2D, Vector2, float, CollisionObject2D[], out Hit2D)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle(Godot.Camera2D, Godot.Vector2, float, Godot.CollisionObject2D[], out Cobilas.GodotEngine.Utility.Physics.Hit2D)
+  name: RayCastCircle(Camera2D?, Vector2, float, CollisionObject2D[]?, out Hit2D)
+  nameWithType: Physics2D.RayCastCircle(Camera2D?, Vector2, float, CollisionObject2D[]?, out Hit2D)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle(Godot.Camera2D?, Godot.Vector2, float, Godot.CollisionObject2D[]?, out Cobilas.GodotEngine.Utility.Physics.Hit2D)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCastCircle
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
@@ -566,23 +597,35 @@ items:
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Creates a 2D circle that allows you to detect an object in 2D space.
+  example: []
   syntax:
-    content: public static bool RayCastCircle(Camera2D camera, Vector2 mousePosition, float radius, CollisionObject2D[] exclude, out Hit2D hit)
+    content: public static bool RayCastCircle(Camera2D? camera, Vector2 mousePosition, float radius, CollisionObject2D[]? exclude, out Hit2D hit)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: mousePosition
       type: Godot.Vector2
+      description: The point from which the ray will be thrown.
     - id: radius
       type: System.Single
+      description: Defines the radius of the 2d collision circle.
     - id: exclude
       type: Godot.CollisionObject2D[]
+      description: The objects that will be excluded from the search.
     - id: hit
       type: Cobilas.GodotEngine.Utility.Physics.Hit2D
+      description: The output parameter for the object's collision information.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when any 2d object is detected.
     content.vb: Public Shared Function RayCastCircle(camera As Camera2D, mousePosition As Vector2, radius As Single, exclude As CollisionObject2D(), hit As Hit2D) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCastCircle(Camera2D, Vector2, Single, CollisionObject2D(), Hit2D)
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle(Godot.Camera2D, Godot.Vector2, Single, Godot.CollisionObject2D(), Cobilas.GodotEngine.Utility.Physics.Hit2D)
   name.vb: RayCastCircle(Camera2D, Vector2, Single, CollisionObject2D(), Hit2D)
@@ -593,40 +636,53 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCastCircle(Camera2D, Vector2, float, CollisionObject2D[]?, uint, out Hit2D)
-  nameWithType: Physics2D.RayCastCircle(Camera2D, Vector2, float, CollisionObject2D[]?, uint, out Hit2D)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle(Godot.Camera2D, Godot.Vector2, float, Godot.CollisionObject2D[]?, uint, out Cobilas.GodotEngine.Utility.Physics.Hit2D)
+  name: RayCastCircle(Camera2D?, Vector2, float, CollisionObject2D[]?, uint, out Hit2D)
+  nameWithType: Physics2D.RayCastCircle(Camera2D?, Vector2, float, CollisionObject2D[]?, uint, out Hit2D)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle(Godot.Camera2D?, Godot.Vector2, float, Godot.CollisionObject2D[]?, uint, out Cobilas.GodotEngine.Utility.Physics.Hit2D)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCastCircle
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
-    startLine: 40
+    startLine: 48
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Creates a 2D circle that allows you to detect an object in 2D space.
+  example: []
   syntax:
-    content: public static bool RayCastCircle(Camera2D camera, Vector2 mousePosition, float radius, CollisionObject2D[]? exclude, uint collisionLayer, out Hit2D hit)
+    content: public static bool RayCastCircle(Camera2D? camera, Vector2 mousePosition, float radius, CollisionObject2D[]? exclude, uint collisionLayer, out Hit2D hit)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: mousePosition
       type: Godot.Vector2
+      description: The point from which the ray will be thrown.
     - id: radius
       type: System.Single
+      description: Defines the radius of the 2d collision circle.
     - id: exclude
       type: Godot.CollisionObject2D[]
+      description: The objects that will be excluded from the search.
     - id: collisionLayer
       type: System.UInt32
+      description: The collision layers that will be checked by the 2D physical body detection methods.
     - id: hit
       type: Cobilas.GodotEngine.Utility.Physics.Hit2D
+      description: The output parameter for the object's collision information.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when any 2d object is detected.
     content.vb: Public Shared Function RayCastCircle(camera As Camera2D, mousePosition As Vector2, radius As Single, exclude As CollisionObject2D(), collisionLayer As UInteger, hit As Hit2D) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCastCircle(Camera2D, Vector2, Single, CollisionObject2D(), UInteger, Hit2D)
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle(Godot.Camera2D, Godot.Vector2, Single, Godot.CollisionObject2D(), UInteger, Cobilas.GodotEngine.Utility.Physics.Hit2D)
   name.vb: RayCastCircle(Camera2D, Vector2, Single, CollisionObject2D(), UInteger, Hit2D)
@@ -637,36 +693,50 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCastAllCircle(Camera2D, Vector2, float, List<Hit2D>)
-  nameWithType: Physics2D.RayCastAllCircle(Camera2D, Vector2, float, List<Hit2D>)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllCircle(Godot.Camera2D, Godot.Vector2, float, System.Collections.Generic.List<Cobilas.GodotEngine.Utility.Physics.Hit2D>)
+  name: RayCastAllCircle(Camera2D?, Vector2, float, List<Hit2D>?)
+  nameWithType: Physics2D.RayCastAllCircle(Camera2D?, Vector2, float, List<Hit2D>?)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllCircle(Godot.Camera2D?, Godot.Vector2, float, System.Collections.Generic.List<Cobilas.GodotEngine.Utility.Physics.Hit2D>?)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCastAllCircle
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
-    startLine: 50
+    startLine: 58
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Creates a 2D circle that allows you to detect multiple objects in 2D space simultaneously.
+  example: []
   syntax:
-    content: public static bool RayCastAllCircle(Camera2D camera, Vector2 mousePosition, float radius, List<Hit2D> list)
+    content: public static bool RayCastAllCircle(Camera2D? camera, Vector2 mousePosition, float radius, List<Hit2D>? list)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: mousePosition
       type: Godot.Vector2
+      description: The point from which the ray will be thrown.
     - id: radius
       type: System.Single
+      description: Defines the radius of the 2d collision circle.
     - id: list
       type: System.Collections.Generic.List{Cobilas.GodotEngine.Utility.Physics.Hit2D}
+      description: Here the objects that were detected by the 2d collision ray will be added.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when multiple 2D objects are detected.
     content.vb: Public Shared Function RayCastAllCircle(camera As Camera2D, mousePosition As Vector2, radius As Single, list As List(Of Hit2D)) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllCircle*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="System.Collections.Generic.List%601" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCastAllCircle(Camera2D, Vector2, Single, List(Of Hit2D))
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllCircle(Godot.Camera2D, Godot.Vector2, Single, System.Collections.Generic.List(Of Cobilas.GodotEngine.Utility.Physics.Hit2D))
   name.vb: RayCastAllCircle(Camera2D, Vector2, Single, List(Of Hit2D))
@@ -677,38 +747,53 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCastAllCircle(Camera2D, Vector2, float, uint, List<Hit2D>)
-  nameWithType: Physics2D.RayCastAllCircle(Camera2D, Vector2, float, uint, List<Hit2D>)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllCircle(Godot.Camera2D, Godot.Vector2, float, uint, System.Collections.Generic.List<Cobilas.GodotEngine.Utility.Physics.Hit2D>)
+  name: RayCastAllCircle(Camera2D?, Vector2, float, uint, List<Hit2D>?)
+  nameWithType: Physics2D.RayCastAllCircle(Camera2D?, Vector2, float, uint, List<Hit2D>?)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllCircle(Godot.Camera2D?, Godot.Vector2, float, uint, System.Collections.Generic.List<Cobilas.GodotEngine.Utility.Physics.Hit2D>?)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCastAllCircle
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
-    startLine: 53
+    startLine: 61
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Creates a 2D circle that allows you to detect multiple objects in 2D space simultaneously.
+  example: []
   syntax:
-    content: public static bool RayCastAllCircle(Camera2D camera, Vector2 mousePosition, float radius, uint collisionLayer, List<Hit2D> list)
+    content: public static bool RayCastAllCircle(Camera2D? camera, Vector2 mousePosition, float radius, uint collisionLayer, List<Hit2D>? list)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: mousePosition
       type: Godot.Vector2
+      description: The point from which the ray will be thrown.
     - id: radius
       type: System.Single
+      description: Defines the radius of the 2d collision circle.
     - id: collisionLayer
       type: System.UInt32
+      description: The collision layers that will be checked by the 2D physical body detection methods.
     - id: list
       type: System.Collections.Generic.List{Cobilas.GodotEngine.Utility.Physics.Hit2D}
+      description: Here the objects that were detected by the 2d collision ray will be added.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when multiple 2D objects are detected.
     content.vb: Public Shared Function RayCastAllCircle(camera As Camera2D, mousePosition As Vector2, radius As Single, collisionLayer As UInteger, list As List(Of Hit2D)) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllCircle*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="System.Collections.Generic.List%601" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCastAllCircle(Camera2D, Vector2, Single, UInteger, List(Of Hit2D))
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllCircle(Godot.Camera2D, Godot.Vector2, Single, UInteger, System.Collections.Generic.List(Of Cobilas.GodotEngine.Utility.Physics.Hit2D))
   name.vb: RayCastAllCircle(Camera2D, Vector2, Single, UInteger, List(Of Hit2D))
@@ -719,38 +804,53 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCastAllCircle(Camera2D, Vector2, float, CollisionObject2D[], List<Hit2D>)
-  nameWithType: Physics2D.RayCastAllCircle(Camera2D, Vector2, float, CollisionObject2D[], List<Hit2D>)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllCircle(Godot.Camera2D, Godot.Vector2, float, Godot.CollisionObject2D[], System.Collections.Generic.List<Cobilas.GodotEngine.Utility.Physics.Hit2D>)
+  name: RayCastAllCircle(Camera2D?, Vector2, float, CollisionObject2D[]?, List<Hit2D>?)
+  nameWithType: Physics2D.RayCastAllCircle(Camera2D?, Vector2, float, CollisionObject2D[]?, List<Hit2D>?)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllCircle(Godot.Camera2D?, Godot.Vector2, float, Godot.CollisionObject2D[]?, System.Collections.Generic.List<Cobilas.GodotEngine.Utility.Physics.Hit2D>?)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCastAllCircle
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
-    startLine: 56
+    startLine: 64
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Creates a 2D circle that allows you to detect multiple objects in 2D space simultaneously.
+  example: []
   syntax:
-    content: public static bool RayCastAllCircle(Camera2D camera, Vector2 mousePosition, float radius, CollisionObject2D[] exclude, List<Hit2D> list)
+    content: public static bool RayCastAllCircle(Camera2D? camera, Vector2 mousePosition, float radius, CollisionObject2D[]? exclude, List<Hit2D>? list)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: mousePosition
       type: Godot.Vector2
+      description: The point from which the ray will be thrown.
     - id: radius
       type: System.Single
+      description: Defines the radius of the 2d collision circle.
     - id: exclude
       type: Godot.CollisionObject2D[]
+      description: The objects that will be excluded from the search.
     - id: list
       type: System.Collections.Generic.List{Cobilas.GodotEngine.Utility.Physics.Hit2D}
+      description: Here the objects that were detected by the 2d collision ray will be added.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when multiple 2D objects are detected.
     content.vb: Public Shared Function RayCastAllCircle(camera As Camera2D, mousePosition As Vector2, radius As Single, exclude As CollisionObject2D(), list As List(Of Hit2D)) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllCircle*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="System.Collections.Generic.List%601" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCastAllCircle(Camera2D, Vector2, Single, CollisionObject2D(), List(Of Hit2D))
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllCircle(Godot.Camera2D, Godot.Vector2, Single, Godot.CollisionObject2D(), System.Collections.Generic.List(Of Cobilas.GodotEngine.Utility.Physics.Hit2D))
   name.vb: RayCastAllCircle(Camera2D, Vector2, Single, CollisionObject2D(), List(Of Hit2D))
@@ -761,40 +861,56 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCastAllCircle(Camera2D?, Vector2, float, CollisionObject2D[]?, uint, List<Hit2D>)
-  nameWithType: Physics2D.RayCastAllCircle(Camera2D?, Vector2, float, CollisionObject2D[]?, uint, List<Hit2D>)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllCircle(Godot.Camera2D?, Godot.Vector2, float, Godot.CollisionObject2D[]?, uint, System.Collections.Generic.List<Cobilas.GodotEngine.Utility.Physics.Hit2D>)
+  name: RayCastAllCircle(Camera2D?, Vector2, float, CollisionObject2D[]?, uint, List<Hit2D>?)
+  nameWithType: Physics2D.RayCastAllCircle(Camera2D?, Vector2, float, CollisionObject2D[]?, uint, List<Hit2D>?)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllCircle(Godot.Camera2D?, Godot.Vector2, float, Godot.CollisionObject2D[]?, uint, System.Collections.Generic.List<Cobilas.GodotEngine.Utility.Physics.Hit2D>?)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCastAllCircle
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
-    startLine: 59
+    startLine: 76
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Creates a 2D circle that allows you to detect multiple objects in 2D space simultaneously.
+  example: []
   syntax:
-    content: public static bool RayCastAllCircle(Camera2D? camera, Vector2 mousePosition, float radius, CollisionObject2D[]? exclude, uint collisionLayer, List<Hit2D> list)
+    content: public static bool RayCastAllCircle(Camera2D? camera, Vector2 mousePosition, float radius, CollisionObject2D[]? exclude, uint collisionLayer, List<Hit2D>? list)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: mousePosition
       type: Godot.Vector2
+      description: The point from which the ray will be thrown.
     - id: radius
       type: System.Single
+      description: Defines the radius of the 2d collision circle.
     - id: exclude
       type: Godot.CollisionObject2D[]
+      description: The objects that will be excluded from the search.
     - id: collisionLayer
       type: System.UInt32
+      description: The collision layers that will be checked by the 2D physical body detection methods.
     - id: list
       type: System.Collections.Generic.List{Cobilas.GodotEngine.Utility.Physics.Hit2D}
+      description: Here the objects that were detected by the 2d collision ray will be added.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when multiple 2D objects are detected.
     content.vb: Public Shared Function RayCastAllCircle(camera As Camera2D, mousePosition As Vector2, radius As Single, exclude As CollisionObject2D(), collisionLayer As UInteger, list As List(Of Hit2D)) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllCircle*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="System.Collections.Generic.List%601" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCastAllCircle(Camera2D, Vector2, Single, CollisionObject2D(), UInteger, List(Of Hit2D))
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllCircle(Godot.Camera2D, Godot.Vector2, Single, Godot.CollisionObject2D(), UInteger, System.Collections.Generic.List(Of Cobilas.GodotEngine.Utility.Physics.Hit2D))
   name.vb: RayCastAllCircle(Camera2D, Vector2, Single, CollisionObject2D(), UInteger, List(Of Hit2D))
@@ -805,36 +921,47 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCastBox(Camera2D, Vector2, Vector2, out Hit2D)
-  nameWithType: Physics2D.RayCastBox(Camera2D, Vector2, Vector2, out Hit2D)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastBox(Godot.Camera2D, Godot.Vector2, Godot.Vector2, out Cobilas.GodotEngine.Utility.Physics.Hit2D)
+  name: RayCastBox(Camera2D?, Vector2, Vector2, out Hit2D)
+  nameWithType: Physics2D.RayCastBox(Camera2D?, Vector2, Vector2, out Hit2D)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastBox(Godot.Camera2D?, Godot.Vector2, Godot.Vector2, out Cobilas.GodotEngine.Utility.Physics.Hit2D)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCastBox
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
-    startLine: 77
+    startLine: 93
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Creates a 2D box that allows you to detect an object in 2D space.
+  example: []
   syntax:
-    content: public static bool RayCastBox(Camera2D camera, Vector2 mousePosition, Vector2 size, out Hit2D hit)
+    content: public static bool RayCastBox(Camera2D? camera, Vector2 mousePosition, Vector2 size, out Hit2D hit)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: mousePosition
       type: Godot.Vector2
+      description: The point from which the ray will be thrown.
     - id: size
       type: Godot.Vector2
+      description: The size of the 2d collision box.
     - id: hit
       type: Cobilas.GodotEngine.Utility.Physics.Hit2D
+      description: The output parameter for the object's collision information.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when any 2d object is detected.
     content.vb: Public Shared Function RayCastBox(camera As Camera2D, mousePosition As Vector2, size As Vector2, hit As Hit2D) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastBox*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCastBox(Camera2D, Vector2, Vector2, Hit2D)
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastBox(Godot.Camera2D, Godot.Vector2, Godot.Vector2, Cobilas.GodotEngine.Utility.Physics.Hit2D)
   name.vb: RayCastBox(Camera2D, Vector2, Vector2, Hit2D)
@@ -845,38 +972,50 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCastBox(Camera2D, Vector2, Vector2, uint, out Hit2D)
-  nameWithType: Physics2D.RayCastBox(Camera2D, Vector2, Vector2, uint, out Hit2D)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastBox(Godot.Camera2D, Godot.Vector2, Godot.Vector2, uint, out Cobilas.GodotEngine.Utility.Physics.Hit2D)
+  name: RayCastBox(Camera2D?, Vector2, Vector2, uint, out Hit2D)
+  nameWithType: Physics2D.RayCastBox(Camera2D?, Vector2, Vector2, uint, out Hit2D)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastBox(Godot.Camera2D?, Godot.Vector2, Godot.Vector2, uint, out Cobilas.GodotEngine.Utility.Physics.Hit2D)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCastBox
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
-    startLine: 80
+    startLine: 96
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Creates a 2D box that allows you to detect an object in 2D space.
+  example: []
   syntax:
-    content: public static bool RayCastBox(Camera2D camera, Vector2 mousePosition, Vector2 size, uint collisionLayer, out Hit2D hit)
+    content: public static bool RayCastBox(Camera2D? camera, Vector2 mousePosition, Vector2 size, uint collisionLayer, out Hit2D hit)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: mousePosition
       type: Godot.Vector2
+      description: The point from which the ray will be thrown.
     - id: size
       type: Godot.Vector2
+      description: The size of the 2d collision box.
     - id: collisionLayer
       type: System.UInt32
+      description: The collision layers that will be checked by the 2D physical body detection methods.
     - id: hit
       type: Cobilas.GodotEngine.Utility.Physics.Hit2D
+      description: The output parameter for the object's collision information.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when any 2d object is detected.
     content.vb: Public Shared Function RayCastBox(camera As Camera2D, mousePosition As Vector2, size As Vector2, collisionLayer As UInteger, hit As Hit2D) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastBox*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCastBox(Camera2D, Vector2, Vector2, UInteger, Hit2D)
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastBox(Godot.Camera2D, Godot.Vector2, Godot.Vector2, UInteger, Cobilas.GodotEngine.Utility.Physics.Hit2D)
   name.vb: RayCastBox(Camera2D, Vector2, Vector2, UInteger, Hit2D)
@@ -887,38 +1026,50 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCastBox(Camera2D, Vector2, Vector2, CollisionObject2D[], out Hit2D)
-  nameWithType: Physics2D.RayCastBox(Camera2D, Vector2, Vector2, CollisionObject2D[], out Hit2D)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastBox(Godot.Camera2D, Godot.Vector2, Godot.Vector2, Godot.CollisionObject2D[], out Cobilas.GodotEngine.Utility.Physics.Hit2D)
+  name: RayCastBox(Camera2D?, Vector2, Vector2, CollisionObject2D[]?, out Hit2D)
+  nameWithType: Physics2D.RayCastBox(Camera2D?, Vector2, Vector2, CollisionObject2D[]?, out Hit2D)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastBox(Godot.Camera2D?, Godot.Vector2, Godot.Vector2, Godot.CollisionObject2D[]?, out Cobilas.GodotEngine.Utility.Physics.Hit2D)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCastBox
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
-    startLine: 83
+    startLine: 99
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Creates a 2D box that allows you to detect an object in 2D space.
+  example: []
   syntax:
-    content: public static bool RayCastBox(Camera2D camera, Vector2 mousePosition, Vector2 size, CollisionObject2D[] exclude, out Hit2D hit)
+    content: public static bool RayCastBox(Camera2D? camera, Vector2 mousePosition, Vector2 size, CollisionObject2D[]? exclude, out Hit2D hit)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: mousePosition
       type: Godot.Vector2
+      description: The point from which the ray will be thrown.
     - id: size
       type: Godot.Vector2
+      description: The size of the 2d collision box.
     - id: exclude
       type: Godot.CollisionObject2D[]
+      description: The objects that will be excluded from the search.
     - id: hit
       type: Cobilas.GodotEngine.Utility.Physics.Hit2D
+      description: The output parameter for the object's collision information.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when any 2d object is detected.
     content.vb: Public Shared Function RayCastBox(camera As Camera2D, mousePosition As Vector2, size As Vector2, exclude As CollisionObject2D(), hit As Hit2D) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastBox*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCastBox(Camera2D, Vector2, Vector2, CollisionObject2D(), Hit2D)
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastBox(Godot.Camera2D, Godot.Vector2, Godot.Vector2, Godot.CollisionObject2D(), Cobilas.GodotEngine.Utility.Physics.Hit2D)
   name.vb: RayCastBox(Camera2D, Vector2, Vector2, CollisionObject2D(), Hit2D)
@@ -929,40 +1080,53 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCastBox(Camera2D, Vector2, Vector2, CollisionObject2D[]?, uint, out Hit2D)
-  nameWithType: Physics2D.RayCastBox(Camera2D, Vector2, Vector2, CollisionObject2D[]?, uint, out Hit2D)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastBox(Godot.Camera2D, Godot.Vector2, Godot.Vector2, Godot.CollisionObject2D[]?, uint, out Cobilas.GodotEngine.Utility.Physics.Hit2D)
+  name: RayCastBox(Camera2D?, Vector2, Vector2, CollisionObject2D[]?, uint, out Hit2D)
+  nameWithType: Physics2D.RayCastBox(Camera2D?, Vector2, Vector2, CollisionObject2D[]?, uint, out Hit2D)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastBox(Godot.Camera2D?, Godot.Vector2, Godot.Vector2, Godot.CollisionObject2D[]?, uint, out Cobilas.GodotEngine.Utility.Physics.Hit2D)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCastBox
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
-    startLine: 86
+    startLine: 110
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Creates a 2D box that allows you to detect an object in 2D space.
+  example: []
   syntax:
-    content: public static bool RayCastBox(Camera2D camera, Vector2 mousePosition, Vector2 size, CollisionObject2D[]? exclude, uint collisionLayer, out Hit2D hit)
+    content: public static bool RayCastBox(Camera2D? camera, Vector2 mousePosition, Vector2 size, CollisionObject2D[]? exclude, uint collisionLayer, out Hit2D hit)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: mousePosition
       type: Godot.Vector2
+      description: The point from which the ray will be thrown.
     - id: size
       type: Godot.Vector2
+      description: The size of the 2d collision box.
     - id: exclude
       type: Godot.CollisionObject2D[]
+      description: The objects that will be excluded from the search.
     - id: collisionLayer
       type: System.UInt32
+      description: The collision layers that will be checked by the 2D physical body detection methods.
     - id: hit
       type: Cobilas.GodotEngine.Utility.Physics.Hit2D
+      description: The output parameter for the object's collision information.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when any 2d object is detected.
     content.vb: Public Shared Function RayCastBox(camera As Camera2D, mousePosition As Vector2, size As Vector2, exclude As CollisionObject2D(), collisionLayer As UInteger, hit As Hit2D) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastBox*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCastBox(Camera2D, Vector2, Vector2, CollisionObject2D(), UInteger, Hit2D)
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastBox(Godot.Camera2D, Godot.Vector2, Godot.Vector2, Godot.CollisionObject2D(), UInteger, Cobilas.GodotEngine.Utility.Physics.Hit2D)
   name.vb: RayCastBox(Camera2D, Vector2, Vector2, CollisionObject2D(), UInteger, Hit2D)
@@ -973,36 +1137,50 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCastAllBox(Camera2D, Vector2, Vector2, List<Hit2D>)
-  nameWithType: Physics2D.RayCastAllBox(Camera2D, Vector2, Vector2, List<Hit2D>)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllBox(Godot.Camera2D, Godot.Vector2, Godot.Vector2, System.Collections.Generic.List<Cobilas.GodotEngine.Utility.Physics.Hit2D>)
+  name: RayCastAllBox(Camera2D?, Vector2, Vector2, List<Hit2D>?)
+  nameWithType: Physics2D.RayCastAllBox(Camera2D?, Vector2, Vector2, List<Hit2D>?)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllBox(Godot.Camera2D?, Godot.Vector2, Godot.Vector2, System.Collections.Generic.List<Cobilas.GodotEngine.Utility.Physics.Hit2D>?)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCastAllBox
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
-    startLine: 96
+    startLine: 120
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Creates a 2D box that allows you to detect multiple objects in 2D space simultaneously.
+  example: []
   syntax:
-    content: public static bool RayCastAllBox(Camera2D camera, Vector2 mousePosition, Vector2 size, List<Hit2D> list)
+    content: public static bool RayCastAllBox(Camera2D? camera, Vector2 mousePosition, Vector2 size, List<Hit2D>? list)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: mousePosition
       type: Godot.Vector2
+      description: The point from which the ray will be thrown.
     - id: size
       type: Godot.Vector2
+      description: The size of the 2d collision box.
     - id: list
       type: System.Collections.Generic.List{Cobilas.GodotEngine.Utility.Physics.Hit2D}
+      description: Here the objects that were detected by the 2d collision ray will be added.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when multiple 2D objects are detected.
     content.vb: Public Shared Function RayCastAllBox(camera As Camera2D, mousePosition As Vector2, size As Vector2, list As List(Of Hit2D)) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllBox*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="System.Collections.Generic.List%601" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCastAllBox(Camera2D, Vector2, Vector2, List(Of Hit2D))
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllBox(Godot.Camera2D, Godot.Vector2, Godot.Vector2, System.Collections.Generic.List(Of Cobilas.GodotEngine.Utility.Physics.Hit2D))
   name.vb: RayCastAllBox(Camera2D, Vector2, Vector2, List(Of Hit2D))
@@ -1013,38 +1191,53 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCastAllBox(Camera2D, Vector2, Vector2, uint, List<Hit2D>)
-  nameWithType: Physics2D.RayCastAllBox(Camera2D, Vector2, Vector2, uint, List<Hit2D>)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllBox(Godot.Camera2D, Godot.Vector2, Godot.Vector2, uint, System.Collections.Generic.List<Cobilas.GodotEngine.Utility.Physics.Hit2D>)
+  name: RayCastAllBox(Camera2D?, Vector2, Vector2, uint, List<Hit2D>?)
+  nameWithType: Physics2D.RayCastAllBox(Camera2D?, Vector2, Vector2, uint, List<Hit2D>?)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllBox(Godot.Camera2D?, Godot.Vector2, Godot.Vector2, uint, System.Collections.Generic.List<Cobilas.GodotEngine.Utility.Physics.Hit2D>?)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCastAllBox
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
-    startLine: 99
+    startLine: 123
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Creates a 2D box that allows you to detect multiple objects in 2D space simultaneously.
+  example: []
   syntax:
-    content: public static bool RayCastAllBox(Camera2D camera, Vector2 mousePosition, Vector2 size, uint collisionLayer, List<Hit2D> list)
+    content: public static bool RayCastAllBox(Camera2D? camera, Vector2 mousePosition, Vector2 size, uint collisionLayer, List<Hit2D>? list)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: mousePosition
       type: Godot.Vector2
+      description: The point from which the ray will be thrown.
     - id: size
       type: Godot.Vector2
+      description: The size of the 2d collision box.
     - id: collisionLayer
       type: System.UInt32
+      description: The collision layers that will be checked by the 2D physical body detection methods.
     - id: list
       type: System.Collections.Generic.List{Cobilas.GodotEngine.Utility.Physics.Hit2D}
+      description: Here the objects that were detected by the 2d collision ray will be added.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when multiple 2D objects are detected.
     content.vb: Public Shared Function RayCastAllBox(camera As Camera2D, mousePosition As Vector2, size As Vector2, collisionLayer As UInteger, list As List(Of Hit2D)) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllBox*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="System.Collections.Generic.List%601" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCastAllBox(Camera2D, Vector2, Vector2, UInteger, List(Of Hit2D))
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllBox(Godot.Camera2D, Godot.Vector2, Godot.Vector2, UInteger, System.Collections.Generic.List(Of Cobilas.GodotEngine.Utility.Physics.Hit2D))
   name.vb: RayCastAllBox(Camera2D, Vector2, Vector2, UInteger, List(Of Hit2D))
@@ -1055,38 +1248,53 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCastAllBox(Camera2D, Vector2, Vector2, CollisionObject2D[], List<Hit2D>)
-  nameWithType: Physics2D.RayCastAllBox(Camera2D, Vector2, Vector2, CollisionObject2D[], List<Hit2D>)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllBox(Godot.Camera2D, Godot.Vector2, Godot.Vector2, Godot.CollisionObject2D[], System.Collections.Generic.List<Cobilas.GodotEngine.Utility.Physics.Hit2D>)
+  name: RayCastAllBox(Camera2D?, Vector2, Vector2, CollisionObject2D[]?, List<Hit2D>?)
+  nameWithType: Physics2D.RayCastAllBox(Camera2D?, Vector2, Vector2, CollisionObject2D[]?, List<Hit2D>?)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllBox(Godot.Camera2D?, Godot.Vector2, Godot.Vector2, Godot.CollisionObject2D[]?, System.Collections.Generic.List<Cobilas.GodotEngine.Utility.Physics.Hit2D>?)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCastAllBox
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
-    startLine: 102
+    startLine: 126
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Creates a 2D box that allows you to detect multiple objects in 2D space simultaneously.
+  example: []
   syntax:
-    content: public static bool RayCastAllBox(Camera2D camera, Vector2 mousePosition, Vector2 size, CollisionObject2D[] exclude, List<Hit2D> list)
+    content: public static bool RayCastAllBox(Camera2D? camera, Vector2 mousePosition, Vector2 size, CollisionObject2D[]? exclude, List<Hit2D>? list)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: mousePosition
       type: Godot.Vector2
+      description: The point from which the ray will be thrown.
     - id: size
       type: Godot.Vector2
+      description: The size of the 2d collision box.
     - id: exclude
       type: Godot.CollisionObject2D[]
+      description: The objects that will be excluded from the search.
     - id: list
       type: System.Collections.Generic.List{Cobilas.GodotEngine.Utility.Physics.Hit2D}
+      description: Here the objects that were detected by the 2d collision ray will be added.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when multiple 2D objects are detected.
     content.vb: Public Shared Function RayCastAllBox(camera As Camera2D, mousePosition As Vector2, size As Vector2, exclude As CollisionObject2D(), list As List(Of Hit2D)) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllBox*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="System.Collections.Generic.List%601" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCastAllBox(Camera2D, Vector2, Vector2, CollisionObject2D(), List(Of Hit2D))
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllBox(Godot.Camera2D, Godot.Vector2, Godot.Vector2, Godot.CollisionObject2D(), System.Collections.Generic.List(Of Cobilas.GodotEngine.Utility.Physics.Hit2D))
   name.vb: RayCastAllBox(Camera2D, Vector2, Vector2, CollisionObject2D(), List(Of Hit2D))
@@ -1097,40 +1305,56 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCastAllBox(Camera2D?, Vector2, Vector2, CollisionObject2D[]?, uint, List<Hit2D>)
-  nameWithType: Physics2D.RayCastAllBox(Camera2D?, Vector2, Vector2, CollisionObject2D[]?, uint, List<Hit2D>)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllBox(Godot.Camera2D?, Godot.Vector2, Godot.Vector2, Godot.CollisionObject2D[]?, uint, System.Collections.Generic.List<Cobilas.GodotEngine.Utility.Physics.Hit2D>)
+  name: RayCastAllBox(Camera2D?, Vector2, Vector2, CollisionObject2D[]?, uint, List<Hit2D>?)
+  nameWithType: Physics2D.RayCastAllBox(Camera2D?, Vector2, Vector2, CollisionObject2D[]?, uint, List<Hit2D>?)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllBox(Godot.Camera2D?, Godot.Vector2, Godot.Vector2, Godot.CollisionObject2D[]?, uint, System.Collections.Generic.List<Cobilas.GodotEngine.Utility.Physics.Hit2D>?)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCastAllBox
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
-    startLine: 105
+    startLine: 138
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Creates a 2D box that allows you to detect multiple objects in 2D space simultaneously.
+  example: []
   syntax:
-    content: public static bool RayCastAllBox(Camera2D? camera, Vector2 mousePosition, Vector2 size, CollisionObject2D[]? exclude, uint collisionLayer, List<Hit2D> list)
+    content: public static bool RayCastAllBox(Camera2D? camera, Vector2 mousePosition, Vector2 size, CollisionObject2D[]? exclude, uint collisionLayer, List<Hit2D>? list)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: mousePosition
       type: Godot.Vector2
+      description: The point from which the ray will be thrown.
     - id: size
       type: Godot.Vector2
+      description: The size of the 2d collision box.
     - id: exclude
       type: Godot.CollisionObject2D[]
+      description: The objects that will be excluded from the search.
     - id: collisionLayer
       type: System.UInt32
+      description: The collision layers that will be checked by the 2D physical body detection methods.
     - id: list
       type: System.Collections.Generic.List{Cobilas.GodotEngine.Utility.Physics.Hit2D}
+      description: Here the objects that were detected by the 2d collision ray will be added.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when multiple 2D objects are detected.
     content.vb: Public Shared Function RayCastAllBox(camera As Camera2D, mousePosition As Vector2, size As Vector2, exclude As CollisionObject2D(), collisionLayer As UInteger, list As List(Of Hit2D)) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllBox*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="System.Collections.Generic.List%601" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCastAllBox(Camera2D, Vector2, Vector2, CollisionObject2D(), UInteger, List(Of Hit2D))
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllBox(Godot.Camera2D, Godot.Vector2, Godot.Vector2, Godot.CollisionObject2D(), UInteger, System.Collections.Generic.List(Of Cobilas.GodotEngine.Utility.Physics.Hit2D))
   name.vb: RayCastAllBox(Camera2D, Vector2, Vector2, CollisionObject2D(), UInteger, List(Of Hit2D))
@@ -1141,34 +1365,44 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCastHit(Camera2D, Vector2, out Hit2D)
-  nameWithType: Physics2D.RayCastHit(Camera2D, Vector2, out Hit2D)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHit(Godot.Camera2D, Godot.Vector2, out Cobilas.GodotEngine.Utility.Physics.Hit2D)
+  name: RayCastHit(Camera2D?, Vector2, out Hit2D)
+  nameWithType: Physics2D.RayCastHit(Camera2D?, Vector2, out Hit2D)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHit(Godot.Camera2D?, Godot.Vector2, out Cobilas.GodotEngine.Utility.Physics.Hit2D)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCastHit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
-    startLine: 122
+    startLine: 156
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Creates a 2D ray that allows you to detect an object in 2D space.
+  example: []
   syntax:
-    content: public static bool RayCastHit(Camera2D camera, Vector2 mousePosition, out Hit2D hit)
+    content: public static bool RayCastHit(Camera2D? camera, Vector2 mousePosition, out Hit2D hit)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: mousePosition
       type: Godot.Vector2
+      description: The point from which the ray will be thrown.
     - id: hit
       type: Cobilas.GodotEngine.Utility.Physics.Hit2D
+      description: The output parameter for the object's collision information.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when any 2d object is detected.
     content.vb: Public Shared Function RayCastHit(camera As Camera2D, mousePosition As Vector2, hit As Hit2D) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHit*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCastHit(Camera2D, Vector2, Hit2D)
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHit(Godot.Camera2D, Godot.Vector2, Cobilas.GodotEngine.Utility.Physics.Hit2D)
   name.vb: RayCastHit(Camera2D, Vector2, Hit2D)
@@ -1179,36 +1413,47 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCastHit(Camera2D, Vector2, uint, out Hit2D)
-  nameWithType: Physics2D.RayCastHit(Camera2D, Vector2, uint, out Hit2D)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHit(Godot.Camera2D, Godot.Vector2, uint, out Cobilas.GodotEngine.Utility.Physics.Hit2D)
+  name: RayCastHit(Camera2D?, Vector2, uint, out Hit2D)
+  nameWithType: Physics2D.RayCastHit(Camera2D?, Vector2, uint, out Hit2D)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHit(Godot.Camera2D?, Godot.Vector2, uint, out Cobilas.GodotEngine.Utility.Physics.Hit2D)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCastHit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
-    startLine: 125
+    startLine: 159
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Creates a 2D ray that allows you to detect an object in 2D space.
+  example: []
   syntax:
-    content: public static bool RayCastHit(Camera2D camera, Vector2 mousePosition, uint collisionLayer, out Hit2D hit)
+    content: public static bool RayCastHit(Camera2D? camera, Vector2 mousePosition, uint collisionLayer, out Hit2D hit)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: mousePosition
       type: Godot.Vector2
+      description: The point from which the ray will be thrown.
     - id: collisionLayer
       type: System.UInt32
+      description: The collision layers that will be checked by the 2D physical body detection methods.
     - id: hit
       type: Cobilas.GodotEngine.Utility.Physics.Hit2D
+      description: The output parameter for the object's collision information.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when any 2d object is detected.
     content.vb: Public Shared Function RayCastHit(camera As Camera2D, mousePosition As Vector2, collisionLayer As UInteger, hit As Hit2D) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHit*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCastHit(Camera2D, Vector2, UInteger, Hit2D)
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHit(Godot.Camera2D, Godot.Vector2, UInteger, Cobilas.GodotEngine.Utility.Physics.Hit2D)
   name.vb: RayCastHit(Camera2D, Vector2, UInteger, Hit2D)
@@ -1219,36 +1464,47 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCastHit(Camera2D, Vector2, CollisionObject2D[], out Hit2D)
-  nameWithType: Physics2D.RayCastHit(Camera2D, Vector2, CollisionObject2D[], out Hit2D)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHit(Godot.Camera2D, Godot.Vector2, Godot.CollisionObject2D[], out Cobilas.GodotEngine.Utility.Physics.Hit2D)
+  name: RayCastHit(Camera2D?, Vector2, CollisionObject2D[]?, out Hit2D)
+  nameWithType: Physics2D.RayCastHit(Camera2D?, Vector2, CollisionObject2D[]?, out Hit2D)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHit(Godot.Camera2D?, Godot.Vector2, Godot.CollisionObject2D[]?, out Cobilas.GodotEngine.Utility.Physics.Hit2D)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCastHit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
-    startLine: 128
+    startLine: 162
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Creates a 2D ray that allows you to detect an object in 2D space.
+  example: []
   syntax:
-    content: public static bool RayCastHit(Camera2D camera, Vector2 mousePosition, CollisionObject2D[] exclude, out Hit2D hit)
+    content: public static bool RayCastHit(Camera2D? camera, Vector2 mousePosition, CollisionObject2D[]? exclude, out Hit2D hit)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: mousePosition
       type: Godot.Vector2
+      description: The point from which the ray will be thrown.
     - id: exclude
       type: Godot.CollisionObject2D[]
+      description: The objects that will be excluded from the search.
     - id: hit
       type: Cobilas.GodotEngine.Utility.Physics.Hit2D
+      description: The output parameter for the object's collision information.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when any 2d object is detected.
     content.vb: Public Shared Function RayCastHit(camera As Camera2D, mousePosition As Vector2, exclude As CollisionObject2D(), hit As Hit2D) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHit*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCastHit(Camera2D, Vector2, CollisionObject2D(), Hit2D)
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHit(Godot.Camera2D, Godot.Vector2, Godot.CollisionObject2D(), Cobilas.GodotEngine.Utility.Physics.Hit2D)
   name.vb: RayCastHit(Camera2D, Vector2, CollisionObject2D(), Hit2D)
@@ -1259,38 +1515,50 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCastHit(Camera2D, Vector2, CollisionObject2D[]?, uint, out Hit2D)
-  nameWithType: Physics2D.RayCastHit(Camera2D, Vector2, CollisionObject2D[]?, uint, out Hit2D)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHit(Godot.Camera2D, Godot.Vector2, Godot.CollisionObject2D[]?, uint, out Cobilas.GodotEngine.Utility.Physics.Hit2D)
+  name: RayCastHit(Camera2D?, Vector2, CollisionObject2D[]?, uint, out Hit2D)
+  nameWithType: Physics2D.RayCastHit(Camera2D?, Vector2, CollisionObject2D[]?, uint, out Hit2D)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHit(Godot.Camera2D?, Godot.Vector2, Godot.CollisionObject2D[]?, uint, out Cobilas.GodotEngine.Utility.Physics.Hit2D)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCastHit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
-    startLine: 131
+    startLine: 172
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Creates a 2D ray that allows you to detect an object in 2D space.
+  example: []
   syntax:
-    content: public static bool RayCastHit(Camera2D camera, Vector2 mousePosition, CollisionObject2D[]? exclude, uint collisionLayer, out Hit2D hit)
+    content: public static bool RayCastHit(Camera2D? camera, Vector2 mousePosition, CollisionObject2D[]? exclude, uint collisionLayer, out Hit2D hit)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: mousePosition
       type: Godot.Vector2
+      description: The point from which the ray will be thrown.
     - id: exclude
       type: Godot.CollisionObject2D[]
+      description: The objects that will be excluded from the search.
     - id: collisionLayer
       type: System.UInt32
+      description: The collision layers that will be checked by the 2D physical body detection methods.
     - id: hit
       type: Cobilas.GodotEngine.Utility.Physics.Hit2D
+      description: The output parameter for the object's collision information.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when any 2d object is detected.
     content.vb: Public Shared Function RayCastHit(camera As Camera2D, mousePosition As Vector2, exclude As CollisionObject2D(), collisionLayer As UInteger, hit As Hit2D) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHit*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCastHit(Camera2D, Vector2, CollisionObject2D(), UInteger, Hit2D)
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHit(Godot.Camera2D, Godot.Vector2, Godot.CollisionObject2D(), UInteger, Cobilas.GodotEngine.Utility.Physics.Hit2D)
   name.vb: RayCastHit(Camera2D, Vector2, CollisionObject2D(), UInteger, Hit2D)
@@ -1301,34 +1569,47 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCastHitAll(Camera2D, Vector2, List<Hit2D>)
-  nameWithType: Physics2D.RayCastHitAll(Camera2D, Vector2, List<Hit2D>)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHitAll(Godot.Camera2D, Godot.Vector2, System.Collections.Generic.List<Cobilas.GodotEngine.Utility.Physics.Hit2D>)
+  name: RayCastHitAll(Camera2D?, Vector2, List<Hit2D>?)
+  nameWithType: Physics2D.RayCastHitAll(Camera2D?, Vector2, List<Hit2D>?)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHitAll(Godot.Camera2D?, Godot.Vector2, System.Collections.Generic.List<Cobilas.GodotEngine.Utility.Physics.Hit2D>?)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCastHitAll
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
-    startLine: 141
+    startLine: 182
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Creates a 2D ray that allows detecting multiple objects in 2D space simultaneously.
+  example: []
   syntax:
-    content: public static bool RayCastHitAll(Camera2D camera, Vector2 mousePosition, List<Hit2D> list)
+    content: public static bool RayCastHitAll(Camera2D? camera, Vector2 mousePosition, List<Hit2D>? list)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: mousePosition
       type: Godot.Vector2
+      description: The point from which the ray will be thrown.
     - id: list
       type: System.Collections.Generic.List{Cobilas.GodotEngine.Utility.Physics.Hit2D}
+      description: Here the objects that were detected by the 2d collision ray will be added.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when multiple 2D objects are detected.
     content.vb: Public Shared Function RayCastHitAll(camera As Camera2D, mousePosition As Vector2, list As List(Of Hit2D)) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHitAll*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="System.Collections.Generic.List%601" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCastHitAll(Camera2D, Vector2, List(Of Hit2D))
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHitAll(Godot.Camera2D, Godot.Vector2, System.Collections.Generic.List(Of Cobilas.GodotEngine.Utility.Physics.Hit2D))
   name.vb: RayCastHitAll(Camera2D, Vector2, List(Of Hit2D))
@@ -1339,36 +1620,50 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCastHitAll(Camera2D, Vector2, uint, List<Hit2D>)
-  nameWithType: Physics2D.RayCastHitAll(Camera2D, Vector2, uint, List<Hit2D>)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHitAll(Godot.Camera2D, Godot.Vector2, uint, System.Collections.Generic.List<Cobilas.GodotEngine.Utility.Physics.Hit2D>)
+  name: RayCastHitAll(Camera2D?, Vector2, uint, List<Hit2D>?)
+  nameWithType: Physics2D.RayCastHitAll(Camera2D?, Vector2, uint, List<Hit2D>?)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHitAll(Godot.Camera2D?, Godot.Vector2, uint, System.Collections.Generic.List<Cobilas.GodotEngine.Utility.Physics.Hit2D>?)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCastHitAll
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
-    startLine: 144
+    startLine: 185
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Creates a 2D ray that allows detecting multiple objects in 2D space simultaneously.
+  example: []
   syntax:
-    content: public static bool RayCastHitAll(Camera2D camera, Vector2 mousePosition, uint collisionLayer, List<Hit2D> list)
+    content: public static bool RayCastHitAll(Camera2D? camera, Vector2 mousePosition, uint collisionLayer, List<Hit2D>? list)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: mousePosition
       type: Godot.Vector2
+      description: The point from which the ray will be thrown.
     - id: collisionLayer
       type: System.UInt32
+      description: The collision layers that will be checked by the 2D physical body detection methods.
     - id: list
       type: System.Collections.Generic.List{Cobilas.GodotEngine.Utility.Physics.Hit2D}
+      description: Here the objects that were detected by the 2d collision ray will be added.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when multiple 2D objects are detected.
     content.vb: Public Shared Function RayCastHitAll(camera As Camera2D, mousePosition As Vector2, collisionLayer As UInteger, list As List(Of Hit2D)) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHitAll*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="System.Collections.Generic.List%601" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCastHitAll(Camera2D, Vector2, UInteger, List(Of Hit2D))
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHitAll(Godot.Camera2D, Godot.Vector2, UInteger, System.Collections.Generic.List(Of Cobilas.GodotEngine.Utility.Physics.Hit2D))
   name.vb: RayCastHitAll(Camera2D, Vector2, UInteger, List(Of Hit2D))
@@ -1379,36 +1674,50 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCastHitAll(Camera2D, Vector2, CollisionObject2D[], List<Hit2D>)
-  nameWithType: Physics2D.RayCastHitAll(Camera2D, Vector2, CollisionObject2D[], List<Hit2D>)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHitAll(Godot.Camera2D, Godot.Vector2, Godot.CollisionObject2D[], System.Collections.Generic.List<Cobilas.GodotEngine.Utility.Physics.Hit2D>)
+  name: RayCastHitAll(Camera2D?, Vector2, CollisionObject2D[]?, List<Hit2D>?)
+  nameWithType: Physics2D.RayCastHitAll(Camera2D?, Vector2, CollisionObject2D[]?, List<Hit2D>?)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHitAll(Godot.Camera2D?, Godot.Vector2, Godot.CollisionObject2D[]?, System.Collections.Generic.List<Cobilas.GodotEngine.Utility.Physics.Hit2D>?)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCastHitAll
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
-    startLine: 147
+    startLine: 188
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Creates a 2D ray that allows detecting multiple objects in 2D space simultaneously.
+  example: []
   syntax:
-    content: public static bool RayCastHitAll(Camera2D camera, Vector2 mousePosition, CollisionObject2D[] exclude, List<Hit2D> list)
+    content: public static bool RayCastHitAll(Camera2D? camera, Vector2 mousePosition, CollisionObject2D[]? exclude, List<Hit2D>? list)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: mousePosition
       type: Godot.Vector2
+      description: The point from which the ray will be thrown.
     - id: exclude
       type: Godot.CollisionObject2D[]
+      description: The objects that will be excluded from the search.
     - id: list
       type: System.Collections.Generic.List{Cobilas.GodotEngine.Utility.Physics.Hit2D}
+      description: Here the objects that were detected by the 2d collision ray will be added.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when multiple 2D objects are detected.
     content.vb: Public Shared Function RayCastHitAll(camera As Camera2D, mousePosition As Vector2, exclude As CollisionObject2D(), list As List(Of Hit2D)) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHitAll*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="System.Collections.Generic.List%601" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCastHitAll(Camera2D, Vector2, CollisionObject2D(), List(Of Hit2D))
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHitAll(Godot.Camera2D, Godot.Vector2, Godot.CollisionObject2D(), System.Collections.Generic.List(Of Cobilas.GodotEngine.Utility.Physics.Hit2D))
   name.vb: RayCastHitAll(Camera2D, Vector2, CollisionObject2D(), List(Of Hit2D))
@@ -1419,38 +1728,53 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCastHitAll(Camera2D?, Vector2, CollisionObject2D[]?, uint, List<Hit2D>)
-  nameWithType: Physics2D.RayCastHitAll(Camera2D?, Vector2, CollisionObject2D[]?, uint, List<Hit2D>)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHitAll(Godot.Camera2D?, Godot.Vector2, Godot.CollisionObject2D[]?, uint, System.Collections.Generic.List<Cobilas.GodotEngine.Utility.Physics.Hit2D>)
+  name: RayCastHitAll(Camera2D?, Vector2, CollisionObject2D[]?, uint, List<Hit2D>?)
+  nameWithType: Physics2D.RayCastHitAll(Camera2D?, Vector2, CollisionObject2D[]?, uint, List<Hit2D>?)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHitAll(Godot.Camera2D?, Godot.Vector2, Godot.CollisionObject2D[]?, uint, System.Collections.Generic.List<Cobilas.GodotEngine.Utility.Physics.Hit2D>?)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCastHitAll
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
-    startLine: 150
+    startLine: 199
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Creates a 2D ray that allows detecting multiple objects in 2D space simultaneously.
+  example: []
   syntax:
-    content: public static bool RayCastHitAll(Camera2D? camera, Vector2 mousePosition, CollisionObject2D[]? exclude, uint collisionLayer, List<Hit2D> list)
+    content: public static bool RayCastHitAll(Camera2D? camera, Vector2 mousePosition, CollisionObject2D[]? exclude, uint collisionLayer, List<Hit2D>? list)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: mousePosition
       type: Godot.Vector2
+      description: The point from which the ray will be thrown.
     - id: exclude
       type: Godot.CollisionObject2D[]
+      description: The objects that will be excluded from the search.
     - id: collisionLayer
       type: System.UInt32
+      description: The collision layers that will be checked by the 2D physical body detection methods.
     - id: list
       type: System.Collections.Generic.List{Cobilas.GodotEngine.Utility.Physics.Hit2D}
+      description: Here the objects that were detected by the 2d collision ray will be added.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when multiple 2D objects are detected.
     content.vb: Public Shared Function RayCastHitAll(camera As Camera2D, mousePosition As Vector2, exclude As CollisionObject2D(), collisionLayer As UInteger, list As List(Of Hit2D)) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHitAll*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="System.Collections.Generic.List%601" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCastHitAll(Camera2D, Vector2, CollisionObject2D(), UInteger, List(Of Hit2D))
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastHitAll(Godot.Camera2D, Godot.Vector2, Godot.CollisionObject2D(), UInteger, System.Collections.Generic.List(Of Cobilas.GodotEngine.Utility.Physics.Hit2D))
   name.vb: RayCastHitAll(Camera2D, Vector2, CollisionObject2D(), UInteger, List(Of Hit2D))
@@ -1461,36 +1785,47 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCast(Camera2D, Vector2, Vector2, out RayHit2D)
-  nameWithType: Physics2D.RayCast(Camera2D, Vector2, Vector2, out RayHit2D)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCast(Godot.Camera2D, Godot.Vector2, Godot.Vector2, out Cobilas.GodotEngine.Utility.Physics.RayHit2D)
+  name: RayCast(Camera2D?, Vector2, Vector2, out RayHit2D)
+  nameWithType: Physics2D.RayCast(Camera2D?, Vector2, Vector2, out RayHit2D)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCast(Godot.Camera2D?, Godot.Vector2, Godot.Vector2, out Cobilas.GodotEngine.Utility.Physics.RayHit2D)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCast
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
-    startLine: 163
+    startLine: 213
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Projects a ray that intersects the collider of a 2d object.
+  example: []
   syntax:
-    content: public static bool RayCast(Camera2D camera, Vector2 from, Vector2 to, out RayHit2D hit)
+    content: public static bool RayCast(Camera2D? camera, Vector2 from, Vector2 to, out RayHit2D hit)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: from
       type: Godot.Vector2
+      description: The starting point of the collision ray.
     - id: to
       type: Godot.Vector2
+      description: The endpoint of the collision ray.
     - id: hit
       type: Cobilas.GodotEngine.Utility.Physics.RayHit2D
+      description: The output parameter for the object's collision information.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when any 2d object is detected.
     content.vb: Public Shared Function RayCast(camera As Camera2D, from As Vector2, [to] As Vector2, hit As RayHit2D) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCast*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCast(Camera2D, Vector2, Vector2, RayHit2D)
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCast(Godot.Camera2D, Godot.Vector2, Godot.Vector2, Cobilas.GodotEngine.Utility.Physics.RayHit2D)
   name.vb: RayCast(Camera2D, Vector2, Vector2, RayHit2D)
@@ -1501,38 +1836,50 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCast(Camera2D, Vector2, Vector2, uint, out RayHit2D)
-  nameWithType: Physics2D.RayCast(Camera2D, Vector2, Vector2, uint, out RayHit2D)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCast(Godot.Camera2D, Godot.Vector2, Godot.Vector2, uint, out Cobilas.GodotEngine.Utility.Physics.RayHit2D)
+  name: RayCast(Camera2D?, Vector2, Vector2, uint, out RayHit2D)
+  nameWithType: Physics2D.RayCast(Camera2D?, Vector2, Vector2, uint, out RayHit2D)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCast(Godot.Camera2D?, Godot.Vector2, Godot.Vector2, uint, out Cobilas.GodotEngine.Utility.Physics.RayHit2D)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCast
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
-    startLine: 166
+    startLine: 216
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Projects a ray that intersects the collider of a 2d object.
+  example: []
   syntax:
-    content: public static bool RayCast(Camera2D camera, Vector2 from, Vector2 to, uint collisionLayer, out RayHit2D hit)
+    content: public static bool RayCast(Camera2D? camera, Vector2 from, Vector2 to, uint collisionLayer, out RayHit2D hit)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: from
       type: Godot.Vector2
+      description: The starting point of the collision ray.
     - id: to
       type: Godot.Vector2
+      description: The endpoint of the collision ray.
     - id: collisionLayer
       type: System.UInt32
+      description: The collision layers that will be checked by the 2D physical body detection methods.
     - id: hit
       type: Cobilas.GodotEngine.Utility.Physics.RayHit2D
+      description: The output parameter for the object's collision information.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when any 2d object is detected.
     content.vb: Public Shared Function RayCast(camera As Camera2D, from As Vector2, [to] As Vector2, collisionLayer As UInteger, hit As RayHit2D) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCast*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCast(Camera2D, Vector2, Vector2, UInteger, RayHit2D)
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCast(Godot.Camera2D, Godot.Vector2, Godot.Vector2, UInteger, Cobilas.GodotEngine.Utility.Physics.RayHit2D)
   name.vb: RayCast(Camera2D, Vector2, Vector2, UInteger, RayHit2D)
@@ -1543,38 +1890,50 @@ items:
   langs:
   - csharp
   - vb
-  name: RayCast(Camera2D, Vector2, Vector2, CollisionObject2D[], out RayHit2D)
-  nameWithType: Physics2D.RayCast(Camera2D, Vector2, Vector2, CollisionObject2D[], out RayHit2D)
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCast(Godot.Camera2D, Godot.Vector2, Godot.Vector2, Godot.CollisionObject2D[], out Cobilas.GodotEngine.Utility.Physics.RayHit2D)
+  name: RayCast(Camera2D?, Vector2, Vector2, CollisionObject2D[]?, out RayHit2D)
+  nameWithType: Physics2D.RayCast(Camera2D?, Vector2, Vector2, CollisionObject2D[]?, out RayHit2D)
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCast(Godot.Camera2D?, Godot.Vector2, Godot.Vector2, Godot.CollisionObject2D[]?, out Cobilas.GodotEngine.Utility.Physics.RayHit2D)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCast
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
-    startLine: 169
+    startLine: 219
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Projects a ray that intersects the collider of a 2d object.
+  example: []
   syntax:
-    content: public static bool RayCast(Camera2D camera, Vector2 from, Vector2 to, CollisionObject2D[] exclude, out RayHit2D hit)
+    content: public static bool RayCast(Camera2D? camera, Vector2 from, Vector2 to, CollisionObject2D[]? exclude, out RayHit2D hit)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: from
       type: Godot.Vector2
+      description: The starting point of the collision ray.
     - id: to
       type: Godot.Vector2
+      description: The endpoint of the collision ray.
     - id: exclude
       type: Godot.CollisionObject2D[]
+      description: The objects that will be excluded from the search.
     - id: hit
       type: Cobilas.GodotEngine.Utility.Physics.RayHit2D
+      description: The output parameter for the object's collision information.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when any 2d object is detected.
     content.vb: Public Shared Function RayCast(camera As Camera2D, from As Vector2, [to] As Vector2, exclude As CollisionObject2D(), hit As RayHit2D) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCast*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCast(Camera2D, Vector2, Vector2, CollisionObject2D(), RayHit2D)
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCast(Godot.Camera2D, Godot.Vector2, Godot.Vector2, Godot.CollisionObject2D(), Cobilas.GodotEngine.Utility.Physics.RayHit2D)
   name.vb: RayCast(Camera2D, Vector2, Vector2, CollisionObject2D(), RayHit2D)
@@ -1592,33 +1951,46 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Physics/Physics2D.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RayCast
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Physics/Physics2D.cs
-    startLine: 172
+    startLine: 230
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Physics
+  summary: Projects a ray that intersects the collider of a 2d object.
+  example: []
   syntax:
     content: public static bool RayCast(Camera2D? camera, Vector2 from, Vector2 to, CollisionObject2D[]? exclude, uint collisionLayer, out RayHit2D hit)
     parameters:
     - id: camera
       type: Godot.Camera2D
+      description: Camera that will be used to convert a point on the screen to a point in the 2d world.
     - id: from
       type: Godot.Vector2
+      description: The starting point of the collision ray.
     - id: to
       type: Godot.Vector2
+      description: The endpoint of the collision ray.
     - id: exclude
       type: Godot.CollisionObject2D[]
+      description: The objects that will be excluded from the search.
     - id: collisionLayer
       type: System.UInt32
+      description: The collision layers that will be checked by the 2D physical body detection methods.
     - id: hit
       type: Cobilas.GodotEngine.Utility.Physics.RayHit2D
+      description: The output parameter for the object's collision information.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when any 2d object is detected.
     content.vb: Public Shared Function RayCast(camera As Camera2D, from As Vector2, [to] As Vector2, exclude As CollisionObject2D(), collisionLayer As UInteger, hit As RayHit2D) As Boolean
   overload: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCast*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The exception is thrown when <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> object is null.
   nameWithType.vb: Physics2D.RayCast(Camera2D, Vector2, Vector2, CollisionObject2D(), UInteger, RayHit2D)
   fullName.vb: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCast(Godot.Camera2D, Godot.Vector2, Godot.Vector2, Godot.CollisionObject2D(), UInteger, Cobilas.GodotEngine.Utility.Physics.RayHit2D)
   name.vb: RayCast(Camera2D, Vector2, Vector2, CollisionObject2D(), UInteger, RayHit2D)
@@ -11677,12 +12049,6 @@ references:
   name: _Ready
   nameWithType: Physics2D._Ready
   fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D._Ready
-- uid: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle*
-  commentId: Overload:Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle
-  href: Cobilas.GodotEngine.Utility.Physics.Physics2D.html#Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastCircle_Godot_Camera2D_Godot_Vector2_System_Single_Cobilas_GodotEngine_Utility_Physics_Hit2D__
-  name: RayCastCircle
-  nameWithType: Physics2D.RayCastCircle
-  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle
 - uid: Godot.Camera2D
   commentId: T:Godot.Camera2D
   parent: Godot
@@ -11690,6 +12056,19 @@ references:
   name: Camera2D
   nameWithType: Camera2D
   fullName: Godot.Camera2D
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle
+  href: Cobilas.GodotEngine.Utility.Physics.Physics2D.html#Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastCircle_Godot_Camera2D_Godot_Vector2_System_Single_Cobilas_GodotEngine_Utility_Physics_Hit2D__
+  name: RayCastCircle
+  nameWithType: Physics2D.RayCastCircle
+  fullName: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastCircle
 - uid: Godot.Vector2
   commentId: T:Godot.Vector2
   parent: Godot
@@ -11757,6 +12136,34 @@ references:
     isExternal: true
   - name: (
   - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllCircle*
   commentId: Overload:Cobilas.GodotEngine.Utility.Physics.Physics2D.RayCastAllCircle
   href: Cobilas.GodotEngine.Utility.Physics.Physics2D.html#Cobilas_GodotEngine_Utility_Physics_Physics2D_RayCastAllCircle_Godot_Camera2D_Godot_Vector2_System_Single_System_Collections_Generic_List_Cobilas_GodotEngine_Utility_Physics_Hit2D__
@@ -11795,34 +12202,6 @@ references:
   - uid: Cobilas.GodotEngine.Utility.Physics.Hit2D
     name: Hit2D
     href: Cobilas.GodotEngine.Utility.Physics.Hit2D.html
-  - name: )
-- uid: System.Collections.Generic.List`1
-  commentId: T:System.Collections.Generic.List`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<T>
-  nameWithType: List<T>
-  fullName: System.Collections.Generic.List<T>
-  nameWithType.vb: List(Of T)
-  fullName.vb: System.Collections.Generic.List(Of T)
-  name.vb: List(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
   - name: )
 - uid: System.Collections.Generic
   commentId: N:System.Collections.Generic

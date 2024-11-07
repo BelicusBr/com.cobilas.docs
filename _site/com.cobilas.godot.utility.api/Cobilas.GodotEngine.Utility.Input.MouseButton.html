@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.godot.utility/new/main.dev/apiSpec/new?filename=Cobilas_GodotEngine_Utility_Input_MouseButton.md&amp;value=---%0Auid%3A%20Cobilas.GodotEngine.Utility.Input.MouseButton%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.godot.utility/new/main/apiSpec/new?filename=Cobilas_GodotEngine_Utility_Input_MouseButton.md&amp;value=---%0Auid%3A%20Cobilas.GodotEngine.Utility.Input.MouseButton%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -90,7 +90,7 @@
 
 
   <h1 id="Cobilas_GodotEngine_Utility_Input_MouseButton" data-uid="Cobilas.GodotEngine.Utility.Input.MouseButton" class="text-break">
-Enum MouseButton  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Input/MouseButton.cs/#L4"><i class="bi bi-code-slash"></i></a>
+Enum MouseButton  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/MouseButton.cs/#L4"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -103,7 +103,7 @@ Enum MouseButton  <a class="header-action link-secondary" title="View source" hr
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum MouseButton</code></pre>
+    <pre><code class="lang-csharp hljs">public enum MouseButton : byte</code></pre>
   </div>
 
 
@@ -117,14 +117,44 @@ Enum MouseButton  <a class="header-action link-secondary" title="View source" hr
   <h2 id="fields">Fields
 </h2>
   <dl class="parameters">
-    <dt id="Cobilas_GodotEngine_Utility_Input_MouseButton_Left"><code>Left = 2</code></dt>
-    <dd><p>Left mouse trigger.</p>
+    <dt id="Cobilas_GodotEngine_Utility_Input_MouseButton_MouseLeft"><code>MouseLeft = 2</code></dt>
+    <dd><p>Left mouse button.</p>
 </dd>
-    <dt id="Cobilas_GodotEngine_Utility_Input_MouseButton_Middle"><code>Middle = 3</code></dt>
-    <dd><p>Middle mouse trigger (Scroll).</p>
+    <dt id="Cobilas_GodotEngine_Utility_Input_MouseButton_MouseMiddle"><code>MouseMiddle = 3</code></dt>
+    <dd><p>Middle mouse button.</p>
 </dd>
-    <dt id="Cobilas_GodotEngine_Utility_Input_MouseButton_Right"><code>Right = 1</code></dt>
-    <dd><p>Right mouse trigger.</p>
+    <dt id="Cobilas_GodotEngine_Utility_Input_MouseButton_MouseRight"><code>MouseRight = 1</code></dt>
+    <dd><p>Right mouse button.</p>
+</dd>
+    <dt id="Cobilas_GodotEngine_Utility_Input_MouseButton_MouseWheelDown"><code>MouseWheelDown = 5</code></dt>
+    <dd><p>Mouse wheel down.</p>
+</dd>
+    <dt id="Cobilas_GodotEngine_Utility_Input_MouseButton_MouseWheelLeft"><code>MouseWheelLeft = 6</code></dt>
+    <dd><p>Mouse wheel left button (only present on some mice).</p>
+</dd>
+    <dt id="Cobilas_GodotEngine_Utility_Input_MouseButton_MouseWheelRight"><code>MouseWheelRight = 7</code></dt>
+    <dd><p>Mouse wheel right button (only present on some mice).</p>
+</dd>
+    <dt id="Cobilas_GodotEngine_Utility_Input_MouseButton_MouseWheelUp"><code>MouseWheelUp = 4</code></dt>
+    <dd><p>Mouse wheel up.</p>
+</dd>
+    <dt id="Cobilas_GodotEngine_Utility_Input_MouseButton_MouseXB1"><code>MouseXB1 = 8</code></dt>
+    <dd><p>Extra mouse button 1 (only present on some mice).</p>
+</dd>
+    <dt id="Cobilas_GodotEngine_Utility_Input_MouseButton_MouseXB2"><code>MouseXB2 = 9</code></dt>
+    <dd><p>Extra mouse button 2 (only present on some mice).</p>
+</dd>
+    <dt id="Cobilas_GodotEngine_Utility_Input_MouseButton_MouseXB3"><code>MouseXB3 = 10</code></dt>
+    <dd><p>Extra mouse button 3 (only present on some mice).</p>
+</dd>
+    <dt id="Cobilas_GodotEngine_Utility_Input_MouseButton_MouseXB4"><code>MouseXB4 = 11</code></dt>
+    <dd><p>Extra mouse button 4 (only present on some mice).</p>
+</dd>
+    <dt id="Cobilas_GodotEngine_Utility_Input_MouseButton_MouseXB5"><code>MouseXB5 = 12</code></dt>
+    <dd><p>Extra mouse button 5 (only present on some mice).</p>
+</dd>
+    <dt id="Cobilas_GodotEngine_Utility_Input_MouseButton_MouseXB6"><code>MouseXB6 = 13</code></dt>
+    <dd><p>Extra mouse button 6 (only present on some mice).</p>
 </dd>
     <dt id="Cobilas_GodotEngine_Utility_Input_MouseButton_Unknown"><code>Unknown = 0</code></dt>
     <dd><p>Unidentified trigger.</p>
@@ -136,7 +166,7 @@ Enum MouseButton  <a class="header-action link-secondary" title="View source" hr
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Input/MouseButton.cs/#L4" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Input/MouseButton.cs/#L4" class="edit-link">Edit this page</a>
         </div>
 
 

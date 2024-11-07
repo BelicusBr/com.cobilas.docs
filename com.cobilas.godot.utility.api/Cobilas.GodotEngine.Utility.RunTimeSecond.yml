@@ -16,14 +16,19 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Coroutine/RunTimeSecond.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RunTimeSecond
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/RunTimeSecond.cs
-    startLine: 4
+    startLine: 7
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: >-
+    This class represents a delay in seconds to methods that return <xref href="System.Collections.IEnumerator" data-throw-if-not-resolved="false"></xref> and use the keyword Yield.
+
+    <p>This class is performed in the <xref href="Godot.Node._Process(System.Single)" data-throw-if-not-resolved="false"></xref>.</p>
+  example: []
   syntax:
     content: 'public readonly struct RunTimeSecond : IYieldUpdate, IYieldCoroutine'
     content.vb: Public Structure RunTimeSecond Implements IYieldUpdate, IYieldCoroutine
@@ -51,14 +56,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Coroutine/RunTimeSecond.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/RunTimeSecond.cs
-    startLine: 8
+    startLine: 12
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Creates a new instance of this object.
+  example: []
   syntax:
     content: public RunTimeSecond(double second)
     parameters:
@@ -70,6 +77,45 @@ items:
   fullName.vb: Cobilas.GodotEngine.Utility.RunTimeSecond.New(Double)
   name.vb: New(Double)
 references:
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: Godot.Node._Process(System.Single)
+  commentId: M:Godot.Node._Process(System.Single)
+  parent: Godot.Node
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: _Process(float)
+  nameWithType: Node._Process(float)
+  fullName: Godot.Node._Process(float)
+  nameWithType.vb: Node._Process(Single)
+  fullName.vb: Godot.Node._Process(Single)
+  name.vb: _Process(Single)
+  spec.csharp:
+  - uid: Godot.Node._Process(System.Single)
+    name: _Process
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Godot.Node._Process(System.Single)
+    name: _Process
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
 - uid: Cobilas.GodotEngine.Utility
   commentId: N:Cobilas.GodotEngine.Utility
   href: Cobilas.html
@@ -305,6 +351,40 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.gettype
   - name: (
   - name: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: Godot.Node
+  commentId: T:Godot.Node
+  parent: Godot
+  isExternal: true
+  name: Node
+  nameWithType: Node
+  fullName: Godot.Node
 - uid: System.ValueType
   commentId: T:System.ValueType
   parent: System
@@ -324,6 +404,12 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: Godot
+  commentId: N:Godot
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
 - uid: System
   commentId: N:System
   isExternal: true

@@ -33,7 +33,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Gizmos.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Gizmos
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Gizmos.cs
@@ -45,11 +45,11 @@ items:
   example: []
   syntax:
     content: >-
-      [RunTimeInitializationClass(Priority.StartLater, "Gizmos")]
+      [RunTimeInitializationClass("Gizmos", Priority.StartLater, 0, false)]
 
       public class Gizmos : CanvasLayer, IDisposable
     content.vb: >-
-      <RunTimeInitializationClass(Priority.StartLater, "Gizmos")>
+      <RunTimeInitializationClass("Gizmos", Priority.StartLater, 0, False)>
 
       Public Class Gizmos Inherits CanvasLayer Implements IDisposable
   inheritance:
@@ -326,12 +326,16 @@ items:
   - Godot.Node.Godot.Node_GD_CB_Extension.SetNodeScale(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   attributes:
   - type: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute
-    ctor: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.#ctor(Cobilas.GodotEngine.Utility.Runtime.Priority,System.String)
+    ctor: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.#ctor(System.String,Cobilas.GodotEngine.Utility.Runtime.Priority,System.Int32,System.Boolean)
     arguments:
-    - type: Cobilas.GodotEngine.Utility.Runtime.Priority
-      value: 1
     - type: System.String
       value: Gizmos
+    - type: Cobilas.GodotEngine.Utility.Runtime.Priority
+      value: 1
+    - type: System.Int32
+      value: 0
+    - type: System.Boolean
+      value: false
 - uid: Cobilas.GodotEngine.Utility.Gizmos.Color
   commentId: P:Cobilas.GodotEngine.Utility.Gizmos.Color
   id: Color
@@ -346,7 +350,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Gizmos.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Color
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Gizmos.cs
@@ -378,7 +382,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Gizmos.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: _Ready
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Gizmos.cs
@@ -414,7 +418,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Gizmos.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: _Process
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Gizmos.cs
@@ -456,23 +460,35 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Gizmos.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: DrawLine
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Gizmos.cs
-    startLine: 62
+    startLine: 69
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: >-
+    Draws a line from a 2D point to another, with a given color and width. It can
+
+    be optionally antialiased. See also <xref href="Godot.CanvasItem.DrawMultiline(Godot.Vector2%5b%5d%2cGodot.Color%2cSystem.Single%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref>
+
+    and <xref href="Godot.CanvasItem.DrawPolyline(Godot.Vector2%5b%5d%2cGodot.Color%2cSystem.Single%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref>.
+
+    <p>Note: Line drawing is not accelerated by batching if <code>antialiased</code> is <code>true</code>.</p><p>Note: Due to how it works, built-in antialiasing will not look correct for translucent lines and may not work on certain platforms. As a workaround, install the <a href="https://github.com/godot-extended-libraries/godot-antialiased-line2d">Antialiased Line2D</a> add-on then create an AntialiasedLine2D node. That node relies on a texture with custom mipmaps to perform antialiasing. 2D batching is also still supported with those antialiased lines.</p>
+  example: []
   syntax:
     content: public static void DrawLine(Vector2 start, Vector2 end, float width)
     parameters:
     - id: start
       type: Godot.Vector2
+      description: The beginning of the line.
     - id: end
       type: Godot.Vector2
+      description: The end of the line.
     - id: width
       type: System.Single
+      description: The thickness of the line.
     content.vb: Public Shared Sub DrawLine(start As Vector2, [end] As Vector2, width As Single)
   overload: Cobilas.GodotEngine.Utility.Gizmos.DrawLine*
   nameWithType.vb: Gizmos.DrawLine(Vector2, Vector2, Single)
@@ -492,21 +508,32 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Gizmos.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: DrawLine
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Gizmos.cs
-    startLine: 65
+    startLine: 80
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: >-
+    Draws a line from a 2D point to another, with a given color and width. It can
+
+    be optionally antialiased. See also <xref href="Godot.CanvasItem.DrawMultiline(Godot.Vector2%5b%5d%2cGodot.Color%2cSystem.Single%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref>
+
+    and <xref href="Godot.CanvasItem.DrawPolyline(Godot.Vector2%5b%5d%2cGodot.Color%2cSystem.Single%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref>.
+
+    <p>Note: Line drawing is not accelerated by batching if <code>antialiased</code> is <code>true</code>.</p><p>Note: Due to how it works, built-in antialiasing will not look correct for translucent lines and may not work on certain platforms. As a workaround, install the <a href="https://github.com/godot-extended-libraries/godot-antialiased-line2d">Antialiased Line2D</a> add-on then create an AntialiasedLine2D node. That node relies on a texture with custom mipmaps to perform antialiasing. 2D batching is also still supported with those antialiased lines.</p>
+  example: []
   syntax:
     content: public static void DrawLine(Vector2 start, Vector2 end)
     parameters:
     - id: start
       type: Godot.Vector2
+      description: The beginning of the line.
     - id: end
       type: Godot.Vector2
+      description: The end of the line.
     content.vb: Public Shared Sub DrawLine(start As Vector2, [end] As Vector2)
   overload: Cobilas.GodotEngine.Utility.Gizmos.DrawLine*
 - uid: Cobilas.GodotEngine.Utility.Gizmos.DrawRect(Godot.Rect2)
@@ -523,19 +550,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Gizmos.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: DrawRect
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Gizmos.cs
-    startLine: 68
+    startLine: 87
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: >-
+    <p>Draws a solid body rectangle.</p>
+
+    <p>Note: Due to how it works, built-in antialiasing will not look correct for translucent polygons and may not work on certain platforms. As a workaround, install the <a href="https://github.com/godot-extended-libraries/godot-antialiased-line2d">Antialiased Line2D</a> add-on then create an AntialiasedPolygon2D node. That node relies on a texture with custom mipmaps to perform antialiasing.</p>
+  example: []
   syntax:
     content: public static void DrawRect(Rect2 rect)
     parameters:
     - id: rect
       type: Godot.Rect2
+      description: The dimensions of the rectangle.
     content.vb: Public Shared Sub DrawRect(rect As Rect2)
   overload: Cobilas.GodotEngine.Utility.Gizmos.DrawRect*
 - uid: Cobilas.GodotEngine.Utility.Gizmos.DrawWireRect(Godot.Rect2,System.Single)
@@ -552,21 +585,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Gizmos.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: DrawWireRect
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Gizmos.cs
-    startLine: 71
+    startLine: 95
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: >-
+    Draw a rectangle of a skeletonized body.
+
+    <p>Note: Due to how it works, built-in antialiasing will not look correct for translucent polygons and may not work on certain platforms. As a workaround, install the <a href="https://github.com/godot-extended-libraries/godot-antialiased-line2d">Antialiased Line2D</a> add-on then create an AntialiasedPolygon2D node. That node relies on a texture with custom mipmaps to perform antialiasing.</p>
+  example: []
   syntax:
     content: public static void DrawWireRect(Rect2 rect, float width)
     parameters:
     - id: rect
       type: Godot.Rect2
+      description: The dimensions of the rectangle.
     - id: width
       type: System.Single
+      description: The thickness of the line.
     content.vb: Public Shared Sub DrawWireRect(rect As Rect2, width As Single)
   overload: Cobilas.GodotEngine.Utility.Gizmos.DrawWireRect*
   nameWithType.vb: Gizmos.DrawWireRect(Rect2, Single)
@@ -586,19 +626,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Gizmos.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: DrawWireRect
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Gizmos.cs
-    startLine: 74
+    startLine: 102
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: >-
+    Draw a rectangle of a skeletonized body.
+
+    <p>Note: Due to how it works, built-in antialiasing will not look correct for translucent polygons and may not work on certain platforms. As a workaround, install the <a href="https://github.com/godot-extended-libraries/godot-antialiased-line2d">Antialiased Line2D</a> add-on then create an AntialiasedPolygon2D node. That node relies on a texture with custom mipmaps to perform antialiasing.</p>
+  example: []
   syntax:
     content: public static void DrawWireRect(Rect2 rect)
     parameters:
     - id: rect
       type: Godot.Rect2
+      description: The dimensions of the rectangle.
     content.vb: Public Shared Sub DrawWireRect(rect As Rect2)
   overload: Cobilas.GodotEngine.Utility.Gizmos.DrawWireRect*
 - uid: Cobilas.GodotEngine.Utility.Gizmos.DrawCircle(Godot.Vector2,System.Single)
@@ -615,21 +661,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Gizmos.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: DrawCircle
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Gizmos.cs
-    startLine: 76
+    startLine: 109
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: >-
+    <p>Draws a colored, filled circle. See also <xref href="Godot.CanvasItem.DrawArc(Godot.Vector2%2cSystem.Single%2cSystem.Single%2cSystem.Single%2cSystem.Int32%2cGodot.Color%2cSystem.Single%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref>, <xref href="Godot.CanvasItem.DrawPolyline(Godot.Vector2%5b%5d%2cGodot.Color%2cSystem.Single%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref> and <xref href="Godot.CanvasItem.DrawPolygon(Godot.Vector2%5b%5d%2cGodot.Color%5b%5d%2cGodot.Vector2%5b%5d%2cGodot.Texture%2cGodot.Texture%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref>.</p>
+
+    <p>Note: Built-in antialiasing is not provided for <xref href="Godot.CanvasItem.DrawCircle(Godot.Vector2%2cSystem.Single%2cGodot.Color)" data-throw-if-not-resolved="false"></xref>. As a workaround, install the <a href="https://github.com/godot-extended-libraries/godot-antialiased-line2d">Antialiased Line2D</a> add-on then create an AntialiasedRegularPolygon2D node. That node relies on a texture with custom mipmaps to perform antialiasing.</p>
+  example: []
   syntax:
     content: public static void DrawCircle(Vector2 position, float radius)
     parameters:
     - id: position
       type: Godot.Vector2
+      description: The central position of the circle.
     - id: radius
       type: System.Single
+      description: The radius of the circle.
     content.vb: Public Shared Sub DrawCircle(position As Vector2, radius As Single)
   overload: Cobilas.GodotEngine.Utility.Gizmos.DrawCircle*
   nameWithType.vb: Gizmos.DrawCircle(Vector2, Single)
@@ -649,21 +702,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Gizmos.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: DrawMultiline
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Gizmos.cs
-    startLine: 79
+    startLine: 117
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: >-
+    <p>Draws multiple disconnected lines with a uniform <code>color</code>. When drawing large amounts of lines, this is faster than using individual <xref href="Godot.CanvasItem.DrawLine(Godot.Vector2%2cGodot.Vector2%2cGodot.Color%2cSystem.Single%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref> calls. To draw interconnected lines, use <xref href="Godot.CanvasItem.DrawPolyline(Godot.Vector2%5b%5d%2cGodot.Color%2cSystem.Single%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref> instead.</p>
+
+    <p>Note: <code>width</code> and <code>antialiased</code> are currently not implemented and have no effect. As a workaround, install the <a href="https://github.com/godot-extended-libraries/godot-antialiased-line2d">Antialiased Line2D</a> add-on then create an AntialiasedLine2D node. That node relies on a texture with custom mipmaps to perform antialiasing. 2D batching is also still supported with those antialiased lines.</p>
+  example: []
   syntax:
     content: public static void DrawMultiline(Vector2[] points, float width)
     parameters:
     - id: points
       type: Godot.Vector2[]
+      description: The points that form the line.
     - id: width
       type: System.Single
+      description: The thickness of the line.
     content.vb: Public Shared Sub DrawMultiline(points As Vector2(), width As Single)
   overload: Cobilas.GodotEngine.Utility.Gizmos.DrawMultiline*
   nameWithType.vb: Gizmos.DrawMultiline(Vector2(), Single)
@@ -683,19 +743,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Gizmos.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: DrawMultiline
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Gizmos.cs
-    startLine: 82
+    startLine: 124
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: >-
+    <p>Draws multiple disconnected lines with a uniform <code>color</code>. When drawing large amounts of lines, this is faster than using individual <xref href="Godot.CanvasItem.DrawLine(Godot.Vector2%2cGodot.Vector2%2cGodot.Color%2cSystem.Single%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref> calls. To draw interconnected lines, use <xref href="Godot.CanvasItem.DrawPolyline(Godot.Vector2%5b%5d%2cGodot.Color%2cSystem.Single%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref> instead.</p>
+
+    <p>Note: <code>width</code> and <code>antialiased</code> are currently not implemented and have no effect. As a workaround, install the <a href="https://github.com/godot-extended-libraries/godot-antialiased-line2d">Antialiased Line2D</a> add-on then create an AntialiasedLine2D node. That node relies on a texture with custom mipmaps to perform antialiasing. 2D batching is also still supported with those antialiased lines.</p>
+  example: []
   syntax:
     content: public static void DrawMultiline(Vector2[] points)
     parameters:
     - id: points
       type: Godot.Vector2[]
+      description: The points that form the line.
     content.vb: Public Shared Sub DrawMultiline(points As Vector2())
   overload: Cobilas.GodotEngine.Utility.Gizmos.DrawMultiline*
   nameWithType.vb: Gizmos.DrawMultiline(Vector2())
@@ -715,21 +781,28 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Gizmos.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: DrawMultiline
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Gizmos.cs
-    startLine: 84
+    startLine: 131
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: >-
+    <p>Draws multiple disconnected lines with a uniform <code>color</code>. When drawing large amounts of lines, this is faster than using individual <xref href="Godot.CanvasItem.DrawLine(Godot.Vector2%2cGodot.Vector2%2cGodot.Color%2cSystem.Single%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref> calls. To draw interconnected lines, use <xref href="Godot.CanvasItem.DrawPolyline(Godot.Vector2%5b%5d%2cGodot.Color%2cSystem.Single%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref> instead.</p>
+
+    <p>Note: <code>width</code> and <code>antialiased</code> are currently not implemented and have no effect. As a workaround, install the <a href="https://github.com/godot-extended-libraries/godot-antialiased-line2d">Antialiased Line2D</a> add-on then create an AntialiasedLine2D node. That node relies on a texture with custom mipmaps to perform antialiasing. 2D batching is also still supported with those antialiased lines.</p>
+  example: []
   syntax:
     content: public static void DrawMultiline(List<Vector2> points, float width)
     parameters:
     - id: points
       type: System.Collections.Generic.List{Godot.Vector2}
+      description: The points that form the line.
     - id: width
       type: System.Single
+      description: The thickness of the line.
     content.vb: Public Shared Sub DrawMultiline(points As List(Of Vector2), width As Single)
   overload: Cobilas.GodotEngine.Utility.Gizmos.DrawMultiline*
   nameWithType.vb: Gizmos.DrawMultiline(List(Of Vector2), Single)
@@ -749,19 +822,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Gizmos.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: DrawMultiline
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Gizmos.cs
-    startLine: 85
+    startLine: 137
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: >-
+    <p>Draws multiple disconnected lines with a uniform <code>color</code>. When drawing large amounts of lines, this is faster than using individual <xref href="Godot.CanvasItem.DrawLine(Godot.Vector2%2cGodot.Vector2%2cGodot.Color%2cSystem.Single%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref> calls. To draw interconnected lines, use <xref href="Godot.CanvasItem.DrawPolyline(Godot.Vector2%5b%5d%2cGodot.Color%2cSystem.Single%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref> instead.</p>
+
+    <p>Note: <code>width</code> and <code>antialiased</code> are currently not implemented and have no effect. As a workaround, install the <a href="https://github.com/godot-extended-libraries/godot-antialiased-line2d">Antialiased Line2D</a> add-on then create an AntialiasedLine2D node. That node relies on a texture with custom mipmaps to perform antialiasing. 2D batching is also still supported with those antialiased lines.</p>
+  example: []
   syntax:
     content: public static void DrawMultiline(List<Vector2> points)
     parameters:
     - id: points
       type: System.Collections.Generic.List{Godot.Vector2}
+      description: The points that form the line.
     content.vb: Public Shared Sub DrawMultiline(points As List(Of Vector2))
   overload: Cobilas.GodotEngine.Utility.Gizmos.DrawMultiline*
   nameWithType.vb: Gizmos.DrawMultiline(List(Of Vector2))
@@ -781,29 +860,44 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Gizmos.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: DrawArc
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Gizmos.cs
-    startLine: 87
+    startLine: 151
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: >-
+    <p>Draws a unfilled arc between the given angles. The larger the value of <code>point_count</code>, the smoother the curve. See also <xref href="Godot.CanvasItem.DrawCircle(Godot.Vector2%2cSystem.Single%2cGodot.Color)" data-throw-if-not-resolved="false"></xref>.</p>
+
+    <p>Note: Line drawing is not accelerated by batching if <code>antialiased</code> is <code>true</code>.</p>
+
+    <p>Note: Due to how it works, built-in antialiasing will not look correct for translucent lines and may not work on certain platforms. As a workaround, install the <a href="https://github.com/godot-extended-libraries/godot-antialiased-line2d">Antialiased Line2D</a> add-on then create an AntialiasedRegularPolygon2D node. That node relies on a texture with custom mipmaps to perform antialiasing. 2D batching is also still supported with those antialiased lines.</p>
+  example: []
   syntax:
     content: public static void DrawArc(Vector2 center, float radius, float startAngle, float endAngle, int pointCount, float width)
     parameters:
     - id: center
       type: Godot.Vector2
+      description: The central position of the arc.
     - id: radius
       type: System.Single
+      description: The radius of the arc.
     - id: startAngle
       type: System.Single
+      description: The angle at which the arc will be drawn.
     - id: endAngle
       type: System.Single
+      description: The angle where the arc will finish being drawn.
     - id: pointCount
       type: System.Int32
+      description: >-
+        The number of stitches used in the arc.
+            <p>This parameter will define the visual aspect of the bow, whether it will have a smoother or more serrated curve.</p>
     - id: width
       type: System.Single
+      description: The thickness of the line.
     content.vb: Public Shared Sub DrawArc(center As Vector2, radius As Single, startAngle As Single, endAngle As Single, pointCount As Integer, width As Single)
   overload: Cobilas.GodotEngine.Utility.Gizmos.DrawArc*
   nameWithType.vb: Gizmos.DrawArc(Vector2, Single, Single, Single, Integer, Single)
@@ -823,27 +917,41 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Gizmos.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: DrawArc
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Gizmos.cs
-    startLine: 90
+    startLine: 165
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: >-
+    <p>Draws a unfilled arc between the given angles. The larger the value of <code>point_count</code>, the smoother the curve. See also <xref href="Godot.CanvasItem.DrawCircle(Godot.Vector2%2cSystem.Single%2cGodot.Color)" data-throw-if-not-resolved="false"></xref>.</p>
+
+    <p>Note: Line drawing is not accelerated by batching if <code>antialiased</code> is <code>true</code>.</p>
+
+    <p>Note: Due to how it works, built-in antialiasing will not look correct for translucent lines and may not work on certain platforms. As a workaround, install the <a href="https://github.com/godot-extended-libraries/godot-antialiased-line2d">Antialiased Line2D</a> add-on then create an AntialiasedRegularPolygon2D node. That node relies on a texture with custom mipmaps to perform antialiasing. 2D batching is also still supported with those antialiased lines.</p>
+  example: []
   syntax:
     content: public static void DrawArc(Vector2 center, float radius, float startAngle, float endAngle, int pointCount)
     parameters:
     - id: center
       type: Godot.Vector2
+      description: The central position of the arc.
     - id: radius
       type: System.Single
+      description: The radius of the arc.
     - id: startAngle
       type: System.Single
+      description: The angle at which the arc will be drawn.
     - id: endAngle
       type: System.Single
+      description: The angle where the arc will finish being drawn.
     - id: pointCount
       type: System.Int32
+      description: >-
+        The number of stitches used in the arc.
+            <p>This parameter will define the visual aspect of the bow, whether it will have a smoother or more serrated curve.</p>
     content.vb: Public Shared Sub DrawArc(center As Vector2, radius As Single, startAngle As Single, endAngle As Single, pointCount As Integer)
   overload: Cobilas.GodotEngine.Utility.Gizmos.DrawArc*
   nameWithType.vb: Gizmos.DrawArc(Vector2, Single, Single, Single, Integer)
@@ -863,25 +971,31 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Gizmos.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: DrawMesh
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Gizmos.cs
-    startLine: 93
+    startLine: 174
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: <p>Draws a <xref href="Godot.Mesh" data-throw-if-not-resolved="false"></xref> in 2D, using the provided texture. See <xref href="Godot.MeshInstance2D" data-throw-if-not-resolved="false"></xref> for related documentation.</p>
+  example: []
   syntax:
     content: public static void DrawMesh(Mesh mesh, Texture texture, Texture? normalMap = null, Transform2D? transform = null)
     parameters:
     - id: mesh
       type: Godot.Mesh
+      description: The mesh that will be used to shape the design.
     - id: texture
       type: Godot.Texture
+      description: The texture that will be used to draw on the mesh.
     - id: normalMap
       type: Godot.Texture
+      description: The texture normal map.
     - id: transform
       type: System.Nullable{Godot.Transform2D}
+      description: If the parameter is null, then the default value is Transform2D.Identity
     content.vb: Public Shared Sub DrawMesh(mesh As Mesh, texture As Texture, normalMap As Texture = Nothing, transform As Transform2D? = Nothing)
   overload: Cobilas.GodotEngine.Utility.Gizmos.DrawMesh*
   nameWithType.vb: Gizmos.DrawMesh(Mesh, Texture, Texture, Transform2D?)
@@ -901,14 +1015,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Gizmos.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: DrawTexture
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Gizmos.cs
-    startLine: 96
+    startLine: 179
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: <p>Draws a texture at a given position.</p>
+  example: []
   syntax:
     content: public static void DrawTexture(Texture texture, Vector2 position, Texture? normalMap = null)
     parameters:
@@ -937,14 +1053,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Gizmos.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: DrawTextureRect
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Gizmos.cs
-    startLine: 99
+    startLine: 185
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: <p>Draws a textured rectangle at a given position, optionally modulated by a color. If <code>transpose</code> is <code>true</code>, the texture will have its X and Y coordinates swapped.</p>
+  example: []
   syntax:
     content: public static void DrawTextureRect(Texture texture, Rect2 rect, bool tile, bool transpose = false, Texture? normalMap = null)
     parameters:
@@ -8302,6 +8420,140 @@ references:
   nameWithType.vb: Single
   fullName.vb: Single
   name.vb: Single
+- uid: Godot.CanvasItem.DrawMultiline(Godot.Vector2[],Godot.Color,System.Single,System.Boolean)
+  commentId: M:Godot.CanvasItem.DrawMultiline(Godot.Vector2[],Godot.Color,System.Single,System.Boolean)
+  parent: Godot.CanvasItem
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: DrawMultiline(Vector2[], Color, float, bool)
+  nameWithType: CanvasItem.DrawMultiline(Vector2[], Color, float, bool)
+  fullName: Godot.CanvasItem.DrawMultiline(Godot.Vector2[], Godot.Color, float, bool)
+  nameWithType.vb: CanvasItem.DrawMultiline(Vector2(), Color, Single, Boolean)
+  fullName.vb: Godot.CanvasItem.DrawMultiline(Godot.Vector2(), Godot.Color, Single, Boolean)
+  name.vb: DrawMultiline(Vector2(), Color, Single, Boolean)
+  spec.csharp:
+  - uid: Godot.CanvasItem.DrawMultiline(Godot.Vector2[],Godot.Color,System.Single,System.Boolean)
+    name: DrawMultiline
+    isExternal: true
+  - name: (
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: Godot.Color
+    name: Color
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Godot.CanvasItem.DrawMultiline(Godot.Vector2[],Godot.Color,System.Single,System.Boolean)
+    name: DrawMultiline
+    isExternal: true
+  - name: (
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Godot.Color
+    name: Color
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Godot.CanvasItem.DrawPolyline(Godot.Vector2[],Godot.Color,System.Single,System.Boolean)
+  commentId: M:Godot.CanvasItem.DrawPolyline(Godot.Vector2[],Godot.Color,System.Single,System.Boolean)
+  parent: Godot.CanvasItem
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: DrawPolyline(Vector2[], Color, float, bool)
+  nameWithType: CanvasItem.DrawPolyline(Vector2[], Color, float, bool)
+  fullName: Godot.CanvasItem.DrawPolyline(Godot.Vector2[], Godot.Color, float, bool)
+  nameWithType.vb: CanvasItem.DrawPolyline(Vector2(), Color, Single, Boolean)
+  fullName.vb: Godot.CanvasItem.DrawPolyline(Godot.Vector2(), Godot.Color, Single, Boolean)
+  name.vb: DrawPolyline(Vector2(), Color, Single, Boolean)
+  spec.csharp:
+  - uid: Godot.CanvasItem.DrawPolyline(Godot.Vector2[],Godot.Color,System.Single,System.Boolean)
+    name: DrawPolyline
+    isExternal: true
+  - name: (
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: Godot.Color
+    name: Color
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Godot.CanvasItem.DrawPolyline(Godot.Vector2[],Godot.Color,System.Single,System.Boolean)
+    name: DrawPolyline
+    isExternal: true
+  - name: (
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Godot.Color
+    name: Color
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
 - uid: Cobilas.GodotEngine.Utility.Gizmos.DrawLine*
   commentId: Overload:Cobilas.GodotEngine.Utility.Gizmos.DrawLine
   href: Cobilas.GodotEngine.Utility.Gizmos.html#Cobilas_GodotEngine_Utility_Gizmos_DrawLine_Godot_Vector2_Godot_Vector2_System_Single_
@@ -8315,6 +8567,13 @@ references:
   name: Vector2
   nameWithType: Vector2
   fullName: Godot.Vector2
+- uid: Godot.CanvasItem
+  commentId: T:Godot.CanvasItem
+  parent: Godot
+  isExternal: true
+  name: CanvasItem
+  nameWithType: CanvasItem
+  fullName: Godot.CanvasItem
 - uid: Cobilas.GodotEngine.Utility.Gizmos.DrawRect*
   commentId: Overload:Cobilas.GodotEngine.Utility.Gizmos.DrawRect
   href: Cobilas.GodotEngine.Utility.Gizmos.html#Cobilas_GodotEngine_Utility_Gizmos_DrawRect_Godot_Rect2_
@@ -8334,12 +8593,340 @@ references:
   name: DrawWireRect
   nameWithType: Gizmos.DrawWireRect
   fullName: Cobilas.GodotEngine.Utility.Gizmos.DrawWireRect
+- uid: Godot.CanvasItem.DrawArc(Godot.Vector2,System.Single,System.Single,System.Single,System.Int32,Godot.Color,System.Single,System.Boolean)
+  commentId: M:Godot.CanvasItem.DrawArc(Godot.Vector2,System.Single,System.Single,System.Single,System.Int32,Godot.Color,System.Single,System.Boolean)
+  parent: Godot.CanvasItem
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: DrawArc(Vector2, float, float, float, int, Color, float, bool)
+  nameWithType: CanvasItem.DrawArc(Vector2, float, float, float, int, Color, float, bool)
+  fullName: Godot.CanvasItem.DrawArc(Godot.Vector2, float, float, float, int, Godot.Color, float, bool)
+  nameWithType.vb: CanvasItem.DrawArc(Vector2, Single, Single, Single, Integer, Color, Single, Boolean)
+  fullName.vb: Godot.CanvasItem.DrawArc(Godot.Vector2, Single, Single, Single, Integer, Godot.Color, Single, Boolean)
+  name.vb: DrawArc(Vector2, Single, Single, Single, Integer, Color, Single, Boolean)
+  spec.csharp:
+  - uid: Godot.CanvasItem.DrawArc(Godot.Vector2,System.Single,System.Single,System.Single,System.Int32,Godot.Color,System.Single,System.Boolean)
+    name: DrawArc
+    isExternal: true
+  - name: (
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Godot.Color
+    name: Color
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Godot.CanvasItem.DrawArc(Godot.Vector2,System.Single,System.Single,System.Single,System.Int32,Godot.Color,System.Single,System.Boolean)
+    name: DrawArc
+    isExternal: true
+  - name: (
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Godot.Color
+    name: Color
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Godot.CanvasItem.DrawPolygon(Godot.Vector2[],Godot.Color[],Godot.Vector2[],Godot.Texture,Godot.Texture,System.Boolean)
+  commentId: M:Godot.CanvasItem.DrawPolygon(Godot.Vector2[],Godot.Color[],Godot.Vector2[],Godot.Texture,Godot.Texture,System.Boolean)
+  parent: Godot.CanvasItem
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: DrawPolygon(Vector2[], Color[], Vector2[], Texture, Texture, bool)
+  nameWithType: CanvasItem.DrawPolygon(Vector2[], Color[], Vector2[], Texture, Texture, bool)
+  fullName: Godot.CanvasItem.DrawPolygon(Godot.Vector2[], Godot.Color[], Godot.Vector2[], Godot.Texture, Godot.Texture, bool)
+  nameWithType.vb: CanvasItem.DrawPolygon(Vector2(), Color(), Vector2(), Texture, Texture, Boolean)
+  fullName.vb: Godot.CanvasItem.DrawPolygon(Godot.Vector2(), Godot.Color(), Godot.Vector2(), Godot.Texture, Godot.Texture, Boolean)
+  name.vb: DrawPolygon(Vector2(), Color(), Vector2(), Texture, Texture, Boolean)
+  spec.csharp:
+  - uid: Godot.CanvasItem.DrawPolygon(Godot.Vector2[],Godot.Color[],Godot.Vector2[],Godot.Texture,Godot.Texture,System.Boolean)
+    name: DrawPolygon
+    isExternal: true
+  - name: (
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: Godot.Color
+    name: Color
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: Godot.Texture
+    name: Texture
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Godot.Texture
+    name: Texture
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Godot.CanvasItem.DrawPolygon(Godot.Vector2[],Godot.Color[],Godot.Vector2[],Godot.Texture,Godot.Texture,System.Boolean)
+    name: DrawPolygon
+    isExternal: true
+  - name: (
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Godot.Color
+    name: Color
+    isExternal: true
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Godot.Texture
+    name: Texture
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Godot.Texture
+    name: Texture
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Godot.CanvasItem.DrawCircle(Godot.Vector2,System.Single,Godot.Color)
+  commentId: M:Godot.CanvasItem.DrawCircle(Godot.Vector2,System.Single,Godot.Color)
+  parent: Godot.CanvasItem
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: DrawCircle(Vector2, float, Color)
+  nameWithType: CanvasItem.DrawCircle(Vector2, float, Color)
+  fullName: Godot.CanvasItem.DrawCircle(Godot.Vector2, float, Godot.Color)
+  nameWithType.vb: CanvasItem.DrawCircle(Vector2, Single, Color)
+  fullName.vb: Godot.CanvasItem.DrawCircle(Godot.Vector2, Single, Godot.Color)
+  name.vb: DrawCircle(Vector2, Single, Color)
+  spec.csharp:
+  - uid: Godot.CanvasItem.DrawCircle(Godot.Vector2,System.Single,Godot.Color)
+    name: DrawCircle
+    isExternal: true
+  - name: (
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: Godot.Color
+    name: Color
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Godot.CanvasItem.DrawCircle(Godot.Vector2,System.Single,Godot.Color)
+    name: DrawCircle
+    isExternal: true
+  - name: (
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: Godot.Color
+    name: Color
+    isExternal: true
+  - name: )
 - uid: Cobilas.GodotEngine.Utility.Gizmos.DrawCircle*
   commentId: Overload:Cobilas.GodotEngine.Utility.Gizmos.DrawCircle
   href: Cobilas.GodotEngine.Utility.Gizmos.html#Cobilas_GodotEngine_Utility_Gizmos_DrawCircle_Godot_Vector2_System_Single_
   name: DrawCircle
   nameWithType: Gizmos.DrawCircle
   fullName: Cobilas.GodotEngine.Utility.Gizmos.DrawCircle
+- uid: Godot.CanvasItem.DrawLine(Godot.Vector2,Godot.Vector2,Godot.Color,System.Single,System.Boolean)
+  commentId: M:Godot.CanvasItem.DrawLine(Godot.Vector2,Godot.Vector2,Godot.Color,System.Single,System.Boolean)
+  parent: Godot.CanvasItem
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: DrawLine(Vector2, Vector2, Color, float, bool)
+  nameWithType: CanvasItem.DrawLine(Vector2, Vector2, Color, float, bool)
+  fullName: Godot.CanvasItem.DrawLine(Godot.Vector2, Godot.Vector2, Godot.Color, float, bool)
+  nameWithType.vb: CanvasItem.DrawLine(Vector2, Vector2, Color, Single, Boolean)
+  fullName.vb: Godot.CanvasItem.DrawLine(Godot.Vector2, Godot.Vector2, Godot.Color, Single, Boolean)
+  name.vb: DrawLine(Vector2, Vector2, Color, Single, Boolean)
+  spec.csharp:
+  - uid: Godot.CanvasItem.DrawLine(Godot.Vector2,Godot.Vector2,Godot.Color,System.Single,System.Boolean)
+    name: DrawLine
+    isExternal: true
+  - name: (
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Godot.Color
+    name: Color
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Godot.CanvasItem.DrawLine(Godot.Vector2,Godot.Vector2,Godot.Color,System.Single,System.Boolean)
+    name: DrawLine
+    isExternal: true
+  - name: (
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Godot.Color
+    name: Color
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
 - uid: Cobilas.GodotEngine.Utility.Gizmos.DrawMultiline*
   commentId: Overload:Cobilas.GodotEngine.Utility.Gizmos.DrawMultiline
   href: Cobilas.GodotEngine.Utility.Gizmos.html#Cobilas_GodotEngine_Utility_Gizmos_DrawMultiline_Godot_Vector2___System_Single_
@@ -8481,12 +9068,6 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
-- uid: Cobilas.GodotEngine.Utility.Gizmos.DrawMesh*
-  commentId: Overload:Cobilas.GodotEngine.Utility.Gizmos.DrawMesh
-  href: Cobilas.GodotEngine.Utility.Gizmos.html#Cobilas_GodotEngine_Utility_Gizmos_DrawMesh_Godot_Mesh_Godot_Texture_Godot_Texture_System_Nullable_Godot_Transform2D__
-  name: DrawMesh
-  nameWithType: Gizmos.DrawMesh
-  fullName: Cobilas.GodotEngine.Utility.Gizmos.DrawMesh
 - uid: Godot.Mesh
   commentId: T:Godot.Mesh
   parent: Godot
@@ -8494,6 +9075,18 @@ references:
   name: Mesh
   nameWithType: Mesh
   fullName: Godot.Mesh
+- uid: Godot.MeshInstance2D
+  commentId: T:Godot.MeshInstance2D
+  isExternal: true
+  name: MeshInstance2D
+  nameWithType: MeshInstance2D
+  fullName: Godot.MeshInstance2D
+- uid: Cobilas.GodotEngine.Utility.Gizmos.DrawMesh*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Gizmos.DrawMesh
+  href: Cobilas.GodotEngine.Utility.Gizmos.html#Cobilas_GodotEngine_Utility_Gizmos_DrawMesh_Godot_Mesh_Godot_Texture_Godot_Texture_System_Nullable_Godot_Transform2D__
+  name: DrawMesh
+  nameWithType: Gizmos.DrawMesh
+  fullName: Cobilas.GodotEngine.Utility.Gizmos.DrawMesh
 - uid: Godot.Texture
   commentId: T:Godot.Texture
   parent: Godot

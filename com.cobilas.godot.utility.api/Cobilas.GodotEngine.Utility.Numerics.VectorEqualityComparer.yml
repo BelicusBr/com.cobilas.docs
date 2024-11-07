@@ -27,16 +27,18 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: VectorEqualityComparer
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-    startLine: 5
+    startLine: 6
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Defines methods to support comparing vectors for equality.
+  example: []
   syntax:
-    content: 'public struct VectorEqualityComparer : IEqualityComparer, IEqualityComparer<Vector2D>, IEqualityComparer<Vector3D>, IEqualityComparer<Vector4D>, IEqualityComparer<Vector2DInt>, IEqualityComparer<Vector3DInt>'
+    content: 'public readonly struct VectorEqualityComparer : IEqualityComparer, IEqualityComparer<Vector2D>, IEqualityComparer<Vector3D>, IEqualityComparer<Vector4D>, IEqualityComparer<Vector2DInt>, IEqualityComparer<Vector3DInt>'
     content.vb: Public Structure VectorEqualityComparer Implements IEqualityComparer, IEqualityComparer(Of Vector2D), IEqualityComparer(Of Vector3D), IEqualityComparer(Of Vector4D), IEqualityComparer(Of Vector2DInt), IEqualityComparer(Of Vector3DInt)
   implements:
   - System.Collections.IEqualityComparer
@@ -65,34 +67,31 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Equals
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-    startLine: 10
+    startLine: 11
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
   summary: Determines whether the specified objects are equal.
+  remarks: Implement this method to provide a custom equality comparison for the specified type.
   example: []
   syntax:
-    content: public readonly bool Equals(object x, object y)
+    content: public bool Equals(object x, object y)
     parameters:
     - id: x
       type: System.Object
-      description: The first object to compare.
+      description: The first object of the parameter type to be compared.
     - id: y
       type: System.Object
-      description: The second object to compare.
+      description: The second object of the parameter type to be compared.
     return:
       type: System.Boolean
-      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified objects are equal; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+      description: <code>true</code> if the specified objects are equal; otherwise, <code>false</code>.
     content.vb: Public Function Equals(x As Object, y As Object) As Boolean
   overload: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals*
-  exceptions:
-  - type: System.ArgumentException
-    commentId: T:System.ArgumentException
-    description: <code class="paramref">x</code> and <code class="paramref">y</code> are of different types and neither one can handle comparisons with the other.
   implements:
   - System.Collections.IEqualityComparer.Equals(System.Object,System.Object)
   nameWithType.vb: VectorEqualityComparer.Equals(Object, Object)
@@ -112,28 +111,29 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Equals
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-    startLine: 19
+    startLine: 20
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
   summary: Determines whether the specified objects are equal.
+  remarks: Implement this method to provide a custom equality comparison for the specified type.
   example: []
   syntax:
-    content: public readonly bool Equals(Vector2D x, Vector2D y)
+    content: public bool Equals(Vector2D x, Vector2D y)
     parameters:
     - id: x
       type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
-      description: The first object of type <code class="paramref">T</code> to compare.
+      description: The first object of the parameter type to be compared.
     - id: y
       type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
-      description: The second object of type <code class="paramref">T</code> to compare.
+      description: The second object of the parameter type to be compared.
     return:
       type: System.Boolean
-      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified objects are equal; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+      description: <code>true</code> if the specified objects are equal; otherwise, <code>false</code>.
     content.vb: Public Function Equals(x As Vector2D, y As Vector2D) As Boolean
   overload: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals*
   implements:
@@ -152,28 +152,29 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Equals
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-    startLine: 20
+    startLine: 22
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
   summary: Determines whether the specified objects are equal.
+  remarks: Implement this method to provide a custom equality comparison for the specified type.
   example: []
   syntax:
-    content: public readonly bool Equals(Vector3D x, Vector3D y)
+    content: public bool Equals(Vector3D x, Vector3D y)
     parameters:
     - id: x
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-      description: The first object of type <code class="paramref">T</code> to compare.
+      description: The first object of the parameter type to be compared.
     - id: y
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
-      description: The second object of type <code class="paramref">T</code> to compare.
+      description: The second object of the parameter type to be compared.
     return:
       type: System.Boolean
-      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified objects are equal; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+      description: <code>true</code> if the specified objects are equal; otherwise, <code>false</code>.
     content.vb: Public Function Equals(x As Vector3D, y As Vector3D) As Boolean
   overload: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals*
   implements:
@@ -192,28 +193,29 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Equals
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-    startLine: 21
+    startLine: 24
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
   summary: Determines whether the specified objects are equal.
+  remarks: Implement this method to provide a custom equality comparison for the specified type.
   example: []
   syntax:
-    content: public readonly bool Equals(Vector4D x, Vector4D y)
+    content: public bool Equals(Vector4D x, Vector4D y)
     parameters:
     - id: x
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
-      description: The first object of type <code class="paramref">T</code> to compare.
+      description: The first object of the parameter type to be compared.
     - id: y
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
-      description: The second object of type <code class="paramref">T</code> to compare.
+      description: The second object of the parameter type to be compared.
     return:
       type: System.Boolean
-      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified objects are equal; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+      description: <code>true</code> if the specified objects are equal; otherwise, <code>false</code>.
     content.vb: Public Function Equals(x As Vector4D, y As Vector4D) As Boolean
   overload: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals*
   implements:
@@ -232,28 +234,29 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Equals
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-    startLine: 23
+    startLine: 26
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
   summary: Determines whether the specified objects are equal.
+  remarks: Implement this method to provide a custom equality comparison for the specified type.
   example: []
   syntax:
-    content: public readonly bool Equals(Vector2DInt x, Vector2DInt y)
+    content: public bool Equals(Vector2DInt x, Vector2DInt y)
     parameters:
     - id: x
       type: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
-      description: The first object of type <code class="paramref">T</code> to compare.
+      description: The first object of the parameter type to be compared.
     - id: y
       type: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
-      description: The second object of type <code class="paramref">T</code> to compare.
+      description: The second object of the parameter type to be compared.
     return:
       type: System.Boolean
-      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified objects are equal; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+      description: <code>true</code> if the specified objects are equal; otherwise, <code>false</code>.
     content.vb: Public Function Equals(x As Vector2DInt, y As Vector2DInt) As Boolean
   overload: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals*
   implements:
@@ -272,28 +275,29 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Equals
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-    startLine: 24
+    startLine: 32
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
   summary: Determines whether the specified objects are equal.
+  remarks: Implement this method to provide a custom equality comparison for the specified type.
   example: []
   syntax:
-    content: public readonly bool Equals(Vector3DInt x, Vector3DInt y)
+    content: public bool Equals(Vector3DInt x, Vector3DInt y)
     parameters:
     - id: x
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
-      description: The first object of type <code class="paramref">T</code> to compare.
+      description: The first object of the parameter type to be compared.
     - id: y
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
-      description: The second object of type <code class="paramref">T</code> to compare.
+      description: The second object of the parameter type to be compared.
     return:
       type: System.Boolean
-      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified objects are equal; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+      description: <code>true</code> if the specified objects are equal; otherwise, <code>false</code>.
     content.vb: Public Function Equals(x As Vector3DInt, y As Vector3DInt) As Boolean
   overload: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals*
   implements:
@@ -312,18 +316,19 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetHashCode
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-    startLine: 26
+    startLine: 34
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
   summary: Returns a hash code for the specified object.
+  remarks: Implement this method to provide a customized hash code for type, corresponding to the customized equality comparison provided by the Equals method.
   example: []
   syntax:
-    content: public readonly int GetHashCode(object obj)
+    content: public int GetHashCode(object obj)
     parameters:
     - id: obj
       type: System.Object
@@ -333,10 +338,6 @@ items:
       description: A hash code for the specified object.
     content.vb: Public Function GetHashCode(obj As Object) As Integer
   overload: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode*
-  exceptions:
-  - type: System.ArgumentNullException
-    commentId: T:System.ArgumentNullException
-    description: The type of <code class="paramref">obj</code> is a reference type and <code class="paramref">obj</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
   implements:
   - System.Collections.IEqualityComparer.GetHashCode(System.Object)
   nameWithType.vb: VectorEqualityComparer.GetHashCode(Object)
@@ -356,18 +357,19 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetHashCode
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-    startLine: 36
+    startLine: 44
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
   summary: Returns a hash code for the specified object.
+  remarks: Implement this method to provide a customized hash code for type, corresponding to the customized equality comparison provided by the Equals method.
   example: []
   syntax:
-    content: public readonly int GetHashCode(Vector2D obj)
+    content: public int GetHashCode(Vector2D obj)
     parameters:
     - id: obj
       type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
@@ -377,10 +379,6 @@ items:
       description: A hash code for the specified object.
     content.vb: Public Function GetHashCode(obj As Vector2D) As Integer
   overload: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode*
-  exceptions:
-  - type: System.ArgumentNullException
-    commentId: T:System.ArgumentNullException
-    description: The type of <code class="paramref">obj</code> is a reference type and <code class="paramref">obj</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
   implements:
   - System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector2D}.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector2D)
 - uid: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
@@ -397,18 +395,19 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetHashCode
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-    startLine: 37
+    startLine: 46
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
   summary: Returns a hash code for the specified object.
+  remarks: Implement this method to provide a customized hash code for type, corresponding to the customized equality comparison provided by the Equals method.
   example: []
   syntax:
-    content: public readonly int GetHashCode(Vector3D obj)
+    content: public int GetHashCode(Vector3D obj)
     parameters:
     - id: obj
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
@@ -418,10 +417,6 @@ items:
       description: A hash code for the specified object.
     content.vb: Public Function GetHashCode(obj As Vector3D) As Integer
   overload: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode*
-  exceptions:
-  - type: System.ArgumentNullException
-    commentId: T:System.ArgumentNullException
-    description: The type of <code class="paramref">obj</code> is a reference type and <code class="paramref">obj</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
   implements:
   - System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector3D}.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
 - uid: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector4D)
@@ -438,18 +433,19 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetHashCode
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-    startLine: 38
+    startLine: 48
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
   summary: Returns a hash code for the specified object.
+  remarks: Implement this method to provide a customized hash code for type, corresponding to the customized equality comparison provided by the Equals method.
   example: []
   syntax:
-    content: public readonly int GetHashCode(Vector4D obj)
+    content: public int GetHashCode(Vector4D obj)
     parameters:
     - id: obj
       type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
@@ -459,10 +455,6 @@ items:
       description: A hash code for the specified object.
     content.vb: Public Function GetHashCode(obj As Vector4D) As Integer
   overload: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode*
-  exceptions:
-  - type: System.ArgumentNullException
-    commentId: T:System.ArgumentNullException
-    description: The type of <code class="paramref">obj</code> is a reference type and <code class="paramref">obj</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
   implements:
   - System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector4D}.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector4D)
 - uid: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
@@ -479,18 +471,19 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetHashCode
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-    startLine: 40
+    startLine: 50
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
   summary: Returns a hash code for the specified object.
+  remarks: Implement this method to provide a customized hash code for type, corresponding to the customized equality comparison provided by the Equals method.
   example: []
   syntax:
-    content: public readonly int GetHashCode(Vector2DInt obj)
+    content: public int GetHashCode(Vector2DInt obj)
     parameters:
     - id: obj
       type: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
@@ -500,10 +493,6 @@ items:
       description: A hash code for the specified object.
     content.vb: Public Function GetHashCode(obj As Vector2DInt) As Integer
   overload: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode*
-  exceptions:
-  - type: System.ArgumentNullException
-    commentId: T:System.ArgumentNullException
-    description: The type of <code class="paramref">obj</code> is a reference type and <code class="paramref">obj</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
   implements:
   - System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector2DInt}.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
 - uid: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
@@ -520,18 +509,19 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetHashCode
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/VectorEqualityComparer.cs
-    startLine: 41
+    startLine: 55
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
   summary: Returns a hash code for the specified object.
+  remarks: Implement this method to provide a customized hash code for type, corresponding to the customized equality comparison provided by the Equals method.
   example: []
   syntax:
-    content: public readonly int GetHashCode(Vector3DInt obj)
+    content: public int GetHashCode(Vector3DInt obj)
     parameters:
     - id: obj
       type: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
@@ -541,10 +531,6 @@ items:
       description: A hash code for the specified object.
     content.vb: Public Function GetHashCode(obj As Vector3DInt) As Integer
   overload: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode*
-  exceptions:
-  - type: System.ArgumentNullException
-    commentId: T:System.ArgumentNullException
-    description: The type of <code class="paramref">obj</code> is a reference type and <code class="paramref">obj</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
   implements:
   - System.Collections.Generic.IEqualityComparer{Cobilas.GodotEngine.Utility.Numerics.Vector3DInt}.GetHashCode(Cobilas.GodotEngine.Utility.Numerics.Vector3DInt)
 references:
@@ -1023,13 +1009,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.ArgumentException
-  commentId: T:System.ArgumentException
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
-  name: ArgumentException
-  nameWithType: ArgumentException
-  fullName: System.ArgumentException
 - uid: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.Equals
   href: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.html#Cobilas_GodotEngine_Utility_Numerics_VectorEqualityComparer_Equals_System_Object_System_Object_
@@ -1358,13 +1337,6 @@ references:
   name: Vector3DInt
   nameWithType: Vector3DInt
   fullName: Cobilas.GodotEngine.Utility.Numerics.Vector3DInt
-- uid: System.ArgumentNullException
-  commentId: T:System.ArgumentNullException
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
-  name: ArgumentNullException
-  nameWithType: ArgumentNullException
-  fullName: System.ArgumentNullException
 - uid: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.GetHashCode
   href: Cobilas.GodotEngine.Utility.Numerics.VectorEqualityComparer.html#Cobilas_GodotEngine_Utility_Numerics_VectorEqualityComparer_GetHashCode_System_Object_

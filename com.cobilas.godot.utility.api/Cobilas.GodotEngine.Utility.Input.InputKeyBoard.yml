@@ -7,8 +7,17 @@ items:
   children:
   - Cobilas.GodotEngine.Utility.Input.InputKeyBoard.DeltaScroll
   - Cobilas.GodotEngine.Utility.Input.InputKeyBoard.DoubleClick
+  - Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyDown(Cobilas.GodotEngine.Utility.Input.KeyCode)
+  - Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyDown(Cobilas.GodotEngine.Utility.Input.MouseButton)
+  - Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyDown(Godot.ButtonList)
   - Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyDown(Godot.KeyList)
+  - Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyPress(Cobilas.GodotEngine.Utility.Input.KeyCode)
+  - Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyPress(Cobilas.GodotEngine.Utility.Input.MouseButton)
+  - Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyPress(Godot.ButtonList)
   - Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyPress(Godot.KeyList)
+  - Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyUp(Cobilas.GodotEngine.Utility.Input.KeyCode)
+  - Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyUp(Cobilas.GodotEngine.Utility.Input.MouseButton)
+  - Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyUp(Godot.ButtonList)
   - Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyUp(Godot.KeyList)
   - Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetMouseDown(Cobilas.GodotEngine.Utility.Input.MouseButton)
   - Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetMouseDown(System.Int32)
@@ -20,7 +29,6 @@ items:
   - Cobilas.GodotEngine.Utility.Input.InputKeyBoard.MouseIndex
   - Cobilas.GodotEngine.Utility.Input.InputKeyBoard.MousePosition
   - Cobilas.GodotEngine.Utility.Input.InputKeyBoard._Input(Godot.InputEvent)
-  - Cobilas.GodotEngine.Utility.Input.InputKeyBoard._PhysicsProcess(System.Single)
   - Cobilas.GodotEngine.Utility.Input.InputKeyBoard._Ready
   langs:
   - csharp
@@ -32,21 +40,23 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Input/InputKeyBoard.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: InputKeyBoard
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/InputKeyBoard.cs
-    startLine: 6
+    startLine: 7
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Input
+  summary: This class has methods and properties that get information from keyboard and mouse inputs.
+  example: []
   syntax:
     content: >-
-      [RunTimeInitializationClass("InputKeyBoard")]
+      [RunTimeInitializationClass("InputKeyBoard", Priority.StartBefore, 0, false)]
 
       public class InputKeyBoard : Node, IDisposable
     content.vb: >-
-      <RunTimeInitializationClass("InputKeyBoard")>
+      <RunTimeInitializationClass("InputKeyBoard", Priority.StartBefore, 0, False)>
 
       Public Class InputKeyBoard Inherits Node Implements IDisposable
   inheritance:
@@ -99,6 +109,7 @@ items:
   - Godot.Node._EnterTree
   - Godot.Node._ExitTree
   - Godot.Node._GetConfigurationWarning
+  - Godot.Node._PhysicsProcess(System.Single)
   - Godot.Node._Process(System.Single)
   - Godot.Node._UnhandledInput(Godot.InputEvent)
   - Godot.Node._UnhandledKeyInput(Godot.InputEventKey)
@@ -287,10 +298,16 @@ items:
   - Godot.Node.Godot.Node_GD_CB_Extension.SetNodeScale(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   attributes:
   - type: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute
-    ctor: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.#ctor(System.String)
+    ctor: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute.#ctor(System.String,Cobilas.GodotEngine.Utility.Runtime.Priority,System.Int32,System.Boolean)
     arguments:
     - type: System.String
       value: InputKeyBoard
+    - type: Cobilas.GodotEngine.Utility.Runtime.Priority
+      value: 0
+    - type: System.Int32
+      value: 0
+    - type: System.Boolean
+      value: false
 - uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.MouseIndex
   commentId: P:Cobilas.GodotEngine.Utility.Input.InputKeyBoard.MouseIndex
   id: MouseIndex
@@ -305,20 +322,23 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Input/InputKeyBoard.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: MouseIndex
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/InputKeyBoard.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Input
+  summary: The mouse trigger index.
+  example: []
   syntax:
     content: public static int MouseIndex { get; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: Public Shared Property MouseIndex As Integer
+      description: Returns an <xref href="System.Int32" data-throw-if-not-resolved="false"></xref> containing the index of the mouse trigger.
+    content.vb: Public Shared ReadOnly Property MouseIndex As Integer
   overload: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.MouseIndex*
 - uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.DoubleClick
   commentId: P:Cobilas.GodotEngine.Utility.Input.InputKeyBoard.DoubleClick
@@ -334,20 +354,23 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Input/InputKeyBoard.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: DoubleClick
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/InputKeyBoard.cs
-    startLine: 15
+    startLine: 18
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Input
+  summary: Detects a double mouse click.
+  example: []
   syntax:
     content: public static bool DoubleClick { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public Shared Property DoubleClick As Boolean
+      description: Returns true when a double mouse click is detected.
+    content.vb: Public Shared ReadOnly Property DoubleClick As Boolean
   overload: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.DoubleClick*
 - uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.DeltaScroll
   commentId: P:Cobilas.GodotEngine.Utility.Input.InputKeyBoard.DeltaScroll
@@ -363,20 +386,23 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Input/InputKeyBoard.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: DeltaScroll
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/InputKeyBoard.cs
-    startLine: 16
+    startLine: 21
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Input
+  summary: Indicates a change in mouse scroll.
+  example: []
   syntax:
     content: public static float DeltaScroll { get; }
     parameters: []
     return:
       type: System.Single
-    content.vb: Public Shared Property DeltaScroll As Single
+      description: Returns a floating-point value when the mouse scroll is changed.
+    content.vb: Public Shared ReadOnly Property DeltaScroll As Single
   overload: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.DeltaScroll*
 - uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.MousePosition
   commentId: P:Cobilas.GodotEngine.Utility.Input.InputKeyBoard.MousePosition
@@ -392,20 +418,23 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Input/InputKeyBoard.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: MousePosition
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/InputKeyBoard.cs
-    startLine: 17
+    startLine: 24
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Input
+  summary: The current mouse position.
+  example: []
   syntax:
-    content: public static Vector2 MousePosition { get; }
+    content: public static Vector2D MousePosition { get; }
     parameters: []
     return:
-      type: Godot.Vector2
-    content.vb: Public Shared Property MousePosition As Vector2
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+      description: Returns the mouse position based on the defined <xref href="Godot.Viewport" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared ReadOnly Property MousePosition As Vector2D
   overload: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.MousePosition*
 - uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.MouseGlobalPosition
   commentId: P:Cobilas.GodotEngine.Utility.Input.InputKeyBoard.MouseGlobalPosition
@@ -421,20 +450,23 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Input/InputKeyBoard.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: MouseGlobalPosition
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/InputKeyBoard.cs
-    startLine: 18
+    startLine: 27
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Input
+  summary: The current global mouse position.
+  example: []
   syntax:
-    content: public static Vector2 MouseGlobalPosition { get; }
+    content: public static Vector2D MouseGlobalPosition { get; }
     parameters: []
     return:
-      type: Godot.Vector2
-    content.vb: Public Shared Property MouseGlobalPosition As Vector2
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+      description: Returns the mouse position based on a root <xref href="Godot.Viewport" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared ReadOnly Property MouseGlobalPosition As Vector2D
   overload: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.MouseGlobalPosition*
 - uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard._Ready
   commentId: M:Cobilas.GodotEngine.Utility.Input.InputKeyBoard._Ready
@@ -450,11 +482,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Input/InputKeyBoard.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: _Ready
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/InputKeyBoard.cs
-    startLine: 20
+    startLine: 29
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Input
@@ -486,11 +518,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Input/InputKeyBoard.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: _Input
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/InputKeyBoard.cs
-    startLine: 24
+    startLine: 35
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Input
@@ -513,48 +545,144 @@ items:
     content.vb: Public Overrides Sub _Input([event] As InputEvent)
   overridden: Godot.Node._Input(Godot.InputEvent)
   overload: Cobilas.GodotEngine.Utility.Input.InputKeyBoard._Input*
-- uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard._PhysicsProcess(System.Single)
-  commentId: M:Cobilas.GodotEngine.Utility.Input.InputKeyBoard._PhysicsProcess(System.Single)
-  id: _PhysicsProcess(System.Single)
+- uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyDown(Cobilas.GodotEngine.Utility.Input.KeyCode)
+  commentId: M:Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyDown(Cobilas.GodotEngine.Utility.Input.KeyCode)
+  id: GetKeyDown(Cobilas.GodotEngine.Utility.Input.KeyCode)
   parent: Cobilas.GodotEngine.Utility.Input.InputKeyBoard
   langs:
   - csharp
   - vb
-  name: _PhysicsProcess(float)
-  nameWithType: InputKeyBoard._PhysicsProcess(float)
-  fullName: Cobilas.GodotEngine.Utility.Input.InputKeyBoard._PhysicsProcess(float)
+  name: GetKeyDown(KeyCode)
+  nameWithType: InputKeyBoard.GetKeyDown(KeyCode)
+  fullName: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyDown(Cobilas.GodotEngine.Utility.Input.KeyCode)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/Input/InputKeyBoard.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: _PhysicsProcess
+    id: GetKeyDown
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/InputKeyBoard.cs
-    startLine: 60
+    startLine: 158
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Input
-  summary: >-
-    <p>Called during the physics processing step of the main loop. Physics processing means that the frame rate is synced to the physics, i.e. the <code>delta</code> variable should be constant. <code>delta</code> is in seconds.</p>
+  summary: Determines whether the key was pressed.
+  remarks: The method has overloads that allow the use of the <xref href="Godot.KeyList" data-throw-if-not-resolved="false"></xref>, <xref href="Cobilas.GodotEngine.Utility.Input.MouseButton" data-throw-if-not-resolved="false"></xref> and <xref href="Godot.ButtonList" data-throw-if-not-resolved="false"></xref> enumerators.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using Godot;
 
-    <p>It is only called if physics processing is enabled, which is done automatically if this method is overridden, and can be toggled with <xref href="Godot.Node.SetPhysicsProcess(System.Boolean)" data-throw-if-not-resolved="false"></xref>.</p>
+    using Cobilas.GodotEngine.Utility.Input;
 
-    <p>Corresponds to the <xref href="Godot.Node.NotificationPhysicsProcess" data-throw-if-not-resolved="false"></xref> notification in <xref href="Godot.Object._Notification(System.Int32)" data-throw-if-not-resolved="false"></xref>.</p>
 
-    <p>Note: This method is only called if the node is present in the scene tree (i.e. if it's not an orphan).</p>
-  example: []
+    public override void _Process(float delta) {
+        if (InputKeyBoard.GetKeyDown(KeyCode.A))
+            GD.Print("This instruction will only be called each time the key is pressed.");
+    }</code></pre>
   syntax:
-    content: public override void _PhysicsProcess(float delta)
+    content: public static bool GetKeyDown(KeyCode key)
     parameters:
-    - id: delta
-      type: System.Single
-    content.vb: Public Overrides Sub _PhysicsProcess(delta As Single)
-  overridden: Godot.Node._PhysicsProcess(System.Single)
-  overload: Cobilas.GodotEngine.Utility.Input.InputKeyBoard._PhysicsProcess*
-  nameWithType.vb: InputKeyBoard._PhysicsProcess(Single)
-  fullName.vb: Cobilas.GodotEngine.Utility.Input.InputKeyBoard._PhysicsProcess(Single)
-  name.vb: _PhysicsProcess(Single)
+    - id: key
+      type: Cobilas.GodotEngine.Utility.Input.KeyCode
+      description: The target key to be verified.
+    return:
+      type: System.Boolean
+      description: Returns <code>true</code> if the key was pressed.
+    content.vb: Public Shared Function GetKeyDown(key As KeyCode) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyDown*
+- uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyPress(Cobilas.GodotEngine.Utility.Input.KeyCode)
+  commentId: M:Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyPress(Cobilas.GodotEngine.Utility.Input.KeyCode)
+  id: GetKeyPress(Cobilas.GodotEngine.Utility.Input.KeyCode)
+  parent: Cobilas.GodotEngine.Utility.Input.InputKeyBoard
+  langs:
+  - csharp
+  - vb
+  name: GetKeyPress(KeyCode)
+  nameWithType: InputKeyBoard.GetKeyPress(KeyCode)
+  fullName: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyPress(Cobilas.GodotEngine.Utility.Input.KeyCode)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Input/InputKeyBoard.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetKeyPress
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/InputKeyBoard.cs
+    startLine: 175
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Input
+  summary: Determines whether the key is being pressed.
+  remarks: The method has overloads that allow the use of the <xref href="Godot.KeyList" data-throw-if-not-resolved="false"></xref>, <xref href="Cobilas.GodotEngine.Utility.Input.MouseButton" data-throw-if-not-resolved="false"></xref> and <xref href="Godot.ButtonList" data-throw-if-not-resolved="false"></xref> enumerators.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using Godot;
+
+    using Cobilas.GodotEngine.Utility.Input;
+
+
+    public override void _Process(float delta) {
+        if (InputKeyBoard.GetKeyPress(KeyCode.A))
+            GD.Print("The instruction will be called constantly as long as the key is pressed.");
+    }</code></pre>
+  syntax:
+    content: public static bool GetKeyPress(KeyCode key)
+    parameters:
+    - id: key
+      type: Cobilas.GodotEngine.Utility.Input.KeyCode
+      description: The target key to be verified.
+    return:
+      type: System.Boolean
+      description: Returns <code>true</code> if the key is being pressed.
+    content.vb: Public Shared Function GetKeyPress(key As KeyCode) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyPress*
+- uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyUp(Cobilas.GodotEngine.Utility.Input.KeyCode)
+  commentId: M:Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyUp(Cobilas.GodotEngine.Utility.Input.KeyCode)
+  id: GetKeyUp(Cobilas.GodotEngine.Utility.Input.KeyCode)
+  parent: Cobilas.GodotEngine.Utility.Input.InputKeyBoard
+  langs:
+  - csharp
+  - vb
+  name: GetKeyUp(KeyCode)
+  nameWithType: InputKeyBoard.GetKeyUp(KeyCode)
+  fullName: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyUp(Cobilas.GodotEngine.Utility.Input.KeyCode)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Input/InputKeyBoard.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetKeyUp
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/InputKeyBoard.cs
+    startLine: 192
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Input
+  summary: Determines whether the key has been released.
+  remarks: The method has overloads that allow the use of the <xref href="Godot.KeyList" data-throw-if-not-resolved="false"></xref>, <xref href="Cobilas.GodotEngine.Utility.Input.MouseButton" data-throw-if-not-resolved="false"></xref> and <xref href="Godot.ButtonList" data-throw-if-not-resolved="false"></xref> enumerators.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using Godot;
+
+    using Cobilas.GodotEngine.Utility.Input;
+
+
+    public override void _Process(float delta) {
+        if (InputKeyBoard.GetKeyUp(KeyCode.A))
+            GD.Print("This instruction will only be called whenever the key is released.");
+    }</code></pre>
+  syntax:
+    content: public static bool GetKeyUp(KeyCode key)
+    parameters:
+    - id: key
+      type: Cobilas.GodotEngine.Utility.Input.KeyCode
+      description: The target key to be verified.
+    return:
+      type: System.Boolean
+      description: Returns <code>true</code> if the key was released.
+    content.vb: Public Shared Function GetKeyUp(key As KeyCode) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyUp*
 - uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyDown(Godot.KeyList)
   commentId: M:Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyDown(Godot.KeyList)
   id: GetKeyDown(Godot.KeyList)
@@ -569,21 +697,36 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Input/InputKeyBoard.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetKeyDown
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/InputKeyBoard.cs
-    startLine: 141
+    startLine: 195
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Input
+  summary: Determines whether the key was pressed.
+  remarks: The method has overloads that allow the use of the <xref href="Godot.KeyList" data-throw-if-not-resolved="false"></xref>, <xref href="Cobilas.GodotEngine.Utility.Input.MouseButton" data-throw-if-not-resolved="false"></xref> and <xref href="Godot.ButtonList" data-throw-if-not-resolved="false"></xref> enumerators.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using Godot;
+
+    using Cobilas.GodotEngine.Utility.Input;
+
+
+    public override void _Process(float delta) {
+        if (InputKeyBoard.GetKeyDown(KeyCode.A))
+            GD.Print("This instruction will only be called each time the key is pressed.");
+    }</code></pre>
   syntax:
     content: public static bool GetKeyDown(KeyList key)
     parameters:
     - id: key
       type: Godot.KeyList
+      description: The target key to be verified.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> if the key was pressed.
     content.vb: Public Shared Function GetKeyDown(key As KeyList) As Boolean
   overload: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyDown*
 - uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyPress(Godot.KeyList)
@@ -600,21 +743,36 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Input/InputKeyBoard.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetKeyPress
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/InputKeyBoard.cs
-    startLine: 144
+    startLine: 197
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Input
+  summary: Determines whether the key is being pressed.
+  remarks: The method has overloads that allow the use of the <xref href="Godot.KeyList" data-throw-if-not-resolved="false"></xref>, <xref href="Cobilas.GodotEngine.Utility.Input.MouseButton" data-throw-if-not-resolved="false"></xref> and <xref href="Godot.ButtonList" data-throw-if-not-resolved="false"></xref> enumerators.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using Godot;
+
+    using Cobilas.GodotEngine.Utility.Input;
+
+
+    public override void _Process(float delta) {
+        if (InputKeyBoard.GetKeyPress(KeyCode.A))
+            GD.Print("The instruction will be called constantly as long as the key is pressed.");
+    }</code></pre>
   syntax:
     content: public static bool GetKeyPress(KeyList key)
     parameters:
     - id: key
       type: Godot.KeyList
+      description: The target key to be verified.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> if the key is being pressed.
     content.vb: Public Shared Function GetKeyPress(key As KeyList) As Boolean
   overload: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyPress*
 - uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyUp(Godot.KeyList)
@@ -631,22 +789,313 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Input/InputKeyBoard.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetKeyUp
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/InputKeyBoard.cs
-    startLine: 147
+    startLine: 199
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Input
+  summary: Determines whether the key has been released.
+  remarks: The method has overloads that allow the use of the <xref href="Godot.KeyList" data-throw-if-not-resolved="false"></xref>, <xref href="Cobilas.GodotEngine.Utility.Input.MouseButton" data-throw-if-not-resolved="false"></xref> and <xref href="Godot.ButtonList" data-throw-if-not-resolved="false"></xref> enumerators.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using Godot;
+
+    using Cobilas.GodotEngine.Utility.Input;
+
+
+    public override void _Process(float delta) {
+        if (InputKeyBoard.GetKeyUp(KeyCode.A))
+            GD.Print("This instruction will only be called whenever the key is released.");
+    }</code></pre>
   syntax:
     content: public static bool GetKeyUp(KeyList key)
     parameters:
     - id: key
       type: Godot.KeyList
+      description: The target key to be verified.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> if the key was released.
     content.vb: Public Shared Function GetKeyUp(key As KeyList) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyUp*
+- uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyDown(Cobilas.GodotEngine.Utility.Input.MouseButton)
+  commentId: M:Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyDown(Cobilas.GodotEngine.Utility.Input.MouseButton)
+  id: GetKeyDown(Cobilas.GodotEngine.Utility.Input.MouseButton)
+  parent: Cobilas.GodotEngine.Utility.Input.InputKeyBoard
+  langs:
+  - csharp
+  - vb
+  name: GetKeyDown(MouseButton)
+  nameWithType: InputKeyBoard.GetKeyDown(MouseButton)
+  fullName: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyDown(Cobilas.GodotEngine.Utility.Input.MouseButton)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Input/InputKeyBoard.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetKeyDown
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/InputKeyBoard.cs
+    startLine: 201
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Input
+  summary: Determines whether the key was pressed.
+  remarks: The method has overloads that allow the use of the <xref href="Godot.KeyList" data-throw-if-not-resolved="false"></xref>, <xref href="Cobilas.GodotEngine.Utility.Input.MouseButton" data-throw-if-not-resolved="false"></xref> and <xref href="Godot.ButtonList" data-throw-if-not-resolved="false"></xref> enumerators.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using Godot;
+
+    using Cobilas.GodotEngine.Utility.Input;
+
+
+    public override void _Process(float delta) {
+        if (InputKeyBoard.GetKeyDown(KeyCode.A))
+            GD.Print("This instruction will only be called each time the key is pressed.");
+    }</code></pre>
+  syntax:
+    content: public static bool GetKeyDown(MouseButton key)
+    parameters:
+    - id: key
+      type: Cobilas.GodotEngine.Utility.Input.MouseButton
+      description: The target key to be verified.
+    return:
+      type: System.Boolean
+      description: Returns <code>true</code> if the key was pressed.
+    content.vb: Public Shared Function GetKeyDown(key As MouseButton) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyDown*
+- uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyPress(Cobilas.GodotEngine.Utility.Input.MouseButton)
+  commentId: M:Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyPress(Cobilas.GodotEngine.Utility.Input.MouseButton)
+  id: GetKeyPress(Cobilas.GodotEngine.Utility.Input.MouseButton)
+  parent: Cobilas.GodotEngine.Utility.Input.InputKeyBoard
+  langs:
+  - csharp
+  - vb
+  name: GetKeyPress(MouseButton)
+  nameWithType: InputKeyBoard.GetKeyPress(MouseButton)
+  fullName: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyPress(Cobilas.GodotEngine.Utility.Input.MouseButton)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Input/InputKeyBoard.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetKeyPress
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/InputKeyBoard.cs
+    startLine: 203
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Input
+  summary: Determines whether the key is being pressed.
+  remarks: The method has overloads that allow the use of the <xref href="Godot.KeyList" data-throw-if-not-resolved="false"></xref>, <xref href="Cobilas.GodotEngine.Utility.Input.MouseButton" data-throw-if-not-resolved="false"></xref> and <xref href="Godot.ButtonList" data-throw-if-not-resolved="false"></xref> enumerators.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using Godot;
+
+    using Cobilas.GodotEngine.Utility.Input;
+
+
+    public override void _Process(float delta) {
+        if (InputKeyBoard.GetKeyPress(KeyCode.A))
+            GD.Print("The instruction will be called constantly as long as the key is pressed.");
+    }</code></pre>
+  syntax:
+    content: public static bool GetKeyPress(MouseButton key)
+    parameters:
+    - id: key
+      type: Cobilas.GodotEngine.Utility.Input.MouseButton
+      description: The target key to be verified.
+    return:
+      type: System.Boolean
+      description: Returns <code>true</code> if the key is being pressed.
+    content.vb: Public Shared Function GetKeyPress(key As MouseButton) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyPress*
+- uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyUp(Cobilas.GodotEngine.Utility.Input.MouseButton)
+  commentId: M:Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyUp(Cobilas.GodotEngine.Utility.Input.MouseButton)
+  id: GetKeyUp(Cobilas.GodotEngine.Utility.Input.MouseButton)
+  parent: Cobilas.GodotEngine.Utility.Input.InputKeyBoard
+  langs:
+  - csharp
+  - vb
+  name: GetKeyUp(MouseButton)
+  nameWithType: InputKeyBoard.GetKeyUp(MouseButton)
+  fullName: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyUp(Cobilas.GodotEngine.Utility.Input.MouseButton)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Input/InputKeyBoard.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetKeyUp
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/InputKeyBoard.cs
+    startLine: 205
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Input
+  summary: Determines whether the key has been released.
+  remarks: The method has overloads that allow the use of the <xref href="Godot.KeyList" data-throw-if-not-resolved="false"></xref>, <xref href="Cobilas.GodotEngine.Utility.Input.MouseButton" data-throw-if-not-resolved="false"></xref> and <xref href="Godot.ButtonList" data-throw-if-not-resolved="false"></xref> enumerators.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using Godot;
+
+    using Cobilas.GodotEngine.Utility.Input;
+
+
+    public override void _Process(float delta) {
+        if (InputKeyBoard.GetKeyUp(KeyCode.A))
+            GD.Print("This instruction will only be called whenever the key is released.");
+    }</code></pre>
+  syntax:
+    content: public static bool GetKeyUp(MouseButton key)
+    parameters:
+    - id: key
+      type: Cobilas.GodotEngine.Utility.Input.MouseButton
+      description: The target key to be verified.
+    return:
+      type: System.Boolean
+      description: Returns <code>true</code> if the key was released.
+    content.vb: Public Shared Function GetKeyUp(key As MouseButton) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyUp*
+- uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyDown(Godot.ButtonList)
+  commentId: M:Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyDown(Godot.ButtonList)
+  id: GetKeyDown(Godot.ButtonList)
+  parent: Cobilas.GodotEngine.Utility.Input.InputKeyBoard
+  langs:
+  - csharp
+  - vb
+  name: GetKeyDown(ButtonList)
+  nameWithType: InputKeyBoard.GetKeyDown(ButtonList)
+  fullName: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyDown(Godot.ButtonList)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Input/InputKeyBoard.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetKeyDown
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/InputKeyBoard.cs
+    startLine: 207
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Input
+  summary: Determines whether the key was pressed.
+  remarks: The method has overloads that allow the use of the <xref href="Godot.KeyList" data-throw-if-not-resolved="false"></xref>, <xref href="Cobilas.GodotEngine.Utility.Input.MouseButton" data-throw-if-not-resolved="false"></xref> and <xref href="Godot.ButtonList" data-throw-if-not-resolved="false"></xref> enumerators.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using Godot;
+
+    using Cobilas.GodotEngine.Utility.Input;
+
+
+    public override void _Process(float delta) {
+        if (InputKeyBoard.GetKeyDown(KeyCode.A))
+            GD.Print("This instruction will only be called each time the key is pressed.");
+    }</code></pre>
+  syntax:
+    content: public static bool GetKeyDown(ButtonList key)
+    parameters:
+    - id: key
+      type: Godot.ButtonList
+      description: The target key to be verified.
+    return:
+      type: System.Boolean
+      description: Returns <code>true</code> if the key was pressed.
+    content.vb: Public Shared Function GetKeyDown(key As ButtonList) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyDown*
+- uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyPress(Godot.ButtonList)
+  commentId: M:Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyPress(Godot.ButtonList)
+  id: GetKeyPress(Godot.ButtonList)
+  parent: Cobilas.GodotEngine.Utility.Input.InputKeyBoard
+  langs:
+  - csharp
+  - vb
+  name: GetKeyPress(ButtonList)
+  nameWithType: InputKeyBoard.GetKeyPress(ButtonList)
+  fullName: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyPress(Godot.ButtonList)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Input/InputKeyBoard.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetKeyPress
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/InputKeyBoard.cs
+    startLine: 209
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Input
+  summary: Determines whether the key is being pressed.
+  remarks: The method has overloads that allow the use of the <xref href="Godot.KeyList" data-throw-if-not-resolved="false"></xref>, <xref href="Cobilas.GodotEngine.Utility.Input.MouseButton" data-throw-if-not-resolved="false"></xref> and <xref href="Godot.ButtonList" data-throw-if-not-resolved="false"></xref> enumerators.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using Godot;
+
+    using Cobilas.GodotEngine.Utility.Input;
+
+
+    public override void _Process(float delta) {
+        if (InputKeyBoard.GetKeyPress(KeyCode.A))
+            GD.Print("The instruction will be called constantly as long as the key is pressed.");
+    }</code></pre>
+  syntax:
+    content: public static bool GetKeyPress(ButtonList key)
+    parameters:
+    - id: key
+      type: Godot.ButtonList
+      description: The target key to be verified.
+    return:
+      type: System.Boolean
+      description: Returns <code>true</code> if the key is being pressed.
+    content.vb: Public Shared Function GetKeyPress(key As ButtonList) As Boolean
+  overload: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyPress*
+- uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyUp(Godot.ButtonList)
+  commentId: M:Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyUp(Godot.ButtonList)
+  id: GetKeyUp(Godot.ButtonList)
+  parent: Cobilas.GodotEngine.Utility.Input.InputKeyBoard
+  langs:
+  - csharp
+  - vb
+  name: GetKeyUp(ButtonList)
+  nameWithType: InputKeyBoard.GetKeyUp(ButtonList)
+  fullName: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyUp(Godot.ButtonList)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Input/InputKeyBoard.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetKeyUp
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/InputKeyBoard.cs
+    startLine: 211
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Input
+  summary: Determines whether the key has been released.
+  remarks: The method has overloads that allow the use of the <xref href="Godot.KeyList" data-throw-if-not-resolved="false"></xref>, <xref href="Cobilas.GodotEngine.Utility.Input.MouseButton" data-throw-if-not-resolved="false"></xref> and <xref href="Godot.ButtonList" data-throw-if-not-resolved="false"></xref> enumerators.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using Godot;
+
+    using Cobilas.GodotEngine.Utility.Input;
+
+
+    public override void _Process(float delta) {
+        if (InputKeyBoard.GetKeyUp(KeyCode.A))
+            GD.Print("This instruction will only be called whenever the key is released.");
+    }</code></pre>
+  syntax:
+    content: public static bool GetKeyUp(ButtonList key)
+    parameters:
+    - id: key
+      type: Godot.ButtonList
+      description: The target key to be verified.
+    return:
+      type: System.Boolean
+      description: Returns <code>true</code> if the key was released.
+    content.vb: Public Shared Function GetKeyUp(key As ButtonList) As Boolean
   overload: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyUp*
 - uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetMouseDown(System.Int32)
   commentId: M:Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetMouseDown(System.Int32)
@@ -662,21 +1111,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Input/InputKeyBoard.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetMouseDown
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/InputKeyBoard.cs
-    startLine: 150
+    startLine: 215
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Input
+  summary: Determines whether the mouse trigger was pressed.
+  example: []
   syntax:
     content: public static bool GetMouseDown(int buttonIndex)
     parameters:
     - id: buttonIndex
       type: System.Int32
+      description: The target index to be checked.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> if the mouse trigger was pressed.
     content.vb: Public Shared Function GetMouseDown(buttonIndex As Integer) As Boolean
   overload: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetMouseDown*
   nameWithType.vb: InputKeyBoard.GetMouseDown(Integer)
@@ -696,21 +1149,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Input/InputKeyBoard.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetMousePress
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/InputKeyBoard.cs
-    startLine: 153
+    startLine: 220
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Input
+  summary: Determines whether the mouse trigger is being pressed.
+  example: []
   syntax:
     content: public static bool GetMousePress(int buttonIndex)
     parameters:
     - id: buttonIndex
       type: System.Int32
+      description: The target index to be checked.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> if the mouse trigger is being pressed.
     content.vb: Public Shared Function GetMousePress(buttonIndex As Integer) As Boolean
   overload: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetMousePress*
   nameWithType.vb: InputKeyBoard.GetMousePress(Integer)
@@ -730,21 +1187,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Input/InputKeyBoard.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetMouseUp
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/InputKeyBoard.cs
-    startLine: 156
+    startLine: 225
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Input
+  summary: Determines whether the mouse trigger has been drop by the user.
+  example: []
   syntax:
     content: public static bool GetMouseUp(int buttonIndex)
     parameters:
     - id: buttonIndex
       type: System.Int32
+      description: The target index to be checked.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> if the mouse trigger was released by the user.
     content.vb: Public Shared Function GetMouseUp(buttonIndex As Integer) As Boolean
   overload: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetMouseUp*
   nameWithType.vb: InputKeyBoard.GetMouseUp(Integer)
@@ -764,21 +1225,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Input/InputKeyBoard.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetMouseDown
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/InputKeyBoard.cs
-    startLine: 159
+    startLine: 229
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Input
+  summary: Determines whether the mouse trigger was pressed.
+  example: []
   syntax:
     content: public static bool GetMouseDown(MouseButton button)
     parameters:
     - id: button
       type: Cobilas.GodotEngine.Utility.Input.MouseButton
+      description: The target mouse trigger to be checked.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> if the mouse trigger was pressed.
     content.vb: Public Shared Function GetMouseDown(button As MouseButton) As Boolean
   overload: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetMouseDown*
 - uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetMousePress(Cobilas.GodotEngine.Utility.Input.MouseButton)
@@ -795,21 +1260,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Input/InputKeyBoard.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetMousePress
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/InputKeyBoard.cs
-    startLine: 162
+    startLine: 233
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Input
+  summary: Determines whether the mouse trigger is being pressed.
+  example: []
   syntax:
     content: public static bool GetMousePress(MouseButton button)
     parameters:
     - id: button
       type: Cobilas.GodotEngine.Utility.Input.MouseButton
+      description: The target mouse trigger to be checked.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> if the mouse trigger is being pressed.
     content.vb: Public Shared Function GetMousePress(button As MouseButton) As Boolean
   overload: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetMousePress*
 - uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetMouseUp(Cobilas.GodotEngine.Utility.Input.MouseButton)
@@ -826,21 +1295,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Input/InputKeyBoard.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetMouseUp
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/InputKeyBoard.cs
-    startLine: 165
+    startLine: 237
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Input
+  summary: Determines whether the mouse trigger has been drop by the user.
+  example: []
   syntax:
     content: public static bool GetMouseUp(MouseButton button)
     parameters:
     - id: button
       type: Cobilas.GodotEngine.Utility.Input.MouseButton
+      description: The target mouse trigger to be checked.
     return:
       type: System.Boolean
+      description: Returns <code>true</code> if the mouse trigger was released by the user.
     content.vb: Public Shared Function GetMouseUp(button As MouseButton) As Boolean
   overload: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetMouseUp*
 references:
@@ -1465,6 +1938,37 @@ references:
     name: _GetConfigurationWarning
     isExternal: true
   - name: (
+  - name: )
+- uid: Godot.Node._PhysicsProcess(System.Single)
+  commentId: M:Godot.Node._PhysicsProcess(System.Single)
+  parent: Godot.Node
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: _PhysicsProcess(float)
+  nameWithType: Node._PhysicsProcess(float)
+  fullName: Godot.Node._PhysicsProcess(float)
+  nameWithType.vb: Node._PhysicsProcess(Single)
+  fullName.vb: Godot.Node._PhysicsProcess(Single)
+  name.vb: _PhysicsProcess(Single)
+  spec.csharp:
+  - uid: Godot.Node._PhysicsProcess(System.Single)
+    name: _PhysicsProcess
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Godot.Node._PhysicsProcess(System.Single)
+    name: _PhysicsProcess
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
   - name: )
 - uid: Godot.Node._Process(System.Single)
   commentId: M:Godot.Node._Process(System.Single)
@@ -7450,12 +7954,6 @@ references:
     name: Vector3D
     href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html
   - name: )
-- uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.MouseIndex*
-  commentId: Overload:Cobilas.GodotEngine.Utility.Input.InputKeyBoard.MouseIndex
-  href: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.html#Cobilas_GodotEngine_Utility_Input_InputKeyBoard_MouseIndex
-  name: MouseIndex
-  nameWithType: InputKeyBoard.MouseIndex
-  fullName: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.MouseIndex
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -7467,6 +7965,12 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.MouseIndex*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Input.InputKeyBoard.MouseIndex
+  href: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.html#Cobilas_GodotEngine_Utility_Input_InputKeyBoard_MouseIndex
+  name: MouseIndex
+  nameWithType: InputKeyBoard.MouseIndex
+  fullName: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.MouseIndex
 - uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.DoubleClick*
   commentId: Overload:Cobilas.GodotEngine.Utility.Input.InputKeyBoard.DoubleClick
   href: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.html#Cobilas_GodotEngine_Utility_Input_InputKeyBoard_DoubleClick
@@ -7501,19 +8005,63 @@ references:
   nameWithType.vb: Single
   fullName.vb: Single
   name.vb: Single
+- uid: Godot.Viewport
+  commentId: T:Godot.Viewport
+  isExternal: true
+  name: Viewport
+  nameWithType: Viewport
+  fullName: Godot.Viewport
 - uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.MousePosition*
   commentId: Overload:Cobilas.GodotEngine.Utility.Input.InputKeyBoard.MousePosition
   href: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.html#Cobilas_GodotEngine_Utility_Input_InputKeyBoard_MousePosition
   name: MousePosition
   nameWithType: InputKeyBoard.MousePosition
   fullName: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.MousePosition
-- uid: Godot.Vector2
-  commentId: T:Godot.Vector2
-  parent: Godot
-  isExternal: true
-  name: Vector2
-  nameWithType: Vector2
-  fullName: Godot.Vector2
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+  commentId: T:Cobilas.GodotEngine.Utility.Numerics.Vector2D
+  parent: Cobilas.GodotEngine.Utility.Numerics
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector2D.html
+  name: Vector2D
+  nameWithType: Vector2D
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+- uid: Cobilas.GodotEngine.Utility.Numerics
+  commentId: N:Cobilas.GodotEngine.Utility.Numerics
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Utility.Numerics
+  nameWithType: Cobilas.GodotEngine.Utility.Numerics
+  fullName: Cobilas.GodotEngine.Utility.Numerics
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.Numerics
+    name: Numerics
+    href: Cobilas.GodotEngine.Utility.Numerics.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.Numerics
+    name: Numerics
+    href: Cobilas.GodotEngine.Utility.Numerics.html
 - uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.MouseGlobalPosition*
   commentId: Overload:Cobilas.GodotEngine.Utility.Input.InputKeyBoard.MouseGlobalPosition
   href: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.html#Cobilas_GodotEngine_Utility_Input_InputKeyBoard_MouseGlobalPosition
@@ -7601,49 +8149,6 @@ references:
   name: InputEvent
   nameWithType: InputEvent
   fullName: Godot.InputEvent
-- uid: Godot.Node._PhysicsProcess(System.Single)
-  commentId: M:Godot.Node._PhysicsProcess(System.Single)
-  parent: Godot.Node
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.single
-  name: _PhysicsProcess(float)
-  nameWithType: Node._PhysicsProcess(float)
-  fullName: Godot.Node._PhysicsProcess(float)
-  nameWithType.vb: Node._PhysicsProcess(Single)
-  fullName.vb: Godot.Node._PhysicsProcess(Single)
-  name.vb: _PhysicsProcess(Single)
-  spec.csharp:
-  - uid: Godot.Node._PhysicsProcess(System.Single)
-    name: _PhysicsProcess
-    isExternal: true
-  - name: (
-  - uid: System.Single
-    name: float
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.single
-  - name: )
-  spec.vb:
-  - uid: Godot.Node._PhysicsProcess(System.Single)
-    name: _PhysicsProcess
-    isExternal: true
-  - name: (
-  - uid: System.Single
-    name: Single
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.single
-  - name: )
-- uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard._PhysicsProcess*
-  commentId: Overload:Cobilas.GodotEngine.Utility.Input.InputKeyBoard._PhysicsProcess
-  href: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.html#Cobilas_GodotEngine_Utility_Input_InputKeyBoard__PhysicsProcess_System_Single_
-  name: _PhysicsProcess
-  nameWithType: InputKeyBoard._PhysicsProcess
-  fullName: Cobilas.GodotEngine.Utility.Input.InputKeyBoard._PhysicsProcess
-- uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyDown*
-  commentId: Overload:Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyDown
-  href: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.html#Cobilas_GodotEngine_Utility_Input_InputKeyBoard_GetKeyDown_Godot_KeyList_
-  name: GetKeyDown
-  nameWithType: InputKeyBoard.GetKeyDown
-  fullName: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyDown
 - uid: Godot.KeyList
   commentId: T:Godot.KeyList
   parent: Godot
@@ -7651,15 +8156,42 @@ references:
   name: KeyList
   nameWithType: KeyList
   fullName: Godot.KeyList
+- uid: Cobilas.GodotEngine.Utility.Input.MouseButton
+  commentId: T:Cobilas.GodotEngine.Utility.Input.MouseButton
+  parent: Cobilas.GodotEngine.Utility.Input
+  href: Cobilas.GodotEngine.Utility.Input.MouseButton.html
+  name: MouseButton
+  nameWithType: MouseButton
+  fullName: Cobilas.GodotEngine.Utility.Input.MouseButton
+- uid: Godot.ButtonList
+  commentId: T:Godot.ButtonList
+  parent: Godot
+  isExternal: true
+  name: ButtonList
+  nameWithType: ButtonList
+  fullName: Godot.ButtonList
+- uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyDown*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyDown
+  href: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.html#Cobilas_GodotEngine_Utility_Input_InputKeyBoard_GetKeyDown_Cobilas_GodotEngine_Utility_Input_KeyCode_
+  name: GetKeyDown
+  nameWithType: InputKeyBoard.GetKeyDown
+  fullName: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyDown
+- uid: Cobilas.GodotEngine.Utility.Input.KeyCode
+  commentId: T:Cobilas.GodotEngine.Utility.Input.KeyCode
+  parent: Cobilas.GodotEngine.Utility.Input
+  href: Cobilas.GodotEngine.Utility.Input.KeyCode.html
+  name: KeyCode
+  nameWithType: KeyCode
+  fullName: Cobilas.GodotEngine.Utility.Input.KeyCode
 - uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyPress*
   commentId: Overload:Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyPress
-  href: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.html#Cobilas_GodotEngine_Utility_Input_InputKeyBoard_GetKeyPress_Godot_KeyList_
+  href: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.html#Cobilas_GodotEngine_Utility_Input_InputKeyBoard_GetKeyPress_Cobilas_GodotEngine_Utility_Input_KeyCode_
   name: GetKeyPress
   nameWithType: InputKeyBoard.GetKeyPress
   fullName: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyPress
 - uid: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyUp*
   commentId: Overload:Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyUp
-  href: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.html#Cobilas_GodotEngine_Utility_Input_InputKeyBoard_GetKeyUp_Godot_KeyList_
+  href: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.html#Cobilas_GodotEngine_Utility_Input_InputKeyBoard_GetKeyUp_Cobilas_GodotEngine_Utility_Input_KeyCode_
   name: GetKeyUp
   nameWithType: InputKeyBoard.GetKeyUp
   fullName: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetKeyUp
@@ -7681,10 +8213,3 @@ references:
   name: GetMouseUp
   nameWithType: InputKeyBoard.GetMouseUp
   fullName: Cobilas.GodotEngine.Utility.Input.InputKeyBoard.GetMouseUp
-- uid: Cobilas.GodotEngine.Utility.Input.MouseButton
-  commentId: T:Cobilas.GodotEngine.Utility.Input.MouseButton
-  parent: Cobilas.GodotEngine.Utility.Input
-  href: Cobilas.GodotEngine.Utility.Input.MouseButton.html
-  name: MouseButton
-  nameWithType: MouseButton
-  fullName: Cobilas.GodotEngine.Utility.Input.MouseButton

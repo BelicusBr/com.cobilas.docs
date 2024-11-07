@@ -1,0 +1,744 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct DisplayInfo | Cobilas Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct DisplayInfo | Cobilas Documentation ">
+      
+      <meta name="description" content="Contains information from a specific screen.">
+      <link rel="icon" href="../images/favicon-96x96.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.godot.utility/new/main/apiSpec/new?filename=Cobilas_GodotEngine_Utility_DisplayInfo.md&amp;value=---%0Auid%3A%20Cobilas.GodotEngine.Utility.DisplayInfo%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/apple-icon-57x57.png" alt="Cobilas Documentation">
+            Cobilas Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Cobilas.GodotEngine.Utility.DisplayInfo">
+
+
+
+  <h1 id="Cobilas_GodotEngine_Utility_DisplayInfo" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo" class="text-break">
+Struct DisplayInfo  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/DisplayInfo.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Cobilas.html">Cobilas</a>.<a class="xref" href="Cobilas.GodotEngine.html">GodotEngine</a>.<a class="xref" href="Cobilas.GodotEngine.Utility.html">Utility</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>com.cobilas.godot.utility.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Contains information from a specific screen.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly struct DisplayInfo : IEquatable&lt;DisplayInfo&gt;</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.DisplayInfo.html">DisplayInfo</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_Utility_DisplayInfo__ctor_" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.#ctor*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_DisplayInfo__ctor_System_Int32__OpenTK_DisplayDevice__" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.#ctor(System.Int32@,OpenTK.DisplayDevice@)">
+  DisplayInfo(in int, in DisplayDevice?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/DisplayInfo.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts a new instance of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DisplayInfo(in int index, in DisplayDevice? device)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The monitor index.</p>
+</dd>
+    <dt><code>device</code> <span class="xref">DisplayDevice</span></dt>
+    <dd><p>The <span class="xref">OpenTK.DisplayDevice</span> that contains the screen information.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_Utility_DisplayInfo_CurrentResolution_" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.CurrentResolution*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_DisplayInfo_CurrentResolution" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.CurrentResolution">
+  CurrentResolution
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/DisplayInfo.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Current screen resolution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Resolution CurrentResolution { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Resolution.html">Resolution</a></dt>
+    <dd><p>Returns the current resolution of this <span class="xref">OpenTK.DisplayDevice</span>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_DisplayInfo_CustonResolutions_" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.CustonResolutions*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_DisplayInfo_CustonResolutions" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.CustonResolutions">
+  CustonResolutions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/DisplayInfo.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The list of custom resolutions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CustonResolutionList CustonResolutions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.CustonResolutionList.html">CustonResolutionList</a></dt>
+    <dd><p>Returns a list of custom resolutions from <a class="xref" href="Cobilas.GodotEngine.Utility.DisplayInfo.html">DisplayInfo</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_DisplayInfo_Index_" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.Index*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_DisplayInfo_Index" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.Index">
+  Index
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/DisplayInfo.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Screen index</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Index { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns the screen index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_DisplayInfo_None_" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.None*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_DisplayInfo_None" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.None">
+  None
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/DisplayInfo.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Empty display.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DisplayInfo None { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.DisplayInfo.html">DisplayInfo</a></dt>
+    <dd><p>Returns an empty instance of <a class="xref" href="Cobilas.GodotEngine.Utility.DisplayInfo.html">DisplayInfo</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_DisplayInfo_Resolutions_" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.Resolutions*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_DisplayInfo_Resolutions" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.Resolutions">
+  Resolutions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/DisplayInfo.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Screen resolutions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Resolution[] Resolutions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Resolution.html">Resolution</a>[]</dt>
+    <dd><p>Returns all resolutions supported by the display.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_Utility_DisplayInfo_AddCustonResolution_" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.AddCustonResolution*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_DisplayInfo_AddCustonResolution_Cobilas_GodotEngine_Utility_Resolution__Cobilas_GodotEngine_Utility_DisplayInfo__" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.AddCustonResolution(Cobilas.GodotEngine.Utility.Resolution@,Cobilas.GodotEngine.Utility.DisplayInfo@)">
+  AddCustonResolution(in Resolution, in DisplayInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/DisplayInfo.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a custom resolution to <a class="xref" href="Cobilas.GodotEngine.Utility.DisplayInfo.html">DisplayInfo</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DisplayInfo AddCustonResolution(in Resolution resolution, in DisplayInfo display)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resolution</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Resolution.html">Resolution</a></dt>
+    <dd><p>The resolution to be added.</p>
+</dd>
+    <dt><code>display</code> <a class="xref" href="Cobilas.GodotEngine.Utility.DisplayInfo.html">DisplayInfo</a></dt>
+    <dd><p>The target <a class="xref" href="Cobilas.GodotEngine.Utility.DisplayInfo.html">DisplayInfo</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.DisplayInfo.html">DisplayInfo</a></dt>
+    <dd><p>Returns a new, modified instance of <a class="xref" href="Cobilas.GodotEngine.Utility.DisplayInfo.html">DisplayInfo</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_DisplayInfo_ChangeCurrentResolution_" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.ChangeCurrentResolution*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_DisplayInfo_ChangeCurrentResolution_Cobilas_GodotEngine_Utility_Resolution__Cobilas_GodotEngine_Utility_DisplayInfo__" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.ChangeCurrentResolution(Cobilas.GodotEngine.Utility.Resolution@,Cobilas.GodotEngine.Utility.DisplayInfo@)">
+  ChangeCurrentResolution(in Resolution, in DisplayInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/DisplayInfo.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Allows you to change the current resolution of this display.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DisplayInfo ChangeCurrentResolution(in Resolution resolution, in DisplayInfo display)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resolution</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Resolution.html">Resolution</a></dt>
+    <dd><p>The new resolution.</p>
+</dd>
+    <dt><code>display</code> <a class="xref" href="Cobilas.GodotEngine.Utility.DisplayInfo.html">DisplayInfo</a></dt>
+    <dd><p>The target <a class="xref" href="Cobilas.GodotEngine.Utility.DisplayInfo.html">DisplayInfo</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.DisplayInfo.html">DisplayInfo</a></dt>
+    <dd><p>Returns a new, modified instance of <a class="xref" href="Cobilas.GodotEngine.Utility.DisplayInfo.html">DisplayInfo</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_DisplayInfo_Contains_" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.Contains*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_DisplayInfo_Contains_Cobilas_GodotEngine_Utility_Resolution__System_Boolean__" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.Contains(Cobilas.GodotEngine.Utility.Resolution@,System.Boolean@)">
+  Contains(in Resolution, in bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/DisplayInfo.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Allows you to check whether a certain resolution exists on this display.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(in Resolution resolution, in bool includeCustomResolution = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resolution</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Resolution.html">Resolution</a></dt>
+    <dd><p>Target resolution.</p>
+</dd>
+    <dt><code>includeCustomResolution</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Tells the method whether to compare with the custom resolution list.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If the resolution exists, it will return <code>true</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_DisplayInfo_Equals_" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.Equals*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_DisplayInfo_Equals_Cobilas_GodotEngine_Utility_DisplayInfo_" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.Equals(Cobilas.GodotEngine.Utility.DisplayInfo)">
+  Equals(DisplayInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/DisplayInfo.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(DisplayInfo other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Cobilas.GodotEngine.Utility.DisplayInfo.html">DisplayInfo</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_DisplayInfo_Equals_" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.Equals*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_DisplayInfo_Equals_System_Object_" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/DisplayInfo.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance and a specified object are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current instance.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_DisplayInfo_GetHash_" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.GetHash*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_DisplayInfo_GetHash_Cobilas_GodotEngine_Utility_DisplayInfo__" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.GetHash(Cobilas.GodotEngine.Utility.DisplayInfo@)">
+  GetHash(in DisplayInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/DisplayInfo.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates a hash from <a class="xref" href="Cobilas.GodotEngine.Utility.DisplayInfo.html">DisplayInfo</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetHash(in DisplayInfo display)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>display</code> <a class="xref" href="Cobilas.GodotEngine.Utility.DisplayInfo.html">DisplayInfo</a></dt>
+    <dd><p>The object that will be used.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns a hash generated from the <a class="xref" href="Cobilas.GodotEngine.Utility.DisplayInfo.html">DisplayInfo</a> index and resolution list.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_DisplayInfo_GetHashCode_" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.GetHashCode*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_DisplayInfo_GetHashCode" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/DisplayInfo.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the hash code for this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A 32-bit signed integer that is the hash code for this instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_Utility_DisplayInfo_op_Equality_" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.op_Equality*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_DisplayInfo_op_Equality_Cobilas_GodotEngine_Utility_DisplayInfo_Cobilas_GodotEngine_Utility_DisplayInfo_" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.op_Equality(Cobilas.GodotEngine.Utility.DisplayInfo,Cobilas.GodotEngine.Utility.DisplayInfo)">
+  operator ==(DisplayInfo, DisplayInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/DisplayInfo.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance is equal to another instance of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(DisplayInfo A, DisplayInfo B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code> <a class="xref" href="Cobilas.GodotEngine.Utility.DisplayInfo.html">DisplayInfo</a></dt>
+    <dd><p>Object to be compared.</p>
+</dd>
+    <dt><code>B</code> <a class="xref" href="Cobilas.GodotEngine.Utility.DisplayInfo.html">DisplayInfo</a></dt>
+    <dd><p>Object of comparison.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns the result of the comparison.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_DisplayInfo_op_Inequality_" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.op_Inequality*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_DisplayInfo_op_Inequality_Cobilas_GodotEngine_Utility_DisplayInfo_Cobilas_GodotEngine_Utility_DisplayInfo_" data-uid="Cobilas.GodotEngine.Utility.DisplayInfo.op_Inequality(Cobilas.GodotEngine.Utility.DisplayInfo,Cobilas.GodotEngine.Utility.DisplayInfo)">
+  operator !=(DisplayInfo, DisplayInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/DisplayInfo.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance is different from another instance of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(DisplayInfo A, DisplayInfo B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code> <a class="xref" href="Cobilas.GodotEngine.Utility.DisplayInfo.html">DisplayInfo</a></dt>
+    <dd><p>Object to be compared.</p>
+</dd>
+    <dt><code>B</code> <a class="xref" href="Cobilas.GodotEngine.Utility.DisplayInfo.html">DisplayInfo</a></dt>
+    <dd><p>Object of comparison.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns the result of the comparison.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/DisplayInfo.cs/#L9" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

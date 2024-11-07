@@ -10,7 +10,9 @@ items:
   - Cobilas.GodotEngine.Utility.GDFile.Dispose(System.Boolean)
   - Cobilas.GodotEngine.Utility.GDFile.Finalize
   - Cobilas.GodotEngine.Utility.GDFile.Load
+  - Cobilas.GodotEngine.Utility.GDFile.Load(System.String,System.Boolean)
   - Cobilas.GodotEngine.Utility.GDFile.Load``1
+  - Cobilas.GodotEngine.Utility.GDFile.Load``1(System.String,System.Boolean)
   - Cobilas.GodotEngine.Utility.GDFile.Name
   - Cobilas.GodotEngine.Utility.GDFile.NameWithoutExtension
   - Cobilas.GodotEngine.Utility.GDFile.Parent
@@ -27,7 +29,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GDFile
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
@@ -35,6 +37,8 @@ items:
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: This class is a representation of a file.
+  example: []
   syntax:
     content: 'public class GDFile : GDFileBase, IDisposable'
     content.vb: Public Class GDFile Inherits GDFileBase Implements IDisposable
@@ -66,7 +70,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Path
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
@@ -74,12 +78,14 @@ items:
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: The path of the item.
   example: []
   syntax:
     content: public override string Path { get; protected set; }
     parameters: []
     return:
       type: System.String
+      description: Returns the full or relative path of the item.
     content.vb: Public Overrides Property Path As String
   overridden: Cobilas.GodotEngine.Utility.GDFileBase.Path
   overload: Cobilas.GodotEngine.Utility.GDFile.Path*
@@ -97,20 +103,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Name
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
-    startLine: 12
+    startLine: 13
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Item name.
   example: []
   syntax:
     content: public override string Name { get; }
     parameters: []
     return:
       type: System.String
+      description: Returns the name of the item.
     content.vb: Public Overrides ReadOnly Property Name As String
   overridden: Cobilas.GodotEngine.Utility.GDFileBase.Name
   overload: Cobilas.GodotEngine.Utility.GDFile.Name*
@@ -128,20 +136,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Parent
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
-    startLine: 13
+    startLine: 15
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: The item's parent <xref href="Cobilas.GodotEngine.Utility.GDFileBase" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public override GDFileBase Parent { get; protected set; }
     parameters: []
     return:
       type: Cobilas.GodotEngine.Utility.GDFileBase
+      description: Returns the parent GDFileBase that the item is affiliated with.
     content.vb: Public Overrides Property Parent As GDFileBase
   overridden: Cobilas.GodotEngine.Utility.GDFileBase.Parent
   overload: Cobilas.GodotEngine.Utility.GDFile.Parent*
@@ -159,20 +169,24 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Attribute
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
-    startLine: 14
+    startLine: 17
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: The type of the item.
   example: []
   syntax:
     content: public override GDFileAttributes Attribute { get; protected set; }
     parameters: []
     return:
       type: Cobilas.GodotEngine.Utility.GDFileAttributes
+      description: >-
+        Returns the type of attribute the item has.
+            <p><code>Null</code>: Indicates that the item is a representation of a null file.</p><p><code>File</code>: Indicates that the item is a representation of a file.</p><p><code>Directory</code>: Indicates that the item is a representation of a directory file.</p>
     content.vb: Public Overrides Property Attribute As GDFileAttributes
   overridden: Cobilas.GodotEngine.Utility.GDFileBase.Attribute
   overload: Cobilas.GodotEngine.Utility.GDFile.Attribute*
@@ -190,20 +204,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: NameWithoutExtension
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
-    startLine: 15
+    startLine: 19
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: The name of the item without extension.
   example: []
   syntax:
     content: public override string NameWithoutExtension { get; }
     parameters: []
     return:
       type: System.String
+      description: Returns the item name without its extension.
     content.vb: Public Overrides ReadOnly Property NameWithoutExtension As String
   overridden: Cobilas.GodotEngine.Utility.GDFileBase.NameWithoutExtension
   overload: Cobilas.GodotEngine.Utility.GDFile.NameWithoutExtension*
@@ -221,14 +237,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Finalize
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
-    startLine: 27
+    startLine: 31
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: The finalizer allows the disposal of unmanageable code.
+  example: []
   syntax:
     content: protected ~GDFile()
     content.vb: 'Protected '
@@ -250,18 +268,21 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Read
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
-    startLine: 30
+    startLine: 35
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Allows reading of the file.
+  example: []
   syntax:
     content: public string Read()
     return:
       type: System.String
+      description: Returns the list of bytes read from the file converted to a string using the UTF-8 decoder.
     content.vb: Public Function Read() As String
   overload: Cobilas.GodotEngine.Utility.GDFile.Read*
 - uid: Cobilas.GodotEngine.Utility.GDFile.Write(System.Byte[])
@@ -278,24 +299,82 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Write
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
-    startLine: 40
+    startLine: 46
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Allows you to write data into the file.
+  example: []
   syntax:
     content: public void Write(byte[]? buffer)
     parameters:
     - id: buffer
       type: System.Byte[]
+      description: The list of bytes that will be written into the file.
     content.vb: Public Sub Write(buffer As Byte())
   overload: Cobilas.GodotEngine.Utility.GDFile.Write*
   nameWithType.vb: GDFile.Write(Byte())
   fullName.vb: Cobilas.GodotEngine.Utility.GDFile.Write(Byte())
   name.vb: Write(Byte())
+- uid: Cobilas.GodotEngine.Utility.GDFile.Load(System.String,System.Boolean)
+  commentId: M:Cobilas.GodotEngine.Utility.GDFile.Load(System.String,System.Boolean)
+  id: Load(System.String,System.Boolean)
+  parent: Cobilas.GodotEngine.Utility.GDFile
+  langs:
+  - csharp
+  - vb
+  name: Load(string, bool)
+  nameWithType: GDFile.Load(string, bool)
+  fullName: Cobilas.GodotEngine.Utility.GDFile.Load(string, bool)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/GDFile.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Load
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
+    startLine: 71
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Loads a resource at the given <code>path</code>, caching the result for further access.
+  remarks: >-
+    The registered <xref href="Godot.ResourceFormatLoader" data-throw-if-not-resolved="false"></xref> are queried sequentially to find the
+
+    first one which can handle the file's extension, and then attempt loading. If
+
+    loading fails, the remaining ResourceFormatLoaders are also attempted.
+  example: []
+  syntax:
+    content: public Resource Load(string typeHint = "", bool noCache = false)
+    parameters:
+    - id: typeHint
+      type: System.String
+      description: >-
+        An optional <code>type_hint</code> can be used to further specify the <xref href="Godot.Resource" data-throw-if-not-resolved="false"></xref> type
+
+        that should be handled by the Godot.ResourceFormatLoader. Anything that inherits
+
+        from <xref href="Godot.Resource" data-throw-if-not-resolved="false"></xref> can be used as a type hint, for example <xref href="Godot.Image" data-throw-if-not-resolved="false"></xref>.
+    - id: noCache
+      type: System.Boolean
+      description: >-
+        If <code>no_cache</code> is <code>true</code>, the resource cache will be bypassed and the resource will
+
+        be loaded anew. Otherwise, the cached resource will be returned if it exists.
+    return:
+      type: Godot.Resource
+      description: Returns an empty resource if no <xref href="Godot.ResourceFormatLoader" data-throw-if-not-resolved="false"></xref> could handle the file.
+    content.vb: Public Function Load(typeHint As String = "", noCache As Boolean = False) As Resource
+  overload: Cobilas.GodotEngine.Utility.GDFile.Load*
+  nameWithType.vb: GDFile.Load(String, Boolean)
+  fullName.vb: Cobilas.GodotEngine.Utility.GDFile.Load(String, Boolean)
+  name.vb: Load(String, Boolean)
 - uid: Cobilas.GodotEngine.Utility.GDFile.Load
   commentId: M:Cobilas.GodotEngine.Utility.GDFile.Load
   id: Load
@@ -310,20 +389,91 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Load
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
-    startLine: 50
+    startLine: 74
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Loads a resource at the given <code>path</code>, caching the result for further access.
+  remarks: >-
+    The registered <xref href="Godot.ResourceFormatLoader" data-throw-if-not-resolved="false"></xref> are queried sequentially to find the
+
+    first one which can handle the file's extension, and then attempt loading. If
+
+    loading fails, the remaining ResourceFormatLoaders are also attempted.
+  example: []
   syntax:
     content: public Resource Load()
     return:
       type: Godot.Resource
+      description: Returns an empty resource if no <xref href="Godot.ResourceFormatLoader" data-throw-if-not-resolved="false"></xref> could handle the file.
     content.vb: Public Function Load() As Resource
   overload: Cobilas.GodotEngine.Utility.GDFile.Load*
+- uid: Cobilas.GodotEngine.Utility.GDFile.Load``1(System.String,System.Boolean)
+  commentId: M:Cobilas.GodotEngine.Utility.GDFile.Load``1(System.String,System.Boolean)
+  id: Load``1(System.String,System.Boolean)
+  parent: Cobilas.GodotEngine.Utility.GDFile
+  langs:
+  - csharp
+  - vb
+  name: Load<T>(string, bool)
+  nameWithType: GDFile.Load<T>(string, bool)
+  fullName: Cobilas.GodotEngine.Utility.GDFile.Load<T>(string, bool)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/GDFile.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Load
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
+    startLine: 79
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Loads a resource at the given <code>path</code>, caching the result for further access.
+  remarks: >-
+    The registered <xref href="Godot.ResourceFormatLoader" data-throw-if-not-resolved="false"></xref> are queried sequentially to find the
+
+    first one which can handle the file's extension, and then attempt loading. If
+
+    loading fails, the remaining ResourceFormatLoaders are also attempted.
+  example: []
+  syntax:
+    content: 'public T Load<T>(string typeHint = "", bool noCache = false) where T : class'
+    parameters:
+    - id: typeHint
+      type: System.String
+      description: >-
+        An optional <code>type_hint</code> can be used to further specify the <xref href="Godot.Resource" data-throw-if-not-resolved="false"></xref> type
+
+        that should be handled by the Godot.ResourceFormatLoader. Anything that inherits
+
+        from <xref href="Godot.Resource" data-throw-if-not-resolved="false"></xref> can be used as a type hint, for example <xref href="Godot.Image" data-throw-if-not-resolved="false"></xref>.
+    - id: noCache
+      type: System.Boolean
+      description: >-
+        If <code>no_cache</code> is <code>true</code>, the resource cache will be bypassed and the resource will
+
+        be loaded anew. Otherwise, the cached resource will be returned if it exists.
+    typeParameters:
+    - id: T
+      description: The type to cast to. Should be a descendant of <xref href="Godot.Resource" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: '{T}'
+      description: Returns an empty resource if no <xref href="Godot.ResourceFormatLoader" data-throw-if-not-resolved="false"></xref> could handle the file.
+    content.vb: Public Function Load(Of T As Class)(typeHint As String = "", noCache As Boolean = False) As T
+  overload: Cobilas.GodotEngine.Utility.GDFile.Load*
+  exceptions:
+  - type: System.InvalidCastException
+    commentId: T:System.InvalidCastException
+    description: Thrown when the given the loaded resource can't be casted to the given type T.
+  nameWithType.vb: GDFile.Load(Of T)(String, Boolean)
+  fullName.vb: Cobilas.GodotEngine.Utility.GDFile.Load(Of T)(String, Boolean)
+  name.vb: Load(Of T)(String, Boolean)
 - uid: Cobilas.GodotEngine.Utility.GDFile.Load``1
   commentId: M:Cobilas.GodotEngine.Utility.GDFile.Load``1
   id: Load``1
@@ -338,22 +488,36 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Load
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
-    startLine: 53
+    startLine: 82
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Loads a resource at the given <code>path</code>, caching the result for further access.
+  remarks: >-
+    The registered <xref href="Godot.ResourceFormatLoader" data-throw-if-not-resolved="false"></xref> are queried sequentially to find the
+
+    first one which can handle the file's extension, and then attempt loading. If
+
+    loading fails, the remaining ResourceFormatLoaders are also attempted.
+  example: []
   syntax:
     content: 'public T Load<T>() where T : class'
     typeParameters:
     - id: T
+      description: The type to cast to. Should be a descendant of <xref href="Godot.Resource" data-throw-if-not-resolved="false"></xref>.
     return:
       type: '{T}'
+      description: Returns an empty resource if no <xref href="Godot.ResourceFormatLoader" data-throw-if-not-resolved="false"></xref> could handle the file.
     content.vb: Public Function Load(Of T As Class)() As T
   overload: Cobilas.GodotEngine.Utility.GDFile.Load*
+  exceptions:
+  - type: System.InvalidCastException
+    commentId: T:System.InvalidCastException
+    description: Thrown when the given the loaded resource can't be casted to the given type T.
   nameWithType.vb: GDFile.Load(Of T)()
   fullName.vb: Cobilas.GodotEngine.Utility.GDFile.Load(Of T)()
   name.vb: Load(Of T)()
@@ -371,19 +535,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Dispose
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
-    startLine: 56
+    startLine: 86
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
   syntax:
     content: protected virtual void Dispose(bool disposing)
     parameters:
     - id: disposing
       type: System.Boolean
+      description: When the value is true the object discards the manageable resources.
     content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
   overload: Cobilas.GodotEngine.Utility.GDFile.Dispose*
   nameWithType.vb: GDFile.Dispose(Boolean)
@@ -403,11 +570,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Dispose
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
-    startLine: 67
+    startLine: 97
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -837,12 +1004,12 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.byte
   - name: (
   - name: )
-- uid: Cobilas.GodotEngine.Utility.GDFile.Load*
-  commentId: Overload:Cobilas.GodotEngine.Utility.GDFile.Load
-  href: Cobilas.GodotEngine.Utility.GDFile.html#Cobilas_GodotEngine_Utility_GDFile_Load
-  name: Load
-  nameWithType: GDFile.Load
-  fullName: Cobilas.GodotEngine.Utility.GDFile.Load
+- uid: Godot.ResourceFormatLoader
+  commentId: T:Godot.ResourceFormatLoader
+  isExternal: true
+  name: ResourceFormatLoader
+  nameWithType: ResourceFormatLoader
+  fullName: Godot.ResourceFormatLoader
 - uid: Godot.Resource
   commentId: T:Godot.Resource
   parent: Godot
@@ -850,12 +1017,42 @@ references:
   name: Resource
   nameWithType: Resource
   fullName: Godot.Resource
+- uid: Godot.Image
+  commentId: T:Godot.Image
+  isExternal: true
+  name: Image
+  nameWithType: Image
+  fullName: Godot.Image
+- uid: Cobilas.GodotEngine.Utility.GDFile.Load*
+  commentId: Overload:Cobilas.GodotEngine.Utility.GDFile.Load
+  href: Cobilas.GodotEngine.Utility.GDFile.html#Cobilas_GodotEngine_Utility_GDFile_Load_System_String_System_Boolean_
+  name: Load
+  nameWithType: GDFile.Load
+  fullName: Cobilas.GodotEngine.Utility.GDFile.Load
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: Godot
   commentId: N:Godot
   href: Godot.html
   name: Godot
   nameWithType: Godot
   fullName: Godot
+- uid: System.InvalidCastException
+  commentId: T:System.InvalidCastException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidcastexception
+  name: InvalidCastException
+  nameWithType: InvalidCastException
+  fullName: System.InvalidCastException
 - uid: '{T}'
   commentId: '!:T'
   definition: T
@@ -872,17 +1069,6 @@ references:
   name: Dispose
   nameWithType: GDFile.Dispose
   fullName: Cobilas.GodotEngine.Utility.GDFile.Dispose
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
 - uid: Cobilas.GodotEngine.Utility.GDFileBase.Dispose
   commentId: M:Cobilas.GodotEngine.Utility.GDFileBase.Dispose
   parent: Cobilas.GodotEngine.Utility.GDFileBase

@@ -7,6 +7,8 @@ items:
   children:
   - Cobilas.GodotEngine.Utility.Runtime.RunTime.DeltaTime
   - Cobilas.GodotEngine.Utility.Runtime.RunTime.FixedDeltaTime
+  - Cobilas.GodotEngine.Utility.Runtime.RunTime.FrameCount
+  - Cobilas.GodotEngine.Utility.Runtime.RunTime.TimeScale
   langs:
   - csharp
   - vb
@@ -17,11 +19,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Runtime/RunTime.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RunTime
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTime.cs
-    startLine: 5
+    startLine: 6
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime
@@ -51,11 +53,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Runtime/RunTime.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: DeltaTime
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTime.cs
-    startLine: 8
+    startLine: 9
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime
@@ -80,11 +82,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Runtime/RunTime.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: FixedDeltaTime
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTime.cs
-    startLine: 10
+    startLine: 11
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime
@@ -95,6 +97,78 @@ items:
     return:
       type: System.Single
     content.vb: Public Const FixedDeltaTime As Single = 0.02
+- uid: Cobilas.GodotEngine.Utility.Runtime.RunTime.TimeScale
+  commentId: P:Cobilas.GodotEngine.Utility.Runtime.RunTime.TimeScale
+  id: TimeScale
+  parent: Cobilas.GodotEngine.Utility.Runtime.RunTime
+  langs:
+  - csharp
+  - vb
+  name: TimeScale
+  nameWithType: RunTime.TimeScale
+  fullName: Cobilas.GodotEngine.Utility.Runtime.RunTime.TimeScale
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/Runtime/RunTime.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: TimeScale
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTime.cs
+    startLine: 19
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: >-
+    Controls how fast or slow the in-game clock ticks versus the real life one. It
+
+    defaults to 1.0. A value of 2.0 means the game moves twice as fast as real life,
+
+    whilst a value of 0.5 means the game moves at half the regular speed. This also
+
+    affects Godot.Timer and Godot.SceneTreeTimer (see Godot.SceneTree.CreateTimer(System.Single,System.Boolean)
+
+    for how to control this).
+  example: []
+  syntax:
+    content: public static float TimeScale { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Shared Property TimeScale As Single
+  overload: Cobilas.GodotEngine.Utility.Runtime.RunTime.TimeScale*
+- uid: Cobilas.GodotEngine.Utility.Runtime.RunTime.FrameCount
+  commentId: P:Cobilas.GodotEngine.Utility.Runtime.RunTime.FrameCount
+  id: FrameCount
+  parent: Cobilas.GodotEngine.Utility.Runtime.RunTime
+  langs:
+  - csharp
+  - vb
+  name: FrameCount
+  nameWithType: RunTime.FrameCount
+  fullName: Cobilas.GodotEngine.Utility.Runtime.RunTime.FrameCount
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/Runtime/RunTime.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: FrameCount
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTime.cs
+    startLine: 22
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: The total number of frames since the start of the game (Read Only).
+  example: []
+  syntax:
+    content: public static int FrameCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The total number of frames
+    content.vb: Public Shared ReadOnly Property FrameCount As Integer
+  overload: Cobilas.GodotEngine.Utility.Runtime.RunTime.FrameCount*
 references:
 - uid: Cobilas.GodotEngine.Utility.Runtime
   commentId: N:Cobilas.GodotEngine.Utility.Runtime
@@ -362,3 +436,26 @@ references:
   nameWithType.vb: Single
   fullName.vb: Single
   name.vb: Single
+- uid: Cobilas.GodotEngine.Utility.Runtime.RunTime.TimeScale*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Runtime.RunTime.TimeScale
+  href: Cobilas.GodotEngine.Utility.Runtime.RunTime.html#Cobilas_GodotEngine_Utility_Runtime_RunTime_TimeScale
+  name: TimeScale
+  nameWithType: RunTime.TimeScale
+  fullName: Cobilas.GodotEngine.Utility.Runtime.RunTime.TimeScale
+- uid: Cobilas.GodotEngine.Utility.Runtime.RunTime.FrameCount*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Runtime.RunTime.FrameCount
+  href: Cobilas.GodotEngine.Utility.Runtime.RunTime.html#Cobilas_GodotEngine_Utility_Runtime_RunTime_FrameCount
+  name: FrameCount
+  nameWithType: RunTime.FrameCount
+  fullName: Cobilas.GodotEngine.Utility.Runtime.RunTime.FrameCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

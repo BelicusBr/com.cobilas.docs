@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.godot.utility/new/main.dev/apiSpec/new?filename=Cobilas_GodotEngine_Utility_Gizmos.md&amp;value=---%0Auid%3A%20Cobilas.GodotEngine.Utility.Gizmos%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.godot.utility/new/main/apiSpec/new?filename=Cobilas_GodotEngine_Utility_Gizmos.md&amp;value=---%0Auid%3A%20Cobilas.GodotEngine.Utility.Gizmos%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Cobilas_GodotEngine_Utility_Gizmos" data-uid="Cobilas.GodotEngine.Utility.Gizmos" class="text-break">
-Class Gizmos  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Gizmos.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class Gizmos  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Gizmos.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class Gizmos  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[RunTimeInitializationClass(Priority.StartLater, &quot;Gizmos&quot;)]
+    <pre><code class="lang-csharp hljs">[RunTimeInitializationClass(&quot;Gizmos&quot;, Priority.StartLater, 0, false)]
 public class Gizmos : CanvasLayer, IDisposable</code></pre>
   </div>
 
@@ -939,7 +939,7 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Gizmos_Color" data-uid="Cobilas.GodotEngine.Utility.Gizmos.Color">
   Color
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Gizmos.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Gizmos.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the Color of the gizmos that are drawn next.</p>
@@ -976,10 +976,13 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Gizmos_DrawArc_Godot_Vector2_System_Single_System_Single_System_Single_System_Int32_" data-uid="Cobilas.GodotEngine.Utility.Gizmos.DrawArc(Godot.Vector2,System.Single,System.Single,System.Single,System.Int32)">
   DrawArc(Vector2, float, float, float, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Gizmos.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Gizmos.cs/#L166"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Draws a unfilled arc between the given angles. The larger the value of <code>point_count</code>, the smoother the curve. See also <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">DrawCircle(Vector2, float, Color)</a>.</p>
+<p>Note: Line drawing is not accelerated by batching if <code>antialiased</code> is <code>true</code>.</p>
+<p>Note: Due to how it works, built-in antialiasing will not look correct for translucent lines and may not work on certain platforms. As a workaround, install the <a href="https://github.com/godot-extended-libraries/godot-antialiased-line2d">Antialiased Line2D</a> add-on then create an AntialiasedRegularPolygon2D node. That node relies on a texture with custom mipmaps to perform antialiasing. 2D batching is also still supported with those antialiased lines.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -989,15 +992,21 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>center</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The central position of the arc.</p>
+</dd>
     <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd><p>The radius of the arc.</p>
+</dd>
     <dt><code>startAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd><p>The angle at which the arc will be drawn.</p>
+</dd>
     <dt><code>endAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd><p>The angle where the arc will finish being drawn.</p>
+</dd>
     <dt><code>pointCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The number of stitches used in the arc.
+<p>This parameter will define the visual aspect of the bow, whether it will have a smoother or more serrated curve.</p>
+</dd>
   </dl>
 
 
@@ -1015,10 +1024,13 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Gizmos_DrawArc_Godot_Vector2_System_Single_System_Single_System_Single_System_Int32_System_Single_" data-uid="Cobilas.GodotEngine.Utility.Gizmos.DrawArc(Godot.Vector2,System.Single,System.Single,System.Single,System.Int32,System.Single)">
   DrawArc(Vector2, float, float, float, int, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Gizmos.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Gizmos.cs/#L152"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Draws a unfilled arc between the given angles. The larger the value of <code>point_count</code>, the smoother the curve. See also <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">DrawCircle(Vector2, float, Color)</a>.</p>
+<p>Note: Line drawing is not accelerated by batching if <code>antialiased</code> is <code>true</code>.</p>
+<p>Note: Due to how it works, built-in antialiasing will not look correct for translucent lines and may not work on certain platforms. As a workaround, install the <a href="https://github.com/godot-extended-libraries/godot-antialiased-line2d">Antialiased Line2D</a> add-on then create an AntialiasedRegularPolygon2D node. That node relies on a texture with custom mipmaps to perform antialiasing. 2D batching is also still supported with those antialiased lines.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1028,17 +1040,24 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>center</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The central position of the arc.</p>
+</dd>
     <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd><p>The radius of the arc.</p>
+</dd>
     <dt><code>startAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd><p>The angle at which the arc will be drawn.</p>
+</dd>
     <dt><code>endAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd><p>The angle where the arc will finish being drawn.</p>
+</dd>
     <dt><code>pointCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The number of stitches used in the arc.
+<p>This parameter will define the visual aspect of the bow, whether it will have a smoother or more serrated curve.</p>
+</dd>
     <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd><p>The thickness of the line.</p>
+</dd>
   </dl>
 
 
@@ -1056,10 +1075,12 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Gizmos_DrawCircle_Godot_Vector2_System_Single_" data-uid="Cobilas.GodotEngine.Utility.Gizmos.DrawCircle(Godot.Vector2,System.Single)">
   DrawCircle(Vector2, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Gizmos.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Gizmos.cs/#L110"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Draws a colored, filled circle. See also <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">DrawArc(Vector2, float, float, float, int, Color, float, bool)</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">DrawPolyline(Vector2[], Color, float, bool)</a> and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">DrawPolygon(Vector2[], Color[], Vector2[], Texture, Texture, bool)</a>.</p>
+<p>Note: Built-in antialiasing is not provided for <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">DrawCircle(Vector2, float, Color)</a>. As a workaround, install the <a href="https://github.com/godot-extended-libraries/godot-antialiased-line2d">Antialiased Line2D</a> add-on then create an AntialiasedRegularPolygon2D node. That node relies on a texture with custom mipmaps to perform antialiasing.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1069,9 +1090,11 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>position</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The central position of the circle.</p>
+</dd>
     <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd><p>The radius of the circle.</p>
+</dd>
   </dl>
 
 
@@ -1089,10 +1112,14 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Gizmos_DrawLine_Godot_Vector2_Godot_Vector2_" data-uid="Cobilas.GodotEngine.Utility.Gizmos.DrawLine(Godot.Vector2,Godot.Vector2)">
   DrawLine(Vector2, Vector2)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Gizmos.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Gizmos.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Draws a line from a 2D point to another, with a given color and width. It can
+be optionally antialiased. See also <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">DrawMultiline(Vector2[], Color, float, bool)</a>
+and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">DrawPolyline(Vector2[], Color, float, bool)</a>.</p>
+<p>Note: Line drawing is not accelerated by batching if <code>antialiased</code> is <code>true</code>.</p><p>Note: Due to how it works, built-in antialiasing will not look correct for translucent lines and may not work on certain platforms. As a workaround, install the <a href="https://github.com/godot-extended-libraries/godot-antialiased-line2d">Antialiased Line2D</a> add-on then create an AntialiasedLine2D node. That node relies on a texture with custom mipmaps to perform antialiasing. 2D batching is also still supported with those antialiased lines.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1102,9 +1129,11 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>start</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The beginning of the line.</p>
+</dd>
     <dt><code>end</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The end of the line.</p>
+</dd>
   </dl>
 
 
@@ -1122,10 +1151,14 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Gizmos_DrawLine_Godot_Vector2_Godot_Vector2_System_Single_" data-uid="Cobilas.GodotEngine.Utility.Gizmos.DrawLine(Godot.Vector2,Godot.Vector2,System.Single)">
   DrawLine(Vector2, Vector2, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Gizmos.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Gizmos.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Draws a line from a 2D point to another, with a given color and width. It can
+be optionally antialiased. See also <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">DrawMultiline(Vector2[], Color, float, bool)</a>
+and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">DrawPolyline(Vector2[], Color, float, bool)</a>.</p>
+<p>Note: Line drawing is not accelerated by batching if <code>antialiased</code> is <code>true</code>.</p><p>Note: Due to how it works, built-in antialiasing will not look correct for translucent lines and may not work on certain platforms. As a workaround, install the <a href="https://github.com/godot-extended-libraries/godot-antialiased-line2d">Antialiased Line2D</a> add-on then create an AntialiasedLine2D node. That node relies on a texture with custom mipmaps to perform antialiasing. 2D batching is also still supported with those antialiased lines.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1135,11 +1168,14 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>start</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The beginning of the line.</p>
+</dd>
     <dt><code>end</code> <span class="xref">Vector2</span></dt>
-    <dd></dd>
+    <dd><p>The end of the line.</p>
+</dd>
     <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd><p>The thickness of the line.</p>
+</dd>
   </dl>
 
 
@@ -1157,10 +1193,11 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Gizmos_DrawMesh_Godot_Mesh_Godot_Texture_Godot_Texture_System_Nullable_Godot_Transform2D__" data-uid="Cobilas.GodotEngine.Utility.Gizmos.DrawMesh(Godot.Mesh,Godot.Texture,Godot.Texture,System.Nullable{Godot.Transform2D})">
   DrawMesh(Mesh, Texture, Texture?, Transform2D?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Gizmos.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Gizmos.cs/#L175"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Draws a <span class="xref">Godot.Mesh</span> in 2D, using the provided texture. See <span class="xref">Godot.MeshInstance2D</span> for related documentation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1170,13 +1207,17 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>mesh</code> <span class="xref">Mesh</span></dt>
-    <dd></dd>
+    <dd><p>The mesh that will be used to shape the design.</p>
+</dd>
     <dt><code>texture</code> <span class="xref">Texture</span></dt>
-    <dd></dd>
+    <dd><p>The texture that will be used to draw on the mesh.</p>
+</dd>
     <dt><code>normalMap</code> <span class="xref">Texture</span></dt>
-    <dd></dd>
+    <dd><p>The texture normal map.</p>
+</dd>
     <dt><code>transform</code> <span class="xref">Transform2D</span>?</dt>
-    <dd></dd>
+    <dd><p>If the parameter is null, then the default value is Transform2D.Identity</p>
+</dd>
   </dl>
 
 
@@ -1194,10 +1235,12 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Gizmos_DrawMultiline_Godot_Vector2___" data-uid="Cobilas.GodotEngine.Utility.Gizmos.DrawMultiline(Godot.Vector2[])">
   DrawMultiline(Vector2[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Gizmos.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Gizmos.cs/#L125"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Draws multiple disconnected lines with a uniform <code>color</code>. When drawing large amounts of lines, this is faster than using individual <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">DrawLine(Vector2, Vector2, Color, float, bool)</a> calls. To draw interconnected lines, use <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">DrawPolyline(Vector2[], Color, float, bool)</a> instead.</p>
+<p>Note: <code>width</code> and <code>antialiased</code> are currently not implemented and have no effect. As a workaround, install the <a href="https://github.com/godot-extended-libraries/godot-antialiased-line2d">Antialiased Line2D</a> add-on then create an AntialiasedLine2D node. That node relies on a texture with custom mipmaps to perform antialiasing. 2D batching is also still supported with those antialiased lines.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1207,7 +1250,8 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>points</code> <span class="xref">Vector2</span>[]</dt>
-    <dd></dd>
+    <dd><p>The points that form the line.</p>
+</dd>
   </dl>
 
 
@@ -1225,10 +1269,12 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Gizmos_DrawMultiline_Godot_Vector2___System_Single_" data-uid="Cobilas.GodotEngine.Utility.Gizmos.DrawMultiline(Godot.Vector2[],System.Single)">
   DrawMultiline(Vector2[], float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Gizmos.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Gizmos.cs/#L118"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Draws multiple disconnected lines with a uniform <code>color</code>. When drawing large amounts of lines, this is faster than using individual <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">DrawLine(Vector2, Vector2, Color, float, bool)</a> calls. To draw interconnected lines, use <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">DrawPolyline(Vector2[], Color, float, bool)</a> instead.</p>
+<p>Note: <code>width</code> and <code>antialiased</code> are currently not implemented and have no effect. As a workaround, install the <a href="https://github.com/godot-extended-libraries/godot-antialiased-line2d">Antialiased Line2D</a> add-on then create an AntialiasedLine2D node. That node relies on a texture with custom mipmaps to perform antialiasing. 2D batching is also still supported with those antialiased lines.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1238,9 +1284,11 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>points</code> <span class="xref">Vector2</span>[]</dt>
-    <dd></dd>
+    <dd><p>The points that form the line.</p>
+</dd>
     <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd><p>The thickness of the line.</p>
+</dd>
   </dl>
 
 
@@ -1258,10 +1306,12 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Gizmos_DrawMultiline_System_Collections_Generic_List_Godot_Vector2__" data-uid="Cobilas.GodotEngine.Utility.Gizmos.DrawMultiline(System.Collections.Generic.List{Godot.Vector2})">
   DrawMultiline(List&lt;Vector2&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Gizmos.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Gizmos.cs/#L138"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Draws multiple disconnected lines with a uniform <code>color</code>. When drawing large amounts of lines, this is faster than using individual <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">DrawLine(Vector2, Vector2, Color, float, bool)</a> calls. To draw interconnected lines, use <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">DrawPolyline(Vector2[], Color, float, bool)</a> instead.</p>
+<p>Note: <code>width</code> and <code>antialiased</code> are currently not implemented and have no effect. As a workaround, install the <a href="https://github.com/godot-extended-libraries/godot-antialiased-line2d">Antialiased Line2D</a> add-on then create an AntialiasedLine2D node. That node relies on a texture with custom mipmaps to perform antialiasing. 2D batching is also still supported with those antialiased lines.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1271,7 +1321,8 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>points</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Vector2</span>&gt;</dt>
-    <dd></dd>
+    <dd><p>The points that form the line.</p>
+</dd>
   </dl>
 
 
@@ -1289,10 +1340,12 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Gizmos_DrawMultiline_System_Collections_Generic_List_Godot_Vector2__System_Single_" data-uid="Cobilas.GodotEngine.Utility.Gizmos.DrawMultiline(System.Collections.Generic.List{Godot.Vector2},System.Single)">
   DrawMultiline(List&lt;Vector2&gt;, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Gizmos.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Gizmos.cs/#L132"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Draws multiple disconnected lines with a uniform <code>color</code>. When drawing large amounts of lines, this is faster than using individual <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">DrawLine(Vector2, Vector2, Color, float, bool)</a> calls. To draw interconnected lines, use <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">DrawPolyline(Vector2[], Color, float, bool)</a> instead.</p>
+<p>Note: <code>width</code> and <code>antialiased</code> are currently not implemented and have no effect. As a workaround, install the <a href="https://github.com/godot-extended-libraries/godot-antialiased-line2d">Antialiased Line2D</a> add-on then create an AntialiasedLine2D node. That node relies on a texture with custom mipmaps to perform antialiasing. 2D batching is also still supported with those antialiased lines.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1302,9 +1355,11 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>points</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Vector2</span>&gt;</dt>
-    <dd></dd>
+    <dd><p>The points that form the line.</p>
+</dd>
     <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd><p>The thickness of the line.</p>
+</dd>
   </dl>
 
 
@@ -1322,10 +1377,12 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Gizmos_DrawRect_Godot_Rect2_" data-uid="Cobilas.GodotEngine.Utility.Gizmos.DrawRect(Godot.Rect2)">
   DrawRect(Rect2)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Gizmos.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Gizmos.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Draws a solid body rectangle.</p>
+<p>Note: Due to how it works, built-in antialiasing will not look correct for translucent polygons and may not work on certain platforms. As a workaround, install the <a href="https://github.com/godot-extended-libraries/godot-antialiased-line2d">Antialiased Line2D</a> add-on then create an AntialiasedPolygon2D node. That node relies on a texture with custom mipmaps to perform antialiasing.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1335,7 +1392,8 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>rect</code> <span class="xref">Rect2</span></dt>
-    <dd></dd>
+    <dd><p>The dimensions of the rectangle.</p>
+</dd>
   </dl>
 
 
@@ -1353,10 +1411,11 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Gizmos_DrawTexture_Godot_Texture_Godot_Vector2_Godot_Texture_" data-uid="Cobilas.GodotEngine.Utility.Gizmos.DrawTexture(Godot.Texture,Godot.Vector2,Godot.Texture)">
   DrawTexture(Texture, Vector2, Texture?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Gizmos.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Gizmos.cs/#L180"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Draws a texture at a given position.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1388,10 +1447,11 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Gizmos_DrawTextureRect_Godot_Texture_Godot_Rect2_System_Boolean_System_Boolean_Godot_Texture_" data-uid="Cobilas.GodotEngine.Utility.Gizmos.DrawTextureRect(Godot.Texture,Godot.Rect2,System.Boolean,System.Boolean,Godot.Texture)">
   DrawTextureRect(Texture, Rect2, bool, bool, Texture?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Gizmos.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Gizmos.cs/#L186"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Draws a textured rectangle at a given position, optionally modulated by a color. If <code>transpose</code> is <code>true</code>, the texture will have its X and Y coordinates swapped.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1427,10 +1487,12 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Gizmos_DrawWireRect_Godot_Rect2_" data-uid="Cobilas.GodotEngine.Utility.Gizmos.DrawWireRect(Godot.Rect2)">
   DrawWireRect(Rect2)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Gizmos.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Gizmos.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Draw a rectangle of a skeletonized body.</p>
+<p>Note: Due to how it works, built-in antialiasing will not look correct for translucent polygons and may not work on certain platforms. As a workaround, install the <a href="https://github.com/godot-extended-libraries/godot-antialiased-line2d">Antialiased Line2D</a> add-on then create an AntialiasedPolygon2D node. That node relies on a texture with custom mipmaps to perform antialiasing.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1440,7 +1502,8 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>rect</code> <span class="xref">Rect2</span></dt>
-    <dd></dd>
+    <dd><p>The dimensions of the rectangle.</p>
+</dd>
   </dl>
 
 
@@ -1458,10 +1521,12 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Gizmos_DrawWireRect_Godot_Rect2_System_Single_" data-uid="Cobilas.GodotEngine.Utility.Gizmos.DrawWireRect(Godot.Rect2,System.Single)">
   DrawWireRect(Rect2, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Gizmos.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Gizmos.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Draw a rectangle of a skeletonized body.</p>
+<p>Note: Due to how it works, built-in antialiasing will not look correct for translucent polygons and may not work on certain platforms. As a workaround, install the <a href="https://github.com/godot-extended-libraries/godot-antialiased-line2d">Antialiased Line2D</a> add-on then create an AntialiasedPolygon2D node. That node relies on a texture with custom mipmaps to perform antialiasing.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1471,9 +1536,11 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>rect</code> <span class="xref">Rect2</span></dt>
-    <dd></dd>
+    <dd><p>The dimensions of the rectangle.</p>
+</dd>
     <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd><p>The thickness of the line.</p>
+</dd>
   </dl>
 
 
@@ -1491,7 +1558,7 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Gizmos__Process_System_Single_" data-uid="Cobilas.GodotEngine.Utility.Gizmos._Process(System.Single)">
   _Process(float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Gizmos.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Gizmos.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Called during the processing step of the main loop. Processing happens at every frame and as fast as possible, so the <code>delta</code> time since the previous frame is not constant. <code>delta</code> is in seconds.</p>
@@ -1526,7 +1593,7 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
 
   <h3 id="Cobilas_GodotEngine_Utility_Gizmos__Ready" data-uid="Cobilas.GodotEngine.Utility.Gizmos._Ready">
   _Ready()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Gizmos.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Gizmos.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Called when the node is "ready", i.e. when both the node and its children have entered the scene tree. If the node has children, their <span class="xref">Godot.Node._Ready()</span> callbacks get triggered first, and the parent node will receive the ready notification afterwards.</p>
@@ -1556,7 +1623,7 @@ public class Gizmos : CanvasLayer, IDisposable</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Gizmos.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Gizmos.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 

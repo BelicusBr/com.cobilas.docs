@@ -24,7 +24,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Coroutine/Coroutine.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Coroutine
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/Coroutine.cs
@@ -32,6 +32,8 @@ items:
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: This class represents a corrotine process.
+  example: []
   syntax:
     content: 'public sealed class Coroutine : IEnumerable, IDisposable'
     content.vb: Public NotInheritable Class Coroutine Implements IEnumerable, IDisposable
@@ -61,19 +63,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Coroutine/Coroutine.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ID
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/Coroutine.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: The process id.
+  example: []
   syntax:
     content: public string ID { get; }
     parameters: []
     return:
       type: System.String
+      description: Returns a <xref href="System.String" data-throw-if-not-resolved="false"></xref> with process ID.
     content.vb: Public Property ID As String
   overload: Cobilas.GodotEngine.Utility.Coroutine.ID*
 - uid: Cobilas.GodotEngine.Utility.Coroutine.IsRunning
@@ -90,19 +95,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Coroutine/Coroutine.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: IsRunning
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/Coroutine.cs
-    startLine: 12
+    startLine: 18
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Indicates if the process is running.
+  example: []
   syntax:
     content: public bool IsRunning { get; }
     parameters: []
     return:
       type: System.Boolean
+      description: >-
+        <p>Returns <code>true</code> if the process is ongoing.</p>
+
+        <p>Returns <code>false</code> when the process is completed.</p>
     content.vb: Public Property IsRunning As Boolean
   overload: Cobilas.GodotEngine.Utility.Coroutine.IsRunning*
 - uid: Cobilas.GodotEngine.Utility.Coroutine.IsCancellationRequested
@@ -119,19 +130,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Coroutine/Coroutine.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: IsCancellationRequested
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/Coroutine.cs
-    startLine: 13
+    startLine: 20
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Gets whether cancellation has been requested for this <xref href="System.Threading.CancellationTokenSource" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public bool IsCancellationRequested { get; }
     parameters: []
     return:
       type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if cancellation has been requested for this <xref href="System.Threading.CancellationTokenSource" data-throw-if-not-resolved="false"></xref>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Public ReadOnly Property IsCancellationRequested As Boolean
   overload: Cobilas.GodotEngine.Utility.Coroutine.IsCancellationRequested*
 - uid: Cobilas.GodotEngine.Utility.Coroutine.#ctor(System.Collections.IEnumerator,System.String)
@@ -148,23 +162,34 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Coroutine/Coroutine.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/Coroutine.cs
-    startLine: 15
+    startLine: 26
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Creates a new instance of this object.
+  example: []
   syntax:
     content: public Coroutine(IEnumerator? enumerator, string? iD)
     parameters:
     - id: enumerator
       type: System.Collections.IEnumerator
+      description: The <xref href="System.Collections.IEnumerator" data-throw-if-not-resolved="false"></xref> object that will be used.
     - id: iD
       type: System.String
+      description: The ID of this <xref href="Cobilas.GodotEngine.Utility.Coroutine" data-throw-if-not-resolved="false"></xref> object.
     content.vb: Public Sub New(enumerator As IEnumerator, iD As String)
   overload: Cobilas.GodotEngine.Utility.Coroutine.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: It occurs when the enumerator parameter is null.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: It occurs when the ID parameter is null.
   nameWithType.vb: Coroutine.New(IEnumerator, String)
   fullName.vb: Cobilas.GodotEngine.Utility.Coroutine.New(System.Collections.IEnumerator, String)
   name.vb: New(IEnumerator, String)
@@ -182,14 +207,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Coroutine/Coroutine.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Finalize
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/Coroutine.cs
-    startLine: 22
+    startLine: 33
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: The destructor is responsible for discarding unmanaged resources.
+  example: []
   syntax:
     content: protected ~Coroutine()
     content.vb: 'Protected '
@@ -211,18 +238,27 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Coroutine/Coroutine.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Cancel
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/Coroutine.cs
-    startLine: 25
+    startLine: 37
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Emits the cancellation signal for the <xref href="Cobilas.GodotEngine.Utility.Coroutine" data-throw-if-not-resolved="false"></xref> process.
+  example: []
   syntax:
     content: public void Cancel()
     content.vb: Public Sub Cancel()
   overload: Cobilas.GodotEngine.Utility.Coroutine.Cancel*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: This <xref href="System.Threading.CancellationTokenSource" data-throw-if-not-resolved="false"></xref> has been disposed.
+  - type: System.AggregateException
+    commentId: T:System.AggregateException
+    description: An aggregate exception containing all the exceptions thrown by the registered callbacks on the associated <xref href="System.Threading.CancellationToken" data-throw-if-not-resolved="false"></xref>.
 - uid: Cobilas.GodotEngine.Utility.Coroutine.CancelAfter(System.TimeSpan)
   commentId: M:Cobilas.GodotEngine.Utility.Coroutine.CancelAfter(System.TimeSpan)
   id: CancelAfter(System.TimeSpan)
@@ -237,21 +273,31 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Coroutine/Coroutine.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: CancelAfter
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/Coroutine.cs
-    startLine: 28
+    startLine: 42
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Emits a delayed cancellation signal for the <xref href="Cobilas.GodotEngine.Utility.Coroutine" data-throw-if-not-resolved="false"></xref> process.
+  example: []
   syntax:
     content: public void CancelAfter(TimeSpan delay)
     parameters:
     - id: delay
       type: System.TimeSpan
+      description: Defines the delay where the cancellation signal will be issued.
     content.vb: Public Sub CancelAfter(delay As TimeSpan)
   overload: Cobilas.GodotEngine.Utility.Coroutine.CancelAfter*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The exception thrown when this <xref href="System.Threading.CancellationTokenSource" data-throw-if-not-resolved="false"></xref> has been disposed.
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: The exception that is thrown when <code class="paramref">delay</code> is less than -1 or greater than Int32.MaxValue.
 - uid: Cobilas.GodotEngine.Utility.Coroutine.CancelAfter(System.Int32)
   commentId: M:Cobilas.GodotEngine.Utility.Coroutine.CancelAfter(System.Int32)
   id: CancelAfter(System.Int32)
@@ -266,21 +312,31 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Coroutine/Coroutine.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: CancelAfter
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/Coroutine.cs
-    startLine: 31
+    startLine: 46
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
+  summary: Emits a delayed cancellation signal for the <xref href="Cobilas.GodotEngine.Utility.Coroutine" data-throw-if-not-resolved="false"></xref> process.
+  example: []
   syntax:
     content: public void CancelAfter(int millisecondsDelay)
     parameters:
     - id: millisecondsDelay
       type: System.Int32
+      description: Defines the delay in milliseconds where the cancellation signal will be issued.
     content.vb: Public Sub CancelAfter(millisecondsDelay As Integer)
   overload: Cobilas.GodotEngine.Utility.Coroutine.CancelAfter*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The exception thrown when this <xref href="System.Threading.CancellationTokenSource" data-throw-if-not-resolved="false"></xref> has been disposed.
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: The exception that is thrown when <code class="paramref">delay</code> is less than -1 or greater than Int32.MaxValue.
   nameWithType.vb: Coroutine.CancelAfter(Integer)
   fullName.vb: Cobilas.GodotEngine.Utility.Coroutine.CancelAfter(Integer)
   name.vb: CancelAfter(Integer)
@@ -298,11 +354,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Coroutine/Coroutine.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Dispose
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/Coroutine.cs
-    startLine: 35
+    startLine: 49
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -601,12 +657,6 @@ references:
     name: Collections
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections
-- uid: Cobilas.GodotEngine.Utility.Coroutine.ID*
-  commentId: Overload:Cobilas.GodotEngine.Utility.Coroutine.ID
-  href: Cobilas.GodotEngine.Utility.Coroutine.html#Cobilas_GodotEngine_Utility_Coroutine_ID
-  name: ID
-  nameWithType: Coroutine.ID
-  fullName: Cobilas.GodotEngine.Utility.Coroutine.ID
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -618,6 +668,12 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: Cobilas.GodotEngine.Utility.Coroutine.ID*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Coroutine.ID
+  href: Cobilas.GodotEngine.Utility.Coroutine.html#Cobilas_GodotEngine_Utility_Coroutine_ID
+  name: ID
+  nameWithType: Coroutine.ID
+  fullName: Cobilas.GodotEngine.Utility.Coroutine.ID
 - uid: Cobilas.GodotEngine.Utility.Coroutine.IsRunning*
   commentId: Overload:Cobilas.GodotEngine.Utility.Coroutine.IsRunning
   href: Cobilas.GodotEngine.Utility.Coroutine.html#Cobilas_GodotEngine_Utility_Coroutine_IsRunning
@@ -635,12 +691,41 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: System.Threading.CancellationTokenSource
+  commentId: T:System.Threading.CancellationTokenSource
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource
+  name: CancellationTokenSource
+  nameWithType: CancellationTokenSource
+  fullName: System.Threading.CancellationTokenSource
 - uid: Cobilas.GodotEngine.Utility.Coroutine.IsCancellationRequested*
   commentId: Overload:Cobilas.GodotEngine.Utility.Coroutine.IsCancellationRequested
   href: Cobilas.GodotEngine.Utility.Coroutine.html#Cobilas_GodotEngine_Utility_Coroutine_IsCancellationRequested
   name: IsCancellationRequested
   nameWithType: Coroutine.IsCancellationRequested
   fullName: Cobilas.GodotEngine.Utility.Coroutine.IsCancellationRequested
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: Cobilas.GodotEngine.Utility.Coroutine
+  commentId: T:Cobilas.GodotEngine.Utility.Coroutine
+  parent: Cobilas.GodotEngine.Utility
+  href: Cobilas.GodotEngine.Utility.Coroutine.html
+  name: Coroutine
+  nameWithType: Coroutine
+  fullName: Cobilas.GodotEngine.Utility.Coroutine
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
 - uid: Cobilas.GodotEngine.Utility.Coroutine.#ctor*
   commentId: Overload:Cobilas.GodotEngine.Utility.Coroutine.#ctor
   href: Cobilas.GodotEngine.Utility.Coroutine.html#Cobilas_GodotEngine_Utility_Coroutine__ctor_System_Collections_IEnumerator_System_String_
@@ -650,14 +735,6 @@ references:
   nameWithType.vb: Coroutine.New
   fullName.vb: Cobilas.GodotEngine.Utility.Coroutine.New
   name.vb: New
-- uid: System.Collections.IEnumerator
-  commentId: T:System.Collections.IEnumerator
-  parent: System.Collections
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
-  name: IEnumerator
-  nameWithType: IEnumerator
-  fullName: System.Collections.IEnumerator
 - uid: Cobilas.GodotEngine.Utility.Coroutine.Finalize*
   commentId: Overload:Cobilas.GodotEngine.Utility.Coroutine.Finalize
   href: Cobilas.GodotEngine.Utility.Coroutine.html#Cobilas_GodotEngine_Utility_Coroutine_Finalize
@@ -669,12 +746,40 @@ references:
   - uid: Cobilas.GodotEngine.Utility.Coroutine.Finalize*
     name: Coroutine
     href: Cobilas.GodotEngine.Utility.Coroutine.html#Cobilas_GodotEngine_Utility_Coroutine_Finalize
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.objectdisposedexception
+  name: ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  fullName: System.ObjectDisposedException
+- uid: System.AggregateException
+  commentId: T:System.AggregateException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.aggregateexception
+  name: AggregateException
+  nameWithType: AggregateException
+  fullName: System.AggregateException
 - uid: Cobilas.GodotEngine.Utility.Coroutine.Cancel*
   commentId: Overload:Cobilas.GodotEngine.Utility.Coroutine.Cancel
   href: Cobilas.GodotEngine.Utility.Coroutine.html#Cobilas_GodotEngine_Utility_Coroutine_Cancel
   name: Cancel
   nameWithType: Coroutine.Cancel
   fullName: Cobilas.GodotEngine.Utility.Coroutine.Cancel
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
 - uid: Cobilas.GodotEngine.Utility.Coroutine.CancelAfter*
   commentId: Overload:Cobilas.GodotEngine.Utility.Coroutine.CancelAfter
   href: Cobilas.GodotEngine.Utility.Coroutine.html#Cobilas_GodotEngine_Utility_Coroutine_CancelAfter_System_TimeSpan_

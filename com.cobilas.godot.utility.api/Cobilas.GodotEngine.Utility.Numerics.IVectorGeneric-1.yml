@@ -19,14 +19,16 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/IVectorGeneric.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: IVectorGeneric
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/IVectorGeneric.cs
-    startLine: 3
+    startLine: 4
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Standardization interface for vectors.
+  example: []
   syntax:
     content: 'public interface IVectorGeneric<TVector> : IEquatable<TVector>, IVector, IFormattable where TVector : IVector'
     typeParameters:
@@ -58,19 +60,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/IVectorGeneric.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Normalized
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/IVectorGeneric.cs
-    startLine: 4
+    startLine: 6
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns the vector scaled to unit length. Equivalent to <code>v / v.Length()</code>.
+  example: []
   syntax:
     content: TVector Normalized { get; }
     parameters: []
     return:
       type: '{TVector}'
+      description: A normalized version of the vector.
     content.vb: ReadOnly Property Normalized As TVector
   overload: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1.Normalized*
   nameWithType.vb: IVectorGeneric(Of TVector).Normalized
@@ -89,19 +94,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/IVectorGeneric.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: floor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/IVectorGeneric.cs
-    startLine: 5
+    startLine: 8
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns a new vector with all components rounded down (towards negative infinity).
+  example: []
   syntax:
     content: TVector floor { get; }
     parameters: []
     return:
       type: '{TVector}'
+      description: A vector with <xref href="Godot.Mathf.Floor(System.Single)" data-throw-if-not-resolved="false"></xref> called on each component.
     content.vb: ReadOnly Property floor As TVector
   overload: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1.floor*
   nameWithType.vb: IVectorGeneric(Of TVector).floor
@@ -120,19 +128,22 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/IVectorGeneric.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ceil
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/IVectorGeneric.cs
-    startLine: 6
+    startLine: 10
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Returns a new vector with all components rounded up (towards positive infinity).
+  example: []
   syntax:
     content: TVector ceil { get; }
     parameters: []
     return:
       type: '{TVector}'
+      description: A vector with <xref href="Godot.Mathf.Ceil(System.Single)" data-throw-if-not-resolved="false"></xref> called on each component.
     content.vb: ReadOnly Property ceil As TVector
   overload: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1.ceil*
   nameWithType.vb: IVectorGeneric(Of TVector).ceil
@@ -151,18 +162,24 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/IVectorGeneric.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Round
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/IVectorGeneric.cs
-    startLine: 8
+    startLine: 12
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: >-
+    Returns this vector with all components rounded to the nearest integer,
+
+    with halfway cases rounded towards the nearest multiple of two.
+  example: []
   syntax:
     content: TVector Round()
     return:
       type: '{TVector}'
+      description: The rounded vector.
     content.vb: Function Round() As TVector
   overload: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1.Round*
   nameWithType.vb: IVectorGeneric(Of TVector).Round()
@@ -487,6 +504,36 @@ references:
   name: TVector
   nameWithType: TVector
   fullName: TVector
+- uid: Godot.Mathf.Floor(System.Single)
+  commentId: M:Godot.Mathf.Floor(System.Single)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: Floor(float)
+  nameWithType: Mathf.Floor(float)
+  fullName: Godot.Mathf.Floor(float)
+  nameWithType.vb: Mathf.Floor(Single)
+  fullName.vb: Godot.Mathf.Floor(Single)
+  name.vb: Floor(Single)
+  spec.csharp:
+  - uid: Godot.Mathf.Floor(System.Single)
+    name: Floor
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Godot.Mathf.Floor(System.Single)
+    name: Floor
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
 - uid: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1.floor*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1.floor
   href: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IVectorGeneric_1_floor
@@ -495,6 +542,36 @@ references:
   fullName: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric<TVector>.floor
   nameWithType.vb: IVectorGeneric(Of TVector).floor
   fullName.vb: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric(Of TVector).floor
+- uid: Godot.Mathf.Ceil(System.Single)
+  commentId: M:Godot.Mathf.Ceil(System.Single)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: Ceil(float)
+  nameWithType: Mathf.Ceil(float)
+  fullName: Godot.Mathf.Ceil(float)
+  nameWithType.vb: Mathf.Ceil(Single)
+  fullName.vb: Godot.Mathf.Ceil(Single)
+  name.vb: Ceil(Single)
+  spec.csharp:
+  - uid: Godot.Mathf.Ceil(System.Single)
+    name: Ceil
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Godot.Mathf.Ceil(System.Single)
+    name: Ceil
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
 - uid: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1.ceil*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric`1.ceil
   href: Cobilas.GodotEngine.Utility.Numerics.IVectorGeneric-1.html#Cobilas_GodotEngine_Utility_Numerics_IVectorGeneric_1_ceil

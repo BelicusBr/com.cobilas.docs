@@ -5,9 +5,19 @@ items:
   id: MouseButton
   parent: Cobilas.GodotEngine.Utility.Input
   children:
-  - Cobilas.GodotEngine.Utility.Input.MouseButton.Left
-  - Cobilas.GodotEngine.Utility.Input.MouseButton.Middle
-  - Cobilas.GodotEngine.Utility.Input.MouseButton.Right
+  - Cobilas.GodotEngine.Utility.Input.MouseButton.MouseLeft
+  - Cobilas.GodotEngine.Utility.Input.MouseButton.MouseMiddle
+  - Cobilas.GodotEngine.Utility.Input.MouseButton.MouseRight
+  - Cobilas.GodotEngine.Utility.Input.MouseButton.MouseWheelDown
+  - Cobilas.GodotEngine.Utility.Input.MouseButton.MouseWheelLeft
+  - Cobilas.GodotEngine.Utility.Input.MouseButton.MouseWheelRight
+  - Cobilas.GodotEngine.Utility.Input.MouseButton.MouseWheelUp
+  - Cobilas.GodotEngine.Utility.Input.MouseButton.MouseXB1
+  - Cobilas.GodotEngine.Utility.Input.MouseButton.MouseXB2
+  - Cobilas.GodotEngine.Utility.Input.MouseButton.MouseXB3
+  - Cobilas.GodotEngine.Utility.Input.MouseButton.MouseXB4
+  - Cobilas.GodotEngine.Utility.Input.MouseButton.MouseXB5
+  - Cobilas.GodotEngine.Utility.Input.MouseButton.MouseXB6
   - Cobilas.GodotEngine.Utility.Input.MouseButton.Unknown
   langs:
   - csharp
@@ -19,7 +29,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Input/MouseButton.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: MouseButton
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/MouseButton.cs
@@ -30,8 +40,8 @@ items:
   summary: Represents mouse triggers.
   example: []
   syntax:
-    content: public enum MouseButton
-    content.vb: Public Enum MouseButton
+    content: 'public enum MouseButton : byte'
+    content.vb: Public Enum MouseButton As Byte
 - uid: Cobilas.GodotEngine.Utility.Input.MouseButton.Unknown
   commentId: F:Cobilas.GodotEngine.Utility.Input.MouseButton.Unknown
   id: Unknown
@@ -46,7 +56,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Input/MouseButton.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Unknown
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/MouseButton.cs
@@ -60,88 +70,368 @@ items:
     content: Unknown = 0
     return:
       type: Cobilas.GodotEngine.Utility.Input.MouseButton
-- uid: Cobilas.GodotEngine.Utility.Input.MouseButton.Right
-  commentId: F:Cobilas.GodotEngine.Utility.Input.MouseButton.Right
-  id: Right
+- uid: Cobilas.GodotEngine.Utility.Input.MouseButton.MouseRight
+  commentId: F:Cobilas.GodotEngine.Utility.Input.MouseButton.MouseRight
+  id: MouseRight
   parent: Cobilas.GodotEngine.Utility.Input.MouseButton
   langs:
   - csharp
   - vb
-  name: Right
-  nameWithType: MouseButton.Right
-  fullName: Cobilas.GodotEngine.Utility.Input.MouseButton.Right
+  name: MouseRight
+  nameWithType: MouseButton.MouseRight
+  fullName: Cobilas.GodotEngine.Utility.Input.MouseButton.MouseRight
   type: Field
   source:
     remote:
       path: GodotEngine.Utility/Input/MouseButton.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Right
+    id: MouseRight
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/MouseButton.cs
     startLine: 7
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Input
-  summary: Right mouse trigger.
+  summary: <p>Right mouse button.</p>
   example: []
   syntax:
-    content: Right = 1
+    content: MouseRight = 1
     return:
       type: Cobilas.GodotEngine.Utility.Input.MouseButton
-- uid: Cobilas.GodotEngine.Utility.Input.MouseButton.Left
-  commentId: F:Cobilas.GodotEngine.Utility.Input.MouseButton.Left
-  id: Left
+- uid: Cobilas.GodotEngine.Utility.Input.MouseButton.MouseLeft
+  commentId: F:Cobilas.GodotEngine.Utility.Input.MouseButton.MouseLeft
+  id: MouseLeft
   parent: Cobilas.GodotEngine.Utility.Input.MouseButton
   langs:
   - csharp
   - vb
-  name: Left
-  nameWithType: MouseButton.Left
-  fullName: Cobilas.GodotEngine.Utility.Input.MouseButton.Left
+  name: MouseLeft
+  nameWithType: MouseButton.MouseLeft
+  fullName: Cobilas.GodotEngine.Utility.Input.MouseButton.MouseLeft
   type: Field
   source:
     remote:
       path: GodotEngine.Utility/Input/MouseButton.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Left
+    id: MouseLeft
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/MouseButton.cs
     startLine: 9
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Input
-  summary: Left mouse trigger.
+  summary: <p>Left mouse button.</p>
   example: []
   syntax:
-    content: Left = 2
+    content: MouseLeft = 2
     return:
       type: Cobilas.GodotEngine.Utility.Input.MouseButton
-- uid: Cobilas.GodotEngine.Utility.Input.MouseButton.Middle
-  commentId: F:Cobilas.GodotEngine.Utility.Input.MouseButton.Middle
-  id: Middle
+- uid: Cobilas.GodotEngine.Utility.Input.MouseButton.MouseMiddle
+  commentId: F:Cobilas.GodotEngine.Utility.Input.MouseButton.MouseMiddle
+  id: MouseMiddle
   parent: Cobilas.GodotEngine.Utility.Input.MouseButton
   langs:
   - csharp
   - vb
-  name: Middle
-  nameWithType: MouseButton.Middle
-  fullName: Cobilas.GodotEngine.Utility.Input.MouseButton.Middle
+  name: MouseMiddle
+  nameWithType: MouseButton.MouseMiddle
+  fullName: Cobilas.GodotEngine.Utility.Input.MouseButton.MouseMiddle
   type: Field
   source:
     remote:
       path: GodotEngine.Utility/Input/MouseButton.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Middle
+    id: MouseMiddle
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/MouseButton.cs
     startLine: 11
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Input
-  summary: Middle mouse trigger (Scroll).
+  summary: <p>Middle mouse button.</p>
   example: []
   syntax:
-    content: Middle = 3
+    content: MouseMiddle = 3
+    return:
+      type: Cobilas.GodotEngine.Utility.Input.MouseButton
+- uid: Cobilas.GodotEngine.Utility.Input.MouseButton.MouseWheelUp
+  commentId: F:Cobilas.GodotEngine.Utility.Input.MouseButton.MouseWheelUp
+  id: MouseWheelUp
+  parent: Cobilas.GodotEngine.Utility.Input.MouseButton
+  langs:
+  - csharp
+  - vb
+  name: MouseWheelUp
+  nameWithType: MouseButton.MouseWheelUp
+  fullName: Cobilas.GodotEngine.Utility.Input.MouseButton.MouseWheelUp
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/Input/MouseButton.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: MouseWheelUp
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/MouseButton.cs
+    startLine: 13
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Input
+  summary: <p>Mouse wheel up.</p>
+  example: []
+  syntax:
+    content: MouseWheelUp = 4
+    return:
+      type: Cobilas.GodotEngine.Utility.Input.MouseButton
+- uid: Cobilas.GodotEngine.Utility.Input.MouseButton.MouseWheelDown
+  commentId: F:Cobilas.GodotEngine.Utility.Input.MouseButton.MouseWheelDown
+  id: MouseWheelDown
+  parent: Cobilas.GodotEngine.Utility.Input.MouseButton
+  langs:
+  - csharp
+  - vb
+  name: MouseWheelDown
+  nameWithType: MouseButton.MouseWheelDown
+  fullName: Cobilas.GodotEngine.Utility.Input.MouseButton.MouseWheelDown
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/Input/MouseButton.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: MouseWheelDown
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/MouseButton.cs
+    startLine: 15
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Input
+  summary: <p>Mouse wheel down.</p>
+  example: []
+  syntax:
+    content: MouseWheelDown = 5
+    return:
+      type: Cobilas.GodotEngine.Utility.Input.MouseButton
+- uid: Cobilas.GodotEngine.Utility.Input.MouseButton.MouseWheelLeft
+  commentId: F:Cobilas.GodotEngine.Utility.Input.MouseButton.MouseWheelLeft
+  id: MouseWheelLeft
+  parent: Cobilas.GodotEngine.Utility.Input.MouseButton
+  langs:
+  - csharp
+  - vb
+  name: MouseWheelLeft
+  nameWithType: MouseButton.MouseWheelLeft
+  fullName: Cobilas.GodotEngine.Utility.Input.MouseButton.MouseWheelLeft
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/Input/MouseButton.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: MouseWheelLeft
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/MouseButton.cs
+    startLine: 17
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Input
+  summary: <p>Mouse wheel left button (only present on some mice).</p>
+  example: []
+  syntax:
+    content: MouseWheelLeft = 6
+    return:
+      type: Cobilas.GodotEngine.Utility.Input.MouseButton
+- uid: Cobilas.GodotEngine.Utility.Input.MouseButton.MouseWheelRight
+  commentId: F:Cobilas.GodotEngine.Utility.Input.MouseButton.MouseWheelRight
+  id: MouseWheelRight
+  parent: Cobilas.GodotEngine.Utility.Input.MouseButton
+  langs:
+  - csharp
+  - vb
+  name: MouseWheelRight
+  nameWithType: MouseButton.MouseWheelRight
+  fullName: Cobilas.GodotEngine.Utility.Input.MouseButton.MouseWheelRight
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/Input/MouseButton.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: MouseWheelRight
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/MouseButton.cs
+    startLine: 19
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Input
+  summary: <p>Mouse wheel right button (only present on some mice).</p>
+  example: []
+  syntax:
+    content: MouseWheelRight = 7
+    return:
+      type: Cobilas.GodotEngine.Utility.Input.MouseButton
+- uid: Cobilas.GodotEngine.Utility.Input.MouseButton.MouseXB1
+  commentId: F:Cobilas.GodotEngine.Utility.Input.MouseButton.MouseXB1
+  id: MouseXB1
+  parent: Cobilas.GodotEngine.Utility.Input.MouseButton
+  langs:
+  - csharp
+  - vb
+  name: MouseXB1
+  nameWithType: MouseButton.MouseXB1
+  fullName: Cobilas.GodotEngine.Utility.Input.MouseButton.MouseXB1
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/Input/MouseButton.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: MouseXB1
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/MouseButton.cs
+    startLine: 21
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Input
+  summary: <p>Extra mouse button 1 (only present on some mice).</p>
+  example: []
+  syntax:
+    content: MouseXB1 = 8
+    return:
+      type: Cobilas.GodotEngine.Utility.Input.MouseButton
+- uid: Cobilas.GodotEngine.Utility.Input.MouseButton.MouseXB2
+  commentId: F:Cobilas.GodotEngine.Utility.Input.MouseButton.MouseXB2
+  id: MouseXB2
+  parent: Cobilas.GodotEngine.Utility.Input.MouseButton
+  langs:
+  - csharp
+  - vb
+  name: MouseXB2
+  nameWithType: MouseButton.MouseXB2
+  fullName: Cobilas.GodotEngine.Utility.Input.MouseButton.MouseXB2
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/Input/MouseButton.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: MouseXB2
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/MouseButton.cs
+    startLine: 23
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Input
+  summary: <p>Extra mouse button 2 (only present on some mice).</p>
+  example: []
+  syntax:
+    content: MouseXB2 = 9
+    return:
+      type: Cobilas.GodotEngine.Utility.Input.MouseButton
+- uid: Cobilas.GodotEngine.Utility.Input.MouseButton.MouseXB3
+  commentId: F:Cobilas.GodotEngine.Utility.Input.MouseButton.MouseXB3
+  id: MouseXB3
+  parent: Cobilas.GodotEngine.Utility.Input.MouseButton
+  langs:
+  - csharp
+  - vb
+  name: MouseXB3
+  nameWithType: MouseButton.MouseXB3
+  fullName: Cobilas.GodotEngine.Utility.Input.MouseButton.MouseXB3
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/Input/MouseButton.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: MouseXB3
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/MouseButton.cs
+    startLine: 25
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Input
+  summary: Extra mouse button 3 (only present on some mice).
+  example: []
+  syntax:
+    content: MouseXB3 = 10
+    return:
+      type: Cobilas.GodotEngine.Utility.Input.MouseButton
+- uid: Cobilas.GodotEngine.Utility.Input.MouseButton.MouseXB4
+  commentId: F:Cobilas.GodotEngine.Utility.Input.MouseButton.MouseXB4
+  id: MouseXB4
+  parent: Cobilas.GodotEngine.Utility.Input.MouseButton
+  langs:
+  - csharp
+  - vb
+  name: MouseXB4
+  nameWithType: MouseButton.MouseXB4
+  fullName: Cobilas.GodotEngine.Utility.Input.MouseButton.MouseXB4
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/Input/MouseButton.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: MouseXB4
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/MouseButton.cs
+    startLine: 27
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Input
+  summary: Extra mouse button 4 (only present on some mice).
+  example: []
+  syntax:
+    content: MouseXB4 = 11
+    return:
+      type: Cobilas.GodotEngine.Utility.Input.MouseButton
+- uid: Cobilas.GodotEngine.Utility.Input.MouseButton.MouseXB5
+  commentId: F:Cobilas.GodotEngine.Utility.Input.MouseButton.MouseXB5
+  id: MouseXB5
+  parent: Cobilas.GodotEngine.Utility.Input.MouseButton
+  langs:
+  - csharp
+  - vb
+  name: MouseXB5
+  nameWithType: MouseButton.MouseXB5
+  fullName: Cobilas.GodotEngine.Utility.Input.MouseButton.MouseXB5
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/Input/MouseButton.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: MouseXB5
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/MouseButton.cs
+    startLine: 29
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Input
+  summary: Extra mouse button 5 (only present on some mice).
+  example: []
+  syntax:
+    content: MouseXB5 = 12
+    return:
+      type: Cobilas.GodotEngine.Utility.Input.MouseButton
+- uid: Cobilas.GodotEngine.Utility.Input.MouseButton.MouseXB6
+  commentId: F:Cobilas.GodotEngine.Utility.Input.MouseButton.MouseXB6
+  id: MouseXB6
+  parent: Cobilas.GodotEngine.Utility.Input.MouseButton
+  langs:
+  - csharp
+  - vb
+  name: MouseXB6
+  nameWithType: MouseButton.MouseXB6
+  fullName: Cobilas.GodotEngine.Utility.Input.MouseButton.MouseXB6
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/Input/MouseButton.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: MouseXB6
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Input/MouseButton.cs
+    startLine: 31
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Input
+  summary: Extra mouse button 6 (only present on some mice).
+  example: []
+  syntax:
+    content: MouseXB6 = 13
     return:
       type: Cobilas.GodotEngine.Utility.Input.MouseButton
 references:

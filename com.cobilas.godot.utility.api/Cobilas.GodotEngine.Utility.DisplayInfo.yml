@@ -1,0 +1,1147 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo
+  commentId: T:Cobilas.GodotEngine.Utility.DisplayInfo
+  id: DisplayInfo
+  parent: Cobilas.GodotEngine.Utility
+  children:
+  - Cobilas.GodotEngine.Utility.DisplayInfo.#ctor(System.Int32@,OpenTK.DisplayDevice@)
+  - Cobilas.GodotEngine.Utility.DisplayInfo.AddCustonResolution(Cobilas.GodotEngine.Utility.Resolution@,Cobilas.GodotEngine.Utility.DisplayInfo@)
+  - Cobilas.GodotEngine.Utility.DisplayInfo.ChangeCurrentResolution(Cobilas.GodotEngine.Utility.Resolution@,Cobilas.GodotEngine.Utility.DisplayInfo@)
+  - Cobilas.GodotEngine.Utility.DisplayInfo.Contains(Cobilas.GodotEngine.Utility.Resolution@,System.Boolean@)
+  - Cobilas.GodotEngine.Utility.DisplayInfo.CurrentResolution
+  - Cobilas.GodotEngine.Utility.DisplayInfo.CustonResolutions
+  - Cobilas.GodotEngine.Utility.DisplayInfo.Equals(Cobilas.GodotEngine.Utility.DisplayInfo)
+  - Cobilas.GodotEngine.Utility.DisplayInfo.Equals(System.Object)
+  - Cobilas.GodotEngine.Utility.DisplayInfo.GetHash(Cobilas.GodotEngine.Utility.DisplayInfo@)
+  - Cobilas.GodotEngine.Utility.DisplayInfo.GetHashCode
+  - Cobilas.GodotEngine.Utility.DisplayInfo.Index
+  - Cobilas.GodotEngine.Utility.DisplayInfo.None
+  - Cobilas.GodotEngine.Utility.DisplayInfo.Resolutions
+  - Cobilas.GodotEngine.Utility.DisplayInfo.op_Equality(Cobilas.GodotEngine.Utility.DisplayInfo,Cobilas.GodotEngine.Utility.DisplayInfo)
+  - Cobilas.GodotEngine.Utility.DisplayInfo.op_Inequality(Cobilas.GodotEngine.Utility.DisplayInfo,Cobilas.GodotEngine.Utility.DisplayInfo)
+  langs:
+  - csharp
+  - vb
+  name: DisplayInfo
+  nameWithType: DisplayInfo
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo
+  type: Struct
+  source:
+    remote:
+      path: GodotEngine.Utility/DisplayInfo.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: DisplayInfo
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/DisplayInfo.cs
+    startLine: 8
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Contains information from a specific screen.
+  example: []
+  syntax:
+    content: 'public readonly struct DisplayInfo : IEquatable<DisplayInfo>'
+    content.vb: Public Structure DisplayInfo Implements IEquatable(Of DisplayInfo)
+  implements:
+  - System.IEquatable{Cobilas.GodotEngine.Utility.DisplayInfo}
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.Index
+  commentId: P:Cobilas.GodotEngine.Utility.DisplayInfo.Index
+  id: Index
+  parent: Cobilas.GodotEngine.Utility.DisplayInfo
+  langs:
+  - csharp
+  - vb
+  name: Index
+  nameWithType: DisplayInfo.Index
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.Index
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/DisplayInfo.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Index
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/DisplayInfo.cs
+    startLine: 16
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Screen index
+  example: []
+  syntax:
+    content: public int Index { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: Returns the screen index.
+    content.vb: Public ReadOnly Property Index As Integer
+  overload: Cobilas.GodotEngine.Utility.DisplayInfo.Index*
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.Resolutions
+  commentId: P:Cobilas.GodotEngine.Utility.DisplayInfo.Resolutions
+  id: Resolutions
+  parent: Cobilas.GodotEngine.Utility.DisplayInfo
+  langs:
+  - csharp
+  - vb
+  name: Resolutions
+  nameWithType: DisplayInfo.Resolutions
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.Resolutions
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/DisplayInfo.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Resolutions
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/DisplayInfo.cs
+    startLine: 19
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Screen resolutions.
+  example: []
+  syntax:
+    content: public Resolution[] Resolutions { get; }
+    parameters: []
+    return:
+      type: Cobilas.GodotEngine.Utility.Resolution[]
+      description: Returns all resolutions supported by the display.
+    content.vb: Public ReadOnly Property Resolutions As Resolution()
+  overload: Cobilas.GodotEngine.Utility.DisplayInfo.Resolutions*
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.CurrentResolution
+  commentId: P:Cobilas.GodotEngine.Utility.DisplayInfo.CurrentResolution
+  id: CurrentResolution
+  parent: Cobilas.GodotEngine.Utility.DisplayInfo
+  langs:
+  - csharp
+  - vb
+  name: CurrentResolution
+  nameWithType: DisplayInfo.CurrentResolution
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.CurrentResolution
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/DisplayInfo.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: CurrentResolution
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/DisplayInfo.cs
+    startLine: 22
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Current screen resolution.
+  example: []
+  syntax:
+    content: public Resolution CurrentResolution { get; }
+    parameters: []
+    return:
+      type: Cobilas.GodotEngine.Utility.Resolution
+      description: Returns the current resolution of this <xref href="OpenTK.DisplayDevice" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public ReadOnly Property CurrentResolution As Resolution
+  overload: Cobilas.GodotEngine.Utility.DisplayInfo.CurrentResolution*
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.CustonResolutions
+  commentId: P:Cobilas.GodotEngine.Utility.DisplayInfo.CustonResolutions
+  id: CustonResolutions
+  parent: Cobilas.GodotEngine.Utility.DisplayInfo
+  langs:
+  - csharp
+  - vb
+  name: CustonResolutions
+  nameWithType: DisplayInfo.CustonResolutions
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.CustonResolutions
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/DisplayInfo.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: CustonResolutions
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/DisplayInfo.cs
+    startLine: 25
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: The list of custom resolutions.
+  example: []
+  syntax:
+    content: public CustonResolutionList CustonResolutions { get; }
+    parameters: []
+    return:
+      type: Cobilas.GodotEngine.Utility.CustonResolutionList
+      description: Returns a list of custom resolutions from <xref href="Cobilas.GodotEngine.Utility.DisplayInfo" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public ReadOnly Property CustonResolutions As CustonResolutionList
+  overload: Cobilas.GodotEngine.Utility.DisplayInfo.CustonResolutions*
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.None
+  commentId: P:Cobilas.GodotEngine.Utility.DisplayInfo.None
+  id: None
+  parent: Cobilas.GodotEngine.Utility.DisplayInfo
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: DisplayInfo.None
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.None
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/DisplayInfo.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: None
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/DisplayInfo.cs
+    startLine: 28
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Empty display.
+  example: []
+  syntax:
+    content: public static DisplayInfo None { get; }
+    parameters: []
+    return:
+      type: Cobilas.GodotEngine.Utility.DisplayInfo
+      description: Returns an empty instance of <xref href="Cobilas.GodotEngine.Utility.DisplayInfo" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared ReadOnly Property None As DisplayInfo
+  overload: Cobilas.GodotEngine.Utility.DisplayInfo.None*
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.#ctor(System.Int32@,OpenTK.DisplayDevice@)
+  commentId: M:Cobilas.GodotEngine.Utility.DisplayInfo.#ctor(System.Int32@,OpenTK.DisplayDevice@)
+  id: '#ctor(System.Int32@,OpenTK.DisplayDevice@)'
+  parent: Cobilas.GodotEngine.Utility.DisplayInfo
+  langs:
+  - csharp
+  - vb
+  name: DisplayInfo(in int, in DisplayDevice?)
+  nameWithType: DisplayInfo.DisplayInfo(in int, in DisplayDevice?)
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.DisplayInfo(in int, in OpenTK.DisplayDevice?)
+  type: Constructor
+  source:
+    remote:
+      path: GodotEngine.Utility/DisplayInfo.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: .ctor
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/DisplayInfo.cs
+    startLine: 33
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Starts a new instance of the object.
+  example: []
+  syntax:
+    content: public DisplayInfo(in int index, in DisplayDevice? device)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The monitor index.
+    - id: device
+      type: OpenTK.DisplayDevice
+      description: The <xref href="OpenTK.DisplayDevice" data-throw-if-not-resolved="false"></xref> that contains the screen information.
+    content.vb: Public Sub New(index As Integer, device As DisplayDevice)
+  overload: Cobilas.GodotEngine.Utility.DisplayInfo.#ctor*
+  nameWithType.vb: DisplayInfo.New(Integer, DisplayDevice)
+  fullName.vb: Cobilas.GodotEngine.Utility.DisplayInfo.New(Integer, OpenTK.DisplayDevice)
+  name.vb: New(Integer, DisplayDevice)
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.Equals(Cobilas.GodotEngine.Utility.DisplayInfo)
+  commentId: M:Cobilas.GodotEngine.Utility.DisplayInfo.Equals(Cobilas.GodotEngine.Utility.DisplayInfo)
+  id: Equals(Cobilas.GodotEngine.Utility.DisplayInfo)
+  parent: Cobilas.GodotEngine.Utility.DisplayInfo
+  langs:
+  - csharp
+  - vb
+  name: Equals(DisplayInfo)
+  nameWithType: DisplayInfo.Equals(DisplayInfo)
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.Equals(Cobilas.GodotEngine.Utility.DisplayInfo)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/DisplayInfo.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Equals
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/DisplayInfo.cs
+    startLine: 57
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(DisplayInfo other)
+    parameters:
+    - id: other
+      type: Cobilas.GodotEngine.Utility.DisplayInfo
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As DisplayInfo) As Boolean
+  overload: Cobilas.GodotEngine.Utility.DisplayInfo.Equals*
+  implements:
+  - System.IEquatable{Cobilas.GodotEngine.Utility.DisplayInfo}.Equals(Cobilas.GodotEngine.Utility.DisplayInfo)
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.Equals(System.Object)
+  commentId: M:Cobilas.GodotEngine.Utility.DisplayInfo.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Cobilas.GodotEngine.Utility.DisplayInfo
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: DisplayInfo.Equals(object)
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/DisplayInfo.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Equals
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/DisplayInfo.cs
+    startLine: 59
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Indicates whether this instance and a specified object are equal.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current instance.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Cobilas.GodotEngine.Utility.DisplayInfo.Equals*
+  nameWithType.vb: DisplayInfo.Equals(Object)
+  fullName.vb: Cobilas.GodotEngine.Utility.DisplayInfo.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.GetHashCode
+  commentId: M:Cobilas.GodotEngine.Utility.DisplayInfo.GetHashCode
+  id: GetHashCode
+  parent: Cobilas.GodotEngine.Utility.DisplayInfo
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: DisplayInfo.GetHashCode()
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/DisplayInfo.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetHashCode
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/DisplayInfo.cs
+    startLine: 61
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Returns the hash code for this instance.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer that is the hash code for this instance.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Cobilas.GodotEngine.Utility.DisplayInfo.GetHashCode*
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.Contains(Cobilas.GodotEngine.Utility.Resolution@,System.Boolean@)
+  commentId: M:Cobilas.GodotEngine.Utility.DisplayInfo.Contains(Cobilas.GodotEngine.Utility.Resolution@,System.Boolean@)
+  id: Contains(Cobilas.GodotEngine.Utility.Resolution@,System.Boolean@)
+  parent: Cobilas.GodotEngine.Utility.DisplayInfo
+  langs:
+  - csharp
+  - vb
+  name: Contains(in Resolution, in bool)
+  nameWithType: DisplayInfo.Contains(in Resolution, in bool)
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.Contains(in Cobilas.GodotEngine.Utility.Resolution, in bool)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/DisplayInfo.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Contains
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/DisplayInfo.cs
+    startLine: 66
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Allows you to check whether a certain resolution exists on this display.
+  example: []
+  syntax:
+    content: public bool Contains(in Resolution resolution, in bool includeCustomResolution = false)
+    parameters:
+    - id: resolution
+      type: Cobilas.GodotEngine.Utility.Resolution
+      description: Target resolution.
+    - id: includeCustomResolution
+      type: System.Boolean
+      description: Tells the method whether to compare with the custom resolution list.
+    return:
+      type: System.Boolean
+      description: If the resolution exists, it will return <code>true</code>.
+    content.vb: Public Function Contains(resolution As Resolution, includeCustomResolution As Boolean = False) As Boolean
+  overload: Cobilas.GodotEngine.Utility.DisplayInfo.Contains*
+  nameWithType.vb: DisplayInfo.Contains(Resolution, Boolean)
+  fullName.vb: Cobilas.GodotEngine.Utility.DisplayInfo.Contains(Cobilas.GodotEngine.Utility.Resolution, Boolean)
+  name.vb: Contains(Resolution, Boolean)
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.GetHash(Cobilas.GodotEngine.Utility.DisplayInfo@)
+  commentId: M:Cobilas.GodotEngine.Utility.DisplayInfo.GetHash(Cobilas.GodotEngine.Utility.DisplayInfo@)
+  id: GetHash(Cobilas.GodotEngine.Utility.DisplayInfo@)
+  parent: Cobilas.GodotEngine.Utility.DisplayInfo
+  langs:
+  - csharp
+  - vb
+  name: GetHash(in DisplayInfo)
+  nameWithType: DisplayInfo.GetHash(in DisplayInfo)
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.GetHash(in Cobilas.GodotEngine.Utility.DisplayInfo)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/DisplayInfo.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetHash
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/DisplayInfo.cs
+    startLine: 79
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Generates a hash from <xref href="Cobilas.GodotEngine.Utility.DisplayInfo" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static int GetHash(in DisplayInfo display)
+    parameters:
+    - id: display
+      type: Cobilas.GodotEngine.Utility.DisplayInfo
+      description: The object that will be used.
+    return:
+      type: System.Int32
+      description: Returns a hash generated from the <xref href="Cobilas.GodotEngine.Utility.DisplayInfo" data-throw-if-not-resolved="false"></xref> index and resolution list.
+    content.vb: Public Shared Function GetHash(display As DisplayInfo) As Integer
+  overload: Cobilas.GodotEngine.Utility.DisplayInfo.GetHash*
+  nameWithType.vb: DisplayInfo.GetHash(DisplayInfo)
+  fullName.vb: Cobilas.GodotEngine.Utility.DisplayInfo.GetHash(Cobilas.GodotEngine.Utility.DisplayInfo)
+  name.vb: GetHash(DisplayInfo)
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.AddCustonResolution(Cobilas.GodotEngine.Utility.Resolution@,Cobilas.GodotEngine.Utility.DisplayInfo@)
+  commentId: M:Cobilas.GodotEngine.Utility.DisplayInfo.AddCustonResolution(Cobilas.GodotEngine.Utility.Resolution@,Cobilas.GodotEngine.Utility.DisplayInfo@)
+  id: AddCustonResolution(Cobilas.GodotEngine.Utility.Resolution@,Cobilas.GodotEngine.Utility.DisplayInfo@)
+  parent: Cobilas.GodotEngine.Utility.DisplayInfo
+  langs:
+  - csharp
+  - vb
+  name: AddCustonResolution(in Resolution, in DisplayInfo)
+  nameWithType: DisplayInfo.AddCustonResolution(in Resolution, in DisplayInfo)
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.AddCustonResolution(in Cobilas.GodotEngine.Utility.Resolution, in Cobilas.GodotEngine.Utility.DisplayInfo)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/DisplayInfo.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: AddCustonResolution
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/DisplayInfo.cs
+    startLine: 93
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Adds a custom resolution to <xref href="Cobilas.GodotEngine.Utility.DisplayInfo" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static DisplayInfo AddCustonResolution(in Resolution resolution, in DisplayInfo display)
+    parameters:
+    - id: resolution
+      type: Cobilas.GodotEngine.Utility.Resolution
+      description: The resolution to be added.
+    - id: display
+      type: Cobilas.GodotEngine.Utility.DisplayInfo
+      description: The target <xref href="Cobilas.GodotEngine.Utility.DisplayInfo" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: Cobilas.GodotEngine.Utility.DisplayInfo
+      description: Returns a new, modified instance of <xref href="Cobilas.GodotEngine.Utility.DisplayInfo" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function AddCustonResolution(resolution As Resolution, display As DisplayInfo) As DisplayInfo
+  overload: Cobilas.GodotEngine.Utility.DisplayInfo.AddCustonResolution*
+  nameWithType.vb: DisplayInfo.AddCustonResolution(Resolution, DisplayInfo)
+  fullName.vb: Cobilas.GodotEngine.Utility.DisplayInfo.AddCustonResolution(Cobilas.GodotEngine.Utility.Resolution, Cobilas.GodotEngine.Utility.DisplayInfo)
+  name.vb: AddCustonResolution(Resolution, DisplayInfo)
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.ChangeCurrentResolution(Cobilas.GodotEngine.Utility.Resolution@,Cobilas.GodotEngine.Utility.DisplayInfo@)
+  commentId: M:Cobilas.GodotEngine.Utility.DisplayInfo.ChangeCurrentResolution(Cobilas.GodotEngine.Utility.Resolution@,Cobilas.GodotEngine.Utility.DisplayInfo@)
+  id: ChangeCurrentResolution(Cobilas.GodotEngine.Utility.Resolution@,Cobilas.GodotEngine.Utility.DisplayInfo@)
+  parent: Cobilas.GodotEngine.Utility.DisplayInfo
+  langs:
+  - csharp
+  - vb
+  name: ChangeCurrentResolution(in Resolution, in DisplayInfo)
+  nameWithType: DisplayInfo.ChangeCurrentResolution(in Resolution, in DisplayInfo)
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.ChangeCurrentResolution(in Cobilas.GodotEngine.Utility.Resolution, in Cobilas.GodotEngine.Utility.DisplayInfo)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/DisplayInfo.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ChangeCurrentResolution
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/DisplayInfo.cs
+    startLine: 102
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Allows you to change the current resolution of this display.
+  example: []
+  syntax:
+    content: public static DisplayInfo ChangeCurrentResolution(in Resolution resolution, in DisplayInfo display)
+    parameters:
+    - id: resolution
+      type: Cobilas.GodotEngine.Utility.Resolution
+      description: The new resolution.
+    - id: display
+      type: Cobilas.GodotEngine.Utility.DisplayInfo
+      description: The target <xref href="Cobilas.GodotEngine.Utility.DisplayInfo" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: Cobilas.GodotEngine.Utility.DisplayInfo
+      description: Returns a new, modified instance of <xref href="Cobilas.GodotEngine.Utility.DisplayInfo" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function ChangeCurrentResolution(resolution As Resolution, display As DisplayInfo) As DisplayInfo
+  overload: Cobilas.GodotEngine.Utility.DisplayInfo.ChangeCurrentResolution*
+  nameWithType.vb: DisplayInfo.ChangeCurrentResolution(Resolution, DisplayInfo)
+  fullName.vb: Cobilas.GodotEngine.Utility.DisplayInfo.ChangeCurrentResolution(Cobilas.GodotEngine.Utility.Resolution, Cobilas.GodotEngine.Utility.DisplayInfo)
+  name.vb: ChangeCurrentResolution(Resolution, DisplayInfo)
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.op_Equality(Cobilas.GodotEngine.Utility.DisplayInfo,Cobilas.GodotEngine.Utility.DisplayInfo)
+  commentId: M:Cobilas.GodotEngine.Utility.DisplayInfo.op_Equality(Cobilas.GodotEngine.Utility.DisplayInfo,Cobilas.GodotEngine.Utility.DisplayInfo)
+  id: op_Equality(Cobilas.GodotEngine.Utility.DisplayInfo,Cobilas.GodotEngine.Utility.DisplayInfo)
+  parent: Cobilas.GodotEngine.Utility.DisplayInfo
+  langs:
+  - csharp
+  - vb
+  name: operator ==(DisplayInfo, DisplayInfo)
+  nameWithType: DisplayInfo.operator ==(DisplayInfo, DisplayInfo)
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.operator ==(Cobilas.GodotEngine.Utility.DisplayInfo, Cobilas.GodotEngine.Utility.DisplayInfo)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/DisplayInfo.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Equality
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/DisplayInfo.cs
+    startLine: 109
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Indicates whether this instance is equal to another instance of the same type.
+  example: []
+  syntax:
+    content: public static bool operator ==(DisplayInfo A, DisplayInfo B)
+    parameters:
+    - id: A
+      type: Cobilas.GodotEngine.Utility.DisplayInfo
+      description: Object to be compared.
+    - id: B
+      type: Cobilas.GodotEngine.Utility.DisplayInfo
+      description: Object of comparison.
+    return:
+      type: System.Boolean
+      description: Returns the result of the comparison.
+    content.vb: Public Shared Operator =(A As DisplayInfo, B As DisplayInfo) As Boolean
+  overload: Cobilas.GodotEngine.Utility.DisplayInfo.op_Equality*
+  nameWithType.vb: DisplayInfo.=(DisplayInfo, DisplayInfo)
+  fullName.vb: Cobilas.GodotEngine.Utility.DisplayInfo.=(Cobilas.GodotEngine.Utility.DisplayInfo, Cobilas.GodotEngine.Utility.DisplayInfo)
+  name.vb: =(DisplayInfo, DisplayInfo)
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.op_Inequality(Cobilas.GodotEngine.Utility.DisplayInfo,Cobilas.GodotEngine.Utility.DisplayInfo)
+  commentId: M:Cobilas.GodotEngine.Utility.DisplayInfo.op_Inequality(Cobilas.GodotEngine.Utility.DisplayInfo,Cobilas.GodotEngine.Utility.DisplayInfo)
+  id: op_Inequality(Cobilas.GodotEngine.Utility.DisplayInfo,Cobilas.GodotEngine.Utility.DisplayInfo)
+  parent: Cobilas.GodotEngine.Utility.DisplayInfo
+  langs:
+  - csharp
+  - vb
+  name: operator !=(DisplayInfo, DisplayInfo)
+  nameWithType: DisplayInfo.operator !=(DisplayInfo, DisplayInfo)
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.operator !=(Cobilas.GodotEngine.Utility.DisplayInfo, Cobilas.GodotEngine.Utility.DisplayInfo)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/DisplayInfo.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Inequality
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/DisplayInfo.cs
+    startLine: 114
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Indicates whether this instance is different from another instance of the same type.
+  example: []
+  syntax:
+    content: public static bool operator !=(DisplayInfo A, DisplayInfo B)
+    parameters:
+    - id: A
+      type: Cobilas.GodotEngine.Utility.DisplayInfo
+      description: Object to be compared.
+    - id: B
+      type: Cobilas.GodotEngine.Utility.DisplayInfo
+      description: Object of comparison.
+    return:
+      type: System.Boolean
+      description: Returns the result of the comparison.
+    content.vb: Public Shared Operator <>(A As DisplayInfo, B As DisplayInfo) As Boolean
+  overload: Cobilas.GodotEngine.Utility.DisplayInfo.op_Inequality*
+  nameWithType.vb: DisplayInfo.<>(DisplayInfo, DisplayInfo)
+  fullName.vb: Cobilas.GodotEngine.Utility.DisplayInfo.<>(Cobilas.GodotEngine.Utility.DisplayInfo, Cobilas.GodotEngine.Utility.DisplayInfo)
+  name.vb: <>(DisplayInfo, DisplayInfo)
+references:
+- uid: Cobilas.GodotEngine.Utility
+  commentId: N:Cobilas.GodotEngine.Utility
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Utility
+  nameWithType: Cobilas.GodotEngine.Utility
+  fullName: Cobilas.GodotEngine.Utility
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+- uid: System.IEquatable{Cobilas.GodotEngine.Utility.DisplayInfo}
+  commentId: T:System.IEquatable{Cobilas.GodotEngine.Utility.DisplayInfo}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<DisplayInfo>
+  nameWithType: IEquatable<DisplayInfo>
+  fullName: System.IEquatable<Cobilas.GodotEngine.Utility.DisplayInfo>
+  nameWithType.vb: IEquatable(Of DisplayInfo)
+  fullName.vb: System.IEquatable(Of Cobilas.GodotEngine.Utility.DisplayInfo)
+  name.vb: IEquatable(Of DisplayInfo)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Cobilas.GodotEngine.Utility.DisplayInfo
+    name: DisplayInfo
+    href: Cobilas.GodotEngine.Utility.DisplayInfo.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Cobilas.GodotEngine.Utility.DisplayInfo
+    name: DisplayInfo
+    href: Cobilas.GodotEngine.Utility.DisplayInfo.html
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.Index*
+  commentId: Overload:Cobilas.GodotEngine.Utility.DisplayInfo.Index
+  href: Cobilas.GodotEngine.Utility.DisplayInfo.html#Cobilas_GodotEngine_Utility_DisplayInfo_Index
+  name: Index
+  nameWithType: DisplayInfo.Index
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.Index
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.Resolutions*
+  commentId: Overload:Cobilas.GodotEngine.Utility.DisplayInfo.Resolutions
+  href: Cobilas.GodotEngine.Utility.DisplayInfo.html#Cobilas_GodotEngine_Utility_DisplayInfo_Resolutions
+  name: Resolutions
+  nameWithType: DisplayInfo.Resolutions
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.Resolutions
+- uid: Cobilas.GodotEngine.Utility.Resolution[]
+  isExternal: true
+  href: Cobilas.GodotEngine.Utility.Resolution.html
+  name: Resolution[]
+  nameWithType: Resolution[]
+  fullName: Cobilas.GodotEngine.Utility.Resolution[]
+  nameWithType.vb: Resolution()
+  fullName.vb: Cobilas.GodotEngine.Utility.Resolution()
+  name.vb: Resolution()
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Utility.Resolution
+    name: Resolution
+    href: Cobilas.GodotEngine.Utility.Resolution.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Utility.Resolution
+    name: Resolution
+    href: Cobilas.GodotEngine.Utility.Resolution.html
+  - name: (
+  - name: )
+- uid: OpenTK.DisplayDevice
+  commentId: T:OpenTK.DisplayDevice
+  parent: OpenTK
+  isExternal: true
+  name: DisplayDevice
+  nameWithType: DisplayDevice
+  fullName: OpenTK.DisplayDevice
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.CurrentResolution*
+  commentId: Overload:Cobilas.GodotEngine.Utility.DisplayInfo.CurrentResolution
+  href: Cobilas.GodotEngine.Utility.DisplayInfo.html#Cobilas_GodotEngine_Utility_DisplayInfo_CurrentResolution
+  name: CurrentResolution
+  nameWithType: DisplayInfo.CurrentResolution
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.CurrentResolution
+- uid: Cobilas.GodotEngine.Utility.Resolution
+  commentId: T:Cobilas.GodotEngine.Utility.Resolution
+  parent: Cobilas.GodotEngine.Utility
+  href: Cobilas.GodotEngine.Utility.Resolution.html
+  name: Resolution
+  nameWithType: Resolution
+  fullName: Cobilas.GodotEngine.Utility.Resolution
+- uid: OpenTK
+  commentId: N:OpenTK
+  isExternal: true
+  name: OpenTK
+  nameWithType: OpenTK
+  fullName: OpenTK
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo
+  commentId: T:Cobilas.GodotEngine.Utility.DisplayInfo
+  parent: Cobilas.GodotEngine.Utility
+  href: Cobilas.GodotEngine.Utility.DisplayInfo.html
+  name: DisplayInfo
+  nameWithType: DisplayInfo
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.CustonResolutions*
+  commentId: Overload:Cobilas.GodotEngine.Utility.DisplayInfo.CustonResolutions
+  href: Cobilas.GodotEngine.Utility.DisplayInfo.html#Cobilas_GodotEngine_Utility_DisplayInfo_CustonResolutions
+  name: CustonResolutions
+  nameWithType: DisplayInfo.CustonResolutions
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.CustonResolutions
+- uid: Cobilas.GodotEngine.Utility.CustonResolutionList
+  commentId: T:Cobilas.GodotEngine.Utility.CustonResolutionList
+  parent: Cobilas.GodotEngine.Utility
+  href: Cobilas.GodotEngine.Utility.CustonResolutionList.html
+  name: CustonResolutionList
+  nameWithType: CustonResolutionList
+  fullName: Cobilas.GodotEngine.Utility.CustonResolutionList
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.None*
+  commentId: Overload:Cobilas.GodotEngine.Utility.DisplayInfo.None
+  href: Cobilas.GodotEngine.Utility.DisplayInfo.html#Cobilas_GodotEngine_Utility_DisplayInfo_None
+  name: None
+  nameWithType: DisplayInfo.None
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.None
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.#ctor*
+  commentId: Overload:Cobilas.GodotEngine.Utility.DisplayInfo.#ctor
+  href: Cobilas.GodotEngine.Utility.DisplayInfo.html#Cobilas_GodotEngine_Utility_DisplayInfo__ctor_System_Int32__OpenTK_DisplayDevice__
+  name: DisplayInfo
+  nameWithType: DisplayInfo.DisplayInfo
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.DisplayInfo
+  nameWithType.vb: DisplayInfo.New
+  fullName.vb: Cobilas.GodotEngine.Utility.DisplayInfo.New
+  name.vb: New
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.Equals*
+  commentId: Overload:Cobilas.GodotEngine.Utility.DisplayInfo.Equals
+  href: Cobilas.GodotEngine.Utility.DisplayInfo.html#Cobilas_GodotEngine_Utility_DisplayInfo_Equals_Cobilas_GodotEngine_Utility_DisplayInfo_
+  name: Equals
+  nameWithType: DisplayInfo.Equals
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.Equals
+- uid: System.IEquatable{Cobilas.GodotEngine.Utility.DisplayInfo}.Equals(Cobilas.GodotEngine.Utility.DisplayInfo)
+  commentId: M:System.IEquatable{Cobilas.GodotEngine.Utility.DisplayInfo}.Equals(Cobilas.GodotEngine.Utility.DisplayInfo)
+  parent: System.IEquatable{Cobilas.GodotEngine.Utility.DisplayInfo}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(DisplayInfo)
+  nameWithType: IEquatable<DisplayInfo>.Equals(DisplayInfo)
+  fullName: System.IEquatable<Cobilas.GodotEngine.Utility.DisplayInfo>.Equals(Cobilas.GodotEngine.Utility.DisplayInfo)
+  nameWithType.vb: IEquatable(Of DisplayInfo).Equals(DisplayInfo)
+  fullName.vb: System.IEquatable(Of Cobilas.GodotEngine.Utility.DisplayInfo).Equals(Cobilas.GodotEngine.Utility.DisplayInfo)
+  spec.csharp:
+  - uid: System.IEquatable{Cobilas.GodotEngine.Utility.DisplayInfo}.Equals(Cobilas.GodotEngine.Utility.DisplayInfo)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Cobilas.GodotEngine.Utility.DisplayInfo
+    name: DisplayInfo
+    href: Cobilas.GodotEngine.Utility.DisplayInfo.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Cobilas.GodotEngine.Utility.DisplayInfo}.Equals(Cobilas.GodotEngine.Utility.DisplayInfo)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Cobilas.GodotEngine.Utility.DisplayInfo
+    name: DisplayInfo
+    href: Cobilas.GodotEngine.Utility.DisplayInfo.html
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.GetHashCode*
+  commentId: Overload:Cobilas.GodotEngine.Utility.DisplayInfo.GetHashCode
+  href: Cobilas.GodotEngine.Utility.DisplayInfo.html#Cobilas_GodotEngine_Utility_DisplayInfo_GetHashCode
+  name: GetHashCode
+  nameWithType: DisplayInfo.GetHashCode
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.GetHashCode
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.Contains*
+  commentId: Overload:Cobilas.GodotEngine.Utility.DisplayInfo.Contains
+  href: Cobilas.GodotEngine.Utility.DisplayInfo.html#Cobilas_GodotEngine_Utility_DisplayInfo_Contains_Cobilas_GodotEngine_Utility_Resolution__System_Boolean__
+  name: Contains
+  nameWithType: DisplayInfo.Contains
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.Contains
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.GetHash*
+  commentId: Overload:Cobilas.GodotEngine.Utility.DisplayInfo.GetHash
+  href: Cobilas.GodotEngine.Utility.DisplayInfo.html#Cobilas_GodotEngine_Utility_DisplayInfo_GetHash_Cobilas_GodotEngine_Utility_DisplayInfo__
+  name: GetHash
+  nameWithType: DisplayInfo.GetHash
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.GetHash
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.AddCustonResolution*
+  commentId: Overload:Cobilas.GodotEngine.Utility.DisplayInfo.AddCustonResolution
+  href: Cobilas.GodotEngine.Utility.DisplayInfo.html#Cobilas_GodotEngine_Utility_DisplayInfo_AddCustonResolution_Cobilas_GodotEngine_Utility_Resolution__Cobilas_GodotEngine_Utility_DisplayInfo__
+  name: AddCustonResolution
+  nameWithType: DisplayInfo.AddCustonResolution
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.AddCustonResolution
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.ChangeCurrentResolution*
+  commentId: Overload:Cobilas.GodotEngine.Utility.DisplayInfo.ChangeCurrentResolution
+  href: Cobilas.GodotEngine.Utility.DisplayInfo.html#Cobilas_GodotEngine_Utility_DisplayInfo_ChangeCurrentResolution_Cobilas_GodotEngine_Utility_Resolution__Cobilas_GodotEngine_Utility_DisplayInfo__
+  name: ChangeCurrentResolution
+  nameWithType: DisplayInfo.ChangeCurrentResolution
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.ChangeCurrentResolution
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.op_Equality*
+  commentId: Overload:Cobilas.GodotEngine.Utility.DisplayInfo.op_Equality
+  href: Cobilas.GodotEngine.Utility.DisplayInfo.html#Cobilas_GodotEngine_Utility_DisplayInfo_op_Equality_Cobilas_GodotEngine_Utility_DisplayInfo_Cobilas_GodotEngine_Utility_DisplayInfo_
+  name: operator ==
+  nameWithType: DisplayInfo.operator ==
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.operator ==
+  nameWithType.vb: DisplayInfo.=
+  fullName.vb: Cobilas.GodotEngine.Utility.DisplayInfo.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Cobilas.GodotEngine.Utility.DisplayInfo.op_Equality*
+    name: ==
+    href: Cobilas.GodotEngine.Utility.DisplayInfo.html#Cobilas_GodotEngine_Utility_DisplayInfo_op_Equality_Cobilas_GodotEngine_Utility_DisplayInfo_Cobilas_GodotEngine_Utility_DisplayInfo_
+- uid: Cobilas.GodotEngine.Utility.DisplayInfo.op_Inequality*
+  commentId: Overload:Cobilas.GodotEngine.Utility.DisplayInfo.op_Inequality
+  href: Cobilas.GodotEngine.Utility.DisplayInfo.html#Cobilas_GodotEngine_Utility_DisplayInfo_op_Inequality_Cobilas_GodotEngine_Utility_DisplayInfo_Cobilas_GodotEngine_Utility_DisplayInfo_
+  name: operator !=
+  nameWithType: DisplayInfo.operator !=
+  fullName: Cobilas.GodotEngine.Utility.DisplayInfo.operator !=
+  nameWithType.vb: DisplayInfo.<>
+  fullName.vb: Cobilas.GodotEngine.Utility.DisplayInfo.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Cobilas.GodotEngine.Utility.DisplayInfo.op_Inequality*
+    name: '!='
+    href: Cobilas.GodotEngine.Utility.DisplayInfo.html#Cobilas_GodotEngine_Utility_DisplayInfo_op_Inequality_Cobilas_GodotEngine_Utility_DisplayInfo_Cobilas_GodotEngine_Utility_DisplayInfo_

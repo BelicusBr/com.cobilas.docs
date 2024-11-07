@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Struct Scene | Cobilas Documentation ">
       
-      
+      <meta name="description" content="Contains the scene information.">
       <link rel="icon" href="../images/favicon-96x96.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.godot.utility/new/main.dev/apiSpec/new?filename=Cobilas_GodotEngine_Utility_Scene_Scene.md&amp;value=---%0Auid%3A%20Cobilas.GodotEngine.Utility.Scene.Scene%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.godot.utility/new/main/apiSpec/new?filename=Cobilas_GodotEngine_Utility_Scene_Scene.md&amp;value=---%0Auid%3A%20Cobilas.GodotEngine.Utility.Scene.Scene%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Cobilas_GodotEngine_Utility_Scene_Scene" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene" class="text-break">
-Struct Scene  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L5"><i class="bi bi-code-slash"></i></a>
+Struct Scene  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/Scene.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,31 +97,31 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
   <dl><dt>Assembly</dt><dd>com.cobilas.godot.utility.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Contains the scene information.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct Scene</code></pre>
+    <pre><code class="lang-csharp hljs">public struct Scene : IEquatable&lt;Scene&gt;, IEquatable&lt;int&gt;, IEquatable&lt;string&gt;</code></pre>
   </div>
 
 
 
 
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.Scene.Scene.html">Scene</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
-    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
@@ -144,16 +144,17 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Cobilas_GodotEngine_Utility_Scene_Scene__ctor_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.#ctor*"></a>
 
-  <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene__ctor_System_String_System_Int32_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.#ctor(System.String,System.Int32)">
-  Scene(string, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene__ctor_System_String_System_Int32_Godot_Node_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.#ctor(System.String,System.Int32,Godot.Node)">
+  Scene(string, int, Node)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/Scene.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Starts a new instance of the object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Scene(string scenePath, int index)</code></pre>
+    <pre><code class="lang-csharp hljs">public Scene(string scenePath, int index, Node sceneNode)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -161,6 +162,8 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
     <dt><code>scenePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
     <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>sceneNode</code> <span class="xref">Node</span></dt>
     <dd></dd>
   </dl>
 
@@ -179,14 +182,48 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
 </h2>
 
 
+  <a id="Cobilas_GodotEngine_Utility_Scene_Scene_Empty_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.Empty*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_Empty" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.Empty">
+  Empty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/Scene.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Empty scenario.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Scene Empty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.Scene.Scene.html">Scene</a></dt>
+    <dd><p>Returns a representation of an empty scenario.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Cobilas_GodotEngine_Utility_Scene_Scene_Index_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.Index*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_Index" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.Index">
   Index
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/Scene.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The scene index.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -200,7 +237,8 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>Returns the scene index.</p>
+</dd>
   </dl>
 
 
@@ -214,10 +252,11 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_Name" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.Name">
   Name
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/Scene.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The name of the scene file.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -231,13 +270,20 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>Returns a string containing the name of the scene file with its extension.</p>
+</dd>
   </dl>
 
 
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>path contains one or more of the invalid characters defined in <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.path.getinvalidpathchars">GetInvalidPathChars()</a>.</p>
+</dd>
+  </dl>
 
 
 
@@ -245,10 +291,11 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_NameWithoutExtension" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.NameWithoutExtension">
   NameWithoutExtension
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/Scene.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The name of the scene file without the extension.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -262,7 +309,47 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>Returns a string containing the name of the scene file without its extension.</p>
+</dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>path contains one or more of the invalid characters defined in <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.path.getinvalidpathchars">GetInvalidPathChars()</a>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Scene_Scene_SceneNode_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.SceneNode*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_SceneNode" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.SceneNode">
+  SceneNode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/Scene.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores the root <span class="xref">Godot.Node</span> of the scenario.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Node SceneNode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Node</span></dt>
+    <dd><p>Returns a <span class="xref">Godot.Node</span> type object that is the root of the scenario.</p>
+</dd>
   </dl>
 
 
@@ -276,10 +363,11 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_ScenePath" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.ScenePath">
   ScenePath
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/Scene.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The path of the scene file.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -293,8 +381,567 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the full or relative path of the scene file.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_Utility_Scene_Scene_Equals_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.Equals*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_Equals_Cobilas_GodotEngine_Utility_Scene_Scene_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.Equals(Cobilas.GodotEngine.Utility.Scene.Scene)">
+  Equals(Scene)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/Scene.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool Equals(Scene other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Scene.Scene.html">Scene</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Scene_Scene_Equals_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.Equals*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_Equals_System_Int32_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.Equals(System.Int32)">
+  Equals(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/Scene.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool Equals(int other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Scene_Scene_Equals_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.Equals*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_Equals_System_Object_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/Scene.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance and a specified object are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override readonly bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current instance.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Scene_Scene_Equals_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.Equals*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_Equals_System_String_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.Equals(System.String)">
+  Equals(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/Scene.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool Equals(string other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Scene_Scene_GetHashCode_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.GetHashCode*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_GetHashCode" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/Scene.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the hash code for this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override readonly int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A 32-bit signed integer that is the hash code for this instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Scene_Scene_ToString_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.ToString*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_ToString" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/Scene.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the fully qualified type name of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override readonly string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The fully qualified type name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_Utility_Scene_Scene_op_Equality_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.op_Equality*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_op_Equality_Cobilas_GodotEngine_Utility_Scene_Scene_Cobilas_GodotEngine_Utility_Scene_Scene_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.op_Equality(Cobilas.GodotEngine.Utility.Scene.Scene,Cobilas.GodotEngine.Utility.Scene.Scene)">
+  operator ==(Scene, Scene)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/Scene.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance is equal to another instance of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Scene left, Scene right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Scene.Scene.html">Scene</a></dt>
+    <dd><p>Object to be compared.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Scene.Scene.html">Scene</a></dt>
+    <dd><p>Object of comparison.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns the result of the comparison.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Scene_Scene_op_Equality_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.op_Equality*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_op_Equality_Cobilas_GodotEngine_Utility_Scene_Scene_System_Int32_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.op_Equality(Cobilas.GodotEngine.Utility.Scene.Scene,System.Int32)">
+  operator ==(Scene, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/Scene.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance is equal to another instance of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Scene left, int right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Scene.Scene.html">Scene</a></dt>
+    <dd><p>Object to be compared.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Object of comparison.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns the result of the comparison.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Scene_Scene_op_Equality_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.op_Equality*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_op_Equality_Cobilas_GodotEngine_Utility_Scene_Scene_System_String_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.op_Equality(Cobilas.GodotEngine.Utility.Scene.Scene,System.String)">
+  operator ==(Scene, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/Scene.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance is equal to another instance of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Scene left, string right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Scene.Scene.html">Scene</a></dt>
+    <dd><p>Object to be compared.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Object of comparison.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns the result of the comparison.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Scene_Scene_op_Explicit_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.op_Explicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_op_Explicit_Cobilas_GodotEngine_Utility_Scene_Scene__System_Int32" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.op_Explicit(Cobilas.GodotEngine.Utility.Scene.Scene)~System.Int32">
+  explicit operator int(Scene)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/Scene.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Explicit conversion operator.(<a class="xref" href="Cobilas.GodotEngine.Utility.Scene.Scene.html">Scene</a> to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator int(Scene scene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Scene.Scene.html">Scene</a></dt>
+    <dd><p>Object to be converted.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Scene_Scene_op_Explicit_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.op_Explicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_op_Explicit_Cobilas_GodotEngine_Utility_Scene_Scene__System_String" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.op_Explicit(Cobilas.GodotEngine.Utility.Scene.Scene)~System.String">
+  explicit operator string(Scene)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/Scene.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Explicit conversion operator.(<a class="xref" href="Cobilas.GodotEngine.Utility.Scene.Scene.html">Scene</a> to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator string(Scene value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Scene.Scene.html">Scene</a></dt>
+    <dd><p>Object to be converted.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Scene_Scene_op_Inequality_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.op_Inequality*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_op_Inequality_Cobilas_GodotEngine_Utility_Scene_Scene_Cobilas_GodotEngine_Utility_Scene_Scene_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.op_Inequality(Cobilas.GodotEngine.Utility.Scene.Scene,Cobilas.GodotEngine.Utility.Scene.Scene)">
+  operator !=(Scene, Scene)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/Scene.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance is different from another instance of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Scene left, Scene right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Scene.Scene.html">Scene</a></dt>
+    <dd><p>Object to be compared.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Scene.Scene.html">Scene</a></dt>
+    <dd><p>Object of comparison.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns the result of the comparison.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Scene_Scene_op_Inequality_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.op_Inequality*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_op_Inequality_Cobilas_GodotEngine_Utility_Scene_Scene_System_Int32_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.op_Inequality(Cobilas.GodotEngine.Utility.Scene.Scene,System.Int32)">
+  operator !=(Scene, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/Scene.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance is different from another instance of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Scene left, int right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Scene.Scene.html">Scene</a></dt>
+    <dd><p>Object to be compared.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Object of comparison.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns the result of the comparison.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_Scene_Scene_op_Inequality_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.op_Inequality*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_op_Inequality_Cobilas_GodotEngine_Utility_Scene_Scene_System_String_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.op_Inequality(Cobilas.GodotEngine.Utility.Scene.Scene,System.String)">
+  operator !=(Scene, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/Scene.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance is different from another instance of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Scene left, string right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Cobilas.GodotEngine.Utility.Scene.Scene.html">Scene</a></dt>
+    <dd><p>Object to be compared.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Object of comparison.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns the result of the comparison.</p>
+</dd>
+  </dl>
+
+
+
 
 
 
@@ -307,7 +954,7 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L5" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/Scene/Scene.cs/#L6" class="edit-link">Edit this page</a>
         </div>
 
 

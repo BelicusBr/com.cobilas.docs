@@ -5,8 +5,8 @@ items:
   id: Camera2D_GD_CB_Extension
   parent: Godot
   children:
-  - Godot.Camera2D_GD_CB_Extension.ScreenToWorldPoint(Godot.Camera2D,Godot.Vector2)
-  - Godot.Camera2D_GD_CB_Extension.WorldToScreenPoint(Godot.Camera2D,Godot.Vector2)
+  - Godot.Camera2D_GD_CB_Extension.ScreenToWorldPoint(Godot.Camera2D,Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  - Godot.Camera2D_GD_CB_Extension.WorldToScreenPoint(Godot.Camera2D,Cobilas.GodotEngine.Utility.Numerics.Vector2D)
   langs:
   - csharp
   - vb
@@ -16,15 +16,17 @@ items:
   type: Class
   source:
     remote:
-      path: GodotEngine.Utility/Extension/Camera2D_GD_CB_Extension.cs
-      branch: main.dev
+      path: Godot/Camera2D_GD_CB_Extension.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Camera2D_GD_CB_Extension
-    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Extension/Camera2D_GD_CB_Extension.cs
-    startLine: 4
+    path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Camera2D_GD_CB_Extension.cs
+    startLine: 5
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
+  summary: Extension for <xref href="Godot.Camera2D" data-throw-if-not-resolved="false"></xref> class.
+  example: []
   syntax:
     content: public static class Camera2D_GD_CB_Extension
     content.vb: Public Module Camera2D_GD_CB_Extension
@@ -38,75 +40,92 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-- uid: Godot.Camera2D_GD_CB_Extension.ScreenToWorldPoint(Godot.Camera2D,Godot.Vector2)
-  commentId: M:Godot.Camera2D_GD_CB_Extension.ScreenToWorldPoint(Godot.Camera2D,Godot.Vector2)
-  id: ScreenToWorldPoint(Godot.Camera2D,Godot.Vector2)
+- uid: Godot.Camera2D_GD_CB_Extension.ScreenToWorldPoint(Godot.Camera2D,Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  commentId: M:Godot.Camera2D_GD_CB_Extension.ScreenToWorldPoint(Godot.Camera2D,Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  id: ScreenToWorldPoint(Godot.Camera2D,Cobilas.GodotEngine.Utility.Numerics.Vector2D)
   isExtensionMethod: true
   parent: Godot.Camera2D_GD_CB_Extension
   langs:
   - csharp
   - vb
-  name: ScreenToWorldPoint(Camera2D, Vector2)
-  nameWithType: Camera2D_GD_CB_Extension.ScreenToWorldPoint(Camera2D, Vector2)
-  fullName: Godot.Camera2D_GD_CB_Extension.ScreenToWorldPoint(Godot.Camera2D, Godot.Vector2)
+  name: ScreenToWorldPoint(Camera2D, Vector2D)
+  nameWithType: Camera2D_GD_CB_Extension.ScreenToWorldPoint(Camera2D, Vector2D)
+  fullName: Godot.Camera2D_GD_CB_Extension.ScreenToWorldPoint(Godot.Camera2D, Cobilas.GodotEngine.Utility.Numerics.Vector2D)
   type: Method
   source:
     remote:
-      path: GodotEngine.Utility/Extension/Camera2D_GD_CB_Extension.cs
-      branch: main.dev
+      path: Godot/Camera2D_GD_CB_Extension.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ScreenToWorldPoint
-    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Extension/Camera2D_GD_CB_Extension.cs
-    startLine: 5
+    path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Camera2D_GD_CB_Extension.cs
+    startLine: 10
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
+  summary: Converts a position on the screen to a position in the 2D world.
+  example: []
   syntax:
-    content: public static Vector2 ScreenToWorldPoint(this Camera2D C, Vector2 mousePosition)
+    content: public static Vector2D ScreenToWorldPoint(this Camera2D C, Vector2D mousePosition)
     parameters:
     - id: C
       type: Godot.Camera2D
+      description: The 2D camera that will be used for conversion.
     - id: mousePosition
-      type: Godot.Vector2
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+      description: The position on the screen that will be converted.
     return:
-      type: Godot.Vector2
-    content.vb: Public Shared Function ScreenToWorldPoint(C As Camera2D, mousePosition As Vector2) As Vector2
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+      description: Return a two-dimensional vector with the result of converting the screen position to a position in the 2D world.
+    content.vb: Public Shared Function ScreenToWorldPoint(C As Camera2D, mousePosition As Vector2D) As Vector2D
   overload: Godot.Camera2D_GD_CB_Extension.ScreenToWorldPoint*
-- uid: Godot.Camera2D_GD_CB_Extension.WorldToScreenPoint(Godot.Camera2D,Godot.Vector2)
-  commentId: M:Godot.Camera2D_GD_CB_Extension.WorldToScreenPoint(Godot.Camera2D,Godot.Vector2)
-  id: WorldToScreenPoint(Godot.Camera2D,Godot.Vector2)
+- uid: Godot.Camera2D_GD_CB_Extension.WorldToScreenPoint(Godot.Camera2D,Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  commentId: M:Godot.Camera2D_GD_CB_Extension.WorldToScreenPoint(Godot.Camera2D,Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  id: WorldToScreenPoint(Godot.Camera2D,Cobilas.GodotEngine.Utility.Numerics.Vector2D)
   isExtensionMethod: true
   parent: Godot.Camera2D_GD_CB_Extension
   langs:
   - csharp
   - vb
-  name: WorldToScreenPoint(Camera2D, Vector2)
-  nameWithType: Camera2D_GD_CB_Extension.WorldToScreenPoint(Camera2D, Vector2)
-  fullName: Godot.Camera2D_GD_CB_Extension.WorldToScreenPoint(Godot.Camera2D, Godot.Vector2)
+  name: WorldToScreenPoint(Camera2D, Vector2D)
+  nameWithType: Camera2D_GD_CB_Extension.WorldToScreenPoint(Camera2D, Vector2D)
+  fullName: Godot.Camera2D_GD_CB_Extension.WorldToScreenPoint(Godot.Camera2D, Cobilas.GodotEngine.Utility.Numerics.Vector2D)
   type: Method
   source:
     remote:
-      path: GodotEngine.Utility/Extension/Camera2D_GD_CB_Extension.cs
-      branch: main.dev
+      path: Godot/Camera2D_GD_CB_Extension.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: WorldToScreenPoint
-    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Extension/Camera2D_GD_CB_Extension.cs
-    startLine: 15
+    path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Camera2D_GD_CB_Extension.cs
+    startLine: 23
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
+  summary: Converts a position in the 2D world to a position on the screen.
+  example: []
   syntax:
-    content: public static Vector2 WorldToScreenPoint(this Camera2D C, Vector2 position)
+    content: public static Vector2D WorldToScreenPoint(this Camera2D C, Vector2D position)
     parameters:
     - id: C
       type: Godot.Camera2D
+      description: The 2D camera that will be used for conversion.
     - id: position
-      type: Godot.Vector2
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+      description: The position of the 2D world that will be converted.
     return:
-      type: Godot.Vector2
-    content.vb: Public Shared Function WorldToScreenPoint(C As Camera2D, position As Vector2) As Vector2
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+      description: Returns a two-dimensional vector with the result of converting the 2D world position to a screen position.
+    content.vb: Public Shared Function WorldToScreenPoint(C As Camera2D, position As Vector2D) As Vector2D
   overload: Godot.Camera2D_GD_CB_Extension.WorldToScreenPoint*
 references:
+- uid: Godot.Camera2D
+  commentId: T:Godot.Camera2D
+  parent: Godot
+  isExternal: true
+  name: Camera2D
+  nameWithType: Camera2D
+  fullName: Godot.Camera2D
 - uid: Godot
   commentId: N:Godot
   href: Godot.html
@@ -352,27 +371,58 @@ references:
   fullName: System
 - uid: Godot.Camera2D_GD_CB_Extension.ScreenToWorldPoint*
   commentId: Overload:Godot.Camera2D_GD_CB_Extension.ScreenToWorldPoint
-  href: Godot.Camera2D_GD_CB_Extension.html#Godot_Camera2D_GD_CB_Extension_ScreenToWorldPoint_Godot_Camera2D_Godot_Vector2_
+  href: Godot.Camera2D_GD_CB_Extension.html#Godot_Camera2D_GD_CB_Extension_ScreenToWorldPoint_Godot_Camera2D_Cobilas_GodotEngine_Utility_Numerics_Vector2D_
   name: ScreenToWorldPoint
   nameWithType: Camera2D_GD_CB_Extension.ScreenToWorldPoint
   fullName: Godot.Camera2D_GD_CB_Extension.ScreenToWorldPoint
-- uid: Godot.Camera2D
-  commentId: T:Godot.Camera2D
-  parent: Godot
-  isExternal: true
-  name: Camera2D
-  nameWithType: Camera2D
-  fullName: Godot.Camera2D
-- uid: Godot.Vector2
-  commentId: T:Godot.Vector2
-  parent: Godot
-  isExternal: true
-  name: Vector2
-  nameWithType: Vector2
-  fullName: Godot.Vector2
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+  commentId: T:Cobilas.GodotEngine.Utility.Numerics.Vector2D
+  parent: Cobilas.GodotEngine.Utility.Numerics
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector2D.html
+  name: Vector2D
+  nameWithType: Vector2D
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+- uid: Cobilas.GodotEngine.Utility.Numerics
+  commentId: N:Cobilas.GodotEngine.Utility.Numerics
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Utility.Numerics
+  nameWithType: Cobilas.GodotEngine.Utility.Numerics
+  fullName: Cobilas.GodotEngine.Utility.Numerics
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.Numerics
+    name: Numerics
+    href: Cobilas.GodotEngine.Utility.Numerics.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.Numerics
+    name: Numerics
+    href: Cobilas.GodotEngine.Utility.Numerics.html
 - uid: Godot.Camera2D_GD_CB_Extension.WorldToScreenPoint*
   commentId: Overload:Godot.Camera2D_GD_CB_Extension.WorldToScreenPoint
-  href: Godot.Camera2D_GD_CB_Extension.html#Godot_Camera2D_GD_CB_Extension_WorldToScreenPoint_Godot_Camera2D_Godot_Vector2_
+  href: Godot.Camera2D_GD_CB_Extension.html#Godot_Camera2D_GD_CB_Extension_WorldToScreenPoint_Godot_Camera2D_Cobilas_GodotEngine_Utility_Numerics_Vector2D_
   name: WorldToScreenPoint
   nameWithType: Camera2D_GD_CB_Extension.WorldToScreenPoint
   fullName: Godot.Camera2D_GD_CB_Extension.WorldToScreenPoint
