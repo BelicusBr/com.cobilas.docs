@@ -101,21 +101,18 @@ bootPriority: Represents the boot order
 name:The name of the object
 subPriority: And the execution priority order.
 */
-[RunTimeInitializationClass(Priority bootPriority, string name, int subPriority)]
-[RunTimeInitializationClass(Priority bootPriority)]
-[RunTimeInitializationClass(Priority bootPriority, string name)]
-[RunTimeInitializationClass(string name, int subPriority)]
-[RunTimeInitializationClass(string name)]
+//RunTimeInitializationClassAttribute(string? name, Priority bootPriority = Priority.StartBefore, int subPriority = 0, bool lastBoot = false)
+[RunTimeInitializationClassAttribute(string?, [Priority:Priority.StartBefore], [int:0], [bool:false])]
 [RunTimeInitializationClass()]
 </code></pre>
 <h2 id="the-cobilas-godot-utility-is-on-nugetorg">The <a href="https://www.nuget.org/packages/Cobilas.Godot.Utility/">Cobilas Godot Utility</a> is on nuget.org</h2>
 <p>To include the package, open the <code>.csproj</code> file and add it.</p>
 <pre><code class="lang-xml">&lt;ItemGroup&gt;
-  &lt;PackageReference Include=&quot;Cobilas.Godot.Utility&quot; Version=&quot;1.7.0&quot; /&gt;
+  &lt;PackageReference Include=&quot;Cobilas.Godot.Utility&quot; Version=&quot;4.1.0&quot; /&gt;
 &lt;/ItemGroup&gt;
 </code></pre>
 <p>Or use command line.</p>
-<pre><code>dotnet add package Cobilas.Godot.Utility --version 1.7.0
+<pre><code>dotnet add package Cobilas.Godot.Utility --version 4.1.0
 </code></pre>
 
 </article>

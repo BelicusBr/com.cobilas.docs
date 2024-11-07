@@ -30,21 +30,18 @@ bootPriority: Represents the boot order
 name:The name of the object
 subPriority: And the execution priority order.
 */
-[RunTimeInitializationClass(Priority bootPriority, string name, int subPriority)]
-[RunTimeInitializationClass(Priority bootPriority)]
-[RunTimeInitializationClass(Priority bootPriority, string name)]
-[RunTimeInitializationClass(string name, int subPriority)]
-[RunTimeInitializationClass(string name)]
+//RunTimeInitializationClassAttribute(string? name, Priority bootPriority = Priority.StartBefore, int subPriority = 0, bool lastBoot = false)
+[RunTimeInitializationClassAttribute(string?, [Priority:Priority.StartBefore], [int:0], [bool:false])]
 [RunTimeInitializationClass()]
 ```
 ## The [Cobilas Godot Utility](https://www.nuget.org/packages/Cobilas.Godot.Utility/) is on nuget.org
 To include the package, open the `.csproj` file and add it.
 ```xml
 <ItemGroup>
-  <PackageReference Include="Cobilas.Godot.Utility" Version="1.7.0" />
+  <PackageReference Include="Cobilas.Godot.Utility" Version="4.1.0" />
 </ItemGroup>
 ```
 Or use command line.
 ```
-dotnet add package Cobilas.Godot.Utility --version 1.7.0
+dotnet add package Cobilas.Godot.Utility --version 4.1.0
 ```
