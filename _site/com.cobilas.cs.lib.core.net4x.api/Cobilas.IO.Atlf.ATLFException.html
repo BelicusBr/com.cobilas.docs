@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ATLFException | Cobilas Documentation ">
       
-      
+      <meta name="description" content="Class to generate ATLF exceptions.">
       <link rel="icon" href="../images/favicon-96x96.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Cobilas_IO_Atlf_ATLFException" data-uid="Cobilas.IO.Atlf.ATLFException" class="text-break">
-Class ATLFException  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/IO/Atlf/ATLFException.cs/#L5"><i class="bi bi-code-slash"></i></a>
+Class ATLFException  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/IO/Atlf/ATLFException.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,12 +97,12 @@ Class ATLFException  <a class="header-action link-secondary" title="View source"
   <dl><dt>Assembly</dt><dd>Cobilas.Core.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Class to generate ATLF exceptions.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Serializable]
-public class ATLFException : Exception, ISerializable, _Exception</code></pre>
+    <pre><code class="lang-csharp hljs">public class ATLFException : Exception, ISerializable</code></pre>
   </div>
 
 
@@ -121,7 +121,6 @@ public class ATLFException : Exception, ISerializable, _Exception</code></pre>
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices._exception">_Exception</a></div>
     </dd>
   </dl>
 
@@ -133,37 +132,34 @@ public class ATLFException : Exception, ISerializable, _Exception</code></pre>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception">Exception.GetBaseException()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.tostring">Exception.ToString()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.getobjectdata">Exception.GetObjectData(SerializationInfo, StreamingContext)</a>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.gettype">Exception.GetType()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.message">Exception.Message</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.tostring">Exception.ToString()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.data">Exception.Data</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.helplink">Exception.HelpLink</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.hresult">Exception.HResult</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.innerexception">Exception.InnerException</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.targetsite">Exception.TargetSite</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.stacktrace">Exception.StackTrace</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.helplink">Exception.HelpLink</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.message">Exception.Message</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.source">Exception.Source</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.hresult">Exception.HResult</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.stacktrace">Exception.StackTrace</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.targetsite">Exception.TargetSite</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.serializeobjectstate">Exception.SerializeObjectState</a>
@@ -175,13 +171,13 @@ public class ATLFException : Exception, ISerializable, _Exception</code></pre>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
   </dd></dl>
 
@@ -223,10 +219,11 @@ public class ATLFException : Exception, ISerializable, _Exception</code></pre>
 
   <h3 id="Cobilas_IO_Atlf_ATLFException__ctor" data-uid="Cobilas.IO.Atlf.ATLFException.#ctor">
   ATLFException()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/IO/Atlf/ATLFException.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/IO/Atlf/ATLFException.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -249,22 +246,26 @@ public class ATLFException : Exception, ISerializable, _Exception</code></pre>
 
   <h3 id="Cobilas_IO_Atlf_ATLFException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="Cobilas.IO.Atlf.ATLFException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
   ATLFException(SerializationInfo, StreamingContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/IO/Atlf/ATLFException.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/IO/Atlf/ATLFException.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a> class with serialized data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ATLFException(SerializationInfo info, StreamingContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This API supports obsolete formatter-based serialization. It should not be called or extended by application code.&quot;, DiagnosticId = &quot;SYSLIB0051&quot;)]
+protected ATLFException(SerializationInfo info, StreamingContext context)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>info</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> that holds the serialized object data about the exception being thrown.</p>
+</dd>
     <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> that contains contextual information about the source or destination.</p>
+</dd>
   </dl>
 
 
@@ -275,6 +276,15 @@ public class ATLFException : Exception, ISerializable, _Exception</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">info</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationexception">SerializationException</a></dt>
+    <dd><p>The class name is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception.hresult">HResult</a> is zero (0).</p>
+</dd>
+  </dl>
 
 
 
@@ -282,10 +292,11 @@ public class ATLFException : Exception, ISerializable, _Exception</code></pre>
 
   <h3 id="Cobilas_IO_Atlf_ATLFException__ctor_System_String_" data-uid="Cobilas.IO.Atlf.ATLFException.#ctor(System.String)">
   ATLFException(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/IO/Atlf/ATLFException.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/IO/Atlf/ATLFException.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a> class with a specified error message.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -295,7 +306,8 @@ public class ATLFException : Exception, ISerializable, _Exception</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The message that describes the error.</p>
+</dd>
   </dl>
 
 
@@ -313,10 +325,11 @@ public class ATLFException : Exception, ISerializable, _Exception</code></pre>
 
   <h3 id="Cobilas_IO_Atlf_ATLFException__ctor_System_String_System_Exception_" data-uid="Cobilas.IO.Atlf.ATLFException.#ctor(System.String,System.Exception)">
   ATLFException(string, Exception)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/IO/Atlf/ATLFException.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/IO/Atlf/ATLFException.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a> class with a specified error message and a reference to the inner exception that is the cause of this exception.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -326,7 +339,8 @@ public class ATLFException : Exception, ISerializable, _Exception</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The error message that explains the reason for the exception.</p>
+</dd>
     <dt><code>inner</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
     <dd></dd>
   </dl>
@@ -350,7 +364,7 @@ public class ATLFException : Exception, ISerializable, _Exception</code></pre>
 
   <h3 id="Cobilas_IO_Atlf_ATLFException_ATLFClosed" data-uid="Cobilas.IO.Atlf.ATLFException.ATLFClosed">
   ATLFClosed()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/IO/Atlf/ATLFException.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/IO/Atlf/ATLFException.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>msg:The ATLFWriter object has already been closed.</p>
@@ -382,7 +396,7 @@ public class ATLFException : Exception, ISerializable, _Exception</code></pre>
 
   <h3 id="Cobilas_IO_Atlf_ATLFException_ATLFFlowAfterClosing" data-uid="Cobilas.IO.Atlf.ATLFException.ATLFFlowAfterClosing">
   ATLFFlowAfterClosing()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/IO/Atlf/ATLFException.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/IO/Atlf/ATLFException.cs/#L40"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>msg:It is not possible to release resources to the flow after closing the ATLF object.</p>
@@ -414,10 +428,11 @@ public class ATLFException : Exception, ISerializable, _Exception</code></pre>
 
   <h3 id="Cobilas_IO_Atlf_ATLFException_ATLFReaderAfterClosing" data-uid="Cobilas.IO.Atlf.ATLFException.ATLFReaderAfterClosing">
   ATLFReaderAfterClosing()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/IO/Atlf/ATLFException.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/IO/Atlf/ATLFException.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>msg:The read operation cannot be done after closing the ATLF object!</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -445,10 +460,11 @@ public class ATLFException : Exception, ISerializable, _Exception</code></pre>
 
   <h3 id="Cobilas_IO_Atlf_ATLFException_ATLFReaderTagAfterClosing" data-uid="Cobilas.IO.Atlf.ATLFException.ATLFReaderTagAfterClosing">
   ATLFReaderTagAfterClosing()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/IO/Atlf/ATLFException.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/IO/Atlf/ATLFException.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>msg:The tag reading operation cannot be done after closing the ATLF object!</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -476,10 +492,11 @@ public class ATLFException : Exception, ISerializable, _Exception</code></pre>
 
   <h3 id="Cobilas_IO_Atlf_ATLFException_ATLFTagsAfterClosing" data-uid="Cobilas.IO.Atlf.ATLFException.ATLFTagsAfterClosing">
   ATLFTagsAfterClosing()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/IO/Atlf/ATLFException.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/IO/Atlf/ATLFException.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>msg:You cannot add new tags to the stream after closing the ATLF object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -507,10 +524,11 @@ public class ATLFException : Exception, ISerializable, _Exception</code></pre>
 
   <h3 id="Cobilas_IO_Atlf_ATLFException_GetATLFException_System_String_System_Object___" data-uid="Cobilas.IO.Atlf.ATLFException.GetATLFException(System.String,System.Object[])">
   GetATLFException(string, params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/IO/Atlf/ATLFException.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/IO/Atlf/ATLFException.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>I build an exception <a class="xref" href="Cobilas.IO.Atlf.ATLFException.html">ATLFException</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -541,11 +559,54 @@ public class ATLFException : Exception, ISerializable, _Exception</code></pre>
 
 
 
+  <a id="Cobilas_IO_Atlf_ATLFException_GetObjectData_" data-uid="Cobilas.IO.Atlf.ATLFException.GetObjectData*"></a>
+
+  <h3 id="Cobilas_IO_Atlf_ATLFException_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="Cobilas.IO.Atlf.ATLFException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+  GetObjectData(SerializationInfo, StreamingContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/IO/Atlf/ATLFException.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>When overridden in a derived class, sets the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> with information about the exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This API supports obsolete formatter-based serialization. It should not be called or extended by application code.&quot;, DiagnosticId = &quot;SYSLIB0051&quot;)]
+public override void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>info</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> that holds the serialized object data about the exception being thrown.</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> that contains contextual information about the source or destination.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The <code class="paramref">info</code> parameter is a null reference (<code>Nothing</code> in Visual Basic).</p>
+</dd>
+  </dl>
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/IO/Atlf/ATLFException.cs/#L5" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/IO/Atlf/ATLFException.cs/#L6" class="edit-link">Edit this page</a>
         </div>
 
 

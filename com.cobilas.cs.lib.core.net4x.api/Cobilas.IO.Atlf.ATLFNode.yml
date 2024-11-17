@@ -19,11 +19,11 @@ items:
   type: Struct
   source:
     remote:
-      path: Runtime/IO/Atlf/ATLFNode.cs
+      path: Cobilas/IO/Atlf/ATLFNode.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ATLFNode
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFNode.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/ATLFNode.cs
     startLine: 5
   assemblies:
   - Cobilas.Core
@@ -39,8 +39,8 @@ items:
   - System.ValueType.Equals(System.Object)
   - System.ValueType.GetHashCode
   - System.Object.Equals(System.Object,System.Object)
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
   extensionMethods:
   - System.Object.System.Object_CB_Extension.CompareType(System.Type)
   - System.Object.System.Object_CB_Extension.CompareType(System.Type[])
@@ -62,17 +62,19 @@ items:
   type: Property
   source:
     remote:
-      path: Runtime/IO/Atlf/ATLFNode.cs
+      path: Cobilas/IO/Atlf/ATLFNode.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Name
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFNode.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/ATLFNode.cs
     startLine: 7
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf
+  summary: The name of the node.
+  example: []
   syntax:
-    content: public string Name { get; }
+    content: public readonly string Name { get; }
     parameters: []
     return:
       type: System.String
@@ -91,17 +93,19 @@ items:
   type: Property
   source:
     remote:
-      path: Runtime/IO/Atlf/ATLFNode.cs
+      path: Cobilas/IO/Atlf/ATLFNode.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Value
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFNode.cs
-    startLine: 8
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/ATLFNode.cs
+    startLine: 9
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf
+  summary: The value of the node.
+  example: []
   syntax:
-    content: public string Value { get; }
+    content: public readonly string Value { get; }
     parameters: []
     return:
       type: System.String
@@ -120,17 +124,19 @@ items:
   type: Property
   source:
     remote:
-      path: Runtime/IO/Atlf/ATLFNode.cs
+      path: Cobilas/IO/Atlf/ATLFNode.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: NodeType
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFNode.cs
-    startLine: 9
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/ATLFNode.cs
+    startLine: 11
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf
+  summary: The type of node.
+  example: []
   syntax:
-    content: public ATLFNodeType NodeType { get; }
+    content: public readonly ATLFNodeType NodeType { get; }
     parameters: []
     return:
       type: Cobilas.IO.Atlf.ATLFNodeType
@@ -149,12 +155,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/IO/Atlf/ATLFNode.cs
+      path: Cobilas/IO/Atlf/ATLFNode.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Dispose
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFNode.cs
-    startLine: 17
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/ATLFNode.cs
+    startLine: 19
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf
@@ -179,19 +185,19 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/IO/Atlf/ATLFNode.cs
+      path: Cobilas/IO/Atlf/ATLFNode.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToString
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFNode.cs
-    startLine: 23
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/ATLFNode.cs
+    startLine: 25
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf
   summary: Returns the fully qualified type name of this instance.
   example: []
   syntax:
-    content: public override string ToString()
+    content: public override readonly string ToString()
     return:
       type: System.String
       description: The fully qualified type name.
@@ -337,6 +343,30 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
@@ -381,30 +411,6 @@ references:
     name: Object
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  name: GetType()
-  nameWithType: object.GetType()
-  fullName: object.GetType()
-  nameWithType.vb: Object.GetType()
-  fullName.vb: Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
   - name: )
 - uid: System.Object.System.Object_CB_Extension.CompareType(System.Type)
   commentId: M:System.Object_CB_Extension.CompareType(System.Object,System.Type)

@@ -19,12 +19,12 @@ items:
   type: Class
   source:
     remote:
-      path: Runtime/IO/Serialization/Binary/ScratchObject.cs
+      path: Cobilas/IO/Serialization/Binary/ScratchObject.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ScratchObject
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Serialization/Binary/ScratchObject.cs
-    startLine: 6
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Binary/ScratchObject.cs
+    startLine: 7
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Serialization.Binary
@@ -34,21 +34,25 @@ items:
     content: >-
       [Serializable]
 
+      [Obsolete("BinaryFormatter serialization is obsolete and should not be used. See https://aka.ms/binaryformatter for more information. Use Json class", true, DiagnosticId = "SYSLIB0011")]
+
       public abstract class ScratchObject
     content.vb: >-
       <Serializable>
+
+      <Obsolete("BinaryFormatter serialization is obsolete and should not be used. See https://aka.ms/binaryformatter for more information. Use Json class", True, DiagnosticId:="SYSLIB0011")>
 
       Public MustInherit Class ScratchObject
   inheritance:
   - System.Object
   inheritedMembers:
-  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
   extensionMethods:
   - System.Object.System.Object_CB_Extension.CompareType(System.Type)
   - System.Object.System.Object_CB_Extension.CompareType(System.Type[])
@@ -61,6 +65,17 @@ items:
   - type: System.SerializableAttribute
     ctor: System.SerializableAttribute.#ctor
     arguments: []
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String,System.Boolean)
+    arguments:
+    - type: System.String
+      value: BinaryFormatter serialization is obsolete and should not be used. See https://aka.ms/binaryformatter for more information. Use Json class
+    - type: System.Boolean
+      value: true
+    namedArguments:
+    - name: DiagnosticId
+      type: System.String
+      value: SYSLIB0011
 - uid: Cobilas.IO.Serialization.Binary.ScratchObject.Name
   commentId: P:Cobilas.IO.Serialization.Binary.ScratchObject.Name
   id: Name
@@ -74,12 +89,12 @@ items:
   type: Property
   source:
     remote:
-      path: Runtime/IO/Serialization/Binary/ScratchObject.cs
+      path: Cobilas/IO/Serialization/Binary/ScratchObject.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Name
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Serialization/Binary/ScratchObject.cs
-    startLine: 9
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Binary/ScratchObject.cs
+    startLine: 15
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Serialization.Binary
@@ -105,12 +120,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/IO/Serialization/Binary/ScratchObject.cs
+      path: Cobilas/IO/Serialization/Binary/ScratchObject.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: UnloadScratchObject
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Serialization/Binary/ScratchObject.cs
-    startLine: 14
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Binary/ScratchObject.cs
+    startLine: 20
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Serialization.Binary
@@ -143,12 +158,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/IO/Serialization/Binary/ScratchObject.cs
+      path: Cobilas/IO/Serialization/Binary/ScratchObject.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: UnloadScratchObject
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Serialization/Binary/ScratchObject.cs
-    startLine: 25
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Binary/ScratchObject.cs
+    startLine: 31
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Serialization.Binary
@@ -187,12 +202,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/IO/Serialization/Binary/ScratchObject.cs
+      path: Cobilas/IO/Serialization/Binary/ScratchObject.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: UnloadScratchObject
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Serialization/Binary/ScratchObject.cs
-    startLine: 32
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Binary/ScratchObject.cs
+    startLine: 38
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Serialization.Binary
@@ -228,12 +243,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/IO/Serialization/Binary/ScratchObject.cs
+      path: Cobilas/IO/Serialization/Binary/ScratchObject.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: LoadScratchObject
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Serialization/Binary/ScratchObject.cs
-    startLine: 37
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Binary/ScratchObject.cs
+    startLine: 43
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Serialization.Binary
@@ -302,30 +317,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -392,51 +383,6 @@ references:
     name: Equals
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  name: ReferenceEquals(object, object)
-  nameWithType: object.ReferenceEquals(object, object)
-  fullName: object.ReferenceEquals(object, object)
-  nameWithType.vb: Object.ReferenceEquals(Object, Object)
-  fullName.vb: Object.ReferenceEquals(Object, Object)
-  name.vb: ReferenceEquals(Object, Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
   - name: (
   - uid: System.Object
     name: Object
@@ -519,6 +465,75 @@ references:
     name: MemberwiseClone
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
 - uid: System.Object.System.Object_CB_Extension.CompareType(System.Type)

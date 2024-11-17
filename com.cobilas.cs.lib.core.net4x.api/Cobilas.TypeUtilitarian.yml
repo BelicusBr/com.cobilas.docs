@@ -18,11 +18,11 @@ items:
   type: Class
   source:
     remote:
-      path: Runtime/TypeUtilitarian.cs
+      path: Cobilas/TypeUtilitarian.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: TypeUtilitarian
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/TypeUtilitarian.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs
     startLine: 6
   assemblies:
   - Cobilas.Core
@@ -35,13 +35,13 @@ items:
   inheritance:
   - System.Object
   inheritedMembers:
-  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
 - uid: Cobilas.TypeUtilitarian.GetTypes
   commentId: M:Cobilas.TypeUtilitarian.GetTypes
   id: GetTypes
@@ -55,12 +55,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/TypeUtilitarian.cs
+      path: Cobilas/TypeUtilitarian.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: GetTypes
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/TypeUtilitarian.cs
-    startLine: 9
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs
+    startLine: 10
   assemblies:
   - Cobilas.Core
   namespace: Cobilas
@@ -70,6 +70,7 @@ items:
     content: public static Type[] GetTypes()
     return:
       type: System.Type[]
+      description: Returns all types of objects from all assemblies.
     content.vb: Public Shared Function GetTypes() As Type()
   overload: Cobilas.TypeUtilitarian.GetTypes*
 - uid: Cobilas.TypeUtilitarian.TypeExist(System.String)
@@ -85,12 +86,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/TypeUtilitarian.cs
+      path: Cobilas/TypeUtilitarian.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: TypeExist
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/TypeUtilitarian.cs
-    startLine: 19
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs
+    startLine: 21
   assemblies:
   - Cobilas.Core
   namespace: Cobilas
@@ -104,6 +105,7 @@ items:
       description: The full name of the type. (example:<code>System.String</code>)
     return:
       type: System.Boolean
+      description: Returns <code>true</code> when the type exists.
     content.vb: Public Shared Function TypeExist(fullName As String) As Boolean
   overload: Cobilas.TypeUtilitarian.TypeExist*
   nameWithType.vb: TypeUtilitarian.TypeExist(String)
@@ -122,12 +124,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/TypeUtilitarian.cs
+      path: Cobilas/TypeUtilitarian.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: GetType
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/TypeUtilitarian.cs
-    startLine: 28
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs
+    startLine: 33
   assemblies:
   - Cobilas.Core
   namespace: Cobilas
@@ -141,6 +143,9 @@ items:
       description: The full name of the type. (example:<code>System.String</code>)
     return:
       type: System.Type
+      description: >-
+        Returns the type that was specified in the parameter.
+            <p>If the specified type is not found had returned the <xref href="Cobilas.NullObject" data-throw-if-not-resolved="false"></xref> type.</p>
     content.vb: Public Shared Function [GetType](fullName As String) As Type
   overload: Cobilas.TypeUtilitarian.GetType*
   nameWithType.vb: TypeUtilitarian.GetType(String)
@@ -159,12 +164,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/TypeUtilitarian.cs
+      path: Cobilas/TypeUtilitarian.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: GetAssemblies
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/TypeUtilitarian.cs
-    startLine: 36
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs
+    startLine: 42
   assemblies:
   - Cobilas.Core
   namespace: Cobilas
@@ -174,6 +179,7 @@ items:
     content: public static Assembly[] GetAssemblies()
     return:
       type: System.Reflection.Assembly[]
+      description: Returns a list all assemblies of the domain.
     content.vb: Public Shared Function GetAssemblies() As Assembly()
   overload: Cobilas.TypeUtilitarian.GetAssemblies*
 references:
@@ -194,30 +200,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -284,51 +266,6 @@ references:
     name: Equals
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  name: ReferenceEquals(object, object)
-  nameWithType: object.ReferenceEquals(object, object)
-  fullName: object.ReferenceEquals(object, object)
-  nameWithType.vb: Object.ReferenceEquals(Object, Object)
-  fullName.vb: Object.ReferenceEquals(Object, Object)
-  name.vb: ReferenceEquals(Object, Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
   - name: (
   - uid: System.Object
     name: Object
@@ -413,6 +350,75 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   - name: (
   - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
 - uid: System
   commentId: N:System
   href: https://learn.microsoft.com/dotnet/api/system
@@ -476,6 +482,13 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: Cobilas.NullObject
+  commentId: T:Cobilas.NullObject
+  parent: Cobilas
+  href: Cobilas.NullObject.html
+  name: NullObject
+  nameWithType: NullObject
+  fullName: Cobilas.NullObject
 - uid: Cobilas.TypeUtilitarian.GetType*
   commentId: Overload:Cobilas.TypeUtilitarian.GetType
   href: Cobilas.TypeUtilitarian.html#Cobilas_TypeUtilitarian_GetType_System_String_

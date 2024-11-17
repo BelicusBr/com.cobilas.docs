@@ -17,28 +17,30 @@ items:
   type: Class
   source:
     remote:
-      path: Runtime/Extensions/CharExtension/Char_CB_Extension.cs
+      path: System/Char_CB_Extension.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Char_CB_Extension
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/CharExtension/Char_CB_Extension.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Char_CB_Extension.cs
     startLine: 2
   assemblies:
   - Cobilas.Core
   namespace: System
+  summary: This extension gives the char structure new methods.
+  example: []
   syntax:
     content: public static class Char_CB_Extension
     content.vb: Public Module Char_CB_Extension
   inheritance:
   - System.Object
   inheritedMembers:
-  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
 - uid: System.Char_CB_Extension.ToSByte(System.Char)
   commentId: M:System.Char_CB_Extension.ToSByte(System.Char)
   id: ToSByte(System.Char)
@@ -53,12 +55,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/CharExtension/Char_CB_Extension.cs
+      path: System/Char_CB_Extension.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToSByte
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/CharExtension/Char_CB_Extension.cs
-    startLine: 3
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Char_CB_Extension.cs
+    startLine: 4
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -88,12 +90,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/CharExtension/Char_CB_Extension.cs
+      path: System/Char_CB_Extension.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: InterpretEscapeSequence
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/CharExtension/Char_CB_Extension.cs
-    startLine: 11
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Char_CB_Extension.cs
+    startLine: 12
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -126,12 +128,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/CharExtension/Char_CB_Extension.cs
+      path: System/Char_CB_Extension.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: EscapeSequenceToString
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/CharExtension/Char_CB_Extension.cs
-    startLine: 34
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Char_CB_Extension.cs
+    startLine: 36
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -170,30 +172,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -260,51 +238,6 @@ references:
     name: Equals
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  name: ReferenceEquals(object, object)
-  nameWithType: object.ReferenceEquals(object, object)
-  fullName: object.ReferenceEquals(object, object)
-  nameWithType.vb: Object.ReferenceEquals(Object, Object)
-  fullName.vb: Object.ReferenceEquals(Object, Object)
-  name.vb: ReferenceEquals(Object, Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
   - name: (
   - uid: System.Object
     name: Object
@@ -387,6 +320,75 @@ references:
     name: MemberwiseClone
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
 - uid: System.Char_CB_Extension.ToSByte*

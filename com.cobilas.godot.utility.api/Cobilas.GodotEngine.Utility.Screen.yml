@@ -36,11 +36,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Screen
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -73,11 +73,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Displays
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 19
+    startLine: 22
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -108,11 +108,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: CurrentDisplay
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 22
+    startLine: 25
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -140,11 +140,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: DisplayCount
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 25
+    startLine: 28
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -172,11 +172,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: OrphanList
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 28
+    startLine: 31
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -204,11 +204,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Mode
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 32
+    startLine: 35
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -222,38 +222,6 @@ items:
       description: The current game screen mode.
     content.vb: Public Shared Property Mode As ScreenMode
   overload: Cobilas.GodotEngine.Utility.Screen.Mode*
-- uid: Cobilas.GodotEngine.Utility.Screen.CurrentResolution
-  commentId: P:Cobilas.GodotEngine.Utility.Screen.CurrentResolution
-  id: CurrentResolution
-  parent: Cobilas.GodotEngine.Utility.Screen
-  langs:
-  - csharp
-  - vb
-  name: CurrentResolution
-  nameWithType: Screen.CurrentResolution
-  fullName: Cobilas.GodotEngine.Utility.Screen.CurrentResolution
-  type: Property
-  source:
-    remote:
-      path: GodotEngine.Utility/Screen.cs
-      branch: main
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: CurrentResolution
-    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 46
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility
-  summary: The current resolution of the game screen.
-  example: []
-  syntax:
-    content: public static Resolution CurrentResolution { get; }
-    parameters: []
-    return:
-      type: Cobilas.GodotEngine.Utility.Resolution
-      description: Returns the current resolution of the game screen as Vector2D.
-    content.vb: Public Shared ReadOnly Property CurrentResolution As Resolution
-  overload: Cobilas.GodotEngine.Utility.Screen.CurrentResolution*
 - uid: Cobilas.GodotEngine.Utility.Screen.ScreenRefreshRate
   commentId: P:Cobilas.GodotEngine.Utility.Screen.ScreenRefreshRate
   id: ScreenRefreshRate
@@ -268,7 +236,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ScreenRefreshRate
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
@@ -300,7 +268,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Resolutions
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
@@ -318,6 +286,38 @@ items:
       description: Returns all stored resolutions.
     content.vb: Public Shared ReadOnly Property Resolutions As Resolution()
   overload: Cobilas.GodotEngine.Utility.Screen.Resolutions*
+- uid: Cobilas.GodotEngine.Utility.Screen.CurrentResolution
+  commentId: P:Cobilas.GodotEngine.Utility.Screen.CurrentResolution
+  id: CurrentResolution
+  parent: Cobilas.GodotEngine.Utility.Screen
+  langs:
+  - csharp
+  - vb
+  name: CurrentResolution
+  nameWithType: Screen.CurrentResolution
+  fullName: Cobilas.GodotEngine.Utility.Screen.CurrentResolution
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/Screen.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: CurrentResolution
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
+    startLine: 55
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: The current resolution of the game screen.
+  example: []
+  syntax:
+    content: public static Resolution CurrentResolution { get; }
+    parameters: []
+    return:
+      type: Cobilas.GodotEngine.Utility.Resolution
+      description: Returns the current resolution of the game screen as Vector2D.
+    content.vb: Public Shared ReadOnly Property CurrentResolution As Resolution
+  overload: Cobilas.GodotEngine.Utility.Screen.CurrentResolution*
 - uid: Cobilas.GodotEngine.Utility.Screen.AddResolution(System.Single@,System.Single@)
   commentId: M:Cobilas.GodotEngine.Utility.Screen.AddResolution(System.Single@,System.Single@)
   id: AddResolution(System.Single@,System.Single@)
@@ -332,11 +332,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: AddResolution
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 82
+    startLine: 85
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -370,11 +370,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: AddResolution
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 88
+    startLine: 91
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -411,11 +411,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SetCurrentDisplay
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 100
+    startLine: 103
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -446,11 +446,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SetResolution
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 106
+    startLine: 109
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -491,11 +491,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SetResolution
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 120
+    startLine: 123
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -529,11 +529,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SetResolution
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 127
+    startLine: 130
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -573,11 +573,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SetResolution
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 133
+    startLine: 136
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -614,11 +614,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SetResolution
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 138
+    startLine: 141
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -652,11 +652,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SetResolution
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 142
+    startLine: 145
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -687,11 +687,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SetResolution
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 147
+    startLine: 150
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -725,11 +725,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SetResolution
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 153
+    startLine: 156
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -766,11 +766,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SetResolution
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 158
+    startLine: 161
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -804,11 +804,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Screen.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SetResolution
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Screen.cs
-    startLine: 162
+    startLine: 165
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -1190,19 +1190,6 @@ references:
   name: ScreenMode
   nameWithType: ScreenMode
   fullName: Cobilas.GodotEngine.Utility.ScreenMode
-- uid: Cobilas.GodotEngine.Utility.Screen.CurrentResolution*
-  commentId: Overload:Cobilas.GodotEngine.Utility.Screen.CurrentResolution
-  href: Cobilas.GodotEngine.Utility.Screen.html#Cobilas_GodotEngine_Utility_Screen_CurrentResolution
-  name: CurrentResolution
-  nameWithType: Screen.CurrentResolution
-  fullName: Cobilas.GodotEngine.Utility.Screen.CurrentResolution
-- uid: Cobilas.GodotEngine.Utility.Resolution
-  commentId: T:Cobilas.GodotEngine.Utility.Resolution
-  parent: Cobilas.GodotEngine.Utility
-  href: Cobilas.GodotEngine.Utility.Resolution.html
-  name: Resolution
-  nameWithType: Resolution
-  fullName: Cobilas.GodotEngine.Utility.Resolution
 - uid: Cobilas.GodotEngine.Utility.Screen.ScreenRefreshRate*
   commentId: Overload:Cobilas.GodotEngine.Utility.Screen.ScreenRefreshRate
   href: Cobilas.GodotEngine.Utility.Screen.html#Cobilas_GodotEngine_Utility_Screen_ScreenRefreshRate
@@ -1247,6 +1234,19 @@ references:
     href: Cobilas.GodotEngine.Utility.Resolution.html
   - name: (
   - name: )
+- uid: Cobilas.GodotEngine.Utility.Screen.CurrentResolution*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Screen.CurrentResolution
+  href: Cobilas.GodotEngine.Utility.Screen.html#Cobilas_GodotEngine_Utility_Screen_CurrentResolution
+  name: CurrentResolution
+  nameWithType: Screen.CurrentResolution
+  fullName: Cobilas.GodotEngine.Utility.Screen.CurrentResolution
+- uid: Cobilas.GodotEngine.Utility.Resolution
+  commentId: T:Cobilas.GodotEngine.Utility.Resolution
+  parent: Cobilas.GodotEngine.Utility
+  href: Cobilas.GodotEngine.Utility.Resolution.html
+  name: Resolution
+  nameWithType: Resolution
+  fullName: Cobilas.GodotEngine.Utility.Resolution
 - uid: Cobilas.GodotEngine.Utility.Screen.AddResolution*
   commentId: Overload:Cobilas.GodotEngine.Utility.Screen.AddResolution
   href: Cobilas.GodotEngine.Utility.Screen.html#Cobilas_GodotEngine_Utility_Screen_AddResolution_System_Single__System_Single__

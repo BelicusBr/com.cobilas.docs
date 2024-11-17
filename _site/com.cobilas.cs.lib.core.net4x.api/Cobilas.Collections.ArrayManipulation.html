@@ -89,7 +89,7 @@
 
 
   <h1 id="Cobilas_Collections_ArrayManipulation" data-uid="Cobilas.Collections.ArrayManipulation" class="text-break">
-Class ArrayManipulation  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L8"><i class="bi bi-code-slash"></i></a>
+Class ArrayManipulation  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -122,16 +122,10 @@ Class ArrayManipulation  <a class="header-action link-secondary" title="View sou
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
@@ -141,6 +135,12 @@ Class ArrayManipulation  <a class="header-action link-secondary" title="View sou
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </dd></dl>
 
@@ -156,8 +156,8 @@ Class ArrayManipulation  <a class="header-action link-secondary" title="View sou
   <a id="Cobilas_Collections_ArrayManipulation_AddNon_Existing_" data-uid="Cobilas.Collections.ArrayManipulation.AddNon_Existing*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_AddNon_Existing__1___0___0___" data-uid="Cobilas.Collections.ArrayManipulation.AddNon_Existing``1(``0,``0[])">
-  AddNon_Existing&lt;T&gt;(T, T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  AddNon_Existing&lt;T&gt;(T?, T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a list of items to the target list.
@@ -166,7 +166,7 @@ Class ArrayManipulation  <a class="header-action link-secondary" title="View sou
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T[] AddNon_Existing&lt;T&gt;(T item, T[] list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static T[] AddNon_Existing&lt;T&gt;(T? item, T[] list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -210,8 +210,8 @@ and the list will be returned without being modified.</p>
   <a id="Cobilas_Collections_ArrayManipulation_AddNon_Existing_" data-uid="Cobilas.Collections.ArrayManipulation.AddNon_Existing*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_AddNon_Existing__1___0___0____" data-uid="Cobilas.Collections.ArrayManipulation.AddNon_Existing``1(``0,``0[]@)">
-  AddNon_Existing&lt;T&gt;(T, ref T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  AddNon_Existing&lt;T&gt;(T?, ref T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L99"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a list of items to the target list.
@@ -220,7 +220,7 @@ and the list will be returned without being modified.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void AddNon_Existing&lt;T&gt;(T item, ref T[] list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void AddNon_Existing&lt;T&gt;(T? item, ref T[] list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -257,8 +257,8 @@ and the list will be returned without being modified.</p>
   <a id="Cobilas_Collections_ArrayManipulation_Add_" data-uid="Cobilas.Collections.ArrayManipulation.Add*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_Add__1_System_Collections_Generic_IEnumerable___0____0___" data-uid="Cobilas.Collections.ArrayManipulation.Add``1(System.Collections.Generic.IEnumerable{``0},``0[])">
-  Add&lt;T&gt;(IEnumerable&lt;T&gt;, T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  Add&lt;T&gt;(IEnumerable&lt;T&gt;?, T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L113"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a list of items to the target list.</p>
@@ -266,7 +266,7 @@ and the list will be returned without being modified.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T[] Add&lt;T&gt;(IEnumerable&lt;T&gt; collection, T[] list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static T[] Add&lt;T&gt;(IEnumerable&lt;T&gt;? collection, T[] list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -308,8 +308,8 @@ and the list will be returned without being modified.</p>
   <a id="Cobilas_Collections_ArrayManipulation_Add_" data-uid="Cobilas.Collections.ArrayManipulation.Add*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_Add__1_System_Collections_Generic_IEnumerable___0____0____" data-uid="Cobilas.Collections.ArrayManipulation.Add``1(System.Collections.Generic.IEnumerable{``0},``0[]@)">
-  Add&lt;T&gt;(IEnumerable&lt;T&gt;, ref T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  Add&lt;T&gt;(IEnumerable&lt;T&gt;?, ref T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L120"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a list of items to the target list.</p>
@@ -317,7 +317,7 @@ and the list will be returned without being modified.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Add&lt;T&gt;(IEnumerable&lt;T&gt; collection, ref T[] list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Add&lt;T&gt;(IEnumerable&lt;T&gt;? collection, ref T[] list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -353,108 +353,9 @@ and the list will be returned without being modified.</p>
 
   <a id="Cobilas_Collections_ArrayManipulation_Add_" data-uid="Cobilas.Collections.ArrayManipulation.Add*"></a>
 
-  <h3 id="Cobilas_Collections_ArrayManipulation_Add__1_System_Collections_Generic_IEnumerator___0____0___" data-uid="Cobilas.Collections.ArrayManipulation.Add``1(System.Collections.Generic.IEnumerator{``0},``0[])">
-  Add&lt;T&gt;(IEnumerator&lt;T&gt;, T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L124"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Adds a list of items to the target list.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the T[] Add&lt;T&gt;(IEnumerable&lt;T&gt;, T[]) method.&quot;)]
-public static T[] Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, T[] list)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>itens</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;T&gt;</dt>
-    <dd><p>The items that will be inserted into the list.</p>
-</dd>
-    <dt><code>list</code> T[]</dt>
-    <dd><p>The list that will receive the items.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt>T[]</dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-  <a id="Cobilas_Collections_ArrayManipulation_Add_" data-uid="Cobilas.Collections.ArrayManipulation.Add*"></a>
-
-  <h3 id="Cobilas_Collections_ArrayManipulation_Add__1_System_Collections_Generic_IEnumerator___0____0____" data-uid="Cobilas.Collections.ArrayManipulation.Add``1(System.Collections.Generic.IEnumerator{``0},``0[]@)">
-  Add&lt;T&gt;(IEnumerator&lt;T&gt;, ref T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L132"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Adds a list of items to the target list.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the T[] Add&lt;T&gt;(IEnumerable&lt;T&gt;, ref T[]) method.&quot;)]
-public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>itens</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;T&gt;</dt>
-    <dd><p>The items that will be inserted into the list.</p>
-</dd>
-    <dt><code>list</code> T[]</dt>
-    <dd><p>The list that will receive the items.</p>
-</dd>
-  </dl>
-
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-  <a id="Cobilas_Collections_ArrayManipulation_Add_" data-uid="Cobilas.Collections.ArrayManipulation.Add*"></a>
-
   <h3 id="Cobilas_Collections_ArrayManipulation_Add__1___0___0___" data-uid="Cobilas.Collections.ArrayManipulation.Add``1(``0,``0[])">
-  Add&lt;T&gt;(T, T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  Add&lt;T&gt;(T?, T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L127"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a list of items to the target list.</p>
@@ -462,7 +363,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T[] Add&lt;T&gt;(T item, T[] list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static T[] Add&lt;T&gt;(T? item, T[] list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -504,8 +405,8 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <a id="Cobilas_Collections_ArrayManipulation_Add_" data-uid="Cobilas.Collections.ArrayManipulation.Add*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_Add__1___0___0____" data-uid="Cobilas.Collections.ArrayManipulation.Add``1(``0,``0[]@)">
-  Add&lt;T&gt;(T, ref T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  Add&lt;T&gt;(T?, ref T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L141"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a list of items to the target list.</p>
@@ -513,7 +414,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Add&lt;T&gt;(T item, ref T[] list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Add&lt;T&gt;(T? item, ref T[] list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -550,8 +451,8 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <a id="Cobilas_Collections_ArrayManipulation_Add_" data-uid="Cobilas.Collections.ArrayManipulation.Add*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_Add__1___0_____0___" data-uid="Cobilas.Collections.ArrayManipulation.Add``1(``0[],``0[])">
-  Add&lt;T&gt;(T[], T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  Add&lt;T&gt;(T[]?, T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a list of items to the target list.</p>
@@ -559,7 +460,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T[] Add&lt;T&gt;(T[] itens, T[] list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static T[] Add&lt;T&gt;(T[]? itens, T[] list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -601,8 +502,8 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <a id="Cobilas_Collections_ArrayManipulation_Add_" data-uid="Cobilas.Collections.ArrayManipulation.Add*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_Add__1___0_____0____" data-uid="Cobilas.Collections.ArrayManipulation.Add``1(``0[],``0[]@)">
-  Add&lt;T&gt;(T[], ref T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  Add&lt;T&gt;(T[]?, ref T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L134"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a list of items to the target list.</p>
@@ -610,7 +511,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Add&lt;T&gt;(T[] itens, ref T[] list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Add&lt;T&gt;(T[]? itens, ref T[] list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -647,8 +548,8 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <a id="Cobilas_Collections_ArrayManipulation_ArrayLength_" data-uid="Cobilas.Collections.ArrayManipulation.ArrayLength*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ArrayLength_System_Collections_ICollection_" data-uid="Cobilas.Collections.ArrayManipulation.ArrayLength(System.Collections.ICollection)">
-  ArrayLength(ICollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L986"><i class="bi bi-code-slash"></i></a>
+  ArrayLength(ICollection?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1082"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines the length of a collection.</p>
@@ -656,7 +557,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int ArrayLength(ICollection array)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int ArrayLength(ICollection? array)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -684,8 +585,8 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <a id="Cobilas_Collections_ArrayManipulation_ArrayLongLength_" data-uid="Cobilas.Collections.ArrayManipulation.ArrayLongLength*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ArrayLongLength_Cobilas_Collections_ILongCollection_" data-uid="Cobilas.Collections.ArrayManipulation.ArrayLongLength(Cobilas.Collections.ILongCollection)">
-  ArrayLongLength(ILongCollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L998"><i class="bi bi-code-slash"></i></a>
+  ArrayLongLength(ILongCollection?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1094"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines the length of an Array.</p>
@@ -693,7 +594,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static long ArrayLongLength(ILongCollection array)</code></pre>
+    <pre><code class="lang-csharp hljs">public static long ArrayLongLength(ILongCollection? array)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -721,8 +622,8 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <a id="Cobilas_Collections_ArrayManipulation_ArrayLongLength_" data-uid="Cobilas.Collections.ArrayManipulation.ArrayLongLength*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ArrayLongLength_System_Array_" data-uid="Cobilas.Collections.ArrayManipulation.ArrayLongLength(System.Array)">
-  ArrayLongLength(Array)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L992"><i class="bi bi-code-slash"></i></a>
+  ArrayLongLength(Array?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1088"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines the length of an Array.</p>
@@ -730,7 +631,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static long ArrayLongLength(Array array)</code></pre>
+    <pre><code class="lang-csharp hljs">public static long ArrayLongLength(Array? array)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -759,7 +660,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ClearArray_System_Array_" data-uid="Cobilas.Collections.ArrayManipulation.ClearArray(System.Array)">
   ClearArray(Array)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L261"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L234"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Array cleaning.</p>
@@ -796,7 +697,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ClearArray_System_Array_System_Int32_System_Int32_" data-uid="Cobilas.Collections.ArrayManipulation.ClearArray(System.Array,System.Int32,System.Int32)">
   ClearArray(Array, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L256"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L229"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Array cleaning.</p>
@@ -839,7 +740,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ClearArray_System_Array_System_Int64_System_Int64_" data-uid="Cobilas.Collections.ArrayManipulation.ClearArray(System.Array,System.Int64,System.Int64)">
   ClearArray(Array, long, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L205"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Array cleaning.</p>
@@ -884,7 +785,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ClearArraySafe_System_Array_" data-uid="Cobilas.Collections.ArrayManipulation.ClearArraySafe(System.Array)">
   ClearArraySafe(Array)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L304"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Array cleaning.
@@ -917,7 +818,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ClearArraySafe_System_Array_System_Int32_System_Int32_" data-uid="Cobilas.Collections.ArrayManipulation.ClearArraySafe(System.Array,System.Int32,System.Int32)">
   ClearArraySafe(Array, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L296"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Array cleaning.
@@ -959,7 +860,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ClearArraySafe_System_Array_System_Int64_System_Int64_" data-uid="Cobilas.Collections.ArrayManipulation.ClearArraySafe(System.Array,System.Int64,System.Int64)">
   ClearArraySafe(Array, long, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L303"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L276"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Array cleaning.
@@ -1005,7 +906,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ClearArraySafe__1_System_Int32_System_Int32___0____" data-uid="Cobilas.Collections.ArrayManipulation.ClearArraySafe``1(System.Int32,System.Int32,``0[]@)">
   ClearArraySafe&lt;T&gt;(int, int, ref T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L365"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L338"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Array cleaning.
@@ -1052,7 +953,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ClearArraySafe__1_System_Int64_System_Int64___0____" data-uid="Cobilas.Collections.ArrayManipulation.ClearArraySafe``1(System.Int64,System.Int64,``0[]@)">
   ClearArraySafe&lt;T&gt;(long, long, ref T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L316"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Array cleaning.
@@ -1103,7 +1004,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ClearArraySafe__1___0____" data-uid="Cobilas.Collections.ArrayManipulation.ClearArraySafe``1(``0[]@)">
   ClearArraySafe&lt;T&gt;(ref T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L347"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Array cleaning.
@@ -1141,7 +1042,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ClearArray__1_System_Int32_System_Int32___0____" data-uid="Cobilas.Collections.ArrayManipulation.ClearArray``1(System.Int32,System.Int32,``0[]@)">
   ClearArray&lt;T&gt;(int, int, ref T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L258"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Array cleaning.
@@ -1190,7 +1091,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ClearArray__1_System_Int64_System_Int64___0____" data-uid="Cobilas.Collections.ArrayManipulation.ClearArray``1(System.Int64,System.Int64,``0[]@)">
   ClearArray&lt;T&gt;(long, long, ref T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L268"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L241"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Array cleaning.</p>
@@ -1240,7 +1141,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ClearArray__1___0____" data-uid="Cobilas.Collections.ArrayManipulation.ClearArray``1(``0[]@)">
   ClearArray&lt;T&gt;(ref T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L294"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L267"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Array cleaning.
@@ -1282,8 +1183,8 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <a id="Cobilas_Collections_ArrayManipulation_ConvertAll_" data-uid="Cobilas.Collections.ArrayManipulation.ConvertAll*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ConvertAll__2___0___System_Converter___0___1__" data-uid="Cobilas.Collections.ArrayManipulation.ConvertAll``2(``0[],System.Converter{``0,``1})">
-  ConvertAll&lt;TInput, TOutput&gt;(TInput[], Converter&lt;TInput, TOutput&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L864"><i class="bi bi-code-slash"></i></a>
+  ConvertAll&lt;TInput, TOutput&gt;(TInput[]?, Converter&lt;TInput, TOutput&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L913"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts an array of one type to an array of another type.</p>
@@ -1291,7 +1192,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static TOutput[] ConvertAll&lt;TInput, TOutput&gt;(TInput[] array, Converter&lt;TInput, TOutput&gt; converter)</code></pre>
+    <pre><code class="lang-csharp hljs">public static TOutput[] ConvertAll&lt;TInput, TOutput&gt;(TInput[]? array, Converter&lt;TInput, TOutput&gt;? converter)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1338,8 +1239,8 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <a id="Cobilas_Collections_ArrayManipulation_CopyTo_" data-uid="Cobilas.Collections.ArrayManipulation.CopyTo*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_CopyTo_System_Array_System_Array_" data-uid="Cobilas.Collections.ArrayManipulation.CopyTo(System.Array,System.Array)">
-  CopyTo(Array, Array)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L854"><i class="bi bi-code-slash"></i></a>
+  CopyTo(Array?, Array?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L896"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Copies all the elements of the current one-dimensional array to the specified one-dimensional array.</p>
@@ -1347,7 +1248,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CopyTo(Array sourceArray, Array destinationArray)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void CopyTo(Array? sourceArray, Array? destinationArray)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1366,14 +1267,19 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
   <a id="Cobilas_Collections_ArrayManipulation_CopyTo_" data-uid="Cobilas.Collections.ArrayManipulation.CopyTo*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_CopyTo_System_Array_System_Array_System_Int32_" data-uid="Cobilas.Collections.ArrayManipulation.CopyTo(System.Array,System.Array,System.Int32)">
-  CopyTo(Array, Array, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L848"><i class="bi bi-code-slash"></i></a>
+  CopyTo(Array?, Array?, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L889"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Copies all the elements of the current one-dimensional array to the specified one-dimensional array.</p>
@@ -1381,7 +1287,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CopyTo(Array sourceArray, Array destinationArray, int length)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void CopyTo(Array? sourceArray, Array? destinationArray, int length)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1408,8 +1314,8 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <a id="Cobilas_Collections_ArrayManipulation_CopyTo_" data-uid="Cobilas.Collections.ArrayManipulation.CopyTo*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_CopyTo_System_Array_System_Array_System_Int64_" data-uid="Cobilas.Collections.ArrayManipulation.CopyTo(System.Array,System.Array,System.Int64)">
-  CopyTo(Array, Array, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L842"><i class="bi bi-code-slash"></i></a>
+  CopyTo(Array?, Array?, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L883"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Copies all the elements of the current one-dimensional array to the specified one-dimensional array.</p>
@@ -1417,7 +1323,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CopyTo(Array sourceArray, Array destinationArray, long length)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void CopyTo(Array? sourceArray, Array? destinationArray, long length)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1444,8 +1350,8 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <a id="Cobilas_Collections_ArrayManipulation_CopyTo_" data-uid="Cobilas.Collections.ArrayManipulation.CopyTo*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_CopyTo_System_Array_System_Int32_System_Array_System_Int32_System_Int32_" data-uid="Cobilas.Collections.ArrayManipulation.CopyTo(System.Array,System.Int32,System.Array,System.Int32,System.Int32)">
-  CopyTo(Array, int, Array, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L836"><i class="bi bi-code-slash"></i></a>
+  CopyTo(Array?, int, Array?, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L877"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Copies all the elements of the current one-dimensional array to the specified one-dimensional array.</p>
@@ -1453,7 +1359,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CopyTo(Array sourceArray, int sourceIndex, Array destinationArray, int destinationIndex, int length)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void CopyTo(Array? sourceArray, int sourceIndex, Array? destinationArray, int destinationIndex, int length)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1484,8 +1390,8 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <a id="Cobilas_Collections_ArrayManipulation_CopyTo_" data-uid="Cobilas.Collections.ArrayManipulation.CopyTo*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_CopyTo_System_Array_System_Int64_System_Array_System_Int64_System_Int64_" data-uid="Cobilas.Collections.ArrayManipulation.CopyTo(System.Array,System.Int64,System.Array,System.Int64,System.Int64)">
-  CopyTo(Array, long, Array, long, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L830"><i class="bi bi-code-slash"></i></a>
+  CopyTo(Array?, long, Array?, long, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L861"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Copies all the elements of the current one-dimensional array to the specified one-dimensional array.</p>
@@ -1493,7 +1399,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CopyTo(Array sourceArray, long sourceIndex, Array destinationArray, long destinationIndex, long length)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void CopyTo(Array? sourceArray, long sourceIndex, Array? destinationArray, long destinationIndex, long length)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1524,8 +1430,8 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <a id="Cobilas_Collections_ArrayManipulation_EmpytArray_" data-uid="Cobilas.Collections.ArrayManipulation.EmpytArray*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_EmpytArray_Cobilas_Collections_ILongCollection_" data-uid="Cobilas.Collections.ArrayManipulation.EmpytArray(Cobilas.Collections.ILongCollection)">
-  EmpytArray(ILongCollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L980"><i class="bi bi-code-slash"></i></a>
+  EmpytArray(ILongCollection?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1076"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the collection is empty or null.</p>
@@ -1533,7 +1439,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool EmpytArray(ILongCollection array)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool EmpytArray(ILongCollection? array)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1561,8 +1467,8 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <a id="Cobilas_Collections_ArrayManipulation_EmpytArray_" data-uid="Cobilas.Collections.ArrayManipulation.EmpytArray*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_EmpytArray_System_Collections_ICollection_" data-uid="Cobilas.Collections.ArrayManipulation.EmpytArray(System.Collections.ICollection)">
-  EmpytArray(ICollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L974"><i class="bi bi-code-slash"></i></a>
+  EmpytArray(ICollection?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1070"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the collection is empty or null.</p>
@@ -1570,7 +1476,7 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool EmpytArray(ICollection array)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool EmpytArray(ICollection? array)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1597,49 +1503,9 @@ public static void Add&lt;T&gt;(IEnumerator&lt;T&gt; itens, ref T[] list)</code>
 
   <a id="Cobilas_Collections_ArrayManipulation_Exists_" data-uid="Cobilas.Collections.ArrayManipulation.Exists*"></a>
 
-  <h3 id="Cobilas_Collections_ArrayManipulation_Exists_System_Object_System_Array_" data-uid="Cobilas.Collections.ArrayManipulation.Exists(System.Object,System.Array)">
-  Exists(object, Array)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L807"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Determines whether the specified array contains elements that match the conditions defined by the specified predicate.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use bool:Exists&lt;T&gt;(T[], Predicate&lt;T&gt;)&quot;)]
-public static bool Exists(object item, Array array)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>item</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
-    <dt><code>array</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.array">Array</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Cobilas_Collections_ArrayManipulation_Exists_" data-uid="Cobilas.Collections.ArrayManipulation.Exists*"></a>
-
   <h3 id="Cobilas_Collections_ArrayManipulation_Exists__1___0___0___" data-uid="Cobilas.Collections.ArrayManipulation.Exists``1(``0,``0[])">
-  Exists&lt;T&gt;(T, T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L824"><i class="bi bi-code-slash"></i></a>
+  Exists&lt;T&gt;(T?, T[]?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L848"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified array contains elements that match the conditions defined by the specified predicate.</p>
@@ -1647,7 +1513,7 @@ public static bool Exists(object item, Array array)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool Exists&lt;T&gt;(T item, T[] array)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool Exists&lt;T&gt;(T? item, T[]? array)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1682,8 +1548,8 @@ public static bool Exists(object item, Array array)</code></pre>
   <a id="Cobilas_Collections_ArrayManipulation_Exists_" data-uid="Cobilas.Collections.ArrayManipulation.Exists*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_Exists__1___0___System_Predicate___0__" data-uid="Cobilas.Collections.ArrayManipulation.Exists``1(``0[],System.Predicate{``0})">
-  Exists&lt;T&gt;(T[], Predicate&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L818"><i class="bi bi-code-slash"></i></a>
+  Exists&lt;T&gt;(T[]?, Predicate&lt;T&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L842"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified array contains elements that match the conditions defined by the specified predicate.</p>
@@ -1691,7 +1557,7 @@ public static bool Exists(object item, Array array)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool Exists&lt;T&gt;(T[] array, Predicate&lt;T&gt; match)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool Exists&lt;T&gt;(T[]? array, Predicate&lt;T&gt;? match)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1726,8 +1592,8 @@ public static bool Exists(object item, Array array)</code></pre>
   <a id="Cobilas_Collections_ArrayManipulation_FindAll_" data-uid="Cobilas.Collections.ArrayManipulation.FindAll*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_FindAll__1___0___System_Predicate___0__" data-uid="Cobilas.Collections.ArrayManipulation.FindAll``1(``0[],System.Predicate{``0})">
-  FindAll&lt;T&gt;(T[], Predicate&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L769"><i class="bi bi-code-slash"></i></a>
+  FindAll&lt;T&gt;(T[]?, Predicate&lt;T&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L792"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves all elements that match the conditions defined by the specified predicate.</p>
@@ -1735,7 +1601,7 @@ public static bool Exists(object item, Array array)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T[] FindAll&lt;T&gt;(T[] array, Predicate&lt;T&gt; match)</code></pre>
+    <pre><code class="lang-csharp hljs">public static T[] FindAll&lt;T&gt;(T[]? array, Predicate&lt;T&gt;? match)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1778,7 +1644,7 @@ public static bool Exists(object item, Array array)</code></pre>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_FindIndex__1___0___System_Int32_System_Int32_System_Predicate___0__" data-uid="Cobilas.Collections.ArrayManipulation.FindIndex``1(``0[],System.Int32,System.Int32,System.Predicate{``0})">
   FindIndex&lt;T&gt;(T[], int, int, Predicate&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L636"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L652"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Searches for an element that matches the conditions defined by the specified predicate and returns
@@ -1828,7 +1694,7 @@ at the specified index and contains the specified number of elements.</p>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_FindIndex__1___0___System_Int32_System_Predicate___0__" data-uid="Cobilas.Collections.ArrayManipulation.FindIndex``1(``0[],System.Int32,System.Predicate{``0})">
   FindIndex&lt;T&gt;(T[], int, Predicate&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L644"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L660"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Searches for an element that matches the conditions defined by the specified predicate and returns
@@ -1875,8 +1741,8 @@ at the specified index and contains the specified number of elements.</p>
   <a id="Cobilas_Collections_ArrayManipulation_FindIndex_" data-uid="Cobilas.Collections.ArrayManipulation.FindIndex*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_FindIndex__1___0___System_Int64_System_Int64_System_Predicate___0__" data-uid="Cobilas.Collections.ArrayManipulation.FindIndex``1(``0[],System.Int64,System.Int64,System.Predicate{``0})">
-  FindIndex&lt;T&gt;(T[], long, long, Predicate&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L584"><i class="bi bi-code-slash"></i></a>
+  FindIndex&lt;T&gt;(T[], long, long, Predicate&lt;T&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L586"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Searches for an element that matches the conditions defined by the specified predicate and returns
@@ -1886,7 +1752,7 @@ at the specified index and contains the specified number of elements.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static long FindIndex&lt;T&gt;(T[] array, long index, long length, Predicate&lt;T&gt; match)</code></pre>
+    <pre><code class="lang-csharp hljs">public static long FindIndex&lt;T&gt;(T[] array, long index, long length, Predicate&lt;T&gt;? match)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1934,8 +1800,8 @@ at the specified index and contains the specified number of elements.</p>
   <a id="Cobilas_Collections_ArrayManipulation_FindIndex_" data-uid="Cobilas.Collections.ArrayManipulation.FindIndex*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_FindIndex__1___0___System_Int64_System_Predicate___0__" data-uid="Cobilas.Collections.ArrayManipulation.FindIndex``1(``0[],System.Int64,System.Predicate{``0})">
-  FindIndex&lt;T&gt;(T[], long, Predicate&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L612"><i class="bi bi-code-slash"></i></a>
+  FindIndex&lt;T&gt;(T[]?, long, Predicate&lt;T&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L620"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Searches for an element that matches the conditions defined by the specified predicate and returns
@@ -1945,7 +1811,7 @@ at the specified index and contains the specified number of elements.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static long FindIndex&lt;T&gt;(T[] array, long index, Predicate&lt;T&gt; match)</code></pre>
+    <pre><code class="lang-csharp hljs">public static long FindIndex&lt;T&gt;(T[]? array, long index, Predicate&lt;T&gt;? match)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1992,7 +1858,7 @@ at the specified index and contains the specified number of elements.</p>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_FindIndex__1___0___System_Predicate___0__" data-uid="Cobilas.Collections.ArrayManipulation.FindIndex``1(``0[],System.Predicate{``0})">
   FindIndex&lt;T&gt;(T[], Predicate&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L652"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L668"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Searches for an element that matches the conditions defined by the specified predicate and returns
@@ -2038,7 +1904,7 @@ at the specified index and contains the specified number of elements.</p>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_FindLastIndex__1___0___System_Int32_System_Int32_System_Predicate___0__" data-uid="Cobilas.Collections.ArrayManipulation.FindLastIndex``1(``0[],System.Int32,System.Int32,System.Predicate{``0})">
   FindLastIndex&lt;T&gt;(T[], int, int, Predicate&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L720"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L736"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Searches for an element that matches the conditions defined by a
@@ -2097,7 +1963,7 @@ occurrence in an Array or part of it.</p>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_FindLastIndex__1___0___System_Int32_System_Predicate___0__" data-uid="Cobilas.Collections.ArrayManipulation.FindLastIndex``1(``0[],System.Int32,System.Predicate{``0})">
   FindLastIndex&lt;T&gt;(T[], int, Predicate&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L731"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L747"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Searches for an element that matches the conditions defined by a
@@ -2154,7 +2020,7 @@ occurrence in an Array or part of it.</p>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_FindLastIndex__1___0___System_Int64_System_Int64_System_Predicate___0__" data-uid="Cobilas.Collections.ArrayManipulation.FindLastIndex``1(``0[],System.Int64,System.Int64,System.Predicate{``0})">
   FindLastIndex&lt;T&gt;(T[], long, long, Predicate&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L664"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L680"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Searches for an element that matches the conditions defined by a
@@ -2213,7 +2079,7 @@ occurrence in an Array or part of it.</p>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_FindLastIndex__1___0___System_Int64_System_Predicate___0__" data-uid="Cobilas.Collections.ArrayManipulation.FindLastIndex``1(``0[],System.Int64,System.Predicate{``0})">
   FindLastIndex&lt;T&gt;(T[], long, Predicate&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L693"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L709"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Searches for an element that matches the conditions defined by a
@@ -2270,7 +2136,7 @@ occurrence in an Array or part of it.</p>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_FindLastIndex__1___0___System_Predicate___0__" data-uid="Cobilas.Collections.ArrayManipulation.FindLastIndex``1(``0[],System.Predicate{``0})">
   FindLastIndex&lt;T&gt;(T[], Predicate&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L742"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L758"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Searches for an element that matches the conditions defined by a
@@ -2324,8 +2190,8 @@ occurrence in an Array or part of it.</p>
   <a id="Cobilas_Collections_ArrayManipulation_FindLast_" data-uid="Cobilas.Collections.ArrayManipulation.FindLast*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_FindLast__1___0___System_Predicate___0__" data-uid="Cobilas.Collections.ArrayManipulation.FindLast``1(``0[],System.Predicate{``0})">
-  FindLast&lt;T&gt;(T[], Predicate&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L751"><i class="bi bi-code-slash"></i></a>
+  FindLast&lt;T&gt;(T[]?, Predicate&lt;T&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L767"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Searches for an element that matches the conditions defined by the
@@ -2334,7 +2200,7 @@ specified predicate and returns the first occurrence in the entire Array.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T FindLast&lt;T&gt;(T[] array, Predicate&lt;T&gt; match)</code></pre>
+    <pre><code class="lang-csharp hljs">public static T? FindLast&lt;T&gt;(T[]? array, Predicate&lt;T&gt;? match)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -2376,8 +2242,8 @@ specified predicate and returns the first occurrence in the entire Array.</p>
   <a id="Cobilas_Collections_ArrayManipulation_Find_" data-uid="Cobilas.Collections.ArrayManipulation.Find*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_Find__1___0___System_Predicate___0__" data-uid="Cobilas.Collections.ArrayManipulation.Find``1(``0[],System.Predicate{``0})">
-  Find&lt;T&gt;(T[], Predicate&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L790"><i class="bi bi-code-slash"></i></a>
+  Find&lt;T&gt;(T[]?, Predicate&lt;T&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L819"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Searches for an element that matches the conditions defined by the
@@ -2386,7 +2252,7 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T Find&lt;T&gt;(T[] array, Predicate&lt;T&gt; match)</code></pre>
+    <pre><code class="lang-csharp hljs">public static T? Find&lt;T&gt;(T[]? array, Predicate&lt;T&gt;? match)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -2428,8 +2294,8 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <a id="Cobilas_Collections_ArrayManipulation_ForSector_" data-uid="Cobilas.Collections.ArrayManipulation.ForSector*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ForSector_System_Array_System_Action_System_Object_System_Int64___" data-uid="Cobilas.Collections.ArrayManipulation.ForSector(System.Array,System.Action{System.Object,System.Int64}@)">
-  ForSector(Array, in Action&lt;object, long&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L1124"><i class="bi bi-code-slash"></i></a>
+  ForSector(Array?, in Action&lt;object, long&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1252"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The method traverses several parts of a list simultaneously.</p>
@@ -2437,7 +2303,7 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ForSector(Array array, in Action&lt;object, long&gt; action)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ForSector(Array? array, in Action&lt;object, long&gt;? action)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -2471,8 +2337,8 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <a id="Cobilas_Collections_ArrayManipulation_ForSector_" data-uid="Cobilas.Collections.ArrayManipulation.ForSector*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ForSector_System_Array_System_Action_System_Object_System_Int64___System_Int64__" data-uid="Cobilas.Collections.ArrayManipulation.ForSector(System.Array,System.Action{System.Object,System.Int64}@,System.Int64@)">
-  ForSector(Array, in Action&lt;object, long&gt;, in long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L1116"><i class="bi bi-code-slash"></i></a>
+  ForSector(Array?, in Action&lt;object, long&gt;?, in long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1244"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The method traverses several parts of a list simultaneously.</p>
@@ -2480,7 +2346,7 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ForSector(Array array, in Action&lt;object, long&gt; action, in long sectorCount)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ForSector(Array? array, in Action&lt;object, long&gt;? action, in long sectorCount)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -2517,8 +2383,8 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <a id="Cobilas_Collections_ArrayManipulation_ForSector_" data-uid="Cobilas.Collections.ArrayManipulation.ForSector*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ForSector_System_Collections_IList_System_Action_System_Object_System_Int32___" data-uid="Cobilas.Collections.ArrayManipulation.ForSector(System.Collections.IList,System.Action{System.Object,System.Int32}@)">
-  ForSector(IList, in Action&lt;object, int&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L1207"><i class="bi bi-code-slash"></i></a>
+  ForSector(IList?, in Action&lt;object, int&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1354"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The method traverses several parts of a list simultaneously.</p>
@@ -2526,7 +2392,7 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ForSector(IList list, in Action&lt;object, int&gt; action)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ForSector(IList? list, in Action&lt;object, int&gt;? action)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -2560,8 +2426,8 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <a id="Cobilas_Collections_ArrayManipulation_ForSector_" data-uid="Cobilas.Collections.ArrayManipulation.ForSector*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ForSector_System_Collections_IList_System_Action_System_Object_System_Int32___System_Int32__" data-uid="Cobilas.Collections.ArrayManipulation.ForSector(System.Collections.IList,System.Action{System.Object,System.Int32}@,System.Int32@)">
-  ForSector(IList, in Action&lt;object, int&gt;, in int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L1199"><i class="bi bi-code-slash"></i></a>
+  ForSector(IList?, in Action&lt;object, int&gt;?, in int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1346"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The method traverses several parts of a list simultaneously.</p>
@@ -2569,7 +2435,7 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ForSector(IList list, in Action&lt;object, int&gt; action, in int sectorCount)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ForSector(IList? list, in Action&lt;object, int&gt;? action, in int sectorCount)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -2606,8 +2472,8 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <a id="Cobilas_Collections_ArrayManipulation_ForSector_" data-uid="Cobilas.Collections.ArrayManipulation.ForSector*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ForSector__1_System_Array_System_Action___0_System_Int64___" data-uid="Cobilas.Collections.ArrayManipulation.ForSector``1(System.Array,System.Action{``0,System.Int64}@)">
-  ForSector&lt;T&gt;(Array, in Action&lt;T, long&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L1087"><i class="bi bi-code-slash"></i></a>
+  ForSector&lt;T&gt;(Array?, in Action&lt;T, long&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1197"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The method traverses several parts of a list simultaneously.</p>
@@ -2615,7 +2481,7 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ForSector&lt;T&gt;(Array array, in Action&lt;T, long&gt; action)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ForSector&lt;T&gt;(Array? array, in Action&lt;T, long&gt;? action)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -2654,8 +2520,8 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <a id="Cobilas_Collections_ArrayManipulation_ForSector_" data-uid="Cobilas.Collections.ArrayManipulation.ForSector*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ForSector__1_System_Array_System_Action___0_System_Int64___System_Int64__" data-uid="Cobilas.Collections.ArrayManipulation.ForSector``1(System.Array,System.Action{``0,System.Int64}@,System.Int64@)">
-  ForSector&lt;T&gt;(Array, in Action&lt;T, long&gt;, in long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L1043"><i class="bi bi-code-slash"></i></a>
+  ForSector&lt;T&gt;(Array?, in Action&lt;T, long&gt;?, in long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The method traverses several parts of a list simultaneously.</p>
@@ -2663,7 +2529,7 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ForSector&lt;T&gt;(Array array, in Action&lt;T, long&gt; action, in long sectorCount)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ForSector&lt;T&gt;(Array? array, in Action&lt;T, long&gt;? action, in long sectorCount)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -2705,8 +2571,8 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <a id="Cobilas_Collections_ArrayManipulation_ForSector_" data-uid="Cobilas.Collections.ArrayManipulation.ForSector*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ForSector__1_System_Collections_Generic_IList___0__System_Action___0_System_Int32___" data-uid="Cobilas.Collections.ArrayManipulation.ForSector``1(System.Collections.Generic.IList{``0},System.Action{``0,System.Int32}@)">
-  ForSector&lt;T&gt;(IList&lt;T&gt;, in Action&lt;T, int&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L1190"><i class="bi bi-code-slash"></i></a>
+  ForSector&lt;T&gt;(IList&lt;T&gt;?, in Action&lt;T, int&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1334"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The method traverses several parts of a list simultaneously.</p>
@@ -2714,7 +2580,7 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ForSector&lt;T&gt;(IList&lt;T&gt; list, in Action&lt;T, int&gt; action)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ForSector&lt;T&gt;(IList&lt;T&gt;? list, in Action&lt;T, int&gt;? action)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -2753,8 +2619,8 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <a id="Cobilas_Collections_ArrayManipulation_ForSector_" data-uid="Cobilas.Collections.ArrayManipulation.ForSector*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ForSector__1_System_Collections_Generic_IList___0__System_Action___0_System_Int32___System_Int32__" data-uid="Cobilas.Collections.ArrayManipulation.ForSector``1(System.Collections.Generic.IList{``0},System.Action{``0,System.Int32}@,System.Int32@)">
-  ForSector&lt;T&gt;(IList&lt;T&gt;, in Action&lt;T, int&gt;, in int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L1182"><i class="bi bi-code-slash"></i></a>
+  ForSector&lt;T&gt;(IList&lt;T&gt;?, in Action&lt;T, int&gt;?, in int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1323"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The method traverses several parts of a list simultaneously.</p>
@@ -2762,7 +2628,7 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ForSector&lt;T&gt;(IList&lt;T&gt; list, in Action&lt;T, int&gt; action, in int sectorCount)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ForSector&lt;T&gt;(IList&lt;T&gt;? list, in Action&lt;T, int&gt;? action, in int sectorCount)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -2804,8 +2670,8 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <a id="Cobilas_Collections_ArrayManipulation_ForSector_" data-uid="Cobilas.Collections.ArrayManipulation.ForSector*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ForSector__1_System_Collections_IList_System_Action___0_System_Int32___" data-uid="Cobilas.Collections.ArrayManipulation.ForSector``1(System.Collections.IList,System.Action{``0,System.Int32}@)">
-  ForSector&lt;T&gt;(IList, in Action&lt;T, int&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L1170"><i class="bi bi-code-slash"></i></a>
+  ForSector&lt;T&gt;(IList?, in Action&lt;T, int&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1311"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The method traverses several parts of a list simultaneously.</p>
@@ -2813,7 +2679,7 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ForSector&lt;T&gt;(IList list, in Action&lt;T, int&gt; action)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ForSector&lt;T&gt;(IList? list, in Action&lt;T, int&gt;? action)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -2852,8 +2718,8 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <a id="Cobilas_Collections_ArrayManipulation_ForSector_" data-uid="Cobilas.Collections.ArrayManipulation.ForSector*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ForSector__1_System_Collections_IList_System_Action___0_System_Int32___System_Int32__" data-uid="Cobilas.Collections.ArrayManipulation.ForSector``1(System.Collections.IList,System.Action{``0,System.Int32}@,System.Int32@)">
-  ForSector&lt;T&gt;(IList, in Action&lt;T, int&gt;, in int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L1133"><i class="bi bi-code-slash"></i></a>
+  ForSector&lt;T&gt;(IList?, in Action&lt;T, int&gt;?, in int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1261"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The method traverses several parts of a list simultaneously.</p>
@@ -2861,7 +2727,7 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ForSector&lt;T&gt;(IList list, in Action&lt;T, int&gt; action, in int sectorCount)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ForSector&lt;T&gt;(IList? list, in Action&lt;T, int&gt;? action, in int sectorCount)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -2903,8 +2769,8 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <a id="Cobilas_Collections_ArrayManipulation_ForSector_" data-uid="Cobilas.Collections.ArrayManipulation.ForSector*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ForSector__1___0___System_Action___0_System_Int64___" data-uid="Cobilas.Collections.ArrayManipulation.ForSector``1(``0[],System.Action{``0,System.Int64}@)">
-  ForSector&lt;T&gt;(T[], in Action&lt;T, long&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L1107"><i class="bi bi-code-slash"></i></a>
+  ForSector&lt;T&gt;(T[]?, in Action&lt;T, long&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1228"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The method traverses several parts of a list simultaneously.</p>
@@ -2912,7 +2778,7 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ForSector&lt;T&gt;(T[] array, in Action&lt;T, long&gt; action)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ForSector&lt;T&gt;(T[]? array, in Action&lt;T, long&gt;? action)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -2951,8 +2817,8 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <a id="Cobilas_Collections_ArrayManipulation_ForSector_" data-uid="Cobilas.Collections.ArrayManipulation.ForSector*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ForSector__1___0___System_Action___0_System_Int64___System_Int64__" data-uid="Cobilas.Collections.ArrayManipulation.ForSector``1(``0[],System.Action{``0,System.Int64}@,System.Int64@)">
-  ForSector&lt;T&gt;(T[], in Action&lt;T, long&gt;, in long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L1099"><i class="bi bi-code-slash"></i></a>
+  ForSector&lt;T&gt;(T[]?, in Action&lt;T, long&gt;?, in long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1213"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The method traverses several parts of a list simultaneously.</p>
@@ -2960,7 +2826,7 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ForSector&lt;T&gt;(T[] array, in Action&lt;T, long&gt; action, in long sectorCount)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ForSector&lt;T&gt;(T[]? array, in Action&lt;T, long&gt;? action, in long sectorCount)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3002,8 +2868,8 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <a id="Cobilas_Collections_ArrayManipulation_IndexOf_" data-uid="Cobilas.Collections.ArrayManipulation.IndexOf*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_IndexOf_System_Object_System_Array_" data-uid="Cobilas.Collections.ArrayManipulation.IndexOf(System.Object,System.Array)">
-  IndexOf(object, Array)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L501"><i class="bi bi-code-slash"></i></a>
+  IndexOf(object?, Array?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L489"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Searches for the specified object and returns the index of its first occurrence in a one-dimensional array or a range of elements in the array.</p>
@@ -3011,7 +2877,7 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int IndexOf(object item, Array array)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int IndexOf(object? item, Array? array)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3035,14 +2901,20 @@ specified predicate, and returns the first occurrence within the entire Array.</
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>array is null</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_Collections_ArrayManipulation_IndexOf_" data-uid="Cobilas.Collections.ArrayManipulation.IndexOf*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_IndexOf_System_Object_System_Array_System_Int32_" data-uid="Cobilas.Collections.ArrayManipulation.IndexOf(System.Object,System.Array,System.Int32)">
-  IndexOf(object, Array, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L495"><i class="bi bi-code-slash"></i></a>
+  IndexOf(object?, Array?, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L482"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Searches for the specified object and returns the index of its first occurrence in a one-dimensional array or a range of elements in the array.</p>
@@ -3050,7 +2922,7 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int IndexOf(object item, Array array, int index)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int IndexOf(object? item, Array? array, int index)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3076,14 +2948,20 @@ specified predicate, and returns the first occurrence within the entire Array.</
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>array is null</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_Collections_ArrayManipulation_IndexOf_" data-uid="Cobilas.Collections.ArrayManipulation.IndexOf*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_IndexOf_System_Object_System_Array_System_Int32_System_Int32_" data-uid="Cobilas.Collections.ArrayManipulation.IndexOf(System.Object,System.Array,System.Int32,System.Int32)">
-  IndexOf(object, Array, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L489"><i class="bi bi-code-slash"></i></a>
+  IndexOf(object?, Array?, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L475"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Searches for the specified object and returns the index of its first occurrence in a one-dimensional array or a range of elements in the array.</p>
@@ -3091,7 +2969,7 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int IndexOf(object item, Array array, int index, int length)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int IndexOf(object? item, Array? array, int index, int length)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3119,14 +2997,20 @@ specified predicate, and returns the first occurrence within the entire Array.</
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>array is null</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_Collections_ArrayManipulation_IndexOf_" data-uid="Cobilas.Collections.ArrayManipulation.IndexOf*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_IndexOf_System_Object_System_Array_System_Int64_" data-uid="Cobilas.Collections.ArrayManipulation.IndexOf(System.Object,System.Array,System.Int64)">
-  IndexOf(object, Array, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L472"><i class="bi bi-code-slash"></i></a>
+  IndexOf(object?, Array?, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L449"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Searches for the specified object and returns the index of its first occurrence in a one-dimensional array or a range of elements in the array.</p>
@@ -3134,7 +3018,7 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static long IndexOf(object item, Array array, long index)</code></pre>
+    <pre><code class="lang-csharp hljs">public static long IndexOf(object? item, Array? array, long index)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3166,8 +3050,8 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <a id="Cobilas_Collections_ArrayManipulation_IndexOf_" data-uid="Cobilas.Collections.ArrayManipulation.IndexOf*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_IndexOf_System_Object_System_Array_System_Int64_System_Int64_" data-uid="Cobilas.Collections.ArrayManipulation.IndexOf(System.Object,System.Array,System.Int64,System.Int64)">
-  IndexOf(object, Array, long, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L435"><i class="bi bi-code-slash"></i></a>
+  IndexOf(object?, Array?, long, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L408"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Searches for the specified object and returns the index of its first occurrence in a one-dimensional array or a range of elements in the array.</p>
@@ -3175,7 +3059,7 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static long IndexOf(object item, Array array, long index, long length)</code></pre>
+    <pre><code class="lang-csharp hljs">public static long IndexOf(object? item, Array? array, long index, long length)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3209,8 +3093,8 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <a id="Cobilas_Collections_ArrayManipulation_Insert_" data-uid="Cobilas.Collections.ArrayManipulation.Insert*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_Insert__1_System_Collections_Generic_IEnumerable___0__System_Int64___0___" data-uid="Cobilas.Collections.ArrayManipulation.Insert``1(System.Collections.Generic.IEnumerable{``0},System.Int64,``0[])">
-  Insert&lt;T&gt;(IEnumerable&lt;T&gt;, long, T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  Insert&lt;T&gt;(IEnumerable&lt;T&gt;?, long, T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L46"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Insert a list of items at a given index into a target array.</p>
@@ -3218,7 +3102,7 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T[] Insert&lt;T&gt;(IEnumerable&lt;T&gt; collection, long index, T[] list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static T[] Insert&lt;T&gt;(IEnumerable&lt;T&gt;? collection, long index, T[] list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3263,8 +3147,8 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <a id="Cobilas_Collections_ArrayManipulation_Insert_" data-uid="Cobilas.Collections.ArrayManipulation.Insert*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_Insert__1_System_Collections_Generic_IEnumerable___0__System_Int64___0____" data-uid="Cobilas.Collections.ArrayManipulation.Insert``1(System.Collections.Generic.IEnumerable{``0},System.Int64,``0[]@)">
-  Insert&lt;T&gt;(IEnumerable&lt;T&gt;, long, ref T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  Insert&lt;T&gt;(IEnumerable&lt;T&gt;?, long, ref T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Insert a list of items at a given index into a target array.</p>
@@ -3272,7 +3156,7 @@ specified predicate, and returns the first occurrence within the entire Array.</
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Insert&lt;T&gt;(IEnumerable&lt;T&gt; collection, long index, ref T[] list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Insert&lt;T&gt;(IEnumerable&lt;T&gt;? collection, long index, ref T[] list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3311,64 +3195,9 @@ specified predicate, and returns the first occurrence within the entire Array.</
 
   <a id="Cobilas_Collections_ArrayManipulation_Insert_" data-uid="Cobilas.Collections.ArrayManipulation.Insert*"></a>
 
-  <h3 id="Cobilas_Collections_ArrayManipulation_Insert__1_System_Collections_Generic_IEnumerator___0__System_Int64___0___" data-uid="Cobilas.Collections.ArrayManipulation.Insert``1(System.Collections.Generic.IEnumerator{``0},System.Int64,``0[])">
-  Insert&lt;T&gt;(IEnumerator&lt;T&gt;, long, T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L44"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Insert a list of items at a given index into a target array.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the T[] Insert&lt;T&gt;(IEnumerable&lt;T&gt;, long, T[]) method&quot;)]
-public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] list)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>itens</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;T&gt;</dt>
-    <dd><p>The items that will be inserted into the list.</p>
-</dd>
-    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
-    <dd><p>The index of the list where the items will be inserted.</p>
-</dd>
-    <dt><code>list</code> T[]</dt>
-    <dd><p>The list that will receive the items.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt>T[]</dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-  <a id="Cobilas_Collections_ArrayManipulation_Insert_" data-uid="Cobilas.Collections.ArrayManipulation.Insert*"></a>
-
   <h3 id="Cobilas_Collections_ArrayManipulation_Insert__1___0_System_Int64___0___" data-uid="Cobilas.Collections.ArrayManipulation.Insert``1(``0,System.Int64,``0[])">
-  Insert&lt;T&gt;(T, long, T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  Insert&lt;T&gt;(T?, long, T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Insert a list of items at a given index into a target array.</p>
@@ -3376,7 +3205,7 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T[] Insert&lt;T&gt;(T item, long index, T[] list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static T[] Insert&lt;T&gt;(T? item, long index, T[] list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3421,8 +3250,8 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
   <a id="Cobilas_Collections_ArrayManipulation_Insert_" data-uid="Cobilas.Collections.ArrayManipulation.Insert*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_Insert__1___0_System_Int64___0____" data-uid="Cobilas.Collections.ArrayManipulation.Insert``1(``0,System.Int64,``0[]@)">
-  Insert&lt;T&gt;(T, long, ref T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  Insert&lt;T&gt;(T?, long, ref T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Insert a list of items at a given index into a target array.</p>
@@ -3430,7 +3259,7 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Insert&lt;T&gt;(T item, long index, ref T[] list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Insert&lt;T&gt;(T? item, long index, ref T[] list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3470,8 +3299,8 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
   <a id="Cobilas_Collections_ArrayManipulation_Insert_" data-uid="Cobilas.Collections.ArrayManipulation.Insert*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_Insert__1___0___System_Int64___0___" data-uid="Cobilas.Collections.ArrayManipulation.Insert``1(``0[],System.Int64,``0[])">
-  Insert&lt;T&gt;(T[], long, T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  Insert&lt;T&gt;(T[]?, long, T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Insert a list of items at a given index into a target array.</p>
@@ -3479,7 +3308,7 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T[] Insert&lt;T&gt;(T[] itens, long index, T[] list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static T[] Insert&lt;T&gt;(T[]? itens, long index, T[] list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3524,8 +3353,8 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
   <a id="Cobilas_Collections_ArrayManipulation_Insert_" data-uid="Cobilas.Collections.ArrayManipulation.Insert*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_Insert__1___0___System_Int64___0____" data-uid="Cobilas.Collections.ArrayManipulation.Insert``1(``0[],System.Int64,``0[]@)">
-  Insert&lt;T&gt;(T[], long, ref T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  Insert&lt;T&gt;(T[]?, long, ref T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Insert a list of items at a given index into a target array.</p>
@@ -3533,7 +3362,7 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Insert&lt;T&gt;(T[] itens, long index, ref T[] list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Insert&lt;T&gt;(T[]? itens, long index, ref T[] list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3573,8 +3402,8 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
   <a id="Cobilas_Collections_ArrayManipulation_IsFixedSizeSafe_" data-uid="Cobilas.Collections.ArrayManipulation.IsFixedSizeSafe*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_IsFixedSizeSafe_Cobilas_Collections_ILongList_" data-uid="Cobilas.Collections.ArrayManipulation.IsFixedSizeSafe(Cobilas.Collections.ILongList)">
-  IsFixedSizeSafe(ILongList)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L1022"><i class="bi bi-code-slash"></i></a>
+  IsFixedSizeSafe(ILongList?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1118"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the collection has a fixed size.</p>
@@ -3582,7 +3411,7 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsFixedSizeSafe(ILongList array)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool IsFixedSizeSafe(ILongList? array)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3610,8 +3439,8 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
   <a id="Cobilas_Collections_ArrayManipulation_IsFixedSizeSafe_" data-uid="Cobilas.Collections.ArrayManipulation.IsFixedSizeSafe*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_IsFixedSizeSafe_System_Collections_IList_" data-uid="Cobilas.Collections.ArrayManipulation.IsFixedSizeSafe(System.Collections.IList)">
-  IsFixedSizeSafe(IList)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L1016"><i class="bi bi-code-slash"></i></a>
+  IsFixedSizeSafe(IList?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1112"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the collection has a fixed size.</p>
@@ -3619,7 +3448,7 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsFixedSizeSafe(IList array)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool IsFixedSizeSafe(IList? array)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3647,8 +3476,8 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
   <a id="Cobilas_Collections_ArrayManipulation_IsReadOnlySafe_" data-uid="Cobilas.Collections.ArrayManipulation.IsReadOnlySafe*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_IsReadOnlySafe_Cobilas_Collections_ILongList_" data-uid="Cobilas.Collections.ArrayManipulation.IsReadOnlySafe(Cobilas.Collections.ILongList)">
-  IsReadOnlySafe(ILongList)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L1010"><i class="bi bi-code-slash"></i></a>
+  IsReadOnlySafe(ILongList?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the collection is read-only.</p>
@@ -3656,7 +3485,7 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsReadOnlySafe(ILongList array)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool IsReadOnlySafe(ILongList? array)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3684,8 +3513,8 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
   <a id="Cobilas_Collections_ArrayManipulation_IsReadOnlySafe_" data-uid="Cobilas.Collections.ArrayManipulation.IsReadOnlySafe*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_IsReadOnlySafe_System_Collections_IList_" data-uid="Cobilas.Collections.ArrayManipulation.IsReadOnlySafe(System.Collections.IList)">
-  IsReadOnlySafe(IList)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L1004"><i class="bi bi-code-slash"></i></a>
+  IsReadOnlySafe(IList?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the collection is read-only.</p>
@@ -3693,7 +3522,7 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsReadOnlySafe(IList array)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool IsReadOnlySafe(IList? array)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3721,8 +3550,8 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
   <a id="Cobilas_Collections_ArrayManipulation_IsSynchronizedSafe_" data-uid="Cobilas.Collections.ArrayManipulation.IsSynchronizedSafe*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_IsSynchronizedSafe_Cobilas_Collections_ILongCollection_" data-uid="Cobilas.Collections.ArrayManipulation.IsSynchronizedSafe(Cobilas.Collections.ILongCollection)">
-  IsSynchronizedSafe(ILongCollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L1034"><i class="bi bi-code-slash"></i></a>
+  IsSynchronizedSafe(ILongCollection?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1130"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the collection is synchronized.</p>
@@ -3730,7 +3559,7 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsSynchronizedSafe(ILongCollection collection)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool IsSynchronizedSafe(ILongCollection? collection)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3758,8 +3587,8 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
   <a id="Cobilas_Collections_ArrayManipulation_IsSynchronizedSafe_" data-uid="Cobilas.Collections.ArrayManipulation.IsSynchronizedSafe*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_IsSynchronizedSafe_System_Collections_ICollection_" data-uid="Cobilas.Collections.ArrayManipulation.IsSynchronizedSafe(System.Collections.ICollection)">
-  IsSynchronizedSafe(ICollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L1028"><i class="bi bi-code-slash"></i></a>
+  IsSynchronizedSafe(ICollection?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1124"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the collection is synchronized.</p>
@@ -3767,7 +3596,7 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsSynchronizedSafe(ICollection collection)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool IsSynchronizedSafe(ICollection? collection)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3796,7 +3625,7 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
 
   <h3 id="Cobilas_Collections_ArrayManipulation_LastIndexOf_System_Object_System_Array_" data-uid="Cobilas.Collections.ArrayManipulation.LastIndexOf(System.Object,System.Array)">
   LastIndexOf(object, Array)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L573"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L575"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the index of the last occurrence of a value in a one-dimensional Array or part of the Array.</p>
@@ -3835,7 +3664,7 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
 
   <h3 id="Cobilas_Collections_ArrayManipulation_LastIndexOf_System_Object_System_Array_System_Int32_" data-uid="Cobilas.Collections.ArrayManipulation.LastIndexOf(System.Object,System.Array,System.Int32)">
   LastIndexOf(object, Array, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L567"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L569"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the index of the last occurrence of a value in a one-dimensional Array or part of the Array.</p>
@@ -3876,7 +3705,7 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
 
   <h3 id="Cobilas_Collections_ArrayManipulation_LastIndexOf_System_Object_System_Array_System_Int32_System_Int32_" data-uid="Cobilas.Collections.ArrayManipulation.LastIndexOf(System.Object,System.Array,System.Int32,System.Int32)">
   LastIndexOf(object, Array, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L561"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L563"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the index of the last occurrence of a value in a one-dimensional Array or part of the Array.</p>
@@ -3919,7 +3748,7 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
 
   <h3 id="Cobilas_Collections_ArrayManipulation_LastIndexOf_System_Object_System_Array_System_Int64_" data-uid="Cobilas.Collections.ArrayManipulation.LastIndexOf(System.Object,System.Array,System.Int64)">
   LastIndexOf(object, Array, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L544"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L541"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the index of the last occurrence of a value in a one-dimensional Array or part of the Array.</p>
@@ -3959,8 +3788,8 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
   <a id="Cobilas_Collections_ArrayManipulation_LastIndexOf_" data-uid="Cobilas.Collections.ArrayManipulation.LastIndexOf*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_LastIndexOf_System_Object_System_Array_System_Int64_System_Int64_" data-uid="Cobilas.Collections.ArrayManipulation.LastIndexOf(System.Object,System.Array,System.Int64,System.Int64)">
-  LastIndexOf(object, Array, long, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L507"><i class="bi bi-code-slash"></i></a>
+  LastIndexOf(object?, Array?, long, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L495"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the index of the last occurrence of a value in a one-dimensional Array or part of the Array.</p>
@@ -3968,7 +3797,7 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static long LastIndexOf(object item, Array array, long index, long length)</code></pre>
+    <pre><code class="lang-csharp hljs">public static long LastIndexOf(object? item, Array? array, long index, long length)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -4003,7 +3832,7 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
 
   <h3 id="Cobilas_Collections_ArrayManipulation_LongClearArray_System_Array_" data-uid="Cobilas.Collections.ArrayManipulation.LongClearArray(System.Array)">
   LongClearArray(Array)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L250"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L223"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Array cleaning.</p>
@@ -4044,7 +3873,7 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
 
   <h3 id="Cobilas_Collections_ArrayManipulation_LongClearArraySafe_System_Array_" data-uid="Cobilas.Collections.ArrayManipulation.LongClearArraySafe(System.Array)">
   LongClearArraySafe(Array)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L287"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Array cleaning.
@@ -4086,7 +3915,7 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
 
   <h3 id="Cobilas_Collections_ArrayManipulation_LongClearArraySafe__1___0____" data-uid="Cobilas.Collections.ArrayManipulation.LongClearArraySafe``1(``0[]@)">
   LongClearArraySafe&lt;T&gt;(ref T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L328"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Array cleaning.
@@ -4133,7 +3962,7 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
 
   <h3 id="Cobilas_Collections_ArrayManipulation_LongClearArray__1___0____" data-uid="Cobilas.Collections.ArrayManipulation.LongClearArray``1(``0[]@)">
   LongClearArray&lt;T&gt;(ref T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L250"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Array cleaning.</p>
@@ -4178,8 +4007,8 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
   <a id="Cobilas_Collections_ArrayManipulation_LongConvertAll_" data-uid="Cobilas.Collections.ArrayManipulation.LongConvertAll*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_LongConvertAll__2___0___System_Converter___0___1__" data-uid="Cobilas.Collections.ArrayManipulation.LongConvertAll``2(``0[],System.Converter{``0,``1})">
-  LongConvertAll&lt;TInput, TOutput&gt;(TInput[], Converter&lt;TInput, TOutput&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L875"><i class="bi bi-code-slash"></i></a>
+  LongConvertAll&lt;TInput, TOutput&gt;(TInput[]?, Converter&lt;TInput, TOutput&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L934"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts an array of one type to an array of another type.</p>
@@ -4187,7 +4016,7 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static TOutput[] LongConvertAll&lt;TInput, TOutput&gt;(TInput[] array, Converter&lt;TInput, TOutput&gt; converter)</code></pre>
+    <pre><code class="lang-csharp hljs">public static TOutput[] LongConvertAll&lt;TInput, TOutput&gt;(TInput[]? array, Converter&lt;TInput, TOutput&gt;? converter)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -4228,7 +4057,8 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
     <dd></dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.rankexception">RankException</a></dt>
-    <dd></dd>
+    <dd><p>The array cannot be multi-dimensional.</p>
+</dd>
   </dl>
 
 
@@ -4236,8 +4066,8 @@ public static T[] Insert&lt;T&gt;(IEnumerator&lt;T&gt; itens, long index, T[] li
   <a id="Cobilas_Collections_ArrayManipulation_LongFindIndex_" data-uid="Cobilas.Collections.ArrayManipulation.LongFindIndex*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_LongFindIndex__1___0___System_Predicate___0__" data-uid="Cobilas.Collections.ArrayManipulation.LongFindIndex``1(``0[],System.Predicate{``0})">
-  LongFindIndex&lt;T&gt;(T[], Predicate&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L628"><i class="bi bi-code-slash"></i></a>
+  LongFindIndex&lt;T&gt;(T[]?, Predicate&lt;T&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L644"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Searches for an element that matches the conditions defined by the specified predicate and returns
@@ -4247,7 +4077,7 @@ at the specified index and contains the specified number of elements.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static long LongFindIndex&lt;T&gt;(T[] array, Predicate&lt;T&gt; match)</code></pre>
+    <pre><code class="lang-csharp hljs">public static long LongFindIndex&lt;T&gt;(T[]? array, Predicate&lt;T&gt;? match)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -4292,7 +4122,7 @@ at the specified index and contains the specified number of elements.</p>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_LongFindLastIndex__1___0___System_Predicate___0__" data-uid="Cobilas.Collections.ArrayManipulation.LongFindLastIndex``1(``0[],System.Predicate{``0})">
   LongFindLastIndex&lt;T&gt;(T[], Predicate&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L709"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L725"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Searches for an element that matches the conditions defined by a
@@ -4346,8 +4176,8 @@ occurrence in an Array or part of it.</p>
   <a id="Cobilas_Collections_ArrayManipulation_LongIndexOf_" data-uid="Cobilas.Collections.ArrayManipulation.LongIndexOf*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_LongIndexOf_System_Object_System_Array_" data-uid="Cobilas.Collections.ArrayManipulation.LongIndexOf(System.Object,System.Array)">
-  LongIndexOf(object, Array)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L483"><i class="bi bi-code-slash"></i></a>
+  LongIndexOf(object?, Array?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L468"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Searches for the specified object and returns the index of its first occurrence in a one-dimensional array or a range of elements in the array.</p>
@@ -4355,7 +4185,7 @@ occurrence in an Array or part of it.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static long LongIndexOf(object item, Array array)</code></pre>
+    <pre><code class="lang-csharp hljs">public static long LongIndexOf(object? item, Array? array)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -4386,7 +4216,7 @@ occurrence in an Array or part of it.</p>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_LongLastIndexOf_System_Object_System_Array_" data-uid="Cobilas.Collections.ArrayManipulation.LongLastIndexOf(System.Object,System.Array)">
   LongLastIndexOf(object, Array)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L555"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L557"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the index of the last occurrence of a value in a one-dimensional Array or part of the Array.</p>
@@ -4424,8 +4254,8 @@ occurrence in an Array or part of it.</p>
   <a id="Cobilas_Collections_ArrayManipulation_LongReverse_" data-uid="Cobilas.Collections.ArrayManipulation.LongReverse*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_LongReverse_System_Array_" data-uid="Cobilas.Collections.ArrayManipulation.LongReverse(System.Array)">
-  LongReverse(Array)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L944"><i class="bi bi-code-slash"></i></a>
+  LongReverse(Array?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1023"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Reverses the order of the elements in a one-dimensional Array or in a portion of the Array.</p>
@@ -4433,7 +4263,7 @@ occurrence in an Array or part of it.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void LongReverse(Array array)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void LongReverse(Array? array)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -4451,6 +4281,12 @@ occurrence in an Array or part of it.</p>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Occurs when <code>array</code> parameter is null.</p>
+</dd>
+  </dl>
 
 
 
@@ -4458,7 +4294,7 @@ occurrence in an Array or part of it.</p>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ReadOnlySafe__1___0___" data-uid="Cobilas.Collections.ArrayManipulation.ReadOnlySafe``1(``0[])">
   ReadOnlySafe&lt;T&gt;(T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L429"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L402"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Turn a list into a read-only list</p>
@@ -4500,8 +4336,8 @@ occurrence in an Array or part of it.</p>
   <a id="Cobilas_Collections_ArrayManipulation_ReadOnly_" data-uid="Cobilas.Collections.ArrayManipulation.ReadOnly*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_ReadOnly__1___0___" data-uid="Cobilas.Collections.ArrayManipulation.ReadOnly``1(``0[])">
-  ReadOnly&lt;T&gt;(T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L422"><i class="bi bi-code-slash"></i></a>
+  ReadOnly&lt;T&gt;(T[]?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L395"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Turn a list into a read-only list</p>
@@ -4509,7 +4345,7 @@ occurrence in an Array or part of it.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ReadOnlyCollection&lt;T&gt; ReadOnly&lt;T&gt;(T[] list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ReadOnlyCollection&lt;T&gt; ReadOnly&lt;T&gt;(T[]? list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -4542,8 +4378,8 @@ occurrence in an Array or part of it.</p>
   <a id="Cobilas_Collections_ArrayManipulation_Remove_" data-uid="Cobilas.Collections.ArrayManipulation.Remove*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_Remove__1_System_Int64_System_Int64___0___" data-uid="Cobilas.Collections.ArrayManipulation.Remove``1(System.Int64,System.Int64,``0[])">
-  Remove&lt;T&gt;(long, long, T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  Remove&lt;T&gt;(long, long, T[]?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L150"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Remove items from the target list.</p>
@@ -4551,7 +4387,7 @@ occurrence in an Array or part of it.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T[] Remove&lt;T&gt;(long index, long length, T[] list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static T[] Remove&lt;T&gt;(long index, long length, T[]? list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -4599,7 +4435,7 @@ occurrence in an Array or part of it.</p>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_Remove__1_System_Int64_System_Int64___0____" data-uid="Cobilas.Collections.ArrayManipulation.Remove``1(System.Int64,System.Int64,``0[]@)">
   Remove&lt;T&gt;(long, long, ref T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L166"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Remove items from the target list.</p>
@@ -4649,8 +4485,8 @@ occurrence in an Array or part of it.</p>
   <a id="Cobilas_Collections_ArrayManipulation_Remove_" data-uid="Cobilas.Collections.ArrayManipulation.Remove*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_Remove__1_System_Int64___0___" data-uid="Cobilas.Collections.ArrayManipulation.Remove``1(System.Int64,``0[])">
-  Remove&lt;T&gt;(long, T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  Remove&lt;T&gt;(long, T[]?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L174"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Remove items from the target list.</p>
@@ -4658,7 +4494,7 @@ occurrence in an Array or part of it.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T[] Remove&lt;T&gt;(long index, T[] list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static T[] Remove&lt;T&gt;(long index, T[]? list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -4703,7 +4539,7 @@ occurrence in an Array or part of it.</p>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_Remove__1_System_Int64___0____" data-uid="Cobilas.Collections.ArrayManipulation.Remove``1(System.Int64,``0[]@)">
   Remove&lt;T&gt;(long, ref T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L182"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Remove items from the target list.</p>
@@ -4750,8 +4586,8 @@ occurrence in an Array or part of it.</p>
   <a id="Cobilas_Collections_ArrayManipulation_Remove_" data-uid="Cobilas.Collections.ArrayManipulation.Remove*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_Remove__1___0___0___" data-uid="Cobilas.Collections.ArrayManipulation.Remove``1(``0,``0[])">
-  Remove&lt;T&gt;(T, T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  Remove&lt;T&gt;(T?, T[]?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L190"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Remove items from the target list.</p>
@@ -4759,7 +4595,7 @@ occurrence in an Array or part of it.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T[] Remove&lt;T&gt;(T item, T[] list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static T[] Remove&lt;T&gt;(T? item, T[]? list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -4803,8 +4639,8 @@ occurrence in an Array or part of it.</p>
   <a id="Cobilas_Collections_ArrayManipulation_Remove_" data-uid="Cobilas.Collections.ArrayManipulation.Remove*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_Remove__1___0___0____" data-uid="Cobilas.Collections.ArrayManipulation.Remove``1(``0,``0[]@)">
-  Remove&lt;T&gt;(T, ref T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  Remove&lt;T&gt;(T?, ref T[]?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L198"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Remove items from the target list.</p>
@@ -4812,7 +4648,7 @@ occurrence in an Array or part of it.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Remove&lt;T&gt;(T item, ref T[] list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Remove&lt;T&gt;(T? item, ref T[]? list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -4851,8 +4687,8 @@ occurrence in an Array or part of it.</p>
   <a id="Cobilas_Collections_ArrayManipulation_Resize_" data-uid="Cobilas.Collections.ArrayManipulation.Resize*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_Resize__1___0____System_Int32_" data-uid="Cobilas.Collections.ArrayManipulation.Resize``1(``0[]@,System.Int32)">
-  Resize&lt;T&gt;(ref T[], int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L950"><i class="bi bi-code-slash"></i></a>
+  Resize&lt;T&gt;(ref T[]?, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1036"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Changes the number of elements of a one-dimensional array to the specified new size.</p>
@@ -4860,7 +4696,7 @@ occurrence in an Array or part of it.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Resize&lt;T&gt;(ref T[] array, int newSize)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Resize&lt;T&gt;(ref T[]? array, int newSize)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -4890,8 +4726,8 @@ occurrence in an Array or part of it.</p>
   <a id="Cobilas_Collections_ArrayManipulation_Resize_" data-uid="Cobilas.Collections.ArrayManipulation.Resize*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_Resize__1___0____System_Int64_" data-uid="Cobilas.Collections.ArrayManipulation.Resize``1(``0[]@,System.Int64)">
-  Resize&lt;T&gt;(ref T[], long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L957"><i class="bi bi-code-slash"></i></a>
+  Resize&lt;T&gt;(ref T[]?, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1043"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Changes the number of elements of a one-dimensional array to the specified new size.</p>
@@ -4899,7 +4735,7 @@ occurrence in an Array or part of it.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Resize&lt;T&gt;(ref T[] array, long newSize)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Resize&lt;T&gt;(ref T[]? array, long newSize)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -4926,7 +4762,11 @@ occurrence in an Array or part of it.</p>
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
-    <dd></dd>
+    <dd><p>The <code>newSize</code> parameter cannot be less than zero.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Occurs when <code>array</code> parameter is null.</p>
+</dd>
   </dl>
 
 
@@ -4934,8 +4774,8 @@ occurrence in an Array or part of it.</p>
   <a id="Cobilas_Collections_ArrayManipulation_Reverse_" data-uid="Cobilas.Collections.ArrayManipulation.Reverse*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_Reverse_System_Array_" data-uid="Cobilas.Collections.ArrayManipulation.Reverse(System.Array)">
-  Reverse(Array)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L937"><i class="bi bi-code-slash"></i></a>
+  Reverse(Array?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L1008"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Reverses the order of the elements in a one-dimensional Array or in a portion of the Array.</p>
@@ -4943,7 +4783,7 @@ occurrence in an Array or part of it.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Reverse(Array array)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Reverse(Array? array)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -4961,14 +4801,20 @@ occurrence in an Array or part of it.</p>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Occurs when <code>array</code> parameter is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_Collections_ArrayManipulation_Reverse_" data-uid="Cobilas.Collections.ArrayManipulation.Reverse*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_Reverse_System_Array_System_Int32_System_Int32_" data-uid="Cobilas.Collections.ArrayManipulation.Reverse(System.Array,System.Int32,System.Int32)">
-  Reverse(Array, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L895"><i class="bi bi-code-slash"></i></a>
+  Reverse(Array?, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L960"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Reverses the order of the elements in a one-dimensional Array or in a portion of the Array.</p>
@@ -4976,7 +4822,7 @@ occurrence in an Array or part of it.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Reverse(Array array, int index, int length)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Reverse(Array? array, int index, int length)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -5006,8 +4852,8 @@ occurrence in an Array or part of it.</p>
   <a id="Cobilas_Collections_ArrayManipulation_Reverse_" data-uid="Cobilas.Collections.ArrayManipulation.Reverse*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_Reverse_System_Array_System_Int64_System_Int64_" data-uid="Cobilas.Collections.ArrayManipulation.Reverse(System.Array,System.Int64,System.Int64)">
-  Reverse(Array, long, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L907"><i class="bi bi-code-slash"></i></a>
+  Reverse(Array?, long, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L972"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Reverses the order of the elements in a one-dimensional Array or in a portion of the Array.</p>
@@ -5015,7 +4861,7 @@ occurrence in an Array or part of it.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Reverse(Array array, long index, long length)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Reverse(Array? array, long index, long length)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -5044,7 +4890,8 @@ occurrence in an Array or part of it.</p>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
     <dd></dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.rankexception">RankException</a></dt>
-    <dd></dd>
+    <dd><p>The array cannot be multi-dimensional.</p>
+</dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
     <dd></dd>
   </dl>
@@ -5054,8 +4901,8 @@ occurrence in an Array or part of it.</p>
   <a id="Cobilas_Collections_ArrayManipulation_SeparateList_" data-uid="Cobilas.Collections.ArrayManipulation.SeparateList*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_SeparateList__1___0___System_Int64___0______0____" data-uid="Cobilas.Collections.ArrayManipulation.SeparateList``1(``0[],System.Int64,``0[]@,``0[]@)">
-  SeparateList&lt;T&gt;(T[], long, out T[], out T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L387"><i class="bi bi-code-slash"></i></a>
+  SeparateList&lt;T&gt;(T[]?, long, out T[], out T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L360"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Separate a list into two using an index.</p>
@@ -5063,7 +4910,7 @@ occurrence in an Array or part of it.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SeparateList&lt;T&gt;(T[] array, long separationIndex, out T[] part1, out T[] part2)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void SeparateList&lt;T&gt;(T[]? array, long separationIndex, out T[] part1, out T[] part2)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -5108,8 +4955,8 @@ occurrence in an Array or part of it.</p>
   <a id="Cobilas_Collections_ArrayManipulation_TakeStretch_" data-uid="Cobilas.Collections.ArrayManipulation.TakeStretch*"></a>
 
   <h3 id="Cobilas_Collections_ArrayManipulation_TakeStretch__1_System_Int64_System_Int64___0___" data-uid="Cobilas.Collections.ArrayManipulation.TakeStretch``1(System.Int64,System.Int64,``0[])">
-  TakeStretch&lt;T&gt;(long, long, T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  TakeStretch&lt;T&gt;(long, long, T[]?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L383"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This function performs a cut in a list.</p>
@@ -5117,7 +4964,7 @@ occurrence in an Array or part of it.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T[] TakeStretch&lt;T&gt;(long index, long length, T[] list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static T[] TakeStretch&lt;T&gt;(long index, long length, T[]? list)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -5168,7 +5015,7 @@ occurrence in an Array or part of it.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Runtime/Collections/ArrayManipulation.cs/#L8" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/Collections/ArrayManipulation.cs/#L8" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -16,11 +16,11 @@ items:
   type: Class
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/CB_XML_Extension.cs
+      path: System/Xml/CB_XML_Extension.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: CB_XML_Extension
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/CB_XML_Extension.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/CB_XML_Extension.cs
     startLine: 8
   assemblies:
   - Cobilas.Core
@@ -33,13 +33,13 @@ items:
   inheritance:
   - System.Object
   inheritedMembers:
-  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
 - uid: System.Xml.CB_XML_Extension.WriterXMLIRW(System.Xml.XmlWriter,System.Xml.XMLIRWElement)
   commentId: M:System.Xml.CB_XML_Extension.WriterXMLIRW(System.Xml.XmlWriter,System.Xml.XMLIRWElement)
   id: WriterXMLIRW(System.Xml.XmlWriter,System.Xml.XMLIRWElement)
@@ -54,12 +54,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/CB_XML_Extension.cs
+      path: System/Xml/CB_XML_Extension.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: WriterXMLIRW
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/CB_XML_Extension.cs
-    startLine: 13
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/CB_XML_Extension.cs
+    startLine: 16
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -74,6 +74,10 @@ items:
       type: System.Xml.XMLIRWElement
     content.vb: Public Shared Sub WriterXMLIRW(writer As XmlWriter, element As XMLIRWElement)
   overload: System.Xml.CB_XML_Extension.WriterXMLIRW*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The Settings property of the xml is null.
 - uid: System.Xml.CB_XML_Extension.ReadXMLIRW(System.Xml.XmlReader)
   commentId: M:System.Xml.CB_XML_Extension.ReadXMLIRW(System.Xml.XmlReader)
   id: ReadXMLIRW(System.Xml.XmlReader)
@@ -88,12 +92,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/CB_XML_Extension.cs
+      path: System/Xml/CB_XML_Extension.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ReadXMLIRW
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/CB_XML_Extension.cs
-    startLine: 96
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/CB_XML_Extension.cs
+    startLine: 101
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -142,30 +146,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -232,51 +212,6 @@ references:
     name: Equals
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  name: ReferenceEquals(object, object)
-  nameWithType: object.ReferenceEquals(object, object)
-  fullName: object.ReferenceEquals(object, object)
-  nameWithType.vb: Object.ReferenceEquals(Object, Object)
-  fullName.vb: Object.ReferenceEquals(Object, Object)
-  name.vb: ReferenceEquals(Object, Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
   - name: (
   - uid: System.Object
     name: Object
@@ -361,6 +296,75 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   - name: (
   - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
 - uid: System
   commentId: N:System
   href: https://learn.microsoft.com/dotnet/api/system
@@ -374,6 +378,14 @@ references:
   name: XMLIRWElement
   nameWithType: XMLIRWElement
   fullName: System.Xml.XMLIRWElement
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
 - uid: System.Xml.CB_XML_Extension.WriterXMLIRW*
   commentId: Overload:System.Xml.CB_XML_Extension.WriterXMLIRW
   href: System.Xml.CB_XML_Extension.html#System_Xml_CB_XML_Extension_WriterXMLIRW_System_Xml_XmlWriter_System_Xml_XMLIRWElement_

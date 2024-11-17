@@ -18,29 +18,33 @@ items:
   type: Class
   source:
     remote:
-      path: Runtime/IO/Atlf/Text/NullATLFDecoding.cs
+      path: Cobilas/IO/Atlf/Text/NullATLFDecoding.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: NullATLFDecoding
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/Text/NullATLFDecoding.cs
-    startLine: 4
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/NullATLFDecoding.cs
+    startLine: 2
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf.Text
+  summary: This class is a null representation of an ATLF decoder.
+  example: []
   syntax:
-    content: 'public sealed class NullATLFDecoding : ATLFDecoding'
-    content.vb: Public NotInheritable Class NullATLFDecoding Inherits ATLFDecoding
+    content: 'public sealed class NullATLFDecoding : ATLFDecoding, INullObject'
+    content.vb: Public NotInheritable Class NullATLFDecoding Inherits ATLFDecoding Implements INullObject
   inheritance:
   - System.Object
   - Cobilas.IO.Atlf.Text.ATLFDecoding
+  implements:
+  - Cobilas.INullObject
   inheritedMembers:
   - Cobilas.IO.Atlf.Text.ATLFDecoding.Null
-  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
   extensionMethods:
   - System.Object.System.Object_CB_Extension.CompareType(System.Type)
   - System.Object.System.Object_CB_Extension.CompareType(System.Type[])
@@ -62,12 +66,12 @@ items:
   type: Property
   source:
     remote:
-      path: Runtime/IO/Atlf/Text/NullATLFDecoding.cs
+      path: Cobilas/IO/Atlf/Text/NullATLFDecoding.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Version
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/Text/NullATLFDecoding.cs
-    startLine: 7
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/NullATLFDecoding.cs
+    startLine: 4
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf.Text
@@ -94,12 +98,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/IO/Atlf/Text/NullATLFDecoding.cs
+      path: Cobilas/IO/Atlf/Text/NullATLFDecoding.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Reader
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/Text/NullATLFDecoding.cs
-    startLine: 10
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/NullATLFDecoding.cs
+    startLine: 7
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf.Text
@@ -131,12 +135,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/IO/Atlf/Text/NullATLFDecoding.cs
+      path: Cobilas/IO/Atlf/Text/NullATLFDecoding.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Reader4Byte
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/Text/NullATLFDecoding.cs
-    startLine: 12
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/NullATLFDecoding.cs
+    startLine: 9
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf.Text
@@ -168,12 +172,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/IO/Atlf/Text/NullATLFDecoding.cs
+      path: Cobilas/IO/Atlf/Text/NullATLFDecoding.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ValidCharacter
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/Text/NullATLFDecoding.cs
-    startLine: 14
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/NullATLFDecoding.cs
+    startLine: 11
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf.Text
@@ -249,6 +253,13 @@ references:
   name: ATLFDecoding
   nameWithType: ATLFDecoding
   fullName: Cobilas.IO.Atlf.Text.ATLFDecoding
+- uid: Cobilas.INullObject
+  commentId: T:Cobilas.INullObject
+  parent: Cobilas
+  href: Cobilas.INullObject.html
+  name: INullObject
+  nameWithType: INullObject
+  fullName: Cobilas.INullObject
 - uid: Cobilas.IO.Atlf.Text.ATLFDecoding.Null
   commentId: F:Cobilas.IO.Atlf.Text.ATLFDecoding.Null
   parent: Cobilas.IO.Atlf.Text.ATLFDecoding
@@ -256,30 +267,6 @@ references:
   name: "Null"
   nameWithType: ATLFDecoding.Null
   fullName: Cobilas.IO.Atlf.Text.ATLFDecoding.Null
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -358,51 +345,6 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  name: ReferenceEquals(object, object)
-  nameWithType: object.ReferenceEquals(object, object)
-  fullName: object.ReferenceEquals(object, object)
-  nameWithType.vb: Object.ReferenceEquals(Object, Object)
-  fullName.vb: Object.ReferenceEquals(Object, Object)
-  name.vb: ReferenceEquals(Object, Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
 - uid: System.Object.GetHashCode
   commentId: M:System.Object.GetHashCode
   parent: System.Object
@@ -449,6 +391,75 @@ references:
     name: GetType
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
 - uid: System.Object.System.Object_CB_Extension.CompareType(System.Type)
@@ -778,6 +789,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Cobilas
+  commentId: N:Cobilas
+  href: Cobilas.html
+  name: Cobilas
+  nameWithType: Cobilas
+  fullName: Cobilas
 - uid: System.Object_CB_Extension.CompareType(System.Object,System.Type)
   commentId: M:System.Object_CB_Extension.CompareType(System.Object,System.Type)
   isExternal: true

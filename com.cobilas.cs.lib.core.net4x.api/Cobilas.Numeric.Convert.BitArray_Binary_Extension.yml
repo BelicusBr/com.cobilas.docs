@@ -17,28 +17,30 @@ items:
   type: Class
   source:
     remote:
-      path: Runtime/Numeric/Convert/BitArray_Binary_Extension.cs
+      path: Cobilas/Numeric/Convert/BitArray_Binary_Extension.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: BitArray_Binary_Extension
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Numeric/Convert/BitArray_Binary_Extension.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Numeric/Convert/BitArray_Binary_Extension.cs
     startLine: 4
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Numeric.Convert
+  summary: This extension allows conversion from <xref href="System.Collections.BitArray" data-throw-if-not-resolved="false"></xref> to <xref href="System.Byte" data-throw-if-not-resolved="false"></xref> array.
+  example: []
   syntax:
     content: public static class BitArray_Binary_Extension
     content.vb: Public Module BitArray_Binary_Extension
   inheritance:
   - System.Object
   inheritedMembers:
-  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
 - uid: Cobilas.Numeric.Convert.BitArray_Binary_Extension.GetBinaryArray(System.Collections.BitArray)
   commentId: M:Cobilas.Numeric.Convert.BitArray_Binary_Extension.GetBinaryArray(System.Collections.BitArray)
   id: GetBinaryArray(System.Collections.BitArray)
@@ -53,12 +55,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Numeric/Convert/BitArray_Binary_Extension.cs
+      path: Cobilas/Numeric/Convert/BitArray_Binary_Extension.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: GetBinaryArray
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Numeric/Convert/BitArray_Binary_Extension.cs
-    startLine: 8
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Numeric/Convert/BitArray_Binary_Extension.cs
+    startLine: 7
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Numeric.Convert
@@ -87,12 +89,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Numeric/Convert/BitArray_Binary_Extension.cs
+      path: Cobilas/Numeric/Convert/BitArray_Binary_Extension.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: SetBinaryArray
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Numeric/Convert/BitArray_Binary_Extension.cs
-    startLine: 16
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Numeric/Convert/BitArray_Binary_Extension.cs
+    startLine: 15
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Numeric.Convert
@@ -124,12 +126,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Numeric/Convert/BitArray_Binary_Extension.cs
+      path: Cobilas/Numeric/Convert/BitArray_Binary_Extension.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: BitToDecimal
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Numeric/Convert/BitArray_Binary_Extension.cs
-    startLine: 24
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Numeric/Convert/BitArray_Binary_Extension.cs
+    startLine: 23
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Numeric.Convert
@@ -145,6 +147,25 @@ items:
     content.vb: Public Shared Function BitToDecimal(array As BitArray) As Decimal
   overload: Cobilas.Numeric.Convert.BitArray_Binary_Extension.BitToDecimal*
 references:
+- uid: System.Collections.BitArray
+  commentId: T:System.Collections.BitArray
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.bitarray
+  name: BitArray
+  nameWithType: BitArray
+  fullName: System.Collections.BitArray
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
 - uid: Cobilas.Numeric.Convert
   commentId: N:Cobilas.Numeric.Convert
   href: Cobilas.html
@@ -186,30 +207,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -276,51 +273,6 @@ references:
     name: Equals
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  name: ReferenceEquals(object, object)
-  nameWithType: object.ReferenceEquals(object, object)
-  fullName: object.ReferenceEquals(object, object)
-  nameWithType.vb: Object.ReferenceEquals(Object, Object)
-  fullName.vb: Object.ReferenceEquals(Object, Object)
-  name.vb: ReferenceEquals(Object, Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
   - name: (
   - uid: System.Object
     name: Object
@@ -405,58 +357,73 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   - name: (
   - name: )
-- uid: System
-  commentId: N:System
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System
-  nameWithType: System
-  fullName: System
-- uid: System.Collections.BitArray
-  commentId: T:System.Collections.BitArray
-  parent: System.Collections
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.bitarray
-  name: BitArray
-  nameWithType: BitArray
-  fullName: System.Collections.BitArray
-- uid: System.Byte
-  commentId: T:System.Byte
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.byte
-  name: byte
-  nameWithType: byte
-  fullName: byte
-  nameWithType.vb: Byte
-  fullName.vb: Byte
-  name.vb: Byte
-- uid: Cobilas.Numeric.Convert.BitArray_Binary_Extension.GetBinaryArray*
-  commentId: Overload:Cobilas.Numeric.Convert.BitArray_Binary_Extension.GetBinaryArray
-  href: Cobilas.Numeric.Convert.BitArray_Binary_Extension.html#Cobilas_Numeric_Convert_BitArray_Binary_Extension_GetBinaryArray_System_Collections_BitArray_
-  name: GetBinaryArray
-  nameWithType: BitArray_Binary_Extension.GetBinaryArray
-  fullName: Cobilas.Numeric.Convert.BitArray_Binary_Extension.GetBinaryArray
-- uid: System.Byte[]
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.byte
-  name: byte[]
-  nameWithType: byte[]
-  fullName: byte[]
-  nameWithType.vb: Byte()
-  fullName.vb: Byte()
-  name.vb: Byte()
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
   spec.csharp:
-  - uid: System.Byte
-    name: byte
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.byte
-  - name: '['
-  - name: ']'
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
   spec.vb:
-  - uid: System.Byte
-    name: Byte
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.byte
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
 - uid: System.Collections
@@ -486,6 +453,41 @@ references:
     name: Collections
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: System
+  commentId: N:System
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cobilas.Numeric.Convert.BitArray_Binary_Extension.GetBinaryArray*
+  commentId: Overload:Cobilas.Numeric.Convert.BitArray_Binary_Extension.GetBinaryArray
+  href: Cobilas.Numeric.Convert.BitArray_Binary_Extension.html#Cobilas_Numeric_Convert_BitArray_Binary_Extension_GetBinaryArray_System_Collections_BitArray_
+  name: GetBinaryArray
+  nameWithType: BitArray_Binary_Extension.GetBinaryArray
+  fullName: Cobilas.Numeric.Convert.BitArray_Binary_Extension.GetBinaryArray
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
 - uid: Cobilas.Numeric.Convert.BitArray_Binary_Extension.SetBinaryArray*
   commentId: Overload:Cobilas.Numeric.Convert.BitArray_Binary_Extension.SetBinaryArray
   href: Cobilas.Numeric.Convert.BitArray_Binary_Extension.html#Cobilas_Numeric_Convert_BitArray_Binary_Extension_SetBinaryArray_System_Collections_BitArray_System_Byte___

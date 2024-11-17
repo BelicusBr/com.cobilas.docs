@@ -11,7 +11,6 @@ items:
   - System.Enum_CB_Extension.GetName(System.Enum)
   - System.Enum_CB_Extension.GetName(System.Enum,System.Object)
   - System.Enum_CB_Extension.GetNames(System.Enum)
-  - System.Enum_CB_Extension.HasFlag(System.Enum,System.Enum[])
   langs:
   - csharp
   - vb
@@ -21,69 +20,30 @@ items:
   type: Class
   source:
     remote:
-      path: Runtime/Extensions/Enum_CB_Extension.cs
+      path: System/Enum_CB_Extension.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Enum_CB_Extension
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/Enum_CB_Extension.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Enum_CB_Extension.cs
     startLine: 5
   assemblies:
   - Cobilas.Core
   namespace: System
+  summary: Grants more methods to <xref href="System.Enum" data-throw-if-not-resolved="false"></xref> class.
+  example: []
   syntax:
     content: public static class Enum_CB_Extension
     content.vb: Public Module Enum_CB_Extension
   inheritance:
   - System.Object
   inheritedMembers:
-  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-- uid: System.Enum_CB_Extension.HasFlag(System.Enum,System.Enum[])
-  commentId: M:System.Enum_CB_Extension.HasFlag(System.Enum,System.Enum[])
-  id: HasFlag(System.Enum,System.Enum[])
-  isExtensionMethod: true
-  parent: System.Enum_CB_Extension
-  langs:
-  - csharp
-  - vb
-  name: HasFlag(Enum, params Enum[])
-  nameWithType: Enum_CB_Extension.HasFlag(Enum, params Enum[])
-  fullName: System.Enum_CB_Extension.HasFlag(System.Enum, params System.Enum[])
-  type: Method
-  source:
-    remote:
-      path: Runtime/Extensions/Enum_CB_Extension.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
-    id: HasFlag
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/Enum_CB_Extension.cs
-    startLine: 13
-  assemblies:
-  - Cobilas.Core
-  namespace: System
-  summary: Determines whether one or more bit fields are set in the current instance.
-  example: []
-  syntax:
-    content: public static bool HasFlag(this Enum E, params Enum[] flags)
-    parameters:
-    - id: E
-      type: System.Enum
-      description: The target enumerator.
-    - id: flags
-      type: System.Enum[]
-      description: Comparison tags.
-    return:
-      type: System.Boolean
-    content.vb: Public Shared Function HasFlag(E As [Enum], ParamArray flags As [Enum]()) As Boolean
-  overload: System.Enum_CB_Extension.HasFlag*
-  nameWithType.vb: Enum_CB_Extension.HasFlag(Enum, ParamArray Enum())
-  fullName.vb: System.Enum_CB_Extension.HasFlag(System.Enum, ParamArray System.Enum())
-  name.vb: HasFlag(Enum, ParamArray Enum())
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
 - uid: System.Enum_CB_Extension.GetEnumPair(System.Enum)
   commentId: M:System.Enum_CB_Extension.GetEnumPair(System.Enum)
   id: GetEnumPair(System.Enum)
@@ -98,12 +58,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/Enum_CB_Extension.cs
+      path: System/Enum_CB_Extension.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: GetEnumPair
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/Enum_CB_Extension.cs
-    startLine: 24
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Enum_CB_Extension.cs
+    startLine: 23
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -133,12 +93,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/Enum_CB_Extension.cs
+      path: System/Enum_CB_Extension.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: GetEnumPairs
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/Enum_CB_Extension.cs
-    startLine: 48
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Enum_CB_Extension.cs
+    startLine: 47
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -173,12 +133,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/Enum_CB_Extension.cs
+      path: System/Enum_CB_Extension.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: GetName
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/Enum_CB_Extension.cs
-    startLine: 69
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Enum_CB_Extension.cs
+    startLine: 68
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -224,12 +184,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/Enum_CB_Extension.cs
+      path: System/Enum_CB_Extension.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: GetName
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/Enum_CB_Extension.cs
-    startLine: 81
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Enum_CB_Extension.cs
+    startLine: 80
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -269,12 +229,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/Enum_CB_Extension.cs
+      path: System/Enum_CB_Extension.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: GetNames
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/Enum_CB_Extension.cs
-    startLine: 91
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Enum_CB_Extension.cs
+    startLine: 90
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -312,12 +272,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/Enum_CB_Extension.cs
+      path: System/Enum_CB_Extension.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Format
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/Enum_CB_Extension.cs
-    startLine: 108
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Enum_CB_Extension.cs
+    startLine: 107
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -360,6 +320,14 @@ items:
   fullName.vb: System.Enum_CB_Extension.Format(System.Enum, Object, String)
   name.vb: Format(Enum, Object, String)
 references:
+- uid: System.Enum
+  commentId: T:System.Enum
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.enum
+  name: Enum
+  nameWithType: Enum
+  fullName: System.Enum
 - uid: System
   commentId: N:System
   href: https://learn.microsoft.com/dotnet/api/system
@@ -377,30 +345,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -467,51 +411,6 @@ references:
     name: Equals
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  name: ReferenceEquals(object, object)
-  nameWithType: object.ReferenceEquals(object, object)
-  fullName: object.ReferenceEquals(object, object)
-  nameWithType.vb: Object.ReferenceEquals(Object, Object)
-  fullName.vb: Object.ReferenceEquals(Object, Object)
-  name.vb: ReferenceEquals(Object, Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
   - name: (
   - uid: System.Object
     name: Object
@@ -596,54 +495,75 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   - name: (
   - name: )
-- uid: System.Enum_CB_Extension.HasFlag*
-  commentId: Overload:System.Enum_CB_Extension.HasFlag
-  href: System.Enum_CB_Extension.html#System_Enum_CB_Extension_HasFlag_System_Enum_System_Enum___
-  name: HasFlag
-  nameWithType: Enum_CB_Extension.HasFlag
-  fullName: System.Enum_CB_Extension.HasFlag
-- uid: System.Enum
-  commentId: T:System.Enum
-  parent: System
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.enum
-  name: Enum
-  nameWithType: Enum
-  fullName: System.Enum
-- uid: System.Enum[]
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.enum
-  name: Enum[]
-  nameWithType: Enum[]
-  fullName: System.Enum[]
-  nameWithType.vb: Enum()
-  fullName.vb: System.Enum()
-  name.vb: Enum()
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
   spec.csharp:
-  - uid: System.Enum
-    name: Enum
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.enum
-  - name: '['
-  - name: ']'
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
   spec.vb:
-  - uid: System.Enum
-    name: Enum
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.enum
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
 - uid: System.Enum_CB_Extension.GetEnumPair*
   commentId: Overload:System.Enum_CB_Extension.GetEnumPair
   href: System.Enum_CB_Extension.html#System_Enum_CB_Extension_GetEnumPair_System_Enum_

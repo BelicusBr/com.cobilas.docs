@@ -15,6 +15,7 @@ items:
   - Cobilas.IO.Atlf.ATLFException.ATLFReaderTagAfterClosing
   - Cobilas.IO.Atlf.ATLFException.ATLFTagsAfterClosing
   - Cobilas.IO.Atlf.ATLFException.GetATLFException(System.String,System.Object[])
+  - Cobilas.IO.Atlf.ATLFException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
   langs:
   - csharp
   - vb
@@ -24,49 +25,43 @@ items:
   type: Class
   source:
     remote:
-      path: Runtime/IO/Atlf/ATLFException.cs
+      path: Cobilas/IO/Atlf/ATLFException.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ATLFException
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFException.cs
-    startLine: 4
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/ATLFException.cs
+    startLine: 5
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf
+  summary: Class to generate ATLF exceptions.
+  example: []
   syntax:
-    content: >-
-      [Serializable]
-
-      public class ATLFException : Exception, ISerializable, _Exception
-    content.vb: >-
-      <Serializable>
-
-      Public Class ATLFException Inherits Exception Implements ISerializable, _Exception
+    content: 'public class ATLFException : Exception, ISerializable'
+    content.vb: Public Class ATLFException Inherits Exception Implements ISerializable
   inheritance:
   - System.Object
   - System.Exception
   implements:
   - System.Runtime.Serialization.ISerializable
-  - System.Runtime.InteropServices._Exception
   inheritedMembers:
   - System.Exception.GetBaseException
-  - System.Exception.ToString
-  - System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
   - System.Exception.GetType
-  - System.Exception.Message
+  - System.Exception.ToString
   - System.Exception.Data
-  - System.Exception.InnerException
-  - System.Exception.TargetSite
-  - System.Exception.StackTrace
   - System.Exception.HelpLink
-  - System.Exception.Source
   - System.Exception.HResult
+  - System.Exception.InnerException
+  - System.Exception.Message
+  - System.Exception.Source
+  - System.Exception.StackTrace
+  - System.Exception.TargetSite
   - System.Exception.SerializeObjectState
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
   extensionMethods:
   - System.Object.System.Object_CB_Extension.CompareType(System.Type)
   - System.Object.System.Object_CB_Extension.CompareType(System.Type[])
@@ -75,10 +70,6 @@ items:
   - System.Object.System.Object_CB_Extension.CompareTypeAndSubType``1
   - System.Object.System.Object_CB_Extension.CompareTypeAndSubType``1(System.Boolean)
   - System.Object.System.Object_CB_Extension.CompareType``1
-  attributes:
-  - type: System.SerializableAttribute
-    ctor: System.SerializableAttribute.#ctor
-    arguments: []
 - uid: Cobilas.IO.Atlf.ATLFException.#ctor
   commentId: M:Cobilas.IO.Atlf.ATLFException.#ctor
   id: '#ctor'
@@ -92,15 +83,17 @@ items:
   type: Constructor
   source:
     remote:
-      path: Runtime/IO/Atlf/ATLFException.cs
+      path: Cobilas/IO/Atlf/ATLFException.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFException.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/ATLFException.cs
     startLine: 7
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf
+  summary: Initializes a new instance of the <xref href="System.Exception" data-throw-if-not-resolved="false"></xref> class.
+  example: []
   syntax:
     content: public ATLFException()
     content.vb: Public Sub New()
@@ -121,20 +114,23 @@ items:
   type: Constructor
   source:
     remote:
-      path: Runtime/IO/Atlf/ATLFException.cs
+      path: Cobilas/IO/Atlf/ATLFException.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFException.cs
-    startLine: 8
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/ATLFException.cs
+    startLine: 9
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf
+  summary: Initializes a new instance of the <xref href="System.Exception" data-throw-if-not-resolved="false"></xref> class with a specified error message.
+  example: []
   syntax:
     content: public ATLFException(string message)
     parameters:
     - id: message
       type: System.String
+      description: The message that describes the error.
     content.vb: Public Sub New(message As String)
   overload: Cobilas.IO.Atlf.ATLFException.#ctor*
   nameWithType.vb: ATLFException.New(String)
@@ -153,20 +149,23 @@ items:
   type: Constructor
   source:
     remote:
-      path: Runtime/IO/Atlf/ATLFException.cs
+      path: Cobilas/IO/Atlf/ATLFException.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFException.cs
-    startLine: 9
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/ATLFException.cs
+    startLine: 11
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf
+  summary: Initializes a new instance of the <xref href="System.Exception" data-throw-if-not-resolved="false"></xref> class with a specified error message and a reference to the inner exception that is the cause of this exception.
+  example: []
   syntax:
     content: public ATLFException(string message, Exception inner)
     parameters:
     - id: message
       type: System.String
+      description: The error message that explains the reason for the exception.
     - id: inner
       type: System.Exception
     content.vb: Public Sub New(message As String, inner As Exception)
@@ -187,27 +186,110 @@ items:
   type: Constructor
   source:
     remote:
-      path: Runtime/IO/Atlf/ATLFException.cs
+      path: Cobilas/IO/Atlf/ATLFException.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFException.cs
-    startLine: 10
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/ATLFException.cs
+    startLine: 14
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf
+  summary: Initializes a new instance of the <xref href="System.Exception" data-throw-if-not-resolved="false"></xref> class with serialized data.
+  example: []
   syntax:
-    content: protected ATLFException(SerializationInfo info, StreamingContext context)
+    content: >-
+      [Obsolete("This API supports obsolete formatter-based serialization. It should not be called or extended by application code.", DiagnosticId = "SYSLIB0051")]
+
+      protected ATLFException(SerializationInfo info, StreamingContext context)
     parameters:
     - id: info
       type: System.Runtime.Serialization.SerializationInfo
+      description: The <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> that holds the serialized object data about the exception being thrown.
     - id: context
       type: System.Runtime.Serialization.StreamingContext
-    content.vb: Protected Sub New(info As SerializationInfo, context As StreamingContext)
+      description: The <xref href="System.Runtime.Serialization.StreamingContext" data-throw-if-not-resolved="false"></xref> that contains contextual information about the source or destination.
+    content.vb: >-
+      <Obsolete("This API supports obsolete formatter-based serialization. It should not be called or extended by application code.", DiagnosticId:="SYSLIB0051")>
+
+      Protected Sub New(info As SerializationInfo, context As StreamingContext)
   overload: Cobilas.IO.Atlf.ATLFException.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">info</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  - type: System.Runtime.Serialization.SerializationException
+    commentId: T:System.Runtime.Serialization.SerializationException
+    description: The class name is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or <xref href="System.Exception.HResult" data-throw-if-not-resolved="false"></xref> is zero (0).
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: This API supports obsolete formatter-based serialization. It should not be called or extended by application code.
+    namedArguments:
+    - name: DiagnosticId
+      type: System.String
+      value: SYSLIB0051
   nameWithType.vb: ATLFException.New(SerializationInfo, StreamingContext)
   fullName.vb: Cobilas.IO.Atlf.ATLFException.New(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
   name.vb: New(SerializationInfo, StreamingContext)
+- uid: Cobilas.IO.Atlf.ATLFException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:Cobilas.IO.Atlf.ATLFException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: Cobilas.IO.Atlf.ATLFException
+  langs:
+  - csharp
+  - vb
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: ATLFException.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: Cobilas.IO.Atlf.ATLFException.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Method
+  source:
+    remote:
+      path: Cobilas/IO/Atlf/ATLFException.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: GetObjectData
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/ATLFException.cs
+    startLine: 19
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas.IO.Atlf
+  summary: When overridden in a derived class, sets the <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> with information about the exception.
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("This API supports obsolete formatter-based serialization. It should not be called or extended by application code.", DiagnosticId = "SYSLIB0051")]
+
+      public override void GetObjectData(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: The <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> that holds the serialized object data about the exception being thrown.
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: The <xref href="System.Runtime.Serialization.StreamingContext" data-throw-if-not-resolved="false"></xref> that contains contextual information about the source or destination.
+    content.vb: >-
+      <Obsolete("This API supports obsolete formatter-based serialization. It should not be called or extended by application code.", DiagnosticId:="SYSLIB0051")>
+
+      Public Overrides Sub GetObjectData(info As SerializationInfo, context As StreamingContext)
+  overridden: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  overload: Cobilas.IO.Atlf.ATLFException.GetObjectData*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The <code class="paramref">info</code> parameter is a null reference (<code>Nothing</code> in Visual Basic).
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: This API supports obsolete formatter-based serialization. It should not be called or extended by application code.
+    namedArguments:
+    - name: DiagnosticId
+      type: System.String
+      value: SYSLIB0051
 - uid: Cobilas.IO.Atlf.ATLFException.GetATLFException(System.String,System.Object[])
   commentId: M:Cobilas.IO.Atlf.ATLFException.GetATLFException(System.String,System.Object[])
   id: GetATLFException(System.String,System.Object[])
@@ -221,15 +303,17 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/IO/Atlf/ATLFException.cs
+      path: Cobilas/IO/Atlf/ATLFException.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: GetATLFException
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFException.cs
-    startLine: 12
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/ATLFException.cs
+    startLine: 27
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf
+  summary: I build an exception <xref href="Cobilas.IO.Atlf.ATLFException" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public static ATLFException GetATLFException(string format, params object[] args)
     parameters:
@@ -257,12 +341,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/IO/Atlf/ATLFException.cs
+      path: Cobilas/IO/Atlf/ATLFException.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ATLFClosed
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFException.cs
-    startLine: 16
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/ATLFException.cs
+    startLine: 30
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf
@@ -287,15 +371,17 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/IO/Atlf/ATLFException.cs
+      path: Cobilas/IO/Atlf/ATLFException.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ATLFReaderAfterClosing
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFException.cs
-    startLine: 19
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/ATLFException.cs
+    startLine: 33
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf
+  summary: msg:The read operation cannot be done after closing the ATLF object!
+  example: []
   syntax:
     content: public static InvalidOperationException ATLFReaderAfterClosing()
     return:
@@ -315,15 +401,17 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/IO/Atlf/ATLFException.cs
+      path: Cobilas/IO/Atlf/ATLFException.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ATLFReaderTagAfterClosing
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFException.cs
-    startLine: 22
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/ATLFException.cs
+    startLine: 36
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf
+  summary: msg:The tag reading operation cannot be done after closing the ATLF object!
+  example: []
   syntax:
     content: public static InvalidOperationException ATLFReaderTagAfterClosing()
     return:
@@ -343,12 +431,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/IO/Atlf/ATLFException.cs
+      path: Cobilas/IO/Atlf/ATLFException.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ATLFFlowAfterClosing
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFException.cs
-    startLine: 26
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/ATLFException.cs
+    startLine: 39
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf
@@ -373,15 +461,17 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/IO/Atlf/ATLFException.cs
+      path: Cobilas/IO/Atlf/ATLFException.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ATLFTagsAfterClosing
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/IO/Atlf/ATLFException.cs
-    startLine: 29
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/ATLFException.cs
+    startLine: 42
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf
+  summary: msg:You cannot add new tags to the stream after closing the ATLF object.
+  example: []
   syntax:
     content: public static InvalidOperationException ATLFTagsAfterClosing()
     return:
@@ -446,14 +536,6 @@ references:
   name: ISerializable
   nameWithType: ISerializable
   fullName: System.Runtime.Serialization.ISerializable
-- uid: System.Runtime.InteropServices._Exception
-  commentId: T:System.Runtime.InteropServices._Exception
-  parent: System.Runtime.InteropServices
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices._exception
-  name: _Exception
-  nameWithType: _Exception
-  fullName: System.Runtime.InteropServices._Exception
 - uid: System.Exception.GetBaseException
   commentId: M:System.Exception.GetBaseException
   parent: System.Exception
@@ -474,6 +556,28 @@ references:
     name: GetBaseException
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  - name: (
+  - name: )
+- uid: System.Exception.GetType
+  commentId: M:System.Exception.GetType
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  name: GetType()
+  nameWithType: Exception.GetType()
+  fullName: System.Exception.GetType()
+  spec.csharp:
+  - uid: System.Exception.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Exception.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
   - name: (
   - name: )
 - uid: System.Exception.ToString
@@ -498,78 +602,6 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.exception.tostring
   - name: (
   - name: )
-- uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-  commentId: M:System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-  parent: System.Exception
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.exception.getobjectdata
-  name: GetObjectData(SerializationInfo, StreamingContext)
-  nameWithType: Exception.GetObjectData(SerializationInfo, StreamingContext)
-  fullName: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
-  spec.csharp:
-  - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-    name: GetObjectData
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.exception.getobjectdata
-  - name: (
-  - uid: System.Runtime.Serialization.SerializationInfo
-    name: SerializationInfo
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
-  - name: ','
-  - name: " "
-  - uid: System.Runtime.Serialization.StreamingContext
-    name: StreamingContext
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
-  - name: )
-  spec.vb:
-  - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-    name: GetObjectData
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.exception.getobjectdata
-  - name: (
-  - uid: System.Runtime.Serialization.SerializationInfo
-    name: SerializationInfo
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
-  - name: ','
-  - name: " "
-  - uid: System.Runtime.Serialization.StreamingContext
-    name: StreamingContext
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
-  - name: )
-- uid: System.Exception.GetType
-  commentId: M:System.Exception.GetType
-  parent: System.Exception
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
-  name: GetType()
-  nameWithType: Exception.GetType()
-  fullName: System.Exception.GetType()
-  spec.csharp:
-  - uid: System.Exception.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Exception.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
-  - name: (
-  - name: )
-- uid: System.Exception.Message
-  commentId: P:System.Exception.Message
-  parent: System.Exception
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.exception.message
-  name: Message
-  nameWithType: Exception.Message
-  fullName: System.Exception.Message
 - uid: System.Exception.Data
   commentId: P:System.Exception.Data
   parent: System.Exception
@@ -578,30 +610,6 @@ references:
   name: Data
   nameWithType: Exception.Data
   fullName: System.Exception.Data
-- uid: System.Exception.InnerException
-  commentId: P:System.Exception.InnerException
-  parent: System.Exception
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.exception.innerexception
-  name: InnerException
-  nameWithType: Exception.InnerException
-  fullName: System.Exception.InnerException
-- uid: System.Exception.TargetSite
-  commentId: P:System.Exception.TargetSite
-  parent: System.Exception
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.exception.targetsite
-  name: TargetSite
-  nameWithType: Exception.TargetSite
-  fullName: System.Exception.TargetSite
-- uid: System.Exception.StackTrace
-  commentId: P:System.Exception.StackTrace
-  parent: System.Exception
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.exception.stacktrace
-  name: StackTrace
-  nameWithType: Exception.StackTrace
-  fullName: System.Exception.StackTrace
 - uid: System.Exception.HelpLink
   commentId: P:System.Exception.HelpLink
   parent: System.Exception
@@ -610,14 +618,6 @@ references:
   name: HelpLink
   nameWithType: Exception.HelpLink
   fullName: System.Exception.HelpLink
-- uid: System.Exception.Source
-  commentId: P:System.Exception.Source
-  parent: System.Exception
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.exception.source
-  name: Source
-  nameWithType: Exception.Source
-  fullName: System.Exception.Source
 - uid: System.Exception.HResult
   commentId: P:System.Exception.HResult
   parent: System.Exception
@@ -626,6 +626,46 @@ references:
   name: HResult
   nameWithType: Exception.HResult
   fullName: System.Exception.HResult
+- uid: System.Exception.InnerException
+  commentId: P:System.Exception.InnerException
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.innerexception
+  name: InnerException
+  nameWithType: Exception.InnerException
+  fullName: System.Exception.InnerException
+- uid: System.Exception.Message
+  commentId: P:System.Exception.Message
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.message
+  name: Message
+  nameWithType: Exception.Message
+  fullName: System.Exception.Message
+- uid: System.Exception.Source
+  commentId: P:System.Exception.Source
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.source
+  name: Source
+  nameWithType: Exception.Source
+  fullName: System.Exception.Source
+- uid: System.Exception.StackTrace
+  commentId: P:System.Exception.StackTrace
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.stacktrace
+  name: StackTrace
+  nameWithType: Exception.StackTrace
+  fullName: System.Exception.StackTrace
+- uid: System.Exception.TargetSite
+  commentId: P:System.Exception.TargetSite
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.targetsite
+  name: TargetSite
+  nameWithType: Exception.TargetSite
+  fullName: System.Exception.TargetSite
 - uid: System.Exception.SerializeObjectState
   commentId: E:System.Exception.SerializeObjectState
   parent: System.Exception
@@ -712,51 +752,6 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  name: ReferenceEquals(object, object)
-  nameWithType: object.ReferenceEquals(object, object)
-  fullName: object.ReferenceEquals(object, object)
-  nameWithType.vb: Object.ReferenceEquals(Object, Object)
-  fullName.vb: Object.ReferenceEquals(Object, Object)
-  name.vb: ReferenceEquals(Object, Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
 - uid: System.Object.GetHashCode
   commentId: M:System.Object.GetHashCode
   parent: System.Object
@@ -804,6 +799,51 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
 - uid: System.Object.System.Object_CB_Extension.CompareType(System.Type)
   commentId: M:System.Object_CB_Extension.CompareType(System.Object,System.Type)
@@ -1169,43 +1209,6 @@ references:
     name: Serialization
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
-- uid: System.Runtime.InteropServices
-  commentId: N:System.Runtime.InteropServices
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Runtime.InteropServices
-  nameWithType: System.Runtime.InteropServices
-  fullName: System.Runtime.InteropServices
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Runtime
-    name: Runtime
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.runtime
-  - name: .
-  - uid: System.Runtime.InteropServices
-    name: InteropServices
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Runtime
-    name: Runtime
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.runtime
-  - name: .
-  - uid: System.Runtime.InteropServices
-    name: InteropServices
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
 - uid: System.Object_CB_Extension.CompareType(System.Object,System.Type)
   commentId: M:System.Object_CB_Extension.CompareType(System.Object,System.Type)
   isExternal: true
@@ -1563,6 +1566,75 @@ references:
   name: StreamingContext
   nameWithType: StreamingContext
   fullName: System.Runtime.Serialization.StreamingContext
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.Runtime.Serialization.SerializationException
+  commentId: T:System.Runtime.Serialization.SerializationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationexception
+  name: SerializationException
+  nameWithType: SerializationException
+  fullName: System.Runtime.Serialization.SerializationException
+- uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.getobjectdata
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: Exception.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+  spec.vb:
+  - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+- uid: Cobilas.IO.Atlf.ATLFException.GetObjectData*
+  commentId: Overload:Cobilas.IO.Atlf.ATLFException.GetObjectData
+  href: Cobilas.IO.Atlf.ATLFException.html#Cobilas_IO_Atlf_ATLFException_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  name: GetObjectData
+  nameWithType: ATLFException.GetObjectData
+  fullName: Cobilas.IO.Atlf.ATLFException.GetObjectData
+- uid: Cobilas.IO.Atlf.ATLFException
+  commentId: T:Cobilas.IO.Atlf.ATLFException
+  parent: Cobilas.IO.Atlf
+  href: Cobilas.IO.Atlf.ATLFException.html
+  name: ATLFException
+  nameWithType: ATLFException
+  fullName: Cobilas.IO.Atlf.ATLFException
 - uid: Cobilas.IO.Atlf.ATLFException.GetATLFException*
   commentId: Overload:Cobilas.IO.Atlf.ATLFException.GetATLFException
   href: Cobilas.IO.Atlf.ATLFException.html#Cobilas_IO_Atlf_ATLFException_GetATLFException_System_String_System_Object___
@@ -1592,13 +1664,6 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: (
   - name: )
-- uid: Cobilas.IO.Atlf.ATLFException
-  commentId: T:Cobilas.IO.Atlf.ATLFException
-  parent: Cobilas.IO.Atlf
-  href: Cobilas.IO.Atlf.ATLFException.html
-  name: ATLFException
-  nameWithType: ATLFException
-  fullName: Cobilas.IO.Atlf.ATLFException
 - uid: Cobilas.IO.Atlf.ATLFException.ATLFClosed*
   commentId: Overload:Cobilas.IO.Atlf.ATLFException.ATLFClosed
   href: Cobilas.IO.Atlf.ATLFException.html#Cobilas_IO_Atlf_ATLFException_ATLFClosed

@@ -20,28 +20,30 @@ items:
   type: Class
   source:
     remote:
-      path: Runtime/Extensions/Type_CB_Extension.cs
+      path: System/Type_CB_Extension.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Type_CB_Extension
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/Type_CB_Extension.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Type_CB_Extension.cs
     startLine: 2
   assemblies:
   - Cobilas.Core
   namespace: System
+  summary: Consecrate more methods for <xref href="System.Type" data-throw-if-not-resolved="false"></xref> class.
+  example: []
   syntax:
     content: public static class Type_CB_Extension
     content.vb: Public Module Type_CB_Extension
   inheritance:
   - System.Object
   inheritedMembers:
-  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
 - uid: System.Type_CB_Extension.GetAttribute``1(System.Type)
   commentId: M:System.Type_CB_Extension.GetAttribute``1(System.Type)
   id: GetAttribute``1(System.Type)
@@ -56,12 +58,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/Type_CB_Extension.cs
+      path: System/Type_CB_Extension.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: GetAttribute
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/Type_CB_Extension.cs
-    startLine: 9
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Type_CB_Extension.cs
+    startLine: 8
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -96,12 +98,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/Type_CB_Extension.cs
+      path: System/Type_CB_Extension.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: GetAttribute
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/Type_CB_Extension.cs
-    startLine: 18
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Type_CB_Extension.cs
+    startLine: 17
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -140,12 +142,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/Type_CB_Extension.cs
+      path: System/Type_CB_Extension.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: GetAttributes
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/Type_CB_Extension.cs
-    startLine: 29
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Type_CB_Extension.cs
+    startLine: 28
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -180,12 +182,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/Type_CB_Extension.cs
+      path: System/Type_CB_Extension.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: GetAttributes
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/Type_CB_Extension.cs
-    startLine: 38
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Type_CB_Extension.cs
+    startLine: 37
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -224,12 +226,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/Type_CB_Extension.cs
+      path: System/Type_CB_Extension.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Activator
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/Type_CB_Extension.cs
-    startLine: 44
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Type_CB_Extension.cs
+    startLine: 43
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -258,12 +260,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/Type_CB_Extension.cs
+      path: System/Type_CB_Extension.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Activator
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/Type_CB_Extension.cs
-    startLine: 50
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Type_CB_Extension.cs
+    startLine: 49
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -284,6 +286,14 @@ items:
   fullName.vb: System.Type_CB_Extension.Activator(Of T)(System.Type)
   name.vb: Activator(Of T)(Type)
 references:
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
 - uid: System
   commentId: N:System
   href: https://learn.microsoft.com/dotnet/api/system
@@ -301,30 +311,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -391,51 +377,6 @@ references:
     name: Equals
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  name: ReferenceEquals(object, object)
-  nameWithType: object.ReferenceEquals(object, object)
-  fullName: object.ReferenceEquals(object, object)
-  nameWithType.vb: Object.ReferenceEquals(Object, Object)
-  fullName.vb: Object.ReferenceEquals(Object, Object)
-  name.vb: ReferenceEquals(Object, Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
   - name: (
   - uid: System.Object
     name: Object
@@ -520,20 +461,81 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   - name: (
   - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
 - uid: System.Type_CB_Extension.GetAttribute*
   commentId: Overload:System.Type_CB_Extension.GetAttribute
   href: System.Type_CB_Extension.html#System_Type_CB_Extension_GetAttribute__1_System_Type_
   name: GetAttribute
   nameWithType: Type_CB_Extension.GetAttribute
   fullName: System.Type_CB_Extension.GetAttribute
-- uid: System.Type
-  commentId: T:System.Type
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.type
-  name: Type
-  nameWithType: Type
-  fullName: System.Type
 - uid: '{T}'
   commentId: '!:T'
   definition: T

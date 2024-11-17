@@ -8,13 +8,9 @@ items:
   - System.Xml.XMLIRWElement.#ctor(System.String)
   - System.Xml.XMLIRWElement.#ctor(System.String,System.Object)
   - System.Xml.XMLIRWElement.#ctor(System.String,System.Object,System.Xml.XMLIRW[])
-  - System.Xml.XMLIRWElement.#ctor(System.String,System.Xml.XMLIRWValue)
-  - System.Xml.XMLIRWElement.#ctor(System.String,System.Xml.XMLIRWValue,System.Xml.XMLIRW[])
   - System.Xml.XMLIRWElement.#ctor(System.String,System.Xml.XMLIRW[])
   - System.Xml.XMLIRWElement.#ctor(System.Xml.XMLIRW,System.String,System.Object)
   - System.Xml.XMLIRWElement.#ctor(System.Xml.XMLIRW,System.String,System.Object,System.Xml.XMLIRW[])
-  - System.Xml.XMLIRWElement.#ctor(System.Xml.XMLIRW,System.String,System.Xml.XMLIRWValue)
-  - System.Xml.XMLIRWElement.#ctor(System.Xml.XMLIRW,System.String,System.Xml.XMLIRWValue,System.Xml.XMLIRW[])
   - System.Xml.XMLIRWElement.#ctor(System.Xml.XMLIRW,System.String,System.Xml.XMLIRW[])
   - System.Xml.XMLIRWElement.Add(System.Xml.XMLIRW)
   - System.Xml.XMLIRWElement.AttributeCount
@@ -31,7 +27,6 @@ items:
   - System.Xml.XMLIRWElement.Text
   - System.Xml.XMLIRWElement.ToString
   - System.Xml.XMLIRWElement.Type
-  - System.Xml.XMLIRWElement.Value
   - System.Xml.XMLIRWElement.ValueIsEmpty
   langs:
   - csharp
@@ -42,11 +37,11 @@ items:
   type: Class
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
+      path: System/Xml/XMLIRWElement.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: XMLIRWElement
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWElement.cs
     startLine: 8
   assemblies:
   - Cobilas.Core
@@ -68,10 +63,10 @@ items:
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
   extensionMethods:
   - System.Object.System.Object_CB_Extension.CompareType(System.Type)
   - System.Object.System.Object_CB_Extension.CompareType(System.Type[])
@@ -93,11 +88,11 @@ items:
   type: Property
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
+      path: System/Xml/XMLIRWElement.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Text
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWElement.cs
     startLine: 13
   assemblies:
   - Cobilas.Core
@@ -113,49 +108,6 @@ items:
   overload: System.Xml.XMLIRWElement.Text*
   implements:
   - System.Xml.ITextValue.Text
-- uid: System.Xml.XMLIRWElement.Value
-  commentId: P:System.Xml.XMLIRWElement.Value
-  id: Value
-  parent: System.Xml.XMLIRWElement
-  langs:
-  - csharp
-  - vb
-  name: Value
-  nameWithType: XMLIRWElement.Value
-  fullName: System.Xml.XMLIRWElement.Value
-  type: Property
-  source:
-    remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
-    id: Value
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 15
-  assemblies:
-  - Cobilas.Core
-  namespace: System.Xml
-  summary: Returns or sets the text of the XMLIRW element.
-  example: []
-  syntax:
-    content: >-
-      [Obsolete("Use the Text property.")]
-
-      public XMLIRWValue Value { get; set; }
-    parameters: []
-    return:
-      type: System.Xml.XMLIRWValue
-    content.vb: >-
-      <Obsolete("Use the Text property.")>
-
-      Public Property Value As XMLIRWValue
-  overload: System.Xml.XMLIRWElement.Value*
-  attributes:
-  - type: System.ObsoleteAttribute
-    ctor: System.ObsoleteAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Use the Text property.
 - uid: System.Xml.XMLIRWElement.Type
   commentId: P:System.Xml.XMLIRWElement.Type
   id: Type
@@ -169,12 +121,12 @@ items:
   type: Property
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
+      path: System/Xml/XMLIRWElement.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Type
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 18
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWElement.cs
+    startLine: 15
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -201,12 +153,12 @@ items:
   type: Property
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
+      path: System/Xml/XMLIRWElement.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Parent
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 20
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWElement.cs
+    startLine: 17
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -233,12 +185,12 @@ items:
   type: Property
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
+      path: System/Xml/XMLIRWElement.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ValueIsEmpty
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 22
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWElement.cs
+    startLine: 19
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -266,12 +218,12 @@ items:
   type: Property
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
+      path: System/Xml/XMLIRWElement.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Name
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 24
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWElement.cs
+    startLine: 21
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -298,12 +250,12 @@ items:
   type: Property
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
+      path: System/Xml/XMLIRWElement.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: IsEmpty
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 26
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWElement.cs
+    startLine: 23
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -331,12 +283,12 @@ items:
   type: Property
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
+      path: System/Xml/XMLIRWElement.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: NoAttributes
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 28
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWElement.cs
+    startLine: 25
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -364,12 +316,12 @@ items:
   type: Property
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
+      path: System/Xml/XMLIRWElement.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: NoElements
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 38
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWElement.cs
+    startLine: 35
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -397,12 +349,12 @@ items:
   type: Property
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
+      path: System/Xml/XMLIRWElement.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: AttributeCount
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 48
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWElement.cs
+    startLine: 45
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -430,12 +382,12 @@ items:
   type: Property
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
+      path: System/Xml/XMLIRWElement.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Attributes
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 58
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWElement.cs
+    startLine: 55
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -450,206 +402,6 @@ items:
   overload: System.Xml.XMLIRWElement.Attributes*
   implements:
   - System.Xml.IXMLIRWCollection.Attributes
-- uid: System.Xml.XMLIRWElement.#ctor(System.Xml.XMLIRW,System.String,System.Xml.XMLIRWValue,System.Xml.XMLIRW[])
-  commentId: M:System.Xml.XMLIRWElement.#ctor(System.Xml.XMLIRW,System.String,System.Xml.XMLIRWValue,System.Xml.XMLIRW[])
-  id: '#ctor(System.Xml.XMLIRW,System.String,System.Xml.XMLIRWValue,System.Xml.XMLIRW[])'
-  parent: System.Xml.XMLIRWElement
-  langs:
-  - csharp
-  - vb
-  name: XMLIRWElement(XMLIRW, string, XMLIRWValue, params XMLIRW[])
-  nameWithType: XMLIRWElement.XMLIRWElement(XMLIRW, string, XMLIRWValue, params XMLIRW[])
-  fullName: System.Xml.XMLIRWElement.XMLIRWElement(System.Xml.XMLIRW, string, System.Xml.XMLIRWValue, params System.Xml.XMLIRW[])
-  type: Constructor
-  source:
-    remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
-    id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 68
-  assemblies:
-  - Cobilas.Core
-  namespace: System.Xml
-  summary: Creates a new instance of the XMLIRW element.
-  example: []
-  syntax:
-    content: >-
-      [Obsolete("Use the XMLIRWElement(XMLIRW, string, object, params XMLIRW[]) constructor.")]
-
-      public XMLIRWElement(XMLIRW parent, string name, XMLIRWValue value, params XMLIRW[] itens)
-    parameters:
-    - id: parent
-      type: System.Xml.XMLIRW
-    - id: name
-      type: System.String
-    - id: value
-      type: System.Xml.XMLIRWValue
-    - id: itens
-      type: System.Xml.XMLIRW[]
-    content.vb: >-
-      <Obsolete("Use the XMLIRWElement(XMLIRW, string, object, params XMLIRW[]) constructor.")>
-
-      Public Sub New(parent As XMLIRW, name As String, value As XMLIRWValue, ParamArray itens As XMLIRW())
-  overload: System.Xml.XMLIRWElement.#ctor*
-  attributes:
-  - type: System.ObsoleteAttribute
-    ctor: System.ObsoleteAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Use the XMLIRWElement(XMLIRW, string, object, params XMLIRW[]) constructor.
-  nameWithType.vb: XMLIRWElement.New(XMLIRW, String, XMLIRWValue, ParamArray XMLIRW())
-  fullName.vb: System.Xml.XMLIRWElement.New(System.Xml.XMLIRW, String, System.Xml.XMLIRWValue, ParamArray System.Xml.XMLIRW())
-  name.vb: New(XMLIRW, String, XMLIRWValue, ParamArray XMLIRW())
-- uid: System.Xml.XMLIRWElement.#ctor(System.Xml.XMLIRW,System.String,System.Xml.XMLIRWValue)
-  commentId: M:System.Xml.XMLIRWElement.#ctor(System.Xml.XMLIRW,System.String,System.Xml.XMLIRWValue)
-  id: '#ctor(System.Xml.XMLIRW,System.String,System.Xml.XMLIRWValue)'
-  parent: System.Xml.XMLIRWElement
-  langs:
-  - csharp
-  - vb
-  name: XMLIRWElement(XMLIRW, string, XMLIRWValue)
-  nameWithType: XMLIRWElement.XMLIRWElement(XMLIRW, string, XMLIRWValue)
-  fullName: System.Xml.XMLIRWElement.XMLIRWElement(System.Xml.XMLIRW, string, System.Xml.XMLIRWValue)
-  type: Constructor
-  source:
-    remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
-    id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 79
-  assemblies:
-  - Cobilas.Core
-  namespace: System.Xml
-  summary: Creates a new instance of the XMLIRW element.
-  example: []
-  syntax:
-    content: >-
-      [Obsolete("Use the XMLIRWElement(XMLIRW, string, object) constructor.")]
-
-      public XMLIRWElement(XMLIRW parent, string name, XMLIRWValue value)
-    parameters:
-    - id: parent
-      type: System.Xml.XMLIRW
-    - id: name
-      type: System.String
-    - id: value
-      type: System.Xml.XMLIRWValue
-    content.vb: >-
-      <Obsolete("Use the XMLIRWElement(XMLIRW, string, object) constructor.")>
-
-      Public Sub New(parent As XMLIRW, name As String, value As XMLIRWValue)
-  overload: System.Xml.XMLIRWElement.#ctor*
-  attributes:
-  - type: System.ObsoleteAttribute
-    ctor: System.ObsoleteAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Use the XMLIRWElement(XMLIRW, string, object) constructor.
-  nameWithType.vb: XMLIRWElement.New(XMLIRW, String, XMLIRWValue)
-  fullName.vb: System.Xml.XMLIRWElement.New(System.Xml.XMLIRW, String, System.Xml.XMLIRWValue)
-  name.vb: New(XMLIRW, String, XMLIRWValue)
-- uid: System.Xml.XMLIRWElement.#ctor(System.String,System.Xml.XMLIRWValue,System.Xml.XMLIRW[])
-  commentId: M:System.Xml.XMLIRWElement.#ctor(System.String,System.Xml.XMLIRWValue,System.Xml.XMLIRW[])
-  id: '#ctor(System.String,System.Xml.XMLIRWValue,System.Xml.XMLIRW[])'
-  parent: System.Xml.XMLIRWElement
-  langs:
-  - csharp
-  - vb
-  name: XMLIRWElement(string, XMLIRWValue, params XMLIRW[])
-  nameWithType: XMLIRWElement.XMLIRWElement(string, XMLIRWValue, params XMLIRW[])
-  fullName: System.Xml.XMLIRWElement.XMLIRWElement(string, System.Xml.XMLIRWValue, params System.Xml.XMLIRW[])
-  type: Constructor
-  source:
-    remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
-    id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 82
-  assemblies:
-  - Cobilas.Core
-  namespace: System.Xml
-  summary: Creates a new instance of the XMLIRW element.
-  example: []
-  syntax:
-    content: >-
-      [Obsolete("Use the XMLIRWElement(string, object, params XMLIRW[]) constructor.")]
-
-      public XMLIRWElement(string name, XMLIRWValue value, params XMLIRW[] itens)
-    parameters:
-    - id: name
-      type: System.String
-    - id: value
-      type: System.Xml.XMLIRWValue
-    - id: itens
-      type: System.Xml.XMLIRW[]
-    content.vb: >-
-      <Obsolete("Use the XMLIRWElement(string, object, params XMLIRW[]) constructor.")>
-
-      Public Sub New(name As String, value As XMLIRWValue, ParamArray itens As XMLIRW())
-  overload: System.Xml.XMLIRWElement.#ctor*
-  attributes:
-  - type: System.ObsoleteAttribute
-    ctor: System.ObsoleteAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Use the XMLIRWElement(string, object, params XMLIRW[]) constructor.
-  nameWithType.vb: XMLIRWElement.New(String, XMLIRWValue, ParamArray XMLIRW())
-  fullName.vb: System.Xml.XMLIRWElement.New(String, System.Xml.XMLIRWValue, ParamArray System.Xml.XMLIRW())
-  name.vb: New(String, XMLIRWValue, ParamArray XMLIRW())
-- uid: System.Xml.XMLIRWElement.#ctor(System.String,System.Xml.XMLIRWValue)
-  commentId: M:System.Xml.XMLIRWElement.#ctor(System.String,System.Xml.XMLIRWValue)
-  id: '#ctor(System.String,System.Xml.XMLIRWValue)'
-  parent: System.Xml.XMLIRWElement
-  langs:
-  - csharp
-  - vb
-  name: XMLIRWElement(string, XMLIRWValue)
-  nameWithType: XMLIRWElement.XMLIRWElement(string, XMLIRWValue)
-  fullName: System.Xml.XMLIRWElement.XMLIRWElement(string, System.Xml.XMLIRWValue)
-  type: Constructor
-  source:
-    remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
-    id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 85
-  assemblies:
-  - Cobilas.Core
-  namespace: System.Xml
-  summary: Creates a new instance of the XMLIRW element.
-  example: []
-  syntax:
-    content: >-
-      [Obsolete("Use the XMLIRWElement(string, object) constructor.")]
-
-      public XMLIRWElement(string name, XMLIRWValue value)
-    parameters:
-    - id: name
-      type: System.String
-    - id: value
-      type: System.Xml.XMLIRWValue
-    content.vb: >-
-      <Obsolete("Use the XMLIRWElement(string, object) constructor.")>
-
-      Public Sub New(name As String, value As XMLIRWValue)
-  overload: System.Xml.XMLIRWElement.#ctor*
-  attributes:
-  - type: System.ObsoleteAttribute
-    ctor: System.ObsoleteAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Use the XMLIRWElement(string, object) constructor.
-  nameWithType.vb: XMLIRWElement.New(String, XMLIRWValue)
-  fullName.vb: System.Xml.XMLIRWElement.New(String, System.Xml.XMLIRWValue)
-  name.vb: New(String, XMLIRWValue)
 - uid: System.Xml.XMLIRWElement.#ctor(System.Xml.XMLIRW,System.String,System.Object,System.Xml.XMLIRW[])
   commentId: M:System.Xml.XMLIRWElement.#ctor(System.Xml.XMLIRW,System.String,System.Object,System.Xml.XMLIRW[])
   id: '#ctor(System.Xml.XMLIRW,System.String,System.Object,System.Xml.XMLIRW[])'
@@ -663,12 +415,12 @@ items:
   type: Constructor
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
+      path: System/Xml/XMLIRWElement.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 89
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWElement.cs
+    startLine: 65
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -703,12 +455,12 @@ items:
   type: Constructor
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
+      path: System/Xml/XMLIRWElement.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 98
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWElement.cs
+    startLine: 75
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -741,12 +493,12 @@ items:
   type: Constructor
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
+      path: System/Xml/XMLIRWElement.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 100
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWElement.cs
+    startLine: 77
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -779,12 +531,12 @@ items:
   type: Constructor
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
+      path: System/Xml/XMLIRWElement.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 103
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWElement.cs
+    startLine: 80
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -817,12 +569,12 @@ items:
   type: Constructor
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
+      path: System/Xml/XMLIRWElement.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 105
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWElement.cs
+    startLine: 82
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -853,12 +605,12 @@ items:
   type: Constructor
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
+      path: System/Xml/XMLIRWElement.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 107
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWElement.cs
+    startLine: 84
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -889,12 +641,12 @@ items:
   type: Constructor
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
+      path: System/Xml/XMLIRWElement.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 109
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWElement.cs
+    startLine: 86
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -923,12 +675,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
+      path: System/Xml/XMLIRWElement.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Finalize
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 112
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWElement.cs
+    startLine: 89
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -954,12 +706,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
+      path: System/Xml/XMLIRWElement.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Dispose
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 115
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWElement.cs
+    startLine: 92
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -985,12 +737,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
+      path: System/Xml/XMLIRWElement.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Add
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 121
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWElement.cs
+    startLine: 98
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -1021,12 +773,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
+      path: System/Xml/XMLIRWElement.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: GetEnumerator
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 133
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWElement.cs
+    startLine: 110
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -1053,12 +805,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
+      path: System/Xml/XMLIRWElement.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToString
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 137
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWElement.cs
+    startLine: 114
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -1084,12 +836,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
+      path: System/Xml/XMLIRWElement.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Dispose
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWElement.cs
-    startLine: 145
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWElement.cs
+    startLine: 122
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -1287,51 +1039,6 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  name: ReferenceEquals(object, object)
-  nameWithType: object.ReferenceEquals(object, object)
-  fullName: object.ReferenceEquals(object, object)
-  nameWithType.vb: Object.ReferenceEquals(Object, Object)
-  fullName.vb: Object.ReferenceEquals(Object, Object)
-  name.vb: ReferenceEquals(Object, Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
 - uid: System.Object.GetHashCode
   commentId: M:System.Object.GetHashCode
   parent: System.Object
@@ -1403,6 +1110,51 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
 - uid: System.Object.System.Object_CB_Extension.CompareType(System.Type)
   commentId: M:System.Object_CB_Extension.CompareType(System.Object,System.Type)
@@ -2164,19 +1916,6 @@ references:
   name: XMLIRWText
   nameWithType: XMLIRWText
   fullName: System.Xml.XMLIRWText
-- uid: System.Xml.XMLIRWElement.Value*
-  commentId: Overload:System.Xml.XMLIRWElement.Value
-  href: System.Xml.XMLIRWElement.html#System_Xml_XMLIRWElement_Value
-  name: Value
-  nameWithType: XMLIRWElement.Value
-  fullName: System.Xml.XMLIRWElement.Value
-- uid: System.Xml.XMLIRWValue
-  commentId: T:System.Xml.XMLIRWValue
-  parent: System.Xml
-  href: System.Xml.XMLIRWValue.html
-  name: XMLIRWValue
-  nameWithType: XMLIRWValue
-  fullName: System.Xml.XMLIRWValue
 - uid: System.Xml.XMLIRW.Type
   commentId: P:System.Xml.XMLIRW.Type
   parent: System.Xml.XMLIRW
@@ -2337,7 +2076,7 @@ references:
   fullName: System.Xml.IXMLIRWCollection.Attributes
 - uid: System.Xml.XMLIRWElement.#ctor*
   commentId: Overload:System.Xml.XMLIRWElement.#ctor
-  href: System.Xml.XMLIRWElement.html#System_Xml_XMLIRWElement__ctor_System_Xml_XMLIRW_System_String_System_Xml_XMLIRWValue_System_Xml_XMLIRW___
+  href: System.Xml.XMLIRWElement.html#System_Xml_XMLIRWElement__ctor_System_Xml_XMLIRW_System_String_System_Object_System_Xml_XMLIRW___
   name: XMLIRWElement
   nameWithType: XMLIRWElement.XMLIRWElement
   fullName: System.Xml.XMLIRWElement.XMLIRWElement

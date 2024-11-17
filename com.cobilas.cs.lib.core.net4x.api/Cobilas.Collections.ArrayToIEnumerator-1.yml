@@ -24,11 +24,11 @@ items:
   type: Class
   source:
     remote:
-      path: Runtime/Collections/ArrayToIEnumerator.cs
+      path: Cobilas/Collections/ArrayToIEnumerator.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ArrayToIEnumerator
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/ArrayToIEnumerator.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayToIEnumerator.cs
     startLine: 6
   assemblies:
   - Cobilas.Core
@@ -36,26 +36,26 @@ items:
   summary: Transforms an array into an enumerator.
   example: []
   syntax:
-    content: 'public class ArrayToIEnumerator<T> : IEnumerator<T>, IDisposable, IEnumerator'
+    content: 'public class ArrayToIEnumerator<T> : IEnumerator<T>, IEnumerator, IDisposable'
     typeParameters:
     - id: T
-    content.vb: Public Class ArrayToIEnumerator(Of T) Implements IEnumerator(Of T), IDisposable, IEnumerator
+    content.vb: Public Class ArrayToIEnumerator(Of T) Implements IEnumerator(Of T), IEnumerator, IDisposable
   inheritance:
   - System.Object
   derivedClasses:
   - Cobilas.Collections.ICollectionToIEnumerator`1
   implements:
   - System.Collections.Generic.IEnumerator{{T}}
-  - System.IDisposable
   - System.Collections.IEnumerator
+  - System.IDisposable
   inheritedMembers:
-  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
   extensionMethods:
   - System.Object.System.Object_CB_Extension.CompareType(System.Type)
   - System.Object.System.Object_CB_Extension.CompareType(System.Type[])
@@ -80,11 +80,11 @@ items:
   type: Field
   source:
     remote:
-      path: Runtime/Collections/ArrayToIEnumerator.cs
+      path: Cobilas/Collections/ArrayToIEnumerator.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: list
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/ArrayToIEnumerator.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayToIEnumerator.cs
     startLine: 8
   assemblies:
   - Cobilas.Core
@@ -109,11 +109,11 @@ items:
   type: Field
   source:
     remote:
-      path: Runtime/Collections/ArrayToIEnumerator.cs
+      path: Cobilas/Collections/ArrayToIEnumerator.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: index
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/ArrayToIEnumerator.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayToIEnumerator.cs
     startLine: 9
   assemblies:
   - Cobilas.Core
@@ -138,11 +138,11 @@ items:
   type: Field
   source:
     remote:
-      path: Runtime/Collections/ArrayToIEnumerator.cs
+      path: Cobilas/Collections/ArrayToIEnumerator.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: current
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/ArrayToIEnumerator.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayToIEnumerator.cs
     startLine: 10
   assemblies:
   - Cobilas.Core
@@ -167,12 +167,12 @@ items:
   type: Property
   source:
     remote:
-      path: Runtime/Collections/ArrayToIEnumerator.cs
+      path: Cobilas/Collections/ArrayToIEnumerator.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Current
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/ArrayToIEnumerator.cs
-    startLine: 15
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayToIEnumerator.cs
+    startLine: 14
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -202,12 +202,12 @@ items:
   type: Constructor
   source:
     remote:
-      path: Runtime/Collections/ArrayToIEnumerator.cs
+      path: Cobilas/Collections/ArrayToIEnumerator.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/ArrayToIEnumerator.cs
-    startLine: 19
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayToIEnumerator.cs
+    startLine: 17
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -233,15 +233,17 @@ items:
   type: Constructor
   source:
     remote:
-      path: Runtime/Collections/ArrayToIEnumerator.cs
+      path: Cobilas/Collections/ArrayToIEnumerator.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/ArrayToIEnumerator.cs
-    startLine: 24
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayToIEnumerator.cs
+    startLine: 22
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
+  summary: Creates a new instance of this object.
+  example: []
   syntax:
     content: public ArrayToIEnumerator(T[] list)
     parameters:
@@ -265,12 +267,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Collections/ArrayToIEnumerator.cs
+      path: Cobilas/Collections/ArrayToIEnumerator.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: MoveNext
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/ArrayToIEnumerator.cs
-    startLine: 29
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayToIEnumerator.cs
+    startLine: 26
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -299,12 +301,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Collections/ArrayToIEnumerator.cs
+      path: Cobilas/Collections/ArrayToIEnumerator.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Reset
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/ArrayToIEnumerator.cs
-    startLine: 36
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayToIEnumerator.cs
+    startLine: 33
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -331,12 +333,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Collections/ArrayToIEnumerator.cs
+      path: Cobilas/Collections/ArrayToIEnumerator.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Dispose
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/ArrayToIEnumerator.cs
-    startLine: 40
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayToIEnumerator.cs
+    startLine: 37
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -365,12 +367,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Collections/ArrayToIEnumerator.cs
+      path: Cobilas/Collections/ArrayToIEnumerator.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Dispose
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Collections/ArrayToIEnumerator.cs
-    startLine: 54
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayToIEnumerator.cs
+    startLine: 51
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -419,7 +421,7 @@ references:
   fullName.vb: Object
   name.vb: Object
 - uid: System.Collections.Generic.IEnumerator{{T}}
-  commentId: T:System.Collections.Generic.IEnumerator{``0}
+  commentId: T:System.Collections.Generic.IEnumerator{`0}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerator`1
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
@@ -447,14 +449,6 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: System.IDisposable
-  commentId: T:System.IDisposable
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.idisposable
-  name: IDisposable
-  nameWithType: IDisposable
-  fullName: System.IDisposable
 - uid: System.Collections.IEnumerator
   commentId: T:System.Collections.IEnumerator
   parent: System.Collections
@@ -463,30 +457,14 @@ references:
   name: IEnumerator
   nameWithType: IEnumerator
   fullName: System.Collections.IEnumerator
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -553,51 +531,6 @@ references:
     name: Equals
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  name: ReferenceEquals(object, object)
-  nameWithType: object.ReferenceEquals(object, object)
-  fullName: object.ReferenceEquals(object, object)
-  nameWithType.vb: Object.ReferenceEquals(Object, Object)
-  fullName.vb: Object.ReferenceEquals(Object, Object)
-  name.vb: ReferenceEquals(Object, Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
   - name: (
   - uid: System.Object
     name: Object
@@ -680,6 +613,75 @@ references:
     name: MemberwiseClone
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
 - uid: System.Object.System.Object_CB_Extension.CompareType(System.Type)

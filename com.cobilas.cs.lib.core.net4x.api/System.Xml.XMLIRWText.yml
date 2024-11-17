@@ -7,8 +7,8 @@ items:
   children:
   - System.Xml.XMLIRWText.#ctor(System.Object)
   - System.Xml.XMLIRWText.#ctor(System.Xml.XMLIRW,System.Object)
+  - System.Xml.XMLIRWText.#ctor(System.Xml.XMLIRW,System.Object,System.String,System.Xml.XmlNodeType)
   - System.Xml.XMLIRWText.Dispose
-  - System.Xml.XMLIRWText.Empty
   - System.Xml.XMLIRWText.IsNull
   - System.Xml.XMLIRWText.Name
   - System.Xml.XMLIRWText.Parent
@@ -56,11 +56,11 @@ items:
   type: Class
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: XMLIRWText
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
     startLine: 4
   assemblies:
   - Cobilas.Core
@@ -73,16 +73,18 @@ items:
   inheritance:
   - System.Object
   - System.Xml.XMLIRW
+  derivedClasses:
+  - System.Xml.XMLIRWTextNull
   implements:
   - System.IDisposable
   - System.IConvertible
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
   extensionMethods:
   - System.Object.System.Object_CB_Extension.CompareType(System.Type)
   - System.Object.System.Object_CB_Extension.CompareType(System.Type[])
@@ -104,11 +106,11 @@ items:
   type: Field
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: textValue
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
     startLine: 6
   assemblies:
   - Cobilas.Core
@@ -133,12 +135,12 @@ items:
   type: Property
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Value
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 9
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 8
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -164,23 +166,23 @@ items:
   type: Property
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: IsNull
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 11
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 10
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
   summary: Check if the value is null.
   example: []
   syntax:
-    content: public bool IsNull { get; }
+    content: public virtual bool IsNull { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public ReadOnly Property IsNull As Boolean
+    content.vb: Public Overridable ReadOnly Property IsNull As Boolean
   overload: System.Xml.XMLIRWText.IsNull*
 - uid: System.Xml.XMLIRWText.Name
   commentId: P:System.Xml.XMLIRWText.Name
@@ -195,12 +197,12 @@ items:
   type: Property
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Name
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 13
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 12
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -227,12 +229,12 @@ items:
   type: Property
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Parent
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 15
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 14
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -259,12 +261,12 @@ items:
   type: Property
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Type
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 17
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 16
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -278,37 +280,46 @@ items:
     content.vb: Public Overrides Property Type As XmlNodeType
   overridden: System.Xml.XMLIRW.Type
   overload: System.Xml.XMLIRWText.Type*
-- uid: System.Xml.XMLIRWText.Empty
-  commentId: P:System.Xml.XMLIRWText.Empty
-  id: Empty
+- uid: System.Xml.XMLIRWText.#ctor(System.Xml.XMLIRW,System.Object,System.String,System.Xml.XmlNodeType)
+  commentId: M:System.Xml.XMLIRWText.#ctor(System.Xml.XMLIRW,System.Object,System.String,System.Xml.XmlNodeType)
+  id: '#ctor(System.Xml.XMLIRW,System.Object,System.String,System.Xml.XmlNodeType)'
   parent: System.Xml.XMLIRWText
   langs:
   - csharp
   - vb
-  name: Empty
-  nameWithType: XMLIRWText.Empty
-  fullName: System.Xml.XMLIRWText.Empty
-  type: Property
+  name: XMLIRWText(XMLIRW, object, string, XmlNodeType)
+  nameWithType: XMLIRWText.XMLIRWText(XMLIRW, object, string, XmlNodeType)
+  fullName: System.Xml.XMLIRWText.XMLIRWText(System.Xml.XMLIRW, object, string, System.Xml.XmlNodeType)
+  type: Constructor
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
-    id: Empty
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 20
+    id: .ctor
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 18
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
-  summary: Creates an empty instance.
+  summary: Creates a new instance of the XMLIRW element.
   example: []
   syntax:
-    content: public static XMLIRWText Empty { get; }
-    parameters: []
-    return:
-      type: System.Xml.XMLIRWText
-    content.vb: Public Shared ReadOnly Property Empty As XMLIRWText
-  overload: System.Xml.XMLIRWText.Empty*
+    content: protected XMLIRWText(XMLIRW parent, object textValue, string name, XmlNodeType type)
+    parameters:
+    - id: parent
+      type: System.Xml.XMLIRW
+    - id: textValue
+      type: System.Object
+    - id: name
+      type: System.String
+    - id: type
+      type: System.Xml.XmlNodeType
+    content.vb: Protected Sub New(parent As XMLIRW, textValue As Object, name As String, type As XmlNodeType)
+  overload: System.Xml.XMLIRWText.#ctor*
+  nameWithType.vb: XMLIRWText.New(XMLIRW, Object, String, XmlNodeType)
+  fullName.vb: System.Xml.XMLIRWText.New(System.Xml.XMLIRW, Object, String, System.Xml.XmlNodeType)
+  name.vb: New(XMLIRW, Object, String, XmlNodeType)
 - uid: System.Xml.XMLIRWText.#ctor(System.Xml.XMLIRW,System.Object)
   commentId: M:System.Xml.XMLIRWText.#ctor(System.Xml.XMLIRW,System.Object)
   id: '#ctor(System.Xml.XMLIRW,System.Object)'
@@ -322,12 +333,12 @@ items:
   type: Constructor
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 23
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 22
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -358,12 +369,12 @@ items:
   type: Constructor
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 28
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 24
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -392,12 +403,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Dispose
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 31
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 26
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -421,12 +432,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToString
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 38
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 32
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -446,25 +457,25 @@ items:
   langs:
   - csharp
   - vb
-  name: ToString(IFormatProvider)
-  nameWithType: XMLIRWText.ToString(IFormatProvider)
-  fullName: System.Xml.XMLIRWText.ToString(System.IFormatProvider)
+  name: ToString(IFormatProvider?)
+  nameWithType: XMLIRWText.ToString(IFormatProvider?)
+  fullName: System.Xml.XMLIRWText.ToString(System.IFormatProvider?)
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToString
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 42
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 35
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
   summary: Creates a <xref href="System.String" data-throw-if-not-resolved="false"></xref> representation of the <xref href="System.Object" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public string ToString(IFormatProvider provider)
+    content: public string ToString(IFormatProvider? provider)
     parameters:
     - id: provider
       type: System.IFormatProvider
@@ -474,6 +485,9 @@ items:
   overload: System.Xml.XMLIRWText.ToString*
   implements:
   - System.IConvertible.ToString(System.IFormatProvider)
+  nameWithType.vb: XMLIRWText.ToString(IFormatProvider)
+  fullName.vb: System.Xml.XMLIRWText.ToString(System.IFormatProvider)
+  name.vb: ToString(IFormatProvider)
 - uid: System.Xml.XMLIRWText.op_Explicit(System.Xml.XMLIRWText)~System.String
   commentId: M:System.Xml.XMLIRWText.op_Explicit(System.Xml.XMLIRWText)~System.String
   id: op_Explicit(System.Xml.XMLIRWText)~System.String
@@ -487,12 +501,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Explicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 94
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 87
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -523,12 +537,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Explicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 96
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 89
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -559,12 +573,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Explicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 99
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 92
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -595,12 +609,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Explicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 101
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 94
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -631,12 +645,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Explicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 103
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 96
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -667,12 +681,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Explicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 106
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 99
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -703,12 +717,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Explicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 108
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 101
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -739,12 +753,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Explicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 110
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 103
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -775,12 +789,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Explicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 112
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 105
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -811,12 +825,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Explicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 115
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 108
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -847,12 +861,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Explicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 117
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 110
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -883,12 +897,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Explicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 119
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 112
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -919,12 +933,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Explicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 121
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 114
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -955,12 +969,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Explicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 124
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 117
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -991,12 +1005,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Explicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 127
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 120
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -1027,12 +1041,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Implicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 130
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 123
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -1063,12 +1077,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Implicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 132
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 125
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -1099,12 +1113,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Implicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 135
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 128
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -1135,12 +1149,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Implicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 137
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 130
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -1171,12 +1185,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Implicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 139
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 132
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -1207,12 +1221,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Implicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 142
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 135
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -1243,12 +1257,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Implicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 144
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 137
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -1279,12 +1293,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Implicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 146
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 139
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -1315,12 +1329,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Implicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 148
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 141
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -1351,12 +1365,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Implicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 151
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 144
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -1387,12 +1401,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Implicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 153
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 146
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -1423,12 +1437,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Implicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 155
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 148
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -1459,12 +1473,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Implicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 157
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 150
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -1495,12 +1509,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Implicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 160
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 153
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -1531,12 +1545,12 @@ items:
   type: Operator
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
+      path: System/Xml/XMLIRWText.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Implicit
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWText.cs
-    startLine: 163
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWText.cs
+    startLine: 156
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -1689,51 +1703,6 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  name: ReferenceEquals(object, object)
-  nameWithType: object.ReferenceEquals(object, object)
-  fullName: object.ReferenceEquals(object, object)
-  nameWithType.vb: Object.ReferenceEquals(Object, Object)
-  fullName.vb: Object.ReferenceEquals(Object, Object)
-  name.vb: ReferenceEquals(Object, Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
 - uid: System.Object.GetHashCode
   commentId: M:System.Object.GetHashCode
   parent: System.Object
@@ -1805,6 +1774,51 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
 - uid: System.Object.System.Object_CB_Extension.CompareType(System.Type)
   commentId: M:System.Object_CB_Extension.CompareType(System.Object,System.Type)
@@ -2535,22 +2549,9 @@ references:
   name: XmlNodeType
   nameWithType: XmlNodeType
   fullName: System.Xml.XmlNodeType
-- uid: System.Xml.XMLIRWText.Empty*
-  commentId: Overload:System.Xml.XMLIRWText.Empty
-  href: System.Xml.XMLIRWText.html#System_Xml_XMLIRWText_Empty
-  name: Empty
-  nameWithType: XMLIRWText.Empty
-  fullName: System.Xml.XMLIRWText.Empty
-- uid: System.Xml.XMLIRWText
-  commentId: T:System.Xml.XMLIRWText
-  parent: System.Xml
-  href: System.Xml.XMLIRWText.html
-  name: XMLIRWText
-  nameWithType: XMLIRWText
-  fullName: System.Xml.XMLIRWText
 - uid: System.Xml.XMLIRWText.#ctor*
   commentId: Overload:System.Xml.XMLIRWText.#ctor
-  href: System.Xml.XMLIRWText.html#System_Xml_XMLIRWText__ctor_System_Xml_XMLIRW_System_Object_
+  href: System.Xml.XMLIRWText.html#System_Xml_XMLIRWText__ctor_System_Xml_XMLIRW_System_Object_System_String_System_Xml_XmlNodeType_
   name: XMLIRWText
   nameWithType: XMLIRWText.XMLIRWText
   fullName: System.Xml.XMLIRWText.XMLIRWText
@@ -2645,6 +2646,13 @@ references:
   name: IFormatProvider
   nameWithType: IFormatProvider
   fullName: System.IFormatProvider
+- uid: System.Xml.XMLIRWText
+  commentId: T:System.Xml.XMLIRWText
+  parent: System.Xml
+  href: System.Xml.XMLIRWText.html
+  name: XMLIRWText
+  nameWithType: XMLIRWText
+  fullName: System.Xml.XMLIRWText
 - uid: System.Xml.XMLIRWText.op_Explicit*
   commentId: Overload:System.Xml.XMLIRWText.op_Explicit
   name: explicit operator

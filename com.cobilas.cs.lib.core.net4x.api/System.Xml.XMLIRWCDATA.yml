@@ -6,13 +6,7 @@ items:
   parent: System.Xml
   children:
   - System.Xml.XMLIRWCDATA.#ctor(System.Object)
-  - System.Xml.XMLIRWCDATA.#ctor(System.String,System.Object)
-  - System.Xml.XMLIRWCDATA.#ctor(System.String,System.Xml.XMLIRWValue)
   - System.Xml.XMLIRWCDATA.#ctor(System.Xml.XMLIRW,System.Object)
-  - System.Xml.XMLIRWCDATA.#ctor(System.Xml.XMLIRW,System.String,System.Object)
-  - System.Xml.XMLIRWCDATA.#ctor(System.Xml.XMLIRW,System.String,System.Xml.XMLIRWValue)
-  - System.Xml.XMLIRWCDATA.#ctor(System.Xml.XMLIRW,System.Xml.XMLIRWValue)
-  - System.Xml.XMLIRWCDATA.#ctor(System.Xml.XMLIRWValue)
   - System.Xml.XMLIRWCDATA.Dispose
   - System.Xml.XMLIRWCDATA.Dispose(System.Boolean)
   - System.Xml.XMLIRWCDATA.Finalize
@@ -20,7 +14,6 @@ items:
   - System.Xml.XMLIRWCDATA.Parent
   - System.Xml.XMLIRWCDATA.Text
   - System.Xml.XMLIRWCDATA.Type
-  - System.Xml.XMLIRWCDATA.Value
   langs:
   - csharp
   - vb
@@ -30,11 +23,11 @@ items:
   type: Class
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
+      path: System/Xml/XMLIRWCDATA.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: XMLIRWCDATA
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWCDATA.cs
     startLine: 2
   assemblies:
   - Cobilas.Core
@@ -54,10 +47,10 @@ items:
   - System.Xml.XMLIRW.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
   extensionMethods:
   - System.Object.System.Object_CB_Extension.CompareType(System.Type)
   - System.Object.System.Object_CB_Extension.CompareType(System.Type[])
@@ -79,12 +72,12 @@ items:
   type: Property
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
+      path: System/Xml/XMLIRWCDATA.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Text
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
-    startLine: 6
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWCDATA.cs
+    startLine: 5
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -99,49 +92,6 @@ items:
   overload: System.Xml.XMLIRWCDATA.Text*
   implements:
   - System.Xml.ITextValue.Text
-- uid: System.Xml.XMLIRWCDATA.Value
-  commentId: P:System.Xml.XMLIRWCDATA.Value
-  id: Value
-  parent: System.Xml.XMLIRWCDATA
-  langs:
-  - csharp
-  - vb
-  name: Value
-  nameWithType: XMLIRWCDATA.Value
-  fullName: System.Xml.XMLIRWCDATA.Value
-  type: Property
-  source:
-    remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
-    id: Value
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
-    startLine: 8
-  assemblies:
-  - Cobilas.Core
-  namespace: System.Xml
-  summary: Returns or sets the text of the XMLIRW element.
-  example: []
-  syntax:
-    content: >-
-      [Obsolete("Use the Text property.")]
-
-      public XMLIRWValue Value { get; }
-    parameters: []
-    return:
-      type: System.Xml.XMLIRWValue
-    content.vb: >-
-      <Obsolete("Use the Text property.")>
-
-      Public Property Value As XMLIRWValue
-  overload: System.Xml.XMLIRWCDATA.Value*
-  attributes:
-  - type: System.ObsoleteAttribute
-    ctor: System.ObsoleteAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Use the Text property.
 - uid: System.Xml.XMLIRWCDATA.Type
   commentId: P:System.Xml.XMLIRWCDATA.Type
   id: Type
@@ -155,12 +105,12 @@ items:
   type: Property
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
+      path: System/Xml/XMLIRWCDATA.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Type
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
-    startLine: 11
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWCDATA.cs
+    startLine: 7
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -187,12 +137,12 @@ items:
   type: Property
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
+      path: System/Xml/XMLIRWCDATA.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Parent
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
-    startLine: 13
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWCDATA.cs
+    startLine: 9
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -219,12 +169,12 @@ items:
   type: Property
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
+      path: System/Xml/XMLIRWCDATA.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Name
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
-    startLine: 15
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWCDATA.cs
+    startLine: 11
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -238,296 +188,6 @@ items:
     content.vb: Public Overrides Property Name As String
   overridden: System.Xml.XMLIRW.Name
   overload: System.Xml.XMLIRWCDATA.Name*
-- uid: System.Xml.XMLIRWCDATA.#ctor(System.Xml.XMLIRW,System.String,System.Xml.XMLIRWValue)
-  commentId: M:System.Xml.XMLIRWCDATA.#ctor(System.Xml.XMLIRW,System.String,System.Xml.XMLIRWValue)
-  id: '#ctor(System.Xml.XMLIRW,System.String,System.Xml.XMLIRWValue)'
-  parent: System.Xml.XMLIRWCDATA
-  langs:
-  - csharp
-  - vb
-  name: XMLIRWCDATA(XMLIRW, string, XMLIRWValue)
-  nameWithType: XMLIRWCDATA.XMLIRWCDATA(XMLIRW, string, XMLIRWValue)
-  fullName: System.Xml.XMLIRWCDATA.XMLIRWCDATA(System.Xml.XMLIRW, string, System.Xml.XMLIRWValue)
-  type: Constructor
-  source:
-    remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
-    id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
-    startLine: 18
-  assemblies:
-  - Cobilas.Core
-  namespace: System.Xml
-  summary: Creates a new instance of the XMLIRW element.
-  example: []
-  syntax:
-    content: >-
-      [Obsolete("Use the XMLIRWCDATA(XMLIRW, object) constructor.")]
-
-      public XMLIRWCDATA(XMLIRW parent, string name, XMLIRWValue value)
-    parameters:
-    - id: parent
-      type: System.Xml.XMLIRW
-    - id: name
-      type: System.String
-    - id: value
-      type: System.Xml.XMLIRWValue
-    content.vb: >-
-      <Obsolete("Use the XMLIRWCDATA(XMLIRW, object) constructor.")>
-
-      Public Sub New(parent As XMLIRW, name As String, value As XMLIRWValue)
-  overload: System.Xml.XMLIRWCDATA.#ctor*
-  attributes:
-  - type: System.ObsoleteAttribute
-    ctor: System.ObsoleteAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Use the XMLIRWCDATA(XMLIRW, object) constructor.
-  nameWithType.vb: XMLIRWCDATA.New(XMLIRW, String, XMLIRWValue)
-  fullName.vb: System.Xml.XMLIRWCDATA.New(System.Xml.XMLIRW, String, System.Xml.XMLIRWValue)
-  name.vb: New(XMLIRW, String, XMLIRWValue)
-- uid: System.Xml.XMLIRWCDATA.#ctor(System.String,System.Xml.XMLIRWValue)
-  commentId: M:System.Xml.XMLIRWCDATA.#ctor(System.String,System.Xml.XMLIRWValue)
-  id: '#ctor(System.String,System.Xml.XMLIRWValue)'
-  parent: System.Xml.XMLIRWCDATA
-  langs:
-  - csharp
-  - vb
-  name: XMLIRWCDATA(string, XMLIRWValue)
-  nameWithType: XMLIRWCDATA.XMLIRWCDATA(string, XMLIRWValue)
-  fullName: System.Xml.XMLIRWCDATA.XMLIRWCDATA(string, System.Xml.XMLIRWValue)
-  type: Constructor
-  source:
-    remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
-    id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
-    startLine: 21
-  assemblies:
-  - Cobilas.Core
-  namespace: System.Xml
-  summary: Creates a new instance of the XMLIRW element.
-  example: []
-  syntax:
-    content: >-
-      [Obsolete("Use the XMLIRWCDATA(object) constructor.")]
-
-      public XMLIRWCDATA(string name, XMLIRWValue value)
-    parameters:
-    - id: name
-      type: System.String
-    - id: value
-      type: System.Xml.XMLIRWValue
-    content.vb: >-
-      <Obsolete("Use the XMLIRWCDATA(object) constructor.")>
-
-      Public Sub New(name As String, value As XMLIRWValue)
-  overload: System.Xml.XMLIRWCDATA.#ctor*
-  attributes:
-  - type: System.ObsoleteAttribute
-    ctor: System.ObsoleteAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Use the XMLIRWCDATA(object) constructor.
-  nameWithType.vb: XMLIRWCDATA.New(String, XMLIRWValue)
-  fullName.vb: System.Xml.XMLIRWCDATA.New(String, System.Xml.XMLIRWValue)
-  name.vb: New(String, XMLIRWValue)
-- uid: System.Xml.XMLIRWCDATA.#ctor(System.Xml.XMLIRW,System.Xml.XMLIRWValue)
-  commentId: M:System.Xml.XMLIRWCDATA.#ctor(System.Xml.XMLIRW,System.Xml.XMLIRWValue)
-  id: '#ctor(System.Xml.XMLIRW,System.Xml.XMLIRWValue)'
-  parent: System.Xml.XMLIRWCDATA
-  langs:
-  - csharp
-  - vb
-  name: XMLIRWCDATA(XMLIRW, XMLIRWValue)
-  nameWithType: XMLIRWCDATA.XMLIRWCDATA(XMLIRW, XMLIRWValue)
-  fullName: System.Xml.XMLIRWCDATA.XMLIRWCDATA(System.Xml.XMLIRW, System.Xml.XMLIRWValue)
-  type: Constructor
-  source:
-    remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
-    id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
-    startLine: 24
-  assemblies:
-  - Cobilas.Core
-  namespace: System.Xml
-  summary: Creates a new instance of the XMLIRW element.
-  example: []
-  syntax:
-    content: >-
-      [Obsolete("Use the XMLIRWCDATA(XMLIRW, object) constructor.")]
-
-      public XMLIRWCDATA(XMLIRW parent, XMLIRWValue value)
-    parameters:
-    - id: parent
-      type: System.Xml.XMLIRW
-    - id: value
-      type: System.Xml.XMLIRWValue
-    content.vb: >-
-      <Obsolete("Use the XMLIRWCDATA(XMLIRW, object) constructor.")>
-
-      Public Sub New(parent As XMLIRW, value As XMLIRWValue)
-  overload: System.Xml.XMLIRWCDATA.#ctor*
-  attributes:
-  - type: System.ObsoleteAttribute
-    ctor: System.ObsoleteAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Use the XMLIRWCDATA(XMLIRW, object) constructor.
-  nameWithType.vb: XMLIRWCDATA.New(XMLIRW, XMLIRWValue)
-  fullName.vb: System.Xml.XMLIRWCDATA.New(System.Xml.XMLIRW, System.Xml.XMLIRWValue)
-  name.vb: New(XMLIRW, XMLIRWValue)
-- uid: System.Xml.XMLIRWCDATA.#ctor(System.Xml.XMLIRWValue)
-  commentId: M:System.Xml.XMLIRWCDATA.#ctor(System.Xml.XMLIRWValue)
-  id: '#ctor(System.Xml.XMLIRWValue)'
-  parent: System.Xml.XMLIRWCDATA
-  langs:
-  - csharp
-  - vb
-  name: XMLIRWCDATA(XMLIRWValue)
-  nameWithType: XMLIRWCDATA.XMLIRWCDATA(XMLIRWValue)
-  fullName: System.Xml.XMLIRWCDATA.XMLIRWCDATA(System.Xml.XMLIRWValue)
-  type: Constructor
-  source:
-    remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
-    id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
-    startLine: 27
-  assemblies:
-  - Cobilas.Core
-  namespace: System.Xml
-  summary: Creates a new instance of the XMLIRW element.
-  example: []
-  syntax:
-    content: >-
-      [Obsolete("Use the XMLIRWCDATA(object) constructor.")]
-
-      public XMLIRWCDATA(XMLIRWValue value)
-    parameters:
-    - id: value
-      type: System.Xml.XMLIRWValue
-    content.vb: >-
-      <Obsolete("Use the XMLIRWCDATA(object) constructor.")>
-
-      Public Sub New(value As XMLIRWValue)
-  overload: System.Xml.XMLIRWCDATA.#ctor*
-  attributes:
-  - type: System.ObsoleteAttribute
-    ctor: System.ObsoleteAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Use the XMLIRWCDATA(object) constructor.
-  nameWithType.vb: XMLIRWCDATA.New(XMLIRWValue)
-  fullName.vb: System.Xml.XMLIRWCDATA.New(System.Xml.XMLIRWValue)
-  name.vb: New(XMLIRWValue)
-- uid: System.Xml.XMLIRWCDATA.#ctor(System.Xml.XMLIRW,System.String,System.Object)
-  commentId: M:System.Xml.XMLIRWCDATA.#ctor(System.Xml.XMLIRW,System.String,System.Object)
-  id: '#ctor(System.Xml.XMLIRW,System.String,System.Object)'
-  parent: System.Xml.XMLIRWCDATA
-  langs:
-  - csharp
-  - vb
-  name: XMLIRWCDATA(XMLIRW, string, object)
-  nameWithType: XMLIRWCDATA.XMLIRWCDATA(XMLIRW, string, object)
-  fullName: System.Xml.XMLIRWCDATA.XMLIRWCDATA(System.Xml.XMLIRW, string, object)
-  type: Constructor
-  source:
-    remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
-    id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
-    startLine: 30
-  assemblies:
-  - Cobilas.Core
-  namespace: System.Xml
-  summary: Creates a new instance of the XMLIRW element.
-  example: []
-  syntax:
-    content: >-
-      [Obsolete("Use the XMLIRWCDATA(XMLIRW, object) constructor.")]
-
-      public XMLIRWCDATA(XMLIRW parent, string name, object value)
-    parameters:
-    - id: parent
-      type: System.Xml.XMLIRW
-    - id: name
-      type: System.String
-    - id: value
-      type: System.Object
-    content.vb: >-
-      <Obsolete("Use the XMLIRWCDATA(XMLIRW, object) constructor.")>
-
-      Public Sub New(parent As XMLIRW, name As String, value As Object)
-  overload: System.Xml.XMLIRWCDATA.#ctor*
-  attributes:
-  - type: System.ObsoleteAttribute
-    ctor: System.ObsoleteAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Use the XMLIRWCDATA(XMLIRW, object) constructor.
-  nameWithType.vb: XMLIRWCDATA.New(XMLIRW, String, Object)
-  fullName.vb: System.Xml.XMLIRWCDATA.New(System.Xml.XMLIRW, String, Object)
-  name.vb: New(XMLIRW, String, Object)
-- uid: System.Xml.XMLIRWCDATA.#ctor(System.String,System.Object)
-  commentId: M:System.Xml.XMLIRWCDATA.#ctor(System.String,System.Object)
-  id: '#ctor(System.String,System.Object)'
-  parent: System.Xml.XMLIRWCDATA
-  langs:
-  - csharp
-  - vb
-  name: XMLIRWCDATA(string, object)
-  nameWithType: XMLIRWCDATA.XMLIRWCDATA(string, object)
-  fullName: System.Xml.XMLIRWCDATA.XMLIRWCDATA(string, object)
-  type: Constructor
-  source:
-    remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
-    id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
-    startLine: 33
-  assemblies:
-  - Cobilas.Core
-  namespace: System.Xml
-  summary: Creates a new instance of the XMLIRW element.
-  example: []
-  syntax:
-    content: >-
-      [Obsolete("Use the XMLIRWCDATA(object) constructor.")]
-
-      public XMLIRWCDATA(string name, object value)
-    parameters:
-    - id: name
-      type: System.String
-    - id: value
-      type: System.Object
-    content.vb: >-
-      <Obsolete("Use the XMLIRWCDATA(object) constructor.")>
-
-      Public Sub New(name As String, value As Object)
-  overload: System.Xml.XMLIRWCDATA.#ctor*
-  attributes:
-  - type: System.ObsoleteAttribute
-    ctor: System.ObsoleteAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Use the XMLIRWCDATA(object) constructor.
-  nameWithType.vb: XMLIRWCDATA.New(String, Object)
-  fullName.vb: System.Xml.XMLIRWCDATA.New(String, Object)
-  name.vb: New(String, Object)
 - uid: System.Xml.XMLIRWCDATA.#ctor(System.Xml.XMLIRW,System.Object)
   commentId: M:System.Xml.XMLIRWCDATA.#ctor(System.Xml.XMLIRW,System.Object)
   id: '#ctor(System.Xml.XMLIRW,System.Object)'
@@ -535,25 +195,25 @@ items:
   langs:
   - csharp
   - vb
-  name: XMLIRWCDATA(XMLIRW, object)
-  nameWithType: XMLIRWCDATA.XMLIRWCDATA(XMLIRW, object)
-  fullName: System.Xml.XMLIRWCDATA.XMLIRWCDATA(System.Xml.XMLIRW, object)
+  name: XMLIRWCDATA(XMLIRW, object?)
+  nameWithType: XMLIRWCDATA.XMLIRWCDATA(XMLIRW, object?)
+  fullName: System.Xml.XMLIRWCDATA.XMLIRWCDATA(System.Xml.XMLIRW, object?)
   type: Constructor
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
+      path: System/Xml/XMLIRWCDATA.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
-    startLine: 37
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWCDATA.cs
+    startLine: 13
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
   summary: Creates a new instance of the XMLIRW element.
   example: []
   syntax:
-    content: public XMLIRWCDATA(XMLIRW parent, object value)
+    content: public XMLIRWCDATA(XMLIRW parent, object? value)
     parameters:
     - id: parent
       type: System.Xml.XMLIRW
@@ -571,25 +231,25 @@ items:
   langs:
   - csharp
   - vb
-  name: XMLIRWCDATA(object)
-  nameWithType: XMLIRWCDATA.XMLIRWCDATA(object)
-  fullName: System.Xml.XMLIRWCDATA.XMLIRWCDATA(object)
+  name: XMLIRWCDATA(object?)
+  nameWithType: XMLIRWCDATA.XMLIRWCDATA(object?)
+  fullName: System.Xml.XMLIRWCDATA.XMLIRWCDATA(object?)
   type: Constructor
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
+      path: System/Xml/XMLIRWCDATA.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: .ctor
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
-    startLine: 40
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWCDATA.cs
+    startLine: 16
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
   summary: Creates a new instance of the XMLIRW element.
   example: []
   syntax:
-    content: public XMLIRWCDATA(object value)
+    content: public XMLIRWCDATA(object? value)
     parameters:
     - id: value
       type: System.Object
@@ -611,12 +271,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
+      path: System/Xml/XMLIRWCDATA.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Finalize
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
-    startLine: 43
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWCDATA.cs
+    startLine: 18
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -642,12 +302,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
+      path: System/Xml/XMLIRWCDATA.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Dispose
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
-    startLine: 47
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWCDATA.cs
+    startLine: 21
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -671,12 +331,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
+      path: System/Xml/XMLIRWCDATA.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Dispose
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Runtime/Extensions/XMLExtension/Helper classes/XMLIRWCDATA.cs
-    startLine: 53
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Xml/XMLIRWCDATA.cs
+    startLine: 26
   assemblies:
   - Cobilas.Core
   namespace: System.Xml
@@ -845,51 +505,6 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  name: ReferenceEquals(object, object)
-  nameWithType: object.ReferenceEquals(object, object)
-  fullName: object.ReferenceEquals(object, object)
-  nameWithType.vb: Object.ReferenceEquals(Object, Object)
-  fullName.vb: Object.ReferenceEquals(Object, Object)
-  name.vb: ReferenceEquals(Object, Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
 - uid: System.Object.GetHashCode
   commentId: M:System.Object.GetHashCode
   parent: System.Object
@@ -961,6 +576,51 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
 - uid: System.Object.System.Object_CB_Extension.CompareType(System.Type)
   commentId: M:System.Object_CB_Extension.CompareType(System.Object,System.Type)
@@ -1630,19 +1290,6 @@ references:
   name: XMLIRWText
   nameWithType: XMLIRWText
   fullName: System.Xml.XMLIRWText
-- uid: System.Xml.XMLIRWCDATA.Value*
-  commentId: Overload:System.Xml.XMLIRWCDATA.Value
-  href: System.Xml.XMLIRWCDATA.html#System_Xml_XMLIRWCDATA_Value
-  name: Value
-  nameWithType: XMLIRWCDATA.Value
-  fullName: System.Xml.XMLIRWCDATA.Value
-- uid: System.Xml.XMLIRWValue
-  commentId: T:System.Xml.XMLIRWValue
-  parent: System.Xml
-  href: System.Xml.XMLIRWValue.html
-  name: XMLIRWValue
-  nameWithType: XMLIRWValue
-  fullName: System.Xml.XMLIRWValue
 - uid: System.Xml.XMLIRW.Type
   commentId: P:System.Xml.XMLIRW.Type
   parent: System.Xml.XMLIRW
@@ -1703,7 +1350,7 @@ references:
   name.vb: String
 - uid: System.Xml.XMLIRWCDATA.#ctor*
   commentId: Overload:System.Xml.XMLIRWCDATA.#ctor
-  href: System.Xml.XMLIRWCDATA.html#System_Xml_XMLIRWCDATA__ctor_System_Xml_XMLIRW_System_String_System_Xml_XMLIRWValue_
+  href: System.Xml.XMLIRWCDATA.html#System_Xml_XMLIRWCDATA__ctor_System_Xml_XMLIRW_System_Object_
   name: XMLIRWCDATA
   nameWithType: XMLIRWCDATA.XMLIRWCDATA
   fullName: System.Xml.XMLIRWCDATA.XMLIRWCDATA

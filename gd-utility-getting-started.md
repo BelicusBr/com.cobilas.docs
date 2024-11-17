@@ -38,10 +38,10 @@ subPriority: And the execution priority order.
 To include the package, open the `.csproj` file and add it.
 ```xml
 <ItemGroup>
-  <PackageReference Include="Cobilas.Godot.Utility" Version="4.1.0" />
+  <PackageReference Include="Cobilas.Godot.Utility" Version="4.2.4" />
 </ItemGroup>
 ```
 Or use command line.
 ```
-dotnet add package Cobilas.Godot.Utility --version 4.1.0
+dotnet add package Cobilas.Godot.Utility --version 4.2.4
 ```
