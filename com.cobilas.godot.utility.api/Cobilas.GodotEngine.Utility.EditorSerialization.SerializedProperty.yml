@@ -1,0 +1,965 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty
+  commentId: T:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty
+  id: SerializedProperty
+  parent: Cobilas.GodotEngine.Utility.EditorSerialization
+  children:
+  - Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.#ctor(System.String,Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject,System.String)
+  - Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Custom
+  - Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Get(System.String)
+  - Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.GetPropertyList
+  - Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Member
+  - Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Name
+  - Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Parent
+  - Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.PropertyPath
+  - Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.RootNodeId
+  - Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Set(System.String,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: SerializedProperty
+  nameWithType: SerializedProperty
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty
+  type: Class
+  source:
+    remote:
+      path: GodotEngine.Utility/EditorSerialization/SerializedProperty.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: SerializedProperty
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/EditorSerialization/SerializedProperty.cs
+    startLine: 4
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.EditorSerialization
+  summary: Property serialization class in inspector.
+  example: []
+  syntax:
+    content: 'public class SerializedProperty : SerializedObject, ISerializedPropertyManipulation'
+    content.vb: Public Class SerializedProperty Inherits SerializedObject Implements ISerializedPropertyManipulation
+  inheritance:
+  - System.Object
+  - Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject
+  implements:
+  - Cobilas.GodotEngine.Utility.EditorSerialization.ISerializedPropertyManipulation
+  inheritedMembers:
+  - Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.GetPath(Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Custom
+  commentId: P:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Custom
+  id: Custom
+  parent: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty
+  langs:
+  - csharp
+  - vb
+  name: Custom
+  nameWithType: SerializedProperty.Custom
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Custom
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/EditorSerialization/SerializedProperty.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Custom
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/EditorSerialization/SerializedProperty.cs
+    startLine: 8
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.EditorSerialization
+  summary: Property customization object.
+  example: []
+  syntax:
+    content: public PropertyCustom Custom { get; set; }
+    parameters: []
+    return:
+      type: Cobilas.GodotEngine.Utility.EditorSerialization.PropertyCustom
+      description: Allows you to define a property customization object.
+    content.vb: Public Property Custom As PropertyCustom
+  overload: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Custom*
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Member
+  commentId: P:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Member
+  id: Member
+  parent: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty
+  langs:
+  - csharp
+  - vb
+  name: Member
+  nameWithType: SerializedProperty.Member
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Member
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/EditorSerialization/SerializedProperty.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Member
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/EditorSerialization/SerializedProperty.cs
+    startLine: 10
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.EditorSerialization
+  summary: The custom class member.
+  example: []
+  syntax:
+    content: public override MemberItem Member { get; set; }
+    parameters: []
+    return:
+      type: Cobilas.GodotEngine.Utility.EditorSerialization.MemberItem
+      description: Returns the custom class member.
+    content.vb: Public Overrides Property Member As MemberItem
+  overridden: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.Member
+  overload: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Member*
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Name
+  commentId: P:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Name
+  id: Name
+  parent: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: SerializedProperty.Name
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Name
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/EditorSerialization/SerializedProperty.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Name
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/EditorSerialization/SerializedProperty.cs
+    startLine: 12
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.EditorSerialization
+  summary: The name of the object.
+  example: []
+  syntax:
+    content: public override string Name { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+      description: Returns the name of the object.
+    content.vb: Public Overrides Property Name As String
+  overridden: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.Name
+  overload: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Name*
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.PropertyPath
+  commentId: P:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.PropertyPath
+  id: PropertyPath
+  parent: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty
+  langs:
+  - csharp
+  - vb
+  name: PropertyPath
+  nameWithType: SerializedProperty.PropertyPath
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.PropertyPath
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/EditorSerialization/SerializedProperty.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: PropertyPath
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/EditorSerialization/SerializedProperty.cs
+    startLine: 14
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.EditorSerialization
+  summary: The custom property path.
+  example: []
+  syntax:
+    content: public override string PropertyPath { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: Returns the path of the custom property.
+    content.vb: Public Overrides ReadOnly Property PropertyPath As String
+  overridden: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.PropertyPath
+  overload: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.PropertyPath*
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.RootNodeId
+  commentId: P:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.RootNodeId
+  id: RootNodeId
+  parent: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty
+  langs:
+  - csharp
+  - vb
+  name: RootNodeId
+  nameWithType: SerializedProperty.RootNodeId
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.RootNodeId
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/EditorSerialization/SerializedProperty.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: RootNodeId
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/EditorSerialization/SerializedProperty.cs
+    startLine: 16
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.EditorSerialization
+  summary: The id of the node object.
+  example: []
+  syntax:
+    content: public override string RootNodeId { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+      description: Returns a <xref href="System.String" data-throw-if-not-resolved="false"></xref> with the id of the node object.
+    content.vb: Public Overrides Property RootNodeId As String
+  overridden: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.RootNodeId
+  overload: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.RootNodeId*
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Parent
+  commentId: P:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Parent
+  id: Parent
+  parent: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty
+  langs:
+  - csharp
+  - vb
+  name: Parent
+  nameWithType: SerializedProperty.Parent
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Parent
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/EditorSerialization/SerializedProperty.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Parent
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/EditorSerialization/SerializedProperty.cs
+    startLine: 18
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.EditorSerialization
+  summary: The parent object of the SerializedObject.
+  example: []
+  syntax:
+    content: public override SerializedObject Parent { get; protected set; }
+    parameters: []
+    return:
+      type: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject
+      description: Returns the parent object of the SerializedObject.
+    content.vb: Public Overrides Property Parent As SerializedObject
+  overridden: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.Parent
+  overload: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Parent*
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.#ctor(System.String,Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject,System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.#ctor(System.String,Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject,System.String)
+  id: '#ctor(System.String,Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject,System.String)'
+  parent: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty
+  langs:
+  - csharp
+  - vb
+  name: SerializedProperty(string, SerializedObject, string)
+  nameWithType: SerializedProperty.SerializedProperty(string, SerializedObject, string)
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.SerializedProperty(string, Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject, string)
+  type: Constructor
+  source:
+    remote:
+      path: GodotEngine.Utility/EditorSerialization/SerializedProperty.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: .ctor
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/EditorSerialization/SerializedProperty.cs
+    startLine: 20
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.EditorSerialization
+  summary: Creates a new instance of this object.
+  example: []
+  syntax:
+    content: public SerializedProperty(string name, SerializedObject parent, string rootNodeId)
+    parameters:
+    - id: name
+      type: System.String
+    - id: parent
+      type: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject
+    - id: rootNodeId
+      type: System.String
+    content.vb: Public Sub New(name As String, parent As SerializedObject, rootNodeId As String)
+  overload: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.#ctor*
+  nameWithType.vb: SerializedProperty.New(String, SerializedObject, String)
+  fullName.vb: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.New(String, Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject, String)
+  name.vb: New(String, SerializedObject, String)
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Get(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Get(System.String)
+  id: Get(System.String)
+  parent: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty
+  langs:
+  - csharp
+  - vb
+  name: Get(string?)
+  nameWithType: SerializedProperty.Get(string?)
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Get(string?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/EditorSerialization/SerializedProperty.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Get
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/EditorSerialization/SerializedProperty.cs
+    startLine: 22
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.EditorSerialization
+  summary: The method allows you to get the value of the property.
+  example: []
+  syntax:
+    content: public override object? Get(string? propertyName)
+    parameters:
+    - id: propertyName
+      type: System.String
+      description: The name of the property.
+    return:
+      type: System.Object
+      description: Returns the value of the property.
+    content.vb: Public Overrides Function [Get](propertyName As String) As Object
+  overridden: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.Get(System.String)
+  overload: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Get*
+  nameWithType.vb: SerializedProperty.Get(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Get(String)
+  name.vb: Get(String)
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Set(System.String,System.Object)
+  commentId: M:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Set(System.String,System.Object)
+  id: Set(System.String,System.Object)
+  parent: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty
+  langs:
+  - csharp
+  - vb
+  name: Set(string?, object?)
+  nameWithType: SerializedProperty.Set(string?, object?)
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Set(string?, object?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/EditorSerialization/SerializedProperty.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Set
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/EditorSerialization/SerializedProperty.cs
+    startLine: 32
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.EditorSerialization
+  summary: The method allows you to set the property value.
+  example: []
+  syntax:
+    content: public override bool Set(string? propertyName, object? value)
+    parameters:
+    - id: propertyName
+      type: System.String
+      description: The name of the property.
+    - id: value
+      type: System.Object
+      description: The value that will be set in the property.
+    return:
+      type: System.Boolean
+      description: Returns <code>true</code> when the property is changed.
+    content.vb: Public Overrides Function [Set](propertyName As String, value As Object) As Boolean
+  overridden: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.Set(System.String,System.Object)
+  overload: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Set*
+  nameWithType.vb: SerializedProperty.Set(String, Object)
+  fullName.vb: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Set(String, Object)
+  name.vb: Set(String, Object)
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.GetPropertyList
+  commentId: M:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.GetPropertyList
+  id: GetPropertyList
+  parent: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty
+  langs:
+  - csharp
+  - vb
+  name: GetPropertyList()
+  nameWithType: SerializedProperty.GetPropertyList()
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.GetPropertyList()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/EditorSerialization/SerializedProperty.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetPropertyList
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/EditorSerialization/SerializedProperty.cs
+    startLine: 41
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.EditorSerialization
+  summary: The method allows you to create a property serialization list.
+  example: []
+  syntax:
+    content: public override PropertyItem[] GetPropertyList()
+    return:
+      type: Cobilas.GodotEngine.Utility.EditorSerialization.PropertyItem[]
+      description: Returns a property serialization list.
+    content.vb: Public Overrides Function GetPropertyList() As PropertyItem()
+  overridden: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.GetPropertyList
+  overload: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.GetPropertyList*
+references:
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization
+  commentId: N:Cobilas.GodotEngine.Utility.EditorSerialization
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Utility.EditorSerialization
+  nameWithType: Cobilas.GodotEngine.Utility.EditorSerialization
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.EditorSerialization
+    name: EditorSerialization
+    href: Cobilas.GodotEngine.Utility.EditorSerialization.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.EditorSerialization
+    name: EditorSerialization
+    href: Cobilas.GodotEngine.Utility.EditorSerialization.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject
+  commentId: T:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject
+  parent: Cobilas.GodotEngine.Utility.EditorSerialization
+  href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.html
+  name: SerializedObject
+  nameWithType: SerializedObject
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.ISerializedPropertyManipulation
+  commentId: T:Cobilas.GodotEngine.Utility.EditorSerialization.ISerializedPropertyManipulation
+  parent: Cobilas.GodotEngine.Utility.EditorSerialization
+  href: Cobilas.GodotEngine.Utility.EditorSerialization.ISerializedPropertyManipulation.html
+  name: ISerializedPropertyManipulation
+  nameWithType: ISerializedPropertyManipulation
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.ISerializedPropertyManipulation
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.GetPath(Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject)
+  commentId: M:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.GetPath(Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject)
+  parent: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject
+  href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedObject_GetPath_Cobilas_GodotEngine_Utility_EditorSerialization_SerializedObject_
+  name: GetPath(SerializedObject)
+  nameWithType: SerializedObject.GetPath(SerializedObject)
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.GetPath(Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.GetPath(Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject)
+    name: GetPath
+    href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedObject_GetPath_Cobilas_GodotEngine_Utility_EditorSerialization_SerializedObject_
+  - name: (
+  - uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject
+    name: SerializedObject
+    href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.html
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.GetPath(Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject)
+    name: GetPath
+    href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedObject_GetPath_Cobilas_GodotEngine_Utility_EditorSerialization_SerializedObject_
+  - name: (
+  - uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject
+    name: SerializedObject
+    href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.html
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Custom*
+  commentId: Overload:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Custom
+  href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedProperty_Custom
+  name: Custom
+  nameWithType: SerializedProperty.Custom
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Custom
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.PropertyCustom
+  commentId: T:Cobilas.GodotEngine.Utility.EditorSerialization.PropertyCustom
+  parent: Cobilas.GodotEngine.Utility.EditorSerialization
+  href: Cobilas.GodotEngine.Utility.EditorSerialization.PropertyCustom.html
+  name: PropertyCustom
+  nameWithType: PropertyCustom
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.PropertyCustom
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.Member
+  commentId: P:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.Member
+  parent: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject
+  href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedObject_Member
+  name: Member
+  nameWithType: SerializedObject.Member
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.Member
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Member*
+  commentId: Overload:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Member
+  href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedProperty_Member
+  name: Member
+  nameWithType: SerializedProperty.Member
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Member
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.MemberItem
+  commentId: T:Cobilas.GodotEngine.Utility.EditorSerialization.MemberItem
+  parent: Cobilas.GodotEngine.Utility.EditorSerialization
+  href: Cobilas.GodotEngine.Utility.EditorSerialization.MemberItem.html
+  name: MemberItem
+  nameWithType: MemberItem
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.MemberItem
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.Name
+  commentId: P:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.Name
+  parent: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject
+  href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedObject_Name
+  name: Name
+  nameWithType: SerializedObject.Name
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.Name
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Name*
+  commentId: Overload:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Name
+  href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedProperty_Name
+  name: Name
+  nameWithType: SerializedProperty.Name
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.PropertyPath
+  commentId: P:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.PropertyPath
+  parent: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject
+  href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedObject_PropertyPath
+  name: PropertyPath
+  nameWithType: SerializedObject.PropertyPath
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.PropertyPath
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.PropertyPath*
+  commentId: Overload:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.PropertyPath
+  href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedProperty_PropertyPath
+  name: PropertyPath
+  nameWithType: SerializedProperty.PropertyPath
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.PropertyPath
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.RootNodeId
+  commentId: P:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.RootNodeId
+  parent: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject
+  href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedObject_RootNodeId
+  name: RootNodeId
+  nameWithType: SerializedObject.RootNodeId
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.RootNodeId
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.RootNodeId*
+  commentId: Overload:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.RootNodeId
+  href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedProperty_RootNodeId
+  name: RootNodeId
+  nameWithType: SerializedProperty.RootNodeId
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.RootNodeId
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.Parent
+  commentId: P:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.Parent
+  parent: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject
+  href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedObject_Parent
+  name: Parent
+  nameWithType: SerializedObject.Parent
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.Parent
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Parent*
+  commentId: Overload:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Parent
+  href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedProperty_Parent
+  name: Parent
+  nameWithType: SerializedProperty.Parent
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Parent
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.#ctor*
+  commentId: Overload:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.#ctor
+  href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedProperty__ctor_System_String_Cobilas_GodotEngine_Utility_EditorSerialization_SerializedObject_System_String_
+  name: SerializedProperty
+  nameWithType: SerializedProperty.SerializedProperty
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.SerializedProperty
+  nameWithType.vb: SerializedProperty.New
+  fullName.vb: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.New
+  name.vb: New
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.Get(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.Get(System.String)
+  parent: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject
+  isExternal: true
+  href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedObject_Get_System_String_
+  name: Get(string)
+  nameWithType: SerializedObject.Get(string)
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.Get(string)
+  nameWithType.vb: SerializedObject.Get(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.Get(String)
+  name.vb: Get(String)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.Get(System.String)
+    name: Get
+    href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedObject_Get_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.Get(System.String)
+    name: Get
+    href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedObject_Get_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Get*
+  commentId: Overload:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Get
+  href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedProperty_Get_System_String_
+  name: Get
+  nameWithType: SerializedProperty.Get
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Get
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.Set(System.String,System.Object)
+  commentId: M:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.Set(System.String,System.Object)
+  parent: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject
+  isExternal: true
+  href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedObject_Set_System_String_System_Object_
+  name: Set(string, object)
+  nameWithType: SerializedObject.Set(string, object)
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.Set(string, object)
+  nameWithType.vb: SerializedObject.Set(String, Object)
+  fullName.vb: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.Set(String, Object)
+  name.vb: Set(String, Object)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.Set(System.String,System.Object)
+    name: Set
+    href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedObject_Set_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.Set(System.String,System.Object)
+    name: Set
+    href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedObject_Set_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Set*
+  commentId: Overload:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Set
+  href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedProperty_Set_System_String_System_Object_
+  name: Set
+  nameWithType: SerializedProperty.Set
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.Set
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.GetPropertyList
+  commentId: M:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.GetPropertyList
+  parent: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject
+  href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedObject_GetPropertyList
+  name: GetPropertyList()
+  nameWithType: SerializedObject.GetPropertyList()
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.GetPropertyList()
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.GetPropertyList
+    name: GetPropertyList
+    href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedObject_GetPropertyList
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.GetPropertyList
+    name: GetPropertyList
+    href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedObject.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedObject_GetPropertyList
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.GetPropertyList*
+  commentId: Overload:Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.GetPropertyList
+  href: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.html#Cobilas_GodotEngine_Utility_EditorSerialization_SerializedProperty_GetPropertyList
+  name: GetPropertyList
+  nameWithType: SerializedProperty.GetPropertyList
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.SerializedProperty.GetPropertyList
+- uid: Cobilas.GodotEngine.Utility.EditorSerialization.PropertyItem[]
+  isExternal: true
+  href: Cobilas.GodotEngine.Utility.EditorSerialization.PropertyItem.html
+  name: PropertyItem[]
+  nameWithType: PropertyItem[]
+  fullName: Cobilas.GodotEngine.Utility.EditorSerialization.PropertyItem[]
+  nameWithType.vb: PropertyItem()
+  fullName.vb: Cobilas.GodotEngine.Utility.EditorSerialization.PropertyItem()
+  name.vb: PropertyItem()
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Utility.EditorSerialization.PropertyItem
+    name: PropertyItem
+    href: Cobilas.GodotEngine.Utility.EditorSerialization.PropertyItem.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Utility.EditorSerialization.PropertyItem
+    name: PropertyItem
+    href: Cobilas.GodotEngine.Utility.EditorSerialization.PropertyItem.html
+  - name: (
+  - name: )

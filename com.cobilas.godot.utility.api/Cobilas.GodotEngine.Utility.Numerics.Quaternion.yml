@@ -46,11 +46,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Quaternion
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 6
+    startLine: 7
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -90,21 +90,33 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: x
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 9
+    startLine: 10
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
   summary: X component of the Quaternion. Don't modify this directly unless you know quaternions inside out.
   example: []
   syntax:
-    content: public float x
+    content: >-
+      [ShowProperty(true)]
+
+      public float x
     return:
       type: System.Single
-    content.vb: Public x As Single
+    content.vb: >-
+      <ShowProperty(True)>
+
+      Public x As Single
+  attributes:
+  - type: Cobilas.GodotEngine.Utility.EditorSerialization.ShowPropertyAttribute
+    ctor: Cobilas.GodotEngine.Utility.EditorSerialization.ShowPropertyAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
 - uid: Cobilas.GodotEngine.Utility.Numerics.Quaternion.y
   commentId: F:Cobilas.GodotEngine.Utility.Numerics.Quaternion.y
   id: y
@@ -119,21 +131,33 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: y
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
   summary: Y component of the Quaternion. Don't modify this directly unless you know quaternions inside out.
   example: []
   syntax:
-    content: public float y
+    content: >-
+      [ShowProperty(true)]
+
+      public float y
     return:
       type: System.Single
-    content.vb: Public y As Single
+    content.vb: >-
+      <ShowProperty(True)>
+
+      Public y As Single
+  attributes:
+  - type: Cobilas.GodotEngine.Utility.EditorSerialization.ShowPropertyAttribute
+    ctor: Cobilas.GodotEngine.Utility.EditorSerialization.ShowPropertyAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
 - uid: Cobilas.GodotEngine.Utility.Numerics.Quaternion.z
   commentId: F:Cobilas.GodotEngine.Utility.Numerics.Quaternion.z
   id: z
@@ -148,21 +172,33 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: z
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
   summary: Z component of the Quaternion. Don't modify this directly unless you know quaternions inside out.
   example: []
   syntax:
-    content: public float z
+    content: >-
+      [ShowProperty(true)]
+
+      public float z
     return:
       type: System.Single
-    content.vb: Public z As Single
+    content.vb: >-
+      <ShowProperty(True)>
+
+      Public z As Single
+  attributes:
+  - type: Cobilas.GodotEngine.Utility.EditorSerialization.ShowPropertyAttribute
+    ctor: Cobilas.GodotEngine.Utility.EditorSerialization.ShowPropertyAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
 - uid: Cobilas.GodotEngine.Utility.Numerics.Quaternion.w
   commentId: F:Cobilas.GodotEngine.Utility.Numerics.Quaternion.w
   id: w
@@ -177,21 +213,33 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: w
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 15
+    startLine: 16
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
   summary: W component of the Quaternion. Do not directly modify quaternions.
   example: []
   syntax:
-    content: public float w
+    content: >-
+      [ShowProperty(true)]
+
+      public float w
     return:
       type: System.Single
-    content.vb: Public w As Single
+    content.vb: >-
+      <ShowProperty(True)>
+
+      Public w As Single
+  attributes:
+  - type: Cobilas.GodotEngine.Utility.EditorSerialization.ShowPropertyAttribute
+    ctor: Cobilas.GodotEngine.Utility.EditorSerialization.ShowPropertyAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
 - uid: Cobilas.GodotEngine.Utility.Numerics.Quaternion.KEpsilon
   commentId: F:Cobilas.GodotEngine.Utility.Numerics.Quaternion.KEpsilon
   id: KEpsilon
@@ -206,11 +254,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: KEpsilon
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 20
+    startLine: 21
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -236,11 +284,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Rad2Deg
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 22
+    startLine: 23
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -265,11 +313,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Deg2Rad
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 24
+    startLine: 25
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -294,11 +342,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Euler
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 26
+    startLine: 27
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -325,11 +373,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Normalized
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 28
+    startLine: 29
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -356,11 +404,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Identity
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 32
+    startLine: 33
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -387,11 +435,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 34
+    startLine: 35
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -423,11 +471,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 36
+    startLine: 37
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -461,11 +509,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 38
+    startLine: 39
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -501,11 +549,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 45
+    startLine: 46
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -535,11 +583,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 47
+    startLine: 48
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -569,11 +617,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Equals
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 50
+    startLine: 51
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -606,11 +654,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Equals
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 53
+    startLine: 54
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -645,11 +693,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetHashCode
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 56
+    startLine: 57
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -677,11 +725,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToString
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 59
+    startLine: 60
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -709,11 +757,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToString
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 61
+    startLine: 62
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -747,11 +795,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToString
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 63
+    startLine: 64
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -790,11 +838,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Normalize
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 70
+    startLine: 71
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -825,11 +873,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Angle
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 78
+    startLine: 79
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -863,11 +911,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Dot
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 86
+    startLine: 87
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -901,11 +949,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToQuaternion
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 91
+    startLine: 92
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -936,11 +984,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToEuler
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 109
+    startLine: 110
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -971,11 +1019,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Multiply
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 137
+    startLine: 138
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1012,11 +1060,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Multiply
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 160
+    startLine: 161
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1053,11 +1101,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Equality
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 169
+    startLine: 170
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1094,11 +1142,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Inequality
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 174
+    startLine: 175
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1135,11 +1183,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Quaternion.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 177
+    startLine: 178
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics

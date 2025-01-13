@@ -84,11 +84,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Vector3D
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 6
+    startLine: 7
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -130,21 +130,33 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: x
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 9
+    startLine: 10
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
   summary: X component of the vector.
   example: []
   syntax:
-    content: public float x
+    content: >-
+      [ShowProperty(true)]
+
+      public float x
     return:
       type: System.Single
-    content.vb: Public x As Single
+    content.vb: >-
+      <ShowProperty(True)>
+
+      Public x As Single
+  attributes:
+  - type: Cobilas.GodotEngine.Utility.EditorSerialization.ShowPropertyAttribute
+    ctor: Cobilas.GodotEngine.Utility.EditorSerialization.ShowPropertyAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.y
   commentId: F:Cobilas.GodotEngine.Utility.Numerics.Vector3D.y
   id: y
@@ -159,21 +171,33 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: y
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
   summary: Y component of the vector.
   example: []
   syntax:
-    content: public float y
+    content: >-
+      [ShowProperty(true)]
+
+      public float y
     return:
       type: System.Single
-    content.vb: Public y As Single
+    content.vb: >-
+      <ShowProperty(True)>
+
+      Public y As Single
+  attributes:
+  - type: Cobilas.GodotEngine.Utility.EditorSerialization.ShowPropertyAttribute
+    ctor: Cobilas.GodotEngine.Utility.EditorSerialization.ShowPropertyAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.z
   commentId: F:Cobilas.GodotEngine.Utility.Numerics.Vector3D.z
   id: z
@@ -188,21 +212,33 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: z
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
   summary: Z component of the vector.
   example: []
   syntax:
-    content: public float z
+    content: >-
+      [ShowProperty(true)]
+
+      public float z
     return:
       type: System.Single
-    content.vb: Public z As Single
+    content.vb: >-
+      <ShowProperty(True)>
+
+      Public z As Single
+  attributes:
+  - type: Cobilas.GodotEngine.Utility.EditorSerialization.ShowPropertyAttribute
+    ctor: Cobilas.GodotEngine.Utility.EditorSerialization.ShowPropertyAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D.Normalized
   commentId: P:Cobilas.GodotEngine.Utility.Numerics.Vector3D.Normalized
   id: Normalized
@@ -217,11 +253,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Normalized
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 15
+    startLine: 16
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -251,11 +287,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: floor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 17
+    startLine: 18
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -285,11 +321,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ceil
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 19
+    startLine: 20
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -319,11 +355,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: magnitude
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 21
+    startLine: 22
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -356,11 +392,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: aspect
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 23
+    startLine: 24
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -390,11 +426,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: sqrMagnitude
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 25
+    startLine: 26
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -427,11 +463,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: AxisCount
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 27
+    startLine: 28
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -461,11 +497,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Zero
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 42
+    startLine: 43
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -492,11 +528,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: One
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 44
+    startLine: 45
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -523,11 +559,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Up
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 46
+    startLine: 47
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -554,11 +590,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Down
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 48
+    startLine: 49
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -585,11 +621,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Right
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 50
+    startLine: 51
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -616,11 +652,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Left
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 52
+    startLine: 53
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -647,11 +683,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Forward
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 54
+    startLine: 55
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -678,11 +714,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Back
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 56
+    startLine: 57
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -709,11 +745,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: this[]
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 58
+    startLine: 59
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -749,11 +785,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 76
+    startLine: 77
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -785,11 +821,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 78
+    startLine: 79
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -823,11 +859,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 84
+    startLine: 85
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -857,11 +893,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 86
+    startLine: 87
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -891,11 +927,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Abs
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 90
+    startLine: 91
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -935,11 +971,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Neg
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 98
+    startLine: 99
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -979,11 +1015,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Equals
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 106
+    startLine: 107
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1016,11 +1052,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToString
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 109
+    startLine: 110
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1059,11 +1095,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToString
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 112
+    startLine: 113
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1099,11 +1135,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToString
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 114
+    startLine: 115
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1131,11 +1167,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Equals
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 116
+    startLine: 117
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1170,11 +1206,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetHashCode
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 119
+    startLine: 120
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1202,11 +1238,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Round
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 121
+    startLine: 122
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1238,11 +1274,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Neg
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 126
+    startLine: 127
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1276,11 +1312,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Magnitude
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 128
+    startLine: 129
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1314,11 +1350,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Distance
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 130
+    startLine: 131
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1355,11 +1391,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Abs
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 132
+    startLine: 133
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1393,11 +1429,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Round
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 134
+    startLine: 135
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1434,11 +1470,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Dot
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 136
+    startLine: 137
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1473,11 +1509,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SqrMagnitude
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 138
+    startLine: 139
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1511,11 +1547,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: AngleTo
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 143
+    startLine: 144
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1552,11 +1588,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Min
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 145
+    startLine: 146
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1590,11 +1626,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Max
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 147
+    startLine: 148
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1628,11 +1664,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Cross
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 152
+    startLine: 153
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1669,11 +1705,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Normalize
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 154
+    startLine: 155
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1707,11 +1743,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Ceil
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 159
+    startLine: 160
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1745,11 +1781,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Floor
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 167
+    startLine: 168
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1783,11 +1819,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Addition
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 179
+    startLine: 180
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1824,11 +1860,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Addition
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 190
+    startLine: 191
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1865,11 +1901,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Addition
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 201
+    startLine: 202
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1906,11 +1942,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Subtraction
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 212
+    startLine: 213
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1947,11 +1983,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Subtraction
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 223
+    startLine: 224
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1988,11 +2024,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Subtraction
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 234
+    startLine: 235
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2029,11 +2065,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_UnaryNegation
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 244
+    startLine: 245
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2067,11 +2103,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Division
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 249
+    startLine: 250
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2108,11 +2144,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Division
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 260
+    startLine: 261
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2149,11 +2185,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Division
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 271
+    startLine: 272
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2190,11 +2226,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Division
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 282
+    startLine: 283
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2231,11 +2267,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Multiply
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 293
+    startLine: 294
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2272,11 +2308,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Multiply
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 304
+    startLine: 305
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2313,11 +2349,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Multiply
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 315
+    startLine: 316
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2354,11 +2390,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Multiply
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 326
+    startLine: 327
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2395,11 +2431,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Equality
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 337
+    startLine: 338
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2436,11 +2472,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Inequality
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 342
+    startLine: 343
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2477,11 +2513,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 345
+    startLine: 346
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2514,11 +2550,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 348
+    startLine: 349
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2551,11 +2587,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 351
+    startLine: 352
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2588,11 +2624,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 354
+    startLine: 355
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2625,11 +2661,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 357
+    startLine: 358
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2662,11 +2698,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Numerics/Vector3D.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector3D.cs
-    startLine: 360
+    startLine: 361
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics

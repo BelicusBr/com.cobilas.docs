@@ -5,9 +5,11 @@ items:
   id: DebugLog
   parent: Cobilas.GodotEngine.Utility
   children:
+  - Cobilas.GodotEngine.Utility.DebugLog.CloseStream
   - Cobilas.GodotEngine.Utility.DebugLog.ErroLog(System.Object[])
   - Cobilas.GodotEngine.Utility.DebugLog.ExceptionLog(System.Exception)
   - Cobilas.GodotEngine.Utility.DebugLog.Log(System.Object[])
+  - Cobilas.GodotEngine.Utility.DebugLog.LogToStream(System.String,System.Boolean)
   - Cobilas.GodotEngine.Utility.DebugLog.PrintTrace
   langs:
   - csharp
@@ -19,11 +21,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/DebugLog.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: DebugLog
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/DebugLog.cs
-    startLine: 6
+    startLine: 7
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -56,11 +58,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/DebugLog.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: PrintTrace
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/DebugLog.cs
-    startLine: 8
+    startLine: 9
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -85,11 +87,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/DebugLog.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Log
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/DebugLog.cs
-    startLine: 11
+    startLine: 14
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -120,11 +122,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/DebugLog.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ErroLog
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/DebugLog.cs
-    startLine: 14
+    startLine: 17
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -155,11 +157,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/DebugLog.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ExceptionLog
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/DebugLog.cs
-    startLine: 17
+    startLine: 20
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -173,6 +175,83 @@ items:
       description: The exception that will be printed to the console.
     content.vb: Public Shared Sub ExceptionLog(ex As Exception)
   overload: Cobilas.GodotEngine.Utility.DebugLog.ExceptionLog*
+- uid: Cobilas.GodotEngine.Utility.DebugLog.LogToStream(System.String,System.Boolean)
+  commentId: M:Cobilas.GodotEngine.Utility.DebugLog.LogToStream(System.String,System.Boolean)
+  id: LogToStream(System.String,System.Boolean)
+  parent: Cobilas.GodotEngine.Utility.DebugLog
+  langs:
+  - csharp
+  - vb
+  name: LogToStream(string?, bool)
+  nameWithType: DebugLog.LogToStream(string?, bool)
+  fullName: Cobilas.GodotEngine.Utility.DebugLog.LogToStream(string?, bool)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/DebugLog.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: LogToStream
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/DebugLog.cs
+    startLine: 26
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Allows you to redirect logs to a log file.
+  example: []
+  syntax:
+    content: public static void LogToStream(string? filePath, bool clear = false)
+    parameters:
+    - id: filePath
+      type: System.String
+      description: The path of the log file.
+    - id: clear
+      type: System.Boolean
+      description: <code>true</code> to have the log file cleared.
+    content.vb: Public Shared Sub LogToStream(filePath As String, clear As Boolean = False)
+  overload: Cobilas.GodotEngine.Utility.DebugLog.LogToStream*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When the FilePath parameter is null.
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Occurs when the flow is still open.
+  nameWithType.vb: DebugLog.LogToStream(String, Boolean)
+  fullName.vb: Cobilas.GodotEngine.Utility.DebugLog.LogToStream(String, Boolean)
+  name.vb: LogToStream(String, Boolean)
+- uid: Cobilas.GodotEngine.Utility.DebugLog.CloseStream
+  commentId: M:Cobilas.GodotEngine.Utility.DebugLog.CloseStream
+  id: CloseStream
+  parent: Cobilas.GodotEngine.Utility.DebugLog
+  langs:
+  - csharp
+  - vb
+  name: CloseStream()
+  nameWithType: DebugLog.CloseStream()
+  fullName: Cobilas.GodotEngine.Utility.DebugLog.CloseStream()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/DebugLog.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: CloseStream
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/DebugLog.cs
+    startLine: 35
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Allows the termination of a log stream.
+  example: []
+  syntax:
+    content: public static void CloseStream()
+    content.vb: Public Shared Sub CloseStream()
+  overload: Cobilas.GodotEngine.Utility.DebugLog.CloseStream*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Occurs when the flow is already closed.
 references:
 - uid: Cobilas.GodotEngine.Utility
   commentId: N:Cobilas.GodotEngine.Utility
@@ -501,3 +580,40 @@ references:
   name: Exception
   nameWithType: Exception
   fullName: System.Exception
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: Cobilas.GodotEngine.Utility.DebugLog.LogToStream*
+  commentId: Overload:Cobilas.GodotEngine.Utility.DebugLog.LogToStream
+  href: Cobilas.GodotEngine.Utility.DebugLog.html#Cobilas_GodotEngine_Utility_DebugLog_LogToStream_System_String_System_Boolean_
+  name: LogToStream
+  nameWithType: DebugLog.LogToStream
+  fullName: Cobilas.GodotEngine.Utility.DebugLog.LogToStream
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Cobilas.GodotEngine.Utility.DebugLog.CloseStream*
+  commentId: Overload:Cobilas.GodotEngine.Utility.DebugLog.CloseStream
+  href: Cobilas.GodotEngine.Utility.DebugLog.html#Cobilas_GodotEngine_Utility_DebugLog_CloseStream
+  name: CloseStream
+  nameWithType: DebugLog.CloseStream
+  fullName: Cobilas.GodotEngine.Utility.DebugLog.CloseStream

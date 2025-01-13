@@ -6,6 +6,7 @@ items:
   parent: Cobilas.GodotEngine.Utility.Runtime
   children:
   - Cobilas.GodotEngine.Utility.Runtime.RunTime.DeltaTime
+  - Cobilas.GodotEngine.Utility.Runtime.RunTime.ExecutionMode
   - Cobilas.GodotEngine.Utility.Runtime.RunTime.FixedDeltaTime
   - Cobilas.GodotEngine.Utility.Runtime.RunTime.FrameCount
   - Cobilas.GodotEngine.Utility.Runtime.RunTime.TimeScale
@@ -19,7 +20,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Runtime/RunTime.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RunTime
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTime.cs
@@ -53,7 +54,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Runtime/RunTime.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: DeltaTime
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTime.cs
@@ -82,7 +83,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Runtime/RunTime.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: FixedDeltaTime
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTime.cs
@@ -111,7 +112,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Runtime/RunTime.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: TimeScale
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTime.cs
@@ -151,7 +152,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Runtime/RunTime.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: FrameCount
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTime.cs
@@ -169,6 +170,38 @@ items:
       description: The total number of frames
     content.vb: Public Shared ReadOnly Property FrameCount As Integer
   overload: Cobilas.GodotEngine.Utility.Runtime.RunTime.FrameCount*
+- uid: Cobilas.GodotEngine.Utility.Runtime.RunTime.ExecutionMode
+  commentId: P:Cobilas.GodotEngine.Utility.Runtime.RunTime.ExecutionMode
+  id: ExecutionMode
+  parent: Cobilas.GodotEngine.Utility.Runtime.RunTime
+  langs:
+  - csharp
+  - vb
+  name: ExecutionMode
+  nameWithType: RunTime.ExecutionMode
+  fullName: Cobilas.GodotEngine.Utility.Runtime.RunTime.ExecutionMode
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/Runtime/RunTime.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ExecutionMode
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTime.cs
+    startLine: 25
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: Allows you to check whether the editor is in <code>EditorMode</code> or <code>PlayerMode</code>.
+  example: []
+  syntax:
+    content: public static ExecutionMode ExecutionMode { get; }
+    parameters: []
+    return:
+      type: Cobilas.GodotEngine.Utility.Runtime.ExecutionMode
+      description: Returns the state of the editor.
+    content.vb: Public Shared Property ExecutionMode As ExecutionMode
+  overload: Cobilas.GodotEngine.Utility.Runtime.RunTime.ExecutionMode*
 references:
 - uid: Cobilas.GodotEngine.Utility.Runtime
   commentId: N:Cobilas.GodotEngine.Utility.Runtime
@@ -459,3 +492,16 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: Cobilas.GodotEngine.Utility.Runtime.RunTime.ExecutionMode*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Runtime.RunTime.ExecutionMode
+  href: Cobilas.GodotEngine.Utility.Runtime.RunTime.html#Cobilas_GodotEngine_Utility_Runtime_RunTime_ExecutionMode
+  name: ExecutionMode
+  nameWithType: RunTime.ExecutionMode
+  fullName: Cobilas.GodotEngine.Utility.Runtime.RunTime.ExecutionMode
+- uid: Cobilas.GodotEngine.Utility.Runtime.ExecutionMode
+  commentId: T:Cobilas.GodotEngine.Utility.Runtime.ExecutionMode
+  parent: Cobilas.GodotEngine.Utility.Runtime
+  href: Cobilas.GodotEngine.Utility.Runtime.ExecutionMode.html
+  name: ExecutionMode
+  nameWithType: ExecutionMode
+  fullName: Cobilas.GodotEngine.Utility.Runtime.ExecutionMode
