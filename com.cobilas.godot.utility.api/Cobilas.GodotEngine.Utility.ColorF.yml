@@ -1,0 +1,1328 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.GodotEngine.Utility.ColorF
+  commentId: T:Cobilas.GodotEngine.Utility.ColorF
+  id: ColorF
+  parent: Cobilas.GodotEngine.Utility
+  children:
+  - Cobilas.GodotEngine.Utility.ColorF.#ctor(Cobilas.GodotEngine.Utility.Color32)
+  - Cobilas.GodotEngine.Utility.ColorF.#ctor(Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  - Cobilas.GodotEngine.Utility.ColorF.#ctor(Godot.Color)
+  - Cobilas.GodotEngine.Utility.ColorF.#ctor(System.Single,System.Single,System.Single,System.Single)
+  - Cobilas.GodotEngine.Utility.ColorF.A
+  - Cobilas.GodotEngine.Utility.ColorF.B
+  - Cobilas.GodotEngine.Utility.ColorF.ColorFToHSV(Cobilas.GodotEngine.Utility.ColorF)
+  - Cobilas.GodotEngine.Utility.ColorF.Equals(Cobilas.GodotEngine.Utility.ColorF)
+  - Cobilas.GodotEngine.Utility.ColorF.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  - Cobilas.GodotEngine.Utility.ColorF.G
+  - Cobilas.GodotEngine.Utility.ColorF.HSVToColorF(System.Single,System.Single,System.Single,System.Single)
+  - Cobilas.GodotEngine.Utility.ColorF.R
+  - Cobilas.GodotEngine.Utility.ColorF.ToString
+  - Cobilas.GodotEngine.Utility.ColorF.op_Explicit(Cobilas.GodotEngine.Utility.ColorF)~System.String
+  - Cobilas.GodotEngine.Utility.ColorF.op_Explicit(System.String)~Cobilas.GodotEngine.Utility.ColorF
+  - Cobilas.GodotEngine.Utility.ColorF.op_Implicit(Cobilas.GodotEngine.Utility.Color32)~Cobilas.GodotEngine.Utility.ColorF
+  - Cobilas.GodotEngine.Utility.ColorF.op_Implicit(Cobilas.GodotEngine.Utility.Numerics.Vector4D)~Cobilas.GodotEngine.Utility.ColorF
+  - Cobilas.GodotEngine.Utility.ColorF.op_Implicit(Godot.Color)~Cobilas.GodotEngine.Utility.ColorF
+  langs:
+  - csharp
+  - vb
+  name: ColorF
+  nameWithType: ColorF
+  fullName: Cobilas.GodotEngine.Utility.ColorF
+  type: Struct
+  source:
+    remote:
+      path: GodotEngine.Utility/ColorF.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ColorF
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/ColorF.cs
+    startLine: 7
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Represents a normalized ARGB value between (0 and 1).
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct ColorF : IEquatable<ColorF>, IEquatable<Vector4D>
+    content.vb: >-
+      <Serializable>
+
+      Public Structure ColorF Implements IEquatable(Of ColorF), IEquatable(Of Vector4D)
+  implements:
+  - System.IEquatable{Cobilas.GodotEngine.Utility.ColorF}
+  - System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector4D}
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Cobilas.GodotEngine.Utility.ColorF.R
+  commentId: P:Cobilas.GodotEngine.Utility.ColorF.R
+  id: R
+  parent: Cobilas.GodotEngine.Utility.ColorF
+  langs:
+  - csharp
+  - vb
+  name: R
+  nameWithType: ColorF.R
+  fullName: Cobilas.GodotEngine.Utility.ColorF.R
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/ColorF.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: R
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/ColorF.cs
+    startLine: 16
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Represents the value red.
+  example: []
+  syntax:
+    content: public float R { readonly get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: Allows you to set the value red.
+    content.vb: Public Property R As Single
+  overload: Cobilas.GodotEngine.Utility.ColorF.R*
+- uid: Cobilas.GodotEngine.Utility.ColorF.G
+  commentId: P:Cobilas.GodotEngine.Utility.ColorF.G
+  id: G
+  parent: Cobilas.GodotEngine.Utility.ColorF
+  langs:
+  - csharp
+  - vb
+  name: G
+  nameWithType: ColorF.G
+  fullName: Cobilas.GodotEngine.Utility.ColorF.G
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/ColorF.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: G
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/ColorF.cs
+    startLine: 20
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Represents the value green.
+  example: []
+  syntax:
+    content: public float G { readonly get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: Allows you to set the value green.
+    content.vb: Public Property G As Single
+  overload: Cobilas.GodotEngine.Utility.ColorF.G*
+- uid: Cobilas.GodotEngine.Utility.ColorF.B
+  commentId: P:Cobilas.GodotEngine.Utility.ColorF.B
+  id: B
+  parent: Cobilas.GodotEngine.Utility.ColorF
+  langs:
+  - csharp
+  - vb
+  name: B
+  nameWithType: ColorF.B
+  fullName: Cobilas.GodotEngine.Utility.ColorF.B
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/ColorF.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: B
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/ColorF.cs
+    startLine: 24
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Represents the value blue.
+  example: []
+  syntax:
+    content: public float B { readonly get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: Allows you to set the value blue.
+    content.vb: Public Property B As Single
+  overload: Cobilas.GodotEngine.Utility.ColorF.B*
+- uid: Cobilas.GodotEngine.Utility.ColorF.A
+  commentId: P:Cobilas.GodotEngine.Utility.ColorF.A
+  id: A
+  parent: Cobilas.GodotEngine.Utility.ColorF
+  langs:
+  - csharp
+  - vb
+  name: A
+  nameWithType: ColorF.A
+  fullName: Cobilas.GodotEngine.Utility.ColorF.A
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/ColorF.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: A
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/ColorF.cs
+    startLine: 28
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Represents the alpha value.
+  example: []
+  syntax:
+    content: public float A { readonly get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: Allows you to set the alpha value.
+    content.vb: Public Property A As Single
+  overload: Cobilas.GodotEngine.Utility.ColorF.A*
+- uid: Cobilas.GodotEngine.Utility.ColorF.#ctor(System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Cobilas.GodotEngine.Utility.ColorF.#ctor(System.Single,System.Single,System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single,System.Single,System.Single)'
+  parent: Cobilas.GodotEngine.Utility.ColorF
+  langs:
+  - csharp
+  - vb
+  name: ColorF(float, float, float, float)
+  nameWithType: ColorF.ColorF(float, float, float, float)
+  fullName: Cobilas.GodotEngine.Utility.ColorF.ColorF(float, float, float, float)
+  type: Constructor
+  source:
+    remote:
+      path: GodotEngine.Utility/ColorF.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: .ctor
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/ColorF.cs
+    startLine: 30
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Creates a new instance of this object.
+  example: []
+  syntax:
+    content: public ColorF(float r, float g, float b, float a)
+    parameters:
+    - id: r
+      type: System.Single
+    - id: g
+      type: System.Single
+    - id: b
+      type: System.Single
+    - id: a
+      type: System.Single
+    content.vb: Public Sub New(r As Single, g As Single, b As Single, a As Single)
+  overload: Cobilas.GodotEngine.Utility.ColorF.#ctor*
+  nameWithType.vb: ColorF.New(Single, Single, Single, Single)
+  fullName.vb: Cobilas.GodotEngine.Utility.ColorF.New(Single, Single, Single, Single)
+  name.vb: New(Single, Single, Single, Single)
+- uid: Cobilas.GodotEngine.Utility.ColorF.#ctor(Cobilas.GodotEngine.Utility.Color32)
+  commentId: M:Cobilas.GodotEngine.Utility.ColorF.#ctor(Cobilas.GodotEngine.Utility.Color32)
+  id: '#ctor(Cobilas.GodotEngine.Utility.Color32)'
+  parent: Cobilas.GodotEngine.Utility.ColorF
+  langs:
+  - csharp
+  - vb
+  name: ColorF(Color32)
+  nameWithType: ColorF.ColorF(Color32)
+  fullName: Cobilas.GodotEngine.Utility.ColorF.ColorF(Cobilas.GodotEngine.Utility.Color32)
+  type: Constructor
+  source:
+    remote:
+      path: GodotEngine.Utility/ColorF.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: .ctor
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/ColorF.cs
+    startLine: 37
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Creates a new instance of this object.
+  example: []
+  syntax:
+    content: public ColorF(Color32 color)
+    parameters:
+    - id: color
+      type: Cobilas.GodotEngine.Utility.Color32
+    content.vb: Public Sub New(color As Color32)
+  overload: Cobilas.GodotEngine.Utility.ColorF.#ctor*
+  nameWithType.vb: ColorF.New(Color32)
+  fullName.vb: Cobilas.GodotEngine.Utility.ColorF.New(Cobilas.GodotEngine.Utility.Color32)
+  name.vb: New(Color32)
+- uid: Cobilas.GodotEngine.Utility.ColorF.#ctor(Godot.Color)
+  commentId: M:Cobilas.GodotEngine.Utility.ColorF.#ctor(Godot.Color)
+  id: '#ctor(Godot.Color)'
+  parent: Cobilas.GodotEngine.Utility.ColorF
+  langs:
+  - csharp
+  - vb
+  name: ColorF(Color)
+  nameWithType: ColorF.ColorF(Color)
+  fullName: Cobilas.GodotEngine.Utility.ColorF.ColorF(Godot.Color)
+  type: Constructor
+  source:
+    remote:
+      path: GodotEngine.Utility/ColorF.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: .ctor
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/ColorF.cs
+    startLine: 39
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Creates a new instance of this object.
+  example: []
+  syntax:
+    content: public ColorF(Color color)
+    parameters:
+    - id: color
+      type: Godot.Color
+    content.vb: Public Sub New(color As Color)
+  overload: Cobilas.GodotEngine.Utility.ColorF.#ctor*
+  nameWithType.vb: ColorF.New(Color)
+  fullName.vb: Cobilas.GodotEngine.Utility.ColorF.New(Godot.Color)
+  name.vb: New(Color)
+- uid: Cobilas.GodotEngine.Utility.ColorF.#ctor(Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  commentId: M:Cobilas.GodotEngine.Utility.ColorF.#ctor(Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  id: '#ctor(Cobilas.GodotEngine.Utility.Numerics.Vector4D)'
+  parent: Cobilas.GodotEngine.Utility.ColorF
+  langs:
+  - csharp
+  - vb
+  name: ColorF(Vector4D)
+  nameWithType: ColorF.ColorF(Vector4D)
+  fullName: Cobilas.GodotEngine.Utility.ColorF.ColorF(Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  type: Constructor
+  source:
+    remote:
+      path: GodotEngine.Utility/ColorF.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: .ctor
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/ColorF.cs
+    startLine: 41
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Creates a new instance of this object.
+  example: []
+  syntax:
+    content: public ColorF(Vector4D color)
+    parameters:
+    - id: color
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+    content.vb: Public Sub New(color As Vector4D)
+  overload: Cobilas.GodotEngine.Utility.ColorF.#ctor*
+  nameWithType.vb: ColorF.New(Vector4D)
+  fullName.vb: Cobilas.GodotEngine.Utility.ColorF.New(Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  name.vb: New(Vector4D)
+- uid: Cobilas.GodotEngine.Utility.ColorF.Equals(Cobilas.GodotEngine.Utility.ColorF)
+  commentId: M:Cobilas.GodotEngine.Utility.ColorF.Equals(Cobilas.GodotEngine.Utility.ColorF)
+  id: Equals(Cobilas.GodotEngine.Utility.ColorF)
+  parent: Cobilas.GodotEngine.Utility.ColorF
+  langs:
+  - csharp
+  - vb
+  name: Equals(ColorF)
+  nameWithType: ColorF.Equals(ColorF)
+  fullName: Cobilas.GodotEngine.Utility.ColorF.Equals(Cobilas.GodotEngine.Utility.ColorF)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/ColorF.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Equals
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/ColorF.cs
+    startLine: 43
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public readonly bool Equals(ColorF other)
+    parameters:
+    - id: other
+      type: Cobilas.GodotEngine.Utility.ColorF
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As ColorF) As Boolean
+  overload: Cobilas.GodotEngine.Utility.ColorF.Equals*
+  implements:
+  - System.IEquatable{Cobilas.GodotEngine.Utility.ColorF}.Equals(Cobilas.GodotEngine.Utility.ColorF)
+- uid: Cobilas.GodotEngine.Utility.ColorF.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  commentId: M:Cobilas.GodotEngine.Utility.ColorF.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  id: Equals(Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  parent: Cobilas.GodotEngine.Utility.ColorF
+  langs:
+  - csharp
+  - vb
+  name: Equals(Vector4D)
+  nameWithType: ColorF.Equals(Vector4D)
+  fullName: Cobilas.GodotEngine.Utility.ColorF.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/ColorF.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Equals
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/ColorF.cs
+    startLine: 46
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public readonly bool Equals(Vector4D other)
+    parameters:
+    - id: other
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As Vector4D) As Boolean
+  overload: Cobilas.GodotEngine.Utility.ColorF.Equals*
+  implements:
+  - System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector4D}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+- uid: Cobilas.GodotEngine.Utility.ColorF.ToString
+  commentId: M:Cobilas.GodotEngine.Utility.ColorF.ToString
+  id: ToString
+  parent: Cobilas.GodotEngine.Utility.ColorF
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: ColorF.ToString()
+  fullName: Cobilas.GodotEngine.Utility.ColorF.ToString()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/ColorF.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ToString
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/ColorF.cs
+    startLine: 49
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Returns the fully qualified type name of this instance.
+  example: []
+  syntax:
+    content: public override readonly string ToString()
+    return:
+      type: System.String
+      description: The fully qualified type name.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: Cobilas.GodotEngine.Utility.ColorF.ToString*
+- uid: Cobilas.GodotEngine.Utility.ColorF.HSVToColorF(System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Cobilas.GodotEngine.Utility.ColorF.HSVToColorF(System.Single,System.Single,System.Single,System.Single)
+  id: HSVToColorF(System.Single,System.Single,System.Single,System.Single)
+  parent: Cobilas.GodotEngine.Utility.ColorF
+  langs:
+  - csharp
+  - vb
+  name: HSVToColorF(float, float, float, float)
+  nameWithType: ColorF.HSVToColorF(float, float, float, float)
+  fullName: Cobilas.GodotEngine.Utility.ColorF.HSVToColorF(float, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/ColorF.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: HSVToColorF
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/ColorF.cs
+    startLine: 56
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: >-
+    Constructs a color from an HSV profile, with values on the
+
+    range of 0 to 1. This is equivalent to using each of
+
+    the <code>h</code>/<code>s</code>/<code>v</code> properties, but much more efficient.
+  example: []
+  syntax:
+    content: public static ColorF HSVToColorF(float h, float s, float v, float a = 1)
+    parameters:
+    - id: h
+      type: System.Single
+      description: Hue value.
+    - id: s
+      type: System.Single
+      description: Saturation value.
+    - id: v
+      type: System.Single
+      description: Value.
+    - id: a
+      type: System.Single
+      description: Alpha value.
+    return:
+      type: Cobilas.GodotEngine.Utility.ColorF
+      description: The constructed color.
+    content.vb: Public Shared Function HSVToColorF(h As Single, s As Single, v As Single, a As Single = 1) As ColorF
+  overload: Cobilas.GodotEngine.Utility.ColorF.HSVToColorF*
+  nameWithType.vb: ColorF.HSVToColorF(Single, Single, Single, Single)
+  fullName.vb: Cobilas.GodotEngine.Utility.ColorF.HSVToColorF(Single, Single, Single, Single)
+  name.vb: HSVToColorF(Single, Single, Single, Single)
+- uid: Cobilas.GodotEngine.Utility.ColorF.ColorFToHSV(Cobilas.GodotEngine.Utility.ColorF)
+  commentId: M:Cobilas.GodotEngine.Utility.ColorF.ColorFToHSV(Cobilas.GodotEngine.Utility.ColorF)
+  id: ColorFToHSV(Cobilas.GodotEngine.Utility.ColorF)
+  parent: Cobilas.GodotEngine.Utility.ColorF
+  langs:
+  - csharp
+  - vb
+  name: ColorFToHSV(ColorF)
+  nameWithType: ColorF.ColorFToHSV(ColorF)
+  fullName: Cobilas.GodotEngine.Utility.ColorF.ColorFToHSV(Cobilas.GodotEngine.Utility.ColorF)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/ColorF.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ColorFToHSV
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/ColorF.cs
+    startLine: 80
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Converts a <xref href="Cobilas.GodotEngine.Utility.ColorF" data-throw-if-not-resolved="false"></xref> value to HSV.
+  example: []
+  syntax:
+    content: public static Vector4D ColorFToHSV(ColorF c)
+    parameters:
+    - id: c
+      type: Cobilas.GodotEngine.Utility.ColorF
+      description: The value to convert.
+    return:
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: Returns a <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector4D" data-throw-if-not-resolved="false"></xref> value with HSV values.(<code>x:h / y:s / z:v</code>)
+    content.vb: Public Shared Function ColorFToHSV(c As ColorF) As Vector4D
+  overload: Cobilas.GodotEngine.Utility.ColorF.ColorFToHSV*
+- uid: Cobilas.GodotEngine.Utility.ColorF.op_Implicit(Godot.Color)~Cobilas.GodotEngine.Utility.ColorF
+  commentId: M:Cobilas.GodotEngine.Utility.ColorF.op_Implicit(Godot.Color)~Cobilas.GodotEngine.Utility.ColorF
+  id: op_Implicit(Godot.Color)~Cobilas.GodotEngine.Utility.ColorF
+  parent: Cobilas.GodotEngine.Utility.ColorF
+  langs:
+  - csharp
+  - vb
+  name: implicit operator ColorF(Color)
+  nameWithType: ColorF.implicit operator ColorF(Color)
+  fullName: Cobilas.GodotEngine.Utility.ColorF.implicit operator Cobilas.GodotEngine.Utility.ColorF(Godot.Color)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/ColorF.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Implicit
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/ColorF.cs
+    startLine: 107
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Implicit conversion operator.(<xref href="Godot.Color" data-throw-if-not-resolved="false"></xref> to <xref href="Cobilas.GodotEngine.Utility.ColorF" data-throw-if-not-resolved="false"></xref>)
+  example: []
+  syntax:
+    content: public static implicit operator ColorF(Color c)
+    parameters:
+    - id: c
+      type: Godot.Color
+      description: Object to be converted.
+    return:
+      type: Cobilas.GodotEngine.Utility.ColorF
+    content.vb: Public Shared Widening Operator CType(c As Color) As ColorF
+  overload: Cobilas.GodotEngine.Utility.ColorF.op_Implicit*
+  nameWithType.vb: ColorF.CType(Color)
+  fullName.vb: Cobilas.GodotEngine.Utility.ColorF.CType(Godot.Color)
+  name.vb: CType(Color)
+- uid: Cobilas.GodotEngine.Utility.ColorF.op_Implicit(Cobilas.GodotEngine.Utility.Color32)~Cobilas.GodotEngine.Utility.ColorF
+  commentId: M:Cobilas.GodotEngine.Utility.ColorF.op_Implicit(Cobilas.GodotEngine.Utility.Color32)~Cobilas.GodotEngine.Utility.ColorF
+  id: op_Implicit(Cobilas.GodotEngine.Utility.Color32)~Cobilas.GodotEngine.Utility.ColorF
+  parent: Cobilas.GodotEngine.Utility.ColorF
+  langs:
+  - csharp
+  - vb
+  name: implicit operator ColorF(Color32)
+  nameWithType: ColorF.implicit operator ColorF(Color32)
+  fullName: Cobilas.GodotEngine.Utility.ColorF.implicit operator Cobilas.GodotEngine.Utility.ColorF(Cobilas.GodotEngine.Utility.Color32)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/ColorF.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Implicit
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/ColorF.cs
+    startLine: 110
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Implicit conversion operator.(<xref href="Cobilas.GodotEngine.Utility.Color32" data-throw-if-not-resolved="false"></xref> to <xref href="Cobilas.GodotEngine.Utility.ColorF" data-throw-if-not-resolved="false"></xref>)
+  example: []
+  syntax:
+    content: public static implicit operator ColorF(Color32 c)
+    parameters:
+    - id: c
+      type: Cobilas.GodotEngine.Utility.Color32
+      description: Object to be converted.
+    return:
+      type: Cobilas.GodotEngine.Utility.ColorF
+    content.vb: Public Shared Widening Operator CType(c As Color32) As ColorF
+  overload: Cobilas.GodotEngine.Utility.ColorF.op_Implicit*
+  nameWithType.vb: ColorF.CType(Color32)
+  fullName.vb: Cobilas.GodotEngine.Utility.ColorF.CType(Cobilas.GodotEngine.Utility.Color32)
+  name.vb: CType(Color32)
+- uid: Cobilas.GodotEngine.Utility.ColorF.op_Implicit(Cobilas.GodotEngine.Utility.Numerics.Vector4D)~Cobilas.GodotEngine.Utility.ColorF
+  commentId: M:Cobilas.GodotEngine.Utility.ColorF.op_Implicit(Cobilas.GodotEngine.Utility.Numerics.Vector4D)~Cobilas.GodotEngine.Utility.ColorF
+  id: op_Implicit(Cobilas.GodotEngine.Utility.Numerics.Vector4D)~Cobilas.GodotEngine.Utility.ColorF
+  parent: Cobilas.GodotEngine.Utility.ColorF
+  langs:
+  - csharp
+  - vb
+  name: implicit operator ColorF(Vector4D)
+  nameWithType: ColorF.implicit operator ColorF(Vector4D)
+  fullName: Cobilas.GodotEngine.Utility.ColorF.implicit operator Cobilas.GodotEngine.Utility.ColorF(Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/ColorF.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Implicit
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/ColorF.cs
+    startLine: 113
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Implicit conversion operator.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector4D" data-throw-if-not-resolved="false"></xref> to <xref href="Cobilas.GodotEngine.Utility.ColorF" data-throw-if-not-resolved="false"></xref>)
+  example: []
+  syntax:
+    content: public static implicit operator ColorF(Vector4D c)
+    parameters:
+    - id: c
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: Object to be converted.
+    return:
+      type: Cobilas.GodotEngine.Utility.ColorF
+    content.vb: Public Shared Widening Operator CType(c As Vector4D) As ColorF
+  overload: Cobilas.GodotEngine.Utility.ColorF.op_Implicit*
+  nameWithType.vb: ColorF.CType(Vector4D)
+  fullName.vb: Cobilas.GodotEngine.Utility.ColorF.CType(Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  name.vb: CType(Vector4D)
+- uid: Cobilas.GodotEngine.Utility.ColorF.op_Explicit(Cobilas.GodotEngine.Utility.ColorF)~System.String
+  commentId: M:Cobilas.GodotEngine.Utility.ColorF.op_Explicit(Cobilas.GodotEngine.Utility.ColorF)~System.String
+  id: op_Explicit(Cobilas.GodotEngine.Utility.ColorF)~System.String
+  parent: Cobilas.GodotEngine.Utility.ColorF
+  langs:
+  - csharp
+  - vb
+  name: explicit operator string(ColorF)
+  nameWithType: ColorF.explicit operator string(ColorF)
+  fullName: Cobilas.GodotEngine.Utility.ColorF.explicit operator string(Cobilas.GodotEngine.Utility.ColorF)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/ColorF.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Explicit
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/ColorF.cs
+    startLine: 116
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Explicit conversion operator.(<xref href="Cobilas.GodotEngine.Utility.ColorF" data-throw-if-not-resolved="false"></xref> to <xref href="System.String" data-throw-if-not-resolved="false"></xref>)
+  example: []
+  syntax:
+    content: public static explicit operator string(ColorF c)
+    parameters:
+    - id: c
+      type: Cobilas.GodotEngine.Utility.ColorF
+      description: Object to be converted.
+    return:
+      type: System.String
+    content.vb: Public Shared Narrowing Operator CType(c As ColorF) As String
+  overload: Cobilas.GodotEngine.Utility.ColorF.op_Explicit*
+  nameWithType.vb: ColorF.CType(ColorF)
+  fullName.vb: Cobilas.GodotEngine.Utility.ColorF.CType(Cobilas.GodotEngine.Utility.ColorF)
+  name.vb: CType(ColorF)
+- uid: Cobilas.GodotEngine.Utility.ColorF.op_Explicit(System.String)~Cobilas.GodotEngine.Utility.ColorF
+  commentId: M:Cobilas.GodotEngine.Utility.ColorF.op_Explicit(System.String)~Cobilas.GodotEngine.Utility.ColorF
+  id: op_Explicit(System.String)~Cobilas.GodotEngine.Utility.ColorF
+  parent: Cobilas.GodotEngine.Utility.ColorF
+  langs:
+  - csharp
+  - vb
+  name: explicit operator ColorF(string)
+  nameWithType: ColorF.explicit operator ColorF(string)
+  fullName: Cobilas.GodotEngine.Utility.ColorF.explicit operator Cobilas.GodotEngine.Utility.ColorF(string)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/ColorF.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Explicit
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/ColorF.cs
+    startLine: 119
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Explicit conversion operator.(<xref href="System.String" data-throw-if-not-resolved="false"></xref> to <xref href="Cobilas.GodotEngine.Utility.ColorF" data-throw-if-not-resolved="false"></xref>)
+  example: []
+  syntax:
+    content: public static explicit operator ColorF(string stg)
+    parameters:
+    - id: stg
+      type: System.String
+      description: Object to be converted.
+    return:
+      type: Cobilas.GodotEngine.Utility.ColorF
+    content.vb: Public Shared Narrowing Operator CType(stg As String) As ColorF
+  overload: Cobilas.GodotEngine.Utility.ColorF.op_Explicit*
+  nameWithType.vb: ColorF.CType(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.ColorF.CType(String)
+  name.vb: CType(String)
+references:
+- uid: Cobilas.GodotEngine.Utility
+  commentId: N:Cobilas.GodotEngine.Utility
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Utility
+  nameWithType: Cobilas.GodotEngine.Utility
+  fullName: Cobilas.GodotEngine.Utility
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+- uid: System.IEquatable{Cobilas.GodotEngine.Utility.ColorF}
+  commentId: T:System.IEquatable{Cobilas.GodotEngine.Utility.ColorF}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ColorF>
+  nameWithType: IEquatable<ColorF>
+  fullName: System.IEquatable<Cobilas.GodotEngine.Utility.ColorF>
+  nameWithType.vb: IEquatable(Of ColorF)
+  fullName.vb: System.IEquatable(Of Cobilas.GodotEngine.Utility.ColorF)
+  name.vb: IEquatable(Of ColorF)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Cobilas.GodotEngine.Utility.ColorF
+    name: ColorF
+    href: Cobilas.GodotEngine.Utility.ColorF.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Cobilas.GodotEngine.Utility.ColorF
+    name: ColorF
+    href: Cobilas.GodotEngine.Utility.ColorF.html
+  - name: )
+- uid: System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector4D}
+  commentId: T:System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector4D}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Vector4D>
+  nameWithType: IEquatable<Vector4D>
+  fullName: System.IEquatable<Cobilas.GodotEngine.Utility.Numerics.Vector4D>
+  nameWithType.vb: IEquatable(Of Vector4D)
+  fullName.vb: System.IEquatable(Of Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  name.vb: IEquatable(Of Vector4D)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+    name: Vector4D
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector4D.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+    name: Vector4D
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector4D.html
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Cobilas.GodotEngine.Utility.ColorF.R*
+  commentId: Overload:Cobilas.GodotEngine.Utility.ColorF.R
+  href: Cobilas.GodotEngine.Utility.ColorF.html#Cobilas_GodotEngine_Utility_ColorF_R
+  name: R
+  nameWithType: ColorF.R
+  fullName: Cobilas.GodotEngine.Utility.ColorF.R
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Cobilas.GodotEngine.Utility.ColorF.G*
+  commentId: Overload:Cobilas.GodotEngine.Utility.ColorF.G
+  href: Cobilas.GodotEngine.Utility.ColorF.html#Cobilas_GodotEngine_Utility_ColorF_G
+  name: G
+  nameWithType: ColorF.G
+  fullName: Cobilas.GodotEngine.Utility.ColorF.G
+- uid: Cobilas.GodotEngine.Utility.ColorF.B*
+  commentId: Overload:Cobilas.GodotEngine.Utility.ColorF.B
+  href: Cobilas.GodotEngine.Utility.ColorF.html#Cobilas_GodotEngine_Utility_ColorF_B
+  name: B
+  nameWithType: ColorF.B
+  fullName: Cobilas.GodotEngine.Utility.ColorF.B
+- uid: Cobilas.GodotEngine.Utility.ColorF.A*
+  commentId: Overload:Cobilas.GodotEngine.Utility.ColorF.A
+  href: Cobilas.GodotEngine.Utility.ColorF.html#Cobilas_GodotEngine_Utility_ColorF_A
+  name: A
+  nameWithType: ColorF.A
+  fullName: Cobilas.GodotEngine.Utility.ColorF.A
+- uid: Cobilas.GodotEngine.Utility.ColorF.#ctor*
+  commentId: Overload:Cobilas.GodotEngine.Utility.ColorF.#ctor
+  href: Cobilas.GodotEngine.Utility.ColorF.html#Cobilas_GodotEngine_Utility_ColorF__ctor_System_Single_System_Single_System_Single_System_Single_
+  name: ColorF
+  nameWithType: ColorF.ColorF
+  fullName: Cobilas.GodotEngine.Utility.ColorF.ColorF
+  nameWithType.vb: ColorF.New
+  fullName.vb: Cobilas.GodotEngine.Utility.ColorF.New
+  name.vb: New
+- uid: Cobilas.GodotEngine.Utility.Color32
+  commentId: T:Cobilas.GodotEngine.Utility.Color32
+  parent: Cobilas.GodotEngine.Utility
+  href: Cobilas.GodotEngine.Utility.Color32.html
+  name: Color32
+  nameWithType: Color32
+  fullName: Cobilas.GodotEngine.Utility.Color32
+- uid: Godot.Color
+  commentId: T:Godot.Color
+  parent: Godot
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: Godot.Color
+- uid: Godot
+  commentId: N:Godot
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+  commentId: T:Cobilas.GodotEngine.Utility.Numerics.Vector4D
+  parent: Cobilas.GodotEngine.Utility.Numerics
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector4D.html
+  name: Vector4D
+  nameWithType: Vector4D
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+- uid: Cobilas.GodotEngine.Utility.Numerics
+  commentId: N:Cobilas.GodotEngine.Utility.Numerics
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Utility.Numerics
+  nameWithType: Cobilas.GodotEngine.Utility.Numerics
+  fullName: Cobilas.GodotEngine.Utility.Numerics
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.Numerics
+    name: Numerics
+    href: Cobilas.GodotEngine.Utility.Numerics.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.Numerics
+    name: Numerics
+    href: Cobilas.GodotEngine.Utility.Numerics.html
+- uid: Cobilas.GodotEngine.Utility.ColorF.Equals*
+  commentId: Overload:Cobilas.GodotEngine.Utility.ColorF.Equals
+  href: Cobilas.GodotEngine.Utility.ColorF.html#Cobilas_GodotEngine_Utility_ColorF_Equals_Cobilas_GodotEngine_Utility_ColorF_
+  name: Equals
+  nameWithType: ColorF.Equals
+  fullName: Cobilas.GodotEngine.Utility.ColorF.Equals
+- uid: System.IEquatable{Cobilas.GodotEngine.Utility.ColorF}.Equals(Cobilas.GodotEngine.Utility.ColorF)
+  commentId: M:System.IEquatable{Cobilas.GodotEngine.Utility.ColorF}.Equals(Cobilas.GodotEngine.Utility.ColorF)
+  parent: System.IEquatable{Cobilas.GodotEngine.Utility.ColorF}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(ColorF)
+  nameWithType: IEquatable<ColorF>.Equals(ColorF)
+  fullName: System.IEquatable<Cobilas.GodotEngine.Utility.ColorF>.Equals(Cobilas.GodotEngine.Utility.ColorF)
+  nameWithType.vb: IEquatable(Of ColorF).Equals(ColorF)
+  fullName.vb: System.IEquatable(Of Cobilas.GodotEngine.Utility.ColorF).Equals(Cobilas.GodotEngine.Utility.ColorF)
+  spec.csharp:
+  - uid: System.IEquatable{Cobilas.GodotEngine.Utility.ColorF}.Equals(Cobilas.GodotEngine.Utility.ColorF)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Cobilas.GodotEngine.Utility.ColorF
+    name: ColorF
+    href: Cobilas.GodotEngine.Utility.ColorF.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Cobilas.GodotEngine.Utility.ColorF}.Equals(Cobilas.GodotEngine.Utility.ColorF)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Cobilas.GodotEngine.Utility.ColorF
+    name: ColorF
+    href: Cobilas.GodotEngine.Utility.ColorF.html
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.ColorF
+  commentId: T:Cobilas.GodotEngine.Utility.ColorF
+  parent: Cobilas.GodotEngine.Utility
+  href: Cobilas.GodotEngine.Utility.ColorF.html
+  name: ColorF
+  nameWithType: ColorF
+  fullName: Cobilas.GodotEngine.Utility.ColorF
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector4D}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  commentId: M:System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector4D}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  parent: System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector4D}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Vector4D)
+  nameWithType: IEquatable<Vector4D>.Equals(Vector4D)
+  fullName: System.IEquatable<Cobilas.GodotEngine.Utility.Numerics.Vector4D>.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  nameWithType.vb: IEquatable(Of Vector4D).Equals(Vector4D)
+  fullName.vb: System.IEquatable(Of Cobilas.GodotEngine.Utility.Numerics.Vector4D).Equals(Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  spec.csharp:
+  - uid: System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector4D}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+    name: Vector4D
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector4D.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Cobilas.GodotEngine.Utility.Numerics.Vector4D}.Equals(Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+    name: Vector4D
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector4D.html
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.ColorF.ToString*
+  commentId: Overload:Cobilas.GodotEngine.Utility.ColorF.ToString
+  href: Cobilas.GodotEngine.Utility.ColorF.html#Cobilas_GodotEngine_Utility_ColorF_ToString
+  name: ToString
+  nameWithType: ColorF.ToString
+  fullName: Cobilas.GodotEngine.Utility.ColorF.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Cobilas.GodotEngine.Utility.ColorF.HSVToColorF*
+  commentId: Overload:Cobilas.GodotEngine.Utility.ColorF.HSVToColorF
+  href: Cobilas.GodotEngine.Utility.ColorF.html#Cobilas_GodotEngine_Utility_ColorF_HSVToColorF_System_Single_System_Single_System_Single_System_Single_
+  name: HSVToColorF
+  nameWithType: ColorF.HSVToColorF
+  fullName: Cobilas.GodotEngine.Utility.ColorF.HSVToColorF
+- uid: Cobilas.GodotEngine.Utility.ColorF.ColorFToHSV*
+  commentId: Overload:Cobilas.GodotEngine.Utility.ColorF.ColorFToHSV
+  href: Cobilas.GodotEngine.Utility.ColorF.html#Cobilas_GodotEngine_Utility_ColorF_ColorFToHSV_Cobilas_GodotEngine_Utility_ColorF_
+  name: ColorFToHSV
+  nameWithType: ColorF.ColorFToHSV
+  fullName: Cobilas.GodotEngine.Utility.ColorF.ColorFToHSV
+- uid: Cobilas.GodotEngine.Utility.ColorF.op_Implicit*
+  commentId: Overload:Cobilas.GodotEngine.Utility.ColorF.op_Implicit
+  name: implicit operator
+  nameWithType: ColorF.implicit operator
+  fullName: Cobilas.GodotEngine.Utility.ColorF.implicit operator
+  nameWithType.vb: ColorF.CType
+  fullName.vb: Cobilas.GodotEngine.Utility.ColorF.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: Cobilas.GodotEngine.Utility.ColorF.op_Explicit*
+  commentId: Overload:Cobilas.GodotEngine.Utility.ColorF.op_Explicit
+  name: explicit operator
+  nameWithType: ColorF.explicit operator
+  fullName: Cobilas.GodotEngine.Utility.ColorF.explicit operator
+  nameWithType.vb: ColorF.CType
+  fullName.vb: Cobilas.GodotEngine.Utility.ColorF.CType
+  name.vb: CType
+  spec.csharp:
+  - name: explicit
+  - name: " "
+  - name: operator

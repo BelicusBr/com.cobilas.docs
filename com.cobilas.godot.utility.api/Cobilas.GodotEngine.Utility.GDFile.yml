@@ -29,19 +29,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GDFile
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
-    startLine: 8
+    startLine: 9
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
   summary: This class is a representation of a file.
   example: []
   syntax:
-    content: 'public class GDFile : GDFileBase, IDisposable'
-    content.vb: Public Class GDFile Inherits GDFileBase Implements IDisposable
+    content: >-
+      [Obsolete("Use Archive class")]
+
+      public class GDFile : GDFileBase, IDisposable
+    content.vb: >-
+      <Obsolete("Use Archive class")>
+
+      Public Class GDFile Inherits GDFileBase Implements IDisposable
   inheritance:
   - System.Object
   - Cobilas.GodotEngine.Utility.GDFileBase
@@ -56,6 +62,12 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use Archive class
 - uid: Cobilas.GodotEngine.Utility.GDFile.Path
   commentId: P:Cobilas.GodotEngine.Utility.GDFile.Path
   id: Path
@@ -70,11 +82,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Path
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
-    startLine: 11
+    startLine: 13
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -103,11 +115,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Name
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
-    startLine: 13
+    startLine: 15
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -136,11 +148,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Parent
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
-    startLine: 15
+    startLine: 17
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -169,25 +181,25 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Attribute
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
-    startLine: 17
+    startLine: 19
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
   summary: The type of the item.
   example: []
   syntax:
-    content: public override GDFileAttributes Attribute { get; protected set; }
+    content: public override ArchiveAttributes Attribute { get; protected set; }
     parameters: []
     return:
-      type: Cobilas.GodotEngine.Utility.GDFileAttributes
+      type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
       description: >-
         Returns the type of attribute the item has.
             <p><code>Null</code>: Indicates that the item is a representation of a null file.</p><p><code>File</code>: Indicates that the item is a representation of a file.</p><p><code>Directory</code>: Indicates that the item is a representation of a directory file.</p>
-    content.vb: Public Overrides Property Attribute As GDFileAttributes
+    content.vb: Public Overrides Property Attribute As ArchiveAttributes
   overridden: Cobilas.GodotEngine.Utility.GDFileBase.Attribute
   overload: Cobilas.GodotEngine.Utility.GDFile.Attribute*
 - uid: Cobilas.GodotEngine.Utility.GDFile.NameWithoutExtension
@@ -204,11 +216,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: NameWithoutExtension
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
-    startLine: 19
+    startLine: 21
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -237,11 +249,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Finalize
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
-    startLine: 31
+    startLine: 33
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -268,11 +280,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Read
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
-    startLine: 35
+    startLine: 37
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -299,11 +311,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Write
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
-    startLine: 46
+    startLine: 48
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -334,11 +346,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Load
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
-    startLine: 71
+    startLine: 73
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -389,11 +401,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Load
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
-    startLine: 74
+    startLine: 76
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -426,11 +438,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Load
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
-    startLine: 79
+    startLine: 81
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -488,11 +500,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Load
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
-    startLine: 82
+    startLine: 84
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -535,11 +547,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Dispose
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
-    startLine: 86
+    startLine: 88
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -570,11 +582,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/IO/GDFile.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Dispose
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/GDFile.cs
-    startLine: 97
+    startLine: 99
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
@@ -938,13 +950,51 @@ references:
   name: Attribute
   nameWithType: GDFile.Attribute
   fullName: Cobilas.GodotEngine.Utility.GDFile.Attribute
-- uid: Cobilas.GodotEngine.Utility.GDFileAttributes
-  commentId: T:Cobilas.GodotEngine.Utility.GDFileAttributes
-  parent: Cobilas.GodotEngine.Utility
-  href: Cobilas.GodotEngine.Utility.GDFileAttributes.html
-  name: GDFileAttributes
-  nameWithType: GDFileAttributes
-  fullName: Cobilas.GodotEngine.Utility.GDFileAttributes
+- uid: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+  commentId: T:Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+  parent: Cobilas.GodotEngine.Utility.IO
+  href: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.html
+  name: ArchiveAttributes
+  nameWithType: ArchiveAttributes
+  fullName: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+- uid: Cobilas.GodotEngine.Utility.IO
+  commentId: N:Cobilas.GodotEngine.Utility.IO
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Utility.IO
+  nameWithType: Cobilas.GodotEngine.Utility.IO
+  fullName: Cobilas.GodotEngine.Utility.IO
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO
+    name: IO
+    href: Cobilas.GodotEngine.Utility.IO.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO
+    name: IO
+    href: Cobilas.GodotEngine.Utility.IO.html
 - uid: Cobilas.GodotEngine.Utility.GDFileBase.NameWithoutExtension
   commentId: P:Cobilas.GodotEngine.Utility.GDFileBase.NameWithoutExtension
   parent: Cobilas.GodotEngine.Utility.GDFileBase

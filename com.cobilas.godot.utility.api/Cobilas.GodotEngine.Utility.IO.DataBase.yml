@@ -1,0 +1,774 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.GodotEngine.Utility.IO.DataBase
+  commentId: T:Cobilas.GodotEngine.Utility.IO.DataBase
+  id: DataBase
+  parent: Cobilas.GodotEngine.Utility.IO
+  children:
+  - Cobilas.GodotEngine.Utility.IO.DataBase.#ctor(Cobilas.GodotEngine.Utility.IO.DataBase,System.String,Cobilas.GodotEngine.Utility.IO.ArchiveAttributes)
+  - Cobilas.GodotEngine.Utility.IO.DataBase.Attributes
+  - Cobilas.GodotEngine.Utility.IO.DataBase.Dispose
+  - Cobilas.GodotEngine.Utility.IO.DataBase.GetDataPath(Cobilas.GodotEngine.Utility.IO.DataBase)
+  - Cobilas.GodotEngine.Utility.IO.DataBase.Name
+  - Cobilas.GodotEngine.Utility.IO.DataBase.Parent
+  - Cobilas.GodotEngine.Utility.IO.DataBase.Path
+  - Cobilas.GodotEngine.Utility.IO.DataBase.ToString(System.String,System.IFormatProvider)
+  langs:
+  - csharp
+  - vb
+  name: DataBase
+  nameWithType: DataBase
+  fullName: Cobilas.GodotEngine.Utility.IO.DataBase
+  type: Class
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/DataBase.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: DataBase
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/DataBase.cs
+    startLine: 4
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Base class for classes that represent system data files.
+  example: []
+  syntax:
+    content: 'public abstract class DataBase : IDisposable, IFormattable'
+    content.vb: Public MustInherit Class DataBase Implements IDisposable, IFormattable
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Cobilas.GodotEngine.Utility.IO.Archive
+  - Cobilas.GodotEngine.Utility.IO.Folder
+  implements:
+  - System.IDisposable
+  - System.IFormattable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Cobilas.GodotEngine.Utility.IO.DataBase.Name
+  commentId: P:Cobilas.GodotEngine.Utility.IO.DataBase.Name
+  id: Name
+  parent: Cobilas.GodotEngine.Utility.IO.DataBase
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: DataBase.Name
+  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.Name
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/DataBase.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Name
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/DataBase.cs
+    startLine: 7
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Data file name.
+  example: []
+  syntax:
+    content: public abstract string? Name { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+      description: Returns a string containing the name of the data file.
+    content.vb: Public MustOverride Property Name As String
+  overload: Cobilas.GodotEngine.Utility.IO.DataBase.Name*
+- uid: Cobilas.GodotEngine.Utility.IO.DataBase.Path
+  commentId: P:Cobilas.GodotEngine.Utility.IO.DataBase.Path
+  id: Path
+  parent: Cobilas.GodotEngine.Utility.IO.DataBase
+  langs:
+  - csharp
+  - vb
+  name: Path
+  nameWithType: DataBase.Path
+  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.Path
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/DataBase.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Path
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/DataBase.cs
+    startLine: 10
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: The full path of the data file.
+  example: []
+  syntax:
+    content: public abstract string Path { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: Returns a string containing the full path of the data file.
+    content.vb: Public MustOverride ReadOnly Property Path As String
+  overload: Cobilas.GodotEngine.Utility.IO.DataBase.Path*
+- uid: Cobilas.GodotEngine.Utility.IO.DataBase.Parent
+  commentId: P:Cobilas.GodotEngine.Utility.IO.DataBase.Parent
+  id: Parent
+  parent: Cobilas.GodotEngine.Utility.IO.DataBase
+  langs:
+  - csharp
+  - vb
+  name: Parent
+  nameWithType: DataBase.Parent
+  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.Parent
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/DataBase.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Parent
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/DataBase.cs
+    startLine: 13
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: The parent element of the data file.
+  example: []
+  syntax:
+    content: public abstract DataBase? Parent { get; protected set; }
+    parameters: []
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.DataBase
+      description: Returns parent element of data file.
+    content.vb: Public MustOverride Property Parent As DataBase
+  overload: Cobilas.GodotEngine.Utility.IO.DataBase.Parent*
+- uid: Cobilas.GodotEngine.Utility.IO.DataBase.Attributes
+  commentId: P:Cobilas.GodotEngine.Utility.IO.DataBase.Attributes
+  id: Attributes
+  parent: Cobilas.GodotEngine.Utility.IO.DataBase
+  langs:
+  - csharp
+  - vb
+  name: Attributes
+  nameWithType: DataBase.Attributes
+  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.Attributes
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/DataBase.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Attributes
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/DataBase.cs
+    startLine: 16
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: The attributes of the data file.
+  example: []
+  syntax:
+    content: public abstract ArchiveAttributes Attributes { get; protected set; }
+    parameters: []
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+      description: Returns the attributes of the data file.
+    content.vb: Public MustOverride Property Attributes As ArchiveAttributes
+  overload: Cobilas.GodotEngine.Utility.IO.DataBase.Attributes*
+- uid: Cobilas.GodotEngine.Utility.IO.DataBase.#ctor(Cobilas.GodotEngine.Utility.IO.DataBase,System.String,Cobilas.GodotEngine.Utility.IO.ArchiveAttributes)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.DataBase.#ctor(Cobilas.GodotEngine.Utility.IO.DataBase,System.String,Cobilas.GodotEngine.Utility.IO.ArchiveAttributes)
+  id: '#ctor(Cobilas.GodotEngine.Utility.IO.DataBase,System.String,Cobilas.GodotEngine.Utility.IO.ArchiveAttributes)'
+  parent: Cobilas.GodotEngine.Utility.IO.DataBase
+  langs:
+  - csharp
+  - vb
+  name: DataBase(DataBase?, string?, ArchiveAttributes)
+  nameWithType: DataBase.DataBase(DataBase?, string?, ArchiveAttributes)
+  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.DataBase(Cobilas.GodotEngine.Utility.IO.DataBase?, string?, Cobilas.GodotEngine.Utility.IO.ArchiveAttributes)
+  type: Constructor
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/DataBase.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: .ctor
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/DataBase.cs
+    startLine: 18
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Creates a new instance of this object.
+  example: []
+  syntax:
+    content: protected DataBase(DataBase? parent, string? dataName, ArchiveAttributes attributes)
+    parameters:
+    - id: parent
+      type: Cobilas.GodotEngine.Utility.IO.DataBase
+    - id: dataName
+      type: System.String
+    - id: attributes
+      type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+    content.vb: Protected Sub New(parent As DataBase, dataName As String, attributes As ArchiveAttributes)
+  overload: Cobilas.GodotEngine.Utility.IO.DataBase.#ctor*
+  nameWithType.vb: DataBase.New(DataBase, String, ArchiveAttributes)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.DataBase.New(Cobilas.GodotEngine.Utility.IO.DataBase, String, Cobilas.GodotEngine.Utility.IO.ArchiveAttributes)
+  name.vb: New(DataBase, String, ArchiveAttributes)
+- uid: Cobilas.GodotEngine.Utility.IO.DataBase.Dispose
+  commentId: M:Cobilas.GodotEngine.Utility.IO.DataBase.Dispose
+  id: Dispose
+  parent: Cobilas.GodotEngine.Utility.IO.DataBase
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: DataBase.Dispose()
+  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.Dispose()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/DataBase.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Dispose
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/DataBase.cs
+    startLine: 24
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public abstract void Dispose()
+    content.vb: Public MustOverride Sub Dispose()
+  overload: Cobilas.GodotEngine.Utility.IO.DataBase.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: Cobilas.GodotEngine.Utility.IO.DataBase.ToString(System.String,System.IFormatProvider)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.DataBase.ToString(System.String,System.IFormatProvider)
+  id: ToString(System.String,System.IFormatProvider)
+  parent: Cobilas.GodotEngine.Utility.IO.DataBase
+  langs:
+  - csharp
+  - vb
+  name: ToString(string, IFormatProvider)
+  nameWithType: DataBase.ToString(string, IFormatProvider)
+  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.ToString(string, System.IFormatProvider)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/DataBase.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ToString
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/DataBase.cs
+    startLine: 26
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Formats the value of the current instance using the specified format.
+  example: []
+  syntax:
+    content: public abstract string ToString(string format, IFormatProvider formatProvider)
+    parameters:
+    - id: format
+      type: System.String
+      description: The format to use.-or- A null reference (<code>Nothing</code> in Visual Basic) to use the default format defined for the type of the <xref href="System.IFormattable" data-throw-if-not-resolved="false"></xref> implementation.
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: The provider to use to format the value.-or- A null reference (<code>Nothing</code> in Visual Basic) to obtain the numeric format information from the current locale setting of the operating system.
+    return:
+      type: System.String
+      description: The value of the current instance in the specified format.
+    content.vb: Public MustOverride Function ToString(format As String, formatProvider As IFormatProvider) As String
+  overload: Cobilas.GodotEngine.Utility.IO.DataBase.ToString*
+  implements:
+  - System.IFormattable.ToString(System.String,System.IFormatProvider)
+  nameWithType.vb: DataBase.ToString(String, IFormatProvider)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.DataBase.ToString(String, System.IFormatProvider)
+  name.vb: ToString(String, IFormatProvider)
+- uid: Cobilas.GodotEngine.Utility.IO.DataBase.GetDataPath(Cobilas.GodotEngine.Utility.IO.DataBase)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.DataBase.GetDataPath(Cobilas.GodotEngine.Utility.IO.DataBase)
+  id: GetDataPath(Cobilas.GodotEngine.Utility.IO.DataBase)
+  parent: Cobilas.GodotEngine.Utility.IO.DataBase
+  langs:
+  - csharp
+  - vb
+  name: GetDataPath(DataBase?)
+  nameWithType: DataBase.GetDataPath(DataBase?)
+  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.GetDataPath(Cobilas.GodotEngine.Utility.IO.DataBase?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/DataBase.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetDataPath
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/IO/DataBase.cs
+    startLine: 30
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets the full path of a data file.
+  example: []
+  syntax:
+    content: public static string GetDataPath(DataBase? data)
+    parameters:
+    - id: data
+      type: Cobilas.GodotEngine.Utility.IO.DataBase
+      description: The data file to be obtained is the full path.
+    return:
+      type: System.String
+      description: It will return a string containing the full path of the data file.
+    content.vb: Public Shared Function GetDataPath(data As DataBase) As String
+  overload: Cobilas.GodotEngine.Utility.IO.DataBase.GetDataPath*
+  nameWithType.vb: DataBase.GetDataPath(DataBase)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.DataBase.GetDataPath(Cobilas.GodotEngine.Utility.IO.DataBase)
+  name.vb: GetDataPath(DataBase)
+references:
+- uid: Cobilas.GodotEngine.Utility.IO
+  commentId: N:Cobilas.GodotEngine.Utility.IO
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Utility.IO
+  nameWithType: Cobilas.GodotEngine.Utility.IO
+  fullName: Cobilas.GodotEngine.Utility.IO
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO
+    name: IO
+    href: Cobilas.GodotEngine.Utility.IO.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO
+    name: IO
+    href: Cobilas.GodotEngine.Utility.IO.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.IFormattable
+  commentId: T:System.IFormattable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformattable
+  name: IFormattable
+  nameWithType: IFormattable
+  fullName: System.IFormattable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cobilas.GodotEngine.Utility.IO.DataBase.Name*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.DataBase.Name
+  href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_Name
+  name: Name
+  nameWithType: DataBase.Name
+  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Cobilas.GodotEngine.Utility.IO.DataBase.Path*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.DataBase.Path
+  href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_Path
+  name: Path
+  nameWithType: DataBase.Path
+  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.Path
+- uid: Cobilas.GodotEngine.Utility.IO.DataBase.Parent*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.DataBase.Parent
+  href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_Parent
+  name: Parent
+  nameWithType: DataBase.Parent
+  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.Parent
+- uid: Cobilas.GodotEngine.Utility.IO.DataBase
+  commentId: T:Cobilas.GodotEngine.Utility.IO.DataBase
+  parent: Cobilas.GodotEngine.Utility.IO
+  href: Cobilas.GodotEngine.Utility.IO.DataBase.html
+  name: DataBase
+  nameWithType: DataBase
+  fullName: Cobilas.GodotEngine.Utility.IO.DataBase
+- uid: Cobilas.GodotEngine.Utility.IO.DataBase.Attributes*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.DataBase.Attributes
+  href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_Attributes
+  name: Attributes
+  nameWithType: DataBase.Attributes
+  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.Attributes
+- uid: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+  commentId: T:Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+  parent: Cobilas.GodotEngine.Utility.IO
+  href: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.html
+  name: ArchiveAttributes
+  nameWithType: ArchiveAttributes
+  fullName: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+- uid: Cobilas.GodotEngine.Utility.IO.DataBase.#ctor*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.DataBase.#ctor
+  href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase__ctor_Cobilas_GodotEngine_Utility_IO_DataBase_System_String_Cobilas_GodotEngine_Utility_IO_ArchiveAttributes_
+  name: DataBase
+  nameWithType: DataBase.DataBase
+  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.DataBase
+  nameWithType.vb: DataBase.New
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.DataBase.New
+  name.vb: New
+- uid: Cobilas.GodotEngine.Utility.IO.DataBase.Dispose*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.DataBase.Dispose
+  href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_Dispose
+  name: Dispose
+  nameWithType: DataBase.Dispose
+  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.IO.DataBase.ToString*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.DataBase.ToString
+  href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_ToString_System_String_System_IFormatProvider_
+  name: ToString
+  nameWithType: DataBase.ToString
+  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.ToString
+- uid: System.IFormattable.ToString(System.String,System.IFormatProvider)
+  commentId: M:System.IFormattable.ToString(System.String,System.IFormatProvider)
+  parent: System.IFormattable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformattable.tostring
+  name: ToString(string, IFormatProvider)
+  nameWithType: IFormattable.ToString(string, IFormatProvider)
+  fullName: System.IFormattable.ToString(string, System.IFormatProvider)
+  nameWithType.vb: IFormattable.ToString(String, IFormatProvider)
+  fullName.vb: System.IFormattable.ToString(String, System.IFormatProvider)
+  name.vb: ToString(String, IFormatProvider)
+  spec.csharp:
+  - uid: System.IFormattable.ToString(System.String,System.IFormatProvider)
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformattable.tostring
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  - name: )
+  spec.vb:
+  - uid: System.IFormattable.ToString(System.String,System.IFormatProvider)
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformattable.tostring
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  - name: )
+- uid: System.IFormatProvider
+  commentId: T:System.IFormatProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  name: IFormatProvider
+  nameWithType: IFormatProvider
+  fullName: System.IFormatProvider
+- uid: Cobilas.GodotEngine.Utility.IO.DataBase.GetDataPath*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.DataBase.GetDataPath
+  href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_GetDataPath_Cobilas_GodotEngine_Utility_IO_DataBase_
+  name: GetDataPath
+  nameWithType: DataBase.GetDataPath
+  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.GetDataPath

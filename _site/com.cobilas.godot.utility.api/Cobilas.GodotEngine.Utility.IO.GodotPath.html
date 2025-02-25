@@ -1,0 +1,981 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class GodotPath | Cobilas Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GodotPath | Cobilas Documentation ">
+      
+      <meta name="description" content="The class allows manipulation of system paths in godot.">
+      <link rel="icon" href="../images/favicon-96x96.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.godot.utility/new/main/apiSpec/new?filename=Cobilas_GodotEngine_Utility_IO_GodotPath.md&amp;value=---%0Auid%3A%20Cobilas.GodotEngine.Utility.IO.GodotPath%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/apple-icon-57x57.png" alt="Cobilas Documentation">
+            Cobilas Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath">
+
+
+
+  <h1 id="Cobilas_GodotEngine_Utility_IO_GodotPath" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath" class="text-break">
+Class GodotPath  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GodotPath.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Cobilas.html">Cobilas</a>.<a class="xref" href="Cobilas.GodotEngine.html">GodotEngine</a>.<a class="xref" href="Cobilas.GodotEngine.Utility.html">Utility</a>.<a class="xref" href="Cobilas.GodotEngine.Utility.IO.html">IO</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>com.cobilas.godot.utility.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>The class allows manipulation of system paths in godot.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class GodotPath</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">GodotPath</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_DirectorySeparatorChar" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.DirectorySeparatorChar">
+  DirectorySeparatorChar
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GodotPath.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Contains the directory separator used in godot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const char DirectorySeparatorChar = &#39;/&#39;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_GodotPath_CurrentDirectory_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.CurrentDirectory*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_CurrentDirectory" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.CurrentDirectory">
+  CurrentDirectory
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GodotPath.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the fully qualified path of the current working directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string CurrentDirectory { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string containing a directory path.</p>
+</dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Attempted to set to an empty string (&quot;&quot;).</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Attempted to set to <code>null.</code></p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>An I/O error occurred.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.directorynotfoundexception">DirectoryNotFoundException</a></dt>
+    <dd><p>Attempted to set a local path that cannot be found.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.securityexception">SecurityException</a></dt>
+    <dd><p>The caller does not have the appropriate permission.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_GodotPath_PersistentFilePath_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.PersistentFilePath*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_PersistentFilePath" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.PersistentFilePath">
+  PersistentFilePath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GodotPath.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The path to the project's persistent files directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PersistentFilePath { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns a string containing the path to the project's persistent files directory.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_GodotPath_ProjectPath_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.ProjectPath*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_ProjectPath" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.ProjectPath">
+  ProjectPath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GodotPath.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The path to the project's root folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ProjectPath { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the root path of the project folder.
+When the project is compiled the property will use the <a class="xref" href="Cobilas.GodotEngine.Utility.IO.GodotPath.html#Cobilas_GodotEngine_Utility_IO_GodotPath_CurrentDirectory">CurrentDirectory</a> property.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_GodotPath_Combine_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.Combine*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_Combine_System_String_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.Combine(System.String,System.String)">
+  Combine(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GodotPath.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Combines two strings into a path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Combine(string path1, string path2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The first path to combine.</p>
+</dd>
+    <dt><code>path2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The second path to combine.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The combined paths. If one of the specified paths is a zero-length string, this method returns the other path. If <code class="paramref">path2</code> contains an absolute path, this method returns <code class="paramref">path2</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">path1</code> or <code class="paramref">path2</code> contains one or more of the invalid characters defined in <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.path.getinvalidpathchars">GetInvalidPathChars()</a>.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">path1</code> or <code class="paramref">path2</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_GodotPath_Combine_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.Combine*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_Combine_System_String_System_String_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.Combine(System.String,System.String,System.String)">
+  Combine(string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GodotPath.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Combines three strings into a path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Combine(string path1, string path2, string path3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The first path to combine.</p>
+</dd>
+    <dt><code>path2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The second path to combine.</p>
+</dd>
+    <dt><code>path3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The third path to combine.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The combined paths.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">path1</code>, <code class="paramref">path2</code>, or <code class="paramref">path3</code> contains one or more of the invalid characters defined in <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.path.getinvalidpathchars">GetInvalidPathChars()</a>.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">path1</code>, <code class="paramref">path2</code>, or <code class="paramref">path3</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_GodotPath_Combine_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.Combine*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_Combine_System_String_System_String_System_String_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.Combine(System.String,System.String,System.String,System.String)">
+  Combine(string, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GodotPath.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Combines four strings into a path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Combine(string path1, string path2, string path3, string path4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The first path to combine.</p>
+</dd>
+    <dt><code>path2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The second path to combine.</p>
+</dd>
+    <dt><code>path3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The third path to combine.</p>
+</dd>
+    <dt><code>path4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The fourth path to combine.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The combined paths.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">path1</code>, <code class="paramref">path2</code>, <code class="paramref">path3</code>, or <code class="paramref">path4</code> contains one or more of the invalid characters defined in <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.path.getinvalidpathchars">GetInvalidPathChars()</a>.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">path1</code>, <code class="paramref">path2</code>, <code class="paramref">path3</code>, or <code class="paramref">path4</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_GodotPath_Combine_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.Combine*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_Combine_System_String___" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.Combine(System.String[])">
+  Combine(params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GodotPath.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Combines an array of strings into a path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Combine(params string[] paths)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>paths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>An array of parts of the path.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The combined paths.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>One of the strings in the array contains one or more of the invalid characters defined in <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.path.getinvalidpathchars">GetInvalidPathChars()</a>.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>One of the strings in the array is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_GodotPath_GetDirectoryName_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.GetDirectoryName*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_GetDirectoryName_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.GetDirectoryName(System.String)">
+  GetDirectoryName(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GodotPath.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the directory information for the specified path string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetDirectoryName(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path of a file or directory.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Directory information for <code class="paramref">path</code>, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if <code class="paramref">path</code> denotes a root directory or is null. Returns <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string.empty">Empty</a> if <code class="paramref">path</code> does not contain directory information.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>The <code class="paramref">path</code> parameter contains invalid characters, is empty, or contains only white spaces.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.pathtoolongexception">PathTooLongException</a></dt>
+    <dd><p>In the .NET for Windows Store apps or the Portable Class Library, catch the base class exception, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a>, instead.The <code class="paramref">path</code> parameter is longer than the system-defined maximum length.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_GodotPath_GetExtension_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.GetExtension*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_GetExtension_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.GetExtension(System.String)">
+  GetExtension(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GodotPath.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the extension of the specified path string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetExtension(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path string from which to get the extension.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The extension of the specified path (including the period &quot;.&quot;), or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string.empty">Empty</a>. If <code class="paramref">path</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.path.getextension">GetExtension(string)</a> returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>. If <code class="paramref">path</code> does not have extension information, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.path.getextension">GetExtension(string)</a> returns <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string.empty">Empty</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">path</code> contains one or more of the invalid characters defined in <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.path.getinvalidpathchars">GetInvalidPathChars()</a>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_GodotPath_GetFileName_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.GetFileName*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_GetFileName_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.GetFileName(System.String)">
+  GetFileName(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GodotPath.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the file name and extension of the specified path string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetFileName(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path string from which to obtain the file name and extension.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The characters after the last directory character in <code class="paramref">path</code>. If the last character of <code class="paramref">path</code> is a directory or volume separator character, this method returns <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string.empty">Empty</a>. If <code class="paramref">path</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, this method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">path</code> contains one or more of the invalid characters defined in <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.path.getinvalidpathchars">GetInvalidPathChars()</a>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_GodotPath_GetFileNameWithoutExtension_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.GetFileNameWithoutExtension*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_GetFileNameWithoutExtension_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.GetFileNameWithoutExtension(System.String)">
+  GetFileNameWithoutExtension(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GodotPath.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the file name of the specified path string without the extension.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetFileNameWithoutExtension(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path of the file.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string returned by <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.path.getfilename">GetFileName(string)</a>, minus the last period (.) and all characters following it.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">path</code> contains one or more of the invalid characters defined in <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.path.getinvalidpathchars">GetInvalidPathChars()</a>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_GodotPath_GetInvalidFileNameChars_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.GetInvalidFileNameChars*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_GetInvalidFileNameChars" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.GetInvalidFileNameChars">
+  GetInvalidFileNameChars()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GodotPath.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an array containing the characters that are not allowed in file names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static char[] GetInvalidFileNameChars()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>[]</dt>
+    <dd><p>An array containing the characters that are not allowed in file names.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_GodotPath_GetInvalidPathChars_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.GetInvalidPathChars*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_GetInvalidPathChars" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.GetInvalidPathChars">
+  GetInvalidPathChars()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GodotPath.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an array containing the characters that are not allowed in path names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static char[] GetInvalidPathChars()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>[]</dt>
+    <dd><p>An array containing the characters that are not allowed in path names.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_GodotPath_GetPathRoot_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.GetPathRoot*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_GetPathRoot_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.GetPathRoot(System.String)">
+  GetPathRoot(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GodotPath.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the root directory information of the specified path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetPathRoot(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path from which to obtain root directory information.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The root directory of <code class="paramref">path</code>, such as &quot;C:&quot;, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if <code class="paramref">path</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, or an empty string if <code class="paramref">path</code> does not contain root directory information.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">path</code> contains one or more of the invalid characters defined in <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.path.getinvalidpathchars">GetInvalidPathChars()</a>.-or-
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string.empty">Empty</a> was passed to <code class="paramref">path</code>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_GodotPath_GlobalizePath_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.GlobalizePath*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_GlobalizePath_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.GlobalizePath(System.String)">
+  GlobalizePath(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GodotPath.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the absolute, native OS path corresponding to the localized <code>path</code> (starting with <code>res://</code> or <code>user://</code>). The returned path will vary depending on the operating system and user preferences. See <a href="$DOCS_URL/tutorials/io/data_paths.html">File paths in Godot projects</a> to see what those paths convert to. See also <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">LocalizePath(string)</a>.</p>
+<p>Note: <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">GlobalizePath(string)</a> with <code>res://</code> will not work in an exported project. Instead, prepend the executable's base directory to the path when running from an exported project:</p>
+<p>
+  <pre><code class="lang-csharp">var path = ""
+  if OS.has_feature("editor"):
+      # Running from an editor binary.
+      # `path` will contain the absolute path to `hello.txt` located in the project root.
+      path = ProjectSettings.globalize_path("res://hello.txt")
+  else:
+      # Running from an exported project.
+      # `path` will contain the absolute path to `hello.txt` next to the executable.
+      # This is *not* identical to using `ProjectSettings.globalize_path()` with a `res://` path,
+      # but is close enough in spirit.
+      path = OS.get_executable_path().get_base_dir().plus_file("hello.txt")</code></pre>
+
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GlobalizePath(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_GodotPath_HasExtension_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.HasExtension*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_HasExtension_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.HasExtension(System.String)">
+  HasExtension(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GodotPath.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether a path includes a file name extension.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasExtension(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to search for an extension.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the characters that follow the last directory separator (\ or /) or volume separator (:) in the path include a period (.) followed by one or more characters; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">path</code> contains one or more of the invalid characters defined in <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.path.getinvalidpathchars">GetInvalidPathChars()</a>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_GodotPath_IsInvalidFileName_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.IsInvalidFileName*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_IsInvalidFileName_System_String_System_Char__" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.IsInvalidFileName(System.String,System.Char@)">
+  IsInvalidFileName(string, out char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GodotPath.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Allows you to check if the system file name contains an invalid character.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsInvalidFileName(string name, out char invalidChar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name to be checked.</p>
+</dd>
+    <dt><code>invalidChar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>Returns the invalid character.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns <code>true</code> when an invalid character is encountered.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GodotPath.cs/#L6" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

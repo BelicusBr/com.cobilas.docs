@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Runtime/RunTime.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RunTime
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTime.cs
@@ -54,7 +54,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Runtime/RunTime.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: DeltaTime
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTime.cs
@@ -83,7 +83,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Runtime/RunTime.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: FixedDeltaTime
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTime.cs
@@ -112,7 +112,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Runtime/RunTime.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: TimeScale
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTime.cs
@@ -152,7 +152,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Runtime/RunTime.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: FrameCount
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTime.cs
@@ -184,15 +184,18 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Runtime/RunTime.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ExecutionMode
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTime.cs
-    startLine: 25
+    startLine: 27
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime
   summary: Allows you to check whether the editor is in <code>EditorMode</code> or <code>PlayerMode</code>.
+  remarks: >-
+    This property will only work correctly when you create a <xref href="Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization" data-throw-if-not-resolved="false"></xref>
+        class and add it to AutoLoad.
   example: []
   syntax:
     content: public static ExecutionMode ExecutionMode { get; }
@@ -492,6 +495,12 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization
+  commentId: T:Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization
+  href: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization.html
+  name: RunTimeInitialization
+  nameWithType: RunTimeInitialization
+  fullName: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization
 - uid: Cobilas.GodotEngine.Utility.Runtime.RunTime.ExecutionMode*
   commentId: Overload:Cobilas.GodotEngine.Utility.Runtime.RunTime.ExecutionMode
   href: Cobilas.GodotEngine.Utility.Runtime.RunTime.html#Cobilas_GodotEngine_Utility_Runtime_RunTime_ExecutionMode

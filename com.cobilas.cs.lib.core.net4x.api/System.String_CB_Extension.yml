@@ -6,6 +6,7 @@ items:
   parent: System
   children:
   - System.String_CB_Extension.Contains(System.String,System.Char[])
+  - System.String_CB_Extension.Contains(System.String,System.String[])
   - System.String_CB_Extension.ToByte(System.String)
   - System.String_CB_Extension.ToByte(System.String,System.Globalization.NumberStyles,System.IFormatProvider)
   - System.String_CB_Extension.ToByte(System.String,System.IFormatProvider)
@@ -18,6 +19,7 @@ items:
   - System.String_CB_Extension.ToFloat(System.String)
   - System.String_CB_Extension.ToFloat(System.String,System.Globalization.NumberStyles,System.IFormatProvider)
   - System.String_CB_Extension.ToFloat(System.String,System.IFormatProvider)
+  - System.String_CB_Extension.ToGuid(System.String)
   - System.String_CB_Extension.ToInt(System.String)
   - System.String_CB_Extension.ToInt(System.String,System.Globalization.NumberStyles,System.IFormatProvider)
   - System.String_CB_Extension.ToInt(System.String,System.IFormatProvider)
@@ -91,7 +93,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Contains
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 9
+    startLine: 7
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -111,6 +113,84 @@ items:
   nameWithType.vb: String_CB_Extension.Contains(String, ParamArray Char())
   fullName.vb: System.String_CB_Extension.Contains(String, ParamArray Char())
   name.vb: Contains(String, ParamArray Char())
+- uid: System.String_CB_Extension.Contains(System.String,System.String[])
+  commentId: M:System.String_CB_Extension.Contains(System.String,System.String[])
+  id: Contains(System.String,System.String[])
+  isExtensionMethod: true
+  parent: System.String_CB_Extension
+  langs:
+  - csharp
+  - vb
+  name: Contains(string, params string[])
+  nameWithType: String_CB_Extension.Contains(string, params string[])
+  fullName: System.String_CB_Extension.Contains(string, params string[])
+  type: Method
+  source:
+    remote:
+      path: System/String_CB_Extension.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Contains
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
+    startLine: 14
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Returns a value indicating whether a specified substring occurs within this string.
+  example: []
+  syntax:
+    content: public static bool Contains(this string S, params string[] values)
+    parameters:
+    - id: S
+      type: System.String
+    - id: values
+      type: System.String[]
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function Contains(S As String, ParamArray values As String()) As Boolean
+  overload: System.String_CB_Extension.Contains*
+  nameWithType.vb: String_CB_Extension.Contains(String, ParamArray String())
+  fullName.vb: System.String_CB_Extension.Contains(String, ParamArray String())
+  name.vb: Contains(String, ParamArray String())
+- uid: System.String_CB_Extension.ToGuid(System.String)
+  commentId: M:System.String_CB_Extension.ToGuid(System.String)
+  id: ToGuid(System.String)
+  isExtensionMethod: true
+  parent: System.String_CB_Extension
+  langs:
+  - csharp
+  - vb
+  name: ToGuid(string)
+  nameWithType: String_CB_Extension.ToGuid(string)
+  fullName: System.String_CB_Extension.ToGuid(string)
+  type: Method
+  source:
+    remote:
+      path: System/String_CB_Extension.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ToGuid
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
+    startLine: 23
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Converts a <xref href="System.String" data-throw-if-not-resolved="false"></xref> to a <xref href="System.Guid" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static Guid ToGuid(this string S)
+    parameters:
+    - id: S
+      type: System.String
+      description: Receives a string that will be converted to a GUID.
+    return:
+      type: System.Guid
+      description: Returns a string already converted to GUID.
+    content.vb: Public Shared Function ToGuid(S As String) As Guid
+  overload: System.String_CB_Extension.ToGuid*
+  nameWithType.vb: String_CB_Extension.ToGuid(String)
+  fullName.vb: System.String_CB_Extension.ToGuid(String)
+  name.vb: ToGuid(String)
 - uid: System.String_CB_Extension.ToSByte(System.String,System.Globalization.NumberStyles,System.IFormatProvider)
   commentId: M:System.String_CB_Extension.ToSByte(System.String,System.Globalization.NumberStyles,System.IFormatProvider)
   id: ToSByte(System.String,System.Globalization.NumberStyles,System.IFormatProvider)
@@ -130,7 +210,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToSByte
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 17
+    startLine: 30
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -169,7 +249,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToSByte
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 20
+    startLine: 33
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -206,7 +286,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToSByte
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 23
+    startLine: 36
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -241,7 +321,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToShort
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 26
+    startLine: 39
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -280,7 +360,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToShort
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 29
+    startLine: 42
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -317,7 +397,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToShort
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 32
+    startLine: 45
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -352,7 +432,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToInt
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 35
+    startLine: 48
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -391,7 +471,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToInt
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 38
+    startLine: 51
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -428,7 +508,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToInt
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 41
+    startLine: 54
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -463,7 +543,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToLong
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 44
+    startLine: 57
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -502,7 +582,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToLong
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 47
+    startLine: 60
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -539,7 +619,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToLong
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 50
+    startLine: 63
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -574,7 +654,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToByte
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 53
+    startLine: 66
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -613,7 +693,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToByte
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 56
+    startLine: 69
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -650,7 +730,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToByte
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 59
+    startLine: 72
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -685,7 +765,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToUShort
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 62
+    startLine: 75
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -724,7 +804,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToUShort
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 65
+    startLine: 78
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -761,7 +841,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToUShort
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 68
+    startLine: 81
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -796,7 +876,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToUInt
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 71
+    startLine: 84
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -835,7 +915,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToUInt
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 74
+    startLine: 87
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -872,7 +952,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToUInt
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 77
+    startLine: 90
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -907,7 +987,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToULong
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 80
+    startLine: 93
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -946,7 +1026,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToULong
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 83
+    startLine: 96
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -983,7 +1063,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToULong
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 86
+    startLine: 99
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -1018,7 +1098,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToFloat
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 89
+    startLine: 102
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -1057,7 +1137,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToFloat
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 92
+    startLine: 105
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -1094,7 +1174,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToFloat
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 95
+    startLine: 108
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -1129,7 +1209,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToDouble
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 98
+    startLine: 111
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -1168,7 +1248,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToDouble
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 101
+    startLine: 114
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -1205,7 +1285,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToDouble
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 104
+    startLine: 117
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -1240,7 +1320,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToDecimal
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 107
+    startLine: 120
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -1279,7 +1359,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToDecimal
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 110
+    startLine: 123
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -1316,7 +1396,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToDecimal
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/String_CB_Extension.cs
-    startLine: 113
+    startLine: 126
   assemblies:
   - Cobilas.Core
   namespace: System
@@ -1620,6 +1700,43 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.String_CB_Extension.ToGuid*
+  commentId: Overload:System.String_CB_Extension.ToGuid
+  href: System.String_CB_Extension.html#System_String_CB_Extension_ToGuid_System_String_
+  name: ToGuid
+  nameWithType: String_CB_Extension.ToGuid
+  fullName: System.String_CB_Extension.ToGuid
 - uid: System.String_CB_Extension.ToSByte*
   commentId: Overload:System.String_CB_Extension.ToSByte
   href: System.String_CB_Extension.html#System_String_CB_Extension_ToSByte_System_String_System_Globalization_NumberStyles_System_IFormatProvider_

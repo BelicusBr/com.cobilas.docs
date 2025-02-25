@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.godot.utility/new/main.dev/apiSpec/new?filename=Cobilas_GodotEngine_Utility_GDFile.md&amp;value=---%0Auid%3A%20Cobilas.GodotEngine.Utility.GDFile%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.godot.utility/new/main/apiSpec/new?filename=Cobilas_GodotEngine_Utility_GDFile.md&amp;value=---%0Auid%3A%20Cobilas.GodotEngine.Utility.GDFile%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Cobilas_GodotEngine_Utility_GDFile" data-uid="Cobilas.GodotEngine.Utility.GDFile" class="text-break">
-Class GDFile  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GDFile.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Class GDFile  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GDFile.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,8 @@ Class GDFile  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GDFile : GDFileBase, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use Archive class&quot;)]
+public class GDFile : GDFileBase, IDisposable</code></pre>
   </div>
 
 
@@ -167,7 +168,7 @@ Class GDFile  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Cobilas_GodotEngine_Utility_GDFile_Attribute" data-uid="Cobilas.GodotEngine.Utility.GDFile.Attribute">
   Attribute
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GDFile.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GDFile.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The type of the item.</p>
@@ -175,7 +176,7 @@ Class GDFile  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override GDFileAttributes Attribute { get; protected set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override ArchiveAttributes Attribute { get; protected set; }</code></pre>
   </div>
 
 
@@ -184,7 +185,7 @@ Class GDFile  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.GDFileAttributes.html">GDFileAttributes</a></dt>
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.html">ArchiveAttributes</a></dt>
     <dd><p>Returns the type of attribute the item has.
 <p><code>Null</code>: Indicates that the item is a representation of a null file.</p><p><code>File</code>: Indicates that the item is a representation of a file.</p><p><code>Directory</code>: Indicates that the item is a representation of a directory file.</p>
 </dd>
@@ -201,7 +202,7 @@ Class GDFile  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Cobilas_GodotEngine_Utility_GDFile_Name" data-uid="Cobilas.GodotEngine.Utility.GDFile.Name">
   Name
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GDFile.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GDFile.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Item name.</p>
@@ -234,7 +235,7 @@ Class GDFile  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Cobilas_GodotEngine_Utility_GDFile_NameWithoutExtension" data-uid="Cobilas.GodotEngine.Utility.GDFile.NameWithoutExtension">
   NameWithoutExtension
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GDFile.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GDFile.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The name of the item without extension.</p>
@@ -267,7 +268,7 @@ Class GDFile  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Cobilas_GodotEngine_Utility_GDFile_Parent" data-uid="Cobilas.GodotEngine.Utility.GDFile.Parent">
   Parent
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GDFile.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GDFile.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The item's parent <a class="xref" href="Cobilas.GodotEngine.Utility.GDFileBase.html">GDFileBase</a>.</p>
@@ -300,7 +301,7 @@ Class GDFile  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Cobilas_GodotEngine_Utility_GDFile_Path" data-uid="Cobilas.GodotEngine.Utility.GDFile.Path">
   Path
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GDFile.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GDFile.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The path of the item.</p>
@@ -337,7 +338,7 @@ Class GDFile  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Cobilas_GodotEngine_Utility_GDFile_Dispose" data-uid="Cobilas.GodotEngine.Utility.GDFile.Dispose">
   Dispose()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GDFile.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GDFile.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
@@ -364,7 +365,7 @@ Class GDFile  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Cobilas_GodotEngine_Utility_GDFile_Dispose_System_Boolean_" data-uid="Cobilas.GodotEngine.Utility.GDFile.Dispose(System.Boolean)">
   Dispose(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GDFile.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GDFile.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
@@ -397,7 +398,7 @@ Class GDFile  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Cobilas_GodotEngine_Utility_GDFile_Finalize" data-uid="Cobilas.GodotEngine.Utility.GDFile.Finalize">
   ~GDFile()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GDFile.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GDFile.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The finalizer allows the disposal of unmanageable code.</p>
@@ -424,7 +425,7 @@ Class GDFile  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Cobilas_GodotEngine_Utility_GDFile_Load" data-uid="Cobilas.GodotEngine.Utility.GDFile.Load">
   Load()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GDFile.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GDFile.cs/#L77"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Loads a resource at the given <code>path</code>, caching the result for further access.</p>
@@ -462,7 +463,7 @@ loading fails, the remaining ResourceFormatLoaders are also attempted.</p>
 
   <h3 id="Cobilas_GodotEngine_Utility_GDFile_Load_System_String_System_Boolean_" data-uid="Cobilas.GodotEngine.Utility.GDFile.Load(System.String,System.Boolean)">
   Load(string, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GDFile.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GDFile.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Loads a resource at the given <code>path</code>, caching the result for further access.</p>
@@ -512,7 +513,7 @@ loading fails, the remaining ResourceFormatLoaders are also attempted.</p>
 
   <h3 id="Cobilas_GodotEngine_Utility_GDFile_Load__1" data-uid="Cobilas.GodotEngine.Utility.GDFile.Load``1">
   Load&lt;T&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GDFile.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GDFile.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Loads a resource at the given <code>path</code>, caching the result for further access.</p>
@@ -562,7 +563,7 @@ loading fails, the remaining ResourceFormatLoaders are also attempted.</p>
 
   <h3 id="Cobilas_GodotEngine_Utility_GDFile_Load__1_System_String_System_Boolean_" data-uid="Cobilas.GodotEngine.Utility.GDFile.Load``1(System.String,System.Boolean)">
   Load&lt;T&gt;(string, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GDFile.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GDFile.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Loads a resource at the given <code>path</code>, caching the result for further access.</p>
@@ -624,7 +625,7 @@ loading fails, the remaining ResourceFormatLoaders are also attempted.</p>
 
   <h3 id="Cobilas_GodotEngine_Utility_GDFile_Read" data-uid="Cobilas.GodotEngine.Utility.GDFile.Read">
   Read()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GDFile.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GDFile.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Allows reading of the file.</p>
@@ -657,7 +658,7 @@ loading fails, the remaining ResourceFormatLoaders are also attempted.</p>
 
   <h3 id="Cobilas_GodotEngine_Utility_GDFile_Write_System_Byte___" data-uid="Cobilas.GodotEngine.Utility.GDFile.Write(System.Byte[])">
   Write(byte[]?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GDFile.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GDFile.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Allows you to write data into the file.</p>
@@ -690,7 +691,7 @@ loading fails, the remaining ResourceFormatLoaders are also attempted.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GDFile.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/GodotEngine.Utility/IO/GDFile.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 

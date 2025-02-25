@@ -5,6 +5,9 @@ items:
   id: RunTimeInitialization
   parent: Cobilas.GodotEngine.Utility.Runtime
   children:
+  - Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization.PlayModeStateChanged
+  - Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._EnterTree
+  - Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._ExitTree
   - Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._Ready
   langs:
   - csharp
@@ -16,7 +19,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Runtime/RunTimeInitialization.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RunTimeInitialization
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitialization.cs
@@ -100,8 +103,6 @@ items:
   - Godot.Node.GetOwnerOrNull``1
   - Godot.Node.GetParent``1
   - Godot.Node.GetParentOrNull``1
-  - Godot.Node._EnterTree
-  - Godot.Node._ExitTree
   - Godot.Node._GetConfigurationWarning
   - Godot.Node._Input(Godot.InputEvent)
   - Godot.Node._PhysicsProcess(System.Single)
@@ -291,6 +292,35 @@ items:
   - Godot.Node.Godot.Node_GD_CB_Extension.SetNodePosition(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   - Godot.Node.Godot.Node_GD_CB_Extension.SetNodeRotation(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   - Godot.Node.Godot.Node_GD_CB_Extension.SetNodeScale(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+- uid: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization.PlayModeStateChanged
+  commentId: E:Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization.PlayModeStateChanged
+  id: PlayModeStateChanged
+  parent: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization
+  langs:
+  - csharp
+  - vb
+  name: PlayModeStateChanged
+  nameWithType: RunTimeInitialization.PlayModeStateChanged
+  fullName: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization.PlayModeStateChanged
+  type: Event
+  source:
+    remote:
+      path: GodotEngine.Utility/Runtime/RunTimeInitialization.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: PlayModeStateChanged
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitialization.cs
+    startLine: 29
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: Event that is raised whenever the Editor's play mode state changes.
+  example: []
+  syntax:
+    content: public static event Action<PlayModeStateChange>? PlayModeStateChanged
+    return:
+      type: System.Action{Cobilas.GodotEngine.Utility.Runtime.PlayModeStateChange}
+    content.vb: Public Shared Event PlayModeStateChanged As Action(Of PlayModeStateChange)
 - uid: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._Ready
   commentId: M:Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._Ready
   id: _Ready
@@ -305,11 +335,11 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/Runtime/RunTimeInitialization.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: _Ready
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitialization.cs
-    startLine: 28
+    startLine: 40
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Runtime
@@ -327,6 +357,70 @@ items:
     content.vb: Public Overrides Sub _Ready()
   overridden: Godot.Node._Ready
   overload: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._Ready*
+- uid: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._EnterTree
+  commentId: M:Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._EnterTree
+  id: _EnterTree
+  parent: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization
+  langs:
+  - csharp
+  - vb
+  name: _EnterTree()
+  nameWithType: RunTimeInitialization._EnterTree()
+  fullName: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._EnterTree()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Runtime/RunTimeInitialization.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: _EnterTree
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitialization.cs
+    startLine: 51
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: >-
+    <p>Called when the node enters the <xref href="Godot.SceneTree" data-throw-if-not-resolved="false"></xref> (e.g. upon instancing, scene changing, or after calling <xref href="Godot.Node.AddChild(Godot.Node%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref> in a script). If the node has children, its <xref href="Godot.Node._EnterTree" data-throw-if-not-resolved="false"></xref> callback will be called first, and then that of the children.</p>
+
+    <p>Corresponds to the <xref href="Godot.Node.NotificationEnterTree" data-throw-if-not-resolved="false"></xref> notification in <xref href="Godot.Object._Notification(System.Int32)" data-throw-if-not-resolved="false"></xref>.</p>
+  example: []
+  syntax:
+    content: public override void _EnterTree()
+    content.vb: Public Overrides Sub _EnterTree()
+  overridden: Godot.Node._EnterTree
+  overload: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._EnterTree*
+- uid: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._ExitTree
+  commentId: M:Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._ExitTree
+  id: _ExitTree
+  parent: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization
+  langs:
+  - csharp
+  - vb
+  name: _ExitTree()
+  nameWithType: RunTimeInitialization._ExitTree()
+  fullName: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._ExitTree()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Runtime/RunTimeInitialization.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: _ExitTree
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Runtime/RunTimeInitialization.cs
+    startLine: 53
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Runtime
+  summary: >-
+    <p>Called when the node is about to leave the <xref href="Godot.SceneTree" data-throw-if-not-resolved="false"></xref> (e.g. upon freeing, scene changing, or after calling <xref href="Godot.Node.RemoveChild(Godot.Node)" data-throw-if-not-resolved="false"></xref> in a script). If the node has children, its <xref href="Godot.Node._ExitTree" data-throw-if-not-resolved="false"></xref> callback will be called last, after all its children have left the tree.</p>
+
+    <p>Corresponds to the <xref href="Godot.Node.NotificationExitTree" data-throw-if-not-resolved="false"></xref> notification in <xref href="Godot.Object._Notification(System.Int32)" data-throw-if-not-resolved="false"></xref> and signal <code>tree_exiting</code>. To get notified when the node has already left the active tree, connect to the <code>tree_exited</code>.</p>
+  example: []
+  syntax:
+    content: public override void _ExitTree()
+    content.vb: Public Overrides Sub _ExitTree()
+  overridden: Godot.Node._ExitTree
+  overload: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._ExitTree*
 references:
 - uid: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute
   commentId: T:Cobilas.GodotEngine.Utility.Runtime.RunTimeInitializationClassAttribute
@@ -898,44 +992,6 @@ references:
   - name: " "
   - name: T
   - name: )
-  - name: (
-  - name: )
-- uid: Godot.Node._EnterTree
-  commentId: M:Godot.Node._EnterTree
-  parent: Godot.Node
-  isExternal: true
-  name: _EnterTree()
-  nameWithType: Node._EnterTree()
-  fullName: Godot.Node._EnterTree()
-  spec.csharp:
-  - uid: Godot.Node._EnterTree
-    name: _EnterTree
-    isExternal: true
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: Godot.Node._EnterTree
-    name: _EnterTree
-    isExternal: true
-  - name: (
-  - name: )
-- uid: Godot.Node._ExitTree
-  commentId: M:Godot.Node._ExitTree
-  parent: Godot.Node
-  isExternal: true
-  name: _ExitTree()
-  nameWithType: Node._ExitTree()
-  fullName: Godot.Node._ExitTree()
-  spec.csharp:
-  - uid: Godot.Node._ExitTree
-    name: _ExitTree
-    isExternal: true
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: Godot.Node._ExitTree
-    name: _ExitTree
-    isExternal: true
   - name: (
   - name: )
 - uid: Godot.Node._GetConfigurationWarning
@@ -6997,6 +7053,67 @@ references:
     name: Vector3D
     href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html
   - name: )
+- uid: System.Action{Cobilas.GodotEngine.Utility.Runtime.PlayModeStateChange}
+  commentId: T:System.Action{Cobilas.GodotEngine.Utility.Runtime.PlayModeStateChange}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<PlayModeStateChange>
+  nameWithType: Action<PlayModeStateChange>
+  fullName: System.Action<Cobilas.GodotEngine.Utility.Runtime.PlayModeStateChange>
+  nameWithType.vb: Action(Of PlayModeStateChange)
+  fullName.vb: System.Action(Of Cobilas.GodotEngine.Utility.Runtime.PlayModeStateChange)
+  name.vb: Action(Of PlayModeStateChange)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Cobilas.GodotEngine.Utility.Runtime.PlayModeStateChange
+    name: PlayModeStateChange
+    href: Cobilas.GodotEngine.Utility.Runtime.PlayModeStateChange.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Cobilas.GodotEngine.Utility.Runtime.PlayModeStateChange
+    name: PlayModeStateChange
+    href: Cobilas.GodotEngine.Utility.Runtime.PlayModeStateChange.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: Godot.Node._Ready
   commentId: M:Godot.Node._Ready
   parent: Godot.Node
@@ -7016,9 +7133,65 @@ references:
     isExternal: true
   - name: (
   - name: )
+- uid: Godot.Node._EnterTree
+  commentId: M:Godot.Node._EnterTree
+  parent: Godot.Node
+  isExternal: true
+  name: _EnterTree()
+  nameWithType: Node._EnterTree()
+  fullName: Godot.Node._EnterTree()
+  spec.csharp:
+  - uid: Godot.Node._EnterTree
+    name: _EnterTree
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.Node._EnterTree
+    name: _EnterTree
+    isExternal: true
+  - name: (
+  - name: )
 - uid: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._Ready*
   commentId: Overload:Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._Ready
   href: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization.html#Cobilas_GodotEngine_Utility_Runtime_RunTimeInitialization__Ready
   name: _Ready
   nameWithType: RunTimeInitialization._Ready
   fullName: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._Ready
+- uid: Godot.SceneTree
+  commentId: T:Godot.SceneTree
+  isExternal: true
+  name: SceneTree
+  nameWithType: SceneTree
+  fullName: Godot.SceneTree
+- uid: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._EnterTree*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._EnterTree
+  href: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization.html#Cobilas_GodotEngine_Utility_Runtime_RunTimeInitialization__EnterTree
+  name: _EnterTree
+  nameWithType: RunTimeInitialization._EnterTree
+  fullName: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._EnterTree
+- uid: Godot.Node._ExitTree
+  commentId: M:Godot.Node._ExitTree
+  parent: Godot.Node
+  isExternal: true
+  name: _ExitTree()
+  nameWithType: Node._ExitTree()
+  fullName: Godot.Node._ExitTree()
+  spec.csharp:
+  - uid: Godot.Node._ExitTree
+    name: _ExitTree
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.Node._ExitTree
+    name: _ExitTree
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._ExitTree*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._ExitTree
+  href: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization.html#Cobilas_GodotEngine_Utility_Runtime_RunTimeInitialization__ExitTree
+  name: _ExitTree
+  nameWithType: RunTimeInitialization._ExitTree
+  fullName: Cobilas.GodotEngine.Utility.Runtime.RunTimeInitialization._ExitTree
