@@ -5,6 +5,8 @@ items:
   id: Node_GD_CB_Extension
   parent: Godot
   children:
+  - Godot.Node_GD_CB_Extension.ContainsNode(Godot.Node,Godot.Node)
+  - Godot.Node_GD_CB_Extension.Duplicate``1(Godot.Node,System.Int32)
   - Godot.Node_GD_CB_Extension.FindNodeByName(Godot.Node,System.String)
   - Godot.Node_GD_CB_Extension.FindNodeByName(Godot.Node,System.String,System.Boolean)
   - Godot.Node_GD_CB_Extension.FindNodeByName(Godot.Node,System.String,System.Type,System.Boolean)
@@ -17,7 +19,6 @@ items:
   - Godot.Node_GD_CB_Extension.GetNodePosition(Godot.Node)
   - Godot.Node_GD_CB_Extension.GetNodeRotation(Godot.Node)
   - Godot.Node_GD_CB_Extension.GetNodeScale(Godot.Node)
-  - Godot.Node_GD_CB_Extension.Print(Godot.Node,System.Object[])
   - Godot.Node_GD_CB_Extension.SetNodePosition(Godot.Node,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   - Godot.Node_GD_CB_Extension.SetNodeRotation(Godot.Node,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   - Godot.Node_GD_CB_Extension.SetNodeScale(Godot.Node,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
@@ -31,11 +32,11 @@ items:
   source:
     remote:
       path: Godot/Node_GD_CB_Extension.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Node_GD_CB_Extension
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Node_GD_CB_Extension.cs
-    startLine: 7
+    startLine: 8
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
@@ -54,61 +55,6 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-- uid: Godot.Node_GD_CB_Extension.Print(Godot.Node,System.Object[])
-  commentId: M:Godot.Node_GD_CB_Extension.Print(Godot.Node,System.Object[])
-  id: Print(Godot.Node,System.Object[])
-  isExtensionMethod: true
-  parent: Godot.Node_GD_CB_Extension
-  langs:
-  - csharp
-  - vb
-  name: Print(Node, params object[])
-  nameWithType: Node_GD_CB_Extension.Print(Node, params object[])
-  fullName: Godot.Node_GD_CB_Extension.Print(Godot.Node, params object[])
-  type: Method
-  source:
-    remote:
-      path: Godot/Node_GD_CB_Extension.cs
-      branch: main
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Print
-    path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Node_GD_CB_Extension.cs
-    startLine: 11
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Godot
-  summary: >-
-    Converts one or more arguments of any type to string in the best way possible
-
-    and prints them to the console.
-
-
-    Note: Consider using <xref href="Godot.GD.PushError(System.String)" data-throw-if-not-resolved="false"></xref> and <xref href="Godot.GD.PushWarning(System.String)" data-throw-if-not-resolved="false"></xref>
-
-    to print error and warning messages instead of <xref href="Godot.GD.Print(System.Object%5b%5d)" data-throw-if-not-resolved="false"></xref>.
-
-    This distinguishes them from print messages used for debugging purposes,
-
-    while also displaying a stack trace when an error or warning is printed.
-  example:
-  - >-
-    <pre><code class="lang-csharp">var a = new int[] { 1, 2, 3 };
-
-    GD.Print("a", "b", a); // Prints ab[1, 2, 3]</code></pre>
-  syntax:
-    content: public static void Print(this Node N, params object[] args)
-    parameters:
-    - id: N
-      type: Godot.Node
-      description: The <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref> that will be used.
-    - id: args
-      type: System.Object[]
-      description: The arguments passed will be printed to the console.
-    content.vb: Public Shared Sub Print(N As Node, ParamArray args As Object())
-  overload: Godot.Node_GD_CB_Extension.Print*
-  nameWithType.vb: Node_GD_CB_Extension.Print(Node, ParamArray Object())
-  fullName.vb: Godot.Node_GD_CB_Extension.Print(Godot.Node, ParamArray Object())
-  name.vb: Print(Node, ParamArray Object())
 - uid: Godot.Node_GD_CB_Extension.SetNodePosition(Godot.Node,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   commentId: M:Godot.Node_GD_CB_Extension.SetNodePosition(Godot.Node,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   id: SetNodePosition(Godot.Node,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
@@ -124,11 +70,11 @@ items:
   source:
     remote:
       path: Godot/Node_GD_CB_Extension.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SetNodePosition
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Node_GD_CB_Extension.cs
-    startLine: 18
+    startLine: 15
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
@@ -162,11 +108,11 @@ items:
   source:
     remote:
       path: Godot/Node_GD_CB_Extension.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SetNodeRotation
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Node_GD_CB_Extension.cs
-    startLine: 27
+    startLine: 25
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
@@ -200,11 +146,11 @@ items:
   source:
     remote:
       path: Godot/Node_GD_CB_Extension.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SetNodeScale
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Node_GD_CB_Extension.cs
-    startLine: 36
+    startLine: 35
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
@@ -238,7 +184,7 @@ items:
   source:
     remote:
       path: Godot/Node_GD_CB_Extension.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetNodePosition
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Node_GD_CB_Extension.cs
@@ -276,11 +222,11 @@ items:
   source:
     remote:
       path: Godot/Node_GD_CB_Extension.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetNodeRotation
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Node_GD_CB_Extension.cs
-    startLine: 55
+    startLine: 56
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
@@ -314,11 +260,11 @@ items:
   source:
     remote:
       path: Godot/Node_GD_CB_Extension.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetNodeScale
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Node_GD_CB_Extension.cs
-    startLine: 65
+    startLine: 67
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
@@ -352,11 +298,11 @@ items:
   source:
     remote:
       path: Godot/Node_GD_CB_Extension.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: FindNodes
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Node_GD_CB_Extension.cs
-    startLine: 75
+    startLine: 78
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
@@ -397,11 +343,11 @@ items:
   source:
     remote:
       path: Godot/Node_GD_CB_Extension.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: FindNodes
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Node_GD_CB_Extension.cs
-    startLine: 94
+    startLine: 100
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
@@ -439,11 +385,11 @@ items:
   source:
     remote:
       path: Godot/Node_GD_CB_Extension.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: FindNodes
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Node_GD_CB_Extension.cs
-    startLine: 104
+    startLine: 110
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
@@ -484,11 +430,11 @@ items:
   source:
     remote:
       path: Godot/Node_GD_CB_Extension.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: FindNodes
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Node_GD_CB_Extension.cs
-    startLine: 113
+    startLine: 119
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
@@ -528,11 +474,11 @@ items:
   source:
     remote:
       path: Godot/Node_GD_CB_Extension.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: FindNodeByName
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Node_GD_CB_Extension.cs
-    startLine: 124
+    startLine: 130
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
@@ -576,11 +522,11 @@ items:
   source:
     remote:
       path: Godot/Node_GD_CB_Extension.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: FindNodeByName
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Node_GD_CB_Extension.cs
-    startLine: 138
+    startLine: 145
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
@@ -623,11 +569,11 @@ items:
   source:
     remote:
       path: Godot/Node_GD_CB_Extension.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: FindNodeByName
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Node_GD_CB_Extension.cs
-    startLine: 148
+    startLine: 155
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
@@ -667,11 +613,11 @@ items:
   source:
     remote:
       path: Godot/Node_GD_CB_Extension.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: FindNodeByName
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Node_GD_CB_Extension.cs
-    startLine: 158
+    startLine: 165
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
@@ -714,11 +660,11 @@ items:
   source:
     remote:
       path: Godot/Node_GD_CB_Extension.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: FindNodeByName
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Node_GD_CB_Extension.cs
-    startLine: 167
+    startLine: 174
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
@@ -745,6 +691,91 @@ items:
   nameWithType.vb: Node_GD_CB_Extension.FindNodeByName(Of T)(Node, String)
   fullName.vb: Godot.Node_GD_CB_Extension.FindNodeByName(Of T)(Godot.Node, String)
   name.vb: FindNodeByName(Of T)(Node, String)
+- uid: Godot.Node_GD_CB_Extension.Duplicate``1(Godot.Node,System.Int32)
+  commentId: M:Godot.Node_GD_CB_Extension.Duplicate``1(Godot.Node,System.Int32)
+  id: Duplicate``1(Godot.Node,System.Int32)
+  isExtensionMethod: true
+  parent: Godot.Node_GD_CB_Extension
+  langs:
+  - csharp
+  - vb
+  name: Duplicate<T>(Node, int)
+  nameWithType: Node_GD_CB_Extension.Duplicate<T>(Node, int)
+  fullName: Godot.Node_GD_CB_Extension.Duplicate<T>(Godot.Node, int)
+  type: Method
+  source:
+    remote:
+      path: Godot/Node_GD_CB_Extension.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Duplicate
+    path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Node_GD_CB_Extension.cs
+    startLine: 178
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Godot
+  summary: >-
+    <p>Duplicates the node, returning a new node.</p>
+
+    <p>You can fine-tune the behavior using the <code>flags</code> (see <xref href="Godot.Node.DuplicateFlags" data-throw-if-not-resolved="false"></xref>).</p>
+
+    <p>Note: It will not work properly if the node contains a script with constructor arguments (i.e. needs to supply arguments to  method). In that case, the node will be duplicated without a script.</p>
+  example: []
+  syntax:
+    content: 'public static T Duplicate<T>(this Node node, int flags = 15) where T : Node'
+    parameters:
+    - id: node
+      type: Godot.Node
+    - id: flags
+      type: System.Int32
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function Duplicate(Of T As Node)(node As Node, flags As Integer = 15) As T
+  overload: Godot.Node_GD_CB_Extension.Duplicate*
+  nameWithType.vb: Node_GD_CB_Extension.Duplicate(Of T)(Node, Integer)
+  fullName.vb: Godot.Node_GD_CB_Extension.Duplicate(Of T)(Godot.Node, Integer)
+  name.vb: Duplicate(Of T)(Node, Integer)
+- uid: Godot.Node_GD_CB_Extension.ContainsNode(Godot.Node,Godot.Node)
+  commentId: M:Godot.Node_GD_CB_Extension.ContainsNode(Godot.Node,Godot.Node)
+  id: ContainsNode(Godot.Node,Godot.Node)
+  isExtensionMethod: true
+  parent: Godot.Node_GD_CB_Extension
+  langs:
+  - csharp
+  - vb
+  name: ContainsNode(Node, Node)
+  nameWithType: Node_GD_CB_Extension.ContainsNode(Node, Node)
+  fullName: Godot.Node_GD_CB_Extension.ContainsNode(Godot.Node, Godot.Node)
+  type: Method
+  source:
+    remote:
+      path: Godot/Node_GD_CB_Extension.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ContainsNode
+    path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Node_GD_CB_Extension.cs
+    startLine: 185
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Godot
+  summary: Allows you to check whether a given <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref> object is a child.
+  example: []
+  syntax:
+    content: public static bool ContainsNode(this Node origin, Node node)
+    parameters:
+    - id: origin
+      type: Godot.Node
+      description: The target object.
+    - id: node
+      type: Godot.Node
+      description: The <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref> to be compared.
+    return:
+      type: System.Boolean
+      description: Returns <code>true</code> when the target object contains the comparison object.
+    content.vb: Public Shared Function ContainsNode(origin As Node, node As Node) As Boolean
+  overload: Godot.Node_GD_CB_Extension.ContainsNode*
 references:
 - uid: Godot.Node
   commentId: T:Godot.Node
@@ -996,133 +1027,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Godot.GD.PushError(System.String)
-  commentId: M:Godot.GD.PushError(System.String)
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: PushError(string)
-  nameWithType: GD.PushError(string)
-  fullName: Godot.GD.PushError(string)
-  nameWithType.vb: GD.PushError(String)
-  fullName.vb: Godot.GD.PushError(String)
-  name.vb: PushError(String)
-  spec.csharp:
-  - uid: Godot.GD.PushError(System.String)
-    name: PushError
-    isExternal: true
-  - name: (
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
-  spec.vb:
-  - uid: Godot.GD.PushError(System.String)
-    name: PushError
-    isExternal: true
-  - name: (
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
-- uid: Godot.GD.PushWarning(System.String)
-  commentId: M:Godot.GD.PushWarning(System.String)
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: PushWarning(string)
-  nameWithType: GD.PushWarning(string)
-  fullName: Godot.GD.PushWarning(string)
-  nameWithType.vb: GD.PushWarning(String)
-  fullName.vb: Godot.GD.PushWarning(String)
-  name.vb: PushWarning(String)
-  spec.csharp:
-  - uid: Godot.GD.PushWarning(System.String)
-    name: PushWarning
-    isExternal: true
-  - name: (
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
-  spec.vb:
-  - uid: Godot.GD.PushWarning(System.String)
-    name: PushWarning
-    isExternal: true
-  - name: (
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
-- uid: Godot.GD.Print(System.Object[])
-  commentId: M:Godot.GD.Print(System.Object[])
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
-  name: Print(params object[])
-  nameWithType: GD.Print(params object[])
-  fullName: Godot.GD.Print(params object[])
-  nameWithType.vb: GD.Print(ParamArray Object())
-  fullName.vb: Godot.GD.Print(ParamArray Object())
-  name.vb: Print(ParamArray Object())
-  spec.csharp:
-  - uid: Godot.GD.Print(System.Object[])
-    name: Print
-    isExternal: true
-  - name: (
-  - name: params
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: '['
-  - name: ']'
-  - name: )
-  spec.vb:
-  - uid: Godot.GD.Print(System.Object[])
-    name: Print
-    isExternal: true
-  - name: (
-  - name: ParamArray
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: (
-  - name: )
-  - name: )
-- uid: Godot.Node_GD_CB_Extension.Print*
-  commentId: Overload:Godot.Node_GD_CB_Extension.Print
-  href: Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_Print_Godot_Node_System_Object___
-  name: Print
-  nameWithType: Node_GD_CB_Extension.Print
-  fullName: Godot.Node_GD_CB_Extension.Print
-- uid: System.Object[]
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
-  name: object[]
-  nameWithType: object[]
-  fullName: object[]
-  nameWithType.vb: Object()
-  fullName.vb: Object()
-  name.vb: Object()
-  spec.csharp:
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: '['
-  - name: ']'
-  spec.vb:
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: (
-  - name: )
 - uid: Godot.Node2D
   commentId: T:Godot.Node2D
   parent: Godot
@@ -1342,3 +1246,48 @@ references:
   name: T
   nameWithType: T
   fullName: T
+- uid: Godot.Node.DuplicateFlags
+  commentId: T:Godot.Node.DuplicateFlags
+  isExternal: true
+  name: Node.DuplicateFlags
+  nameWithType: Node.DuplicateFlags
+  fullName: Godot.Node.DuplicateFlags
+  spec.csharp:
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: .
+  - uid: Godot.Node.DuplicateFlags
+    name: DuplicateFlags
+    isExternal: true
+  spec.vb:
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: .
+  - uid: Godot.Node.DuplicateFlags
+    name: DuplicateFlags
+    isExternal: true
+- uid: Godot.Node_GD_CB_Extension.Duplicate*
+  commentId: Overload:Godot.Node_GD_CB_Extension.Duplicate
+  href: Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_Duplicate__1_Godot_Node_System_Int32_
+  name: Duplicate
+  nameWithType: Node_GD_CB_Extension.Duplicate
+  fullName: Godot.Node_GD_CB_Extension.Duplicate
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Godot.Node_GD_CB_Extension.ContainsNode*
+  commentId: Overload:Godot.Node_GD_CB_Extension.ContainsNode
+  href: Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_ContainsNode_Godot_Node_Godot_Node_
+  name: ContainsNode
+  nameWithType: Node_GD_CB_Extension.ContainsNode
+  fullName: Godot.Node_GD_CB_Extension.ContainsNode

@@ -90,7 +90,7 @@ items:
   - Cobilas.Core
   namespace: Cobilas.Collections
   syntax:
-    content: protected T[] list
+    content: protected T[]? list
     return:
       type: '{T}[]'
     content.vb: Protected list As T()
@@ -227,9 +227,9 @@ items:
   langs:
   - csharp
   - vb
-  name: ArrayToIEnumerator(T[])
-  nameWithType: ArrayToIEnumerator<T>.ArrayToIEnumerator(T[])
-  fullName: Cobilas.Collections.ArrayToIEnumerator<T>.ArrayToIEnumerator(T[])
+  name: ArrayToIEnumerator(T[]?)
+  nameWithType: ArrayToIEnumerator<T>.ArrayToIEnumerator(T[]?)
+  fullName: Cobilas.Collections.ArrayToIEnumerator<T>.ArrayToIEnumerator(T[]?)
   type: Constructor
   source:
     remote:
@@ -245,7 +245,7 @@ items:
   summary: Creates a new instance of this object.
   example: []
   syntax:
-    content: public ArrayToIEnumerator(T[] list)
+    content: public ArrayToIEnumerator(T[]? list)
     parameters:
     - id: list
       type: '{T}[]'
@@ -306,7 +306,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Reset
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayToIEnumerator.cs
-    startLine: 33
+    startLine: 34
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -338,7 +338,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Dispose
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayToIEnumerator.cs
-    startLine: 37
+    startLine: 38
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -372,7 +372,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Dispose
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayToIEnumerator.cs
-    startLine: 51
+    startLine: 52
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -1041,7 +1041,6 @@ references:
   - name: )
 - uid: System.Collections.Generic
   commentId: N:System.Collections.Generic
-  isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system
   name: System.Collections.Generic
   nameWithType: System.Collections.Generic
@@ -1049,32 +1048,26 @@ references:
   spec.csharp:
   - uid: System
     name: System
-    isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system
   - name: .
   - uid: System.Collections
     name: Collections
-    isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections
   - name: .
   - uid: System.Collections.Generic
     name: Generic
-    isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
   spec.vb:
   - uid: System
     name: System
-    isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system
   - name: .
   - uid: System.Collections
     name: Collections
-    isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections
   - name: .
   - uid: System.Collections.Generic
     name: Generic
-    isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: System.Collections
   commentId: N:System.Collections

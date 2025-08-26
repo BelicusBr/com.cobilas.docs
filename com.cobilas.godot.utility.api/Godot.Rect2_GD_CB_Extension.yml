@@ -6,6 +6,7 @@ items:
   parent: Godot
   children:
   - Godot.Rect2_GD_CB_Extension.Bottom(Godot.Rect2)
+  - Godot.Rect2_GD_CB_Extension.Contains(Godot.Rect2,Cobilas.GodotEngine.Utility.Numerics.Vector2D@)
   - Godot.Rect2_GD_CB_Extension.Left(Godot.Rect2)
   - Godot.Rect2_GD_CB_Extension.Right(Godot.Rect2)
   - Godot.Rect2_GD_CB_Extension.Top(Godot.Rect2)
@@ -19,11 +20,11 @@ items:
   source:
     remote:
       path: Godot/Rect2_GD_CB_Extension.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Rect2_GD_CB_Extension
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Rect2_GD_CB_Extension.cs
-    startLine: 2
+    startLine: 5
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
@@ -57,11 +58,11 @@ items:
   source:
     remote:
       path: Godot/Rect2_GD_CB_Extension.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Top
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Rect2_GD_CB_Extension.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
@@ -93,11 +94,11 @@ items:
   source:
     remote:
       path: Godot/Rect2_GD_CB_Extension.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Bottom
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Rect2_GD_CB_Extension.cs
-    startLine: 10
+    startLine: 13
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
@@ -129,11 +130,11 @@ items:
   source:
     remote:
       path: Godot/Rect2_GD_CB_Extension.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Left
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Rect2_GD_CB_Extension.cs
-    startLine: 14
+    startLine: 17
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
@@ -165,11 +166,11 @@ items:
   source:
     remote:
       path: Godot/Rect2_GD_CB_Extension.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Right
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Rect2_GD_CB_Extension.cs
-    startLine: 18
+    startLine: 21
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
@@ -186,6 +187,48 @@ items:
       description: Returns a floating-point right position of <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function Right(R As Rect2) As Single
   overload: Godot.Rect2_GD_CB_Extension.Right*
+- uid: Godot.Rect2_GD_CB_Extension.Contains(Godot.Rect2,Cobilas.GodotEngine.Utility.Numerics.Vector2D@)
+  commentId: M:Godot.Rect2_GD_CB_Extension.Contains(Godot.Rect2,Cobilas.GodotEngine.Utility.Numerics.Vector2D@)
+  id: Contains(Godot.Rect2,Cobilas.GodotEngine.Utility.Numerics.Vector2D@)
+  isExtensionMethod: true
+  parent: Godot.Rect2_GD_CB_Extension
+  langs:
+  - csharp
+  - vb
+  name: Contains(Rect2, in Vector2D)
+  nameWithType: Rect2_GD_CB_Extension.Contains(Rect2, in Vector2D)
+  fullName: Godot.Rect2_GD_CB_Extension.Contains(Godot.Rect2, in Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  type: Method
+  source:
+    remote:
+      path: Godot/Rect2_GD_CB_Extension.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Contains
+    path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Rect2_GD_CB_Extension.cs
+    startLine: 26
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Godot
+  summary: Allows you to check if the mouse position is inside the 2D rectangle.
+  example: []
+  syntax:
+    content: public static bool Contains(this Rect2 rect, in Vector2D mousePosition)
+    parameters:
+    - id: rect
+      type: Godot.Rect2
+      description: The 2D rectangle to be used.
+    - id: mousePosition
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+      description: The mouse position to be compared.
+    return:
+      type: System.Boolean
+      description: Returns <code>true</code> when the mouse position is inside the 2D rectangle.
+    content.vb: Public Shared Function Contains(rect As Rect2, mousePosition As Vector2D) As Boolean
+  overload: Godot.Rect2_GD_CB_Extension.Contains*
+  nameWithType.vb: Rect2_GD_CB_Extension.Contains(Rect2, Vector2D)
+  fullName.vb: Godot.Rect2_GD_CB_Extension.Contains(Godot.Rect2, Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  name.vb: Contains(Rect2, Vector2D)
 references:
 - uid: Godot.Rect2
   commentId: T:Godot.Rect2
@@ -472,3 +515,65 @@ references:
   name: Right
   nameWithType: Rect2_GD_CB_Extension.Right
   fullName: Godot.Rect2_GD_CB_Extension.Right
+- uid: Godot.Rect2_GD_CB_Extension.Contains*
+  commentId: Overload:Godot.Rect2_GD_CB_Extension.Contains
+  href: Godot.Rect2_GD_CB_Extension.html#Godot_Rect2_GD_CB_Extension_Contains_Godot_Rect2_Cobilas_GodotEngine_Utility_Numerics_Vector2D__
+  name: Contains
+  nameWithType: Rect2_GD_CB_Extension.Contains
+  fullName: Godot.Rect2_GD_CB_Extension.Contains
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+  commentId: T:Cobilas.GodotEngine.Utility.Numerics.Vector2D
+  parent: Cobilas.GodotEngine.Utility.Numerics
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector2D.html
+  name: Vector2D
+  nameWithType: Vector2D
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Cobilas.GodotEngine.Utility.Numerics
+  commentId: N:Cobilas.GodotEngine.Utility.Numerics
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Utility.Numerics
+  nameWithType: Cobilas.GodotEngine.Utility.Numerics
+  fullName: Cobilas.GodotEngine.Utility.Numerics
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.Numerics
+    name: Numerics
+    href: Cobilas.GodotEngine.Utility.Numerics.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.Numerics
+    name: Numerics
+    href: Cobilas.GodotEngine.Utility.Numerics.html

@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Cobilas Godot IComponent | Cobilas Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Cobilas Godot IComponent | Cobilas Documentation ">
+      
+      
+      <link rel="icon" href="images/favicon-96x96.png">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.godot.utility.io/blob/main/gd-icomponent-started.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="images/apple-icon-57x57.png" alt="Cobilas Documentation">
+            Cobilas Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="cobilas-godot-icomponent">Cobilas Godot IComponent</h1>
+
+<p>This package aims to transform a <code>Node</code> object into a pseudo-component in the style of the <code>Unity Engine</code> to facilitate obtaining objects and adding child objects.</p>
+<h2 id="usage">Usage</h2>
+<p>To use the <code>IComponentHub</code> interface, it must be inherited by a <code>Node</code> object, and you can also use the serializable <code>InternalComponentHub</code> class to automate the addition, removal, and retrieval of child <code>Node</code> objects.
+However, implementing the <code>IComponentHub</code> interface manually will only require a little work.</p>
+<h2 id="exemplo">Exemplo</h2>
+<pre><code class="lang-c#">using Godot;
+using Cobilas.GodotEngine.Component;
+
+public class MonoNode : Node, IComponentHub {
+    private InternalComponentHub components;
+
+    public Node Parent =&gt; components.Parent;
+    public int ComponentsCount =&gt; components.ComponentsCount;
+    public IComponentHub ParentComponent =&gt; components.ParentComponent;
+
+    public Node AddComponent(Type component) =&gt; components.AddComponent(component);
+    public T AddComponent&lt;T&gt;() where T : Node =&gt; ((IComponentHub)components).AddComponent&lt;T&gt;();
+    public void AddComponents(params Type[] components) =&gt; this.components.AddComponents(components);
+    public void AddNodeComponent(Node component) =&gt; components.AddNodeComponent(component);
+    public void AddNodeComponents(params Node[] components) =&gt; this.components.AddNodeComponents(components);
+    public Node GetComponent(Type component) =&gt; components.GetComponent(component);
+    public Node GetComponent(Type component, bool recursive) =&gt; components.GetComponent(component, recursive);
+    public T GetComponent&lt;T&gt;() where T : Node =&gt; ((IComponentHub)components).GetComponent&lt;T&gt;();
+    public T GetComponent&lt;T&gt;(bool recursive) where T : Node =&gt; ((IComponentHub)components).GetComponent&lt;T&gt;(recursive);
+    public Node[] GetComponents(Type component) =&gt; components.GetComponents(component);
+    public Node[] GetComponents(Type component, bool recursive) =&gt; components.GetComponents(component, recursive);
+    public T[] GetComponents&lt;T&gt;() where T : Node =&gt; ((IComponentHub)components).GetComponents&lt;T&gt;();
+    public T[] GetComponents&lt;T&gt;(bool recursive) where T : Node =&gt; ((IComponentHub)components).GetComponents&lt;T&gt;(recursive);
+    public IEnumerator&lt;Node&gt; GetEnumerator() =&gt; components.GetEnumerator();
+    public bool RemoveComponent(Node component) =&gt; components.RemoveComponent(component);
+    public void RemoveComponents(params Node[] components) =&gt; this.components.RemoveComponents(components);
+    IEnumerator IEnumerable.GetEnumerator() =&gt; ((IEnumerable)components).GetEnumerator();
+
+    protected override void Dispose(bool disposing) {
+        base.Dispose(disposing);
+        components?.Dispose();
+    }
+}
+</code></pre>
+<h2 id="the-cobilas-godot-icomponent-is-on-nugetorg">The <a href="https://www.nuget.org/packages/Cobilas.Godot.IComponent/">Cobilas Godot IComponent</a> is on nuget.org</h2>
+<p>To include the package, open the <code>.csproj</code> file and add it.</p>
+<pre><code class="lang-xml">&lt;ItemGroup&gt;
+	&lt;PackageReference Include=&quot;Cobilas.Godot.IComponent&quot; Version=&quot;1.0.0&quot; /&gt;
+&lt;/ItemGroup&gt;
+</code></pre>
+<p>Or use command line.</p>
+<pre><code>dotnet add package Cobilas.Godot.IComponent --version 1.0.0
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility.io/blob/main/gd-icomponent-started.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

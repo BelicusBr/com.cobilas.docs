@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/NullNode.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: NullNode
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/NullNode.cs
@@ -252,6 +252,8 @@ items:
   - System.Object.GetType
   - System.Object.MemberwiseClone
   extensionMethods:
+  - Godot.Node.Godot.Node_GD_CB_Extension.ContainsNode(Godot.Node)
+  - Godot.Node.Godot.Node_GD_CB_Extension.Duplicate``1(System.Int32)
   - Godot.Node.Godot.Node_GD_CB_Extension.FindNodeByName(System.String)
   - Godot.Node.Godot.Node_GD_CB_Extension.FindNodeByName(System.String,System.Boolean)
   - Godot.Node.Godot.Node_GD_CB_Extension.FindNodeByName(System.String,System.Type,System.Boolean)
@@ -264,10 +266,12 @@ items:
   - Godot.Node.Godot.Node_GD_CB_Extension.GetNodePosition
   - Godot.Node.Godot.Node_GD_CB_Extension.GetNodeRotation
   - Godot.Node.Godot.Node_GD_CB_Extension.GetNodeScale
-  - Godot.Node.Godot.Node_GD_CB_Extension.Print(System.Object[])
   - Godot.Node.Godot.Node_GD_CB_Extension.SetNodePosition(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   - Godot.Node.Godot.Node_GD_CB_Extension.SetNodeRotation(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   - Godot.Node.Godot.Node_GD_CB_Extension.SetNodeScale(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  - Godot.Object.Godot.Object_CB_GD_Extension.Print(System.Object[])
+  - Godot.Object.Godot.Object_CB_GD_Extension.SafelySetScript``1(Godot.Resource)
+  - Godot.Object.Godot.Object_CB_GD_Extension.SafelySetScript``1(System.String)
 - uid: Cobilas.GodotEngine.Utility.NullNode.Null
   commentId: P:Cobilas.GodotEngine.Utility.NullNode.Null
   id: "Null"
@@ -282,7 +286,7 @@ items:
   source:
     remote:
       path: GodotEngine.Utility/NullNode.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: "Null"
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/NullNode.cs
@@ -5608,6 +5612,91 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   - name: (
   - name: )
+- uid: Godot.Node.Godot.Node_GD_CB_Extension.ContainsNode(Godot.Node)
+  commentId: M:Godot.Node_GD_CB_Extension.ContainsNode(Godot.Node,Godot.Node)
+  parent: Godot.Node_GD_CB_Extension
+  definition: Godot.Node_GD_CB_Extension.ContainsNode(Godot.Node,Godot.Node)
+  href: Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_ContainsNode_Godot_Node_Godot_Node_
+  name: ContainsNode(Node, Node)
+  nameWithType: Node_GD_CB_Extension.ContainsNode(Node, Node)
+  fullName: Godot.Node_GD_CB_Extension.ContainsNode(Godot.Node, Godot.Node)
+  spec.csharp:
+  - uid: Godot.Node_GD_CB_Extension.ContainsNode(Godot.Node,Godot.Node)
+    name: ContainsNode
+    href: Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_ContainsNode_Godot_Node_Godot_Node_
+  - name: (
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Godot.Node_GD_CB_Extension.ContainsNode(Godot.Node,Godot.Node)
+    name: ContainsNode
+    href: Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_ContainsNode_Godot_Node_Godot_Node_
+  - name: (
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: )
+- uid: Godot.Node.Godot.Node_GD_CB_Extension.Duplicate``1(System.Int32)
+  commentId: M:Godot.Node_GD_CB_Extension.Duplicate``1(Godot.Node,System.Int32)
+  parent: Godot.Node_GD_CB_Extension
+  definition: Godot.Node_GD_CB_Extension.Duplicate``1(Godot.Node,System.Int32)
+  href: Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_Duplicate__1_Godot_Node_System_Int32_
+  name: Duplicate<T>(Node, int)
+  nameWithType: Node_GD_CB_Extension.Duplicate<T>(Node, int)
+  fullName: Godot.Node_GD_CB_Extension.Duplicate<T>(Godot.Node, int)
+  nameWithType.vb: Node_GD_CB_Extension.Duplicate(Of T)(Node, Integer)
+  fullName.vb: Godot.Node_GD_CB_Extension.Duplicate(Of T)(Godot.Node, Integer)
+  name.vb: Duplicate(Of T)(Node, Integer)
+  spec.csharp:
+  - uid: Godot.Node_GD_CB_Extension.Duplicate``1(Godot.Node,System.Int32)
+    name: Duplicate
+    href: Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_Duplicate__1_Godot_Node_System_Int32_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Godot.Node_GD_CB_Extension.Duplicate``1(Godot.Node,System.Int32)
+    name: Duplicate
+    href: Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_Duplicate__1_Godot_Node_System_Int32_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
 - uid: Godot.Node.Godot.Node_GD_CB_Extension.FindNodeByName(System.String)
   commentId: M:Godot.Node_GD_CB_Extension.FindNodeByName(Godot.Node,System.String)
   parent: Godot.Node_GD_CB_Extension
@@ -6132,55 +6221,6 @@ references:
     name: Node
     isExternal: true
   - name: )
-- uid: Godot.Node.Godot.Node_GD_CB_Extension.Print(System.Object[])
-  commentId: M:Godot.Node_GD_CB_Extension.Print(Godot.Node,System.Object[])
-  parent: Godot.Node_GD_CB_Extension
-  definition: Godot.Node_GD_CB_Extension.Print(Godot.Node,System.Object[])
-  href: Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_Print_Godot_Node_System_Object___
-  name: Print(Node, params object[])
-  nameWithType: Node_GD_CB_Extension.Print(Node, params object[])
-  fullName: Godot.Node_GD_CB_Extension.Print(Godot.Node, params object[])
-  nameWithType.vb: Node_GD_CB_Extension.Print(Node, ParamArray Object())
-  fullName.vb: Godot.Node_GD_CB_Extension.Print(Godot.Node, ParamArray Object())
-  name.vb: Print(Node, ParamArray Object())
-  spec.csharp:
-  - uid: Godot.Node_GD_CB_Extension.Print(Godot.Node,System.Object[])
-    name: Print
-    href: Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_Print_Godot_Node_System_Object___
-  - name: (
-  - uid: Godot.Node
-    name: Node
-    isExternal: true
-  - name: ','
-  - name: " "
-  - name: params
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: '['
-  - name: ']'
-  - name: )
-  spec.vb:
-  - uid: Godot.Node_GD_CB_Extension.Print(Godot.Node,System.Object[])
-    name: Print
-    href: Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_Print_Godot_Node_System_Object___
-  - name: (
-  - uid: Godot.Node
-    name: Node
-    isExternal: true
-  - name: ','
-  - name: " "
-  - name: ParamArray
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: (
-  - name: )
-  - name: )
 - uid: Godot.Node.Godot.Node_GD_CB_Extension.SetNodePosition(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   commentId: M:Godot.Node_GD_CB_Extension.SetNodePosition(Godot.Node,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   parent: Godot.Node_GD_CB_Extension
@@ -6289,6 +6329,151 @@ references:
     name: Vector3D
     href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html
   - name: )
+- uid: Godot.Object.Godot.Object_CB_GD_Extension.Print(System.Object[])
+  commentId: M:Godot.Object_CB_GD_Extension.Print(Godot.Object,System.Object[])
+  parent: Godot.Object_CB_GD_Extension
+  definition: Godot.Object_CB_GD_Extension.Print(Godot.Object,System.Object[])
+  href: Godot.Object_CB_GD_Extension.html#Godot_Object_CB_GD_Extension_Print_Godot_Object_System_Object___
+  name: Print(Object, params object[])
+  nameWithType: Object_CB_GD_Extension.Print(Object, params object[])
+  fullName: Godot.Object_CB_GD_Extension.Print(Godot.Object, params object[])
+  nameWithType.vb: Object_CB_GD_Extension.Print(Object, ParamArray Object())
+  fullName.vb: Godot.Object_CB_GD_Extension.Print(Godot.Object, ParamArray Object())
+  name.vb: Print(Object, ParamArray Object())
+  spec.csharp:
+  - uid: Godot.Object_CB_GD_Extension.Print(Godot.Object,System.Object[])
+    name: Print
+    href: Godot.Object_CB_GD_Extension.html#Godot_Object_CB_GD_Extension_Print_Godot_Object_System_Object___
+  - name: (
+  - uid: Godot.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Godot.Object_CB_GD_Extension.Print(Godot.Object,System.Object[])
+    name: Print
+    href: Godot.Object_CB_GD_Extension.html#Godot_Object_CB_GD_Extension_Print_Godot_Object_System_Object___
+  - name: (
+  - uid: Godot.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: Godot.Object.Godot.Object_CB_GD_Extension.SafelySetScript``1(Godot.Resource)
+  commentId: M:Godot.Object_CB_GD_Extension.SafelySetScript``1(Godot.Object,Godot.Resource)
+  parent: Godot.Object_CB_GD_Extension
+  definition: Godot.Object_CB_GD_Extension.SafelySetScript``1(Godot.Object,Godot.Resource)
+  href: Godot.Object_CB_GD_Extension.html#Godot_Object_CB_GD_Extension_SafelySetScript__1_Godot_Object_Godot_Resource_
+  name: SafelySetScript<T>(Object, Resource)
+  nameWithType: Object_CB_GD_Extension.SafelySetScript<T>(Object, Resource)
+  fullName: Godot.Object_CB_GD_Extension.SafelySetScript<T>(Godot.Object, Godot.Resource)
+  nameWithType.vb: Object_CB_GD_Extension.SafelySetScript(Of T)(Object, Resource)
+  fullName.vb: Godot.Object_CB_GD_Extension.SafelySetScript(Of T)(Godot.Object, Godot.Resource)
+  name.vb: SafelySetScript(Of T)(Object, Resource)
+  spec.csharp:
+  - uid: Godot.Object_CB_GD_Extension.SafelySetScript``1(Godot.Object,Godot.Resource)
+    name: SafelySetScript
+    href: Godot.Object_CB_GD_Extension.html#Godot_Object_CB_GD_Extension_SafelySetScript__1_Godot_Object_Godot_Resource_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Godot.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Godot.Resource
+    name: Resource
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Godot.Object_CB_GD_Extension.SafelySetScript``1(Godot.Object,Godot.Resource)
+    name: SafelySetScript
+    href: Godot.Object_CB_GD_Extension.html#Godot_Object_CB_GD_Extension_SafelySetScript__1_Godot_Object_Godot_Resource_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Godot.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Godot.Resource
+    name: Resource
+    isExternal: true
+  - name: )
+- uid: Godot.Object.Godot.Object_CB_GD_Extension.SafelySetScript``1(System.String)
+  commentId: M:Godot.Object_CB_GD_Extension.SafelySetScript``1(Godot.Object,System.String)
+  parent: Godot.Object_CB_GD_Extension
+  definition: Godot.Object_CB_GD_Extension.SafelySetScript``1(Godot.Object,System.String)
+  href: Godot.Object_CB_GD_Extension.html#Godot_Object_CB_GD_Extension_SafelySetScript__1_Godot_Object_System_String_
+  name: SafelySetScript<T>(Object, string)
+  nameWithType: Object_CB_GD_Extension.SafelySetScript<T>(Object, string)
+  fullName: Godot.Object_CB_GD_Extension.SafelySetScript<T>(Godot.Object, string)
+  nameWithType.vb: Object_CB_GD_Extension.SafelySetScript(Of T)(Object, String)
+  fullName.vb: Godot.Object_CB_GD_Extension.SafelySetScript(Of T)(Godot.Object, String)
+  name.vb: SafelySetScript(Of T)(Object, String)
+  spec.csharp:
+  - uid: Godot.Object_CB_GD_Extension.SafelySetScript``1(Godot.Object,System.String)
+    name: SafelySetScript
+    href: Godot.Object_CB_GD_Extension.html#Godot_Object_CB_GD_Extension_SafelySetScript__1_Godot_Object_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Godot.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Godot.Object_CB_GD_Extension.SafelySetScript``1(Godot.Object,System.String)
+    name: SafelySetScript
+    href: Godot.Object_CB_GD_Extension.html#Godot_Object_CB_GD_Extension_SafelySetScript__1_Godot_Object_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Godot.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
 - uid: Godot
   commentId: N:Godot
   href: Godot.html
@@ -6302,6 +6487,96 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Godot.Node_GD_CB_Extension.ContainsNode(Godot.Node,Godot.Node)
+  commentId: M:Godot.Node_GD_CB_Extension.ContainsNode(Godot.Node,Godot.Node)
+  isExternal: true
+  href: Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_ContainsNode_Godot_Node_Godot_Node_
+  name: ContainsNode(Node, Node)
+  nameWithType: Node_GD_CB_Extension.ContainsNode(Node, Node)
+  fullName: Godot.Node_GD_CB_Extension.ContainsNode(Godot.Node, Godot.Node)
+  spec.csharp:
+  - uid: Godot.Node_GD_CB_Extension.ContainsNode(Godot.Node,Godot.Node)
+    name: ContainsNode
+    href: Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_ContainsNode_Godot_Node_Godot_Node_
+  - name: (
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Godot.Node_GD_CB_Extension.ContainsNode(Godot.Node,Godot.Node)
+    name: ContainsNode
+    href: Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_ContainsNode_Godot_Node_Godot_Node_
+  - name: (
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: )
+- uid: Godot.Node_GD_CB_Extension
+  commentId: T:Godot.Node_GD_CB_Extension
+  parent: Godot
+  href: Godot.Node_GD_CB_Extension.html
+  name: Node_GD_CB_Extension
+  nameWithType: Node_GD_CB_Extension
+  fullName: Godot.Node_GD_CB_Extension
+- uid: Godot.Node_GD_CB_Extension.Duplicate``1(Godot.Node,System.Int32)
+  commentId: M:Godot.Node_GD_CB_Extension.Duplicate``1(Godot.Node,System.Int32)
+  isExternal: true
+  href: Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_Duplicate__1_Godot_Node_System_Int32_
+  name: Duplicate<T>(Node, int)
+  nameWithType: Node_GD_CB_Extension.Duplicate<T>(Node, int)
+  fullName: Godot.Node_GD_CB_Extension.Duplicate<T>(Godot.Node, int)
+  nameWithType.vb: Node_GD_CB_Extension.Duplicate(Of T)(Node, Integer)
+  fullName.vb: Godot.Node_GD_CB_Extension.Duplicate(Of T)(Godot.Node, Integer)
+  name.vb: Duplicate(Of T)(Node, Integer)
+  spec.csharp:
+  - uid: Godot.Node_GD_CB_Extension.Duplicate``1(Godot.Node,System.Int32)
+    name: Duplicate
+    href: Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_Duplicate__1_Godot_Node_System_Int32_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Godot.Node_GD_CB_Extension.Duplicate``1(Godot.Node,System.Int32)
+    name: Duplicate
+    href: Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_Duplicate__1_Godot_Node_System_Int32_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
 - uid: Godot.Node_GD_CB_Extension.FindNodeByName(Godot.Node,System.String)
   commentId: M:Godot.Node_GD_CB_Extension.FindNodeByName(Godot.Node,System.String)
   isExternal: true
@@ -6342,13 +6617,6 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-- uid: Godot.Node_GD_CB_Extension
-  commentId: T:Godot.Node_GD_CB_Extension
-  parent: Godot
-  href: Godot.Node_GD_CB_Extension.html
-  name: Node_GD_CB_Extension
-  nameWithType: Node_GD_CB_Extension
-  fullName: Godot.Node_GD_CB_Extension
 - uid: Godot.Node_GD_CB_Extension.FindNodeByName(Godot.Node,System.String,System.Boolean)
   commentId: M:Godot.Node_GD_CB_Extension.FindNodeByName(Godot.Node,System.String,System.Boolean)
   isExternal: true
@@ -6821,54 +7089,6 @@ references:
     name: Node
     isExternal: true
   - name: )
-- uid: Godot.Node_GD_CB_Extension.Print(Godot.Node,System.Object[])
-  commentId: M:Godot.Node_GD_CB_Extension.Print(Godot.Node,System.Object[])
-  isExternal: true
-  href: Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_Print_Godot_Node_System_Object___
-  name: Print(Node, params object[])
-  nameWithType: Node_GD_CB_Extension.Print(Node, params object[])
-  fullName: Godot.Node_GD_CB_Extension.Print(Godot.Node, params object[])
-  nameWithType.vb: Node_GD_CB_Extension.Print(Node, ParamArray Object())
-  fullName.vb: Godot.Node_GD_CB_Extension.Print(Godot.Node, ParamArray Object())
-  name.vb: Print(Node, ParamArray Object())
-  spec.csharp:
-  - uid: Godot.Node_GD_CB_Extension.Print(Godot.Node,System.Object[])
-    name: Print
-    href: Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_Print_Godot_Node_System_Object___
-  - name: (
-  - uid: Godot.Node
-    name: Node
-    isExternal: true
-  - name: ','
-  - name: " "
-  - name: params
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: '['
-  - name: ']'
-  - name: )
-  spec.vb:
-  - uid: Godot.Node_GD_CB_Extension.Print(Godot.Node,System.Object[])
-    name: Print
-    href: Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_Print_Godot_Node_System_Object___
-  - name: (
-  - uid: Godot.Node
-    name: Node
-    isExternal: true
-  - name: ','
-  - name: " "
-  - name: ParamArray
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: (
-  - name: )
-  - name: )
 - uid: Godot.Node_GD_CB_Extension.SetNodePosition(Godot.Node,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   commentId: M:Godot.Node_GD_CB_Extension.SetNodePosition(Godot.Node,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   isExternal: true
@@ -6973,6 +7193,155 @@ references:
   - uid: Cobilas.GodotEngine.Utility.Numerics.Vector3D
     name: Vector3D
     href: Cobilas.GodotEngine.Utility.Numerics.Vector3D.html
+  - name: )
+- uid: Godot.Object_CB_GD_Extension.Print(Godot.Object,System.Object[])
+  commentId: M:Godot.Object_CB_GD_Extension.Print(Godot.Object,System.Object[])
+  isExternal: true
+  href: Godot.Object_CB_GD_Extension.html#Godot_Object_CB_GD_Extension_Print_Godot_Object_System_Object___
+  name: Print(Object, params object[])
+  nameWithType: Object_CB_GD_Extension.Print(Object, params object[])
+  fullName: Godot.Object_CB_GD_Extension.Print(Godot.Object, params object[])
+  nameWithType.vb: Object_CB_GD_Extension.Print(Object, ParamArray Object())
+  fullName.vb: Godot.Object_CB_GD_Extension.Print(Godot.Object, ParamArray Object())
+  name.vb: Print(Object, ParamArray Object())
+  spec.csharp:
+  - uid: Godot.Object_CB_GD_Extension.Print(Godot.Object,System.Object[])
+    name: Print
+    href: Godot.Object_CB_GD_Extension.html#Godot_Object_CB_GD_Extension_Print_Godot_Object_System_Object___
+  - name: (
+  - uid: Godot.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Godot.Object_CB_GD_Extension.Print(Godot.Object,System.Object[])
+    name: Print
+    href: Godot.Object_CB_GD_Extension.html#Godot_Object_CB_GD_Extension_Print_Godot_Object_System_Object___
+  - name: (
+  - uid: Godot.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: Godot.Object_CB_GD_Extension
+  commentId: T:Godot.Object_CB_GD_Extension
+  parent: Godot
+  href: Godot.Object_CB_GD_Extension.html
+  name: Object_CB_GD_Extension
+  nameWithType: Object_CB_GD_Extension
+  fullName: Godot.Object_CB_GD_Extension
+- uid: Godot.Object_CB_GD_Extension.SafelySetScript``1(Godot.Object,Godot.Resource)
+  commentId: M:Godot.Object_CB_GD_Extension.SafelySetScript``1(Godot.Object,Godot.Resource)
+  isExternal: true
+  href: Godot.Object_CB_GD_Extension.html#Godot_Object_CB_GD_Extension_SafelySetScript__1_Godot_Object_Godot_Resource_
+  name: SafelySetScript<T>(Object, Resource)
+  nameWithType: Object_CB_GD_Extension.SafelySetScript<T>(Object, Resource)
+  fullName: Godot.Object_CB_GD_Extension.SafelySetScript<T>(Godot.Object, Godot.Resource)
+  nameWithType.vb: Object_CB_GD_Extension.SafelySetScript(Of T)(Object, Resource)
+  fullName.vb: Godot.Object_CB_GD_Extension.SafelySetScript(Of T)(Godot.Object, Godot.Resource)
+  name.vb: SafelySetScript(Of T)(Object, Resource)
+  spec.csharp:
+  - uid: Godot.Object_CB_GD_Extension.SafelySetScript``1(Godot.Object,Godot.Resource)
+    name: SafelySetScript
+    href: Godot.Object_CB_GD_Extension.html#Godot_Object_CB_GD_Extension_SafelySetScript__1_Godot_Object_Godot_Resource_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Godot.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Godot.Resource
+    name: Resource
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Godot.Object_CB_GD_Extension.SafelySetScript``1(Godot.Object,Godot.Resource)
+    name: SafelySetScript
+    href: Godot.Object_CB_GD_Extension.html#Godot_Object_CB_GD_Extension_SafelySetScript__1_Godot_Object_Godot_Resource_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Godot.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Godot.Resource
+    name: Resource
+    isExternal: true
+  - name: )
+- uid: Godot.Object_CB_GD_Extension.SafelySetScript``1(Godot.Object,System.String)
+  commentId: M:Godot.Object_CB_GD_Extension.SafelySetScript``1(Godot.Object,System.String)
+  isExternal: true
+  href: Godot.Object_CB_GD_Extension.html#Godot_Object_CB_GD_Extension_SafelySetScript__1_Godot_Object_System_String_
+  name: SafelySetScript<T>(Object, string)
+  nameWithType: Object_CB_GD_Extension.SafelySetScript<T>(Object, string)
+  fullName: Godot.Object_CB_GD_Extension.SafelySetScript<T>(Godot.Object, string)
+  nameWithType.vb: Object_CB_GD_Extension.SafelySetScript(Of T)(Object, String)
+  fullName.vb: Godot.Object_CB_GD_Extension.SafelySetScript(Of T)(Godot.Object, String)
+  name.vb: SafelySetScript(Of T)(Object, String)
+  spec.csharp:
+  - uid: Godot.Object_CB_GD_Extension.SafelySetScript``1(Godot.Object,System.String)
+    name: SafelySetScript
+    href: Godot.Object_CB_GD_Extension.html#Godot_Object_CB_GD_Extension_SafelySetScript__1_Godot_Object_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Godot.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Godot.Object_CB_GD_Extension.SafelySetScript``1(Godot.Object,System.String)
+    name: SafelySetScript
+    href: Godot.Object_CB_GD_Extension.html#Godot_Object_CB_GD_Extension_SafelySetScript__1_Godot_Object_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Godot.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: Cobilas.GodotEngine.Utility.NullNode.Null*
   commentId: Overload:Cobilas.GodotEngine.Utility.NullNode.Null

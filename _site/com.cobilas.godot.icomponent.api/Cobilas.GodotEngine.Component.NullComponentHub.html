@@ -1,0 +1,1572 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class NullComponentHub | Cobilas Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class NullComponentHub | Cobilas Documentation ">
+      
+      <meta name="description" content="Represents a null ComponentHub.">
+      <link rel="icon" href="../images/favicon-96x96.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.godot.icomponent/new/main/apiSpec/new?filename=Cobilas_GodotEngine_Component_NullComponentHub.md&amp;value=---%0Auid%3A%20Cobilas.GodotEngine.Component.NullComponentHub%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/apple-icon-57x57.png" alt="Cobilas Documentation">
+            Cobilas Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Cobilas.GodotEngine.Component.NullComponentHub">
+
+
+
+  <h1 id="Cobilas_GodotEngine_Component_NullComponentHub" data-uid="Cobilas.GodotEngine.Component.NullComponentHub" class="text-break">
+Class NullComponentHub  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.icomponent/blob/main/GodotEngine/Component/NullComponentHub.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Cobilas.html">Cobilas</a>.<a class="xref" href="Cobilas.GodotEngine.html">GodotEngine</a>.<a class="xref" href="Cobilas.GodotEngine.Component.html">Component</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>com.cobilas.godot.icomponent.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a null ComponentHub.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class NullComponentHub : Node, IDisposable, IComponentHub, IEnumerable&lt;Node&gt;, IEnumerable, INullObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Node</span></div>
+      <div><span class="xref">NullComponentHub</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="Cobilas.GodotEngine.Component.IComponentHub.html">IComponentHub</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Node</span>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+      <div><a class="xref" href="../com.cobilas.cs.lib.core.net4x.api/Cobilas.INullObject.html">INullObject</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <span class="xref">Node.NotificationEnterTree</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationExitTree</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationMovedInParent</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationReady</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationPaused</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationUnpaused</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationPhysicsProcess</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationProcess</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationParented</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationUnparented</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationInstanced</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationDragBegin</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationDragEnd</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationPathChanged</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationChildOrderChanged</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationInternalProcess</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationInternalPhysicsProcess</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationPostEnterTree</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationResetPhysicsInterpolation</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationWmMouseEnter</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationWmMouseExit</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationWmFocusIn</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationWmFocusOut</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationWmQuitRequest</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationWmGoBackRequest</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationWmUnfocusRequest</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationOsMemoryWarning</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationTranslationChanged</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationWmAbout</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationCrash</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationOsImeUpdate</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationAppResumed</span>
+    </div>
+    <div>
+      <span class="xref">Node.NotificationAppPaused</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetNode&lt;T&gt;(NodePath)</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetNodeOrNull&lt;T&gt;(NodePath)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Node.GetChild&lt;T&gt;(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Node.GetChildOrNull&lt;T&gt;(int)</a>
+    </div>
+    <div>
+      <span class="xref">Node.GetOwner&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetOwnerOrNull&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetParentOrNull&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Node._EnterTree()</span>
+    </div>
+    <div>
+      <span class="xref">Node._ExitTree()</span>
+    </div>
+    <div>
+      <span class="xref">Node._GetConfigurationWarning()</span>
+    </div>
+    <div>
+      <span class="xref">Node._Input(InputEvent)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Node._PhysicsProcess(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Node._Process(float)</a>
+    </div>
+    <div>
+      <span class="xref">Node._Ready()</span>
+    </div>
+    <div>
+      <span class="xref">Node._UnhandledInput(InputEvent)</span>
+    </div>
+    <div>
+      <span class="xref">Node._UnhandledKeyInput(InputEventKey)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.AddChildBelowNode(Node, Node, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.SetName(string)</a>
+    </div>
+    <div>
+      <span class="xref">Node.GetName()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.AddChild(Node, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Node.RemoveChild(Node)</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetChildCount()</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetChildren()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Node.GetChild(int)</a>
+    </div>
+    <div>
+      <span class="xref">Node.HasNode(NodePath)</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetNode(NodePath)</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetNodeOrNull(NodePath)</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetParent()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.FindNode(string, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.FindParent(string)</a>
+    </div>
+    <div>
+      <span class="xref">Node.HasNodeAndResource(NodePath)</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetNodeAndResource(NodePath)</span>
+    </div>
+    <div>
+      <span class="xref">Node.IsInsideTree()</span>
+    </div>
+    <div>
+      <span class="xref">Node.IsAParentOf(Node)</span>
+    </div>
+    <div>
+      <span class="xref">Node.IsGreaterThan(Node)</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetPath()</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetPathTo(Node)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.AddToGroup(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.RemoveFromGroup(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.IsInGroup(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Node.MoveChild(Node, int)</a>
+    </div>
+    <div>
+      <span class="xref">Node.GetGroups()</span>
+    </div>
+    <div>
+      <span class="xref">Node.Raise()</span>
+    </div>
+    <div>
+      <span class="xref">Node.SetOwner(Node)</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetOwner()</span>
+    </div>
+    <div>
+      <span class="xref">Node.RemoveAndSkip()</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetIndex()</span>
+    </div>
+    <div>
+      <span class="xref">Node.PrintTree()</span>
+    </div>
+    <div>
+      <span class="xref">Node.PrintTreePretty()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.SetFilename(string)</a>
+    </div>
+    <div>
+      <span class="xref">Node.GetFilename()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Node.PropagateNotification(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.PropagateCall(string, Array, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.SetPhysicsProcess(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Node.GetPhysicsProcessDeltaTime()</span>
+    </div>
+    <div>
+      <span class="xref">Node.IsPhysicsProcessing()</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetProcessDeltaTime()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.SetProcess(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Node.SetProcessPriority(int)</a>
+    </div>
+    <div>
+      <span class="xref">Node.GetProcessPriority()</span>
+    </div>
+    <div>
+      <span class="xref">Node.IsProcessing()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.SetProcessInput(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Node.IsProcessingInput()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.SetProcessUnhandledInput(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Node.IsProcessingUnhandledInput()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.SetProcessUnhandledKeyInput(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Node.IsProcessingUnhandledKeyInput()</span>
+    </div>
+    <div>
+      <span class="xref">Node.SetPauseMode(Node.PauseModeEnum)</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetPauseMode()</span>
+    </div>
+    <div>
+      <span class="xref">Node.CanProcess()</span>
+    </div>
+    <div>
+      <span class="xref">Node.PrintStrayNodes()</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetPositionInParent()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.SetDisplayFolded(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Node.IsDisplayedFolded()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.SetProcessInternal(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Node.IsProcessingInternal()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.SetPhysicsProcessInternal(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Node.IsPhysicsProcessingInternal()</span>
+    </div>
+    <div>
+      <span class="xref">Node.SetPhysicsInterpolationMode(Node.PhysicsInterpolationModeEnum)</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetPhysicsInterpolationMode()</span>
+    </div>
+    <div>
+      <span class="xref">Node.IsPhysicsInterpolated()</span>
+    </div>
+    <div>
+      <span class="xref">Node.IsPhysicsInterpolatedAndEnabled()</span>
+    </div>
+    <div>
+      <span class="xref">Node.ResetPhysicsInterpolation()</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetTree()</span>
+    </div>
+    <div>
+      <span class="xref">Node.CreateTween()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Node.Duplicate(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.ReplaceBy(Node, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.SetSceneInstanceLoadPlaceholder(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Node.GetSceneInstanceLoadPlaceholder()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.SetEditableInstance(Node, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Node.IsEditableInstance(Node)</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetViewport()</span>
+    </div>
+    <div>
+      <span class="xref">Node.QueueFree()</span>
+    </div>
+    <div>
+      <span class="xref">Node.RequestReady()</span>
+    </div>
+    <div>
+      <span class="xref">Node.IsNodeReady()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Node.SetNetworkMaster(int, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Node.GetNetworkMaster()</span>
+    </div>
+    <div>
+      <span class="xref">Node.IsNetworkMaster()</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetMultiplayer()</span>
+    </div>
+    <div>
+      <span class="xref">Node.GetCustomMultiplayer()</span>
+    </div>
+    <div>
+      <span class="xref">Node.SetCustomMultiplayer(MultiplayerAPI)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.RpcConfig(string, MultiplayerAPI.RPCMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.RsetConfig(string, MultiplayerAPI.RPCMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.SetUniqueNameInOwner(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Node.IsUniqueNameInOwner()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.Rpc(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.RpcUnreliable(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Node.RpcId(int, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Node.RpcUnreliableId(int, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.Rset(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Node.RsetId(int, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Node.RsetUnreliable(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Node.RsetUnreliableId(int, string, object)</a>
+    </div>
+    <div>
+      <span class="xref">Node.UpdateConfigurationWarning()</span>
+    </div>
+    <div>
+      <span class="xref">Node.EditorDescription</span>
+    </div>
+    <div>
+      <span class="xref">Node._ImportPath</span>
+    </div>
+    <div>
+      <span class="xref">Node.PauseMode</span>
+    </div>
+    <div>
+      <span class="xref">Node.PhysicsInterpolationMode</span>
+    </div>
+    <div>
+      <span class="xref">Node.Name</span>
+    </div>
+    <div>
+      <span class="xref">Node.UniqueNameInOwner</span>
+    </div>
+    <div>
+      <span class="xref">Node.Filename</span>
+    </div>
+    <div>
+      <span class="xref">Node.Owner</span>
+    </div>
+    <div>
+      <span class="xref">Node.Multiplayer</span>
+    </div>
+    <div>
+      <span class="xref">Node.CustomMultiplayer</span>
+    </div>
+    <div>
+      <span class="xref">Node.ProcessPriority</span>
+    </div>
+    <div>
+      <span class="xref">Object.NotificationPostinitialize</span>
+    </div>
+    <div>
+      <span class="xref">Object.NotificationPredelete</span>
+    </div>
+    <div>
+      <span class="xref">Object.IsInstanceValid(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.WeakRef(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Dispose()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Dispose(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.ToSignal(Object, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object._Get(string)</a>
+    </div>
+    <div>
+      <span class="xref">Object._GetPropertyList()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object._Notification(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object._Set(string, object)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Free()</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetClass()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.IsClass(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.Set(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.Get(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object.SetIndexed(NodePath, object)</a>
+    </div>
+    <div>
+      <span class="xref">Object.GetIndexed(NodePath)</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetPropertyList()</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetMethodList()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.Notification(int, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.GetInstanceId()</span>
+    </div>
+    <div>
+      <span class="xref">Object.SetScript(Reference)</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetScript()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.SetMeta(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.RemoveMeta(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.GetMeta(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.HasMeta(string)</a>
+    </div>
+    <div>
+      <span class="xref">Object.GetMetaList()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.AddUserSignal(string, Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.HasUserSignal(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.EmitSignal(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.Call(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.CallDeferred(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.SetDeferred(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.Callv(string, Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.HasMethod(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.HasSignal(string)</a>
+    </div>
+    <div>
+      <span class="xref">Object.GetSignalList()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.GetSignalConnectionList(string)</a>
+    </div>
+    <div>
+      <span class="xref">Object.GetIncomingConnections()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.Connect(string, Object, string, Array, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.Disconnect(string, Object, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.IsConnected(string, Object, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.SetBlockSignals(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.IsBlockingSignals()</span>
+    </div>
+    <div>
+      <span class="xref">Object.PropertyListChangedNotify()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.SetMessageTranslation(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.CanTranslateMessages()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Object.Tr(string)</a>
+    </div>
+    <div>
+      <span class="xref">Object.IsQueuedForDeletion()</span>
+    </div>
+    <div>
+      <span class="xref">Object.NativeInstance</span>
+    </div>
+    <div>
+      <span class="xref">Object.DynamicObject</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_Component_NullComponentHub_ComponentsCount_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.ComponentsCount*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Component_NullComponentHub_ComponentsCount" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.ComponentsCount">
+  ComponentsCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.icomponent/blob/main/GodotEngine/Component/NullComponentHub.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The number of child objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ComponentsCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns the number of child objects.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Component_NullComponentHub_Null_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.Null*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Component_NullComponentHub_Null" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.Null">
+  Null
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.icomponent/blob/main/GodotEngine/Component/NullComponentHub.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A representation of a null ComponentHub.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NullComponentHub Null { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Component.NullComponentHub.html">NullComponentHub</a></dt>
+    <dd><p>Returns a representation of a null ComponentHub.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Component_NullComponentHub_Parent_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.Parent*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Component_NullComponentHub_Parent" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.Parent">
+  Parent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.icomponent/blob/main/GodotEngine/Component/NullComponentHub.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The parent object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Node? Parent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Node</span></dt>
+    <dd><p>Returns the parent object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Component_NullComponentHub_ParentComponent_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.ParentComponent*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Component_NullComponentHub_ParentComponent" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.ParentComponent">
+  ParentComponent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.icomponent/blob/main/GodotEngine/Component/NullComponentHub.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The parent object as <a class="xref" href="Cobilas.GodotEngine.Component.IComponentHub.html">IComponentHub</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IComponentHub? ParentComponent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Component.IComponentHub.html">IComponentHub</a></dt>
+    <dd><p>Returns the parent object as <a class="xref" href="Cobilas.GodotEngine.Component.IComponentHub.html">IComponentHub</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_Component_NullComponentHub_AddComponent_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.AddComponent*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Component_NullComponentHub_AddComponent_System_Type_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.AddComponent(System.Type)">
+  AddComponent(Type?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.icomponent/blob/main/GodotEngine/Component/NullComponentHub.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Allows you to add a component by specifying its type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Node? AddComponent(Type? component)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>component</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The type to be added.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Node</span></dt>
+    <dd><p>Returns the type that was added.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Component_NullComponentHub_AddComponent_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.AddComponent*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Component_NullComponentHub_AddComponent__1" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.AddComponent``1">
+  AddComponent&lt;T&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.icomponent/blob/main/GodotEngine/Component/NullComponentHub.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Allows you to add a component by specifying its type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T? AddComponent&lt;T&gt;() where T : Node</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>Returns the type that was added.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Component_NullComponentHub_AddComponents_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.AddComponents*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Component_NullComponentHub_AddComponents_System_Type___" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.AddComponents(System.Type[])">
+  AddComponents(params Type[]?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.icomponent/blob/main/GodotEngine/Component/NullComponentHub.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Allows you to add multiple components by specifying their type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddComponents(params Type[]? components)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>components</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>[]</dt>
+    <dd><p>The types to be added.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Component_NullComponentHub_AddNodeComponent_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.AddNodeComponent*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Component_NullComponentHub_AddNodeComponent_Godot_Node_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.AddNodeComponent(Godot.Node)">
+  AddNodeComponent(Node?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.icomponent/blob/main/GodotEngine/Component/NullComponentHub.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Allows you to add a <span class="xref">Godot.Node</span> object to the component list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddNodeComponent(Node? component)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>component</code> <span class="xref">Node</span></dt>
+    <dd><p>The <span class="xref">Godot.Node</span> object to add.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Component_NullComponentHub_AddNodeComponents_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.AddNodeComponents*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Component_NullComponentHub_AddNodeComponents_Godot_Node___" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.AddNodeComponents(Godot.Node[])">
+  AddNodeComponents(params Node[]?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.icomponent/blob/main/GodotEngine/Component/NullComponentHub.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Allows you to add multiple <span class="xref">Godot.Node</span> objects to the component list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddNodeComponents(params Node[]? components)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>components</code> <span class="xref">Node</span>[]</dt>
+    <dd><p>The <span class="xref">Godot.Node</span> objects to add.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Component_NullComponentHub_GetComponent_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.GetComponent*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Component_NullComponentHub_GetComponent_System_Type_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.GetComponent(System.Type)">
+  GetComponent(Type?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.icomponent/blob/main/GodotEngine/Component/NullComponentHub.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the component by the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Node? GetComponent(Type? component)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>component</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The type to be obtained.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Node</span></dt>
+    <dd><p>Returns the component type as node.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Component_NullComponentHub_GetComponent_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.GetComponent*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Component_NullComponentHub_GetComponent_System_Type_System_Boolean_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.GetComponent(System.Type,System.Boolean)">
+  GetComponent(Type?, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.icomponent/blob/main/GodotEngine/Component/NullComponentHub.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the component by the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Node? GetComponent(Type? component, bool recursive)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>component</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The type to be obtained.</p>
+</dd>
+    <dt><code>recursive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Allows searching in sub-children.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Node</span></dt>
+    <dd><p>Returns the component type as node.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Component_NullComponentHub_GetComponent_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.GetComponent*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Component_NullComponentHub_GetComponent__1" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.GetComponent``1">
+  GetComponent&lt;T&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.icomponent/blob/main/GodotEngine/Component/NullComponentHub.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the component by the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T? GetComponent&lt;T&gt;() where T : Node</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>Returns the component type as node.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Component_NullComponentHub_GetComponent_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.GetComponent*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Component_NullComponentHub_GetComponent__1_System_Boolean_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.GetComponent``1(System.Boolean)">
+  GetComponent&lt;T&gt;(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.icomponent/blob/main/GodotEngine/Component/NullComponentHub.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the component by the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T? GetComponent&lt;T&gt;(bool recursive) where T : Node</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>recursive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Allows searching in sub-children.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>Returns the component type as node.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Component_NullComponentHub_GetComponents_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.GetComponents*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Component_NullComponentHub_GetComponents_System_Type_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.GetComponents(System.Type)">
+  GetComponents(Type?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.icomponent/blob/main/GodotEngine/Component/NullComponentHub.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets components by the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Node[]? GetComponents(Type? component)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>component</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The type to be obtained.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Node</span>[]</dt>
+    <dd><p>Returns the component types as a node list.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Component_NullComponentHub_GetComponents_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.GetComponents*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Component_NullComponentHub_GetComponents_System_Type_System_Boolean_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.GetComponents(System.Type,System.Boolean)">
+  GetComponents(Type?, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.icomponent/blob/main/GodotEngine/Component/NullComponentHub.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets components by the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Node[]? GetComponents(Type? component, bool recursive)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>component</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The type to be obtained.</p>
+</dd>
+    <dt><code>recursive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Allows searching in sub-children.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Node</span>[]</dt>
+    <dd><p>Returns the component types as a node list.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Component_NullComponentHub_GetComponents_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.GetComponents*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Component_NullComponentHub_GetComponents__1" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.GetComponents``1">
+  GetComponents&lt;T&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.icomponent/blob/main/GodotEngine/Component/NullComponentHub.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets components by the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T[]? GetComponents&lt;T&gt;() where T : Node</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>T[]</dt>
+    <dd><p>Returns the component types as a node list.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Component_NullComponentHub_GetComponents_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.GetComponents*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Component_NullComponentHub_GetComponents__1_System_Boolean_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.GetComponents``1(System.Boolean)">
+  GetComponents&lt;T&gt;(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.icomponent/blob/main/GodotEngine/Component/NullComponentHub.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets components by the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T[]? GetComponents&lt;T&gt;(bool recursive) where T : Node</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>recursive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Allows searching in sub-children.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>T[]</dt>
+    <dd><p>Returns the component types as a node list.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Component_NullComponentHub_GetEnumerator_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.GetEnumerator*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Component_NullComponentHub_GetEnumerator" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.GetEnumerator">
+  GetEnumerator()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.icomponent/blob/main/GodotEngine/Component/NullComponentHub.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;Node&gt; GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<span class="xref">Node</span>&gt;</dt>
+    <dd><p>An enumerator that can be used to iterate through the collection.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Component_NullComponentHub_RemoveComponent_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.RemoveComponent*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Component_NullComponentHub_RemoveComponent_Godot_Node_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.RemoveComponent(Godot.Node)">
+  RemoveComponent(Node?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.icomponent/blob/main/GodotEngine/Component/NullComponentHub.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Allows you to remove a <span class="xref">Godot.Node</span> object from the list of components.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveComponent(Node? component)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>component</code> <span class="xref">Node</span></dt>
+    <dd><p>The <span class="xref">Godot.Node</span> object to remove.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns <code>true</code> if the operation is successful.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Component_NullComponentHub_RemoveComponents_" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.RemoveComponents*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Component_NullComponentHub_RemoveComponents_Godot_Node___" data-uid="Cobilas.GodotEngine.Component.NullComponentHub.RemoveComponents(Godot.Node[])">
+  RemoveComponents(params Node[]?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.icomponent/blob/main/GodotEngine/Component/NullComponentHub.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Allows you to remove several <span class="xref">Godot.Node</span> objects from the list of components.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveComponents(params Node[]? components)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>components</code> <span class="xref">Node</span>[]</dt>
+    <dd><p>The <span class="xref">Godot.Node</span> objects to be removed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BelicusBr/com.cobilas.godot.icomponent/blob/main/GodotEngine/Component/NullComponentHub.cs/#L9" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

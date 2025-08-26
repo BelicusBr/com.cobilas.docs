@@ -9,3 +9,8 @@
 
 #### [Getting Started](gd-utility-getting-started.html)
 #### [API](com.cobilas.godot.utility.api/Cobilas.GodotEngine.Utility.html)
+
+## Godot IComponent
+
+#### [Getting Started](gd-icomponent-started.html)
+#### [API](com.cobilas.godot.icomponent.api/Cobilas.GodotEngine.Component.html)

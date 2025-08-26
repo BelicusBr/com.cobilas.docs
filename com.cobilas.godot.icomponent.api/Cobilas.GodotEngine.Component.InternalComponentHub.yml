@@ -1,0 +1,2349 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub
+  commentId: T:Cobilas.GodotEngine.Component.InternalComponentHub
+  id: InternalComponentHub
+  parent: Cobilas.GodotEngine.Component
+  children:
+  - Cobilas.GodotEngine.Component.InternalComponentHub.#ctor(Godot.Node)
+  - Cobilas.GodotEngine.Component.InternalComponentHub.AddComponent(System.Type)
+  - Cobilas.GodotEngine.Component.InternalComponentHub.AddComponent``1
+  - Cobilas.GodotEngine.Component.InternalComponentHub.AddComponents(System.Type[])
+  - Cobilas.GodotEngine.Component.InternalComponentHub.AddNodeComponent(Godot.Node)
+  - Cobilas.GodotEngine.Component.InternalComponentHub.AddNodeComponents(Godot.Node[])
+  - Cobilas.GodotEngine.Component.InternalComponentHub.AddRequireComponent(Godot.Node)
+  - Cobilas.GodotEngine.Component.InternalComponentHub.ComponentsCount
+  - Cobilas.GodotEngine.Component.InternalComponentHub.Dispose
+  - Cobilas.GodotEngine.Component.InternalComponentHub.Entity
+  - Cobilas.GodotEngine.Component.InternalComponentHub.Finalize
+  - Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent(System.Type)
+  - Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent(System.Type,System.Boolean)
+  - Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent``1
+  - Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent``1(System.Boolean)
+  - Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents(System.Type)
+  - Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents(System.Type,System.Boolean)
+  - Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents``1
+  - Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents``1(System.Boolean)
+  - Cobilas.GodotEngine.Component.InternalComponentHub.GetEnumerator
+  - Cobilas.GodotEngine.Component.InternalComponentHub.Parent
+  - Cobilas.GodotEngine.Component.InternalComponentHub.ParentComponent
+  - Cobilas.GodotEngine.Component.InternalComponentHub.RemoveComponent(Godot.Node)
+  - Cobilas.GodotEngine.Component.InternalComponentHub.RemoveComponents(Godot.Node[])
+  langs:
+  - csharp
+  - vb
+  name: InternalComponentHub
+  nameWithType: InternalComponentHub
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub
+  type: Class
+  source:
+    remote:
+      path: GodotEngine/Component/InternalComponentHub.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.icomponent.git
+    id: InternalComponentHub
+    path: ../../Godot Dev/com.cobilas.godot.icomponent/GodotEngine/Component/InternalComponentHub.cs
+    startLine: 10
+  assemblies:
+  - com.cobilas.godot.icomponent
+  namespace: Cobilas.GodotEngine.Component
+  summary: Inner class for handling <xref href="Cobilas.GodotEngine.Component.IComponentHub" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public sealed class InternalComponentHub : IInternalComponentHub, IComponentHub, IEnumerable<Node>, IEnumerable, IDisposable
+    content.vb: >-
+      <Serializable>
+
+      Public NotInheritable Class InternalComponentHub Implements IInternalComponentHub, IComponentHub, IEnumerable(Of Node), IEnumerable, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - Cobilas.GodotEngine.Component.IInternalComponentHub
+  - Cobilas.GodotEngine.Component.IComponentHub
+  - System.Collections.Generic.IEnumerable{Godot.Node}
+  - System.Collections.IEnumerable
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.#ctor(Godot.Node)
+  commentId: M:Cobilas.GodotEngine.Component.InternalComponentHub.#ctor(Godot.Node)
+  id: '#ctor(Godot.Node)'
+  parent: Cobilas.GodotEngine.Component.InternalComponentHub
+  langs:
+  - csharp
+  - vb
+  name: InternalComponentHub(Node)
+  nameWithType: InternalComponentHub.InternalComponentHub(Node)
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.InternalComponentHub(Godot.Node)
+  type: Constructor
+  source:
+    remote:
+      path: GodotEngine/Component/InternalComponentHub.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.icomponent.git
+    id: .ctor
+    path: ../../Godot Dev/com.cobilas.godot.icomponent/GodotEngine/Component/InternalComponentHub.cs
+    startLine: 10
+  assemblies:
+  - com.cobilas.godot.icomponent
+  namespace: Cobilas.GodotEngine.Component
+  summary: Inner class for handling <xref href="Cobilas.GodotEngine.Component.IComponentHub" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public InternalComponentHub(Node entity)
+    parameters:
+    - id: entity
+      type: Godot.Node
+    content.vb: Public Sub New(entity As Node)
+  overload: Cobilas.GodotEngine.Component.InternalComponentHub.#ctor*
+  nameWithType.vb: InternalComponentHub.New(Node)
+  fullName.vb: Cobilas.GodotEngine.Component.InternalComponentHub.New(Godot.Node)
+  name.vb: New(Node)
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.Entity
+  commentId: P:Cobilas.GodotEngine.Component.InternalComponentHub.Entity
+  id: Entity
+  parent: Cobilas.GodotEngine.Component.InternalComponentHub
+  langs:
+  - csharp
+  - vb
+  name: Entity
+  nameWithType: InternalComponentHub.Entity
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.Entity
+  type: Property
+  source:
+    remote:
+      path: GodotEngine/Component/InternalComponentHub.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.icomponent.git
+    id: Entity
+    path: ../../Godot Dev/com.cobilas.godot.icomponent/GodotEngine/Component/InternalComponentHub.cs
+    startLine: 16
+  assemblies:
+  - com.cobilas.godot.icomponent
+  namespace: Cobilas.GodotEngine.Component
+  summary: The <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref> object that is associated.
+  example: []
+  syntax:
+    content: public Node? Entity { get; }
+    parameters: []
+    return:
+      type: Godot.Node
+      description: Returns the associated <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref> object.
+    content.vb: Public Property Entity As Node
+  overload: Cobilas.GodotEngine.Component.InternalComponentHub.Entity*
+  implements:
+  - Cobilas.GodotEngine.Component.IInternalComponentHub.Entity
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.ComponentsCount
+  commentId: P:Cobilas.GodotEngine.Component.InternalComponentHub.ComponentsCount
+  id: ComponentsCount
+  parent: Cobilas.GodotEngine.Component.InternalComponentHub
+  langs:
+  - csharp
+  - vb
+  name: ComponentsCount
+  nameWithType: InternalComponentHub.ComponentsCount
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.ComponentsCount
+  type: Property
+  source:
+    remote:
+      path: GodotEngine/Component/InternalComponentHub.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.icomponent.git
+    id: ComponentsCount
+    path: ../../Godot Dev/com.cobilas.godot.icomponent/GodotEngine/Component/InternalComponentHub.cs
+    startLine: 18
+  assemblies:
+  - com.cobilas.godot.icomponent
+  namespace: Cobilas.GodotEngine.Component
+  summary: The number of child objects.
+  example: []
+  syntax:
+    content: public int ComponentsCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: Returns the number of child objects.
+    content.vb: Public ReadOnly Property ComponentsCount As Integer
+  overload: Cobilas.GodotEngine.Component.InternalComponentHub.ComponentsCount*
+  implements:
+  - Cobilas.GodotEngine.Component.IComponentHub.ComponentsCount
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.Parent
+  commentId: P:Cobilas.GodotEngine.Component.InternalComponentHub.Parent
+  id: Parent
+  parent: Cobilas.GodotEngine.Component.InternalComponentHub
+  langs:
+  - csharp
+  - vb
+  name: Parent
+  nameWithType: InternalComponentHub.Parent
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.Parent
+  type: Property
+  source:
+    remote:
+      path: GodotEngine/Component/InternalComponentHub.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.icomponent.git
+    id: Parent
+    path: ../../Godot Dev/com.cobilas.godot.icomponent/GodotEngine/Component/InternalComponentHub.cs
+    startLine: 20
+  assemblies:
+  - com.cobilas.godot.icomponent
+  namespace: Cobilas.GodotEngine.Component
+  summary: The parent object.
+  example: []
+  syntax:
+    content: public Node? Parent { get; }
+    parameters: []
+    return:
+      type: Godot.Node
+      description: Returns the parent object.
+    content.vb: Public ReadOnly Property Parent As Node
+  overload: Cobilas.GodotEngine.Component.InternalComponentHub.Parent*
+  implements:
+  - Cobilas.GodotEngine.Component.IComponentHub.Parent
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.ParentComponent
+  commentId: P:Cobilas.GodotEngine.Component.InternalComponentHub.ParentComponent
+  id: ParentComponent
+  parent: Cobilas.GodotEngine.Component.InternalComponentHub
+  langs:
+  - csharp
+  - vb
+  name: ParentComponent
+  nameWithType: InternalComponentHub.ParentComponent
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.ParentComponent
+  type: Property
+  source:
+    remote:
+      path: GodotEngine/Component/InternalComponentHub.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.icomponent.git
+    id: ParentComponent
+    path: ../../Godot Dev/com.cobilas.godot.icomponent/GodotEngine/Component/InternalComponentHub.cs
+    startLine: 22
+  assemblies:
+  - com.cobilas.godot.icomponent
+  namespace: Cobilas.GodotEngine.Component
+  summary: The parent object as <xref href="Cobilas.GodotEngine.Component.IComponentHub" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public IComponentHub? ParentComponent { get; }
+    parameters: []
+    return:
+      type: Cobilas.GodotEngine.Component.IComponentHub
+      description: Returns the parent object as <xref href="Cobilas.GodotEngine.Component.IComponentHub" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public ReadOnly Property ParentComponent As IComponentHub
+  overload: Cobilas.GodotEngine.Component.InternalComponentHub.ParentComponent*
+  implements:
+  - Cobilas.GodotEngine.Component.IComponentHub.ParentComponent
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.Finalize
+  commentId: M:Cobilas.GodotEngine.Component.InternalComponentHub.Finalize
+  id: Finalize
+  parent: Cobilas.GodotEngine.Component.InternalComponentHub
+  langs:
+  - csharp
+  - vb
+  name: ~InternalComponentHub()
+  nameWithType: InternalComponentHub.~InternalComponentHub()
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.~InternalComponentHub()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/Component/InternalComponentHub.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.icomponent.git
+    id: Finalize
+    path: ../../Godot Dev/com.cobilas.godot.icomponent/GodotEngine/Component/InternalComponentHub.cs
+    startLine: 24
+  assemblies:
+  - com.cobilas.godot.icomponent
+  namespace: Cobilas.GodotEngine.Component
+  summary: The destructor is responsible for discarding unmanaged resources.
+  example: []
+  syntax:
+    content: protected ~InternalComponentHub()
+    content.vb: 'Protected '
+  overload: Cobilas.GodotEngine.Component.InternalComponentHub.Finalize*
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent(System.Type,System.Boolean)
+  commentId: M:Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent(System.Type,System.Boolean)
+  id: GetComponent(System.Type,System.Boolean)
+  parent: Cobilas.GodotEngine.Component.InternalComponentHub
+  langs:
+  - csharp
+  - vb
+  name: GetComponent(Type?, bool)
+  nameWithType: InternalComponentHub.GetComponent(Type?, bool)
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent(System.Type?, bool)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/Component/InternalComponentHub.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.icomponent.git
+    id: GetComponent
+    path: ../../Godot Dev/com.cobilas.godot.icomponent/GodotEngine/Component/InternalComponentHub.cs
+    startLine: 29
+  assemblies:
+  - com.cobilas.godot.icomponent
+  namespace: Cobilas.GodotEngine.Component
+  summary: Gets the component by the specified type.
+  remarks: >-
+    If the specified type is null or not found in the component list, 
+        an object of type <xref href="Cobilas.GodotEngine.Utility.NullNode" data-throw-if-not-resolved="false"></xref> will be returned.
+  example: []
+  syntax:
+    content: public Node? GetComponent(Type? component, bool recursive)
+    parameters:
+    - id: component
+      type: System.Type
+      description: The type to be obtained.
+    - id: recursive
+      type: System.Boolean
+      description: Allows searching in sub-children.
+    return:
+      type: Godot.Node
+      description: Returns the component type as node.
+    content.vb: Public Function GetComponent(component As Type, recursive As Boolean) As Node
+  overload: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Occurs when the specified type does not inherit from <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - Cobilas.GodotEngine.Component.IComponentHub.GetComponent(System.Type,System.Boolean)
+  nameWithType.vb: InternalComponentHub.GetComponent(Type, Boolean)
+  fullName.vb: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent(System.Type, Boolean)
+  name.vb: GetComponent(Type, Boolean)
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent(System.Type)
+  commentId: M:Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent(System.Type)
+  id: GetComponent(System.Type)
+  parent: Cobilas.GodotEngine.Component.InternalComponentHub
+  langs:
+  - csharp
+  - vb
+  name: GetComponent(Type?)
+  nameWithType: InternalComponentHub.GetComponent(Type?)
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent(System.Type?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/Component/InternalComponentHub.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.icomponent.git
+    id: GetComponent
+    path: ../../Godot Dev/com.cobilas.godot.icomponent/GodotEngine/Component/InternalComponentHub.cs
+    startLine: 44
+  assemblies:
+  - com.cobilas.godot.icomponent
+  namespace: Cobilas.GodotEngine.Component
+  summary: Gets the component by the specified type.
+  remarks: >-
+    If the specified type is null or not found in the component list, 
+        an object of type <xref href="Cobilas.GodotEngine.Utility.NullNode" data-throw-if-not-resolved="false"></xref> will be returned.
+  example: []
+  syntax:
+    content: public Node? GetComponent(Type? component)
+    parameters:
+    - id: component
+      type: System.Type
+      description: The type to be obtained.
+    return:
+      type: Godot.Node
+      description: Returns the component type as node.
+    content.vb: Public Function GetComponent(component As Type) As Node
+  overload: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Occurs when the specified type does not inherit from <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - Cobilas.GodotEngine.Component.IComponentHub.GetComponent(System.Type)
+  nameWithType.vb: InternalComponentHub.GetComponent(Type)
+  fullName.vb: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent(System.Type)
+  name.vb: GetComponent(Type)
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent``1(System.Boolean)
+  commentId: M:Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent``1(System.Boolean)
+  id: GetComponent``1(System.Boolean)
+  parent: Cobilas.GodotEngine.Component.InternalComponentHub
+  langs:
+  - csharp
+  - vb
+  name: GetComponent<TypeComponent>(bool)
+  nameWithType: InternalComponentHub.GetComponent<TypeComponent>(bool)
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent<TypeComponent>(bool)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/Component/InternalComponentHub.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.icomponent.git
+    id: GetComponent
+    path: ../../Godot Dev/com.cobilas.godot.icomponent/GodotEngine/Component/InternalComponentHub.cs
+    startLine: 49
+  assemblies:
+  - com.cobilas.godot.icomponent
+  namespace: Cobilas.GodotEngine.Component
+  summary: Gets the component by the specified type.
+  remarks: >-
+    If the specified type is null or not found in the component list, 
+        an object of type <xref href="Cobilas.GodotEngine.Utility.NullNode" data-throw-if-not-resolved="false"></xref> will be returned.
+  example: []
+  syntax:
+    content: 'public TypeComponent? GetComponent<TypeComponent>(bool recursive) where TypeComponent : Node'
+    parameters:
+    - id: recursive
+      type: System.Boolean
+      description: Allows searching in sub-children.
+    typeParameters:
+    - id: TypeComponent
+      description: The type to be obtained.
+    return:
+      type: '{TypeComponent}'
+      description: Returns the component type as node.
+    content.vb: Public Function GetComponent(Of TypeComponent As Node)(recursive As Boolean) As TypeComponent
+  overload: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Occurs when the specified type does not inherit from <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - Cobilas.GodotEngine.Component.IComponentHub.GetComponent``1(System.Boolean)
+  nameWithType.vb: InternalComponentHub.GetComponent(Of TypeComponent)(Boolean)
+  fullName.vb: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent(Of TypeComponent)(Boolean)
+  name.vb: GetComponent(Of TypeComponent)(Boolean)
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent``1
+  commentId: M:Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent``1
+  id: GetComponent``1
+  parent: Cobilas.GodotEngine.Component.InternalComponentHub
+  langs:
+  - csharp
+  - vb
+  name: GetComponent<TypeComponent>()
+  nameWithType: InternalComponentHub.GetComponent<TypeComponent>()
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent<TypeComponent>()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/Component/InternalComponentHub.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.icomponent.git
+    id: GetComponent
+    path: ../../Godot Dev/com.cobilas.godot.icomponent/GodotEngine/Component/InternalComponentHub.cs
+    startLine: 52
+  assemblies:
+  - com.cobilas.godot.icomponent
+  namespace: Cobilas.GodotEngine.Component
+  summary: Gets the component by the specified type.
+  remarks: >-
+    If the specified type is null or not found in the component list, 
+        an object of type <xref href="Cobilas.GodotEngine.Utility.NullNode" data-throw-if-not-resolved="false"></xref> will be returned.
+  example: []
+  syntax:
+    content: 'public TypeComponent? GetComponent<TypeComponent>() where TypeComponent : Node'
+    typeParameters:
+    - id: TypeComponent
+      description: The type to be obtained.
+    return:
+      type: '{TypeComponent}'
+      description: Returns the component type as node.
+    content.vb: Public Function GetComponent(Of TypeComponent As Node)() As TypeComponent
+  overload: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Occurs when the specified type does not inherit from <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - Cobilas.GodotEngine.Component.IComponentHub.GetComponent``1
+  nameWithType.vb: InternalComponentHub.GetComponent(Of TypeComponent)()
+  fullName.vb: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent(Of TypeComponent)()
+  name.vb: GetComponent(Of TypeComponent)()
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents(System.Type,System.Boolean)
+  commentId: M:Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents(System.Type,System.Boolean)
+  id: GetComponents(System.Type,System.Boolean)
+  parent: Cobilas.GodotEngine.Component.InternalComponentHub
+  langs:
+  - csharp
+  - vb
+  name: GetComponents(Type?, bool)
+  nameWithType: InternalComponentHub.GetComponents(Type?, bool)
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents(System.Type?, bool)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/Component/InternalComponentHub.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.icomponent.git
+    id: GetComponents
+    path: ../../Godot Dev/com.cobilas.godot.icomponent/GodotEngine/Component/InternalComponentHub.cs
+    startLine: 57
+  assemblies:
+  - com.cobilas.godot.icomponent
+  namespace: Cobilas.GodotEngine.Component
+  summary: Gets components by the specified type.
+  remarks: If the specified type is null or not found in the component list, an empty list will be returned.
+  example: []
+  syntax:
+    content: public Node[]? GetComponents(Type? component, bool recursive)
+    parameters:
+    - id: component
+      type: System.Type
+      description: The type to be obtained.
+    - id: recursive
+      type: System.Boolean
+      description: Allows searching in sub-children.
+    return:
+      type: Godot.Node[]
+      description: Returns the component types as a node list.
+    content.vb: Public Function GetComponents(component As Type, recursive As Boolean) As Node()
+  overload: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Occurs when the specified type does not inherit from <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - Cobilas.GodotEngine.Component.IComponentHub.GetComponents(System.Type,System.Boolean)
+  nameWithType.vb: InternalComponentHub.GetComponents(Type, Boolean)
+  fullName.vb: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents(System.Type, Boolean)
+  name.vb: GetComponents(Type, Boolean)
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents(System.Type)
+  commentId: M:Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents(System.Type)
+  id: GetComponents(System.Type)
+  parent: Cobilas.GodotEngine.Component.InternalComponentHub
+  langs:
+  - csharp
+  - vb
+  name: GetComponents(Type?)
+  nameWithType: InternalComponentHub.GetComponents(Type?)
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents(System.Type?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/Component/InternalComponentHub.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.icomponent.git
+    id: GetComponents
+    path: ../../Godot Dev/com.cobilas.godot.icomponent/GodotEngine/Component/InternalComponentHub.cs
+    startLine: 75
+  assemblies:
+  - com.cobilas.godot.icomponent
+  namespace: Cobilas.GodotEngine.Component
+  summary: Gets components by the specified type.
+  remarks: If the specified type is null or not found in the component list, an empty list will be returned.
+  example: []
+  syntax:
+    content: public Node[]? GetComponents(Type? component)
+    parameters:
+    - id: component
+      type: System.Type
+      description: The type to be obtained.
+    return:
+      type: Godot.Node[]
+      description: Returns the component types as a node list.
+    content.vb: Public Function GetComponents(component As Type) As Node()
+  overload: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Occurs when the specified type does not inherit from <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - Cobilas.GodotEngine.Component.IComponentHub.GetComponents(System.Type)
+  nameWithType.vb: InternalComponentHub.GetComponents(Type)
+  fullName.vb: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents(System.Type)
+  name.vb: GetComponents(Type)
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents``1(System.Boolean)
+  commentId: M:Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents``1(System.Boolean)
+  id: GetComponents``1(System.Boolean)
+  parent: Cobilas.GodotEngine.Component.InternalComponentHub
+  langs:
+  - csharp
+  - vb
+  name: GetComponents<TypeComponent>(bool)
+  nameWithType: InternalComponentHub.GetComponents<TypeComponent>(bool)
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents<TypeComponent>(bool)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/Component/InternalComponentHub.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.icomponent.git
+    id: GetComponents
+    path: ../../Godot Dev/com.cobilas.godot.icomponent/GodotEngine/Component/InternalComponentHub.cs
+    startLine: 79
+  assemblies:
+  - com.cobilas.godot.icomponent
+  namespace: Cobilas.GodotEngine.Component
+  summary: Gets components by the specified type.
+  remarks: If the specified type is null or not found in the component list, an empty list will be returned.
+  example: []
+  syntax:
+    content: 'public TypeComponent[]? GetComponents<TypeComponent>(bool recursive) where TypeComponent : Node'
+    parameters:
+    - id: recursive
+      type: System.Boolean
+      description: Allows searching in sub-children.
+    typeParameters:
+    - id: TypeComponent
+      description: The type to be obtained.
+    return:
+      type: '{TypeComponent}[]'
+      description: Returns the component types as a node list.
+    content.vb: Public Function GetComponents(Of TypeComponent As Node)(recursive As Boolean) As TypeComponent()
+  overload: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Occurs when the specified type does not inherit from <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - Cobilas.GodotEngine.Component.IComponentHub.GetComponents``1(System.Boolean)
+  nameWithType.vb: InternalComponentHub.GetComponents(Of TypeComponent)(Boolean)
+  fullName.vb: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents(Of TypeComponent)(Boolean)
+  name.vb: GetComponents(Of TypeComponent)(Boolean)
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents``1
+  commentId: M:Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents``1
+  id: GetComponents``1
+  parent: Cobilas.GodotEngine.Component.InternalComponentHub
+  langs:
+  - csharp
+  - vb
+  name: GetComponents<TypeComponent>()
+  nameWithType: InternalComponentHub.GetComponents<TypeComponent>()
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents<TypeComponent>()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/Component/InternalComponentHub.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.icomponent.git
+    id: GetComponents
+    path: ../../Godot Dev/com.cobilas.godot.icomponent/GodotEngine/Component/InternalComponentHub.cs
+    startLine: 86
+  assemblies:
+  - com.cobilas.godot.icomponent
+  namespace: Cobilas.GodotEngine.Component
+  summary: Gets components by the specified type.
+  remarks: If the specified type is null or not found in the component list, an empty list will be returned.
+  example: []
+  syntax:
+    content: 'public TypeComponent[]? GetComponents<TypeComponent>() where TypeComponent : Node'
+    typeParameters:
+    - id: TypeComponent
+      description: The type to be obtained.
+    return:
+      type: '{TypeComponent}[]'
+      description: Returns the component types as a node list.
+    content.vb: Public Function GetComponents(Of TypeComponent As Node)() As TypeComponent()
+  overload: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Occurs when the specified type does not inherit from <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - Cobilas.GodotEngine.Component.IComponentHub.GetComponents``1
+  nameWithType.vb: InternalComponentHub.GetComponents(Of TypeComponent)()
+  fullName.vb: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents(Of TypeComponent)()
+  name.vb: GetComponents(Of TypeComponent)()
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.AddComponent(System.Type)
+  commentId: M:Cobilas.GodotEngine.Component.InternalComponentHub.AddComponent(System.Type)
+  id: AddComponent(System.Type)
+  parent: Cobilas.GodotEngine.Component.InternalComponentHub
+  langs:
+  - csharp
+  - vb
+  name: AddComponent(Type?)
+  nameWithType: InternalComponentHub.AddComponent(Type?)
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.AddComponent(System.Type?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/Component/InternalComponentHub.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.icomponent.git
+    id: AddComponent
+    path: ../../Godot Dev/com.cobilas.godot.icomponent/GodotEngine/Component/InternalComponentHub.cs
+    startLine: 91
+  assemblies:
+  - com.cobilas.godot.icomponent
+  namespace: Cobilas.GodotEngine.Component
+  summary: Allows you to add a component by specifying its type.
+  remarks: >-
+    If the specified type is null or not found in the component list, 
+        an object of type <xref href="Cobilas.GodotEngine.Utility.NullNode" data-throw-if-not-resolved="false"></xref> will be returned.
+  example: []
+  syntax:
+    content: public Node? AddComponent(Type? component)
+    parameters:
+    - id: component
+      type: System.Type
+      description: The type to be added.
+    return:
+      type: Godot.Node
+      description: Returns the type that was added.
+    content.vb: Public Function AddComponent(component As Type) As Node
+  overload: Cobilas.GodotEngine.Component.InternalComponentHub.AddComponent*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Occurs when the specified type does not inherit from <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - Cobilas.GodotEngine.Component.IComponentHub.AddComponent(System.Type)
+  nameWithType.vb: InternalComponentHub.AddComponent(Type)
+  fullName.vb: Cobilas.GodotEngine.Component.InternalComponentHub.AddComponent(System.Type)
+  name.vb: AddComponent(Type)
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.AddComponents(System.Type[])
+  commentId: M:Cobilas.GodotEngine.Component.InternalComponentHub.AddComponents(System.Type[])
+  id: AddComponents(System.Type[])
+  parent: Cobilas.GodotEngine.Component.InternalComponentHub
+  langs:
+  - csharp
+  - vb
+  name: AddComponents(params Type[]?)
+  nameWithType: InternalComponentHub.AddComponents(params Type[]?)
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.AddComponents(params System.Type[]?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/Component/InternalComponentHub.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.icomponent.git
+    id: AddComponents
+    path: ../../Godot Dev/com.cobilas.godot.icomponent/GodotEngine/Component/InternalComponentHub.cs
+    startLine: 105
+  assemblies:
+  - com.cobilas.godot.icomponent
+  namespace: Cobilas.GodotEngine.Component
+  summary: Allows you to add multiple components by specifying their type.
+  example: []
+  syntax:
+    content: public void AddComponents(params Type[]? components)
+    parameters:
+    - id: components
+      type: System.Type[]
+      description: The types to be added.
+    content.vb: Public Sub AddComponents(ParamArray components As Type())
+  overload: Cobilas.GodotEngine.Component.InternalComponentHub.AddComponents*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Occurs when the specified type does not inherit from <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - Cobilas.GodotEngine.Component.IComponentHub.AddComponents(System.Type[])
+  nameWithType.vb: InternalComponentHub.AddComponents(ParamArray Type())
+  fullName.vb: Cobilas.GodotEngine.Component.InternalComponentHub.AddComponents(ParamArray System.Type())
+  name.vb: AddComponents(ParamArray Type())
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.AddComponent``1
+  commentId: M:Cobilas.GodotEngine.Component.InternalComponentHub.AddComponent``1
+  id: AddComponent``1
+  parent: Cobilas.GodotEngine.Component.InternalComponentHub
+  langs:
+  - csharp
+  - vb
+  name: AddComponent<TypeComponent>()
+  nameWithType: InternalComponentHub.AddComponent<TypeComponent>()
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.AddComponent<TypeComponent>()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/Component/InternalComponentHub.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.icomponent.git
+    id: AddComponent
+    path: ../../Godot Dev/com.cobilas.godot.icomponent/GodotEngine/Component/InternalComponentHub.cs
+    startLine: 114
+  assemblies:
+  - com.cobilas.godot.icomponent
+  namespace: Cobilas.GodotEngine.Component
+  summary: Allows you to add a component by specifying its type.
+  remarks: >-
+    If the specified type is null or not found in the component list, 
+        an object of type <xref href="Cobilas.GodotEngine.Utility.NullNode" data-throw-if-not-resolved="false"></xref> will be returned.
+  example: []
+  syntax:
+    content: 'public TypeComponent? AddComponent<TypeComponent>() where TypeComponent : Node'
+    typeParameters:
+    - id: TypeComponent
+      description: The type to be added.
+    return:
+      type: '{TypeComponent}'
+      description: Returns the type that was added.
+    content.vb: Public Function AddComponent(Of TypeComponent As Node)() As TypeComponent
+  overload: Cobilas.GodotEngine.Component.InternalComponentHub.AddComponent*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Occurs when the specified type does not inherit from <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - Cobilas.GodotEngine.Component.IComponentHub.AddComponent``1
+  nameWithType.vb: InternalComponentHub.AddComponent(Of TypeComponent)()
+  fullName.vb: Cobilas.GodotEngine.Component.InternalComponentHub.AddComponent(Of TypeComponent)()
+  name.vb: AddComponent(Of TypeComponent)()
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.AddNodeComponent(Godot.Node)
+  commentId: M:Cobilas.GodotEngine.Component.InternalComponentHub.AddNodeComponent(Godot.Node)
+  id: AddNodeComponent(Godot.Node)
+  parent: Cobilas.GodotEngine.Component.InternalComponentHub
+  langs:
+  - csharp
+  - vb
+  name: AddNodeComponent(Node?)
+  nameWithType: InternalComponentHub.AddNodeComponent(Node?)
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.AddNodeComponent(Godot.Node?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/Component/InternalComponentHub.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.icomponent.git
+    id: AddNodeComponent
+    path: ../../Godot Dev/com.cobilas.godot.icomponent/GodotEngine/Component/InternalComponentHub.cs
+    startLine: 117
+  assemblies:
+  - com.cobilas.godot.icomponent
+  namespace: Cobilas.GodotEngine.Component
+  summary: Allows you to add a <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref> object to the component list.
+  example: []
+  syntax:
+    content: public void AddNodeComponent(Node? component)
+    parameters:
+    - id: component
+      type: Godot.Node
+      description: The <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref> object to add.
+    content.vb: Public Sub AddNodeComponent(component As Node)
+  overload: Cobilas.GodotEngine.Component.InternalComponentHub.AddNodeComponent*
+  implements:
+  - Cobilas.GodotEngine.Component.IComponentHub.AddNodeComponent(Godot.Node)
+  nameWithType.vb: InternalComponentHub.AddNodeComponent(Node)
+  fullName.vb: Cobilas.GodotEngine.Component.InternalComponentHub.AddNodeComponent(Godot.Node)
+  name.vb: AddNodeComponent(Node)
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.AddNodeComponents(Godot.Node[])
+  commentId: M:Cobilas.GodotEngine.Component.InternalComponentHub.AddNodeComponents(Godot.Node[])
+  id: AddNodeComponents(Godot.Node[])
+  parent: Cobilas.GodotEngine.Component.InternalComponentHub
+  langs:
+  - csharp
+  - vb
+  name: AddNodeComponents(params Node[]?)
+  nameWithType: InternalComponentHub.AddNodeComponents(params Node[]?)
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.AddNodeComponents(params Godot.Node[]?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/Component/InternalComponentHub.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.icomponent.git
+    id: AddNodeComponents
+    path: ../../Godot Dev/com.cobilas.godot.icomponent/GodotEngine/Component/InternalComponentHub.cs
+    startLine: 123
+  assemblies:
+  - com.cobilas.godot.icomponent
+  namespace: Cobilas.GodotEngine.Component
+  summary: Allows you to add multiple <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref> objects to the component list.
+  example: []
+  syntax:
+    content: public void AddNodeComponents(params Node[]? components)
+    parameters:
+    - id: components
+      type: Godot.Node[]
+      description: The <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref> objects to add.
+    content.vb: Public Sub AddNodeComponents(ParamArray components As Node())
+  overload: Cobilas.GodotEngine.Component.InternalComponentHub.AddNodeComponents*
+  implements:
+  - Cobilas.GodotEngine.Component.IComponentHub.AddNodeComponents(Godot.Node[])
+  nameWithType.vb: InternalComponentHub.AddNodeComponents(ParamArray Node())
+  fullName.vb: Cobilas.GodotEngine.Component.InternalComponentHub.AddNodeComponents(ParamArray Godot.Node())
+  name.vb: AddNodeComponents(ParamArray Node())
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.RemoveComponent(Godot.Node)
+  commentId: M:Cobilas.GodotEngine.Component.InternalComponentHub.RemoveComponent(Godot.Node)
+  id: RemoveComponent(Godot.Node)
+  parent: Cobilas.GodotEngine.Component.InternalComponentHub
+  langs:
+  - csharp
+  - vb
+  name: RemoveComponent(Node?)
+  nameWithType: InternalComponentHub.RemoveComponent(Node?)
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.RemoveComponent(Godot.Node?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/Component/InternalComponentHub.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.icomponent.git
+    id: RemoveComponent
+    path: ../../Godot Dev/com.cobilas.godot.icomponent/GodotEngine/Component/InternalComponentHub.cs
+    startLine: 130
+  assemblies:
+  - com.cobilas.godot.icomponent
+  namespace: Cobilas.GodotEngine.Component
+  summary: Allows you to remove a <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref> object from the list of components.
+  example: []
+  syntax:
+    content: public bool RemoveComponent(Node? component)
+    parameters:
+    - id: component
+      type: Godot.Node
+      description: The <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref> object to remove.
+    return:
+      type: System.Boolean
+      description: Returns <code>true</code> if the operation is successful.
+    content.vb: Public Function RemoveComponent(component As Node) As Boolean
+  overload: Cobilas.GodotEngine.Component.InternalComponentHub.RemoveComponent*
+  implements:
+  - Cobilas.GodotEngine.Component.IComponentHub.RemoveComponent(Godot.Node)
+  nameWithType.vb: InternalComponentHub.RemoveComponent(Node)
+  fullName.vb: Cobilas.GodotEngine.Component.InternalComponentHub.RemoveComponent(Godot.Node)
+  name.vb: RemoveComponent(Node)
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.RemoveComponents(Godot.Node[])
+  commentId: M:Cobilas.GodotEngine.Component.InternalComponentHub.RemoveComponents(Godot.Node[])
+  id: RemoveComponents(Godot.Node[])
+  parent: Cobilas.GodotEngine.Component.InternalComponentHub
+  langs:
+  - csharp
+  - vb
+  name: RemoveComponents(params Node[]?)
+  nameWithType: InternalComponentHub.RemoveComponents(params Node[]?)
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.RemoveComponents(params Godot.Node[]?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/Component/InternalComponentHub.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.icomponent.git
+    id: RemoveComponents
+    path: ../../Godot Dev/com.cobilas.godot.icomponent/GodotEngine/Component/InternalComponentHub.cs
+    startLine: 138
+  assemblies:
+  - com.cobilas.godot.icomponent
+  namespace: Cobilas.GodotEngine.Component
+  summary: Allows you to remove several <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref> objects from the list of components.
+  example: []
+  syntax:
+    content: public void RemoveComponents(params Node[]? components)
+    parameters:
+    - id: components
+      type: Godot.Node[]
+      description: The <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref> objects to be removed.
+    content.vb: Public Sub RemoveComponents(ParamArray components As Node())
+  overload: Cobilas.GodotEngine.Component.InternalComponentHub.RemoveComponents*
+  implements:
+  - Cobilas.GodotEngine.Component.IComponentHub.RemoveComponents(Godot.Node[])
+  nameWithType.vb: InternalComponentHub.RemoveComponents(ParamArray Node())
+  fullName.vb: Cobilas.GodotEngine.Component.InternalComponentHub.RemoveComponents(ParamArray Godot.Node())
+  name.vb: RemoveComponents(ParamArray Node())
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.Dispose
+  commentId: M:Cobilas.GodotEngine.Component.InternalComponentHub.Dispose
+  id: Dispose
+  parent: Cobilas.GodotEngine.Component.InternalComponentHub
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: InternalComponentHub.Dispose()
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.Dispose()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/Component/InternalComponentHub.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.icomponent.git
+    id: Dispose
+    path: ../../Godot Dev/com.cobilas.godot.icomponent/GodotEngine/Component/InternalComponentHub.cs
+    startLine: 144
+  assemblies:
+  - com.cobilas.godot.icomponent
+  namespace: Cobilas.GodotEngine.Component
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Cobilas.GodotEngine.Component.InternalComponentHub.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.GetEnumerator
+  commentId: M:Cobilas.GodotEngine.Component.InternalComponentHub.GetEnumerator
+  id: GetEnumerator
+  parent: Cobilas.GodotEngine.Component.InternalComponentHub
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: InternalComponentHub.GetEnumerator()
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/Component/InternalComponentHub.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.icomponent.git
+    id: GetEnumerator
+    path: ../../Godot Dev/com.cobilas.godot.icomponent/GodotEngine/Component/InternalComponentHub.cs
+    startLine: 149
+  assemblies:
+  - com.cobilas.godot.icomponent
+  namespace: Cobilas.GodotEngine.Component
+  summary: Returns an enumerator that iterates through the collection.
+  example: []
+  syntax:
+    content: public IEnumerator<Node> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{Godot.Node}
+      description: An enumerator that can be used to iterate through the collection.
+    content.vb: Public Function GetEnumerator() As IEnumerator(Of Node)
+  overload: Cobilas.GodotEngine.Component.InternalComponentHub.GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{Godot.Node}.GetEnumerator
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.AddRequireComponent(Godot.Node)
+  commentId: M:Cobilas.GodotEngine.Component.InternalComponentHub.AddRequireComponent(Godot.Node)
+  id: AddRequireComponent(Godot.Node)
+  parent: Cobilas.GodotEngine.Component.InternalComponentHub
+  langs:
+  - csharp
+  - vb
+  name: AddRequireComponent(Node?)
+  nameWithType: InternalComponentHub.AddRequireComponent(Node?)
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.AddRequireComponent(Godot.Node?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/Component/InternalComponentHub.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.icomponent.git
+    id: AddRequireComponent
+    path: ../../Godot Dev/com.cobilas.godot.icomponent/GodotEngine/Component/InternalComponentHub.cs
+    startLine: 171
+  assemblies:
+  - com.cobilas.godot.icomponent
+  namespace: Cobilas.GodotEngine.Component
+  summary: Static function to add components automatically.
+  remarks: >-
+    The target <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref> object must have 
+        the <xref href="Cobilas.GodotEngine.Component.RequireComponentAttribute" data-throw-if-not-resolved="false"></xref> attribute to specify the types to be added.
+  example: []
+  syntax:
+    content: public static void AddRequireComponent(Node? mono)
+    parameters:
+    - id: mono
+      type: Godot.Node
+      description: Target <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref> object.
+    content.vb: Public Shared Sub AddRequireComponent(mono As Node)
+  overload: Cobilas.GodotEngine.Component.InternalComponentHub.AddRequireComponent*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Occurs when the specified type does not inherit from <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: InternalComponentHub.AddRequireComponent(Node)
+  fullName.vb: Cobilas.GodotEngine.Component.InternalComponentHub.AddRequireComponent(Godot.Node)
+  name.vb: AddRequireComponent(Node)
+references:
+- uid: Cobilas.GodotEngine.Component.IComponentHub
+  commentId: T:Cobilas.GodotEngine.Component.IComponentHub
+  parent: Cobilas.GodotEngine.Component
+  href: Cobilas.GodotEngine.Component.IComponentHub.html
+  name: IComponentHub
+  nameWithType: IComponentHub
+  fullName: Cobilas.GodotEngine.Component.IComponentHub
+- uid: Cobilas.GodotEngine.Component
+  commentId: N:Cobilas.GodotEngine.Component
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Component
+  nameWithType: Cobilas.GodotEngine.Component
+  fullName: Cobilas.GodotEngine.Component
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Component
+    name: Component
+    href: Cobilas.GodotEngine.Component.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Component
+    name: Component
+    href: Cobilas.GodotEngine.Component.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Cobilas.GodotEngine.Component.IInternalComponentHub
+  commentId: T:Cobilas.GodotEngine.Component.IInternalComponentHub
+  parent: Cobilas.GodotEngine.Component
+  href: Cobilas.GodotEngine.Component.IInternalComponentHub.html
+  name: IInternalComponentHub
+  nameWithType: IInternalComponentHub
+  fullName: Cobilas.GodotEngine.Component.IInternalComponentHub
+- uid: System.Collections.Generic.IEnumerable{Godot.Node}
+  commentId: T:System.Collections.Generic.IEnumerable{Godot.Node}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Node>
+  nameWithType: IEnumerable<Node>
+  fullName: System.Collections.Generic.IEnumerable<Godot.Node>
+  nameWithType.vb: IEnumerable(Of Node)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Godot.Node)
+  name.vb: IEnumerable(Of Node)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.#ctor*
+  commentId: Overload:Cobilas.GodotEngine.Component.InternalComponentHub.#ctor
+  href: Cobilas.GodotEngine.Component.InternalComponentHub.html#Cobilas_GodotEngine_Component_InternalComponentHub__ctor_Godot_Node_
+  name: InternalComponentHub
+  nameWithType: InternalComponentHub.InternalComponentHub
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.InternalComponentHub
+  nameWithType.vb: InternalComponentHub.New
+  fullName.vb: Cobilas.GodotEngine.Component.InternalComponentHub.New
+  name.vb: New
+- uid: Godot.Node
+  commentId: T:Godot.Node
+  parent: Godot
+  isExternal: true
+  name: Node
+  nameWithType: Node
+  fullName: Godot.Node
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.Entity*
+  commentId: Overload:Cobilas.GodotEngine.Component.InternalComponentHub.Entity
+  href: Cobilas.GodotEngine.Component.InternalComponentHub.html#Cobilas_GodotEngine_Component_InternalComponentHub_Entity
+  name: Entity
+  nameWithType: InternalComponentHub.Entity
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.Entity
+- uid: Cobilas.GodotEngine.Component.IInternalComponentHub.Entity
+  commentId: P:Cobilas.GodotEngine.Component.IInternalComponentHub.Entity
+  parent: Cobilas.GodotEngine.Component.IInternalComponentHub
+  href: Cobilas.GodotEngine.Component.IInternalComponentHub.html#Cobilas_GodotEngine_Component_IInternalComponentHub_Entity
+  name: Entity
+  nameWithType: IInternalComponentHub.Entity
+  fullName: Cobilas.GodotEngine.Component.IInternalComponentHub.Entity
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.ComponentsCount*
+  commentId: Overload:Cobilas.GodotEngine.Component.InternalComponentHub.ComponentsCount
+  href: Cobilas.GodotEngine.Component.InternalComponentHub.html#Cobilas_GodotEngine_Component_InternalComponentHub_ComponentsCount
+  name: ComponentsCount
+  nameWithType: InternalComponentHub.ComponentsCount
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.ComponentsCount
+- uid: Cobilas.GodotEngine.Component.IComponentHub.ComponentsCount
+  commentId: P:Cobilas.GodotEngine.Component.IComponentHub.ComponentsCount
+  parent: Cobilas.GodotEngine.Component.IComponentHub
+  href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_ComponentsCount
+  name: ComponentsCount
+  nameWithType: IComponentHub.ComponentsCount
+  fullName: Cobilas.GodotEngine.Component.IComponentHub.ComponentsCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.Parent*
+  commentId: Overload:Cobilas.GodotEngine.Component.InternalComponentHub.Parent
+  href: Cobilas.GodotEngine.Component.InternalComponentHub.html#Cobilas_GodotEngine_Component_InternalComponentHub_Parent
+  name: Parent
+  nameWithType: InternalComponentHub.Parent
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.Parent
+- uid: Cobilas.GodotEngine.Component.IComponentHub.Parent
+  commentId: P:Cobilas.GodotEngine.Component.IComponentHub.Parent
+  parent: Cobilas.GodotEngine.Component.IComponentHub
+  href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_Parent
+  name: Parent
+  nameWithType: IComponentHub.Parent
+  fullName: Cobilas.GodotEngine.Component.IComponentHub.Parent
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.ParentComponent*
+  commentId: Overload:Cobilas.GodotEngine.Component.InternalComponentHub.ParentComponent
+  href: Cobilas.GodotEngine.Component.InternalComponentHub.html#Cobilas_GodotEngine_Component_InternalComponentHub_ParentComponent
+  name: ParentComponent
+  nameWithType: InternalComponentHub.ParentComponent
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.ParentComponent
+- uid: Cobilas.GodotEngine.Component.IComponentHub.ParentComponent
+  commentId: P:Cobilas.GodotEngine.Component.IComponentHub.ParentComponent
+  parent: Cobilas.GodotEngine.Component.IComponentHub
+  href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_ParentComponent
+  name: ParentComponent
+  nameWithType: IComponentHub.ParentComponent
+  fullName: Cobilas.GodotEngine.Component.IComponentHub.ParentComponent
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.Finalize*
+  commentId: Overload:Cobilas.GodotEngine.Component.InternalComponentHub.Finalize
+  href: Cobilas.GodotEngine.Component.InternalComponentHub.html#Cobilas_GodotEngine_Component_InternalComponentHub_Finalize
+  name: ~InternalComponentHub
+  nameWithType: InternalComponentHub.~InternalComponentHub
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.~InternalComponentHub
+  spec.csharp:
+  - name: "~"
+  - uid: Cobilas.GodotEngine.Component.InternalComponentHub.Finalize*
+    name: InternalComponentHub
+    href: Cobilas.GodotEngine.Component.InternalComponentHub.html#Cobilas_GodotEngine_Component_InternalComponentHub_Finalize
+- uid: Cobilas.GodotEngine.Utility.NullNode
+  commentId: T:Cobilas.GodotEngine.Utility.NullNode
+  isExternal: true
+  name: NullNode
+  nameWithType: NullNode
+  fullName: Cobilas.GodotEngine.Utility.NullNode
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent*
+  commentId: Overload:Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent
+  href: Cobilas.GodotEngine.Component.InternalComponentHub.html#Cobilas_GodotEngine_Component_InternalComponentHub_GetComponent_System_Type_System_Boolean_
+  name: GetComponent
+  nameWithType: InternalComponentHub.GetComponent
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponent
+- uid: Cobilas.GodotEngine.Component.IComponentHub.GetComponent(System.Type,System.Boolean)
+  commentId: M:Cobilas.GodotEngine.Component.IComponentHub.GetComponent(System.Type,System.Boolean)
+  parent: Cobilas.GodotEngine.Component.IComponentHub
+  isExternal: true
+  href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_GetComponent_System_Type_System_Boolean_
+  name: GetComponent(Type, bool)
+  nameWithType: IComponentHub.GetComponent(Type, bool)
+  fullName: Cobilas.GodotEngine.Component.IComponentHub.GetComponent(System.Type, bool)
+  nameWithType.vb: IComponentHub.GetComponent(Type, Boolean)
+  fullName.vb: Cobilas.GodotEngine.Component.IComponentHub.GetComponent(System.Type, Boolean)
+  name.vb: GetComponent(Type, Boolean)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.GetComponent(System.Type,System.Boolean)
+    name: GetComponent
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_GetComponent_System_Type_System_Boolean_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.GetComponent(System.Type,System.Boolean)
+    name: GetComponent
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_GetComponent_System_Type_System_Boolean_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Cobilas.GodotEngine.Component.IComponentHub.GetComponent(System.Type)
+  commentId: M:Cobilas.GodotEngine.Component.IComponentHub.GetComponent(System.Type)
+  parent: Cobilas.GodotEngine.Component.IComponentHub
+  isExternal: true
+  href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_GetComponent_System_Type_
+  name: GetComponent(Type)
+  nameWithType: IComponentHub.GetComponent(Type)
+  fullName: Cobilas.GodotEngine.Component.IComponentHub.GetComponent(System.Type)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.GetComponent(System.Type)
+    name: GetComponent
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_GetComponent_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.GetComponent(System.Type)
+    name: GetComponent
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_GetComponent_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: Cobilas.GodotEngine.Component.IComponentHub.GetComponent``1(System.Boolean)
+  commentId: M:Cobilas.GodotEngine.Component.IComponentHub.GetComponent``1(System.Boolean)
+  parent: Cobilas.GodotEngine.Component.IComponentHub
+  isExternal: true
+  href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_GetComponent__1_System_Boolean_
+  name: GetComponent<TypeComponent>(bool)
+  nameWithType: IComponentHub.GetComponent<TypeComponent>(bool)
+  fullName: Cobilas.GodotEngine.Component.IComponentHub.GetComponent<TypeComponent>(bool)
+  nameWithType.vb: IComponentHub.GetComponent(Of TypeComponent)(Boolean)
+  fullName.vb: Cobilas.GodotEngine.Component.IComponentHub.GetComponent(Of TypeComponent)(Boolean)
+  name.vb: GetComponent(Of TypeComponent)(Boolean)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.GetComponent``1(System.Boolean)
+    name: GetComponent
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_GetComponent__1_System_Boolean_
+  - name: <
+  - name: TypeComponent
+  - name: '>'
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.GetComponent``1(System.Boolean)
+    name: GetComponent
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_GetComponent__1_System_Boolean_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TypeComponent
+  - name: )
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: '{TypeComponent}'
+  commentId: '!:TypeComponent'
+  definition: TypeComponent
+  name: TypeComponent
+  nameWithType: TypeComponent
+  fullName: TypeComponent
+- uid: TypeComponent
+  name: TypeComponent
+  nameWithType: TypeComponent
+  fullName: TypeComponent
+- uid: Cobilas.GodotEngine.Component.IComponentHub.GetComponent``1
+  commentId: M:Cobilas.GodotEngine.Component.IComponentHub.GetComponent``1
+  parent: Cobilas.GodotEngine.Component.IComponentHub
+  href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_GetComponent__1
+  name: GetComponent<TypeComponent>()
+  nameWithType: IComponentHub.GetComponent<TypeComponent>()
+  fullName: Cobilas.GodotEngine.Component.IComponentHub.GetComponent<TypeComponent>()
+  nameWithType.vb: IComponentHub.GetComponent(Of TypeComponent)()
+  fullName.vb: Cobilas.GodotEngine.Component.IComponentHub.GetComponent(Of TypeComponent)()
+  name.vb: GetComponent(Of TypeComponent)()
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.GetComponent``1
+    name: GetComponent
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_GetComponent__1
+  - name: <
+  - name: TypeComponent
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.GetComponent``1
+    name: GetComponent
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_GetComponent__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TypeComponent
+  - name: )
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents*
+  commentId: Overload:Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents
+  href: Cobilas.GodotEngine.Component.InternalComponentHub.html#Cobilas_GodotEngine_Component_InternalComponentHub_GetComponents_System_Type_System_Boolean_
+  name: GetComponents
+  nameWithType: InternalComponentHub.GetComponents
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.GetComponents
+- uid: Cobilas.GodotEngine.Component.IComponentHub.GetComponents(System.Type,System.Boolean)
+  commentId: M:Cobilas.GodotEngine.Component.IComponentHub.GetComponents(System.Type,System.Boolean)
+  parent: Cobilas.GodotEngine.Component.IComponentHub
+  isExternal: true
+  href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_GetComponents_System_Type_System_Boolean_
+  name: GetComponents(Type, bool)
+  nameWithType: IComponentHub.GetComponents(Type, bool)
+  fullName: Cobilas.GodotEngine.Component.IComponentHub.GetComponents(System.Type, bool)
+  nameWithType.vb: IComponentHub.GetComponents(Type, Boolean)
+  fullName.vb: Cobilas.GodotEngine.Component.IComponentHub.GetComponents(System.Type, Boolean)
+  name.vb: GetComponents(Type, Boolean)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.GetComponents(System.Type,System.Boolean)
+    name: GetComponents
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_GetComponents_System_Type_System_Boolean_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.GetComponents(System.Type,System.Boolean)
+    name: GetComponents
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_GetComponents_System_Type_System_Boolean_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Godot.Node[]
+  isExternal: true
+  name: Node[]
+  nameWithType: Node[]
+  fullName: Godot.Node[]
+  nameWithType.vb: Node()
+  fullName.vb: Godot.Node()
+  name.vb: Node()
+  spec.csharp:
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Component.IComponentHub.GetComponents(System.Type)
+  commentId: M:Cobilas.GodotEngine.Component.IComponentHub.GetComponents(System.Type)
+  parent: Cobilas.GodotEngine.Component.IComponentHub
+  isExternal: true
+  href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_GetComponents_System_Type_
+  name: GetComponents(Type)
+  nameWithType: IComponentHub.GetComponents(Type)
+  fullName: Cobilas.GodotEngine.Component.IComponentHub.GetComponents(System.Type)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.GetComponents(System.Type)
+    name: GetComponents
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_GetComponents_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.GetComponents(System.Type)
+    name: GetComponents
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_GetComponents_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: Cobilas.GodotEngine.Component.IComponentHub.GetComponents``1(System.Boolean)
+  commentId: M:Cobilas.GodotEngine.Component.IComponentHub.GetComponents``1(System.Boolean)
+  parent: Cobilas.GodotEngine.Component.IComponentHub
+  isExternal: true
+  href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_GetComponents__1_System_Boolean_
+  name: GetComponents<TypeComponent>(bool)
+  nameWithType: IComponentHub.GetComponents<TypeComponent>(bool)
+  fullName: Cobilas.GodotEngine.Component.IComponentHub.GetComponents<TypeComponent>(bool)
+  nameWithType.vb: IComponentHub.GetComponents(Of TypeComponent)(Boolean)
+  fullName.vb: Cobilas.GodotEngine.Component.IComponentHub.GetComponents(Of TypeComponent)(Boolean)
+  name.vb: GetComponents(Of TypeComponent)(Boolean)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.GetComponents``1(System.Boolean)
+    name: GetComponents
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_GetComponents__1_System_Boolean_
+  - name: <
+  - name: TypeComponent
+  - name: '>'
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.GetComponents``1(System.Boolean)
+    name: GetComponents
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_GetComponents__1_System_Boolean_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TypeComponent
+  - name: )
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: '{TypeComponent}[]'
+  isExternal: true
+  name: TypeComponent[]
+  nameWithType: TypeComponent[]
+  fullName: TypeComponent[]
+  nameWithType.vb: TypeComponent()
+  fullName.vb: TypeComponent()
+  name.vb: TypeComponent()
+  spec.csharp:
+  - name: TypeComponent
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: TypeComponent
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Component.IComponentHub.GetComponents``1
+  commentId: M:Cobilas.GodotEngine.Component.IComponentHub.GetComponents``1
+  parent: Cobilas.GodotEngine.Component.IComponentHub
+  href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_GetComponents__1
+  name: GetComponents<TypeComponent>()
+  nameWithType: IComponentHub.GetComponents<TypeComponent>()
+  fullName: Cobilas.GodotEngine.Component.IComponentHub.GetComponents<TypeComponent>()
+  nameWithType.vb: IComponentHub.GetComponents(Of TypeComponent)()
+  fullName.vb: Cobilas.GodotEngine.Component.IComponentHub.GetComponents(Of TypeComponent)()
+  name.vb: GetComponents(Of TypeComponent)()
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.GetComponents``1
+    name: GetComponents
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_GetComponents__1
+  - name: <
+  - name: TypeComponent
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.GetComponents``1
+    name: GetComponents
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_GetComponents__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TypeComponent
+  - name: )
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.AddComponent*
+  commentId: Overload:Cobilas.GodotEngine.Component.InternalComponentHub.AddComponent
+  href: Cobilas.GodotEngine.Component.InternalComponentHub.html#Cobilas_GodotEngine_Component_InternalComponentHub_AddComponent_System_Type_
+  name: AddComponent
+  nameWithType: InternalComponentHub.AddComponent
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.AddComponent
+- uid: Cobilas.GodotEngine.Component.IComponentHub.AddComponent(System.Type)
+  commentId: M:Cobilas.GodotEngine.Component.IComponentHub.AddComponent(System.Type)
+  parent: Cobilas.GodotEngine.Component.IComponentHub
+  isExternal: true
+  href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_AddComponent_System_Type_
+  name: AddComponent(Type)
+  nameWithType: IComponentHub.AddComponent(Type)
+  fullName: Cobilas.GodotEngine.Component.IComponentHub.AddComponent(System.Type)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.AddComponent(System.Type)
+    name: AddComponent
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_AddComponent_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.AddComponent(System.Type)
+    name: AddComponent
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_AddComponent_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.AddComponents*
+  commentId: Overload:Cobilas.GodotEngine.Component.InternalComponentHub.AddComponents
+  href: Cobilas.GodotEngine.Component.InternalComponentHub.html#Cobilas_GodotEngine_Component_InternalComponentHub_AddComponents_System_Type___
+  name: AddComponents
+  nameWithType: InternalComponentHub.AddComponents
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.AddComponents
+- uid: Cobilas.GodotEngine.Component.IComponentHub.AddComponents(System.Type[])
+  commentId: M:Cobilas.GodotEngine.Component.IComponentHub.AddComponents(System.Type[])
+  parent: Cobilas.GodotEngine.Component.IComponentHub
+  isExternal: true
+  href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_AddComponents_System_Type___
+  name: AddComponents(params Type[])
+  nameWithType: IComponentHub.AddComponents(params Type[])
+  fullName: Cobilas.GodotEngine.Component.IComponentHub.AddComponents(params System.Type[])
+  nameWithType.vb: IComponentHub.AddComponents(ParamArray Type())
+  fullName.vb: Cobilas.GodotEngine.Component.IComponentHub.AddComponents(ParamArray System.Type())
+  name.vb: AddComponents(ParamArray Type())
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.AddComponents(System.Type[])
+    name: AddComponents
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_AddComponents_System_Type___
+  - name: (
+  - name: params
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.AddComponents(System.Type[])
+    name: AddComponents
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_AddComponents_System_Type___
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Type[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type[]
+  nameWithType: Type[]
+  fullName: System.Type[]
+  nameWithType.vb: Type()
+  fullName.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Component.IComponentHub.AddComponent``1
+  commentId: M:Cobilas.GodotEngine.Component.IComponentHub.AddComponent``1
+  parent: Cobilas.GodotEngine.Component.IComponentHub
+  href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_AddComponent__1
+  name: AddComponent<TypeComponent>()
+  nameWithType: IComponentHub.AddComponent<TypeComponent>()
+  fullName: Cobilas.GodotEngine.Component.IComponentHub.AddComponent<TypeComponent>()
+  nameWithType.vb: IComponentHub.AddComponent(Of TypeComponent)()
+  fullName.vb: Cobilas.GodotEngine.Component.IComponentHub.AddComponent(Of TypeComponent)()
+  name.vb: AddComponent(Of TypeComponent)()
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.AddComponent``1
+    name: AddComponent
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_AddComponent__1
+  - name: <
+  - name: TypeComponent
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.AddComponent``1
+    name: AddComponent
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_AddComponent__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TypeComponent
+  - name: )
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.AddNodeComponent*
+  commentId: Overload:Cobilas.GodotEngine.Component.InternalComponentHub.AddNodeComponent
+  href: Cobilas.GodotEngine.Component.InternalComponentHub.html#Cobilas_GodotEngine_Component_InternalComponentHub_AddNodeComponent_Godot_Node_
+  name: AddNodeComponent
+  nameWithType: InternalComponentHub.AddNodeComponent
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.AddNodeComponent
+- uid: Cobilas.GodotEngine.Component.IComponentHub.AddNodeComponent(Godot.Node)
+  commentId: M:Cobilas.GodotEngine.Component.IComponentHub.AddNodeComponent(Godot.Node)
+  parent: Cobilas.GodotEngine.Component.IComponentHub
+  isExternal: true
+  href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_AddNodeComponent_Godot_Node_
+  name: AddNodeComponent(Node)
+  nameWithType: IComponentHub.AddNodeComponent(Node)
+  fullName: Cobilas.GodotEngine.Component.IComponentHub.AddNodeComponent(Godot.Node)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.AddNodeComponent(Godot.Node)
+    name: AddNodeComponent
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_AddNodeComponent_Godot_Node_
+  - name: (
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.AddNodeComponent(Godot.Node)
+    name: AddNodeComponent
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_AddNodeComponent_Godot_Node_
+  - name: (
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: )
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.AddNodeComponents*
+  commentId: Overload:Cobilas.GodotEngine.Component.InternalComponentHub.AddNodeComponents
+  href: Cobilas.GodotEngine.Component.InternalComponentHub.html#Cobilas_GodotEngine_Component_InternalComponentHub_AddNodeComponents_Godot_Node___
+  name: AddNodeComponents
+  nameWithType: InternalComponentHub.AddNodeComponents
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.AddNodeComponents
+- uid: Cobilas.GodotEngine.Component.IComponentHub.AddNodeComponents(Godot.Node[])
+  commentId: M:Cobilas.GodotEngine.Component.IComponentHub.AddNodeComponents(Godot.Node[])
+  parent: Cobilas.GodotEngine.Component.IComponentHub
+  isExternal: true
+  href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_AddNodeComponents_Godot_Node___
+  name: AddNodeComponents(params Node[])
+  nameWithType: IComponentHub.AddNodeComponents(params Node[])
+  fullName: Cobilas.GodotEngine.Component.IComponentHub.AddNodeComponents(params Godot.Node[])
+  nameWithType.vb: IComponentHub.AddNodeComponents(ParamArray Node())
+  fullName.vb: Cobilas.GodotEngine.Component.IComponentHub.AddNodeComponents(ParamArray Godot.Node())
+  name.vb: AddNodeComponents(ParamArray Node())
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.AddNodeComponents(Godot.Node[])
+    name: AddNodeComponents
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_AddNodeComponents_Godot_Node___
+  - name: (
+  - name: params
+  - name: " "
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.AddNodeComponents(Godot.Node[])
+    name: AddNodeComponents
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_AddNodeComponents_Godot_Node___
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.RemoveComponent*
+  commentId: Overload:Cobilas.GodotEngine.Component.InternalComponentHub.RemoveComponent
+  href: Cobilas.GodotEngine.Component.InternalComponentHub.html#Cobilas_GodotEngine_Component_InternalComponentHub_RemoveComponent_Godot_Node_
+  name: RemoveComponent
+  nameWithType: InternalComponentHub.RemoveComponent
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.RemoveComponent
+- uid: Cobilas.GodotEngine.Component.IComponentHub.RemoveComponent(Godot.Node)
+  commentId: M:Cobilas.GodotEngine.Component.IComponentHub.RemoveComponent(Godot.Node)
+  parent: Cobilas.GodotEngine.Component.IComponentHub
+  isExternal: true
+  href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_RemoveComponent_Godot_Node_
+  name: RemoveComponent(Node)
+  nameWithType: IComponentHub.RemoveComponent(Node)
+  fullName: Cobilas.GodotEngine.Component.IComponentHub.RemoveComponent(Godot.Node)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.RemoveComponent(Godot.Node)
+    name: RemoveComponent
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_RemoveComponent_Godot_Node_
+  - name: (
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.RemoveComponent(Godot.Node)
+    name: RemoveComponent
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_RemoveComponent_Godot_Node_
+  - name: (
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: )
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.RemoveComponents*
+  commentId: Overload:Cobilas.GodotEngine.Component.InternalComponentHub.RemoveComponents
+  href: Cobilas.GodotEngine.Component.InternalComponentHub.html#Cobilas_GodotEngine_Component_InternalComponentHub_RemoveComponents_Godot_Node___
+  name: RemoveComponents
+  nameWithType: InternalComponentHub.RemoveComponents
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.RemoveComponents
+- uid: Cobilas.GodotEngine.Component.IComponentHub.RemoveComponents(Godot.Node[])
+  commentId: M:Cobilas.GodotEngine.Component.IComponentHub.RemoveComponents(Godot.Node[])
+  parent: Cobilas.GodotEngine.Component.IComponentHub
+  isExternal: true
+  href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_RemoveComponents_Godot_Node___
+  name: RemoveComponents(params Node[])
+  nameWithType: IComponentHub.RemoveComponents(params Node[])
+  fullName: Cobilas.GodotEngine.Component.IComponentHub.RemoveComponents(params Godot.Node[])
+  nameWithType.vb: IComponentHub.RemoveComponents(ParamArray Node())
+  fullName.vb: Cobilas.GodotEngine.Component.IComponentHub.RemoveComponents(ParamArray Godot.Node())
+  name.vb: RemoveComponents(ParamArray Node())
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.RemoveComponents(Godot.Node[])
+    name: RemoveComponents
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_RemoveComponents_Godot_Node___
+  - name: (
+  - name: params
+  - name: " "
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Component.IComponentHub.RemoveComponents(Godot.Node[])
+    name: RemoveComponents
+    href: Cobilas.GodotEngine.Component.IComponentHub.html#Cobilas_GodotEngine_Component_IComponentHub_RemoveComponents_Godot_Node___
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.Dispose*
+  commentId: Overload:Cobilas.GodotEngine.Component.InternalComponentHub.Dispose
+  href: Cobilas.GodotEngine.Component.InternalComponentHub.html#Cobilas_GodotEngine_Component_InternalComponentHub_Dispose
+  name: Dispose
+  nameWithType: InternalComponentHub.Dispose
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.GetEnumerator*
+  commentId: Overload:Cobilas.GodotEngine.Component.InternalComponentHub.GetEnumerator
+  href: Cobilas.GodotEngine.Component.InternalComponentHub.html#Cobilas_GodotEngine_Component_InternalComponentHub_GetEnumerator
+  name: GetEnumerator
+  nameWithType: InternalComponentHub.GetEnumerator
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{Godot.Node}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{Godot.Node}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{Godot.Node}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<Node>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<Godot.Node>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of Node).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Godot.Node).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable{Godot.Node}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable{Godot.Node}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator{Godot.Node}
+  commentId: T:System.Collections.Generic.IEnumerator{Godot.Node}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<Node>
+  nameWithType: IEnumerator<Node>
+  fullName: System.Collections.Generic.IEnumerator<Godot.Node>
+  nameWithType.vb: IEnumerator(Of Node)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of Godot.Node)
+  name.vb: IEnumerator(Of Node)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Cobilas.GodotEngine.Component.RequireComponentAttribute
+  commentId: T:Cobilas.GodotEngine.Component.RequireComponentAttribute
+  href: Cobilas.GodotEngine.Component.RequireComponentAttribute.html
+  name: RequireComponentAttribute
+  nameWithType: RequireComponentAttribute
+  fullName: Cobilas.GodotEngine.Component.RequireComponentAttribute
+- uid: Cobilas.GodotEngine.Component.InternalComponentHub.AddRequireComponent*
+  commentId: Overload:Cobilas.GodotEngine.Component.InternalComponentHub.AddRequireComponent
+  href: Cobilas.GodotEngine.Component.InternalComponentHub.html#Cobilas_GodotEngine_Component_InternalComponentHub_AddRequireComponent_Godot_Node_
+  name: AddRequireComponent
+  nameWithType: InternalComponentHub.AddRequireComponent
+  fullName: Cobilas.GodotEngine.Component.InternalComponentHub.AddRequireComponent

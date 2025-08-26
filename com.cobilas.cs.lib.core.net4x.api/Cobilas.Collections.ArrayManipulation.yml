@@ -124,7 +124,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ArrayManipulation
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 7
+    startLine: 8
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -150,9 +150,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Insert<T>(T[]?, long, T[])
-  nameWithType: ArrayManipulation.Insert<T>(T[]?, long, T[])
-  fullName: Cobilas.Collections.ArrayManipulation.Insert<T>(T[]?, long, T[])
+  name: Insert<T>(T[]?, long, T[]?)
+  nameWithType: ArrayManipulation.Insert<T>(T[]?, long, T[]?)
+  fullName: Cobilas.Collections.ArrayManipulation.Insert<T>(T[]?, long, T[]?)
   type: Method
   source:
     remote:
@@ -161,14 +161,14 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Insert
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 17
+    startLine: 18
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
   summary: Insert a list of items at a given index into a target array.
   example: []
   syntax:
-    content: public static T[] Insert<T>(T[]? itens, long index, T[] list)
+    content: public static T[]? Insert<T>(T[]? itens, long index, T[]? list)
     parameters:
     - id: itens
       type: '{T}[]'
@@ -199,9 +199,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Insert<T>(T?, long, T[])
-  nameWithType: ArrayManipulation.Insert<T>(T?, long, T[])
-  fullName: Cobilas.Collections.ArrayManipulation.Insert<T>(T?, long, T[])
+  name: Insert<T>(T?, long, T[]?)
+  nameWithType: ArrayManipulation.Insert<T>(T?, long, T[]?)
+  fullName: Cobilas.Collections.ArrayManipulation.Insert<T>(T?, long, T[]?)
   type: Method
   source:
     remote:
@@ -210,14 +210,14 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Insert
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 35
+    startLine: 36
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
   summary: Insert a list of items at a given index into a target array.
   example: []
   syntax:
-    content: public static T[] Insert<T>(T? item, long index, T[] list)
+    content: public static T[]? Insert<T>(T? item, long index, T[]? list)
     parameters:
     - id: item
       type: '{T}'
@@ -248,9 +248,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Insert<T>(IEnumerable<T>?, long, T[])
-  nameWithType: ArrayManipulation.Insert<T>(IEnumerable<T>?, long, T[])
-  fullName: Cobilas.Collections.ArrayManipulation.Insert<T>(System.Collections.Generic.IEnumerable<T>?, long, T[])
+  name: Insert<T>(IEnumerable<T>?, long, T[]?)
+  nameWithType: ArrayManipulation.Insert<T>(IEnumerable<T>?, long, T[]?)
+  fullName: Cobilas.Collections.ArrayManipulation.Insert<T>(System.Collections.Generic.IEnumerable<T>?, long, T[]?)
   type: Method
   source:
     remote:
@@ -259,14 +259,14 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Insert
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 45
+    startLine: 46
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
   summary: Insert a list of items at a given index into a target array.
   example: []
   syntax:
-    content: public static T[] Insert<T>(IEnumerable<T>? collection, long index, T[] list)
+    content: public static T[]? Insert<T>(IEnumerable<T>? collection, long index, T[]? list)
     parameters:
     - id: collection
       type: System.Collections.Generic.IEnumerable{{T}}
@@ -297,9 +297,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Insert<T>(IEnumerable<T>?, long, ref T[])
-  nameWithType: ArrayManipulation.Insert<T>(IEnumerable<T>?, long, ref T[])
-  fullName: Cobilas.Collections.ArrayManipulation.Insert<T>(System.Collections.Generic.IEnumerable<T>?, long, ref T[])
+  name: Insert<T>(IEnumerable<T>?, long, ref T[]?)
+  nameWithType: ArrayManipulation.Insert<T>(IEnumerable<T>?, long, ref T[]?)
+  fullName: Cobilas.Collections.ArrayManipulation.Insert<T>(System.Collections.Generic.IEnumerable<T>?, long, ref T[]?)
   type: Method
   source:
     remote:
@@ -308,14 +308,14 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Insert
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 57
+    startLine: 58
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
   summary: Insert a list of items at a given index into a target array.
   example: []
   syntax:
-    content: public static void Insert<T>(IEnumerable<T>? collection, long index, ref T[] list)
+    content: public static void Insert<T>(IEnumerable<T>? collection, long index, ref T[]? list)
     parameters:
     - id: collection
       type: System.Collections.Generic.IEnumerable{{T}}
@@ -344,9 +344,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Insert<T>(T[]?, long, ref T[])
-  nameWithType: ArrayManipulation.Insert<T>(T[]?, long, ref T[])
-  fullName: Cobilas.Collections.ArrayManipulation.Insert<T>(T[]?, long, ref T[])
+  name: Insert<T>(T[]?, long, ref T[]?)
+  nameWithType: ArrayManipulation.Insert<T>(T[]?, long, ref T[]?)
+  fullName: Cobilas.Collections.ArrayManipulation.Insert<T>(T[]?, long, ref T[]?)
   type: Method
   source:
     remote:
@@ -355,14 +355,14 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Insert
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 65
+    startLine: 66
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
   summary: Insert a list of items at a given index into a target array.
   example: []
   syntax:
-    content: public static void Insert<T>(T[]? itens, long index, ref T[] list)
+    content: public static void Insert<T>(T[]? itens, long index, ref T[]? list)
     parameters:
     - id: itens
       type: '{T}[]'
@@ -391,9 +391,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Insert<T>(T?, long, ref T[])
-  nameWithType: ArrayManipulation.Insert<T>(T?, long, ref T[])
-  fullName: Cobilas.Collections.ArrayManipulation.Insert<T>(T?, long, ref T[])
+  name: Insert<T>(T?, long, ref T[]?)
+  nameWithType: ArrayManipulation.Insert<T>(T?, long, ref T[]?)
+  fullName: Cobilas.Collections.ArrayManipulation.Insert<T>(T?, long, ref T[]?)
   type: Method
   source:
     remote:
@@ -402,14 +402,14 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Insert
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 73
+    startLine: 74
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
   summary: Insert a list of items at a given index into a target array.
   example: []
   syntax:
-    content: public static void Insert<T>(T? item, long index, ref T[] list)
+    content: public static void Insert<T>(T? item, long index, ref T[]? list)
     parameters:
     - id: item
       type: '{T}'
@@ -438,9 +438,9 @@ items:
   langs:
   - csharp
   - vb
-  name: AddNon_Existing<T>(T?, T[])
-  nameWithType: ArrayManipulation.AddNon_Existing<T>(T?, T[])
-  fullName: Cobilas.Collections.ArrayManipulation.AddNon_Existing<T>(T?, T[])
+  name: AddNon_Existing<T>(T?, T[]?)
+  nameWithType: ArrayManipulation.AddNon_Existing<T>(T?, T[]?)
+  fullName: Cobilas.Collections.ArrayManipulation.AddNon_Existing<T>(T?, T[]?)
   type: Method
   source:
     remote:
@@ -449,7 +449,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: AddNon_Existing
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 84
+    startLine: 85
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -458,7 +458,7 @@ items:
         <p>The method does not add items that already exist in the target list.</p>
   example: []
   syntax:
-    content: public static T[] AddNon_Existing<T>(T? item, T[] list)
+    content: public static T[]? AddNon_Existing<T>(T? item, T[]? list)
     parameters:
     - id: item
       type: '{T}'
@@ -489,9 +489,9 @@ items:
   langs:
   - csharp
   - vb
-  name: AddNon_Existing<T>(T?, ref T[])
-  nameWithType: ArrayManipulation.AddNon_Existing<T>(T?, ref T[])
-  fullName: Cobilas.Collections.ArrayManipulation.AddNon_Existing<T>(T?, ref T[])
+  name: AddNon_Existing<T>(T?, ref T[]?)
+  nameWithType: ArrayManipulation.AddNon_Existing<T>(T?, ref T[]?)
+  fullName: Cobilas.Collections.ArrayManipulation.AddNon_Existing<T>(T?, ref T[]?)
   type: Method
   source:
     remote:
@@ -500,7 +500,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: AddNon_Existing
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 98
+    startLine: 99
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -509,7 +509,7 @@ items:
         <p>The method does not add items that already exist in the target list.</p>
   example: []
   syntax:
-    content: public static void AddNon_Existing<T>(T? item, ref T[] list)
+    content: public static void AddNon_Existing<T>(T? item, ref T[]? list)
     parameters:
     - id: item
       type: '{T}'
@@ -535,9 +535,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Add<T>(T[]?, T[])
-  nameWithType: ArrayManipulation.Add<T>(T[]?, T[])
-  fullName: Cobilas.Collections.ArrayManipulation.Add<T>(T[]?, T[])
+  name: Add<T>(T[]?, T[]?)
+  nameWithType: ArrayManipulation.Add<T>(T[]?, T[]?)
+  fullName: Cobilas.Collections.ArrayManipulation.Add<T>(T[]?, T[]?)
   type: Method
   source:
     remote:
@@ -546,14 +546,14 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Add
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 105
+    startLine: 106
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
   summary: Adds a list of items to the target list.
   example: []
   syntax:
-    content: public static T[] Add<T>(T[]? itens, T[] list)
+    content: public static T[]? Add<T>(T[]? itens, T[]? list)
     parameters:
     - id: itens
       type: '{T}[]'
@@ -581,9 +581,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Add<T>(IEnumerable<T>?, T[])
-  nameWithType: ArrayManipulation.Add<T>(IEnumerable<T>?, T[])
-  fullName: Cobilas.Collections.ArrayManipulation.Add<T>(System.Collections.Generic.IEnumerable<T>?, T[])
+  name: Add<T>(IEnumerable<T>?, T[]?)
+  nameWithType: ArrayManipulation.Add<T>(IEnumerable<T>?, T[]?)
+  fullName: Cobilas.Collections.ArrayManipulation.Add<T>(System.Collections.Generic.IEnumerable<T>?, T[]?)
   type: Method
   source:
     remote:
@@ -592,14 +592,14 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Add
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 112
+    startLine: 113
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
   summary: Adds a list of items to the target list.
   example: []
   syntax:
-    content: public static T[] Add<T>(IEnumerable<T>? collection, T[] list)
+    content: public static T[]? Add<T>(IEnumerable<T>? collection, T[]? list)
     parameters:
     - id: collection
       type: System.Collections.Generic.IEnumerable{{T}}
@@ -627,9 +627,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Add<T>(IEnumerable<T>?, ref T[])
-  nameWithType: ArrayManipulation.Add<T>(IEnumerable<T>?, ref T[])
-  fullName: Cobilas.Collections.ArrayManipulation.Add<T>(System.Collections.Generic.IEnumerable<T>?, ref T[])
+  name: Add<T>(IEnumerable<T>?, ref T[]?)
+  nameWithType: ArrayManipulation.Add<T>(IEnumerable<T>?, ref T[]?)
+  fullName: Cobilas.Collections.ArrayManipulation.Add<T>(System.Collections.Generic.IEnumerable<T>?, ref T[]?)
   type: Method
   source:
     remote:
@@ -638,14 +638,14 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Add
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 119
+    startLine: 120
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
   summary: Adds a list of items to the target list.
   example: []
   syntax:
-    content: public static void Add<T>(IEnumerable<T>? collection, ref T[] list)
+    content: public static void Add<T>(IEnumerable<T>? collection, ref T[]? list)
     parameters:
     - id: collection
       type: System.Collections.Generic.IEnumerable{{T}}
@@ -671,9 +671,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Add<T>(T?, T[])
-  nameWithType: ArrayManipulation.Add<T>(T?, T[])
-  fullName: Cobilas.Collections.ArrayManipulation.Add<T>(T?, T[])
+  name: Add<T>(T?, T[]?)
+  nameWithType: ArrayManipulation.Add<T>(T?, T[]?)
+  fullName: Cobilas.Collections.ArrayManipulation.Add<T>(T?, T[]?)
   type: Method
   source:
     remote:
@@ -682,14 +682,14 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Add
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 126
+    startLine: 127
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
   summary: Adds a list of items to the target list.
   example: []
   syntax:
-    content: public static T[] Add<T>(T? item, T[] list)
+    content: public static T[]? Add<T>(T? item, T[]? list)
     parameters:
     - id: item
       type: '{T}'
@@ -717,9 +717,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Add<T>(T[]?, ref T[])
-  nameWithType: ArrayManipulation.Add<T>(T[]?, ref T[])
-  fullName: Cobilas.Collections.ArrayManipulation.Add<T>(T[]?, ref T[])
+  name: Add<T>(T[]?, ref T[]?)
+  nameWithType: ArrayManipulation.Add<T>(T[]?, ref T[]?)
+  fullName: Cobilas.Collections.ArrayManipulation.Add<T>(T[]?, ref T[]?)
   type: Method
   source:
     remote:
@@ -728,14 +728,14 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Add
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 133
+    startLine: 134
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
   summary: Adds a list of items to the target list.
   example: []
   syntax:
-    content: public static void Add<T>(T[]? itens, ref T[] list)
+    content: public static void Add<T>(T[]? itens, ref T[]? list)
     parameters:
     - id: itens
       type: '{T}[]'
@@ -761,9 +761,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Add<T>(T?, ref T[])
-  nameWithType: ArrayManipulation.Add<T>(T?, ref T[])
-  fullName: Cobilas.Collections.ArrayManipulation.Add<T>(T?, ref T[])
+  name: Add<T>(T?, ref T[]?)
+  nameWithType: ArrayManipulation.Add<T>(T?, ref T[]?)
+  fullName: Cobilas.Collections.ArrayManipulation.Add<T>(T?, ref T[]?)
   type: Method
   source:
     remote:
@@ -772,14 +772,14 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Add
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 140
+    startLine: 141
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
   summary: Adds a list of items to the target list.
   example: []
   syntax:
-    content: public static void Add<T>(T? item, ref T[] list)
+    content: public static void Add<T>(T? item, ref T[]? list)
     parameters:
     - id: item
       type: '{T}'
@@ -816,7 +816,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Remove
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 149
+    startLine: 150
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -857,9 +857,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Remove<T>(long, long, ref T[])
-  nameWithType: ArrayManipulation.Remove<T>(long, long, ref T[])
-  fullName: Cobilas.Collections.ArrayManipulation.Remove<T>(long, long, ref T[])
+  name: Remove<T>(long, long, ref T[]?)
+  nameWithType: ArrayManipulation.Remove<T>(long, long, ref T[]?)
+  fullName: Cobilas.Collections.ArrayManipulation.Remove<T>(long, long, ref T[]?)
   type: Method
   source:
     remote:
@@ -868,14 +868,14 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Remove
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 165
+    startLine: 166
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
   summary: Remove items from the target list.
   example: []
   syntax:
-    content: public static void Remove<T>(long index, long length, ref T[] list)
+    content: public static void Remove<T>(long index, long length, ref T[]? list)
     parameters:
     - id: index
       type: System.Int64
@@ -918,7 +918,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Remove
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 173
+    startLine: 174
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -956,9 +956,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Remove<T>(long, ref T[])
-  nameWithType: ArrayManipulation.Remove<T>(long, ref T[])
-  fullName: Cobilas.Collections.ArrayManipulation.Remove<T>(long, ref T[])
+  name: Remove<T>(long, ref T[]?)
+  nameWithType: ArrayManipulation.Remove<T>(long, ref T[]?)
+  fullName: Cobilas.Collections.ArrayManipulation.Remove<T>(long, ref T[]?)
   type: Method
   source:
     remote:
@@ -967,14 +967,14 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Remove
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 181
+    startLine: 182
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
   summary: Remove items from the target list.
   example: []
   syntax:
-    content: public static void Remove<T>(long index, ref T[] list)
+    content: public static void Remove<T>(long index, ref T[]? list)
     parameters:
     - id: index
       type: System.Int64
@@ -1014,7 +1014,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Remove
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 189
+    startLine: 190
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -1063,7 +1063,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Remove
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 197
+    startLine: 198
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -1099,9 +1099,9 @@ items:
   langs:
   - csharp
   - vb
-  name: ClearArray(Array, long, long)
-  nameWithType: ArrayManipulation.ClearArray(Array, long, long)
-  fullName: Cobilas.Collections.ArrayManipulation.ClearArray(System.Array, long, long)
+  name: ClearArray(Array?, long, long)
+  nameWithType: ArrayManipulation.ClearArray(Array?, long, long)
+  fullName: Cobilas.Collections.ArrayManipulation.ClearArray(System.Array?, long, long)
   type: Method
   source:
     remote:
@@ -1110,14 +1110,14 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ClearArray
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 204
+    startLine: 205
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
   summary: Array cleaning.
   example: []
   syntax:
-    content: public static void ClearArray(Array array, long index, long length)
+    content: public static void ClearArray(Array? array, long index, long length)
     parameters:
     - id: array
       type: System.Array
@@ -1147,9 +1147,9 @@ items:
   langs:
   - csharp
   - vb
-  name: LongClearArray(Array)
-  nameWithType: ArrayManipulation.LongClearArray(Array)
-  fullName: Cobilas.Collections.ArrayManipulation.LongClearArray(System.Array)
+  name: LongClearArray(Array?)
+  nameWithType: ArrayManipulation.LongClearArray(Array?)
+  fullName: Cobilas.Collections.ArrayManipulation.LongClearArray(System.Array?)
   type: Method
   source:
     remote:
@@ -1158,14 +1158,14 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: LongClearArray
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 222
+    startLine: 223
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
   summary: Array cleaning.
   example: []
   syntax:
-    content: public static void LongClearArray(Array array)
+    content: public static void LongClearArray(Array? array)
     parameters:
     - id: array
       type: System.Array
@@ -1181,6 +1181,9 @@ items:
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
     description: ''
+  nameWithType.vb: ArrayManipulation.LongClearArray(Array)
+  fullName.vb: Cobilas.Collections.ArrayManipulation.LongClearArray(System.Array)
+  name.vb: LongClearArray(Array)
 - uid: Cobilas.Collections.ArrayManipulation.ClearArray(System.Array,System.Int32,System.Int32)
   commentId: M:Cobilas.Collections.ArrayManipulation.ClearArray(System.Array,System.Int32,System.Int32)
   id: ClearArray(System.Array,System.Int32,System.Int32)
@@ -1188,9 +1191,9 @@ items:
   langs:
   - csharp
   - vb
-  name: ClearArray(Array, int, int)
-  nameWithType: ArrayManipulation.ClearArray(Array, int, int)
-  fullName: Cobilas.Collections.ArrayManipulation.ClearArray(System.Array, int, int)
+  name: ClearArray(Array?, int, int)
+  nameWithType: ArrayManipulation.ClearArray(Array?, int, int)
+  fullName: Cobilas.Collections.ArrayManipulation.ClearArray(System.Array?, int, int)
   type: Method
   source:
     remote:
@@ -1199,14 +1202,14 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ClearArray
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 228
+    startLine: 229
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
   summary: Array cleaning.
   example: []
   syntax:
-    content: public static void ClearArray(Array array, int index, int length)
+    content: public static void ClearArray(Array? array, int index, int length)
     parameters:
     - id: array
       type: System.Array
@@ -1233,9 +1236,9 @@ items:
   langs:
   - csharp
   - vb
-  name: ClearArray(Array)
-  nameWithType: ArrayManipulation.ClearArray(Array)
-  fullName: Cobilas.Collections.ArrayManipulation.ClearArray(System.Array)
+  name: ClearArray(Array?)
+  nameWithType: ArrayManipulation.ClearArray(Array?)
+  fullName: Cobilas.Collections.ArrayManipulation.ClearArray(System.Array?)
   type: Method
   source:
     remote:
@@ -1244,14 +1247,14 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ClearArray
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 233
+    startLine: 234
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
   summary: Array cleaning.
   example: []
   syntax:
-    content: public static void ClearArray(Array array)
+    content: public static void ClearArray(Array? array)
     parameters:
     - id: array
       type: System.Array
@@ -1261,6 +1264,9 @@ items:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
     description: ''
+  nameWithType.vb: ArrayManipulation.ClearArray(Array)
+  fullName.vb: Cobilas.Collections.ArrayManipulation.ClearArray(System.Array)
+  name.vb: ClearArray(Array)
 - uid: Cobilas.Collections.ArrayManipulation.ClearArray``1(System.Int64,System.Int64,``0[]@)
   commentId: M:Cobilas.Collections.ArrayManipulation.ClearArray``1(System.Int64,System.Int64,``0[]@)
   id: ClearArray``1(System.Int64,System.Int64,``0[]@)
@@ -1268,9 +1274,9 @@ items:
   langs:
   - csharp
   - vb
-  name: ClearArray<T>(long, long, ref T[])
-  nameWithType: ArrayManipulation.ClearArray<T>(long, long, ref T[])
-  fullName: Cobilas.Collections.ArrayManipulation.ClearArray<T>(long, long, ref T[])
+  name: ClearArray<T>(long, long, ref T[]?)
+  nameWithType: ArrayManipulation.ClearArray<T>(long, long, ref T[]?)
+  fullName: Cobilas.Collections.ArrayManipulation.ClearArray<T>(long, long, ref T[]?)
   type: Method
   source:
     remote:
@@ -1279,14 +1285,14 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ClearArray
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 240
+    startLine: 241
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
   summary: Array cleaning.
   example: []
   syntax:
-    content: public static void ClearArray<T>(long index, long length, ref T[] array)
+    content: public static void ClearArray<T>(long index, long length, ref T[]? array)
     parameters:
     - id: index
       type: System.Int64
@@ -1318,9 +1324,9 @@ items:
   langs:
   - csharp
   - vb
-  name: LongClearArray<T>(ref T[])
-  nameWithType: ArrayManipulation.LongClearArray<T>(ref T[])
-  fullName: Cobilas.Collections.ArrayManipulation.LongClearArray<T>(ref T[])
+  name: LongClearArray<T>(ref T[]?)
+  nameWithType: ArrayManipulation.LongClearArray<T>(ref T[]?)
+  fullName: Cobilas.Collections.ArrayManipulation.LongClearArray<T>(ref T[]?)
   type: Method
   source:
     remote:
@@ -1329,14 +1335,14 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: LongClearArray
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 249
+    startLine: 250
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
   summary: Array cleaning.
   example: []
   syntax:
-    content: public static void LongClearArray<T>(ref T[] array)
+    content: public static void LongClearArray<T>(ref T[]? array)
     parameters:
     - id: array
       type: '{T}[]'
@@ -1364,9 +1370,9 @@ items:
   langs:
   - csharp
   - vb
-  name: ClearArray<T>(int, int, ref T[])
-  nameWithType: ArrayManipulation.ClearArray<T>(int, int, ref T[])
-  fullName: Cobilas.Collections.ArrayManipulation.ClearArray<T>(int, int, ref T[])
+  name: ClearArray<T>(int, int, ref T[]?)
+  nameWithType: ArrayManipulation.ClearArray<T>(int, int, ref T[]?)
+  fullName: Cobilas.Collections.ArrayManipulation.ClearArray<T>(int, int, ref T[]?)
   type: Method
   source:
     remote:
@@ -1375,7 +1381,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ClearArray
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 257
+    startLine: 258
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -1384,7 +1390,7 @@ items:
         <p>In addition to clearing the array, it returns an empty array.</p>
   example: []
   syntax:
-    content: public static void ClearArray<T>(int index, int length, ref T[] array)
+    content: public static void ClearArray<T>(int index, int length, ref T[]? array)
     parameters:
     - id: index
       type: System.Int32
@@ -1413,9 +1419,9 @@ items:
   langs:
   - csharp
   - vb
-  name: ClearArray<T>(ref T[])
-  nameWithType: ArrayManipulation.ClearArray<T>(ref T[])
-  fullName: Cobilas.Collections.ArrayManipulation.ClearArray<T>(ref T[])
+  name: ClearArray<T>(ref T[]?)
+  nameWithType: ArrayManipulation.ClearArray<T>(ref T[]?)
+  fullName: Cobilas.Collections.ArrayManipulation.ClearArray<T>(ref T[]?)
   type: Method
   source:
     remote:
@@ -1424,7 +1430,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ClearArray
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 266
+    startLine: 267
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -1433,7 +1439,7 @@ items:
         <p>In addition to clearing the array, it returns an empty array.</p>
   example: []
   syntax:
-    content: public static void ClearArray<T>(ref T[] array)
+    content: public static void ClearArray<T>(ref T[]? array)
     parameters:
     - id: array
       type: '{T}[]'
@@ -1455,9 +1461,9 @@ items:
   langs:
   - csharp
   - vb
-  name: ClearArraySafe(Array, long, long)
-  nameWithType: ArrayManipulation.ClearArraySafe(Array, long, long)
-  fullName: Cobilas.Collections.ArrayManipulation.ClearArraySafe(System.Array, long, long)
+  name: ClearArraySafe(Array?, long, long)
+  nameWithType: ArrayManipulation.ClearArraySafe(Array?, long, long)
+  fullName: Cobilas.Collections.ArrayManipulation.ClearArraySafe(System.Array?, long, long)
   type: Method
   source:
     remote:
@@ -1466,7 +1472,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ClearArraySafe
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 275
+    startLine: 276
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -1475,7 +1481,7 @@ items:
         <p>It will only perform cleaning if the array is not null.</p>
   example: []
   syntax:
-    content: public static void ClearArraySafe(Array array, long index, long length)
+    content: public static void ClearArraySafe(Array? array, long index, long length)
     parameters:
     - id: array
       type: System.Array
@@ -1505,9 +1511,9 @@ items:
   langs:
   - csharp
   - vb
-  name: LongClearArraySafe(Array)
-  nameWithType: ArrayManipulation.LongClearArraySafe(Array)
-  fullName: Cobilas.Collections.ArrayManipulation.LongClearArraySafe(System.Array)
+  name: LongClearArraySafe(Array?)
+  nameWithType: ArrayManipulation.LongClearArraySafe(Array?)
+  fullName: Cobilas.Collections.ArrayManipulation.LongClearArraySafe(System.Array?)
   type: Method
   source:
     remote:
@@ -1516,7 +1522,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: LongClearArraySafe
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 286
+    startLine: 287
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -1525,7 +1531,7 @@ items:
         <p>It will only perform cleaning if the array is not null.</p>
   example: []
   syntax:
-    content: public static void LongClearArraySafe(Array array)
+    content: public static void LongClearArraySafe(Array? array)
     parameters:
     - id: array
       type: System.Array
@@ -1541,6 +1547,9 @@ items:
   - type: System.IndexOutOfRangeException
     commentId: T:System.IndexOutOfRangeException
     description: ''
+  nameWithType.vb: ArrayManipulation.LongClearArraySafe(Array)
+  fullName.vb: Cobilas.Collections.ArrayManipulation.LongClearArraySafe(System.Array)
+  name.vb: LongClearArraySafe(Array)
 - uid: Cobilas.Collections.ArrayManipulation.ClearArraySafe(System.Array,System.Int32,System.Int32)
   commentId: M:Cobilas.Collections.ArrayManipulation.ClearArraySafe(System.Array,System.Int32,System.Int32)
   id: ClearArraySafe(System.Array,System.Int32,System.Int32)
@@ -1548,9 +1557,9 @@ items:
   langs:
   - csharp
   - vb
-  name: ClearArraySafe(Array, int, int)
-  nameWithType: ArrayManipulation.ClearArraySafe(Array, int, int)
-  fullName: Cobilas.Collections.ArrayManipulation.ClearArraySafe(System.Array, int, int)
+  name: ClearArraySafe(Array?, int, int)
+  nameWithType: ArrayManipulation.ClearArraySafe(Array?, int, int)
+  fullName: Cobilas.Collections.ArrayManipulation.ClearArraySafe(System.Array?, int, int)
   type: Method
   source:
     remote:
@@ -1559,7 +1568,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ClearArraySafe
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 295
+    startLine: 296
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -1568,7 +1577,7 @@ items:
         <p>It will only perform cleaning if the array is not null.</p>
   example: []
   syntax:
-    content: public static void ClearArraySafe(Array array, int index, int length)
+    content: public static void ClearArraySafe(Array? array, int index, int length)
     parameters:
     - id: array
       type: System.Array
@@ -1592,9 +1601,9 @@ items:
   langs:
   - csharp
   - vb
-  name: ClearArraySafe(Array)
-  nameWithType: ArrayManipulation.ClearArraySafe(Array)
-  fullName: Cobilas.Collections.ArrayManipulation.ClearArraySafe(System.Array)
+  name: ClearArraySafe(Array?)
+  nameWithType: ArrayManipulation.ClearArraySafe(Array?)
+  fullName: Cobilas.Collections.ArrayManipulation.ClearArraySafe(System.Array?)
   type: Method
   source:
     remote:
@@ -1603,7 +1612,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ClearArraySafe
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 303
+    startLine: 304
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -1612,12 +1621,15 @@ items:
         <p>It will only perform cleaning if the array is not null.</p>
   example: []
   syntax:
-    content: public static void ClearArraySafe(Array array)
+    content: public static void ClearArraySafe(Array? array)
     parameters:
     - id: array
       type: System.Array
     content.vb: Public Shared Sub ClearArraySafe(array As Array)
   overload: Cobilas.Collections.ArrayManipulation.ClearArraySafe*
+  nameWithType.vb: ArrayManipulation.ClearArraySafe(Array)
+  fullName.vb: Cobilas.Collections.ArrayManipulation.ClearArraySafe(System.Array)
+  name.vb: ClearArraySafe(Array)
 - uid: Cobilas.Collections.ArrayManipulation.ClearArraySafe``1(System.Int64,System.Int64,``0[]@)
   commentId: M:Cobilas.Collections.ArrayManipulation.ClearArraySafe``1(System.Int64,System.Int64,``0[]@)
   id: ClearArraySafe``1(System.Int64,System.Int64,``0[]@)
@@ -1625,9 +1637,9 @@ items:
   langs:
   - csharp
   - vb
-  name: ClearArraySafe<T>(long, long, ref T[])
-  nameWithType: ArrayManipulation.ClearArraySafe<T>(long, long, ref T[])
-  fullName: Cobilas.Collections.ArrayManipulation.ClearArraySafe<T>(long, long, ref T[])
+  name: ClearArraySafe<T>(long, long, ref T[]?)
+  nameWithType: ArrayManipulation.ClearArraySafe<T>(long, long, ref T[]?)
+  fullName: Cobilas.Collections.ArrayManipulation.ClearArraySafe<T>(long, long, ref T[]?)
   type: Method
   source:
     remote:
@@ -1636,7 +1648,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ClearArraySafe
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 315
+    startLine: 316
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -1645,7 +1657,7 @@ items:
         <p>In addition to clearing the array, it returns an empty array.</p><p>It will only perform cleaning if the array is not null.</p>
   example: []
   syntax:
-    content: public static void ClearArraySafe<T>(long index, long length, ref T[] array)
+    content: public static void ClearArraySafe<T>(long index, long length, ref T[]? array)
     parameters:
     - id: index
       type: System.Int64
@@ -1677,9 +1689,9 @@ items:
   langs:
   - csharp
   - vb
-  name: LongClearArraySafe<T>(ref T[])
-  nameWithType: ArrayManipulation.LongClearArraySafe<T>(ref T[])
-  fullName: Cobilas.Collections.ArrayManipulation.LongClearArraySafe<T>(ref T[])
+  name: LongClearArraySafe<T>(ref T[]?)
+  nameWithType: ArrayManipulation.LongClearArraySafe<T>(ref T[]?)
+  fullName: Cobilas.Collections.ArrayManipulation.LongClearArraySafe<T>(ref T[]?)
   type: Method
   source:
     remote:
@@ -1688,7 +1700,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: LongClearArraySafe
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 327
+    startLine: 328
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -1697,7 +1709,7 @@ items:
         <p>In addition to clearing the array, it returns an empty array.</p><p>It will only perform cleaning if the array is not null.</p>
   example: []
   syntax:
-    content: public static void LongClearArraySafe<T>(ref T[] array)
+    content: public static void LongClearArraySafe<T>(ref T[]? array)
     parameters:
     - id: array
       type: '{T}[]'
@@ -1725,9 +1737,9 @@ items:
   langs:
   - csharp
   - vb
-  name: ClearArraySafe<T>(int, int, ref T[])
-  nameWithType: ArrayManipulation.ClearArraySafe<T>(int, int, ref T[])
-  fullName: Cobilas.Collections.ArrayManipulation.ClearArraySafe<T>(int, int, ref T[])
+  name: ClearArraySafe<T>(int, int, ref T[]?)
+  nameWithType: ArrayManipulation.ClearArraySafe<T>(int, int, ref T[]?)
+  fullName: Cobilas.Collections.ArrayManipulation.ClearArraySafe<T>(int, int, ref T[]?)
   type: Method
   source:
     remote:
@@ -1736,7 +1748,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ClearArraySafe
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 337
+    startLine: 338
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -1745,7 +1757,7 @@ items:
         <p>In addition to clearing the array, it returns an empty array.</p><p>It will only perform cleaning if the array is not null.</p>
   example: []
   syntax:
-    content: public static void ClearArraySafe<T>(int index, int length, ref T[] array)
+    content: public static void ClearArraySafe<T>(int index, int length, ref T[]? array)
     parameters:
     - id: index
       type: System.Int32
@@ -1771,9 +1783,9 @@ items:
   langs:
   - csharp
   - vb
-  name: ClearArraySafe<T>(ref T[])
-  nameWithType: ArrayManipulation.ClearArraySafe<T>(ref T[])
-  fullName: Cobilas.Collections.ArrayManipulation.ClearArraySafe<T>(ref T[])
+  name: ClearArraySafe<T>(ref T[]?)
+  nameWithType: ArrayManipulation.ClearArraySafe<T>(ref T[]?)
+  fullName: Cobilas.Collections.ArrayManipulation.ClearArraySafe<T>(ref T[]?)
   type: Method
   source:
     remote:
@@ -1782,7 +1794,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ClearArraySafe
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 346
+    startLine: 347
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -1791,7 +1803,7 @@ items:
         <p>In addition to clearing the array, it returns an empty array.</p><p>It will only perform cleaning if the array is not null.</p>
   example: []
   syntax:
-    content: public static void ClearArraySafe<T>(ref T[] array)
+    content: public static void ClearArraySafe<T>(ref T[]? array)
     parameters:
     - id: array
       type: '{T}[]'
@@ -1820,7 +1832,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: SeparateList
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 359
+    startLine: 360
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -1876,7 +1888,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: TakeStretch
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 382
+    startLine: 383
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -1932,7 +1944,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ReadOnly
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 394
+    startLine: 395
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -1970,7 +1982,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ReadOnlySafe
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 401
+    startLine: 402
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -2009,7 +2021,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: IndexOf
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 407
+    startLine: 408
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -2051,7 +2063,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: IndexOf
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 448
+    startLine: 449
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -2091,7 +2103,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: LongIndexOf
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 467
+    startLine: 468
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -2129,7 +2141,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: IndexOf
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 474
+    startLine: 475
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -2175,7 +2187,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: IndexOf
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 481
+    startLine: 482
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -2219,7 +2231,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: IndexOf
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 488
+    startLine: 489
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -2261,7 +2273,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: LastIndexOf
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 494
+    startLine: 495
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -2303,7 +2315,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: LastIndexOf
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 540
+    startLine: 541
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -2343,7 +2355,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: LongLastIndexOf
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 556
+    startLine: 557
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -2381,7 +2393,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: LastIndexOf
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 562
+    startLine: 563
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -2423,7 +2435,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: LastIndexOf
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 568
+    startLine: 569
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -2463,7 +2475,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: LastIndexOf
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 574
+    startLine: 575
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -2501,7 +2513,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: FindIndex
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 585
+    startLine: 586
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -2560,7 +2572,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: FindIndex
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 619
+    startLine: 620
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -2617,7 +2629,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: LongFindIndex
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 643
+    startLine: 644
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -2672,7 +2684,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: FindIndex
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 651
+    startLine: 652
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -2721,7 +2733,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: FindIndex
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 659
+    startLine: 660
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -2768,7 +2780,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: FindIndex
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 667
+    startLine: 668
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -2813,7 +2825,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: FindLastIndex
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 679
+    startLine: 680
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -2872,7 +2884,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: FindLastIndex
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 708
+    startLine: 709
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -2929,7 +2941,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: LongFindLastIndex
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 724
+    startLine: 725
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -2984,7 +2996,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: FindLastIndex
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 735
+    startLine: 736
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -3043,7 +3055,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: FindLastIndex
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 746
+    startLine: 747
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -3100,7 +3112,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: FindLastIndex
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 757
+    startLine: 758
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -3155,7 +3167,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: FindLast
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 766
+    startLine: 767
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -3205,14 +3217,14 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: FindAll
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 791
+    startLine: 792
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
   summary: Retrieves all elements that match the conditions defined by the specified predicate.
   example: []
   syntax:
-    content: public static T[] FindAll<T>(T[]? array, Predicate<T>? match)
+    content: public static T[]? FindAll<T>(T[]? array, Predicate<T>? match)
     parameters:
     - id: array
       type: '{T}[]'
@@ -3252,7 +3264,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Find
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 818
+    startLine: 819
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -3302,7 +3314,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Exists
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 841
+    startLine: 842
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -3342,7 +3354,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Exists
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 847
+    startLine: 848
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -3382,7 +3394,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: CopyTo
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 860
+    startLine: 861
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -3424,7 +3436,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: CopyTo
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 876
+    startLine: 877
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -3466,7 +3478,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: CopyTo
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 882
+    startLine: 883
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -3504,7 +3516,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: CopyTo
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 888
+    startLine: 889
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -3542,7 +3554,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: CopyTo
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 895
+    startLine: 896
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -3582,7 +3594,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ConvertAll
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 912
+    startLine: 913
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -3632,7 +3644,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: LongConvertAll
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 933
+    startLine: 934
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -3685,7 +3697,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Reverse
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 959
+    startLine: 960
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -3726,7 +3738,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Reverse
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 971
+    startLine: 972
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -3777,7 +3789,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Reverse
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1007
+    startLine: 1008
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -3816,7 +3828,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: LongReverse
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1022
+    startLine: 1023
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -3855,7 +3867,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Resize
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1035
+    startLine: 1036
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -3893,7 +3905,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Resize
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1042
+    startLine: 1043
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -3938,7 +3950,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: EmpytArray
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1069
+    startLine: 1070
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -3974,7 +3986,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: EmpytArray
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1075
+    startLine: 1076
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -4010,7 +4022,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ArrayLength
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1081
+    startLine: 1082
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -4046,7 +4058,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ArrayLongLength
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1087
+    startLine: 1088
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -4082,7 +4094,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ArrayLongLength
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1093
+    startLine: 1094
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -4118,7 +4130,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: IsReadOnlySafe
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1099
+    startLine: 1100
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -4154,7 +4166,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: IsReadOnlySafe
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1105
+    startLine: 1106
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -4190,7 +4202,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: IsFixedSizeSafe
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1111
+    startLine: 1112
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -4226,7 +4238,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: IsFixedSizeSafe
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1117
+    startLine: 1118
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -4262,7 +4274,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: IsSynchronizedSafe
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1123
+    startLine: 1124
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -4298,7 +4310,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: IsSynchronizedSafe
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1129
+    startLine: 1130
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -4334,7 +4346,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ForSector
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1138
+    startLine: 1139
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -4384,7 +4396,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ForSector
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1196
+    startLine: 1197
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -4431,7 +4443,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ForSector
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1212
+    startLine: 1213
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -4481,7 +4493,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ForSector
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1227
+    startLine: 1228
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -4528,7 +4540,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ForSector
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1243
+    startLine: 1244
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -4576,7 +4588,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ForSector
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1251
+    startLine: 1252
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -4621,7 +4633,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ForSector
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1260
+    startLine: 1261
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -4671,7 +4683,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ForSector
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1310
+    startLine: 1311
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -4718,7 +4730,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ForSector
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1322
+    startLine: 1323
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -4768,7 +4780,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ForSector
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1333
+    startLine: 1334
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -4815,7 +4827,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ForSector
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1345
+    startLine: 1346
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -4863,7 +4875,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ForSector
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Collections/ArrayManipulation.cs
-    startLine: 1353
+    startLine: 1354
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.Collections
@@ -5258,7 +5270,6 @@ references:
   - name: )
 - uid: System.Collections.Generic
   commentId: N:System.Collections.Generic
-  isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system
   name: System.Collections.Generic
   nameWithType: System.Collections.Generic
@@ -5266,32 +5277,26 @@ references:
   spec.csharp:
   - uid: System
     name: System
-    isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system
   - name: .
   - uid: System.Collections
     name: Collections
-    isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections
   - name: .
   - uid: System.Collections.Generic
     name: Generic
-    isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
   spec.vb:
   - uid: System
     name: System
-    isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system
   - name: .
   - uid: System.Collections
     name: Collections
-    isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections
   - name: .
   - uid: System.Collections.Generic
     name: Generic
-    isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: Cobilas.Collections.ArrayManipulation.AddNon_Existing*
   commentId: Overload:Cobilas.Collections.ArrayManipulation.AddNon_Existing

@@ -106,9 +106,9 @@ items:
   langs:
   - csharp
   - vb
-  name: ICollectionToIEnumerator(ICollection<T>)
-  nameWithType: ICollectionToIEnumerator<T>.ICollectionToIEnumerator(ICollection<T>)
-  fullName: Cobilas.Collections.ICollectionToIEnumerator<T>.ICollectionToIEnumerator(System.Collections.Generic.ICollection<T>)
+  name: ICollectionToIEnumerator(ICollection<T>?)
+  nameWithType: ICollectionToIEnumerator<T>.ICollectionToIEnumerator(ICollection<T>?)
+  fullName: Cobilas.Collections.ICollectionToIEnumerator<T>.ICollectionToIEnumerator(System.Collections.Generic.ICollection<T>?)
   type: Constructor
   source:
     remote:
@@ -124,7 +124,7 @@ items:
   summary: Creates a new instance of this object.
   example: []
   syntax:
-    content: public ICollectionToIEnumerator(ICollection<T> collection)
+    content: public ICollectionToIEnumerator(ICollection<T>? collection)
     parameters:
     - id: collection
       type: System.Collections.Generic.ICollection{{T}}
@@ -991,7 +991,6 @@ references:
   - name: )
 - uid: System.Collections.Generic
   commentId: N:System.Collections.Generic
-  isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system
   name: System.Collections.Generic
   nameWithType: System.Collections.Generic
@@ -999,32 +998,26 @@ references:
   spec.csharp:
   - uid: System
     name: System
-    isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system
   - name: .
   - uid: System.Collections
     name: Collections
-    isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections
   - name: .
   - uid: System.Collections.Generic
     name: Generic
-    isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
   spec.vb:
   - uid: System
     name: System
-    isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system
   - name: .
   - uid: System.Collections
     name: Collections
-    isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections
   - name: .
   - uid: System.Collections.Generic
     name: Generic
-    isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: System.Collections
   commentId: N:System.Collections
