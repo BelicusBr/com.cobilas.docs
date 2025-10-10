@@ -102,7 +102,7 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct Scene : IEquatable&lt;Scene&gt;, IEquatable&lt;int&gt;, IEquatable&lt;string&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public struct Scene : IEquatable&lt;Scene&gt;, IEquatable&lt;int&gt;, IEquatable&lt;string?&gt;</code></pre>
   </div>
 
 
@@ -338,7 +338,7 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly Node SceneNode { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Node? SceneNode { get; }</code></pre>
   </div>
 
 
@@ -371,7 +371,7 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly string ScenePath { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly string? ScenePath { get; }</code></pre>
   </div>
 
 
@@ -478,7 +478,7 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_Equals_System_Object_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.Equals(System.Object)">
   Equals(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates whether this instance and a specified object are equal.</p>
@@ -516,7 +516,7 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
   <a id="Cobilas_GodotEngine_Utility_Scene_Scene_Equals_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.Equals*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_Equals_System_String_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.Equals(System.String)">
-  Equals(string)
+  Equals(string?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L40"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -525,7 +525,7 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly bool Equals(string other)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly bool Equals(string? other)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -556,7 +556,7 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_GetHashCode" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.GetHashCode">
   GetHashCode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the hash code for this instance.</p>
@@ -589,7 +589,7 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_ToString" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.ToString">
   ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the fully qualified type name of this instance.</p>
@@ -626,7 +626,7 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_op_Equality_Cobilas_GodotEngine_Utility_Scene_Scene_Cobilas_GodotEngine_Utility_Scene_Scene_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.op_Equality(Cobilas.GodotEngine.Utility.Scene.Scene,Cobilas.GodotEngine.Utility.Scene.Scene)">
   operator ==(Scene, Scene)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L68"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates whether this instance is equal to another instance of the same type.</p>
@@ -668,7 +668,7 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_op_Equality_Cobilas_GodotEngine_Utility_Scene_Scene_System_Int32_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.op_Equality(Cobilas.GodotEngine.Utility.Scene.Scene,System.Int32)">
   operator ==(Scene, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates whether this instance is equal to another instance of the same type.</p>
@@ -710,7 +710,7 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_op_Equality_Cobilas_GodotEngine_Utility_Scene_Scene_System_String_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.op_Equality(Cobilas.GodotEngine.Utility.Scene.Scene,System.String)">
   operator ==(Scene, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates whether this instance is equal to another instance of the same type.</p>
@@ -752,7 +752,7 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_op_Explicit_Cobilas_GodotEngine_Utility_Scene_Scene__System_Int32" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.op_Explicit(Cobilas.GodotEngine.Utility.Scene.Scene)~System.Int32">
   explicit operator int(Scene)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Explicit conversion operator.(<a class="xref" href="Cobilas.GodotEngine.Utility.Scene.Scene.html">Scene</a> to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>)</p>
@@ -790,7 +790,7 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_op_Explicit_Cobilas_GodotEngine_Utility_Scene_Scene__System_String" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.op_Explicit(Cobilas.GodotEngine.Utility.Scene.Scene)~System.String">
   explicit operator string(Scene)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L99"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Explicit conversion operator.(<a class="xref" href="Cobilas.GodotEngine.Utility.Scene.Scene.html">Scene</a> to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>)</p>
@@ -828,7 +828,7 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_op_Inequality_Cobilas_GodotEngine_Utility_Scene_Scene_Cobilas_GodotEngine_Utility_Scene_Scene_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.op_Inequality(Cobilas.GodotEngine.Utility.Scene.Scene,Cobilas.GodotEngine.Utility.Scene.Scene)">
   operator !=(Scene, Scene)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates whether this instance is different from another instance of the same type.</p>
@@ -870,7 +870,7 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_op_Inequality_Cobilas_GodotEngine_Utility_Scene_Scene_System_Int32_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.op_Inequality(Cobilas.GodotEngine.Utility.Scene.Scene,System.Int32)">
   operator !=(Scene, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L93"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates whether this instance is different from another instance of the same type.</p>
@@ -912,7 +912,7 @@ Struct Scene  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Cobilas_GodotEngine_Utility_Scene_Scene_op_Inequality_Cobilas_GodotEngine_Utility_Scene_Scene_System_String_" data-uid="Cobilas.GodotEngine.Utility.Scene.Scene.op_Inequality(Cobilas.GodotEngine.Utility.Scene.Scene,System.String)">
   operator !=(Scene, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/Scene/Scene.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates whether this instance is different from another instance of the same type.</p>

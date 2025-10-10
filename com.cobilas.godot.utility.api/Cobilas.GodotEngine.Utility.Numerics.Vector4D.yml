@@ -54,6 +54,9 @@ items:
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Implicit(Godot.Vector2)~Cobilas.GodotEngine.Utility.Numerics.Vector4D
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Implicit(Godot.Vector3)~Cobilas.GodotEngine.Utility.Numerics.Vector4D
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Inequality(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  - Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Modulus(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  - Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Modulus(Cobilas.GodotEngine.Utility.Numerics.Vector4D,System.Single)
+  - Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Modulus(System.Single,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Multiply(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Multiply(Cobilas.GodotEngine.Utility.Numerics.Vector4D,System.Single)
   - Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Multiply(System.Single,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
@@ -1903,6 +1906,47 @@ items:
   nameWithType.vb: Vector4D./(Vector4D, Vector4D)
   fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector4D./(Cobilas.GodotEngine.Utility.Numerics.Vector4D, Cobilas.GodotEngine.Utility.Numerics.Vector4D)
   name.vb: /(Vector4D, Vector4D)
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Modulus(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Modulus(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  id: op_Modulus(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  parent: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+  langs:
+  - csharp
+  - vb
+  name: operator %(Vector4D, Vector4D)
+  nameWithType: Vector4D.operator %(Vector4D, Vector4D)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector4D.operator %(Cobilas.GodotEngine.Utility.Numerics.Vector4D, Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Vector4D.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Modulus
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
+    startLine: 224
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Modulo operation between two values.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector4D" data-throw-if-not-resolved="false"></xref> + <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector4D" data-throw-if-not-resolved="false"></xref>)
+  example: []
+  syntax:
+    content: public static Vector4D operator %(Vector4D a, Vector4D b)
+    parameters:
+    - id: a
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: First module.
+    - id: b
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: Second module.
+    return:
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: The result of the module.
+    content.vb: Public Shared Operator Mod(a As Vector4D, b As Vector4D) As Vector4D
+  overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Modulus*
+  nameWithType.vb: Vector4D.Mod(Vector4D, Vector4D)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Mod(Cobilas.GodotEngine.Utility.Numerics.Vector4D, Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  name.vb: Mod(Vector4D, Vector4D)
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Multiply(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
   commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Multiply(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
   id: op_Multiply(Cobilas.GodotEngine.Utility.Numerics.Vector4D,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
@@ -1921,7 +1965,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Multiply
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 224
+    startLine: 229
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1962,7 +2006,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Division
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 229
+    startLine: 234
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2003,7 +2047,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Multiply
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 234
+    startLine: 239
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2026,6 +2070,88 @@ items:
   nameWithType.vb: Vector4D.*(Vector4D, Single)
   fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector4D.*(Cobilas.GodotEngine.Utility.Numerics.Vector4D, Single)
   name.vb: '*(Vector4D, Single)'
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Modulus(Cobilas.GodotEngine.Utility.Numerics.Vector4D,System.Single)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Modulus(Cobilas.GodotEngine.Utility.Numerics.Vector4D,System.Single)
+  id: op_Modulus(Cobilas.GodotEngine.Utility.Numerics.Vector4D,System.Single)
+  parent: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+  langs:
+  - csharp
+  - vb
+  name: operator %(Vector4D, float)
+  nameWithType: Vector4D.operator %(Vector4D, float)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector4D.operator %(Cobilas.GodotEngine.Utility.Numerics.Vector4D, float)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Vector4D.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Modulus
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
+    startLine: 244
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Modulo operation between two values.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector4D" data-throw-if-not-resolved="false"></xref> + <xref href="System.Single" data-throw-if-not-resolved="false"></xref>)
+  example: []
+  syntax:
+    content: public static Vector4D operator %(Vector4D a, float b)
+    parameters:
+    - id: a
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: First module.
+    - id: b
+      type: System.Single
+      description: Second module.
+    return:
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: The result of the module.
+    content.vb: Public Shared Operator Mod(a As Vector4D, b As Single) As Vector4D
+  overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Modulus*
+  nameWithType.vb: Vector4D.Mod(Vector4D, Single)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Mod(Cobilas.GodotEngine.Utility.Numerics.Vector4D, Single)
+  name.vb: Mod(Vector4D, Single)
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Modulus(System.Single,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Modulus(System.Single,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  id: op_Modulus(System.Single,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  parent: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+  langs:
+  - csharp
+  - vb
+  name: operator %(float, Vector4D)
+  nameWithType: Vector4D.operator %(float, Vector4D)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector4D.operator %(float, Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Vector4D.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Modulus
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
+    startLine: 249
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Modulo operation between two values.(<xref href="System.Single" data-throw-if-not-resolved="false"></xref> + <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector4D" data-throw-if-not-resolved="false"></xref>)
+  example: []
+  syntax:
+    content: public static Vector4D operator %(float a, Vector4D b)
+    parameters:
+    - id: a
+      type: System.Single
+      description: First module.
+    - id: b
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: Second module.
+    return:
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector4D
+      description: The result of the module.
+    content.vb: Public Shared Operator Mod(a As Single, b As Vector4D) As Vector4D
+  overload: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Modulus*
+  nameWithType.vb: Vector4D.Mod(Single, Vector4D)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Mod(Single, Cobilas.GodotEngine.Utility.Numerics.Vector4D)
+  name.vb: Mod(Single, Vector4D)
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Division(System.Single,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
   commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Division(System.Single,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
   id: op_Division(System.Single,Cobilas.GodotEngine.Utility.Numerics.Vector4D)
@@ -2044,7 +2170,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Division
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 239
+    startLine: 254
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2085,7 +2211,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Multiply
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 244
+    startLine: 259
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2126,7 +2252,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 247
+    startLine: 262
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2163,7 +2289,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 250
+    startLine: 265
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2200,7 +2326,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 253
+    startLine: 268
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2237,7 +2363,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 256
+    startLine: 271
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2274,7 +2400,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 259
+    startLine: 274
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2311,7 +2437,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 262
+    startLine: 277
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2348,7 +2474,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector4D.cs
-    startLine: 265
+    startLine: 280
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -3441,6 +3567,21 @@ references:
   - uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Division*
     name: /
     href: Cobilas.GodotEngine.Utility.Numerics.Vector4D.html#Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Division_Cobilas_GodotEngine_Utility_Numerics_Vector4D_Cobilas_GodotEngine_Utility_Numerics_Vector4D_
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Modulus*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Modulus
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector4D.html#Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Modulus_Cobilas_GodotEngine_Utility_Numerics_Vector4D_Cobilas_GodotEngine_Utility_Numerics_Vector4D_
+  name: operator %
+  nameWithType: Vector4D.operator %
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector4D.operator %
+  nameWithType.vb: Vector4D.Mod
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector4D.Mod
+  name.vb: Mod
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Modulus*
+    name: '%'
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector4D.html#Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Modulus_Cobilas_GodotEngine_Utility_Numerics_Vector4D_Cobilas_GodotEngine_Utility_Numerics_Vector4D_
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Multiply*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector4D.op_Multiply
   href: Cobilas.GodotEngine.Utility.Numerics.Vector4D.html#Cobilas_GodotEngine_Utility_Numerics_Vector4D_op_Multiply_Cobilas_GodotEngine_Utility_Numerics_Vector4D_Cobilas_GodotEngine_Utility_Numerics_Vector4D_

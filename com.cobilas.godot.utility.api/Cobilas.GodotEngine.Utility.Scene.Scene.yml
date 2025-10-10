@@ -47,7 +47,7 @@ items:
   summary: Contains the scene information.
   example: []
   syntax:
-    content: 'public struct Scene : IEquatable<Scene>, IEquatable<int>, IEquatable<string>'
+    content: 'public struct Scene : IEquatable<Scene>, IEquatable<int>, IEquatable<string?>'
     content.vb: Public Structure Scene Implements IEquatable(Of Scene), IEquatable(Of Integer), IEquatable(Of String)
   implements:
   - System.IEquatable{Cobilas.GodotEngine.Utility.Scene.Scene}
@@ -114,7 +114,7 @@ items:
   summary: Stores the root <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref> of the scenario.
   example: []
   syntax:
-    content: public readonly Node SceneNode { get; }
+    content: public readonly Node? SceneNode { get; }
     parameters: []
     return:
       type: Godot.Node
@@ -146,7 +146,7 @@ items:
   summary: The path of the scene file.
   example: []
   syntax:
-    content: public readonly string ScenePath { get; }
+    content: public readonly string? ScenePath { get; }
     parameters: []
     return:
       type: System.String
@@ -379,9 +379,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Equals(string)
-  nameWithType: Scene.Equals(string)
-  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.Equals(string)
+  name: Equals(string?)
+  nameWithType: Scene.Equals(string?)
+  fullName: Cobilas.GodotEngine.Utility.Scene.Scene.Equals(string?)
   type: Method
   source:
     remote:
@@ -397,7 +397,7 @@ items:
   summary: Indicates whether the current object is equal to another object of the same type.
   example: []
   syntax:
-    content: public readonly bool Equals(string other)
+    content: public readonly bool Equals(string? other)
     parameters:
     - id: other
       type: System.String
@@ -430,7 +430,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Equals
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
-    startLine: 41
+    startLine: 46
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Scene
@@ -469,7 +469,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetHashCode
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
-    startLine: 53
+    startLine: 58
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Scene
@@ -501,7 +501,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToString
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
-    startLine: 56
+    startLine: 61
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Scene
@@ -533,7 +533,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Equality
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
-    startLine: 62
+    startLine: 67
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Scene
@@ -574,7 +574,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Inequality
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
-    startLine: 67
+    startLine: 72
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Scene
@@ -615,7 +615,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Equality
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
-    startLine: 72
+    startLine: 77
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Scene
@@ -656,7 +656,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Inequality
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
-    startLine: 77
+    startLine: 82
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Scene
@@ -697,7 +697,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Equality
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
-    startLine: 82
+    startLine: 87
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Scene
@@ -738,7 +738,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Inequality
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
-    startLine: 87
+    startLine: 92
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Scene
@@ -779,7 +779,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Explicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
-    startLine: 90
+    startLine: 95
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Scene
@@ -816,7 +816,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Explicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Scene/Scene.cs
-    startLine: 93
+    startLine: 98
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Scene

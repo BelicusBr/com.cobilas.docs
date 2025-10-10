@@ -7,9 +7,11 @@ items:
   children:
   - Godot.Rect2_GD_CB_Extension.Bottom(Godot.Rect2)
   - Godot.Rect2_GD_CB_Extension.Contains(Godot.Rect2,Cobilas.GodotEngine.Utility.Numerics.Vector2D@)
+  - Godot.Rect2_GD_CB_Extension.Height(Godot.Rect2)
   - Godot.Rect2_GD_CB_Extension.Left(Godot.Rect2)
   - Godot.Rect2_GD_CB_Extension.Right(Godot.Rect2)
   - Godot.Rect2_GD_CB_Extension.Top(Godot.Rect2)
+  - Godot.Rect2_GD_CB_Extension.Width(Godot.Rect2)
   langs:
   - csharp
   - vb
@@ -24,7 +26,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Rect2_GD_CB_Extension
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Rect2_GD_CB_Extension.cs
-    startLine: 5
+    startLine: 6
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
@@ -62,7 +64,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Top
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Rect2_GD_CB_Extension.cs
-    startLine: 9
+    startLine: 10
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
@@ -73,7 +75,7 @@ items:
     parameters:
     - id: R
       type: Godot.Rect2
-      description: <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref> that will be used.
+      description: <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref>That will be used.
     return:
       type: System.Single
       description: Returns a floating-point with the top position of <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref>.
@@ -98,7 +100,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Bottom
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Rect2_GD_CB_Extension.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
@@ -109,7 +111,7 @@ items:
     parameters:
     - id: R
       type: Godot.Rect2
-      description: <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref> that will be used.
+      description: <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref>That will be used.
     return:
       type: System.Single
       description: Returns a floating-point value with the bottom position of <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref>.
@@ -134,7 +136,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Left
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Rect2_GD_CB_Extension.cs
-    startLine: 17
+    startLine: 18
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
@@ -145,7 +147,7 @@ items:
     parameters:
     - id: R
       type: Godot.Rect2
-      description: <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref> that will be used.
+      description: <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref>That will be used.
     return:
       type: System.Single
       description: Returns a floating-point left position of <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref>.
@@ -170,7 +172,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Right
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Rect2_GD_CB_Extension.cs
-    startLine: 21
+    startLine: 22
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
@@ -181,12 +183,84 @@ items:
     parameters:
     - id: R
       type: Godot.Rect2
-      description: <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref> that will be used.
+      description: <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref>That will be used.
     return:
       type: System.Single
       description: Returns a floating-point right position of <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function Right(R As Rect2) As Single
   overload: Godot.Rect2_GD_CB_Extension.Right*
+- uid: Godot.Rect2_GD_CB_Extension.Width(Godot.Rect2)
+  commentId: M:Godot.Rect2_GD_CB_Extension.Width(Godot.Rect2)
+  id: Width(Godot.Rect2)
+  isExtensionMethod: true
+  parent: Godot.Rect2_GD_CB_Extension
+  langs:
+  - csharp
+  - vb
+  name: Width(Rect2)
+  nameWithType: Rect2_GD_CB_Extension.Width(Rect2)
+  fullName: Godot.Rect2_GD_CB_Extension.Width(Godot.Rect2)
+  type: Method
+  source:
+    remote:
+      path: Godot/Rect2_GD_CB_Extension.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Width
+    path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Rect2_GD_CB_Extension.cs
+    startLine: 26
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Godot
+  summary: Get the width of the <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public static float Width(this Rect2 R)
+    parameters:
+    - id: R
+      type: Godot.Rect2
+      description: That will be used.
+    return:
+      type: System.Single
+      description: Returns a floating-point right width of <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function Width(R As Rect2) As Single
+  overload: Godot.Rect2_GD_CB_Extension.Width*
+- uid: Godot.Rect2_GD_CB_Extension.Height(Godot.Rect2)
+  commentId: M:Godot.Rect2_GD_CB_Extension.Height(Godot.Rect2)
+  id: Height(Godot.Rect2)
+  isExtensionMethod: true
+  parent: Godot.Rect2_GD_CB_Extension
+  langs:
+  - csharp
+  - vb
+  name: Height(Rect2)
+  nameWithType: Rect2_GD_CB_Extension.Height(Rect2)
+  fullName: Godot.Rect2_GD_CB_Extension.Height(Godot.Rect2)
+  type: Method
+  source:
+    remote:
+      path: Godot/Rect2_GD_CB_Extension.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Height
+    path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Rect2_GD_CB_Extension.cs
+    startLine: 30
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Godot
+  summary: Get the height of the <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public static float Height(this Rect2 R)
+    parameters:
+    - id: R
+      type: Godot.Rect2
+      description: That will be used.
+    return:
+      type: System.Single
+      description: Returns a floating-point right height of <xref href="Godot.Rect2" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function Height(R As Rect2) As Single
+  overload: Godot.Rect2_GD_CB_Extension.Height*
 - uid: Godot.Rect2_GD_CB_Extension.Contains(Godot.Rect2,Cobilas.GodotEngine.Utility.Numerics.Vector2D@)
   commentId: M:Godot.Rect2_GD_CB_Extension.Contains(Godot.Rect2,Cobilas.GodotEngine.Utility.Numerics.Vector2D@)
   id: Contains(Godot.Rect2,Cobilas.GodotEngine.Utility.Numerics.Vector2D@)
@@ -206,14 +280,17 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Contains
     path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Rect2_GD_CB_Extension.cs
-    startLine: 26
+    startLine: 35
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
   summary: Allows you to check if the mouse position is inside the 2D rectangle.
   example: []
   syntax:
-    content: public static bool Contains(this Rect2 rect, in Vector2D mousePosition)
+    content: >-
+      [Obsolete("Use Rect2.HasPoint(Vector2)")]
+
+      public static bool Contains(this Rect2 rect, in Vector2D mousePosition)
     parameters:
     - id: rect
       type: Godot.Rect2
@@ -224,8 +301,17 @@ items:
     return:
       type: System.Boolean
       description: Returns <code>true</code> when the mouse position is inside the 2D rectangle.
-    content.vb: Public Shared Function Contains(rect As Rect2, mousePosition As Vector2D) As Boolean
+    content.vb: >-
+      <Obsolete("Use Rect2.HasPoint(Vector2)")>
+
+      Public Shared Function Contains(rect As Rect2, mousePosition As Vector2D) As Boolean
   overload: Godot.Rect2_GD_CB_Extension.Contains*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use Rect2.HasPoint(Vector2)
   nameWithType.vb: Rect2_GD_CB_Extension.Contains(Rect2, Vector2D)
   fullName.vb: Godot.Rect2_GD_CB_Extension.Contains(Godot.Rect2, Cobilas.GodotEngine.Utility.Numerics.Vector2D)
   name.vb: Contains(Rect2, Vector2D)
@@ -515,6 +601,18 @@ references:
   name: Right
   nameWithType: Rect2_GD_CB_Extension.Right
   fullName: Godot.Rect2_GD_CB_Extension.Right
+- uid: Godot.Rect2_GD_CB_Extension.Width*
+  commentId: Overload:Godot.Rect2_GD_CB_Extension.Width
+  href: Godot.Rect2_GD_CB_Extension.html#Godot_Rect2_GD_CB_Extension_Width_Godot_Rect2_
+  name: Width
+  nameWithType: Rect2_GD_CB_Extension.Width
+  fullName: Godot.Rect2_GD_CB_Extension.Width
+- uid: Godot.Rect2_GD_CB_Extension.Height*
+  commentId: Overload:Godot.Rect2_GD_CB_Extension.Height
+  href: Godot.Rect2_GD_CB_Extension.html#Godot_Rect2_GD_CB_Extension_Height_Godot_Rect2_
+  name: Height
+  nameWithType: Rect2_GD_CB_Extension.Height
+  fullName: Godot.Rect2_GD_CB_Extension.Height
 - uid: Godot.Rect2_GD_CB_Extension.Contains*
   commentId: Overload:Godot.Rect2_GD_CB_Extension.Contains
   href: Godot.Rect2_GD_CB_Extension.html#Godot_Rect2_GD_CB_Extension_Contains_Godot_Rect2_Cobilas_GodotEngine_Utility_Numerics_Vector2D__

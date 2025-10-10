@@ -22,6 +22,7 @@ items:
   - Godot.Node_GD_CB_Extension.SetNodePosition(Godot.Node,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   - Godot.Node_GD_CB_Extension.SetNodeRotation(Godot.Node,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
   - Godot.Node_GD_CB_Extension.SetNodeScale(Godot.Node,Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  - Godot.Node_GD_CB_Extension.SetParent(Godot.Node,Godot.Node)
   langs:
   - csharp
   - vb
@@ -776,6 +777,49 @@ items:
       description: Returns <code>true</code> when the target object contains the comparison object.
     content.vb: Public Shared Function ContainsNode(origin As Node, node As Node) As Boolean
   overload: Godot.Node_GD_CB_Extension.ContainsNode*
+- uid: Godot.Node_GD_CB_Extension.SetParent(Godot.Node,Godot.Node)
+  commentId: M:Godot.Node_GD_CB_Extension.SetParent(Godot.Node,Godot.Node)
+  id: SetParent(Godot.Node,Godot.Node)
+  isExtensionMethod: true
+  parent: Godot.Node_GD_CB_Extension
+  langs:
+  - csharp
+  - vb
+  name: SetParent(Node?, Node?)
+  nameWithType: Node_GD_CB_Extension.SetParent(Node?, Node?)
+  fullName: Godot.Node_GD_CB_Extension.SetParent(Godot.Node?, Godot.Node?)
+  type: Method
+  source:
+    remote:
+      path: Godot/Node_GD_CB_Extension.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: SetParent
+    path: ../../Godot Dev/com.cobilas.godot.utility/Godot/Node_GD_CB_Extension.cs
+    startLine: 195
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Godot
+  summary: The method allows you to change the object's parent.
+  example: []
+  syntax:
+    content: public static void SetParent(this Node? p, Node? parent)
+    parameters:
+    - id: p
+      type: Godot.Node
+      description: The target object.
+    - id: parent
+      type: Godot.Node
+      description: The object that will be the parent of the target object.
+    content.vb: Public Shared Sub SetParent(p As Node, parent As Node)
+  overload: Godot.Node_GD_CB_Extension.SetParent*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Occurs when the target object parameter is passed as null.
+  nameWithType.vb: Node_GD_CB_Extension.SetParent(Node, Node)
+  fullName.vb: Godot.Node_GD_CB_Extension.SetParent(Godot.Node, Godot.Node)
+  name.vb: SetParent(Node, Node)
 references:
 - uid: Godot.Node
   commentId: T:Godot.Node
@@ -1029,7 +1073,6 @@ references:
   fullName: System
 - uid: Godot.Node2D
   commentId: T:Godot.Node2D
-  parent: Godot
   isExternal: true
   name: Node2D
   nameWithType: Node2D
@@ -1291,3 +1334,16 @@ references:
   name: ContainsNode
   nameWithType: Node_GD_CB_Extension.ContainsNode
   fullName: Godot.Node_GD_CB_Extension.ContainsNode
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Godot.Node_GD_CB_Extension.SetParent*
+  commentId: Overload:Godot.Node_GD_CB_Extension.SetParent
+  href: Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_SetParent_Godot_Node_Godot_Node_
+  name: SetParent
+  nameWithType: Node_GD_CB_Extension.SetParent
+  fullName: Godot.Node_GD_CB_Extension.SetParent

@@ -89,7 +89,7 @@
 
 
   <h1 id="Godot_Rect2_GD_CB_Extension" data-uid="Godot.Rect2_GD_CB_Extension" class="text-break">
-Class Rect2_GD_CB_Extension  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Rect2_GD_CB_Extension.cs/#L6"><i class="bi bi-code-slash"></i></a>
+Class Rect2_GD_CB_Extension  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Rect2_GD_CB_Extension.cs/#L7"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -157,7 +157,7 @@ Class Rect2_GD_CB_Extension  <a class="header-action link-secondary" title="View
 
   <h3 id="Godot_Rect2_GD_CB_Extension_Bottom_Godot_Rect2_" data-uid="Godot.Rect2_GD_CB_Extension.Bottom(Godot.Rect2)">
   Bottom(Rect2)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Rect2_GD_CB_Extension.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Rect2_GD_CB_Extension.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the bottom position of <span class="xref">Godot.Rect2</span>.</p>
@@ -171,7 +171,7 @@ Class Rect2_GD_CB_Extension  <a class="header-action link-secondary" title="View
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>R</code> <span class="xref">Rect2</span></dt>
-    <dd><p><span class="xref">Godot.Rect2</span> that will be used.</p>
+    <dd><p><span class="xref">Godot.Rect2</span>That will be used.</p>
 </dd>
   </dl>
 
@@ -196,7 +196,7 @@ Class Rect2_GD_CB_Extension  <a class="header-action link-secondary" title="View
 
   <h3 id="Godot_Rect2_GD_CB_Extension_Contains_Godot_Rect2_Cobilas_GodotEngine_Utility_Numerics_Vector2D__" data-uid="Godot.Rect2_GD_CB_Extension.Contains(Godot.Rect2,Cobilas.GodotEngine.Utility.Numerics.Vector2D@)">
   Contains(Rect2, in Vector2D)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Rect2_GD_CB_Extension.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Rect2_GD_CB_Extension.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Allows you to check if the mouse position is inside the 2D rectangle.</p>
@@ -204,7 +204,8 @@ Class Rect2_GD_CB_Extension  <a class="header-action link-secondary" title="View
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool Contains(this Rect2 rect, in Vector2D mousePosition)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use Rect2.HasPoint(Vector2)&quot;)]
+public static bool Contains(this Rect2 rect, in Vector2D mousePosition)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -234,11 +235,50 @@ Class Rect2_GD_CB_Extension  <a class="header-action link-secondary" title="View
 
 
 
+  <a id="Godot_Rect2_GD_CB_Extension_Height_" data-uid="Godot.Rect2_GD_CB_Extension.Height*"></a>
+
+  <h3 id="Godot_Rect2_GD_CB_Extension_Height_Godot_Rect2_" data-uid="Godot.Rect2_GD_CB_Extension.Height(Godot.Rect2)">
+  Height(Rect2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Rect2_GD_CB_Extension.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get the height of the <span class="xref">Godot.Rect2</span></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Height(this Rect2 R)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>R</code> <span class="xref">Rect2</span></dt>
+    <dd><p>That will be used.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Returns a floating-point right height of <span class="xref">Godot.Rect2</span>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Godot_Rect2_GD_CB_Extension_Left_" data-uid="Godot.Rect2_GD_CB_Extension.Left*"></a>
 
   <h3 id="Godot_Rect2_GD_CB_Extension_Left_Godot_Rect2_" data-uid="Godot.Rect2_GD_CB_Extension.Left(Godot.Rect2)">
   Left(Rect2)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Rect2_GD_CB_Extension.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Rect2_GD_CB_Extension.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the left position of <span class="xref">Godot.Rect2</span>.</p>
@@ -252,7 +292,7 @@ Class Rect2_GD_CB_Extension  <a class="header-action link-secondary" title="View
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>R</code> <span class="xref">Rect2</span></dt>
-    <dd><p><span class="xref">Godot.Rect2</span> that will be used.</p>
+    <dd><p><span class="xref">Godot.Rect2</span>That will be used.</p>
 </dd>
   </dl>
 
@@ -277,7 +317,7 @@ Class Rect2_GD_CB_Extension  <a class="header-action link-secondary" title="View
 
   <h3 id="Godot_Rect2_GD_CB_Extension_Right_Godot_Rect2_" data-uid="Godot.Rect2_GD_CB_Extension.Right(Godot.Rect2)">
   Right(Rect2)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Rect2_GD_CB_Extension.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Rect2_GD_CB_Extension.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the right position of <span class="xref">Godot.Rect2</span>.</p>
@@ -291,7 +331,7 @@ Class Rect2_GD_CB_Extension  <a class="header-action link-secondary" title="View
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>R</code> <span class="xref">Rect2</span></dt>
-    <dd><p><span class="xref">Godot.Rect2</span> that will be used.</p>
+    <dd><p><span class="xref">Godot.Rect2</span>That will be used.</p>
 </dd>
   </dl>
 
@@ -316,7 +356,7 @@ Class Rect2_GD_CB_Extension  <a class="header-action link-secondary" title="View
 
   <h3 id="Godot_Rect2_GD_CB_Extension_Top_Godot_Rect2_" data-uid="Godot.Rect2_GD_CB_Extension.Top(Godot.Rect2)">
   Top(Rect2)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Rect2_GD_CB_Extension.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Rect2_GD_CB_Extension.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the top position of <span class="xref">Godot.Rect2</span>.</p>
@@ -330,7 +370,7 @@ Class Rect2_GD_CB_Extension  <a class="header-action link-secondary" title="View
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>R</code> <span class="xref">Rect2</span></dt>
-    <dd><p><span class="xref">Godot.Rect2</span> that will be used.</p>
+    <dd><p><span class="xref">Godot.Rect2</span>That will be used.</p>
 </dd>
   </dl>
 
@@ -351,11 +391,50 @@ Class Rect2_GD_CB_Extension  <a class="header-action link-secondary" title="View
 
 
 
+  <a id="Godot_Rect2_GD_CB_Extension_Width_" data-uid="Godot.Rect2_GD_CB_Extension.Width*"></a>
+
+  <h3 id="Godot_Rect2_GD_CB_Extension_Width_Godot_Rect2_" data-uid="Godot.Rect2_GD_CB_Extension.Width(Godot.Rect2)">
+  Width(Rect2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Rect2_GD_CB_Extension.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get the width of the <span class="xref">Godot.Rect2</span></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Width(this Rect2 R)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>R</code> <span class="xref">Rect2</span></dt>
+    <dd><p>That will be used.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Returns a floating-point right width of <span class="xref">Godot.Rect2</span>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Rect2_GD_CB_Extension.cs/#L6" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Rect2_GD_CB_Extension.cs/#L7" class="edit-link">Edit this page</a>
         </div>
 
 

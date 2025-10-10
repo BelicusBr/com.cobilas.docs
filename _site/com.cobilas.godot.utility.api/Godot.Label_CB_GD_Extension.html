@@ -1,0 +1,3206 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Label_CB_GD_Extension | Cobilas Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Label_CB_GD_Extension | Cobilas Documentation ">
+      
+      <meta name="description" content="Provides extension methods for Godot&#39;s  class, allowing string operations to be performed fluently and efficiently using  internally.">
+      <link rel="icon" href="../images/favicon-96x96.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.godot.utility/new/main.dev/apiSpec/new?filename=Godot_Label_CB_GD_Extension.md&amp;value=---%0Auid%3A%20Godot.Label_CB_GD_Extension%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/apple-icon-57x57.png" alt="Cobilas Documentation">
+            Cobilas Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Godot.Label_CB_GD_Extension">
+
+
+
+  <h1 id="Godot_Label_CB_GD_Extension" data-uid="Godot.Label_CB_GD_Extension" class="text-break">
+Class Label_CB_GD_Extension  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Godot.html">Godot</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>com.cobilas.godot.utility.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides extension methods for Godot's <span class="xref">Godot.Label</span> class, allowing string operations to be performed fluently and efficiently using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> internally.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Label_CB_GD_Extension</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Label_CB_GD_Extension</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="Godot_Label_CB_GD_Extension_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This class uses a shared static <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> for better performance
+in frequent text manipulation operations in TextEdits.</p>
+</div>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Godot_Label_CB_GD_Extension_Append_" data-uid="Godot.Label_CB_GD_Extension.Append*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Append_Godot_Label_System_Boolean_" data-uid="Godot.Label_CB_GD_Extension.Append(Godot.Label,System.Boolean)">
+  Append(Label?, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> representation of a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> value to the <span class="xref">Godot.Label</span> text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Append(this Label? L, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> value to be added</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Append_" data-uid="Godot.Label_CB_GD_Extension.Append*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Append_Godot_Label_System_Byte_" data-uid="Godot.Label_CB_GD_Extension.Append(Godot.Label,System.Byte)">
+  Append(Label?, byte)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a> value to the <span class="xref">Godot.Label</span> text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Append(this Label? L, byte value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a> value to be added</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Append_" data-uid="Godot.Label_CB_GD_Extension.Append*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Append_Godot_Label_System_Char_" data-uid="Godot.Label_CB_GD_Extension.Append(Godot.Label,System.Char)">
+  Append(Label?, char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a character to the <span class="xref">Godot.Label</span> text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Append(this Label? L, char value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>Character to be added</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Append_" data-uid="Godot.Label_CB_GD_Extension.Append*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Append_Godot_Label_System_Char_System_Int32_" data-uid="Godot.Label_CB_GD_Extension.Append(Godot.Label,System.Char,System.Int32)">
+  Append(Label?, char, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a character repeated a specified number of times to the text of <span class="xref">Godot.Label</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Append(this Label? L, char value, int repeatCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>Character to be added</p>
+</dd>
+    <dt><code>repeatCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of repetitions of the character</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Append_" data-uid="Godot.Label_CB_GD_Extension.Append*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Append_Godot_Label_System_Char___" data-uid="Godot.Label_CB_GD_Extension.Append(Godot.Label,System.Char[])">
+  Append(Label?, char[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a <span class="xref">char[]</span> to the text of the <span class="xref">Godot.Label</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Append(this Label? L, char[] value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>[]</dt>
+    <dd><p><span class="xref">char[]</span> to be added</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Append_" data-uid="Godot.Label_CB_GD_Extension.Append*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Append_Godot_Label_System_Char___System_Int32_System_Int32_" data-uid="Godot.Label_CB_GD_Extension.Append(Godot.Label,System.Char[],System.Int32,System.Int32)">
+  Append(Label?, char[], int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a part of a <span class="xref">char[]</span> to the text of the <span class="xref">Godot.Label</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Append(this Label? L, char[] value, int startIndex, int charCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>[]</dt>
+    <dd><p><span class="xref">char[]</span> of origin</p>
+</dd>
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Starting index in <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.array">Array</a></p>
+</dd>
+    <dt><code>charCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of characters to add</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Append_" data-uid="Godot.Label_CB_GD_Extension.Append*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Append_Godot_Label_System_Decimal_" data-uid="Godot.Label_CB_GD_Extension.Append(Godot.Label,System.Decimal)">
+  Append(Label?, decimal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a> value to the text of <span class="xref">Godot.Label</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Append(this Label? L, decimal value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a> value to be added</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Append_" data-uid="Godot.Label_CB_GD_Extension.Append*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Append_Godot_Label_System_Double_" data-uid="Godot.Label_CB_GD_Extension.Append(Godot.Label,System.Double)">
+  Append(Label?, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L296"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> value to the text of <span class="xref">Godot.Label</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Append(this Label? L, double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> value to be added</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Append_" data-uid="Godot.Label_CB_GD_Extension.Append*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Append_Godot_Label_System_Int16_" data-uid="Godot.Label_CB_GD_Extension.Append(Godot.Label,System.Int16)">
+  Append(Label?, short)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L251"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a> value to the text of <span class="xref">Godot.Label</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Append(this Label? L, short value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a> value to be added</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Append_" data-uid="Godot.Label_CB_GD_Extension.Append*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Append_Godot_Label_System_Int32_" data-uid="Godot.Label_CB_GD_Extension.Append(Godot.Label,System.Int32)">
+  Append(Label?, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> value to the text of <span class="xref">Godot.Label</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Append(this Label? L, int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> value to be added</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Append_" data-uid="Godot.Label_CB_GD_Extension.Append*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Append_Godot_Label_System_Int64_" data-uid="Godot.Label_CB_GD_Extension.Append(Godot.Label,System.Int64)">
+  Append(Label?, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a> value to the text of <span class="xref">Godot.Label</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Append(this Label? L, long value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a> value to be added</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Append_" data-uid="Godot.Label_CB_GD_Extension.Append*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Append_Godot_Label_System_Object_" data-uid="Godot.Label_CB_GD_Extension.Append(Godot.Label,System.Object)">
+  Append(Label?, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> representation of a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> to the text of the <span class="xref">Godot.Label</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Append(this Label? L, object value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> to be added</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Append_" data-uid="Godot.Label_CB_GD_Extension.Append*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Append_Godot_Label_System_SByte_" data-uid="Godot.Label_CB_GD_Extension.Append(Godot.Label,System.SByte)">
+  Append(Label?, sbyte)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a> value to the text of <span class="xref">Godot.Label</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Append(this Label? L, sbyte value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a> value to be added</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Append_" data-uid="Godot.Label_CB_GD_Extension.Append*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Append_Godot_Label_System_Single_" data-uid="Godot.Label_CB_GD_Extension.Append(Godot.Label,System.Single)">
+  Append(Label?, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a> value to the text of the <span class="xref">Godot.Label</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Append(this Label? L, float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a> value to be added</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Append_" data-uid="Godot.Label_CB_GD_Extension.Append*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Append_Godot_Label_System_String_" data-uid="Godot.Label_CB_GD_Extension.Append(Godot.Label,System.String)">
+  Append(Label?, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> to the text of the <span class="xref">Godot.Label</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Append(this Label? L, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> to be added</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Append_" data-uid="Godot.Label_CB_GD_Extension.Append*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Append_Godot_Label_System_String_System_Int32_System_Int32_" data-uid="Godot.Label_CB_GD_Extension.Append(Godot.Label,System.String,System.Int32,System.Int32)">
+  Append(Label?, string, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a substring to the <span class="xref">Godot.Label</span> text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Append(this Label? L, string value, int startIndex, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> source</p>
+</dd>
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Starting index in source <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of characters to add</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Append_" data-uid="Godot.Label_CB_GD_Extension.Append*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Append_Godot_Label_System_UInt16_" data-uid="Godot.Label_CB_GD_Extension.Append(Godot.Label,System.UInt16)">
+  Append(Label?, ushort)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a> value to the text of the <span class="xref">Godot.Label</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Append(this Label? L, ushort value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a> value to be added</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Append_" data-uid="Godot.Label_CB_GD_Extension.Append*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Append_Godot_Label_System_UInt32_" data-uid="Godot.Label_CB_GD_Extension.Append(Godot.Label,System.UInt32)">
+  Append(Label?, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a> value to the <span class="xref">Godot.Label</span> text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Append(this Label? L, uint value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a> value to add</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Append_" data-uid="Godot.Label_CB_GD_Extension.Append*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Append_Godot_Label_System_UInt64_" data-uid="Godot.Label_CB_GD_Extension.Append(Godot.Label,System.UInt64)">
+  Append(Label?, ulong)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a> value to the <span class="xref">Godot.Label</span> text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Append(this Label? L, ulong value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a> value to be added</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_AppendFormat_" data-uid="Godot.Label_CB_GD_Extension.AppendFormat*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_AppendFormat_Godot_Label_System_IFormatProvider_System_String_System_Object_" data-uid="Godot.Label_CB_GD_Extension.AppendFormat(Godot.Label,System.IFormatProvider,System.String,System.Object)">
+  AppendFormat(Label?, IFormatProvider, string, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds formatted text to Label using a specific format provider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label AppendFormat(this Label? L, IFormatProvider provider, string format, object arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
+    <dd><p>Culture-specific format provider</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> format</p>
+</dd>
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>First argument to be formatted</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_AppendFormat_" data-uid="Godot.Label_CB_GD_Extension.AppendFormat*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_AppendFormat_Godot_Label_System_IFormatProvider_System_String_System_Object_System_Object_" data-uid="Godot.Label_CB_GD_Extension.AppendFormat(Godot.Label,System.IFormatProvider,System.String,System.Object,System.Object)">
+  AppendFormat(Label?, IFormatProvider, string, object, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds formatted text to Label using a specific format provider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label AppendFormat(this Label? L, IFormatProvider provider, string format, object arg0, object arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
+    <dd><p>Culture-specific format provider</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> format</p>
+</dd>
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>First argument to be formatted</p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Second argument to be formatted</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_AppendFormat_" data-uid="Godot.Label_CB_GD_Extension.AppendFormat*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_AppendFormat_Godot_Label_System_IFormatProvider_System_String_System_Object_System_Object_System_Object_" data-uid="Godot.Label_CB_GD_Extension.AppendFormat(Godot.Label,System.IFormatProvider,System.String,System.Object,System.Object,System.Object)">
+  AppendFormat(Label?, IFormatProvider, string, object, object, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L434"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds formatted text to Label using a specific format provider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label AppendFormat(this Label? L, IFormatProvider provider, string format, object arg0, object arg1, object arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
+    <dd><p>Culture-specific format provider</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> format</p>
+</dd>
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>First argument to be formatted</p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Second argument to be formatted</p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Third argument to be formatted</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_AppendFormat_" data-uid="Godot.Label_CB_GD_Extension.AppendFormat*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_AppendFormat_Godot_Label_System_IFormatProvider_System_String_System_Object___" data-uid="Godot.Label_CB_GD_Extension.AppendFormat(Godot.Label,System.IFormatProvider,System.String,System.Object[])">
+  AppendFormat(Label?, IFormatProvider, string, params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L348"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds formatted text to Label using a specific format provider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label AppendFormat(this Label? L, IFormatProvider provider, string format, params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
+    <dd><p>Culture-specific format provider</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> format</p>
+</dd>
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.array">Array</a> of arguments to be formatted</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_AppendFormat_" data-uid="Godot.Label_CB_GD_Extension.AppendFormat*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_AppendFormat_Godot_Label_System_String_System_Object_" data-uid="Godot.Label_CB_GD_Extension.AppendFormat(Godot.Label,System.String,System.Object)">
+  AppendFormat(Label?, string, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L364"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds formatted text to Label using a specific format provider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label AppendFormat(this Label? L, string format, object arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> format</p>
+</dd>
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>First argument to be formatted</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_AppendFormat_" data-uid="Godot.Label_CB_GD_Extension.AppendFormat*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_AppendFormat_Godot_Label_System_String_System_Object_System_Object_" data-uid="Godot.Label_CB_GD_Extension.AppendFormat(Godot.Label,System.String,System.Object,System.Object)">
+  AppendFormat(Label?, string, object, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L381"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds formatted text to Label using a specific format provider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label AppendFormat(this Label? L, string format, object arg0, object arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> format</p>
+</dd>
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>First argument to be formatted</p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Second argument to be formatted</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_AppendFormat_" data-uid="Godot.Label_CB_GD_Extension.AppendFormat*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_AppendFormat_Godot_Label_System_String_System_Object_System_Object_System_Object_" data-uid="Godot.Label_CB_GD_Extension.AppendFormat(Godot.Label,System.String,System.Object,System.Object,System.Object)">
+  AppendFormat(Label?, string, object, object, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L399"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds formatted text to Label using a specific format provider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label AppendFormat(this Label? L, string format, object arg0, object arg1, object arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> format</p>
+</dd>
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>First argument to be formatted</p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Second argument to be formatted</p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Third argument to be formatted</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_AppendFormat_" data-uid="Godot.Label_CB_GD_Extension.AppendFormat*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_AppendFormat_Godot_Label_System_String_System_Object___" data-uid="Godot.Label_CB_GD_Extension.AppendFormat(Godot.Label,System.String,System.Object[])">
+  AppendFormat(Label?, string, params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds formatted text to Label using a specific format provider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label AppendFormat(this Label? L, string format, params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> format</p>
+</dd>
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.array">Array</a> of arguments to be formatted</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_AppendJoin_" data-uid="Godot.Label_CB_GD_Extension.AppendJoin*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_AppendJoin_Godot_Label_System_Char_System_Object___" data-uid="Godot.Label_CB_GD_Extension.AppendJoin(Godot.Label,System.Char,System.Object[])">
+  AppendJoin(Label?, char, object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L479"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> created by joining a <span class="xref">object[]</span> with a character separator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label AppendJoin(this Label? L, char separator, object[] values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>separator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>Separator between elements</p>
+</dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p><span class="xref">object[]</span> to be joined</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_AppendJoin_" data-uid="Godot.Label_CB_GD_Extension.AppendJoin*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_AppendJoin_Godot_Label_System_Char_System_String___" data-uid="Godot.Label_CB_GD_Extension.AppendJoin(Godot.Label,System.Char,System.String[])">
+  AppendJoin(Label?, char, string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L469"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> created by joining a <span class="xref">string[]</span> with a character separator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label AppendJoin(this Label? L, char separator, string[] values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>separator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>Separator between elements</p>
+</dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p><span class="xref">string[]</span> to be joined</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_AppendJoin_" data-uid="Godot.Label_CB_GD_Extension.AppendJoin*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_AppendJoin_Godot_Label_System_String_System_Object___" data-uid="Godot.Label_CB_GD_Extension.AppendJoin(Godot.Label,System.String,System.Object[])">
+  AppendJoin(Label?, string, object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L459"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> created by joining a <span class="xref">object[]</span> with a separator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label AppendJoin(this Label? L, string separator, object[] values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>separator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Separator between elements</p>
+</dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p><span class="xref">object[]</span> to be joined</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_AppendJoin_" data-uid="Godot.Label_CB_GD_Extension.AppendJoin*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_AppendJoin_Godot_Label_System_String_System_String___" data-uid="Godot.Label_CB_GD_Extension.AppendJoin(Godot.Label,System.String,System.String[])">
+  AppendJoin(Label?, string, string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L449"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> created by joining a <span class="xref">string[]</span> with a separator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label AppendJoin(this Label? L, string separator, string[] values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>separator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Separator between elements</p>
+</dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p><span class="xref">string[]</span> to be joined</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_AppendJoin_" data-uid="Godot.Label_CB_GD_Extension.AppendJoin*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_AppendJoin__1_Godot_Label_System_Char_System_IEquatable___0__" data-uid="Godot.Label_CB_GD_Extension.AppendJoin``1(Godot.Label,System.Char,System.IEquatable{``0})">
+  AppendJoin&lt;T&gt;(Label?, char, IEquatable&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L501"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> created by joining a collection of objects with a character separator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label AppendJoin&lt;T&gt;(this Label? L, char separator, IEquatable&lt;T&gt; values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>separator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>Separator between elements</p>
+</dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;T&gt;</dt>
+    <dd><p>Collection of objects to be joined</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a> of elements in the collection</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_AppendJoin_" data-uid="Godot.Label_CB_GD_Extension.AppendJoin*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_AppendJoin__1_Godot_Label_System_String_System_IEquatable___0__" data-uid="Godot.Label_CB_GD_Extension.AppendJoin``1(Godot.Label,System.String,System.IEquatable{``0})">
+  AppendJoin&lt;T&gt;(Label?, string, IEquatable&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L490"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> created by joining a collection of objects with a separator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label AppendJoin&lt;T&gt;(this Label? L, string separator, IEquatable&lt;T&gt; values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>separator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Separator between elements</p>
+</dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;T&gt;</dt>
+    <dd><p>Collection of objects to be joined</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a> of elements in the collection</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_AppendLine_" data-uid="Godot.Label_CB_GD_Extension.AppendLine*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_AppendLine_Godot_Label_" data-uid="Godot.Label_CB_GD_Extension.AppendLine(Godot.Label)">
+  AppendLine(Label?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L510"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a line break to the text of <span class="xref">Godot.Label</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label AppendLine(this Label? L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_AppendLine_" data-uid="Godot.Label_CB_GD_Extension.AppendLine*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_AppendLine_Godot_Label_System_Object_" data-uid="Godot.Label_CB_GD_Extension.AppendLine(Godot.Label,System.Object)">
+  AppendLine(Label?, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L539"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> representation of a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> followed by a line break to the text of the <span class="xref">Godot.Label</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label AppendLine(this Label? L, object value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> to be added</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_AppendLine_" data-uid="Godot.Label_CB_GD_Extension.AppendLine*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_AppendLine_Godot_Label_System_String_" data-uid="Godot.Label_CB_GD_Extension.AppendLine(Godot.Label,System.String)">
+  AppendLine(Label?, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L525"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> followed by a line break to the text of the <span class="xref">Godot.Label</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label AppendLine(this Label? L, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> to be added</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_ClearText_" data-uid="Godot.Label_CB_GD_Extension.ClearText*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_ClearText_Godot_Label_" data-uid="Godot.Label_CB_GD_Extension.ClearText(Godot.Label)">
+  ClearText(Label?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L923"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears all text from <span class="xref">Godot.Label</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label ClearText(this Label? L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Insert_" data-uid="Godot.Label_CB_GD_Extension.Insert*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Insert_Godot_Label_System_Int32_System_Boolean_" data-uid="Godot.Label_CB_GD_Extension.Insert(Godot.Label,System.Int32,System.Boolean)">
+  Insert(Label?, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L568"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> representation of a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> value into the text of the <span class="xref">Godot.Label</span> at the specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Insert(this Label? L, int index, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Position where to insert</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> value to be inserted</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Insert_" data-uid="Godot.Label_CB_GD_Extension.Insert*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Insert_Godot_Label_System_Int32_System_Byte_" data-uid="Godot.Label_CB_GD_Extension.Insert(Godot.Label,System.Int32,System.Byte)">
+  Insert(Label?, int, byte)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L584"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> representation of a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a> value into the text of the <span class="xref">Godot.Label</span> at the specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Insert(this Label? L, int index, byte value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Position where to insert</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a> value to be inserted</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Insert_" data-uid="Godot.Label_CB_GD_Extension.Insert*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Insert_Godot_Label_System_Int32_System_Char_" data-uid="Godot.Label_CB_GD_Extension.Insert(Godot.Label,System.Int32,System.Char)">
+  Insert(Label?, int, char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L665"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a> into the text of the <span class="xref">Godot.Label</span> at the specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Insert(this Label? L, int index, char value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Position where to insert</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a> value to be inserted</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Insert_" data-uid="Godot.Label_CB_GD_Extension.Insert*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Insert_Godot_Label_System_Int32_System_Char___" data-uid="Godot.Label_CB_GD_Extension.Insert(Godot.Label,System.Int32,System.Char[])">
+  Insert(Label?, int, char[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L616"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts a <span class="xref">char[]</span> into the text of the <span class="xref">Godot.Label</span> at the specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Insert(this Label? L, int index, char[] value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Position where to insert</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>[]</dt>
+    <dd><p><span class="xref">char[]</span> value to be inserted</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Insert_" data-uid="Godot.Label_CB_GD_Extension.Insert*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Insert_Godot_Label_System_Int32_System_Char___System_Int32_System_Int32_" data-uid="Godot.Label_CB_GD_Extension.Insert(Godot.Label,System.Int32,System.Char[],System.Int32,System.Int32)">
+  Insert(Label?, int, char[], int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L552"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts a portion of a <span class="xref">char[]</span> into the text of the <span class="xref">Godot.Label</span> at the specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Insert(this Label? L, int index, char[] value, int startIndex, int charCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Position where to insert</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>[]</dt>
+    <dd><p><span class="xref">char[]</span> of origin</p>
+</dd>
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Starting index in <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.array">Array</a></p>
+</dd>
+    <dt><code>charCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of characters to enter</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Insert_" data-uid="Godot.Label_CB_GD_Extension.Insert*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Insert_Godot_Label_System_Int32_System_Decimal_" data-uid="Godot.Label_CB_GD_Extension.Insert(Godot.Label,System.Int32,System.Decimal)">
+  Insert(Label?, int, decimal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L793"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> representation of a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a> value into the text of the <span class="xref">Godot.Label</span> at the specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Insert(this Label? L, int index, decimal value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Position where to insert</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a> value to be inserted</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Insert_" data-uid="Godot.Label_CB_GD_Extension.Insert*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Insert_Godot_Label_System_Int32_System_Double_" data-uid="Godot.Label_CB_GD_Extension.Insert(Godot.Label,System.Int32,System.Double)">
+  Insert(Label?, int, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L777"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> representation of a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> value into the text of the <span class="xref">Godot.Label</span> at the specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Insert(this Label? L, int index, double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Position where to insert</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> value to be inserted</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Insert_" data-uid="Godot.Label_CB_GD_Extension.Insert*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Insert_Godot_Label_System_Int32_System_Int16_" data-uid="Godot.Label_CB_GD_Extension.Insert(Godot.Label,System.Int32,System.Int16)">
+  Insert(Label?, int, short)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L761"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> representation of a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a> value into the text of the <span class="xref">Godot.Label</span> at the specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Insert(this Label? L, int index, short value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Position where to insert</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a> value to be inserted</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Insert_" data-uid="Godot.Label_CB_GD_Extension.Insert*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Insert_Godot_Label_System_Int32_System_Int32_" data-uid="Godot.Label_CB_GD_Extension.Insert(Godot.Label,System.Int32,System.Int32)">
+  Insert(Label?, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L745"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> representation of a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> value into the text of the <span class="xref">Godot.Label</span> at the specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Insert(this Label? L, int index, int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Position where to insert</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> value to be inserted</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Insert_" data-uid="Godot.Label_CB_GD_Extension.Insert*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Insert_Godot_Label_System_Int32_System_Int64_" data-uid="Godot.Label_CB_GD_Extension.Insert(Godot.Label,System.Int32,System.Int64)">
+  Insert(Label?, int, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L729"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> representation of a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a> value into the text of the <span class="xref">Godot.Label</span> at the specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Insert(this Label? L, int index, long value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Position where to insert</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a> value to be inserted</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Insert_" data-uid="Godot.Label_CB_GD_Extension.Insert*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Insert_Godot_Label_System_Int32_System_Object_" data-uid="Godot.Label_CB_GD_Extension.Insert(Godot.Label,System.Int32,System.Object)">
+  Insert(Label?, int, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L713"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Insere a representação em <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> de um <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> no texto do <span class="xref">Godot.Label</span> na posição especificada.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Insert(this Label? L, int index, object value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Position where to insert</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> value to be inserted</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Insert_" data-uid="Godot.Label_CB_GD_Extension.Insert*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Insert_Godot_Label_System_Int32_System_SByte_" data-uid="Godot.Label_CB_GD_Extension.Insert(Godot.Label,System.Int32,System.SByte)">
+  Insert(Label?, int, sbyte)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L697"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> representation of a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a> value into the text of the <span class="xref">Godot.Label</span> at the specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Insert(this Label? L, int index, sbyte value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Position where to insert</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a> value to be inserted</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Insert_" data-uid="Godot.Label_CB_GD_Extension.Insert*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Insert_Godot_Label_System_Int32_System_Single_" data-uid="Godot.Label_CB_GD_Extension.Insert(Godot.Label,System.Int32,System.Single)">
+  Insert(Label?, int, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L809"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> representation of a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a> value into the text of the <span class="xref">Godot.Label</span> at the specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Insert(this Label? L, int index, float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Position where to insert</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a> value to be inserted</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Insert_" data-uid="Godot.Label_CB_GD_Extension.Insert*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Insert_Godot_Label_System_Int32_System_String_" data-uid="Godot.Label_CB_GD_Extension.Insert(Godot.Label,System.Int32,System.String)">
+  Insert(Label?, int, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L825"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> into the text of the <span class="xref">Godot.Label</span> at the specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Insert(this Label? L, int index, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Position where to insert</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> value to be inserted</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Insert_" data-uid="Godot.Label_CB_GD_Extension.Insert*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Insert_Godot_Label_System_Int32_System_String_System_Int32_" data-uid="Godot.Label_CB_GD_Extension.Insert(Godot.Label,System.Int32,System.String,System.Int32)">
+  Insert(Label?, int, string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L649"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> repeated a specified number of times into the text of the <span class="xref">Godot.Label</span> at the specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Insert(this Label? L, int index, string value, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Position where to insert</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> value to be inserted</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of repetitions</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Insert_" data-uid="Godot.Label_CB_GD_Extension.Insert*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Insert_Godot_Label_System_Int32_System_UInt16_" data-uid="Godot.Label_CB_GD_Extension.Insert(Godot.Label,System.Int32,System.UInt16)">
+  Insert(Label?, int, ushort)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L632"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> representation of a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a> value into the text of the <span class="xref">Godot.Label</span> at the specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Insert(this Label? L, int index, ushort value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Position where to insert</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a> value to be inserted</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Insert_" data-uid="Godot.Label_CB_GD_Extension.Insert*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Insert_Godot_Label_System_Int32_System_UInt32_" data-uid="Godot.Label_CB_GD_Extension.Insert(Godot.Label,System.Int32,System.UInt32)">
+  Insert(Label?, int, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L681"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> representation of a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a> value into the text of the <span class="xref">Godot.Label</span> at the specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Insert(this Label? L, int index, uint value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Position where to insert</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a> value to be inserted</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Insert_" data-uid="Godot.Label_CB_GD_Extension.Insert*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Insert_Godot_Label_System_Int32_System_UInt64_" data-uid="Godot.Label_CB_GD_Extension.Insert(Godot.Label,System.Int32,System.UInt64)">
+  Insert(Label?, int, ulong)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L600"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> representation of a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a> value into the text of the <span class="xref">Godot.Label</span> at the specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Insert(this Label? L, int index, ulong value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Position where to insert</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a> value to be inserted</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Remove_" data-uid="Godot.Label_CB_GD_Extension.Remove*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Remove_Godot_Label_System_Int32_System_Int32_" data-uid="Godot.Label_CB_GD_Extension.Remove(Godot.Label,System.Int32,System.Int32)">
+  Remove(Label?, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L841"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Remove um número específico de caracteres do texto do Label a partir da posição especificada.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Remove(this Label? L, int startIndex, int length)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Posição inicial para remoção</p>
+</dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Número de caracteres a remover</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Replace_" data-uid="Godot.Label_CB_GD_Extension.Replace*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Replace_Godot_Label_System_Char_System_Char_" data-uid="Godot.Label_CB_GD_Extension.Replace(Godot.Label,System.Char,System.Char)">
+  Replace(Label?, char, char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L857"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Replaces all occurrences of one <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a> with another in the text of the <span class="xref">Godot.Label</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Replace(this Label? L, char oldChar, char newChar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>oldChar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a> to be replaced</p>
+</dd>
+    <dt><code>newChar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>Replaced <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Replace_" data-uid="Godot.Label_CB_GD_Extension.Replace*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Replace_Godot_Label_System_Char_System_Char_System_Int32_System_Int32_" data-uid="Godot.Label_CB_GD_Extension.Replace(Godot.Label,System.Char,System.Char,System.Int32,System.Int32)">
+  Replace(Label?, char, char, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L875"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Replaces all occurrences of one <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a> with another in a specified portion of the text of the <span class="xref">Godot.Label</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Replace(this Label? L, char oldChar, char newChar, int startIndex, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>oldChar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a> to be replaced</p>
+</dd>
+    <dt><code>newChar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>Replaced <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Starting position for search</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of characters to consider</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Replace_" data-uid="Godot.Label_CB_GD_Extension.Replace*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Replace_Godot_Label_System_String_System_String_" data-uid="Godot.Label_CB_GD_Extension.Replace(Godot.Label,System.String,System.String)">
+  Replace(Label?, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L891"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Replaces all occurrences of one <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> with another in the text of the <span class="xref">Godot.Label</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Replace(this Label? L, string oldValue, string newValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>oldValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> to be replaced</p>
+</dd>
+    <dt><code>newValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Replaced <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Godot_Label_CB_GD_Extension_Replace_" data-uid="Godot.Label_CB_GD_Extension.Replace*"></a>
+
+  <h3 id="Godot_Label_CB_GD_Extension_Replace_Godot_Label_System_String_System_String_System_Int32_System_Int32_" data-uid="Godot.Label_CB_GD_Extension.Replace(Godot.Label,System.String,System.String,System.Int32,System.Int32)">
+  Replace(Label?, string, string, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L909"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Replaces all occurrences of one <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> with another in a specified portion of the text of the <span class="xref">Godot.Label</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Label Replace(this Label? L, string oldValue, string newValue, int startIndex, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <span class="xref">Label</span></dt>
+    <dd><p><span class="xref">Godot.Label</span> target (can be null)</p>
+</dd>
+    <dt><code>oldValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> to be replaced</p>
+</dd>
+    <dt><code>newValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Replaced <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Starting position for search</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of characters to consider</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Label</span></dt>
+    <dd><p>The <span class="xref">Godot.Label</span> itself to allow chained calls</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <span class="xref">Godot.Label</span> is null</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/Godot/Label_CB_GD_Extension.cs/#L12" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

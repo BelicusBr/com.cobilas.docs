@@ -16,6 +16,13 @@ items:
   - Cobilas.GodotEngine.Utility.Numerics.Quaternion.Equals(Cobilas.GodotEngine.Utility.Numerics.Quaternion)
   - Cobilas.GodotEngine.Utility.Numerics.Quaternion.Equals(System.Object)
   - Cobilas.GodotEngine.Utility.Numerics.Quaternion.Euler
+  - Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirection(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  - Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionBack
+  - Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionDown
+  - Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionForward
+  - Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionLeft
+  - Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionRight
+  - Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionUp
   - Cobilas.GodotEngine.Utility.Numerics.Quaternion.GetHashCode
   - Cobilas.GodotEngine.Utility.Numerics.Quaternion.Identity
   - Cobilas.GodotEngine.Utility.Numerics.Quaternion.KEpsilon
@@ -292,7 +299,7 @@ items:
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
-  summary: Degrees-to-radians conversion constant (Read Only).
+  summary: Radians-to-degrees conversion constant (Read Only).
   example: []
   syntax:
     content: public const double Rad2Deg = 57.29577951308232
@@ -321,7 +328,7 @@ items:
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
-  summary: Radians-to-degrees conversion constant (Read Only).
+  summary: Degrees-to-radians conversion constant (Read Only).
   example: []
   syntax:
     content: public const double Deg2Rad = 0.017453292519943295
@@ -824,6 +831,220 @@ items:
   nameWithType.vb: Quaternion.ToString(String, IFormatProvider)
   fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Quaternion.ToString(String, System.IFormatProvider)
   name.vb: ToString(String, IFormatProvider)
+- uid: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirection(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirection(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  id: GenerateDirection(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  parent: Cobilas.GodotEngine.Utility.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: GenerateDirection(Vector3D)
+  nameWithType: Quaternion.GenerateDirection(Vector3D)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirection(Cobilas.GodotEngine.Utility.Numerics.Vector3D)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Quaternion.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GenerateDirection
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
+    startLine: 69
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Gera uma direção com base num <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3D" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public readonly Vector3D GenerateDirection(Vector3D dir)
+    parameters:
+    - id: dir
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+      description: direção.
+    return:
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    content.vb: Public Function GenerateDirection(dir As Vector3D) As Vector3D
+  overload: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirection*
+- uid: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionRight
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionRight
+  id: GenerateDirectionRight
+  parent: Cobilas.GodotEngine.Utility.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: GenerateDirectionRight()
+  nameWithType: Quaternion.GenerateDirectionRight()
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionRight()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Quaternion.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GenerateDirectionRight
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
+    startLine: 72
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Gera uma direção com base num <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3D" data-throw-if-not-resolved="false"></xref>.right.
+  example: []
+  syntax:
+    content: public readonly Vector3D GenerateDirectionRight()
+    return:
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    content.vb: Public Function GenerateDirectionRight() As Vector3D
+  overload: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionRight*
+- uid: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionUp
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionUp
+  id: GenerateDirectionUp
+  parent: Cobilas.GodotEngine.Utility.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: GenerateDirectionUp()
+  nameWithType: Quaternion.GenerateDirectionUp()
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionUp()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Quaternion.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GenerateDirectionUp
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
+    startLine: 75
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Gera uma direção com base num <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3D" data-throw-if-not-resolved="false"></xref>.up.
+  example: []
+  syntax:
+    content: public readonly Vector3D GenerateDirectionUp()
+    return:
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    content.vb: Public Function GenerateDirectionUp() As Vector3D
+  overload: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionUp*
+- uid: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionForward
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionForward
+  id: GenerateDirectionForward
+  parent: Cobilas.GodotEngine.Utility.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: GenerateDirectionForward()
+  nameWithType: Quaternion.GenerateDirectionForward()
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionForward()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Quaternion.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GenerateDirectionForward
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
+    startLine: 78
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Gera uma direção com base num <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3D" data-throw-if-not-resolved="false"></xref>.forward.
+  example: []
+  syntax:
+    content: public readonly Vector3D GenerateDirectionForward()
+    return:
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    content.vb: Public Function GenerateDirectionForward() As Vector3D
+  overload: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionForward*
+- uid: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionLeft
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionLeft
+  id: GenerateDirectionLeft
+  parent: Cobilas.GodotEngine.Utility.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: GenerateDirectionLeft()
+  nameWithType: Quaternion.GenerateDirectionLeft()
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionLeft()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Quaternion.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GenerateDirectionLeft
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
+    startLine: 81
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Gera uma direção com base num <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3D" data-throw-if-not-resolved="false"></xref>.left.
+  example: []
+  syntax:
+    content: public readonly Vector3D GenerateDirectionLeft()
+    return:
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    content.vb: Public Function GenerateDirectionLeft() As Vector3D
+  overload: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionLeft*
+- uid: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionDown
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionDown
+  id: GenerateDirectionDown
+  parent: Cobilas.GodotEngine.Utility.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: GenerateDirectionDown()
+  nameWithType: Quaternion.GenerateDirectionDown()
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionDown()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Quaternion.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GenerateDirectionDown
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
+    startLine: 84
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Gera uma direção com base num <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3D" data-throw-if-not-resolved="false"></xref>.down.
+  example: []
+  syntax:
+    content: public readonly Vector3D GenerateDirectionDown()
+    return:
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    content.vb: Public Function GenerateDirectionDown() As Vector3D
+  overload: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionDown*
+- uid: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionBack
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionBack
+  id: GenerateDirectionBack
+  parent: Cobilas.GodotEngine.Utility.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: GenerateDirectionBack()
+  nameWithType: Quaternion.GenerateDirectionBack()
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionBack()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Quaternion.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GenerateDirectionBack
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
+    startLine: 87
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Gera uma direção com base num <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector3D" data-throw-if-not-resolved="false"></xref>.back.
+  example: []
+  syntax:
+    content: public readonly Vector3D GenerateDirectionBack()
+    return:
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector3D
+    content.vb: Public Function GenerateDirectionBack() As Vector3D
+  overload: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionBack*
 - uid: Cobilas.GodotEngine.Utility.Numerics.Quaternion.Normalize(Cobilas.GodotEngine.Utility.Numerics.Quaternion)
   commentId: M:Cobilas.GodotEngine.Utility.Numerics.Quaternion.Normalize(Cobilas.GodotEngine.Utility.Numerics.Quaternion)
   id: Normalize(Cobilas.GodotEngine.Utility.Numerics.Quaternion)
@@ -842,7 +1063,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Normalize
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 71
+    startLine: 93
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -877,7 +1098,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Angle
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 79
+    startLine: 101
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -915,7 +1136,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Dot
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 87
+    startLine: 109
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -953,7 +1174,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToQuaternion
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 92
+    startLine: 114
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -988,7 +1209,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToEuler
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 110
+    startLine: 132
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1023,7 +1244,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Multiply
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 138
+    startLine: 160
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1064,7 +1285,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Multiply
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 161
+    startLine: 183
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1105,7 +1326,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Equality
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 170
+    startLine: 192
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1146,7 +1367,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Inequality
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 175
+    startLine: 197
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1187,7 +1408,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Quaternion.cs
-    startLine: 178
+    startLine: 200
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -1760,6 +1981,48 @@ references:
   name: IFormatProvider
   nameWithType: IFormatProvider
   fullName: System.IFormatProvider
+- uid: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirection*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirection
+  href: Cobilas.GodotEngine.Utility.Numerics.Quaternion.html#Cobilas_GodotEngine_Utility_Numerics_Quaternion_GenerateDirection_Cobilas_GodotEngine_Utility_Numerics_Vector3D_
+  name: GenerateDirection
+  nameWithType: Quaternion.GenerateDirection
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirection
+- uid: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionRight*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionRight
+  href: Cobilas.GodotEngine.Utility.Numerics.Quaternion.html#Cobilas_GodotEngine_Utility_Numerics_Quaternion_GenerateDirectionRight
+  name: GenerateDirectionRight
+  nameWithType: Quaternion.GenerateDirectionRight
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionRight
+- uid: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionUp*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionUp
+  href: Cobilas.GodotEngine.Utility.Numerics.Quaternion.html#Cobilas_GodotEngine_Utility_Numerics_Quaternion_GenerateDirectionUp
+  name: GenerateDirectionUp
+  nameWithType: Quaternion.GenerateDirectionUp
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionUp
+- uid: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionForward*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionForward
+  href: Cobilas.GodotEngine.Utility.Numerics.Quaternion.html#Cobilas_GodotEngine_Utility_Numerics_Quaternion_GenerateDirectionForward
+  name: GenerateDirectionForward
+  nameWithType: Quaternion.GenerateDirectionForward
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionForward
+- uid: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionLeft*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionLeft
+  href: Cobilas.GodotEngine.Utility.Numerics.Quaternion.html#Cobilas_GodotEngine_Utility_Numerics_Quaternion_GenerateDirectionLeft
+  name: GenerateDirectionLeft
+  nameWithType: Quaternion.GenerateDirectionLeft
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionLeft
+- uid: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionDown*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionDown
+  href: Cobilas.GodotEngine.Utility.Numerics.Quaternion.html#Cobilas_GodotEngine_Utility_Numerics_Quaternion_GenerateDirectionDown
+  name: GenerateDirectionDown
+  nameWithType: Quaternion.GenerateDirectionDown
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionDown
+- uid: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionBack*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionBack
+  href: Cobilas.GodotEngine.Utility.Numerics.Quaternion.html#Cobilas_GodotEngine_Utility_Numerics_Quaternion_GenerateDirectionBack
+  name: GenerateDirectionBack
+  nameWithType: Quaternion.GenerateDirectionBack
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Quaternion.GenerateDirectionBack
 - uid: Cobilas.GodotEngine.Utility.Numerics.Quaternion.Normalize*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Quaternion.Normalize
   href: Cobilas.GodotEngine.Utility.Numerics.Quaternion.html#Cobilas_GodotEngine_Utility_Numerics_Quaternion_Normalize_Cobilas_GodotEngine_Utility_Numerics_Quaternion_

@@ -61,6 +61,10 @@ items:
   - Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Implicit(Godot.Vector2)~Cobilas.GodotEngine.Utility.Numerics.Vector2D
   - Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Implicit(Godot.Vector3)~Cobilas.GodotEngine.Utility.Numerics.Vector2D
   - Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Inequality(Cobilas.GodotEngine.Utility.Numerics.Vector2D@,Cobilas.GodotEngine.Utility.Numerics.Vector2D@)
+  - Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Modulus(Cobilas.GodotEngine.Utility.Numerics.Vector2D,Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  - Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Modulus(Cobilas.GodotEngine.Utility.Numerics.Vector2D,Godot.Vector2)
+  - Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Modulus(Cobilas.GodotEngine.Utility.Numerics.Vector2D,System.Single)
+  - Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Modulus(Godot.Vector2,Cobilas.GodotEngine.Utility.Numerics.Vector2D)
   - Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Multiply(Cobilas.GodotEngine.Utility.Numerics.Vector2D,Cobilas.GodotEngine.Utility.Numerics.Vector2D)
   - Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Multiply(Cobilas.GodotEngine.Utility.Numerics.Vector2D,Godot.Vector2)
   - Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Multiply(Cobilas.GodotEngine.Utility.Numerics.Vector2D,System.Single)
@@ -2347,6 +2351,170 @@ items:
   nameWithType.vb: Vector2D.*(Vector2D, Single)
   fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector2D.*(Cobilas.GodotEngine.Utility.Numerics.Vector2D, Single)
   name.vb: '*(Vector2D, Single)'
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Modulus(Cobilas.GodotEngine.Utility.Numerics.Vector2D,Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Modulus(Cobilas.GodotEngine.Utility.Numerics.Vector2D,Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  id: op_Modulus(Cobilas.GodotEngine.Utility.Numerics.Vector2D,Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  parent: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+  langs:
+  - csharp
+  - vb
+  name: operator %(Vector2D, Vector2D)
+  nameWithType: Vector2D.operator %(Vector2D, Vector2D)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector2D.operator %(Cobilas.GodotEngine.Utility.Numerics.Vector2D, Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Vector2D.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Modulus
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector2D.cs
+    startLine: 319
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Modulo operation between two values.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector2D" data-throw-if-not-resolved="false"></xref> % <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector2D" data-throw-if-not-resolved="false"></xref>)
+  example: []
+  syntax:
+    content: public static Vector2D operator %(Vector2D a, Vector2D b)
+    parameters:
+    - id: a
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+      description: First module.
+    - id: b
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+      description: Second module.
+    return:
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+      description: The result of the module.
+    content.vb: Public Shared Operator Mod(a As Vector2D, b As Vector2D) As Vector2D
+  overload: Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Modulus*
+  nameWithType.vb: Vector2D.Mod(Vector2D, Vector2D)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector2D.Mod(Cobilas.GodotEngine.Utility.Numerics.Vector2D, Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  name.vb: Mod(Vector2D, Vector2D)
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Modulus(Cobilas.GodotEngine.Utility.Numerics.Vector2D,Godot.Vector2)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Modulus(Cobilas.GodotEngine.Utility.Numerics.Vector2D,Godot.Vector2)
+  id: op_Modulus(Cobilas.GodotEngine.Utility.Numerics.Vector2D,Godot.Vector2)
+  parent: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+  langs:
+  - csharp
+  - vb
+  name: operator %(Vector2D, Vector2)
+  nameWithType: Vector2D.operator %(Vector2D, Vector2)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector2D.operator %(Cobilas.GodotEngine.Utility.Numerics.Vector2D, Godot.Vector2)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Vector2D.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Modulus
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector2D.cs
+    startLine: 329
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Modulo operation between two values.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector2D" data-throw-if-not-resolved="false"></xref> % <xref href="Godot.Vector2" data-throw-if-not-resolved="false"></xref>)
+  example: []
+  syntax:
+    content: public static Vector2D operator %(Vector2D a, Vector2 b)
+    parameters:
+    - id: a
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+      description: First module.
+    - id: b
+      type: Godot.Vector2
+      description: Second module.
+    return:
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+      description: The result of the module.
+    content.vb: Public Shared Operator Mod(a As Vector2D, b As Vector2) As Vector2D
+  overload: Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Modulus*
+  nameWithType.vb: Vector2D.Mod(Vector2D, Vector2)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector2D.Mod(Cobilas.GodotEngine.Utility.Numerics.Vector2D, Godot.Vector2)
+  name.vb: Mod(Vector2D, Vector2)
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Modulus(Godot.Vector2,Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Modulus(Godot.Vector2,Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  id: op_Modulus(Godot.Vector2,Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  parent: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+  langs:
+  - csharp
+  - vb
+  name: operator %(Vector2, Vector2D)
+  nameWithType: Vector2D.operator %(Vector2, Vector2D)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector2D.operator %(Godot.Vector2, Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Vector2D.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Modulus
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector2D.cs
+    startLine: 339
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Modulo operation between two values.(<xref href="Godot.Vector2" data-throw-if-not-resolved="false"></xref> * <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector2D" data-throw-if-not-resolved="false"></xref>)
+  example: []
+  syntax:
+    content: public static Vector2D operator %(Vector2 a, Vector2D b)
+    parameters:
+    - id: a
+      type: Godot.Vector2
+      description: First module.
+    - id: b
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+      description: Second module.
+    return:
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+      description: The result of the module.
+    content.vb: Public Shared Operator Mod(a As Vector2, b As Vector2D) As Vector2D
+  overload: Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Modulus*
+  nameWithType.vb: Vector2D.Mod(Vector2, Vector2D)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector2D.Mod(Godot.Vector2, Cobilas.GodotEngine.Utility.Numerics.Vector2D)
+  name.vb: Mod(Vector2, Vector2D)
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Modulus(Cobilas.GodotEngine.Utility.Numerics.Vector2D,System.Single)
+  commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Modulus(Cobilas.GodotEngine.Utility.Numerics.Vector2D,System.Single)
+  id: op_Modulus(Cobilas.GodotEngine.Utility.Numerics.Vector2D,System.Single)
+  parent: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+  langs:
+  - csharp
+  - vb
+  name: operator %(Vector2D, float)
+  nameWithType: Vector2D.operator %(Vector2D, float)
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector2D.operator %(Cobilas.GodotEngine.Utility.Numerics.Vector2D, float)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine.Utility/Numerics/Vector2D.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Modulus
+    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector2D.cs
+    startLine: 349
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.Numerics
+  summary: Modulo operation between two values.(<xref href="Cobilas.GodotEngine.Utility.Numerics.Vector2D" data-throw-if-not-resolved="false"></xref> * <xref href="System.Single" data-throw-if-not-resolved="false"></xref>)
+  example: []
+  syntax:
+    content: public static Vector2D operator %(Vector2D a, float b)
+    parameters:
+    - id: a
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+      description: First module.
+    - id: b
+      type: System.Single
+      description: Second module.
+    return:
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+      description: The result of the module.
+    content.vb: Public Shared Operator Mod(a As Vector2D, b As Single) As Vector2D
+  overload: Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Modulus*
+  nameWithType.vb: Vector2D.Mod(Vector2D, Single)
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector2D.Mod(Cobilas.GodotEngine.Utility.Numerics.Vector2D, Single)
+  name.vb: Mod(Vector2D, Single)
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Equality(Cobilas.GodotEngine.Utility.Numerics.Vector2D@,Cobilas.GodotEngine.Utility.Numerics.Vector2D@)
   commentId: M:Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Equality(Cobilas.GodotEngine.Utility.Numerics.Vector2D@,Cobilas.GodotEngine.Utility.Numerics.Vector2D@)
   id: op_Equality(Cobilas.GodotEngine.Utility.Numerics.Vector2D@,Cobilas.GodotEngine.Utility.Numerics.Vector2D@)
@@ -2365,7 +2533,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Equality
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector2D.cs
-    startLine: 320
+    startLine: 360
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2406,7 +2574,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Inequality
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector2D.cs
-    startLine: 325
+    startLine: 365
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2447,7 +2615,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector2D.cs
-    startLine: 328
+    startLine: 368
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2484,7 +2652,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector2D.cs
-    startLine: 331
+    startLine: 371
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2521,7 +2689,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector2D.cs
-    startLine: 334
+    startLine: 374
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2558,7 +2726,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector2D.cs
-    startLine: 337
+    startLine: 377
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2595,7 +2763,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector2D.cs
-    startLine: 340
+    startLine: 380
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -2632,7 +2800,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: op_Implicit
     path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Numerics/Vector2D.cs
-    startLine: 343
+    startLine: 383
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.Numerics
@@ -3758,6 +3926,21 @@ references:
   - uid: Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Multiply*
     name: '*'
     href: Cobilas.GodotEngine.Utility.Numerics.Vector2D.html#Cobilas_GodotEngine_Utility_Numerics_Vector2D_op_Multiply_Cobilas_GodotEngine_Utility_Numerics_Vector2D_Cobilas_GodotEngine_Utility_Numerics_Vector2D_
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Modulus*
+  commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Modulus
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector2D.html#Cobilas_GodotEngine_Utility_Numerics_Vector2D_op_Modulus_Cobilas_GodotEngine_Utility_Numerics_Vector2D_Cobilas_GodotEngine_Utility_Numerics_Vector2D_
+  name: operator %
+  nameWithType: Vector2D.operator %
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector2D.operator %
+  nameWithType.vb: Vector2D.Mod
+  fullName.vb: Cobilas.GodotEngine.Utility.Numerics.Vector2D.Mod
+  name.vb: Mod
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Modulus*
+    name: '%'
+    href: Cobilas.GodotEngine.Utility.Numerics.Vector2D.html#Cobilas_GodotEngine_Utility_Numerics_Vector2D_op_Modulus_Cobilas_GodotEngine_Utility_Numerics_Vector2D_Cobilas_GodotEngine_Utility_Numerics_Vector2D_
 - uid: Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Equality*
   commentId: Overload:Cobilas.GodotEngine.Utility.Numerics.Vector2D.op_Equality
   href: Cobilas.GodotEngine.Utility.Numerics.Vector2D.html#Cobilas_GodotEngine_Utility_Numerics_Vector2D_op_Equality_Cobilas_GodotEngine_Utility_Numerics_Vector2D__Cobilas_GodotEngine_Utility_Numerics_Vector2D__
