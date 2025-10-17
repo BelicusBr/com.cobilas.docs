@@ -14,3 +14,8 @@
 
 #### [Getting Started](gd-icomponent-started.html)
 #### [API](com.cobilas.godot.icomponent.api/Cobilas.GodotEngine.Component.html)
+
+## Godot Lua
+
+#### [Getting Started](gd-godot-lua-started.html)
+#### [API](com.cobilas.godot.lua.api/Cobilas.GodotEngine.GDLua.html)

@@ -19,14 +19,14 @@ items:
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: IYieldVolatile
-    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/IYieldVolatile.cs
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/IYieldVolatile.cs
     startLine: 4
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility
   summary: >-
     The IyieldVolatile interface allows the Yield class to change the type of process.
-        <p>This interface allows you to change the type of update if the object will use the <xref href="Godot.Node._Process(System.Single)" data-throw-if-not-resolved="false"></xref> or <xref href="Godot.Node._PhysicsProcess(System.Single)" data-throw-if-not-resolved="false"></xref><xref href="Cobilas.GodotEngine.Utility.Coroutine" data-throw-if-not-resolved="false"></xref> process.</p>
+        <p>This interface allows you to change the type of update if the object will use the <xref href="Godot.Node._Process(System.Single)" data-throw-if-not-resolved="false"></xref> or <xref href="Godot.Node._PhysicsProcess(System.Single)" data-throw-if-not-resolved="false"></xref> <xref href="Cobilas.GodotEngine.Utility.Coroutine" data-throw-if-not-resolved="false"></xref> process.</p>
   example: []
   syntax:
     content: 'public interface IYieldVolatile : IYieldCoroutine'
@@ -51,7 +51,7 @@ items:
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: IsPhysicsProcess
-    path: ../../Godot Dev/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/IYieldVolatile.cs
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/Coroutine/IYieldVolatile.cs
     startLine: 10
   assemblies:
   - com.cobilas.godot.utility
@@ -64,10 +64,9 @@ items:
     return:
       type: System.Boolean
       description: >-
-        <p>
-          <code>true</code> when the corrotine is using <xref href="Godot.Node._PhysicsProcess(System.Single)" data-throw-if-not-resolved="false"></xref>.</p>
-        <p>
-          <code>false</code> when the corrotine is using <xref href="Godot.Node._Process(System.Single)" data-throw-if-not-resolved="false"></xref>.</p>
+        <p><code>true</code> when the corrotine is using <xref href="Godot.Node._PhysicsProcess(System.Single)" data-throw-if-not-resolved="false"></xref>.</p>
+
+        <p><code>false</code> when the corrotine is using <xref href="Godot.Node._Process(System.Single)" data-throw-if-not-resolved="false"></xref>.</p>
     content.vb: ReadOnly Property IsPhysicsProcess As Boolean
   overload: Cobilas.GodotEngine.Utility.IYieldVolatile.IsPhysicsProcess*
 references:

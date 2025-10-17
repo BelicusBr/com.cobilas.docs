@@ -1,0 +1,222 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg
+  commentId: T:Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg
+  id: ILuaContainerConfg
+  parent: Cobilas.GodotEngine.GDLua.Interfaces
+  children:
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.LuaState
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.OpenLibs
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.UseCLRPackage
+  langs:
+  - csharp
+  - vb
+  name: ILuaContainerConfg
+  nameWithType: ILuaContainerConfg
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg
+  type: Interface
+  source:
+    remote:
+      path: GodotEngine/GDLua/Interfaces/ILuaContainerConfg.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: ILuaContainerConfg
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/Interfaces/ILuaContainerConfg.cs
+    startLine: 8
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua.Interfaces
+  summary: Defines configuration settings for a Lua container in the Godot engine.
+  remarks: >-
+    This interface provides the basic configuration options required
+
+    for initializing and managing Lua environments within Godot.
+  example: []
+  syntax:
+    content: public interface ILuaContainerConfg
+    content.vb: Public Interface ILuaContainerConfg
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.OpenLibs
+  commentId: P:Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.OpenLibs
+  id: OpenLibs
+  parent: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg
+  langs:
+  - csharp
+  - vb
+  name: OpenLibs
+  nameWithType: ILuaContainerConfg.OpenLibs
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.OpenLibs
+  type: Property
+  source:
+    remote:
+      path: GodotEngine/GDLua/Interfaces/ILuaContainerConfg.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: OpenLibs
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/Interfaces/ILuaContainerConfg.cs
+    startLine: 11
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua.Interfaces
+  summary: Gets a value indicating whether standard Lua libraries should be loaded.
+  example: []
+  syntax:
+    content: bool OpenLibs { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true to load standard Lua libraries; otherwise, false.
+    content.vb: ReadOnly Property OpenLibs As Boolean
+  overload: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.OpenLibs*
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.LuaState
+  commentId: P:Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.LuaState
+  id: LuaState
+  parent: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg
+  langs:
+  - csharp
+  - vb
+  name: LuaState
+  nameWithType: ILuaContainerConfg.LuaState
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.LuaState
+  type: Property
+  source:
+    remote:
+      path: GodotEngine/GDLua/Interfaces/ILuaContainerConfg.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: LuaState
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/Interfaces/ILuaContainerConfg.cs
+    startLine: 14
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua.Interfaces
+  summary: Gets the current Lua state instance.
+  example: []
+  syntax:
+    content: Lua? LuaState { get; }
+    parameters: []
+    return:
+      type: KeraLua.Lua
+      description: The <xref href="KeraLua.Lua" data-throw-if-not-resolved="false"></xref> state object, or null if not initialized.
+    content.vb: ReadOnly Property LuaState As Lua
+  overload: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.LuaState*
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.UseCLRPackage
+  commentId: P:Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.UseCLRPackage
+  id: UseCLRPackage
+  parent: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg
+  langs:
+  - csharp
+  - vb
+  name: UseCLRPackage
+  nameWithType: ILuaContainerConfg.UseCLRPackage
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.UseCLRPackage
+  type: Property
+  source:
+    remote:
+      path: GodotEngine/GDLua/Interfaces/ILuaContainerConfg.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: UseCLRPackage
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/Interfaces/ILuaContainerConfg.cs
+    startLine: 17
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua.Interfaces
+  summary: Gets a value indicating whether the CLR package should be available in Lua.
+  example: []
+  syntax:
+    content: bool UseCLRPackage { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true to enable CLR package access from Lua; otherwise, false.
+    content.vb: ReadOnly Property UseCLRPackage As Boolean
+  overload: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.UseCLRPackage*
+references:
+- uid: Cobilas.GodotEngine.GDLua.Interfaces
+  commentId: N:Cobilas.GodotEngine.GDLua.Interfaces
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.GDLua.Interfaces
+  nameWithType: Cobilas.GodotEngine.GDLua.Interfaces
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua
+    name: GDLua
+    href: Cobilas.GodotEngine.GDLua.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua.Interfaces
+    name: Interfaces
+    href: Cobilas.GodotEngine.GDLua.Interfaces.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua
+    name: GDLua
+    href: Cobilas.GodotEngine.GDLua.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua.Interfaces
+    name: Interfaces
+    href: Cobilas.GodotEngine.GDLua.Interfaces.html
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.OpenLibs*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.OpenLibs
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaContainerConfg_OpenLibs
+  name: OpenLibs
+  nameWithType: ILuaContainerConfg.OpenLibs
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.OpenLibs
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: KeraLua.Lua
+  commentId: T:KeraLua.Lua
+  parent: KeraLua
+  isExternal: true
+  href: https://github.com/NLua/KeraLua/blob/a0c9c2c47a7b4f9fde981e33464728c9190c1358/src/Lua.cs
+  name: Lua
+  nameWithType: Lua
+  fullName: KeraLua.Lua
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.LuaState*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.LuaState
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaContainerConfg_LuaState
+  name: LuaState
+  nameWithType: ILuaContainerConfg.LuaState
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.LuaState
+- uid: KeraLua
+  commentId: N:KeraLua
+  isExternal: true
+  name: KeraLua
+  nameWithType: KeraLua
+  fullName: KeraLua
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.UseCLRPackage*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.UseCLRPackage
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaContainerConfg_UseCLRPackage
+  name: UseCLRPackage
+  nameWithType: ILuaContainerConfg.UseCLRPackage
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.UseCLRPackage

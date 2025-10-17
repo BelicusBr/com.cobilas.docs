@@ -1,0 +1,495 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.GodotEngine.GDLua.ObjectToLuaTable
+  commentId: T:Cobilas.GodotEngine.GDLua.ObjectToLuaTable
+  id: ObjectToLuaTable
+  parent: Cobilas.GodotEngine.GDLua
+  children:
+  - Cobilas.GodotEngine.GDLua.ObjectToLuaTable.ToLuaTable(System.Object,NLua.LuaTable)
+  - Cobilas.GodotEngine.GDLua.ObjectToLuaTable.ToObject(System.Object,NLua.LuaTable)
+  - Cobilas.GodotEngine.GDLua.ObjectToLuaTable.TryGetValue(System.Type,Cobilas.GodotEngine.GDLua.ObjectToLuaTable@)
+  langs:
+  - csharp
+  - vb
+  name: ObjectToLuaTable
+  nameWithType: ObjectToLuaTable
+  fullName: Cobilas.GodotEngine.GDLua.ObjectToLuaTable
+  type: Class
+  source:
+    remote:
+      path: GodotEngine/GDLua/ObjectToLuaTable.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: ObjectToLuaTable
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/ObjectToLuaTable.cs
+    startLine: 12
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Provides a base class for converting between C# objects and Lua tables.
+  remarks: >-
+    This abstract class serves as the foundation for type-specific converters
+
+    that handle serialization and deserialization between C# objects and Lua tables
+
+    in the Godot engine's Lua integration system.
+  example: []
+  syntax:
+    content: public abstract class ObjectToLuaTable
+    content.vb: Public MustInherit Class ObjectToLuaTable
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Cobilas.GodotEngine.GDLua.ObjectToLuaTable.ToLuaTable(System.Object,NLua.LuaTable)
+  commentId: M:Cobilas.GodotEngine.GDLua.ObjectToLuaTable.ToLuaTable(System.Object,NLua.LuaTable)
+  id: ToLuaTable(System.Object,NLua.LuaTable)
+  parent: Cobilas.GodotEngine.GDLua.ObjectToLuaTable
+  langs:
+  - csharp
+  - vb
+  name: ToLuaTable(object?, LuaTable?)
+  nameWithType: ObjectToLuaTable.ToLuaTable(object?, LuaTable?)
+  fullName: Cobilas.GodotEngine.GDLua.ObjectToLuaTable.ToLuaTable(object?, NLua.LuaTable?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/GDLua/ObjectToLuaTable.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: ToLuaTable
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/ObjectToLuaTable.cs
+    startLine: 17
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Converts a C# object to a Lua table.
+  example: []
+  syntax:
+    content: public abstract void ToLuaTable(object? obj, LuaTable? table)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The C# object to convert.
+    - id: table
+      type: NLua.LuaTable
+      description: The Lua table to populate with the object's data.
+    content.vb: Public MustOverride Sub ToLuaTable(obj As Object, table As LuaTable)
+  overload: Cobilas.GodotEngine.GDLua.ObjectToLuaTable.ToLuaTable*
+  nameWithType.vb: ObjectToLuaTable.ToLuaTable(Object, LuaTable)
+  fullName.vb: Cobilas.GodotEngine.GDLua.ObjectToLuaTable.ToLuaTable(Object, NLua.LuaTable)
+  name.vb: ToLuaTable(Object, LuaTable)
+- uid: Cobilas.GodotEngine.GDLua.ObjectToLuaTable.ToObject(System.Object,NLua.LuaTable)
+  commentId: M:Cobilas.GodotEngine.GDLua.ObjectToLuaTable.ToObject(System.Object,NLua.LuaTable)
+  id: ToObject(System.Object,NLua.LuaTable)
+  parent: Cobilas.GodotEngine.GDLua.ObjectToLuaTable
+  langs:
+  - csharp
+  - vb
+  name: ToObject(object?, LuaTable?)
+  nameWithType: ObjectToLuaTable.ToObject(object?, LuaTable?)
+  fullName: Cobilas.GodotEngine.GDLua.ObjectToLuaTable.ToObject(object?, NLua.LuaTable?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/GDLua/ObjectToLuaTable.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: ToObject
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/ObjectToLuaTable.cs
+    startLine: 22
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Converts a Lua table back to a C# object.
+  example: []
+  syntax:
+    content: public abstract object ToObject(object? obj, LuaTable? table)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The original object instance (may be used for context).
+    - id: table
+      type: NLua.LuaTable
+      description: The Lua table containing the serialized data.
+    return:
+      type: System.Object
+      description: A C# object reconstructed from the Lua table data.
+    content.vb: Public MustOverride Function ToObject(obj As Object, table As LuaTable) As Object
+  overload: Cobilas.GodotEngine.GDLua.ObjectToLuaTable.ToObject*
+  nameWithType.vb: ObjectToLuaTable.ToObject(Object, LuaTable)
+  fullName.vb: Cobilas.GodotEngine.GDLua.ObjectToLuaTable.ToObject(Object, NLua.LuaTable)
+  name.vb: ToObject(Object, LuaTable)
+- uid: Cobilas.GodotEngine.GDLua.ObjectToLuaTable.TryGetValue(System.Type,Cobilas.GodotEngine.GDLua.ObjectToLuaTable@)
+  commentId: M:Cobilas.GodotEngine.GDLua.ObjectToLuaTable.TryGetValue(System.Type,Cobilas.GodotEngine.GDLua.ObjectToLuaTable@)
+  id: TryGetValue(System.Type,Cobilas.GodotEngine.GDLua.ObjectToLuaTable@)
+  parent: Cobilas.GodotEngine.GDLua.ObjectToLuaTable
+  langs:
+  - csharp
+  - vb
+  name: TryGetValue(Type, out ObjectToLuaTable)
+  nameWithType: ObjectToLuaTable.TryGetValue(Type, out ObjectToLuaTable)
+  fullName: Cobilas.GodotEngine.GDLua.ObjectToLuaTable.TryGetValue(System.Type, out Cobilas.GodotEngine.GDLua.ObjectToLuaTable)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/GDLua/ObjectToLuaTable.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: TryGetValue
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/ObjectToLuaTable.cs
+    startLine: 27
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Attempts to retrieve a converter for the specified type.
+  example: []
+  syntax:
+    content: public static bool TryGetValue(Type type, out ObjectToLuaTable value)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type to find a converter for.
+    - id: value
+      type: Cobilas.GodotEngine.GDLua.ObjectToLuaTable
+      description: When this method returns, contains the converter associated with the specified type, if found; otherwise, null.
+    return:
+      type: System.Boolean
+      description: true if a converter for the specified type was found; otherwise, false.
+    content.vb: Public Shared Function TryGetValue(type As Type, value As ObjectToLuaTable) As Boolean
+  overload: Cobilas.GodotEngine.GDLua.ObjectToLuaTable.TryGetValue*
+  nameWithType.vb: ObjectToLuaTable.TryGetValue(Type, ObjectToLuaTable)
+  fullName.vb: Cobilas.GodotEngine.GDLua.ObjectToLuaTable.TryGetValue(System.Type, Cobilas.GodotEngine.GDLua.ObjectToLuaTable)
+  name.vb: TryGetValue(Type, ObjectToLuaTable)
+references:
+- uid: Cobilas.GodotEngine.GDLua
+  commentId: N:Cobilas.GodotEngine.GDLua
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.GDLua
+  nameWithType: Cobilas.GodotEngine.GDLua
+  fullName: Cobilas.GodotEngine.GDLua
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua
+    name: GDLua
+    href: Cobilas.GodotEngine.GDLua.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua
+    name: GDLua
+    href: Cobilas.GodotEngine.GDLua.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cobilas.GodotEngine.GDLua.ObjectToLuaTable.ToLuaTable*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.ObjectToLuaTable.ToLuaTable
+  href: Cobilas.GodotEngine.GDLua.ObjectToLuaTable.html#Cobilas_GodotEngine_GDLua_ObjectToLuaTable_ToLuaTable_System_Object_NLua_LuaTable_
+  name: ToLuaTable
+  nameWithType: ObjectToLuaTable.ToLuaTable
+  fullName: Cobilas.GodotEngine.GDLua.ObjectToLuaTable.ToLuaTable
+- uid: NLua.LuaTable
+  commentId: T:NLua.LuaTable
+  parent: NLua
+  isExternal: true
+  href: https://github.com/NLua/NLua/blob/d2ea7c6d466b111cdd5fc84d2a4a9f4e3402a110/src/LuaTable.cs
+  name: LuaTable
+  nameWithType: LuaTable
+  fullName: NLua.LuaTable
+- uid: NLua
+  commentId: N:NLua
+  isExternal: true
+  name: NLua
+  nameWithType: NLua
+  fullName: NLua
+- uid: Cobilas.GodotEngine.GDLua.ObjectToLuaTable.ToObject*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.ObjectToLuaTable.ToObject
+  href: Cobilas.GodotEngine.GDLua.ObjectToLuaTable.html#Cobilas_GodotEngine_GDLua_ObjectToLuaTable_ToObject_System_Object_NLua_LuaTable_
+  name: ToObject
+  nameWithType: ObjectToLuaTable.ToObject
+  fullName: Cobilas.GodotEngine.GDLua.ObjectToLuaTable.ToObject
+- uid: Cobilas.GodotEngine.GDLua.ObjectToLuaTable.TryGetValue*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.ObjectToLuaTable.TryGetValue
+  href: Cobilas.GodotEngine.GDLua.ObjectToLuaTable.html#Cobilas_GodotEngine_GDLua_ObjectToLuaTable_TryGetValue_System_Type_Cobilas_GodotEngine_GDLua_ObjectToLuaTable__
+  name: TryGetValue
+  nameWithType: ObjectToLuaTable.TryGetValue
+  fullName: Cobilas.GodotEngine.GDLua.ObjectToLuaTable.TryGetValue
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Cobilas.GodotEngine.GDLua.ObjectToLuaTable
+  commentId: T:Cobilas.GodotEngine.GDLua.ObjectToLuaTable
+  parent: Cobilas.GodotEngine.GDLua
+  href: Cobilas.GodotEngine.GDLua.ObjectToLuaTable.html
+  name: ObjectToLuaTable
+  nameWithType: ObjectToLuaTable
+  fullName: Cobilas.GodotEngine.GDLua.ObjectToLuaTable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

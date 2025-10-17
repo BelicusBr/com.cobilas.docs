@@ -1,0 +1,466 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem
+  commentId: T:Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem
+  id: ILuaTableItem
+  parent: Cobilas.GodotEngine.GDLua.Interfaces
+  children:
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.Count
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.Item(System.Int32)
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.Item(System.String)
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.Tables
+  langs:
+  - csharp
+  - vb
+  name: ILuaTableItem
+  nameWithType: ILuaTableItem
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem
+  type: Interface
+  source:
+    remote:
+      path: GodotEngine/GDLua/Interfaces/ILuaTableItem.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: ILuaTableItem
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/Interfaces/ILuaTableItem.cs
+    startLine: 5
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua.Interfaces
+  summary: Represents a Lua table item that can contain multiple table elements and supports enumeration.
+  remarks: Extends <xref href="Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable" data-throw-if-not-resolved="false"></xref> to provide collection capabilities for Lua table structures.
+  example: []
+  syntax:
+    content: 'public interface ILuaTableItem : ILuaTable, IEnumerable<ILuaTable>, IEnumerable'
+    content.vb: Public Interface ILuaTableItem Inherits ILuaTable, IEnumerable(Of ILuaTable), IEnumerable
+  inheritedMembers:
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable.Name
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable.Value
+  - System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable}.GetEnumerator
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.Count
+  commentId: P:Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.Count
+  id: Count
+  parent: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: ILuaTableItem.Count
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.Count
+  type: Property
+  source:
+    remote:
+      path: GodotEngine/GDLua/Interfaces/ILuaTableItem.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: Count
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/Interfaces/ILuaTableItem.cs
+    startLine: 8
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua.Interfaces
+  summary: Gets the number of table elements contained in this table item.
+  example: []
+  syntax:
+    content: long Count { get; }
+    parameters: []
+    return:
+      type: System.Int64
+      description: The total count of table elements.
+    content.vb: ReadOnly Property Count As Long
+  overload: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.Count*
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.Tables
+  commentId: P:Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.Tables
+  id: Tables
+  parent: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem
+  langs:
+  - csharp
+  - vb
+  name: Tables
+  nameWithType: ILuaTableItem.Tables
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.Tables
+  type: Property
+  source:
+    remote:
+      path: GodotEngine/GDLua/Interfaces/ILuaTableItem.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: Tables
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/Interfaces/ILuaTableItem.cs
+    startLine: 11
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua.Interfaces
+  summary: Gets an array of all table elements contained in this table item.
+  example: []
+  syntax:
+    content: ILuaTable[] Tables { get; }
+    parameters: []
+    return:
+      type: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable[]
+      description: An array of <xref href="Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable" data-throw-if-not-resolved="false"></xref> elements.
+    content.vb: ReadOnly Property Tables As ILuaTable()
+  overload: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.Tables*
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.Item(System.Int32)
+  commentId: P:Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: ILuaTableItem.this[int]
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.this[int]
+  type: Property
+  source:
+    remote:
+      path: GodotEngine/GDLua/Interfaces/ILuaTableItem.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: this[]
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/Interfaces/ILuaTableItem.cs
+    startLine: 15
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua.Interfaces
+  summary: Gets the table element at the specified index.
+  example: []
+  syntax:
+    content: ILuaTable this[int index] { get; }
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the table element to get.
+    return:
+      type: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable
+      description: The <xref href="Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable" data-throw-if-not-resolved="false"></xref> at the specified index.
+    content.vb: ReadOnly Default Property this[](index As Integer) As ILuaTable
+  overload: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.Item*
+  nameWithType.vb: ILuaTableItem.this[](Integer)
+  fullName.vb: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.this[](Integer)
+  name.vb: this[](Integer)
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.Item(System.String)
+  commentId: P:Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.Item(System.String)
+  id: Item(System.String)
+  parent: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem
+  langs:
+  - csharp
+  - vb
+  name: this[string]
+  nameWithType: ILuaTableItem.this[string]
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.this[string]
+  type: Property
+  source:
+    remote:
+      path: GodotEngine/GDLua/Interfaces/ILuaTableItem.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: this[]
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/Interfaces/ILuaTableItem.cs
+    startLine: 19
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua.Interfaces
+  summary: Gets the table element with the specified name.
+  example: []
+  syntax:
+    content: ILuaTable this[string name] { get; }
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the table element to get.
+    return:
+      type: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable
+      description: The <xref href="Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable" data-throw-if-not-resolved="false"></xref> with the specified name.
+    content.vb: ReadOnly Default Property this[](name As String) As ILuaTable
+  overload: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.Item*
+  nameWithType.vb: ILuaTableItem.this[](String)
+  fullName.vb: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.this[](String)
+  name.vb: this[](String)
+references:
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable
+  commentId: T:Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable
+  parent: Cobilas.GodotEngine.GDLua.Interfaces
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable.html
+  name: ILuaTable
+  nameWithType: ILuaTable
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable
+- uid: Cobilas.GodotEngine.GDLua.Interfaces
+  commentId: N:Cobilas.GodotEngine.GDLua.Interfaces
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.GDLua.Interfaces
+  nameWithType: Cobilas.GodotEngine.GDLua.Interfaces
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua
+    name: GDLua
+    href: Cobilas.GodotEngine.GDLua.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua.Interfaces
+    name: Interfaces
+    href: Cobilas.GodotEngine.GDLua.Interfaces.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua
+    name: GDLua
+    href: Cobilas.GodotEngine.GDLua.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua.Interfaces
+    name: Interfaces
+    href: Cobilas.GodotEngine.GDLua.Interfaces.html
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable.Name
+  commentId: P:Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable.Name
+  parent: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaTable_Name
+  name: Name
+  nameWithType: ILuaTable.Name
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable.Name
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable.Value
+  commentId: P:Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable.Value
+  parent: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaTable_Value
+  name: Value
+  nameWithType: ILuaTable.Value
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable.Value
+- uid: System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<ILuaTable>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of ILuaTable).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable}
+  commentId: T:System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ILuaTable>
+  nameWithType: IEnumerable<ILuaTable>
+  fullName: System.Collections.Generic.IEnumerable<Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable>
+  nameWithType.vb: IEnumerable(Of ILuaTable)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable)
+  name.vb: IEnumerable(Of ILuaTable)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable
+    name: ILuaTable
+    href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable
+    name: ILuaTable
+    href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.Count*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.Count
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaTableItem_Count
+  name: Count
+  nameWithType: ILuaTableItem.Count
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.Count
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.Tables*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.Tables
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaTableItem_Tables
+  name: Tables
+  nameWithType: ILuaTableItem.Tables
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.Tables
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable[]
+  isExternal: true
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable.html
+  name: ILuaTable[]
+  nameWithType: ILuaTable[]
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable[]
+  nameWithType.vb: ILuaTable()
+  fullName.vb: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable()
+  name.vb: ILuaTable()
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable
+    name: ILuaTable
+    href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable
+    name: ILuaTable
+    href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable.html
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.Item*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.Item
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaTableItem_Item_System_Int32_
+  name: this
+  nameWithType: ILuaTableItem.this
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.this
+  nameWithType.vb: ILuaTableItem.this[]
+  fullName.vb: Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.this[]
+  name.vb: this[]
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

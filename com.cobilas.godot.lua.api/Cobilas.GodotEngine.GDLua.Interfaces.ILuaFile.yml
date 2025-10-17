@@ -1,0 +1,397 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile
+  commentId: T:Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile
+  id: ILuaFile
+  parent: Cobilas.GodotEngine.GDLua.Interfaces
+  children:
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.GetField(System.String)
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.InvokeFunction(System.String,System.Object[])
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject``1(System.String)
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject``1(System.String,``0@)
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.SetField(System.String,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: ILuaFile
+  nameWithType: ILuaFile
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile
+  type: Interface
+  source:
+    remote:
+      path: GodotEngine/GDLua/Interfaces/ILuaFile.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: ILuaFile
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/Interfaces/ILuaFile.cs
+    startLine: 4
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua.Interfaces
+  summary: Defines operations for interacting with Lua files and their contents.
+  remarks: Provides methods to read, write, and invoke elements within Lua script files.
+  example: []
+  syntax:
+    content: public interface ILuaFile
+    content.vb: Public Interface ILuaFile
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.GetField(System.String)
+  commentId: M:Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.GetField(System.String)
+  id: GetField(System.String)
+  parent: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile
+  langs:
+  - csharp
+  - vb
+  name: GetField(string)
+  nameWithType: ILuaFile.GetField(string)
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.GetField(string)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/GDLua/Interfaces/ILuaFile.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: GetField
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/Interfaces/ILuaFile.cs
+    startLine: 8
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua.Interfaces
+  summary: Retrieves a field from the Lua file by its path.
+  example: []
+  syntax:
+    content: LuaField GetField(string pathField)
+    parameters:
+    - id: pathField
+      type: System.String
+      description: The path to the field in the Lua file.
+    return:
+      type: Cobilas.GodotEngine.GDLua.LuaField
+      description: A <xref href="Cobilas.GodotEngine.GDLua.LuaField" data-throw-if-not-resolved="false"></xref> containing the field data.
+    content.vb: Function GetField(pathField As String) As LuaField
+  overload: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.GetField*
+  nameWithType.vb: ILuaFile.GetField(String)
+  fullName.vb: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.GetField(String)
+  name.vb: GetField(String)
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject``1(System.String)
+  commentId: M:Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject``1(System.String)
+  id: LuaTableToObject``1(System.String)
+  parent: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile
+  langs:
+  - csharp
+  - vb
+  name: LuaTableToObject<T>(string)
+  nameWithType: ILuaFile.LuaTableToObject<T>(string)
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject<T>(string)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/GDLua/Interfaces/ILuaFile.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: LuaTableToObject
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/Interfaces/ILuaFile.cs
+    startLine: 13
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua.Interfaces
+  summary: Converts a Lua table to an object of the specified type.
+  example: []
+  syntax:
+    content: LuaField LuaTableToObject<T>(string pathField)
+    parameters:
+    - id: pathField
+      type: System.String
+      description: The path to the Lua table in the file.
+    typeParameters:
+    - id: T
+      description: The target type to convert the Lua table to.
+    return:
+      type: Cobilas.GodotEngine.GDLua.LuaField
+      description: A <xref href="Cobilas.GodotEngine.GDLua.LuaField" data-throw-if-not-resolved="false"></xref> containing the converted table data.
+    content.vb: Function LuaTableToObject(Of T)(pathField As String) As LuaField
+  overload: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject*
+  nameWithType.vb: ILuaFile.LuaTableToObject(Of T)(String)
+  fullName.vb: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject(Of T)(String)
+  name.vb: LuaTableToObject(Of T)(String)
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject``1(System.String,``0@)
+  commentId: M:Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject``1(System.String,``0@)
+  id: LuaTableToObject``1(System.String,``0@)
+  parent: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile
+  langs:
+  - csharp
+  - vb
+  name: LuaTableToObject<T>(string, ref T)
+  nameWithType: ILuaFile.LuaTableToObject<T>(string, ref T)
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject<T>(string, ref T)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/GDLua/Interfaces/ILuaFile.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: LuaTableToObject
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/Interfaces/ILuaFile.cs
+    startLine: 18
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua.Interfaces
+  summary: Converts a Lua table to an object and assigns it to the provided reference.
+  example: []
+  syntax:
+    content: void LuaTableToObject<T>(string pathField, ref T value)
+    parameters:
+    - id: pathField
+      type: System.String
+      description: The path to the Lua table in the file.
+    - id: value
+      type: '{T}'
+      description: The reference variable to assign the converted table data to.
+    typeParameters:
+    - id: T
+      description: The type of the object to assign.
+    content.vb: Sub LuaTableToObject(Of T)(pathField As String, value As T)
+  overload: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject*
+  nameWithType.vb: ILuaFile.LuaTableToObject(Of T)(String, T)
+  fullName.vb: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject(Of T)(String, T)
+  name.vb: LuaTableToObject(Of T)(String, T)
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.SetField(System.String,System.Object)
+  commentId: M:Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.SetField(System.String,System.Object)
+  id: SetField(System.String,System.Object)
+  parent: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile
+  langs:
+  - csharp
+  - vb
+  name: SetField(string, object)
+  nameWithType: ILuaFile.SetField(string, object)
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.SetField(string, object)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/GDLua/Interfaces/ILuaFile.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: SetField
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/Interfaces/ILuaFile.cs
+    startLine: 22
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua.Interfaces
+  summary: Sets the value of a field in the Lua file.
+  example: []
+  syntax:
+    content: void SetField(string pathField, object value)
+    parameters:
+    - id: pathField
+      type: System.String
+      description: The path to the field in the Lua file.
+    - id: value
+      type: System.Object
+      description: The value to assign to the field.
+    content.vb: Sub SetField(pathField As String, value As Object)
+  overload: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.SetField*
+  nameWithType.vb: ILuaFile.SetField(String, Object)
+  fullName.vb: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.SetField(String, Object)
+  name.vb: SetField(String, Object)
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.InvokeFunction(System.String,System.Object[])
+  commentId: M:Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.InvokeFunction(System.String,System.Object[])
+  id: InvokeFunction(System.String,System.Object[])
+  parent: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile
+  langs:
+  - csharp
+  - vb
+  name: InvokeFunction(string, params object[])
+  nameWithType: ILuaFile.InvokeFunction(string, params object[])
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.InvokeFunction(string, params object[])
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/GDLua/Interfaces/ILuaFile.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: InvokeFunction
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/Interfaces/ILuaFile.cs
+    startLine: 27
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua.Interfaces
+  summary: Invokes a function defined in the Lua file.
+  example: []
+  syntax:
+    content: object[] InvokeFunction(string methodName, params object[] args)
+    parameters:
+    - id: methodName
+      type: System.String
+      description: The name of the function to invoke.
+    - id: args
+      type: System.Object[]
+      description: The arguments to pass to the function.
+    return:
+      type: System.Object[]
+      description: An array of objects containing the function's return values.
+    content.vb: Function InvokeFunction(methodName As String, ParamArray args As Object()) As Object()
+  overload: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.InvokeFunction*
+  nameWithType.vb: ILuaFile.InvokeFunction(String, ParamArray Object())
+  fullName.vb: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.InvokeFunction(String, ParamArray Object())
+  name.vb: InvokeFunction(String, ParamArray Object())
+references:
+- uid: Cobilas.GodotEngine.GDLua.Interfaces
+  commentId: N:Cobilas.GodotEngine.GDLua.Interfaces
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.GDLua.Interfaces
+  nameWithType: Cobilas.GodotEngine.GDLua.Interfaces
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua
+    name: GDLua
+    href: Cobilas.GodotEngine.GDLua.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua.Interfaces
+    name: Interfaces
+    href: Cobilas.GodotEngine.GDLua.Interfaces.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua
+    name: GDLua
+    href: Cobilas.GodotEngine.GDLua.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua.Interfaces
+    name: Interfaces
+    href: Cobilas.GodotEngine.GDLua.Interfaces.html
+- uid: Cobilas.GodotEngine.GDLua.LuaField
+  commentId: T:Cobilas.GodotEngine.GDLua.LuaField
+  parent: Cobilas.GodotEngine.GDLua
+  href: Cobilas.GodotEngine.GDLua.LuaField.html
+  name: LuaField
+  nameWithType: LuaField
+  fullName: Cobilas.GodotEngine.GDLua.LuaField
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.GetField*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.GetField
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaFile_GetField_System_String_
+  name: GetField
+  nameWithType: ILuaFile.GetField
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.GetField
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Cobilas.GodotEngine.GDLua
+  commentId: N:Cobilas.GodotEngine.GDLua
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.GDLua
+  nameWithType: Cobilas.GodotEngine.GDLua
+  fullName: Cobilas.GodotEngine.GDLua
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua
+    name: GDLua
+    href: Cobilas.GodotEngine.GDLua.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua
+    name: GDLua
+    href: Cobilas.GodotEngine.GDLua.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaFile_LuaTableToObject__1_System_String_
+  name: LuaTableToObject
+  nameWithType: ILuaFile.LuaTableToObject
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.SetField*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.SetField
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaFile_SetField_System_String_System_Object_
+  name: SetField
+  nameWithType: ILuaFile.SetField
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.SetField
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.InvokeFunction*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.InvokeFunction
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaFile_InvokeFunction_System_String_System_Object___
+  name: InvokeFunction
+  nameWithType: ILuaFile.InvokeFunction
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.InvokeFunction
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )

@@ -1,0 +1,1521 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer
+  commentId: T:Cobilas.GodotEngine.GDLua.LuaContainer
+  id: LuaContainer
+  parent: Cobilas.GodotEngine.GDLua
+  children:
+  - Cobilas.GodotEngine.GDLua.LuaContainer.#ctor(Cobilas.GodotEngine.GDLua.LuaContainerConfg)
+  - Cobilas.GodotEngine.GDLua.LuaContainer.Builder
+  - Cobilas.GodotEngine.GDLua.LuaContainer.ClearBuffer
+  - Cobilas.GodotEngine.GDLua.LuaContainer.Dispose
+  - Cobilas.GodotEngine.GDLua.LuaContainer.DoString(System.String)
+  - Cobilas.GodotEngine.GDLua.LuaContainer.FlushToLua
+  - Cobilas.GodotEngine.GDLua.LuaContainer.GetField(System.String)
+  - Cobilas.GodotEngine.GDLua.LuaContainer.InitCLRPackage(System.String)
+  - Cobilas.GodotEngine.GDLua.LuaContainer.InitField(System.String,System.Object)
+  - Cobilas.GodotEngine.GDLua.LuaContainer.InitFunction(System.String,System.String,System.String[])
+  - Cobilas.GodotEngine.GDLua.LuaContainer.InitLoaclField(System.String,System.Object)
+  - Cobilas.GodotEngine.GDLua.LuaContainer.InitTable(Cobilas.GodotEngine.GDLua.LuaTableItem)
+  - Cobilas.GodotEngine.GDLua.LuaContainer.InvokeFunction(System.String,System.Object[])
+  - Cobilas.GodotEngine.GDLua.LuaContainer.LuaTableToObject``1(System.String)
+  - Cobilas.GodotEngine.GDLua.LuaContainer.LuaTableToObject``1(System.String,``0@)
+  - Cobilas.GodotEngine.GDLua.LuaContainer.SetField(System.String,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: LuaContainer
+  nameWithType: LuaContainer
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer
+  type: Class
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaContainer.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: LuaContainer
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaContainer.cs
+    startLine: 14
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Represents an in-memory Lua code builder and executor integrated with the Godot engine.
+  remarks: >-
+    This class implements <xref href="Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile" data-throw-if-not-resolved="false"></xref> and provides methods to dynamically create,
+
+    manipulate, and execute Lua code through an internal <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> buffer.
+
+    It allows the construction of Lua scripts programmatically and their execution using NLua.
+
+    Implements <xref href="System.IDisposable" data-throw-if-not-resolved="false"></xref> for proper resource cleanup.
+  example: []
+  syntax:
+    content: 'public sealed class LuaContainer : IDisposable, ILuaFile'
+    content.vb: Public NotInheritable Class LuaContainer Implements IDisposable, ILuaFile
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.Builder
+  commentId: P:Cobilas.GodotEngine.GDLua.LuaContainer.Builder
+  id: Builder
+  parent: Cobilas.GodotEngine.GDLua.LuaContainer
+  langs:
+  - csharp
+  - vb
+  name: Builder
+  nameWithType: LuaContainer.Builder
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.Builder
+  type: Property
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaContainer.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: Builder
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaContainer.cs
+    startLine: 19
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Gets the current string content of the internal <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public string Builder { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Builder As String
+  overload: Cobilas.GodotEngine.GDLua.LuaContainer.Builder*
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.#ctor(Cobilas.GodotEngine.GDLua.LuaContainerConfg)
+  commentId: M:Cobilas.GodotEngine.GDLua.LuaContainer.#ctor(Cobilas.GodotEngine.GDLua.LuaContainerConfg)
+  id: '#ctor(Cobilas.GodotEngine.GDLua.LuaContainerConfg)'
+  parent: Cobilas.GodotEngine.GDLua.LuaContainer
+  langs:
+  - csharp
+  - vb
+  name: LuaContainer(LuaContainerConfg)
+  nameWithType: LuaContainer.LuaContainer(LuaContainerConfg)
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.LuaContainer(Cobilas.GodotEngine.GDLua.LuaContainerConfg)
+  type: Constructor
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaContainer.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: .ctor
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaContainer.cs
+    startLine: 23
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Initializes a new instance of the <xref href="Cobilas.GodotEngine.GDLua.LuaContainer" data-throw-if-not-resolved="false"></xref> class with the specified configuration.
+  example: []
+  syntax:
+    content: public LuaContainer(LuaContainerConfg confg)
+    parameters:
+    - id: confg
+      type: Cobilas.GodotEngine.GDLua.LuaContainerConfg
+      description: The configuration used to initialize the Lua state and related options.
+    content.vb: Public Sub New(confg As LuaContainerConfg)
+  overload: Cobilas.GodotEngine.GDLua.LuaContainer.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when a required configuration property is null.
+  nameWithType.vb: LuaContainer.New(LuaContainerConfg)
+  fullName.vb: Cobilas.GodotEngine.GDLua.LuaContainer.New(Cobilas.GodotEngine.GDLua.LuaContainerConfg)
+  name.vb: New(LuaContainerConfg)
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.InitField(System.String,System.Object)
+  commentId: M:Cobilas.GodotEngine.GDLua.LuaContainer.InitField(System.String,System.Object)
+  id: InitField(System.String,System.Object)
+  parent: Cobilas.GodotEngine.GDLua.LuaContainer
+  langs:
+  - csharp
+  - vb
+  name: InitField(string, object)
+  nameWithType: LuaContainer.InitField(string, object)
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.InitField(string, object)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaContainer.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: InitField
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaContainer.cs
+    startLine: 34
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Initializes a global Lua field with a specific value.
+  example: []
+  syntax:
+    content: public LuaContainer InitField(string pathField, object value)
+    parameters:
+    - id: pathField
+      type: System.String
+      description: The Lua field path to initialize.
+    - id: value
+      type: System.Object
+      description: The value to assign to the field.
+    return:
+      type: Cobilas.GodotEngine.GDLua.LuaContainer
+      description: The current <xref href="Cobilas.GodotEngine.GDLua.LuaContainer" data-throw-if-not-resolved="false"></xref> instance for chaining.
+    content.vb: Public Function InitField(pathField As String, value As Object) As LuaContainer
+  overload: Cobilas.GodotEngine.GDLua.LuaContainer.InitField*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown when the container has been disposed.
+  nameWithType.vb: LuaContainer.InitField(String, Object)
+  fullName.vb: Cobilas.GodotEngine.GDLua.LuaContainer.InitField(String, Object)
+  name.vb: InitField(String, Object)
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.InitLoaclField(System.String,System.Object)
+  commentId: M:Cobilas.GodotEngine.GDLua.LuaContainer.InitLoaclField(System.String,System.Object)
+  id: InitLoaclField(System.String,System.Object)
+  parent: Cobilas.GodotEngine.GDLua.LuaContainer
+  langs:
+  - csharp
+  - vb
+  name: InitLoaclField(string, object)
+  nameWithType: LuaContainer.InitLoaclField(string, object)
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.InitLoaclField(string, object)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaContainer.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: InitLoaclField
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaContainer.cs
+    startLine: 44
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Initializes a local Lua field with a specific value.
+  example: []
+  syntax:
+    content: public LuaContainer InitLoaclField(string pathField, object value)
+    parameters:
+    - id: pathField
+      type: System.String
+      description: The Lua field name to initialize locally.
+    - id: value
+      type: System.Object
+      description: The value to assign to the field.
+    return:
+      type: Cobilas.GodotEngine.GDLua.LuaContainer
+      description: The current <xref href="Cobilas.GodotEngine.GDLua.LuaContainer" data-throw-if-not-resolved="false"></xref> instance for chaining.
+    content.vb: Public Function InitLoaclField(pathField As String, value As Object) As LuaContainer
+  overload: Cobilas.GodotEngine.GDLua.LuaContainer.InitLoaclField*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown when the container has been disposed.
+  nameWithType.vb: LuaContainer.InitLoaclField(String, Object)
+  fullName.vb: Cobilas.GodotEngine.GDLua.LuaContainer.InitLoaclField(String, Object)
+  name.vb: InitLoaclField(String, Object)
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.InitTable(Cobilas.GodotEngine.GDLua.LuaTableItem)
+  commentId: M:Cobilas.GodotEngine.GDLua.LuaContainer.InitTable(Cobilas.GodotEngine.GDLua.LuaTableItem)
+  id: InitTable(Cobilas.GodotEngine.GDLua.LuaTableItem)
+  parent: Cobilas.GodotEngine.GDLua.LuaContainer
+  langs:
+  - csharp
+  - vb
+  name: InitTable(LuaTableItem)
+  nameWithType: LuaContainer.InitTable(LuaTableItem)
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.InitTable(Cobilas.GodotEngine.GDLua.LuaTableItem)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaContainer.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: InitTable
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaContainer.cs
+    startLine: 53
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Initializes a Lua table by appending its string representation to the buffer.
+  example: []
+  syntax:
+    content: public LuaContainer InitTable(LuaTableItem tables)
+    parameters:
+    - id: tables
+      type: Cobilas.GodotEngine.GDLua.LuaTableItem
+      description: The Lua table object to append.
+    return:
+      type: Cobilas.GodotEngine.GDLua.LuaContainer
+      description: The current <xref href="Cobilas.GodotEngine.GDLua.LuaContainer" data-throw-if-not-resolved="false"></xref> instance for chaining.
+    content.vb: Public Function InitTable(tables As LuaTableItem) As LuaContainer
+  overload: Cobilas.GodotEngine.GDLua.LuaContainer.InitTable*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown when the container has been disposed.
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.InitFunction(System.String,System.String,System.String[])
+  commentId: M:Cobilas.GodotEngine.GDLua.LuaContainer.InitFunction(System.String,System.String,System.String[])
+  id: InitFunction(System.String,System.String,System.String[])
+  parent: Cobilas.GodotEngine.GDLua.LuaContainer
+  langs:
+  - csharp
+  - vb
+  name: InitFunction(string, string, params string[])
+  nameWithType: LuaContainer.InitFunction(string, string, params string[])
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.InitFunction(string, string, params string[])
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaContainer.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: InitFunction
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaContainer.cs
+    startLine: 64
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Initializes a Lua function with the specified name, body, and arguments.
+  example: []
+  syntax:
+    content: public LuaContainer InitFunction(string funcName, string funcBody, params string[] funcArgs)
+    parameters:
+    - id: funcName
+      type: System.String
+      description: The name of the function.
+    - id: funcBody
+      type: System.String
+      description: The Lua code representing the function body.
+    - id: funcArgs
+      type: System.String[]
+      description: The arguments of the function.
+    return:
+      type: Cobilas.GodotEngine.GDLua.LuaContainer
+      description: The current <xref href="Cobilas.GodotEngine.GDLua.LuaContainer" data-throw-if-not-resolved="false"></xref> instance for chaining.
+    content.vb: Public Function InitFunction(funcName As String, funcBody As String, ParamArray funcArgs As String()) As LuaContainer
+  overload: Cobilas.GodotEngine.GDLua.LuaContainer.InitFunction*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown when the container has been disposed.
+  nameWithType.vb: LuaContainer.InitFunction(String, String, ParamArray String())
+  fullName.vb: Cobilas.GodotEngine.GDLua.LuaContainer.InitFunction(String, String, ParamArray String())
+  name.vb: InitFunction(String, String, ParamArray String())
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.InitCLRPackage(System.String)
+  commentId: M:Cobilas.GodotEngine.GDLua.LuaContainer.InitCLRPackage(System.String)
+  id: InitCLRPackage(System.String)
+  parent: Cobilas.GodotEngine.GDLua.LuaContainer
+  langs:
+  - csharp
+  - vb
+  name: InitCLRPackage(string)
+  nameWithType: LuaContainer.InitCLRPackage(string)
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.InitCLRPackage(string)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaContainer.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: InitCLRPackage
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaContainer.cs
+    startLine: 73
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Adds a CLR import statement to the Lua buffer.
+  example: []
+  syntax:
+    content: public LuaContainer InitCLRPackage(string import)
+    parameters:
+    - id: import
+      type: System.String
+      description: The CLR namespace or type to import.
+    return:
+      type: Cobilas.GodotEngine.GDLua.LuaContainer
+      description: The current <xref href="Cobilas.GodotEngine.GDLua.LuaContainer" data-throw-if-not-resolved="false"></xref> instance for chaining.
+    content.vb: Public Function InitCLRPackage(import As String) As LuaContainer
+  overload: Cobilas.GodotEngine.GDLua.LuaContainer.InitCLRPackage*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown when the container has been disposed.
+  nameWithType.vb: LuaContainer.InitCLRPackage(String)
+  fullName.vb: Cobilas.GodotEngine.GDLua.LuaContainer.InitCLRPackage(String)
+  name.vb: InitCLRPackage(String)
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.DoString(System.String)
+  commentId: M:Cobilas.GodotEngine.GDLua.LuaContainer.DoString(System.String)
+  id: DoString(System.String)
+  parent: Cobilas.GodotEngine.GDLua.LuaContainer
+  langs:
+  - csharp
+  - vb
+  name: DoString(string)
+  nameWithType: LuaContainer.DoString(string)
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.DoString(string)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaContainer.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: DoString
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaContainer.cs
+    startLine: 82
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Appends a raw Lua code string to the buffer.
+  example: []
+  syntax:
+    content: public LuaContainer DoString(string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The Lua code string to append.
+    return:
+      type: Cobilas.GodotEngine.GDLua.LuaContainer
+      description: The current <xref href="Cobilas.GodotEngine.GDLua.LuaContainer" data-throw-if-not-resolved="false"></xref> instance for chaining.
+    content.vb: Public Function DoString(value As String) As LuaContainer
+  overload: Cobilas.GodotEngine.GDLua.LuaContainer.DoString*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown when the container has been disposed.
+  nameWithType.vb: LuaContainer.DoString(String)
+  fullName.vb: Cobilas.GodotEngine.GDLua.LuaContainer.DoString(String)
+  name.vb: DoString(String)
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.ClearBuffer
+  commentId: M:Cobilas.GodotEngine.GDLua.LuaContainer.ClearBuffer
+  id: ClearBuffer
+  parent: Cobilas.GodotEngine.GDLua.LuaContainer
+  langs:
+  - csharp
+  - vb
+  name: ClearBuffer()
+  nameWithType: LuaContainer.ClearBuffer()
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.ClearBuffer()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaContainer.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: ClearBuffer
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaContainer.cs
+    startLine: 90
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Clears the internal Lua code buffer.
+  example: []
+  syntax:
+    content: public LuaContainer ClearBuffer()
+    return:
+      type: Cobilas.GodotEngine.GDLua.LuaContainer
+      description: The current <xref href="Cobilas.GodotEngine.GDLua.LuaContainer" data-throw-if-not-resolved="false"></xref> instance for chaining.
+    content.vb: Public Function ClearBuffer() As LuaContainer
+  overload: Cobilas.GodotEngine.GDLua.LuaContainer.ClearBuffer*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown when the container has been disposed.
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.FlushToLua
+  commentId: M:Cobilas.GodotEngine.GDLua.LuaContainer.FlushToLua
+  id: FlushToLua
+  parent: Cobilas.GodotEngine.GDLua.LuaContainer
+  langs:
+  - csharp
+  - vb
+  name: FlushToLua()
+  nameWithType: LuaContainer.FlushToLua()
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.FlushToLua()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaContainer.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: FlushToLua
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaContainer.cs
+    startLine: 98
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Executes the current Lua buffer using the NLua interpreter.
+  example: []
+  syntax:
+    content: public LuaContainer FlushToLua()
+    return:
+      type: Cobilas.GodotEngine.GDLua.LuaContainer
+      description: The current <xref href="Cobilas.GodotEngine.GDLua.LuaContainer" data-throw-if-not-resolved="false"></xref> instance for chaining.
+    content.vb: Public Function FlushToLua() As LuaContainer
+  overload: Cobilas.GodotEngine.GDLua.LuaContainer.FlushToLua*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown when the container has been disposed.
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.SetField(System.String,System.Object)
+  commentId: M:Cobilas.GodotEngine.GDLua.LuaContainer.SetField(System.String,System.Object)
+  id: SetField(System.String,System.Object)
+  parent: Cobilas.GodotEngine.GDLua.LuaContainer
+  langs:
+  - csharp
+  - vb
+  name: SetField(string, object)
+  nameWithType: LuaContainer.SetField(string, object)
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.SetField(string, object)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaContainer.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: SetField
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaContainer.cs
+    startLine: 105
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Sets the value of a field in the Lua file.
+  example: []
+  syntax:
+    content: public void SetField(string pathField, object value)
+    parameters:
+    - id: pathField
+      type: System.String
+      description: The path to the field in the Lua file.
+    - id: value
+      type: System.Object
+      description: The value to assign to the field.
+    content.vb: Public Sub SetField(pathField As String, value As Object)
+  overload: Cobilas.GodotEngine.GDLua.LuaContainer.SetField*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown when the container has been disposed.
+  implements:
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.SetField(System.String,System.Object)
+  nameWithType.vb: LuaContainer.SetField(String, Object)
+  fullName.vb: Cobilas.GodotEngine.GDLua.LuaContainer.SetField(String, Object)
+  name.vb: SetField(String, Object)
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.GetField(System.String)
+  commentId: M:Cobilas.GodotEngine.GDLua.LuaContainer.GetField(System.String)
+  id: GetField(System.String)
+  parent: Cobilas.GodotEngine.GDLua.LuaContainer
+  langs:
+  - csharp
+  - vb
+  name: GetField(string)
+  nameWithType: LuaContainer.GetField(string)
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.GetField(string)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaContainer.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: GetField
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaContainer.cs
+    startLine: 113
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Retrieves a field from the Lua file by its path.
+  example: []
+  syntax:
+    content: public LuaField GetField(string pathField)
+    parameters:
+    - id: pathField
+      type: System.String
+      description: The path to the field in the Lua file.
+    return:
+      type: Cobilas.GodotEngine.GDLua.LuaField
+      description: A <xref href="Cobilas.GodotEngine.GDLua.LuaField" data-throw-if-not-resolved="false"></xref> containing the field data.
+    content.vb: Public Function GetField(pathField As String) As LuaField
+  overload: Cobilas.GodotEngine.GDLua.LuaContainer.GetField*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown when the container has been disposed.
+  implements:
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.GetField(System.String)
+  nameWithType.vb: LuaContainer.GetField(String)
+  fullName.vb: Cobilas.GodotEngine.GDLua.LuaContainer.GetField(String)
+  name.vb: GetField(String)
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.InvokeFunction(System.String,System.Object[])
+  commentId: M:Cobilas.GodotEngine.GDLua.LuaContainer.InvokeFunction(System.String,System.Object[])
+  id: InvokeFunction(System.String,System.Object[])
+  parent: Cobilas.GodotEngine.GDLua.LuaContainer
+  langs:
+  - csharp
+  - vb
+  name: InvokeFunction(string, params object[])
+  nameWithType: LuaContainer.InvokeFunction(string, params object[])
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.InvokeFunction(string, params object[])
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaContainer.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: InvokeFunction
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaContainer.cs
+    startLine: 121
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Invokes a function defined in the Lua file.
+  example: []
+  syntax:
+    content: public object[] InvokeFunction(string methodName, params object[] args)
+    parameters:
+    - id: methodName
+      type: System.String
+      description: The name of the function to invoke.
+    - id: args
+      type: System.Object[]
+      description: The arguments to pass to the function.
+    return:
+      type: System.Object[]
+      description: An array of objects containing the function's return values.
+    content.vb: Public Function InvokeFunction(methodName As String, ParamArray args As Object()) As Object()
+  overload: Cobilas.GodotEngine.GDLua.LuaContainer.InvokeFunction*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown when the container has been disposed.
+  implements:
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.InvokeFunction(System.String,System.Object[])
+  nameWithType.vb: LuaContainer.InvokeFunction(String, ParamArray Object())
+  fullName.vb: Cobilas.GodotEngine.GDLua.LuaContainer.InvokeFunction(String, ParamArray Object())
+  name.vb: InvokeFunction(String, ParamArray Object())
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.LuaTableToObject``1(System.String)
+  commentId: M:Cobilas.GodotEngine.GDLua.LuaContainer.LuaTableToObject``1(System.String)
+  id: LuaTableToObject``1(System.String)
+  parent: Cobilas.GodotEngine.GDLua.LuaContainer
+  langs:
+  - csharp
+  - vb
+  name: LuaTableToObject<T>(string)
+  nameWithType: LuaContainer.LuaTableToObject<T>(string)
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.LuaTableToObject<T>(string)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaContainer.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: LuaTableToObject
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaContainer.cs
+    startLine: 127
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Converts a Lua table to an object of the specified type.
+  example: []
+  syntax:
+    content: public LuaField LuaTableToObject<T>(string pathField)
+    parameters:
+    - id: pathField
+      type: System.String
+      description: The path to the Lua table in the file.
+    typeParameters:
+    - id: T
+      description: The target type to convert the Lua table to.
+    return:
+      type: Cobilas.GodotEngine.GDLua.LuaField
+      description: A <xref href="Cobilas.GodotEngine.GDLua.LuaField" data-throw-if-not-resolved="false"></xref> containing the converted table data.
+    content.vb: Public Function LuaTableToObject(Of T)(pathField As String) As LuaField
+  overload: Cobilas.GodotEngine.GDLua.LuaContainer.LuaTableToObject*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown when the container has been disposed.
+  implements:
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject``1(System.String)
+  nameWithType.vb: LuaContainer.LuaTableToObject(Of T)(String)
+  fullName.vb: Cobilas.GodotEngine.GDLua.LuaContainer.LuaTableToObject(Of T)(String)
+  name.vb: LuaTableToObject(Of T)(String)
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.LuaTableToObject``1(System.String,``0@)
+  commentId: M:Cobilas.GodotEngine.GDLua.LuaContainer.LuaTableToObject``1(System.String,``0@)
+  id: LuaTableToObject``1(System.String,``0@)
+  parent: Cobilas.GodotEngine.GDLua.LuaContainer
+  langs:
+  - csharp
+  - vb
+  name: LuaTableToObject<T>(string, ref T)
+  nameWithType: LuaContainer.LuaTableToObject<T>(string, ref T)
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.LuaTableToObject<T>(string, ref T)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaContainer.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: LuaTableToObject
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaContainer.cs
+    startLine: 136
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Converts a Lua table to an object and assigns it to the provided reference.
+  example: []
+  syntax:
+    content: public void LuaTableToObject<T>(string pathField, ref T value)
+    parameters:
+    - id: pathField
+      type: System.String
+      description: The path to the Lua table in the file.
+    - id: value
+      type: '{T}'
+      description: The reference variable to assign the converted table data to.
+    typeParameters:
+    - id: T
+      description: The type of the object to assign.
+    content.vb: Public Sub LuaTableToObject(Of T)(pathField As String, value As T)
+  overload: Cobilas.GodotEngine.GDLua.LuaContainer.LuaTableToObject*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown when the container has been disposed.
+  - type: System.InvalidCastException
+    commentId: T:System.InvalidCastException
+    description: Thrown when no converter is defined for the specified type.
+  implements:
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject``1(System.String,{T}@)
+  nameWithType.vb: LuaContainer.LuaTableToObject(Of T)(String, T)
+  fullName.vb: Cobilas.GodotEngine.GDLua.LuaContainer.LuaTableToObject(Of T)(String, T)
+  name.vb: LuaTableToObject(Of T)(String, T)
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.Dispose
+  commentId: M:Cobilas.GodotEngine.GDLua.LuaContainer.Dispose
+  id: Dispose
+  parent: Cobilas.GodotEngine.GDLua.LuaContainer
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: LuaContainer.Dispose()
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.Dispose()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaContainer.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: Dispose
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaContainer.cs
+    startLine: 143
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Cobilas.GodotEngine.GDLua.LuaContainer.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile
+  commentId: T:Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile
+  parent: Cobilas.GodotEngine.GDLua.Interfaces
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.html
+  name: ILuaFile
+  nameWithType: ILuaFile
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile
+- uid: System.Text.StringBuilder
+  commentId: T:System.Text.StringBuilder
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  name: StringBuilder
+  nameWithType: StringBuilder
+  fullName: System.Text.StringBuilder
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Cobilas.GodotEngine.GDLua
+  commentId: N:Cobilas.GodotEngine.GDLua
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.GDLua
+  nameWithType: Cobilas.GodotEngine.GDLua
+  fullName: Cobilas.GodotEngine.GDLua
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua
+    name: GDLua
+    href: Cobilas.GodotEngine.GDLua.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua
+    name: GDLua
+    href: Cobilas.GodotEngine.GDLua.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.GDLua.Interfaces
+  commentId: N:Cobilas.GodotEngine.GDLua.Interfaces
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.GDLua.Interfaces
+  nameWithType: Cobilas.GodotEngine.GDLua.Interfaces
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua
+    name: GDLua
+    href: Cobilas.GodotEngine.GDLua.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua.Interfaces
+    name: Interfaces
+    href: Cobilas.GodotEngine.GDLua.Interfaces.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua
+    name: GDLua
+    href: Cobilas.GodotEngine.GDLua.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua.Interfaces
+    name: Interfaces
+    href: Cobilas.GodotEngine.GDLua.Interfaces.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.Builder*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.LuaContainer.Builder
+  href: Cobilas.GodotEngine.GDLua.LuaContainer.html#Cobilas_GodotEngine_GDLua_LuaContainer_Builder
+  name: Builder
+  nameWithType: LuaContainer.Builder
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.Builder
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer
+  commentId: T:Cobilas.GodotEngine.GDLua.LuaContainer
+  parent: Cobilas.GodotEngine.GDLua
+  href: Cobilas.GodotEngine.GDLua.LuaContainer.html
+  name: LuaContainer
+  nameWithType: LuaContainer
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.#ctor*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.LuaContainer.#ctor
+  href: Cobilas.GodotEngine.GDLua.LuaContainer.html#Cobilas_GodotEngine_GDLua_LuaContainer__ctor_Cobilas_GodotEngine_GDLua_LuaContainerConfg_
+  name: LuaContainer
+  nameWithType: LuaContainer.LuaContainer
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.LuaContainer
+  nameWithType.vb: LuaContainer.New
+  fullName.vb: Cobilas.GodotEngine.GDLua.LuaContainer.New
+  name.vb: New
+- uid: Cobilas.GodotEngine.GDLua.LuaContainerConfg
+  commentId: T:Cobilas.GodotEngine.GDLua.LuaContainerConfg
+  parent: Cobilas.GodotEngine.GDLua
+  href: Cobilas.GodotEngine.GDLua.LuaContainerConfg.html
+  name: LuaContainerConfg
+  nameWithType: LuaContainerConfg
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainerConfg
+- uid: System.ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.objectdisposedexception
+  name: ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  fullName: System.ObjectDisposedException
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.InitField*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.LuaContainer.InitField
+  href: Cobilas.GodotEngine.GDLua.LuaContainer.html#Cobilas_GodotEngine_GDLua_LuaContainer_InitField_System_String_System_Object_
+  name: InitField
+  nameWithType: LuaContainer.InitField
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.InitField
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.InitLoaclField*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.LuaContainer.InitLoaclField
+  href: Cobilas.GodotEngine.GDLua.LuaContainer.html#Cobilas_GodotEngine_GDLua_LuaContainer_InitLoaclField_System_String_System_Object_
+  name: InitLoaclField
+  nameWithType: LuaContainer.InitLoaclField
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.InitLoaclField
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.InitTable*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.LuaContainer.InitTable
+  href: Cobilas.GodotEngine.GDLua.LuaContainer.html#Cobilas_GodotEngine_GDLua_LuaContainer_InitTable_Cobilas_GodotEngine_GDLua_LuaTableItem_
+  name: InitTable
+  nameWithType: LuaContainer.InitTable
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.InitTable
+- uid: Cobilas.GodotEngine.GDLua.LuaTableItem
+  commentId: T:Cobilas.GodotEngine.GDLua.LuaTableItem
+  parent: Cobilas.GodotEngine.GDLua
+  href: Cobilas.GodotEngine.GDLua.LuaTableItem.html
+  name: LuaTableItem
+  nameWithType: LuaTableItem
+  fullName: Cobilas.GodotEngine.GDLua.LuaTableItem
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.InitFunction*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.LuaContainer.InitFunction
+  href: Cobilas.GodotEngine.GDLua.LuaContainer.html#Cobilas_GodotEngine_GDLua_LuaContainer_InitFunction_System_String_System_String_System_String___
+  name: InitFunction
+  nameWithType: LuaContainer.InitFunction
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.InitFunction
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.InitCLRPackage*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.LuaContainer.InitCLRPackage
+  href: Cobilas.GodotEngine.GDLua.LuaContainer.html#Cobilas_GodotEngine_GDLua_LuaContainer_InitCLRPackage_System_String_
+  name: InitCLRPackage
+  nameWithType: LuaContainer.InitCLRPackage
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.InitCLRPackage
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.DoString*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.LuaContainer.DoString
+  href: Cobilas.GodotEngine.GDLua.LuaContainer.html#Cobilas_GodotEngine_GDLua_LuaContainer_DoString_System_String_
+  name: DoString
+  nameWithType: LuaContainer.DoString
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.DoString
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.ClearBuffer*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.LuaContainer.ClearBuffer
+  href: Cobilas.GodotEngine.GDLua.LuaContainer.html#Cobilas_GodotEngine_GDLua_LuaContainer_ClearBuffer
+  name: ClearBuffer
+  nameWithType: LuaContainer.ClearBuffer
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.ClearBuffer
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.FlushToLua*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.LuaContainer.FlushToLua
+  href: Cobilas.GodotEngine.GDLua.LuaContainer.html#Cobilas_GodotEngine_GDLua_LuaContainer_FlushToLua
+  name: FlushToLua
+  nameWithType: LuaContainer.FlushToLua
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.FlushToLua
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.SetField*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.LuaContainer.SetField
+  href: Cobilas.GodotEngine.GDLua.LuaContainer.html#Cobilas_GodotEngine_GDLua_LuaContainer_SetField_System_String_System_Object_
+  name: SetField
+  nameWithType: LuaContainer.SetField
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.SetField
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.SetField(System.String,System.Object)
+  commentId: M:Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.SetField(System.String,System.Object)
+  parent: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile
+  isExternal: true
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaFile_SetField_System_String_System_Object_
+  name: SetField(string, object)
+  nameWithType: ILuaFile.SetField(string, object)
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.SetField(string, object)
+  nameWithType.vb: ILuaFile.SetField(String, Object)
+  fullName.vb: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.SetField(String, Object)
+  name.vb: SetField(String, Object)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.SetField(System.String,System.Object)
+    name: SetField
+    href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaFile_SetField_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.SetField(System.String,System.Object)
+    name: SetField
+    href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaFile_SetField_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Cobilas.GodotEngine.GDLua.LuaField
+  commentId: T:Cobilas.GodotEngine.GDLua.LuaField
+  parent: Cobilas.GodotEngine.GDLua
+  href: Cobilas.GodotEngine.GDLua.LuaField.html
+  name: LuaField
+  nameWithType: LuaField
+  fullName: Cobilas.GodotEngine.GDLua.LuaField
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.GetField*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.LuaContainer.GetField
+  href: Cobilas.GodotEngine.GDLua.LuaContainer.html#Cobilas_GodotEngine_GDLua_LuaContainer_GetField_System_String_
+  name: GetField
+  nameWithType: LuaContainer.GetField
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.GetField
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.GetField(System.String)
+  commentId: M:Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.GetField(System.String)
+  parent: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile
+  isExternal: true
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaFile_GetField_System_String_
+  name: GetField(string)
+  nameWithType: ILuaFile.GetField(string)
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.GetField(string)
+  nameWithType.vb: ILuaFile.GetField(String)
+  fullName.vb: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.GetField(String)
+  name.vb: GetField(String)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.GetField(System.String)
+    name: GetField
+    href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaFile_GetField_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.GetField(System.String)
+    name: GetField
+    href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaFile_GetField_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.InvokeFunction*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.LuaContainer.InvokeFunction
+  href: Cobilas.GodotEngine.GDLua.LuaContainer.html#Cobilas_GodotEngine_GDLua_LuaContainer_InvokeFunction_System_String_System_Object___
+  name: InvokeFunction
+  nameWithType: LuaContainer.InvokeFunction
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.InvokeFunction
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.InvokeFunction(System.String,System.Object[])
+  commentId: M:Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.InvokeFunction(System.String,System.Object[])
+  parent: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile
+  isExternal: true
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaFile_InvokeFunction_System_String_System_Object___
+  name: InvokeFunction(string, params object[])
+  nameWithType: ILuaFile.InvokeFunction(string, params object[])
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.InvokeFunction(string, params object[])
+  nameWithType.vb: ILuaFile.InvokeFunction(String, ParamArray Object())
+  fullName.vb: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.InvokeFunction(String, ParamArray Object())
+  name.vb: InvokeFunction(String, ParamArray Object())
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.InvokeFunction(System.String,System.Object[])
+    name: InvokeFunction
+    href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaFile_InvokeFunction_System_String_System_Object___
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.InvokeFunction(System.String,System.Object[])
+    name: InvokeFunction
+    href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaFile_InvokeFunction_System_String_System_Object___
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.LuaTableToObject*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.LuaContainer.LuaTableToObject
+  href: Cobilas.GodotEngine.GDLua.LuaContainer.html#Cobilas_GodotEngine_GDLua_LuaContainer_LuaTableToObject__1_System_String_
+  name: LuaTableToObject
+  nameWithType: LuaContainer.LuaTableToObject
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.LuaTableToObject
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject``1(System.String)
+  commentId: M:Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject``1(System.String)
+  parent: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile
+  isExternal: true
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaFile_LuaTableToObject__1_System_String_
+  name: LuaTableToObject<T>(string)
+  nameWithType: ILuaFile.LuaTableToObject<T>(string)
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject<T>(string)
+  nameWithType.vb: ILuaFile.LuaTableToObject(Of T)(String)
+  fullName.vb: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject(Of T)(String)
+  name.vb: LuaTableToObject(Of T)(String)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject``1(System.String)
+    name: LuaTableToObject
+    href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaFile_LuaTableToObject__1_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject``1(System.String)
+    name: LuaTableToObject
+    href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaFile_LuaTableToObject__1_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.InvalidCastException
+  commentId: T:System.InvalidCastException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidcastexception
+  name: InvalidCastException
+  nameWithType: InvalidCastException
+  fullName: System.InvalidCastException
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject``1(System.String,{T}@)
+  commentId: M:Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject``1(System.String,``0@)
+  parent: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile
+  definition: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject``1(System.String,``0@)
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaFile_LuaTableToObject__1_System_String___0__
+  name: LuaTableToObject<T>(string, ref T)
+  nameWithType: ILuaFile.LuaTableToObject<T>(string, ref T)
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject<T>(string, ref T)
+  nameWithType.vb: ILuaFile.LuaTableToObject(Of T)(String, T)
+  fullName.vb: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject(Of T)(String, T)
+  name.vb: LuaTableToObject(Of T)(String, T)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject``1(System.String,``0@)
+    name: LuaTableToObject
+    href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaFile_LuaTableToObject__1_System_String___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject``1(System.String,``0@)
+    name: LuaTableToObject
+    href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaFile_LuaTableToObject__1_System_String___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject``1(System.String,``0@)
+  commentId: M:Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject``1(System.String,``0@)
+  isExternal: true
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaFile_LuaTableToObject__1_System_String___0__
+  name: LuaTableToObject<T>(string, ref T)
+  nameWithType: ILuaFile.LuaTableToObject<T>(string, ref T)
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject<T>(string, ref T)
+  nameWithType.vb: ILuaFile.LuaTableToObject(Of T)(String, T)
+  fullName.vb: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject(Of T)(String, T)
+  name.vb: LuaTableToObject(Of T)(String, T)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject``1(System.String,``0@)
+    name: LuaTableToObject
+    href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaFile_LuaTableToObject__1_System_String___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.LuaTableToObject``1(System.String,``0@)
+    name: LuaTableToObject
+    href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFile.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaFile_LuaTableToObject__1_System_String___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Cobilas.GodotEngine.GDLua.LuaContainer.Dispose*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.LuaContainer.Dispose
+  href: Cobilas.GodotEngine.GDLua.LuaContainer.html#Cobilas_GodotEngine_GDLua_LuaContainer_Dispose
+  name: Dispose
+  nameWithType: LuaContainer.Dispose
+  fullName: Cobilas.GodotEngine.GDLua.LuaContainer.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

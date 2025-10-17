@@ -1,0 +1,681 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.GodotEngine.GDLua.LuaFileConfg
+  commentId: T:Cobilas.GodotEngine.GDLua.LuaFileConfg
+  id: LuaFileConfg
+  parent: Cobilas.GodotEngine.GDLua
+  children:
+  - Cobilas.GodotEngine.GDLua.LuaFileConfg.#ctor(System.String,KeraLua.Lua,System.Boolean,System.Boolean,System.Boolean)
+  - Cobilas.GodotEngine.GDLua.LuaFileConfg.FilePath
+  - Cobilas.GodotEngine.GDLua.LuaFileConfg.LuaState
+  - Cobilas.GodotEngine.GDLua.LuaFileConfg.OpenLibs
+  - Cobilas.GodotEngine.GDLua.LuaFileConfg.RefreshBuffer
+  - Cobilas.GodotEngine.GDLua.LuaFileConfg.UseCLRPackage
+  langs:
+  - csharp
+  - vb
+  name: LuaFileConfg
+  nameWithType: LuaFileConfg
+  fullName: Cobilas.GodotEngine.GDLua.LuaFileConfg
+  type: Struct
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaFileConfg.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: LuaFileConfg
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaFileConfg.cs
+    startLine: 14
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Represents configuration settings for Lua file operations in the Godot engine.
+  remarks: >-
+    This structure provides configuration options for initializing and managing
+
+    Lua script files, including file paths, Lua state management, and package settings.
+  example: []
+  syntax:
+    content: 'public readonly struct LuaFileConfg : ILuaFileConfg, ILuaContainerConfg'
+    content.vb: Public Structure LuaFileConfg Implements ILuaFileConfg, ILuaContainerConfg
+  implements:
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaFileConfg
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: Cobilas.GodotEngine.GDLua.LuaFileConfg.#ctor(System.String,KeraLua.Lua,System.Boolean,System.Boolean,System.Boolean)
+  commentId: M:Cobilas.GodotEngine.GDLua.LuaFileConfg.#ctor(System.String,KeraLua.Lua,System.Boolean,System.Boolean,System.Boolean)
+  id: '#ctor(System.String,KeraLua.Lua,System.Boolean,System.Boolean,System.Boolean)'
+  parent: Cobilas.GodotEngine.GDLua.LuaFileConfg
+  langs:
+  - csharp
+  - vb
+  name: LuaFileConfg(string, Lua?, bool, bool, bool)
+  nameWithType: LuaFileConfg.LuaFileConfg(string, Lua?, bool, bool, bool)
+  fullName: Cobilas.GodotEngine.GDLua.LuaFileConfg.LuaFileConfg(string, KeraLua.Lua?, bool, bool, bool)
+  type: Constructor
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaFileConfg.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: .ctor
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaFileConfg.cs
+    startLine: 14
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Represents configuration settings for Lua file operations in the Godot engine.
+  remarks: >-
+    This structure provides configuration options for initializing and managing
+
+    Lua script files, including file paths, Lua state management, and package settings.
+  example: []
+  syntax:
+    content: public LuaFileConfg(string filePath, Lua? luaState = null, bool useCLRPackage = false, bool refreshBuffer = false, bool openLibs = true)
+    parameters:
+    - id: filePath
+      type: System.String
+      description: The path to the Lua script file.
+    - id: luaState
+      type: KeraLua.Lua
+      description: The existing Lua state instance to use, or null to create a new one.
+    - id: useCLRPackage
+      type: System.Boolean
+      description: Whether to enable CLR package access from Lua scripts.
+    - id: refreshBuffer
+      type: System.Boolean
+      description: Whether to refresh the file buffer on each access.
+    - id: openLibs
+      type: System.Boolean
+      description: Whether to load standard Lua libraries.
+    content.vb: Public Sub New(filePath As String, luaState As Lua = Nothing, useCLRPackage As Boolean = False, refreshBuffer As Boolean = False, openLibs As Boolean = True)
+  overload: Cobilas.GodotEngine.GDLua.LuaFileConfg.#ctor*
+  nameWithType.vb: LuaFileConfg.New(String, Lua, Boolean, Boolean, Boolean)
+  fullName.vb: Cobilas.GodotEngine.GDLua.LuaFileConfg.New(String, KeraLua.Lua, Boolean, Boolean, Boolean)
+  name.vb: New(String, Lua, Boolean, Boolean, Boolean)
+- uid: Cobilas.GodotEngine.GDLua.LuaFileConfg.OpenLibs
+  commentId: P:Cobilas.GodotEngine.GDLua.LuaFileConfg.OpenLibs
+  id: OpenLibs
+  parent: Cobilas.GodotEngine.GDLua.LuaFileConfg
+  langs:
+  - csharp
+  - vb
+  name: OpenLibs
+  nameWithType: LuaFileConfg.OpenLibs
+  fullName: Cobilas.GodotEngine.GDLua.LuaFileConfg.OpenLibs
+  type: Property
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaFileConfg.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: OpenLibs
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaFileConfg.cs
+    startLine: 26
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Gets a value indicating whether standard Lua libraries should be loaded.
+  example: []
+  syntax:
+    content: public bool OpenLibs { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true to load standard Lua libraries; otherwise, false.
+    content.vb: Public ReadOnly Property OpenLibs As Boolean
+  overload: Cobilas.GodotEngine.GDLua.LuaFileConfg.OpenLibs*
+  implements:
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.OpenLibs
+- uid: Cobilas.GodotEngine.GDLua.LuaFileConfg.LuaState
+  commentId: P:Cobilas.GodotEngine.GDLua.LuaFileConfg.LuaState
+  id: LuaState
+  parent: Cobilas.GodotEngine.GDLua.LuaFileConfg
+  langs:
+  - csharp
+  - vb
+  name: LuaState
+  nameWithType: LuaFileConfg.LuaState
+  fullName: Cobilas.GodotEngine.GDLua.LuaFileConfg.LuaState
+  type: Property
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaFileConfg.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: LuaState
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaFileConfg.cs
+    startLine: 28
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Gets the current Lua state instance.
+  example: []
+  syntax:
+    content: public Lua? LuaState { get; }
+    parameters: []
+    return:
+      type: KeraLua.Lua
+      description: The <xref href="KeraLua.Lua" data-throw-if-not-resolved="false"></xref> state object, or null if not initialized.
+    content.vb: Public ReadOnly Property LuaState As Lua
+  overload: Cobilas.GodotEngine.GDLua.LuaFileConfg.LuaState*
+  implements:
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.LuaState
+- uid: Cobilas.GodotEngine.GDLua.LuaFileConfg.FilePath
+  commentId: P:Cobilas.GodotEngine.GDLua.LuaFileConfg.FilePath
+  id: FilePath
+  parent: Cobilas.GodotEngine.GDLua.LuaFileConfg
+  langs:
+  - csharp
+  - vb
+  name: FilePath
+  nameWithType: LuaFileConfg.FilePath
+  fullName: Cobilas.GodotEngine.GDLua.LuaFileConfg.FilePath
+  type: Property
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaFileConfg.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: FilePath
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaFileConfg.cs
+    startLine: 30
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Gets the file path to the Lua script.
+  example: []
+  syntax:
+    content: public string? FilePath { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: The path to the Lua file, or null if not specified.
+    content.vb: Public ReadOnly Property FilePath As String
+  overload: Cobilas.GodotEngine.GDLua.LuaFileConfg.FilePath*
+  implements:
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaFileConfg.FilePath
+- uid: Cobilas.GodotEngine.GDLua.LuaFileConfg.RefreshBuffer
+  commentId: P:Cobilas.GodotEngine.GDLua.LuaFileConfg.RefreshBuffer
+  id: RefreshBuffer
+  parent: Cobilas.GodotEngine.GDLua.LuaFileConfg
+  langs:
+  - csharp
+  - vb
+  name: RefreshBuffer
+  nameWithType: LuaFileConfg.RefreshBuffer
+  fullName: Cobilas.GodotEngine.GDLua.LuaFileConfg.RefreshBuffer
+  type: Property
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaFileConfg.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: RefreshBuffer
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaFileConfg.cs
+    startLine: 32
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Gets a value indicating whether the file buffer should be refreshed on each access.
+  example: []
+  syntax:
+    content: public bool RefreshBuffer { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true to refresh the buffer on each access; otherwise, false.
+    content.vb: Public ReadOnly Property RefreshBuffer As Boolean
+  overload: Cobilas.GodotEngine.GDLua.LuaFileConfg.RefreshBuffer*
+  implements:
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaFileConfg.RefreshBuffer
+- uid: Cobilas.GodotEngine.GDLua.LuaFileConfg.UseCLRPackage
+  commentId: P:Cobilas.GodotEngine.GDLua.LuaFileConfg.UseCLRPackage
+  id: UseCLRPackage
+  parent: Cobilas.GodotEngine.GDLua.LuaFileConfg
+  langs:
+  - csharp
+  - vb
+  name: UseCLRPackage
+  nameWithType: LuaFileConfg.UseCLRPackage
+  fullName: Cobilas.GodotEngine.GDLua.LuaFileConfg.UseCLRPackage
+  type: Property
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaFileConfg.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: UseCLRPackage
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaFileConfg.cs
+    startLine: 34
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Gets a value indicating whether the CLR package should be available in Lua.
+  example: []
+  syntax:
+    content: public bool UseCLRPackage { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true to enable CLR package access from Lua; otherwise, false.
+    content.vb: Public ReadOnly Property UseCLRPackage As Boolean
+  overload: Cobilas.GodotEngine.GDLua.LuaFileConfg.UseCLRPackage*
+  implements:
+  - Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.UseCLRPackage
+references:
+- uid: Cobilas.GodotEngine.GDLua
+  commentId: N:Cobilas.GodotEngine.GDLua
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.GDLua
+  nameWithType: Cobilas.GodotEngine.GDLua
+  fullName: Cobilas.GodotEngine.GDLua
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua
+    name: GDLua
+    href: Cobilas.GodotEngine.GDLua.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua
+    name: GDLua
+    href: Cobilas.GodotEngine.GDLua.html
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFileConfg
+  commentId: T:Cobilas.GodotEngine.GDLua.Interfaces.ILuaFileConfg
+  parent: Cobilas.GodotEngine.GDLua.Interfaces
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFileConfg.html
+  name: ILuaFileConfg
+  nameWithType: ILuaFileConfg
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFileConfg
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg
+  commentId: T:Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg
+  parent: Cobilas.GodotEngine.GDLua.Interfaces
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.html
+  name: ILuaContainerConfg
+  nameWithType: ILuaContainerConfg
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.GDLua.Interfaces
+  commentId: N:Cobilas.GodotEngine.GDLua.Interfaces
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.GDLua.Interfaces
+  nameWithType: Cobilas.GodotEngine.GDLua.Interfaces
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua
+    name: GDLua
+    href: Cobilas.GodotEngine.GDLua.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua.Interfaces
+    name: Interfaces
+    href: Cobilas.GodotEngine.GDLua.Interfaces.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua
+    name: GDLua
+    href: Cobilas.GodotEngine.GDLua.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua.Interfaces
+    name: Interfaces
+    href: Cobilas.GodotEngine.GDLua.Interfaces.html
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cobilas.GodotEngine.GDLua.LuaFileConfg.#ctor*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.LuaFileConfg.#ctor
+  href: Cobilas.GodotEngine.GDLua.LuaFileConfg.html#Cobilas_GodotEngine_GDLua_LuaFileConfg__ctor_System_String_KeraLua_Lua_System_Boolean_System_Boolean_System_Boolean_
+  name: LuaFileConfg
+  nameWithType: LuaFileConfg.LuaFileConfg
+  fullName: Cobilas.GodotEngine.GDLua.LuaFileConfg.LuaFileConfg
+  nameWithType.vb: LuaFileConfg.New
+  fullName.vb: Cobilas.GodotEngine.GDLua.LuaFileConfg.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: KeraLua.Lua
+  commentId: T:KeraLua.Lua
+  parent: KeraLua
+  isExternal: true
+  href: https://github.com/NLua/KeraLua/blob/a0c9c2c47a7b4f9fde981e33464728c9190c1358/src/Lua.cs
+  name: Lua
+  nameWithType: Lua
+  fullName: KeraLua.Lua
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: KeraLua
+  commentId: N:KeraLua
+  isExternal: true
+  name: KeraLua
+  nameWithType: KeraLua
+  fullName: KeraLua
+- uid: Cobilas.GodotEngine.GDLua.LuaFileConfg.OpenLibs*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.LuaFileConfg.OpenLibs
+  href: Cobilas.GodotEngine.GDLua.LuaFileConfg.html#Cobilas_GodotEngine_GDLua_LuaFileConfg_OpenLibs
+  name: OpenLibs
+  nameWithType: LuaFileConfg.OpenLibs
+  fullName: Cobilas.GodotEngine.GDLua.LuaFileConfg.OpenLibs
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.OpenLibs
+  commentId: P:Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.OpenLibs
+  parent: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaContainerConfg_OpenLibs
+  name: OpenLibs
+  nameWithType: ILuaContainerConfg.OpenLibs
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.OpenLibs
+- uid: Cobilas.GodotEngine.GDLua.LuaFileConfg.LuaState*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.LuaFileConfg.LuaState
+  href: Cobilas.GodotEngine.GDLua.LuaFileConfg.html#Cobilas_GodotEngine_GDLua_LuaFileConfg_LuaState
+  name: LuaState
+  nameWithType: LuaFileConfg.LuaState
+  fullName: Cobilas.GodotEngine.GDLua.LuaFileConfg.LuaState
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.LuaState
+  commentId: P:Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.LuaState
+  parent: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaContainerConfg_LuaState
+  name: LuaState
+  nameWithType: ILuaContainerConfg.LuaState
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.LuaState
+- uid: Cobilas.GodotEngine.GDLua.LuaFileConfg.FilePath*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.LuaFileConfg.FilePath
+  href: Cobilas.GodotEngine.GDLua.LuaFileConfg.html#Cobilas_GodotEngine_GDLua_LuaFileConfg_FilePath
+  name: FilePath
+  nameWithType: LuaFileConfg.FilePath
+  fullName: Cobilas.GodotEngine.GDLua.LuaFileConfg.FilePath
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFileConfg.FilePath
+  commentId: P:Cobilas.GodotEngine.GDLua.Interfaces.ILuaFileConfg.FilePath
+  parent: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFileConfg
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFileConfg.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaFileConfg_FilePath
+  name: FilePath
+  nameWithType: ILuaFileConfg.FilePath
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFileConfg.FilePath
+- uid: Cobilas.GodotEngine.GDLua.LuaFileConfg.RefreshBuffer*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.LuaFileConfg.RefreshBuffer
+  href: Cobilas.GodotEngine.GDLua.LuaFileConfg.html#Cobilas_GodotEngine_GDLua_LuaFileConfg_RefreshBuffer
+  name: RefreshBuffer
+  nameWithType: LuaFileConfg.RefreshBuffer
+  fullName: Cobilas.GodotEngine.GDLua.LuaFileConfg.RefreshBuffer
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFileConfg.RefreshBuffer
+  commentId: P:Cobilas.GodotEngine.GDLua.Interfaces.ILuaFileConfg.RefreshBuffer
+  parent: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFileConfg
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFileConfg.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaFileConfg_RefreshBuffer
+  name: RefreshBuffer
+  nameWithType: ILuaFileConfg.RefreshBuffer
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaFileConfg.RefreshBuffer
+- uid: Cobilas.GodotEngine.GDLua.LuaFileConfg.UseCLRPackage*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.LuaFileConfg.UseCLRPackage
+  href: Cobilas.GodotEngine.GDLua.LuaFileConfg.html#Cobilas_GodotEngine_GDLua_LuaFileConfg_UseCLRPackage
+  name: UseCLRPackage
+  nameWithType: LuaFileConfg.UseCLRPackage
+  fullName: Cobilas.GodotEngine.GDLua.LuaFileConfg.UseCLRPackage
+- uid: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.UseCLRPackage
+  commentId: P:Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.UseCLRPackage
+  parent: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg
+  href: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.html#Cobilas_GodotEngine_GDLua_Interfaces_ILuaContainerConfg_UseCLRPackage
+  name: UseCLRPackage
+  nameWithType: ILuaContainerConfg.UseCLRPackage
+  fullName: Cobilas.GodotEngine.GDLua.Interfaces.ILuaContainerConfg.UseCLRPackage

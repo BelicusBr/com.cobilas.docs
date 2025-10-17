@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct LuaTableItem | Cobilas Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct LuaTableItem | Cobilas Documentation ">
+      
+      <meta name="description" content="Represents a Lua table item that can contain multiple table elements and supports enumeration.">
+      <link rel="icon" href="../images/favicon-96x96.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.godot.lua/new/main/apiSpec/new?filename=Cobilas_GodotEngine_GDLua_LuaTableItem.md&amp;value=---%0Auid%3A%20Cobilas.GodotEngine.GDLua.LuaTableItem%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/apple-icon-57x57.png" alt="Cobilas Documentation">
+            Cobilas Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Cobilas.GodotEngine.GDLua.LuaTableItem">
+
+
+
+  <h1 id="Cobilas_GodotEngine_GDLua_LuaTableItem" data-uid="Cobilas.GodotEngine.GDLua.LuaTableItem" class="text-break">
+Struct LuaTableItem  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaTableItem.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Cobilas.html">Cobilas</a>.<a class="xref" href="Cobilas.GodotEngine.html">GodotEngine</a>.<a class="xref" href="Cobilas.GodotEngine.GDLua.html">GDLua</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>com.cobilas.godot.lua.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a Lua table item that can contain multiple table elements and supports enumeration.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly struct LuaTableItem : ILuaTableItem, ILuaTable, IEnumerable&lt;ILuaTable&gt;, IEnumerable</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.html">ILuaTableItem</a></div>
+      <div><a class="xref" href="Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable.html">ILuaTable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable.html">ILuaTable</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="Cobilas_GodotEngine_GDLua_LuaTableItem_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This structure implements <a class="xref" href="Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.html">ILuaTableItem</a> to provide collection capabilities
+for Lua table structures with hierarchical organization and string representation.</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaTableItem__ctor_" data-uid="Cobilas.GodotEngine.GDLua.LuaTableItem.#ctor*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaTableItem__ctor_System_String_Cobilas_GodotEngine_GDLua_Interfaces_ILuaTable___" data-uid="Cobilas.GodotEngine.GDLua.LuaTableItem.#ctor(System.String,Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable[])">
+  LuaTableItem(string, params ILuaTable[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaTableItem.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Represents a Lua table item that can contain multiple table elements and supports enumeration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LuaTableItem(string name, params ILuaTable[] items)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name identifier for the table item.</p>
+</dd>
+    <dt><code>items</code> <a class="xref" href="Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable.html">ILuaTable</a>[]</dt>
+    <dd><p>The array of Lua table elements to initialize the table with.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="Cobilas_GodotEngine_GDLua_LuaTableItem__ctor_System_String_Cobilas_GodotEngine_GDLua_Interfaces_ILuaTable____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This structure implements <a class="xref" href="Cobilas.GodotEngine.GDLua.Interfaces.ILuaTableItem.html">ILuaTableItem</a> to provide collection capabilities
+for Lua table structures with hierarchical organization and string representation.</p>
+</div>
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaTableItem_Count_" data-uid="Cobilas.GodotEngine.GDLua.LuaTableItem.Count*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaTableItem_Count" data-uid="Cobilas.GodotEngine.GDLua.LuaTableItem.Count">
+  Count
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaTableItem.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the number of table elements contained in this table item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>The total count of table elements.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaTableItem_Item_" data-uid="Cobilas.GodotEngine.GDLua.LuaTableItem.Item*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaTableItem_Item_System_Int32_" data-uid="Cobilas.GodotEngine.GDLua.LuaTableItem.Item(System.Int32)">
+  this[int]
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaTableItem.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the table element at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILuaTable this[int index] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index of the table element to get.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable.html">ILuaTable</a></dt>
+    <dd><p>The <a class="xref" href="Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable.html">ILuaTable</a> at the specified index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaTableItem_Item_" data-uid="Cobilas.GodotEngine.GDLua.LuaTableItem.Item*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaTableItem_Item_System_String_" data-uid="Cobilas.GodotEngine.GDLua.LuaTableItem.Item(System.String)">
+  this[string]
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaTableItem.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the table element with the specified name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILuaTable this[string name] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the table element to get.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable.html">ILuaTable</a></dt>
+    <dd><p>The <a class="xref" href="Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable.html">ILuaTable</a> with the specified name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaTableItem_Name_" data-uid="Cobilas.GodotEngine.GDLua.LuaTableItem.Name*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaTableItem_Name" data-uid="Cobilas.GodotEngine.GDLua.LuaTableItem.Name">
+  Name
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaTableItem.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the name of the Lua table element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name identifier of the table element.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaTableItem_Tables_" data-uid="Cobilas.GodotEngine.GDLua.LuaTableItem.Tables*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaTableItem_Tables" data-uid="Cobilas.GodotEngine.GDLua.LuaTableItem.Tables">
+  Tables
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaTableItem.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an array of all table elements contained in this table item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILuaTable[] Tables { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable.html">ILuaTable</a>[]</dt>
+    <dd><p>An array of <a class="xref" href="Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable.html">ILuaTable</a> elements.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaTableItem_GetEnumerator_" data-uid="Cobilas.GodotEngine.GDLua.LuaTableItem.GetEnumerator*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaTableItem_GetEnumerator" data-uid="Cobilas.GodotEngine.GDLua.LuaTableItem.GetEnumerator">
+  GetEnumerator()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaTableItem.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;ILuaTable&gt; GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="Cobilas.GodotEngine.GDLua.Interfaces.ILuaTable.html">ILuaTable</a>&gt;</dt>
+    <dd><p>An enumerator that can be used to iterate through the collection.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaTableItem_ToString_" data-uid="Cobilas.GodotEngine.GDLua.LuaTableItem.ToString*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaTableItem_ToString" data-uid="Cobilas.GodotEngine.GDLua.LuaTableItem.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaTableItem.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a string representation of the Lua table hierarchy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A formatted string showing the table structure with proper indentation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaTableItem.cs/#L15" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

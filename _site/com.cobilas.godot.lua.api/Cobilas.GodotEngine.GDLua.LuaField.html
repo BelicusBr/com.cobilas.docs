@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct LuaField | Cobilas Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct LuaField | Cobilas Documentation ">
+      
+      <meta name="description" content="Represents a Lua field with a name and value, providing type conversion capabilities and disposable pattern for resource management.">
+      <link rel="icon" href="../images/favicon-96x96.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.godot.lua/new/main/apiSpec/new?filename=Cobilas_GodotEngine_GDLua_LuaField.md&amp;value=---%0Auid%3A%20Cobilas.GodotEngine.GDLua.LuaField%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/apple-icon-57x57.png" alt="Cobilas Documentation">
+            Cobilas Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Cobilas.GodotEngine.GDLua.LuaField">
+
+
+
+  <h1 id="Cobilas_GodotEngine_GDLua_LuaField" data-uid="Cobilas.GodotEngine.GDLua.LuaField" class="text-break">
+Struct LuaField  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaField.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Cobilas.html">Cobilas</a>.<a class="xref" href="Cobilas.GodotEngine.html">GodotEngine</a>.<a class="xref" href="Cobilas.GodotEngine.GDLua.html">GDLua</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>com.cobilas.godot.lua.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a Lua field with a name and value, providing type conversion capabilities
+and disposable pattern for resource management.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct LuaField : IConvertible, IDisposable</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iconvertible">IConvertible</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="Cobilas_GodotEngine_GDLua_LuaField_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This struct implements <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iconvertible">IConvertible</a> for seamless type conversions
+and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a> for proper resource cleanup when working with Lua interop.</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaField__ctor_" data-uid="Cobilas.GodotEngine.GDLua.LuaField.#ctor*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaField__ctor_System_String_System_Object_" data-uid="Cobilas.GodotEngine.GDLua.LuaField.#ctor(System.String,System.Object)">
+  LuaField(string, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaField.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Represents a Lua field with a name and value, providing type conversion capabilities
+and disposable pattern for resource management.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LuaField(string fieldName, object? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="Cobilas_GodotEngine_GDLua_LuaField__ctor_System_String_System_Object__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This struct implements <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iconvertible">IConvertible</a> for seamless type conversions
+and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a> for proper resource cleanup when working with Lua interop.</p>
+</div>
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaField_FieldName_" data-uid="Cobilas.GodotEngine.GDLua.LuaField.FieldName*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaField_FieldName" data-uid="Cobilas.GodotEngine.GDLua.LuaField.FieldName">
+  FieldName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaField.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the name of the Lua field</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly string FieldName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the field.</p>
+</dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown when the LuaField has been disposed.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaField_Value_" data-uid="Cobilas.GodotEngine.GDLua.LuaField.Value*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaField_Value" data-uid="Cobilas.GodotEngine.GDLua.LuaField.Value">
+  Value
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaField.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the value of the Lua field</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly object? Value { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The field value as an object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown when the LuaField has been disposed.</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaField_Dispose_" data-uid="Cobilas.GodotEngine.GDLua.LuaField.Dispose*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaField_Dispose" data-uid="Cobilas.GodotEngine.GDLua.LuaField.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaField.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Releases all resources used by the LuaField</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown when the LuaField has already been disposed.</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_Cobilas_GodotEngine_GDLua_LuaField__NLua_LuaTable" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~NLua.LuaTable">
+  explicit operator LuaTable(LuaField)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaField.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a LuaField to a LuaTable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator LuaTable(LuaField f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>f</code> <a class="xref" href="Cobilas.GodotEngine.GDLua.LuaField.html">LuaField</a></dt>
+    <dd><p>The LuaField to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://github.com/NLua/NLua/blob/d2ea7c6d466b111cdd5fc84d2a4a9f4e3402a110/src/LuaTable.cs">LuaTable</a></dt>
+    <dd><p>A LuaTable representation of the field value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidcastexception">InvalidCastException</a></dt>
+    <dd><p>Thrown when the field value is not a LuaTable.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_Cobilas_GodotEngine_GDLua_LuaField__System_Byte" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.Byte">
+  explicit operator byte(LuaField)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaField.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a LuaField to a byte</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator byte(LuaField f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>f</code> <a class="xref" href="Cobilas.GodotEngine.GDLua.LuaField.html">LuaField</a></dt>
+    <dd><p>The LuaField to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>A byte representation of the field value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_Cobilas_GodotEngine_GDLua_LuaField__System_Char" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.Char">
+  explicit operator char(LuaField)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaField.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a LuaField to a character</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator char(LuaField f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>f</code> <a class="xref" href="Cobilas.GodotEngine.GDLua.LuaField.html">LuaField</a></dt>
+    <dd><p>The LuaField to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>A character representation of the field value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_Cobilas_GodotEngine_GDLua_LuaField__System_Decimal" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.Decimal">
+  explicit operator decimal(LuaField)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaField.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a LuaField to a decimal number</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator decimal(LuaField f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>f</code> <a class="xref" href="Cobilas.GodotEngine.GDLua.LuaField.html">LuaField</a></dt>
+    <dd><p>The LuaField to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd><p>A decimal representation of the field value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_Cobilas_GodotEngine_GDLua_LuaField__System_Double" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.Double">
+  explicit operator double(LuaField)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaField.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a LuaField to a double-precision floating-point number</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator double(LuaField f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>f</code> <a class="xref" href="Cobilas.GodotEngine.GDLua.LuaField.html">LuaField</a></dt>
+    <dd><p>The LuaField to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>A double representation of the field value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_Cobilas_GodotEngine_GDLua_LuaField__System_Int16" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.Int16">
+  explicit operator short(LuaField)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaField.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a LuaField to a signed 16-bit integer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator short(LuaField f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>f</code> <a class="xref" href="Cobilas.GodotEngine.GDLua.LuaField.html">LuaField</a></dt>
+    <dd><p>The LuaField to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>A signed 16-bit integer representation of the field value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_Cobilas_GodotEngine_GDLua_LuaField__System_Int32" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.Int32">
+  explicit operator int(LuaField)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaField.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a LuaField to a signed 32-bit integer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator int(LuaField f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>f</code> <a class="xref" href="Cobilas.GodotEngine.GDLua.LuaField.html">LuaField</a></dt>
+    <dd><p>The LuaField to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A signed 32-bit integer representation of the field value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_Cobilas_GodotEngine_GDLua_LuaField__System_Int64" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.Int64">
+  explicit operator long(LuaField)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaField.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a LuaField to a signed 64-bit integer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator long(LuaField f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>f</code> <a class="xref" href="Cobilas.GodotEngine.GDLua.LuaField.html">LuaField</a></dt>
+    <dd><p>The LuaField to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>A signed 64-bit integer representation of the field value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_Cobilas_GodotEngine_GDLua_LuaField__System_SByte" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.SByte">
+  explicit operator sbyte(LuaField)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaField.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a LuaField to a signed byte</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator sbyte(LuaField f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>f</code> <a class="xref" href="Cobilas.GodotEngine.GDLua.LuaField.html">LuaField</a></dt>
+    <dd><p>The LuaField to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
+    <dd><p>A signed byte representation of the field value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_Cobilas_GodotEngine_GDLua_LuaField__System_Single" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.Single">
+  explicit operator float(LuaField)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaField.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a LuaField to a single-precision floating-point number</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator float(LuaField f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>f</code> <a class="xref" href="Cobilas.GodotEngine.GDLua.LuaField.html">LuaField</a></dt>
+    <dd><p>The LuaField to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>A float representation of the field value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_Cobilas_GodotEngine_GDLua_LuaField__System_String" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.String">
+  explicit operator string(LuaField)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaField.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a LuaField to a string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator string(LuaField f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>f</code> <a class="xref" href="Cobilas.GodotEngine.GDLua.LuaField.html">LuaField</a></dt>
+    <dd><p>The LuaField to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string representation of the field value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_Cobilas_GodotEngine_GDLua_LuaField__System_TypeCode" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.TypeCode">
+  explicit operator TypeCode(LuaField)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaField.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a LuaField to its TypeCode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator TypeCode(LuaField f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>f</code> <a class="xref" href="Cobilas.GodotEngine.GDLua.LuaField.html">LuaField</a></dt>
+    <dd><p>The LuaField to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.typecode">TypeCode</a></dt>
+    <dd><p>The TypeCode of the field value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_Cobilas_GodotEngine_GDLua_LuaField__System_UInt16" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.UInt16">
+  explicit operator ushort(LuaField)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaField.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a LuaField to an unsigned 16-bit integer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator ushort(LuaField f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>f</code> <a class="xref" href="Cobilas.GodotEngine.GDLua.LuaField.html">LuaField</a></dt>
+    <dd><p>The LuaField to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd><p>An unsigned 16-bit integer representation of the field value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_Cobilas_GodotEngine_GDLua_LuaField__System_UInt32" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.UInt32">
+  explicit operator uint(LuaField)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaField.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a LuaField to an unsigned 32-bit integer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator uint(LuaField f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>f</code> <a class="xref" href="Cobilas.GodotEngine.GDLua.LuaField.html">LuaField</a></dt>
+    <dd><p>The LuaField to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>An unsigned 32-bit integer representation of the field value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit*"></a>
+
+  <h3 id="Cobilas_GodotEngine_GDLua_LuaField_op_Explicit_Cobilas_GodotEngine_GDLua_LuaField__System_UInt64" data-uid="Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.UInt64">
+  explicit operator ulong(LuaField)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaField.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a LuaField to an unsigned 64-bit integer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator ulong(LuaField f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>f</code> <a class="xref" href="Cobilas.GodotEngine.GDLua.LuaField.html">LuaField</a></dt>
+    <dd><p>The LuaField to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd><p>An unsigned 64-bit integer representation of the field value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main/GodotEngine/GDLua/LuaField.cs/#L14" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
