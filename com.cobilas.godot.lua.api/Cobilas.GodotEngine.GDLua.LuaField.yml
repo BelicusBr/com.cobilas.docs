@@ -9,9 +9,13 @@ items:
   - Cobilas.GodotEngine.GDLua.LuaField.Dispose
   - Cobilas.GodotEngine.GDLua.LuaField.FieldName
   - Cobilas.GodotEngine.GDLua.LuaField.Value
+  - Cobilas.GodotEngine.GDLua.LuaField.ValueType
+  - Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~Cobilas.GodotEngine.GDLua.LuaField.LuaFieldType
   - Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~NLua.LuaTable
+  - Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.Boolean
   - Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.Byte
   - Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.Char
+  - Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.DateTime
   - Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.Decimal
   - Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.Double
   - Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.Int16
@@ -125,14 +129,14 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
     id: FieldName
     path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaField.cs
-    startLine: 20
+    startLine: 37
   assemblies:
   - com.cobilas.godot.lua
   namespace: Cobilas.GodotEngine.GDLua
   summary: Gets the name of the Lua field
   example: []
   syntax:
-    content: public readonly string FieldName { get; }
+    content: public readonly string? FieldName { get; }
     parameters: []
     return:
       type: System.String
@@ -161,7 +165,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
     id: Value
     path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaField.cs
-    startLine: 24
+    startLine: 41
   assemblies:
   - com.cobilas.godot.lua
   namespace: Cobilas.GodotEngine.GDLua
@@ -179,6 +183,38 @@ items:
   - type: System.ObjectDisposedException
     commentId: T:System.ObjectDisposedException
     description: Thrown when the LuaField has been disposed.
+- uid: Cobilas.GodotEngine.GDLua.LuaField.ValueType
+  commentId: P:Cobilas.GodotEngine.GDLua.LuaField.ValueType
+  id: ValueType
+  parent: Cobilas.GodotEngine.GDLua.LuaField
+  langs:
+  - csharp
+  - vb
+  name: ValueType
+  nameWithType: LuaField.ValueType
+  fullName: Cobilas.GodotEngine.GDLua.LuaField.ValueType
+  type: Property
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaField.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: ValueType
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaField.cs
+    startLine: 44
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Gets the data type of the Lua field value.
+  example: []
+  syntax:
+    content: public readonly LuaField.LuaFieldType ValueType { get; }
+    parameters: []
+    return:
+      type: Cobilas.GodotEngine.GDLua.LuaField.LuaFieldType
+      description: The <xref href="Cobilas.GodotEngine.GDLua.LuaField.LuaFieldType" data-throw-if-not-resolved="false"></xref> representing the value's data type.
+    content.vb: Public ReadOnly Property ValueType As LuaField.LuaFieldType
+  overload: Cobilas.GodotEngine.GDLua.LuaField.ValueType*
 - uid: Cobilas.GodotEngine.GDLua.LuaField.Dispose
   commentId: M:Cobilas.GodotEngine.GDLua.LuaField.Dispose
   id: Dispose
@@ -197,7 +233,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
     id: Dispose
     path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaField.cs
-    startLine: 27
+    startLine: 47
   assemblies:
   - com.cobilas.godot.lua
   namespace: Cobilas.GodotEngine.GDLua
@@ -231,7 +267,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
     id: op_Explicit
     path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaField.cs
-    startLine: 137
+    startLine: 200
   assemblies:
   - com.cobilas.godot.lua
   namespace: Cobilas.GodotEngine.GDLua
@@ -273,7 +309,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
     id: op_Explicit
     path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaField.cs
-    startLine: 141
+    startLine: 204
   assemblies:
   - com.cobilas.godot.lua
   namespace: Cobilas.GodotEngine.GDLua
@@ -289,6 +325,120 @@ items:
       type: System.TypeCode
       description: The TypeCode of the field value.
     content.vb: Public Shared Narrowing Operator CType(f As LuaField) As TypeCode
+  overload: Cobilas.GodotEngine.GDLua.LuaField.op_Explicit*
+  nameWithType.vb: LuaField.CType(LuaField)
+  fullName.vb: Cobilas.GodotEngine.GDLua.LuaField.CType(Cobilas.GodotEngine.GDLua.LuaField)
+  name.vb: CType(LuaField)
+- uid: Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.Boolean
+  commentId: M:Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.Boolean
+  id: op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.Boolean
+  parent: Cobilas.GodotEngine.GDLua.LuaField
+  langs:
+  - csharp
+  - vb
+  name: explicit operator bool(LuaField)
+  nameWithType: LuaField.explicit operator bool(LuaField)
+  fullName: Cobilas.GodotEngine.GDLua.LuaField.explicit operator bool(Cobilas.GodotEngine.GDLua.LuaField)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaField.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: op_Explicit
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaField.cs
+    startLine: 208
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Converts a LuaField to a boolean value
+  example: []
+  syntax:
+    content: public static explicit operator bool(LuaField f)
+    parameters:
+    - id: f
+      type: Cobilas.GodotEngine.GDLua.LuaField
+      description: The LuaField to convert.
+    return:
+      type: System.Boolean
+      description: A boolean representation of the field value.
+    content.vb: Public Shared Narrowing Operator CType(f As LuaField) As Boolean
+  overload: Cobilas.GodotEngine.GDLua.LuaField.op_Explicit*
+  nameWithType.vb: LuaField.CType(LuaField)
+  fullName.vb: Cobilas.GodotEngine.GDLua.LuaField.CType(Cobilas.GodotEngine.GDLua.LuaField)
+  name.vb: CType(LuaField)
+- uid: Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.DateTime
+  commentId: M:Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.DateTime
+  id: op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~System.DateTime
+  parent: Cobilas.GodotEngine.GDLua.LuaField
+  langs:
+  - csharp
+  - vb
+  name: explicit operator DateTime(LuaField)
+  nameWithType: LuaField.explicit operator DateTime(LuaField)
+  fullName: Cobilas.GodotEngine.GDLua.LuaField.explicit operator System.DateTime(Cobilas.GodotEngine.GDLua.LuaField)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaField.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: op_Explicit
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaField.cs
+    startLine: 212
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Converts a LuaField to a DateTime value
+  example: []
+  syntax:
+    content: public static explicit operator DateTime(LuaField f)
+    parameters:
+    - id: f
+      type: Cobilas.GodotEngine.GDLua.LuaField
+      description: The LuaField to convert.
+    return:
+      type: System.DateTime
+      description: A DateTime representation of the field value.
+    content.vb: Public Shared Narrowing Operator CType(f As LuaField) As Date
+  overload: Cobilas.GodotEngine.GDLua.LuaField.op_Explicit*
+  nameWithType.vb: LuaField.CType(LuaField)
+  fullName.vb: Cobilas.GodotEngine.GDLua.LuaField.CType(Cobilas.GodotEngine.GDLua.LuaField)
+  name.vb: CType(LuaField)
+- uid: Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~Cobilas.GodotEngine.GDLua.LuaField.LuaFieldType
+  commentId: M:Cobilas.GodotEngine.GDLua.LuaField.op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~Cobilas.GodotEngine.GDLua.LuaField.LuaFieldType
+  id: op_Explicit(Cobilas.GodotEngine.GDLua.LuaField)~Cobilas.GodotEngine.GDLua.LuaField.LuaFieldType
+  parent: Cobilas.GodotEngine.GDLua.LuaField
+  langs:
+  - csharp
+  - vb
+  name: explicit operator LuaFieldType(LuaField)
+  nameWithType: LuaField.explicit operator LuaField.LuaFieldType(LuaField)
+  fullName: Cobilas.GodotEngine.GDLua.LuaField.explicit operator Cobilas.GodotEngine.GDLua.LuaField.LuaFieldType(Cobilas.GodotEngine.GDLua.LuaField)
+  type: Operator
+  source:
+    remote:
+      path: GodotEngine/GDLua/LuaField.cs
+      branch: main.fix
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: op_Explicit
+    path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaField.cs
+    startLine: 216
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.GDLua
+  summary: Converts a LuaField to a LuaFieldType
+  example: []
+  syntax:
+    content: public static explicit operator LuaField.LuaFieldType(LuaField f)
+    parameters:
+    - id: f
+      type: Cobilas.GodotEngine.GDLua.LuaField
+      description: The LuaField to convert.
+    return:
+      type: Cobilas.GodotEngine.GDLua.LuaField.LuaFieldType
+      description: The LuaFieldType representing the field value's data type.
+    content.vb: Public Shared Narrowing Operator CType(f As LuaField) As LuaField.LuaFieldType
   overload: Cobilas.GodotEngine.GDLua.LuaField.op_Explicit*
   nameWithType.vb: LuaField.CType(LuaField)
   fullName.vb: Cobilas.GodotEngine.GDLua.LuaField.CType(Cobilas.GodotEngine.GDLua.LuaField)
@@ -311,7 +461,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
     id: op_Explicit
     path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaField.cs
-    startLine: 145
+    startLine: 220
   assemblies:
   - com.cobilas.godot.lua
   namespace: Cobilas.GodotEngine.GDLua
@@ -349,7 +499,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
     id: op_Explicit
     path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaField.cs
-    startLine: 149
+    startLine: 224
   assemblies:
   - com.cobilas.godot.lua
   namespace: Cobilas.GodotEngine.GDLua
@@ -387,7 +537,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
     id: op_Explicit
     path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaField.cs
-    startLine: 153
+    startLine: 228
   assemblies:
   - com.cobilas.godot.lua
   namespace: Cobilas.GodotEngine.GDLua
@@ -425,7 +575,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
     id: op_Explicit
     path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaField.cs
-    startLine: 157
+    startLine: 232
   assemblies:
   - com.cobilas.godot.lua
   namespace: Cobilas.GodotEngine.GDLua
@@ -463,7 +613,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
     id: op_Explicit
     path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaField.cs
-    startLine: 161
+    startLine: 236
   assemblies:
   - com.cobilas.godot.lua
   namespace: Cobilas.GodotEngine.GDLua
@@ -501,7 +651,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
     id: op_Explicit
     path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaField.cs
-    startLine: 165
+    startLine: 240
   assemblies:
   - com.cobilas.godot.lua
   namespace: Cobilas.GodotEngine.GDLua
@@ -539,7 +689,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
     id: op_Explicit
     path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaField.cs
-    startLine: 169
+    startLine: 244
   assemblies:
   - com.cobilas.godot.lua
   namespace: Cobilas.GodotEngine.GDLua
@@ -577,7 +727,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
     id: op_Explicit
     path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaField.cs
-    startLine: 173
+    startLine: 248
   assemblies:
   - com.cobilas.godot.lua
   namespace: Cobilas.GodotEngine.GDLua
@@ -615,7 +765,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
     id: op_Explicit
     path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaField.cs
-    startLine: 177
+    startLine: 252
   assemblies:
   - com.cobilas.godot.lua
   namespace: Cobilas.GodotEngine.GDLua
@@ -653,7 +803,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
     id: op_Explicit
     path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaField.cs
-    startLine: 181
+    startLine: 256
   assemblies:
   - com.cobilas.godot.lua
   namespace: Cobilas.GodotEngine.GDLua
@@ -691,7 +841,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
     id: op_Explicit
     path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaField.cs
-    startLine: 185
+    startLine: 260
   assemblies:
   - com.cobilas.godot.lua
   namespace: Cobilas.GodotEngine.GDLua
@@ -729,7 +879,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
     id: op_Explicit
     path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaField.cs
-    startLine: 189
+    startLine: 264
   assemblies:
   - com.cobilas.godot.lua
   namespace: Cobilas.GodotEngine.GDLua
@@ -767,7 +917,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
     id: op_Explicit
     path: ../../Godot Dev/Package/com.cobilas.godot.lua/GodotEngine/GDLua/LuaField.cs
-    startLine: 193
+    startLine: 268
   assemblies:
   - com.cobilas.godot.lua
   namespace: Cobilas.GodotEngine.GDLua
@@ -1090,6 +1240,35 @@ references:
   name: Value
   nameWithType: LuaField.Value
   fullName: Cobilas.GodotEngine.GDLua.LuaField.Value
+- uid: Cobilas.GodotEngine.GDLua.LuaField.LuaFieldType
+  commentId: T:Cobilas.GodotEngine.GDLua.LuaField.LuaFieldType
+  parent: Cobilas.GodotEngine.GDLua
+  href: Cobilas.GodotEngine.GDLua.LuaField.html
+  name: LuaField.LuaFieldType
+  nameWithType: LuaField.LuaFieldType
+  fullName: Cobilas.GodotEngine.GDLua.LuaField.LuaFieldType
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.GDLua.LuaField
+    name: LuaField
+    href: Cobilas.GodotEngine.GDLua.LuaField.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua.LuaField.LuaFieldType
+    name: LuaFieldType
+    href: Cobilas.GodotEngine.GDLua.LuaField.LuaFieldType.html
+  spec.vb:
+  - uid: Cobilas.GodotEngine.GDLua.LuaField
+    name: LuaField
+    href: Cobilas.GodotEngine.GDLua.LuaField.html
+  - name: .
+  - uid: Cobilas.GodotEngine.GDLua.LuaField.LuaFieldType
+    name: LuaFieldType
+    href: Cobilas.GodotEngine.GDLua.LuaField.LuaFieldType.html
+- uid: Cobilas.GodotEngine.GDLua.LuaField.ValueType*
+  commentId: Overload:Cobilas.GodotEngine.GDLua.LuaField.ValueType
+  href: Cobilas.GodotEngine.GDLua.LuaField.html#Cobilas_GodotEngine_GDLua_LuaField_ValueType
+  name: ValueType
+  nameWithType: LuaField.ValueType
+  fullName: Cobilas.GodotEngine.GDLua.LuaField.ValueType
 - uid: Cobilas.GodotEngine.GDLua.LuaField.Dispose*
   commentId: Overload:Cobilas.GodotEngine.GDLua.LuaField.Dispose
   href: Cobilas.GodotEngine.GDLua.LuaField.html#Cobilas_GodotEngine_GDLua_LuaField_Dispose
@@ -1166,6 +1345,28 @@ references:
   name: TypeCode
   nameWithType: TypeCode
   fullName: System.TypeCode
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
 - uid: System.Char
   commentId: T:System.Char
   parent: System
