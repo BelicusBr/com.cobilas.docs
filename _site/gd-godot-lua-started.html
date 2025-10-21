@@ -75,7 +75,8 @@
 
 <h2 id="quick-start">Quick Start</h2>
 <h3 id="executing-lua-code">Executing Lua Code</h3>
-<pre><code class="lang-csharp">// Create a Lua container with default configuration
+<pre><code class="lang-csharp">//tds
+// Create a Lua container with default configuration
 var config = LuaContainerConfg.Default;
 using var lua = new LuaContainer(config);
 
@@ -188,11 +189,11 @@ lua.InitCLRPackage(&quot;System.Math&quot;)
 <h2 id="the-cobilas-godot-lua-is-on-nugetorg">The <a href="https://www.nuget.org/packages/Cobilas.Godot.Lua/">Cobilas Godot Lua</a> is on nuget.org</h2>
 <p>To include the package, open the <code>.csproj</code> file and add it.</p>
 <pre><code class="lang-xml">&lt;ItemGroup&gt;
-	&lt;PackageReference Include=&quot;Cobilas.Godot.Lua&quot; Version=&quot;1.2.2&quot; /&gt;
+	&lt;PackageReference Include=&quot;Cobilas.Godot.Lua&quot; Version=&quot;1.2.3&quot; /&gt;
 &lt;/ItemGroup&gt;
 </code></pre>
 <p>Or use command line.</p>
-<pre><code>dotnet add package Cobilas.Godot.Lua --version 1.2.2
+<pre><code>dotnet add package Cobilas.Godot.Lua --version 1.2.3
 </code></pre>
 
 </article>
