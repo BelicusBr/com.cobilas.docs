@@ -49,9 +49,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Print(Object, params object[])
-  nameWithType: Object_CB_GD_Extension.Print(Object, params object[])
-  fullName: Godot.Object_CB_GD_Extension.Print(Godot.Object, params object[])
+  name: Print(Object?, params object[])
+  nameWithType: Object_CB_GD_Extension.Print(Object?, params object[])
+  fullName: Godot.Object_CB_GD_Extension.Print(Godot.Object?, params object[])
   type: Method
   source:
     remote:
@@ -83,7 +83,7 @@ items:
 
     GD.Print("a", "b", a); // Prints ab[1, 2, 3]</code></pre>
   syntax:
-    content: public static void Print(this Object N, params object[] args)
+    content: public static void Print(this Object? N, params object[] args)
     parameters:
     - id: N
       type: Godot.Object
@@ -115,7 +115,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SafelySetScript
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/Godot/Object_CB_GD_Extension.cs
-    startLine: 13
+    startLine: 15
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot
@@ -160,7 +160,7 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SafelySetScript
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/Godot/Object_CB_GD_Extension.cs
-    startLine: 21
+    startLine: 23
   assemblies:
   - com.cobilas.godot.utility
   namespace: Godot

@@ -5,33 +5,27 @@ items:
   id: Folder
   parent: Cobilas.GodotEngine.Utility.IO
   children:
-  - Cobilas.GodotEngine.Utility.IO.Folder.#ctor(Cobilas.GodotEngine.Utility.IO.DataBase,System.String,Cobilas.GodotEngine.Utility.IO.ArchiveAttributes)
-  - Cobilas.GodotEngine.Utility.IO.Folder.ArchiveExists(System.String)
-  - Cobilas.GodotEngine.Utility.IO.Folder.Attributes
   - Cobilas.GodotEngine.Utility.IO.Folder.Create(System.String)
-  - Cobilas.GodotEngine.Utility.IO.Folder.CreateArchive(System.String)
-  - Cobilas.GodotEngine.Utility.IO.Folder.CreateFolder(System.String,System.Boolean)
-  - Cobilas.GodotEngine.Utility.IO.Folder.CreateRes
-  - Cobilas.GodotEngine.Utility.IO.Folder.CreateUser
-  - Cobilas.GodotEngine.Utility.IO.Folder.Dispose
-  - Cobilas.GodotEngine.Utility.IO.Folder.FolderExists(System.String)
-  - Cobilas.GodotEngine.Utility.IO.Folder.GetArchive(System.String,System.Boolean)
-  - Cobilas.GodotEngine.Utility.IO.Folder.GetArchives(System.Boolean)
-  - Cobilas.GodotEngine.Utility.IO.Folder.GetArchives(System.String,System.Boolean)
-  - Cobilas.GodotEngine.Utility.IO.Folder.GetEnumerator
-  - Cobilas.GodotEngine.Utility.IO.Folder.GetFolder(System.String,System.Boolean)
-  - Cobilas.GodotEngine.Utility.IO.Folder.GetFolders
-  - Cobilas.GodotEngine.Utility.IO.Folder.Name
-  - Cobilas.GodotEngine.Utility.IO.Folder.Null
-  - Cobilas.GodotEngine.Utility.IO.Folder.Parent
-  - Cobilas.GodotEngine.Utility.IO.Folder.Path
-  - Cobilas.GodotEngine.Utility.IO.Folder.RemoveArchive(System.String)
-  - Cobilas.GodotEngine.Utility.IO.Folder.RemoveFolder(System.String)
-  - Cobilas.GodotEngine.Utility.IO.Folder.RenameArchive(System.String,System.String)
-  - Cobilas.GodotEngine.Utility.IO.Folder.RenameFolder(System.String,System.String)
-  - Cobilas.GodotEngine.Utility.IO.Folder.ToString
-  - Cobilas.GodotEngine.Utility.IO.Folder.ToString(System.Boolean)
-  - Cobilas.GodotEngine.Utility.IO.Folder.ToString(System.String,System.IFormatProvider)
+  - Cobilas.GodotEngine.Utility.IO.Folder.Delete(System.String)
+  - Cobilas.GodotEngine.Utility.IO.Folder.Exists(System.String)
+  - Cobilas.GodotEngine.Utility.IO.Folder.GetArchives(System.String)
+  - Cobilas.GodotEngine.Utility.IO.Folder.GetCreationTime(System.String)
+  - Cobilas.GodotEngine.Utility.IO.Folder.GetCreationTimeUtc(System.String)
+  - Cobilas.GodotEngine.Utility.IO.Folder.GetFolders(System.String)
+  - Cobilas.GodotEngine.Utility.IO.Folder.GetLastAccessTime(System.String)
+  - Cobilas.GodotEngine.Utility.IO.Folder.GetLastAccessTimeUtc(System.String)
+  - Cobilas.GodotEngine.Utility.IO.Folder.GetLastWriteTime(System.String)
+  - Cobilas.GodotEngine.Utility.IO.Folder.GetLastWriteTimeUtc(System.String)
+  - Cobilas.GodotEngine.Utility.IO.Folder.GetParent(Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo)
+  - Cobilas.GodotEngine.Utility.IO.Folder.LogicalDrives
+  - Cobilas.GodotEngine.Utility.IO.Folder.Move(System.String,System.String)
+  - Cobilas.GodotEngine.Utility.IO.Folder.Open(System.String)
+  - Cobilas.GodotEngine.Utility.IO.Folder.Open(System.String,System.Boolean)
+  - Cobilas.GodotEngine.Utility.IO.Folder.OpenRes
+  - Cobilas.GodotEngine.Utility.IO.Folder.OpenRes(System.Boolean)
+  - Cobilas.GodotEngine.Utility.IO.Folder.OpenUser
+  - Cobilas.GodotEngine.Utility.IO.Folder.OpenUser(System.Boolean)
+  - Cobilas.GodotEngine.Utility.IO.Folder.Rename(System.String,System.String)
   langs:
   - csharp
   - vb
@@ -50,1031 +44,285 @@ items:
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.IO
-  summary: A representation of a system folder.
+  summary: >-
+    Provides static methods for working with folders and directories in 
+
+    both Godot and system file systems.
+  remarks: >-
+    This class offers a unified interface for folder operations that works seamlessly
+
+    across Godot's virtual file system and the underlying operating system's file system.
   example: []
   syntax:
-    content: 'public class Folder : DataBase, IDisposable, IFormattable, IEnumerable<DataBase>, IEnumerable'
-    content.vb: Public Class Folder Inherits DataBase Implements IDisposable, IFormattable, IEnumerable(Of DataBase), IEnumerable
+    content: public static class Folder
+    content.vb: Public Module Folder
   inheritance:
   - System.Object
-  - Cobilas.GodotEngine.Utility.IO.DataBase
-  implements:
-  - System.IDisposable
-  - System.IFormattable
-  - System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.Utility.IO.DataBase}
-  - System.Collections.IEnumerable
   inheritedMembers:
-  - Cobilas.GodotEngine.Utility.IO.DataBase.GetDataPath(Cobilas.GodotEngine.Utility.IO.DataBase)
+  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.Path
-  commentId: P:Cobilas.GodotEngine.Utility.IO.Folder.Path
-  id: Path
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.LogicalDrives
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Folder.LogicalDrives
+  id: LogicalDrives
   parent: Cobilas.GodotEngine.Utility.IO.Folder
   langs:
   - csharp
   - vb
-  name: Path
-  nameWithType: Folder.Path
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.Path
+  name: LogicalDrives
+  nameWithType: Folder.LogicalDrives
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.LogicalDrives
   type: Property
   source:
     remote:
       path: GodotEngine.Utility/IO/Folder.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Path
+    id: LogicalDrives
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
-    startLine: 19
+    startLine: 17
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.IO
-  summary: The full path of the data file.
+  summary: Gets the logical drives available on the system.
   example: []
   syntax:
-    content: public override string Path { get; }
+    content: public static string[] LogicalDrives { get; }
     parameters: []
     return:
-      type: System.String
-      description: Returns a string containing the full path of the data file.
-    content.vb: Public Overrides ReadOnly Property Path As String
-  overridden: Cobilas.GodotEngine.Utility.IO.DataBase.Path
-  overload: Cobilas.GodotEngine.Utility.IO.Folder.Path*
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.Parent
-  commentId: P:Cobilas.GodotEngine.Utility.IO.Folder.Parent
-  id: Parent
+      type: System.String[]
+      description: An array of strings representing the logical drives (e.g., "C:\", "D:\").
+    content.vb: Public Shared ReadOnly Property LogicalDrives As String()
+  overload: Cobilas.GodotEngine.Utility.IO.Folder.LogicalDrives*
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.Open(System.String,System.Boolean)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.Open(System.String,System.Boolean)
+  id: Open(System.String,System.Boolean)
   parent: Cobilas.GodotEngine.Utility.IO.Folder
   langs:
   - csharp
   - vb
-  name: Parent
-  nameWithType: Folder.Parent
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.Parent
-  type: Property
+  name: Open(string?, bool)
+  nameWithType: Folder.Open(string?, bool)
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.Open(string?, bool)
+  type: Method
   source:
     remote:
       path: GodotEngine.Utility/IO/Folder.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Parent
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
-    startLine: 21
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: The parent element of the data file.
-  example: []
-  syntax:
-    content: public override DataBase? Parent { get; protected set; }
-    parameters: []
-    return:
-      type: Cobilas.GodotEngine.Utility.IO.DataBase
-      description: Returns parent element of data file.
-    content.vb: Public Overrides Property Parent As DataBase
-  overridden: Cobilas.GodotEngine.Utility.IO.DataBase.Parent
-  overload: Cobilas.GodotEngine.Utility.IO.Folder.Parent*
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.Attributes
-  commentId: P:Cobilas.GodotEngine.Utility.IO.Folder.Attributes
-  id: Attributes
-  parent: Cobilas.GodotEngine.Utility.IO.Folder
-  langs:
-  - csharp
-  - vb
-  name: Attributes
-  nameWithType: Folder.Attributes
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.Attributes
-  type: Property
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Folder.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Attributes
+    id: Open
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
     startLine: 23
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.IO
-  summary: The attributes of the data file.
+  summary: Opens a folder at the specified path with the option to skip hidden items.
   example: []
   syntax:
-    content: public override ArchiveAttributes Attributes { get; protected set; }
-    parameters: []
-    return:
-      type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
-      description: Returns the attributes of the data file.
-    content.vb: Public Overrides Property Attributes As ArchiveAttributes
-  overridden: Cobilas.GodotEngine.Utility.IO.DataBase.Attributes
-  overload: Cobilas.GodotEngine.Utility.IO.Folder.Attributes*
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.Name
-  commentId: P:Cobilas.GodotEngine.Utility.IO.Folder.Name
-  id: Name
-  parent: Cobilas.GodotEngine.Utility.IO.Folder
-  langs:
-  - csharp
-  - vb
-  name: Name
-  nameWithType: Folder.Name
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.Name
-  type: Property
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Folder.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Name
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
-    startLine: 25
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Data file name.
-  example: []
-  syntax:
-    content: public override string? Name { get; protected set; }
-    parameters: []
-    return:
+    content: public static IFolderInfo Open(string? path, bool skipHidden)
+    parameters:
+    - id: path
       type: System.String
-      description: Returns a string containing the name of the data file.
-    content.vb: Public Overrides Property Name As String
-  overridden: Cobilas.GodotEngine.Utility.IO.DataBase.Name
-  overload: Cobilas.GodotEngine.Utility.IO.Folder.Name*
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.Null
-  commentId: P:Cobilas.GodotEngine.Utility.IO.Folder.Null
-  id: "Null"
+      description: The path to the folder. If null, an exception will be thrown.
+    - id: skipHidden
+      type: System.Boolean
+      description: Whether to skip hidden files and folders in the enumeration.
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo
+      description: An <xref href="Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo" data-throw-if-not-resolved="false"></xref> instance representing the opened folder.
+    content.vb: Public Shared Function Open(path As String, skipHidden As Boolean) As IFolderInfo
+  overload: Cobilas.GodotEngine.Utility.IO.Folder.Open*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when path is null.
+  nameWithType.vb: Folder.Open(String, Boolean)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.Open(String, Boolean)
+  name.vb: Open(String, Boolean)
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.Open(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.Open(System.String)
+  id: Open(System.String)
   parent: Cobilas.GodotEngine.Utility.IO.Folder
   langs:
   - csharp
   - vb
-  name: "Null"
-  nameWithType: Folder.Null
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.Null
-  type: Property
+  name: Open(string?)
+  nameWithType: Folder.Open(string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.Open(string?)
+  type: Method
   source:
     remote:
       path: GodotEngine.Utility/IO/Folder.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: "Null"
+    id: Open
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
-    startLine: 30
+    startLine: 28
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.IO
-  summary: A null representation of the <xref href="Cobilas.GodotEngine.Utility.IO.Folder" data-throw-if-not-resolved="false"></xref> object.
+  summary: Opens a folder at the specified path, automatically skipping hidden items.
   example: []
   syntax:
-    content: public static Folder Null { get; }
-    parameters: []
+    content: public static IFolderInfo Open(string? path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the folder. If null, an exception will be thrown.
     return:
-      type: Cobilas.GodotEngine.Utility.IO.Folder
-      description: Returns a null representation of the <xref href="Cobilas.GodotEngine.Utility.IO.Folder" data-throw-if-not-resolved="false"></xref> object.
-    content.vb: Public Shared ReadOnly Property Null As Folder
-  overload: Cobilas.GodotEngine.Utility.IO.Folder.Null*
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.#ctor(Cobilas.GodotEngine.Utility.IO.DataBase,System.String,Cobilas.GodotEngine.Utility.IO.ArchiveAttributes)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.#ctor(Cobilas.GodotEngine.Utility.IO.DataBase,System.String,Cobilas.GodotEngine.Utility.IO.ArchiveAttributes)
-  id: '#ctor(Cobilas.GodotEngine.Utility.IO.DataBase,System.String,Cobilas.GodotEngine.Utility.IO.ArchiveAttributes)'
+      type: Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo
+      description: An <xref href="Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo" data-throw-if-not-resolved="false"></xref> instance representing the opened folder.
+    content.vb: Public Shared Function Open(path As String) As IFolderInfo
+  overload: Cobilas.GodotEngine.Utility.IO.Folder.Open*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when path is null.
+  nameWithType.vb: Folder.Open(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.Open(String)
+  name.vb: Open(String)
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.OpenRes(System.Boolean)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.OpenRes(System.Boolean)
+  id: OpenRes(System.Boolean)
   parent: Cobilas.GodotEngine.Utility.IO.Folder
   langs:
   - csharp
   - vb
-  name: Folder(DataBase?, string?, ArchiveAttributes)
-  nameWithType: Folder.Folder(DataBase?, string?, ArchiveAttributes)
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.Folder(Cobilas.GodotEngine.Utility.IO.DataBase?, string?, Cobilas.GodotEngine.Utility.IO.ArchiveAttributes)
-  type: Constructor
+  name: OpenRes(bool)
+  nameWithType: Folder.OpenRes(bool)
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.OpenRes(bool)
+  type: Method
   source:
     remote:
       path: GodotEngine.Utility/IO/Folder.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: .ctor
+    id: OpenRes
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
     startLine: 32
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Creates a new instance of this object.
+  summary: Opens the Godot resource path folder with the option to skip hidden items.
   example: []
   syntax:
-    content: public Folder(DataBase? parent, string? dataName, ArchiveAttributes attributes)
+    content: public static IFolderInfo OpenRes(bool skipHidden)
     parameters:
-    - id: parent
-      type: Cobilas.GodotEngine.Utility.IO.DataBase
-    - id: dataName
-      type: System.String
-    - id: attributes
-      type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
-    content.vb: Public Sub New(parent As DataBase, dataName As String, attributes As ArchiveAttributes)
-  overload: Cobilas.GodotEngine.Utility.IO.Folder.#ctor*
-  nameWithType.vb: Folder.New(DataBase, String, ArchiveAttributes)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.New(Cobilas.GodotEngine.Utility.IO.DataBase, String, Cobilas.GodotEngine.Utility.IO.ArchiveAttributes)
-  name.vb: New(DataBase, String, ArchiveAttributes)
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.CreateFolder(System.String,System.Boolean)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.CreateFolder(System.String,System.Boolean)
-  id: CreateFolder(System.String,System.Boolean)
-  parent: Cobilas.GodotEngine.Utility.IO.Folder
-  langs:
-  - csharp
-  - vb
-  name: CreateFolder(string?, bool)
-  nameWithType: Folder.CreateFolder(string?, bool)
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.CreateFolder(string?, bool)
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Folder.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: CreateFolder
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
-    startLine: 38
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Allows the creation of a new folder in the current folder.
-  example: []
-  syntax:
-    content: public Folder CreateFolder(string? folderName, bool recursive = false)
-    parameters:
-    - id: folderName
-      type: System.String
-      description: The name of the new folder.
-    - id: recursive
+    - id: skipHidden
       type: System.Boolean
-      description: 'Allows the creation of a folder within another in a cascade fashion. <code>(exp: Folder1/Folder2/Folder3/Folder4)</code>'
+      description: Whether to skip hidden files and folders in the enumeration.
     return:
-      type: Cobilas.GodotEngine.Utility.IO.Folder
-      description: Returns the newly created folder.
-    content.vb: Public Function CreateFolder(folderName As String, recursive As Boolean = False) As Folder
-  overload: Cobilas.GodotEngine.Utility.IO.Folder.CreateFolder*
-  exceptions:
-  - type: System.ArgumentNullException
-    commentId: T:System.ArgumentNullException
-    description: Occurs if the <code class="paramref">folderName</code> parameter is null.
-  nameWithType.vb: Folder.CreateFolder(String, Boolean)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.CreateFolder(String, Boolean)
-  name.vb: CreateFolder(String, Boolean)
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.CreateArchive(System.String)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.CreateArchive(System.String)
-  id: CreateArchive(System.String)
+      type: Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo
+      description: An <xref href="Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo" data-throw-if-not-resolved="false"></xref> instance representing the Godot resource folder.
+    content.vb: Public Shared Function OpenRes(skipHidden As Boolean) As IFolderInfo
+  overload: Cobilas.GodotEngine.Utility.IO.Folder.OpenRes*
+  nameWithType.vb: Folder.OpenRes(Boolean)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.OpenRes(Boolean)
+  name.vb: OpenRes(Boolean)
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.OpenRes
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.OpenRes
+  id: OpenRes
   parent: Cobilas.GodotEngine.Utility.IO.Folder
   langs:
   - csharp
   - vb
-  name: CreateArchive(string?)
-  nameWithType: Folder.CreateArchive(string?)
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.CreateArchive(string?)
+  name: OpenRes()
+  nameWithType: Folder.OpenRes()
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.OpenRes()
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/IO/Folder.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: CreateArchive
+    id: OpenRes
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
-    startLine: 50
+    startLine: 35
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Allows you to create a new file in the current folder.
+  summary: Opens the Godot resource path folder, automatically skipping hidden items.
   example: []
   syntax:
-    content: public Archive CreateArchive(string? fileName)
-    parameters:
-    - id: fileName
-      type: System.String
-      description: The name of this new file.
+    content: public static IFolderInfo OpenRes()
     return:
-      type: Cobilas.GodotEngine.Utility.IO.Archive
-      description: Returns the new file that was created in the current folder.
-    content.vb: Public Function CreateArchive(fileName As String) As Archive
-  overload: Cobilas.GodotEngine.Utility.IO.Folder.CreateArchive*
-  exceptions:
-  - type: System.Data.ReadOnlyException
-    commentId: T:System.Data.ReadOnlyException
-    description: Will occur if the method is called on an object that is marked as read-only.
-  - type: System.ArgumentNullException
-    commentId: T:System.ArgumentNullException
-    description: Occurs if the <code class="paramref">fileName</code> parameter is null.
-  - type: System.InvalidOperationException
-    commentId: T:System.InvalidOperationException
-    description: Occurs when the name of the new file has an invalid character.
-  nameWithType.vb: Folder.CreateArchive(String)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.CreateArchive(String)
-  name.vb: CreateArchive(String)
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.RenameFolder(System.String,System.String)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.RenameFolder(System.String,System.String)
-  id: RenameFolder(System.String,System.String)
+      type: Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo
+      description: An <xref href="Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo" data-throw-if-not-resolved="false"></xref> instance representing the Godot resource folder.
+    content.vb: Public Shared Function OpenRes() As IFolderInfo
+  overload: Cobilas.GodotEngine.Utility.IO.Folder.OpenRes*
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.OpenUser(System.Boolean)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.OpenUser(System.Boolean)
+  id: OpenUser(System.Boolean)
   parent: Cobilas.GodotEngine.Utility.IO.Folder
   langs:
   - csharp
   - vb
-  name: RenameFolder(string?, string?)
-  nameWithType: Folder.RenameFolder(string?, string?)
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.RenameFolder(string?, string?)
+  name: OpenUser(bool)
+  nameWithType: Folder.OpenUser(bool)
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.OpenUser(bool)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/IO/Folder.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: RenameFolder
+    id: OpenUser
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
-    startLine: 75
+    startLine: 39
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Allows you to rename the folder.
+  summary: Opens the Godot user data path folder with the option to skip hidden items.
   example: []
   syntax:
-    content: public bool RenameFolder(string? oldName, string? newName)
+    content: public static IFolderInfo OpenUser(bool skipHidden)
     parameters:
-    - id: oldName
-      type: System.String
-      description: The name of the folder.
-    - id: newName
-      type: System.String
-      description: The new name of the folder.
-    return:
+    - id: skipHidden
       type: System.Boolean
-      description: Returns <code>true</code> when the rename operation was successful.
-    content.vb: Public Function RenameFolder(oldName As String, newName As String) As Boolean
-  overload: Cobilas.GodotEngine.Utility.IO.Folder.RenameFolder*
-  exceptions:
-  - type: System.Data.ReadOnlyException
-    commentId: T:System.Data.ReadOnlyException
-    description: Will occur if the method is called on an object that is marked as read-only.
-  - type: System.ArgumentNullException
-    commentId: T:System.ArgumentNullException
-    description: Occurs if the <code class="paramref">oldName</code> parameter is null.
-  - type: System.ArgumentNullException
-    commentId: T:System.ArgumentNullException
-    description: Occurs if the <code class="paramref">newName</code> parameter is null.
-  - type: System.InvalidOperationException
-    commentId: T:System.InvalidOperationException
-    description: Occurs when the name of the new file has an invalid character.
-  nameWithType.vb: Folder.RenameFolder(String, String)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.RenameFolder(String, String)
-  name.vb: RenameFolder(String, String)
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.RemoveFolder(System.String)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.RemoveFolder(System.String)
-  id: RemoveFolder(System.String)
-  parent: Cobilas.GodotEngine.Utility.IO.Folder
-  langs:
-  - csharp
-  - vb
-  name: RemoveFolder(string?)
-  nameWithType: Folder.RemoveFolder(string?)
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.RemoveFolder(string?)
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Folder.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: RemoveFolder
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
-    startLine: 101
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Allows the removal of a folder.
-  example: []
-  syntax:
-    content: public bool RemoveFolder(string? folderName)
-    parameters:
-    - id: folderName
-      type: System.String
-      description: The name of the folder.
+      description: Whether to skip hidden files and folders in the enumeration.
     return:
-      type: System.Boolean
-      description: Returns <code>true</code> when the remove operation is successful.
-    content.vb: Public Function RemoveFolder(folderName As String) As Boolean
-  overload: Cobilas.GodotEngine.Utility.IO.Folder.RemoveFolder*
-  exceptions:
-  - type: System.Data.ReadOnlyException
-    commentId: T:System.Data.ReadOnlyException
-    description: Will occur if the method is called on an object that is marked as read-only.
-  - type: System.ArgumentNullException
-    commentId: T:System.ArgumentNullException
-    description: Occurs if the <code class="paramref">folderName</code> parameter is null.
-  nameWithType.vb: Folder.RemoveFolder(String)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.RemoveFolder(String)
-  name.vb: RemoveFolder(String)
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.RemoveArchive(System.String)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.RemoveArchive(System.String)
-  id: RemoveArchive(System.String)
+      type: Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo
+      description: An <xref href="Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo" data-throw-if-not-resolved="false"></xref> instance representing the Godot user data folder.
+    content.vb: Public Shared Function OpenUser(skipHidden As Boolean) As IFolderInfo
+  overload: Cobilas.GodotEngine.Utility.IO.Folder.OpenUser*
+  nameWithType.vb: Folder.OpenUser(Boolean)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.OpenUser(Boolean)
+  name.vb: OpenUser(Boolean)
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.OpenUser
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.OpenUser
+  id: OpenUser
   parent: Cobilas.GodotEngine.Utility.IO.Folder
   langs:
   - csharp
   - vb
-  name: RemoveArchive(string?)
-  nameWithType: Folder.RemoveArchive(string?)
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.RemoveArchive(string?)
+  name: OpenUser()
+  nameWithType: Folder.OpenUser()
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.OpenUser()
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/IO/Folder.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: RemoveArchive
+    id: OpenUser
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
-    startLine: 125
+    startLine: 42
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Allows you to remove a file in the current folder.
+  summary: Opens the Godot user data path folder, automatically skipping hidden items.
   example: []
   syntax:
-    content: public bool RemoveArchive(string? archiveName)
-    parameters:
-    - id: archiveName
-      type: System.String
-      description: The name of the archive.
+    content: public static IFolderInfo OpenUser()
     return:
-      type: System.Boolean
-      description: Returns <code>true</code> when the remove operation is successful.
-    content.vb: Public Function RemoveArchive(archiveName As String) As Boolean
-  overload: Cobilas.GodotEngine.Utility.IO.Folder.RemoveArchive*
-  exceptions:
-  - type: System.Data.ReadOnlyException
-    commentId: T:System.Data.ReadOnlyException
-    description: Will occur if the method is called on an object that is marked as read-only.
-  - type: System.ArgumentNullException
-    commentId: T:System.ArgumentNullException
-    description: Occurs if the <code class="paramref">archiveName</code> parameter is null.
-  nameWithType.vb: Folder.RemoveArchive(String)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.RemoveArchive(String)
-  name.vb: RemoveArchive(String)
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.RenameArchive(System.String,System.String)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.RenameArchive(System.String,System.String)
-  id: RenameArchive(System.String,System.String)
-  parent: Cobilas.GodotEngine.Utility.IO.Folder
-  langs:
-  - csharp
-  - vb
-  name: RenameArchive(string?, string?)
-  nameWithType: Folder.RenameArchive(string?, string?)
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.RenameArchive(string?, string?)
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Folder.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: RenameArchive
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
-    startLine: 147
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Allows renaming of a file in the current folder.
-  example: []
-  syntax:
-    content: public bool RenameArchive(string? oldName, string? newName)
-    parameters:
-    - id: oldName
-      type: System.String
-      description: The name of the archive.
-    - id: newName
-      type: System.String
-      description: The new name of the archive.
-    return:
-      type: System.Boolean
-      description: Returns <code>true</code> when the rename operation was successful.
-    content.vb: Public Function RenameArchive(oldName As String, newName As String) As Boolean
-  overload: Cobilas.GodotEngine.Utility.IO.Folder.RenameArchive*
-  exceptions:
-  - type: System.Data.ReadOnlyException
-    commentId: T:System.Data.ReadOnlyException
-    description: Will occur if the method is called on an object that is marked as read-only.
-  - type: System.ArgumentNullException
-    commentId: T:System.ArgumentNullException
-    description: Occurs if the <code class="paramref">oldName</code> parameter is null.
-  - type: System.ArgumentNullException
-    commentId: T:System.ArgumentNullException
-    description: Occurs if the <code class="paramref">newName</code> parameter is null.
-  - type: System.InvalidOperationException
-    commentId: T:System.InvalidOperationException
-    description: Occurs when the name of the new file has an invalid character.
-  nameWithType.vb: Folder.RenameArchive(String, String)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.RenameArchive(String, String)
-  name.vb: RenameArchive(String, String)
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.FolderExists(System.String)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.FolderExists(System.String)
-  id: FolderExists(System.String)
-  parent: Cobilas.GodotEngine.Utility.IO.Folder
-  langs:
-  - csharp
-  - vb
-  name: FolderExists(string)
-  nameWithType: Folder.FolderExists(string)
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.FolderExists(string)
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Folder.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: FolderExists
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
-    startLine: 166
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Checks if a folder exists.
-  example: []
-  syntax:
-    content: public bool FolderExists(string folderName)
-    parameters:
-    - id: folderName
-      type: System.String
-      description: The name of the folder.
-    return:
-      type: System.Boolean
-      description: Returns <code>true</code> when the specified element exists.
-    content.vb: Public Function FolderExists(folderName As String) As Boolean
-  overload: Cobilas.GodotEngine.Utility.IO.Folder.FolderExists*
-  nameWithType.vb: Folder.FolderExists(String)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.FolderExists(String)
-  name.vb: FolderExists(String)
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.ArchiveExists(System.String)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.ArchiveExists(System.String)
-  id: ArchiveExists(System.String)
-  parent: Cobilas.GodotEngine.Utility.IO.Folder
-  langs:
-  - csharp
-  - vb
-  name: ArchiveExists(string)
-  nameWithType: Folder.ArchiveExists(string)
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.ArchiveExists(string)
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Folder.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: ArchiveExists
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
-    startLine: 170
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Checks if a file exists.
-  example: []
-  syntax:
-    content: public bool ArchiveExists(string archiveName)
-    parameters:
-    - id: archiveName
-      type: System.String
-      description: The name of the archive.
-    return:
-      type: System.Boolean
-      description: Returns <code>true</code> when the specified element exists.
-    content.vb: Public Function ArchiveExists(archiveName As String) As Boolean
-  overload: Cobilas.GodotEngine.Utility.IO.Folder.ArchiveExists*
-  nameWithType.vb: Folder.ArchiveExists(String)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.ArchiveExists(String)
-  name.vb: ArchiveExists(String)
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetFolders
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.GetFolders
-  id: GetFolders
-  parent: Cobilas.GodotEngine.Utility.IO.Folder
-  langs:
-  - csharp
-  - vb
-  name: GetFolders()
-  nameWithType: Folder.GetFolders()
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetFolders()
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Folder.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: GetFolders
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
-    startLine: 173
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Gets all folders in the current folder.
-  example: []
-  syntax:
-    content: public Folder[]? GetFolders()
-    return:
-      type: Cobilas.GodotEngine.Utility.IO.Folder[]
-      description: Returns a list of all folders in the current folder.
-    content.vb: Public Function GetFolders() As Folder()
-  overload: Cobilas.GodotEngine.Utility.IO.Folder.GetFolders*
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetFolder(System.String,System.Boolean)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.GetFolder(System.String,System.Boolean)
-  id: GetFolder(System.String,System.Boolean)
-  parent: Cobilas.GodotEngine.Utility.IO.Folder
-  langs:
-  - csharp
-  - vb
-  name: GetFolder(string?, bool)
-  nameWithType: Folder.GetFolder(string?, bool)
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetFolder(string?, bool)
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Folder.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: GetFolder
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
-    startLine: 185
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Gets the target folder from the current folder.
-  example: []
-  syntax:
-    content: public Folder GetFolder(string? folderName, bool recursive = false)
-    parameters:
-    - id: folderName
-      type: System.String
-      description: The name of the folder.
-    - id: recursive
-      type: System.Boolean
-      description: Allows you to get a specified folder in the current folder or its subfolders.
-    return:
-      type: Cobilas.GodotEngine.Utility.IO.Folder
-      description: Returns the specified folder. If not found, a null representation will be returned.
-    content.vb: Public Function GetFolder(folderName As String, recursive As Boolean = False) As Folder
-  overload: Cobilas.GodotEngine.Utility.IO.Folder.GetFolder*
-  nameWithType.vb: Folder.GetFolder(String, Boolean)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.GetFolder(String, Boolean)
-  name.vb: GetFolder(String, Boolean)
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetArchives(System.String,System.Boolean)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.GetArchives(System.String,System.Boolean)
-  id: GetArchives(System.String,System.Boolean)
-  parent: Cobilas.GodotEngine.Utility.IO.Folder
-  langs:
-  - csharp
-  - vb
-  name: GetArchives(string?, bool)
-  nameWithType: Folder.GetArchives(string?, bool)
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetArchives(string?, bool)
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Folder.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: GetArchives
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
-    startLine: 202
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Gets all archives in the current folder.
-  example: []
-  syntax:
-    content: public Archive[]? GetArchives(string? search, bool recursive = false)
-    parameters:
-    - id: search
-      type: System.String
-      description: Allows you to collect specific files. Use '|' to separate search conditions. (exp:".jpeg|.png|.txt")
-    - id: recursive
-      type: System.Boolean
-      description: Allows you to get a specified archives in the current folder or its subfolders.
-    return:
-      type: Cobilas.GodotEngine.Utility.IO.Archive[]
-      description: Returns a list of all archives in the current folder.
-    content.vb: Public Function GetArchives(search As String, recursive As Boolean = False) As Archive()
-  overload: Cobilas.GodotEngine.Utility.IO.Folder.GetArchives*
-  nameWithType.vb: Folder.GetArchives(String, Boolean)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.GetArchives(String, Boolean)
-  name.vb: GetArchives(String, Boolean)
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetArchives(System.Boolean)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.GetArchives(System.Boolean)
-  id: GetArchives(System.Boolean)
-  parent: Cobilas.GodotEngine.Utility.IO.Folder
-  langs:
-  - csharp
-  - vb
-  name: GetArchives(bool)
-  nameWithType: Folder.GetArchives(bool)
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetArchives(bool)
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Folder.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: GetArchives
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
-    startLine: 231
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Gets the target archive from the current folder.
-  example: []
-  syntax:
-    content: public Archive[]? GetArchives(bool recursive = false)
-    parameters:
-    - id: recursive
-      type: System.Boolean
-      description: Allows you to get a specified archive in the current folder or its subfolders
-    return:
-      type: Cobilas.GodotEngine.Utility.IO.Archive[]
-      description: Returns the specified archive. If not found, a null representation will be returned.
-    content.vb: Public Function GetArchives(recursive As Boolean = False) As Archive()
-  overload: Cobilas.GodotEngine.Utility.IO.Folder.GetArchives*
-  nameWithType.vb: Folder.GetArchives(Boolean)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.GetArchives(Boolean)
-  name.vb: GetArchives(Boolean)
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetArchive(System.String,System.Boolean)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.GetArchive(System.String,System.Boolean)
-  id: GetArchive(System.String,System.Boolean)
-  parent: Cobilas.GodotEngine.Utility.IO.Folder
-  langs:
-  - csharp
-  - vb
-  name: GetArchive(string?, bool)
-  nameWithType: Folder.GetArchive(string?, bool)
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetArchive(string?, bool)
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Folder.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: GetArchive
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
-    startLine: 236
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Gets the target archive from the current folder.
-  example: []
-  syntax:
-    content: public Archive GetArchive(string? fileName, bool recursive = false)
-    parameters:
-    - id: fileName
-      type: System.String
-      description: The name of the archive.
-    - id: recursive
-      type: System.Boolean
-      description: Allows you to get a specified archive in the current folder or its subfolders
-    return:
-      type: Cobilas.GodotEngine.Utility.IO.Archive
-      description: Returns the specified archive. If not found, a null representation will be returned.
-    content.vb: Public Function GetArchive(fileName As String, recursive As Boolean = False) As Archive
-  overload: Cobilas.GodotEngine.Utility.IO.Folder.GetArchive*
-  nameWithType.vb: Folder.GetArchive(String, Boolean)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.GetArchive(String, Boolean)
-  name.vb: GetArchive(String, Boolean)
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.ToString(System.Boolean)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.ToString(System.Boolean)
-  id: ToString(System.Boolean)
-  parent: Cobilas.GodotEngine.Utility.IO.Folder
-  langs:
-  - csharp
-  - vb
-  name: ToString(bool)
-  nameWithType: Folder.ToString(bool)
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.ToString(bool)
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Folder.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: ToString
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
-    startLine: 258
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Returns a string that represents the current object.
-  example: []
-  syntax:
-    content: public string ToString(bool recursive)
-    parameters:
-    - id: recursive
-      type: System.Boolean
-    return:
-      type: System.String
-      description: A string that represents the current object.
-    content.vb: Public Function ToString(recursive As Boolean) As String
-  overload: Cobilas.GodotEngine.Utility.IO.Folder.ToString*
-  nameWithType.vb: Folder.ToString(Boolean)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.ToString(Boolean)
-  name.vb: ToString(Boolean)
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.ToString
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.ToString
-  id: ToString
-  parent: Cobilas.GodotEngine.Utility.IO.Folder
-  langs:
-  - csharp
-  - vb
-  name: ToString()
-  nameWithType: Folder.ToString()
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.ToString()
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Folder.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: ToString
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
-    startLine: 260
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Returns a string that represents the current object.
-  example: []
-  syntax:
-    content: public override string ToString()
-    return:
-      type: System.String
-      description: A string that represents the current object.
-    content.vb: Public Overrides Function ToString() As String
-  overridden: System.Object.ToString
-  overload: Cobilas.GodotEngine.Utility.IO.Folder.ToString*
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.ToString(System.String,System.IFormatProvider)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.ToString(System.String,System.IFormatProvider)
-  id: ToString(System.String,System.IFormatProvider)
-  parent: Cobilas.GodotEngine.Utility.IO.Folder
-  langs:
-  - csharp
-  - vb
-  name: ToString(string, IFormatProvider)
-  nameWithType: Folder.ToString(string, IFormatProvider)
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.ToString(string, System.IFormatProvider)
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Folder.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: ToString
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
-    startLine: 262
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Formats the value of the current instance using the specified format.
-  example: []
-  syntax:
-    content: public override string ToString(string format, IFormatProvider formatProvider)
-    parameters:
-    - id: format
-      type: System.String
-      description: The format to use.-or- A null reference (<code>Nothing</code> in Visual Basic) to use the default format defined for the type of the <xref href="System.IFormattable" data-throw-if-not-resolved="false"></xref> implementation.
-    - id: formatProvider
-      type: System.IFormatProvider
-      description: The provider to use to format the value.-or- A null reference (<code>Nothing</code> in Visual Basic) to obtain the numeric format information from the current locale setting of the operating system.
-    return:
-      type: System.String
-      description: The value of the current instance in the specified format.
-    content.vb: Public Overrides Function ToString(format As String, formatProvider As IFormatProvider) As String
-  overridden: Cobilas.GodotEngine.Utility.IO.DataBase.ToString(System.String,System.IFormatProvider)
-  overload: Cobilas.GodotEngine.Utility.IO.Folder.ToString*
-  nameWithType.vb: Folder.ToString(String, IFormatProvider)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.ToString(String, System.IFormatProvider)
-  name.vb: ToString(String, IFormatProvider)
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetEnumerator
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.GetEnumerator
-  id: GetEnumerator
-  parent: Cobilas.GodotEngine.Utility.IO.Folder
-  langs:
-  - csharp
-  - vb
-  name: GetEnumerator()
-  nameWithType: Folder.GetEnumerator()
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetEnumerator()
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Folder.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: GetEnumerator
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
-    startLine: 274
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Returns an enumerator that iterates through the collection.
-  example: []
-  syntax:
-    content: public IEnumerator<DataBase> GetEnumerator()
-    return:
-      type: System.Collections.Generic.IEnumerator{Cobilas.GodotEngine.Utility.IO.DataBase}
-      description: An enumerator that can be used to iterate through the collection.
-    content.vb: Public Function GetEnumerator() As IEnumerator(Of DataBase)
-  overload: Cobilas.GodotEngine.Utility.IO.Folder.GetEnumerator*
-  implements:
-  - System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.Utility.IO.DataBase}.GetEnumerator
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.Dispose
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.Dispose
-  id: Dispose
-  parent: Cobilas.GodotEngine.Utility.IO.Folder
-  langs:
-  - csharp
-  - vb
-  name: Dispose()
-  nameWithType: Folder.Dispose()
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.Dispose()
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Folder.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Dispose
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
-    startLine: 276
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
-  example: []
-  syntax:
-    content: public override void Dispose()
-    content.vb: Public Overrides Sub Dispose()
-  overridden: Cobilas.GodotEngine.Utility.IO.DataBase.Dispose
-  overload: Cobilas.GodotEngine.Utility.IO.Folder.Dispose*
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.CreateRes
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.CreateRes
-  id: CreateRes
-  parent: Cobilas.GodotEngine.Utility.IO.Folder
-  langs:
-  - csharp
-  - vb
-  name: CreateRes()
-  nameWithType: Folder.CreateRes()
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.CreateRes()
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Folder.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: CreateRes
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
-    startLine: 363
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Creates a new instance containing a representation of the <code>res://</code> folder.
-  example: []
-  syntax:
-    content: public static Folder CreateRes()
-    return:
-      type: Cobilas.GodotEngine.Utility.IO.Folder
-      description: Returns the representation of a folder.
-    content.vb: Public Shared Function CreateRes() As Folder
-  overload: Cobilas.GodotEngine.Utility.IO.Folder.CreateRes*
-  exceptions:
-  - type: System.ArgumentNullException
-    commentId: T:System.ArgumentNullException
-    description: Occurs if the <code class="paramref">path</code> parameter is null.
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.CreateUser
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.CreateUser
-  id: CreateUser
-  parent: Cobilas.GodotEngine.Utility.IO.Folder
-  langs:
-  - csharp
-  - vb
-  name: CreateUser()
-  nameWithType: Folder.CreateUser()
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.CreateUser()
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Folder.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: CreateUser
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
-    startLine: 366
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Creates a new instance containing a representation of the <code>user://</code> folder.
-  example: []
-  syntax:
-    content: public static Folder CreateUser()
-    return:
-      type: Cobilas.GodotEngine.Utility.IO.Folder
-      description: Returns the representation of a folder.
-    content.vb: Public Shared Function CreateUser() As Folder
-  overload: Cobilas.GodotEngine.Utility.IO.Folder.CreateUser*
-  exceptions:
-  - type: System.ArgumentNullException
-    commentId: T:System.ArgumentNullException
-    description: Occurs if the <code class="paramref">path</code> parameter is null.
+      type: Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo
+      description: An <xref href="Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo" data-throw-if-not-resolved="false"></xref> instance representing the Godot user data folder.
+    content.vb: Public Shared Function OpenUser() As IFolderInfo
+  overload: Cobilas.GodotEngine.Utility.IO.Folder.OpenUser*
 - uid: Cobilas.GodotEngine.Utility.IO.Folder.Create(System.String)
   commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.Create(System.String)
   id: Create(System.String)
@@ -1093,30 +341,587 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Create
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
-    startLine: 371
+    startLine: 47
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Creates a new instance containing a specified directory.
+  summary: Creates a new folder at the specified path.
   example: []
   syntax:
-    content: public static Folder Create(string? path)
+    content: public static IDataInfo Create(string? path)
     parameters:
     - id: path
       type: System.String
-      description: The path that will be instantiated.
+      description: The full path where the folder should be created.
     return:
-      type: Cobilas.GodotEngine.Utility.IO.Folder
-      description: Returns the representation of a folder.
-    content.vb: Public Shared Function Create(path As String) As Folder
+      type: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+      description: An <xref href="Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo" data-throw-if-not-resolved="false"></xref> instance representing the newly created folder.
+    content.vb: Public Shared Function Create(path As String) As IDataInfo
   overload: Cobilas.GodotEngine.Utility.IO.Folder.Create*
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: Occurs if the <code class="paramref">path</code> parameter is null.
+    description: Thrown when path is null.
   nameWithType.vb: Folder.Create(String)
   fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.Create(String)
   name.vb: Create(String)
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.Delete(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.Delete(System.String)
+  id: Delete(System.String)
+  parent: Cobilas.GodotEngine.Utility.IO.Folder
+  langs:
+  - csharp
+  - vb
+  name: Delete(string?)
+  nameWithType: Folder.Delete(string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.Delete(string?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Folder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Delete
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
+    startLine: 60
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Deletes the folder at the specified path and all its contents.
+  remarks: >-
+    This method will not delete internal Godot folders. If the path is empty or null, 
+
+    the operation will return false without throwing an exception.
+  example: []
+  syntax:
+    content: public static bool Delete(string? path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the folder to delete.
+    return:
+      type: System.Boolean
+      description: true if the folder was successfully deleted; otherwise, false.
+    content.vb: Public Shared Function Delete(path As String) As Boolean
+  overload: Cobilas.GodotEngine.Utility.IO.Folder.Delete*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when path is null.
+  nameWithType.vb: Folder.Delete(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.Delete(String)
+  name.vb: Delete(String)
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.Exists(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.Exists(System.String)
+  id: Exists(System.String)
+  parent: Cobilas.GodotEngine.Utility.IO.Folder
+  langs:
+  - csharp
+  - vb
+  name: Exists(string?)
+  nameWithType: Folder.Exists(string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.Exists(string?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Folder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Exists
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
+    startLine: 73
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Determines whether the specified folder exists.
+  remarks: This method works with both system directories and Godot's virtual file system.
+  example: []
+  syntax:
+    content: public static bool Exists(string? path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to check for existence.
+    return:
+      type: System.Boolean
+      description: true if the folder exists; otherwise, false.
+    content.vb: Public Shared Function Exists(path As String) As Boolean
+  overload: Cobilas.GodotEngine.Utility.IO.Folder.Exists*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when path is null.
+  nameWithType.vb: Folder.Exists(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.Exists(String)
+  name.vb: Exists(String)
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.Move(System.String,System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.Move(System.String,System.String)
+  id: Move(System.String,System.String)
+  parent: Cobilas.GodotEngine.Utility.IO.Folder
+  langs:
+  - csharp
+  - vb
+  name: Move(string?, string?)
+  nameWithType: Folder.Move(string?, string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.Move(string?, string?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Folder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Move
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
+    startLine: 85
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Moves a folder to a new location.
+  example: []
+  syntax:
+    content: public static bool Move(string? path, string? destinationPath)
+    parameters:
+    - id: path
+      type: System.String
+      description: The current path of the folder.
+    - id: destinationPath
+      type: System.String
+      description: The new path for the folder.
+    return:
+      type: System.Boolean
+      description: true if the folder was successfully moved; otherwise, false.
+    content.vb: Public Shared Function Move(path As String, destinationPath As String) As Boolean
+  overload: Cobilas.GodotEngine.Utility.IO.Folder.Move*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when either path is null.
+  nameWithType.vb: Folder.Move(String, String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.Move(String, String)
+  name.vb: Move(String, String)
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.Rename(System.String,System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.Rename(System.String,System.String)
+  id: Rename(System.String,System.String)
+  parent: Cobilas.GodotEngine.Utility.IO.Folder
+  langs:
+  - csharp
+  - vb
+  name: Rename(string?, string?)
+  nameWithType: Folder.Rename(string?, string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.Rename(string?, string?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Folder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Rename
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
+    startLine: 96
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Renames a folder.
+  example: []
+  syntax:
+    content: public static bool Rename(string? folderPath, string? newName)
+    parameters:
+    - id: folderPath
+      type: System.String
+      description: The current full path of the folder.
+    - id: newName
+      type: System.String
+      description: The new name for the folder.
+    return:
+      type: System.Boolean
+      description: true if the folder was successfully renamed; otherwise, false.
+    content.vb: Public Shared Function Rename(folderPath As String, newName As String) As Boolean
+  overload: Cobilas.GodotEngine.Utility.IO.Folder.Rename*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when either parameter is null.
+  nameWithType.vb: Folder.Rename(String, String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.Rename(String, String)
+  name.vb: Rename(String, String)
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetArchives(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.GetArchives(System.String)
+  id: GetArchives(System.String)
+  parent: Cobilas.GodotEngine.Utility.IO.Folder
+  langs:
+  - csharp
+  - vb
+  name: GetArchives(string?)
+  nameWithType: Folder.GetArchives(string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetArchives(string?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Folder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetArchives
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
+    startLine: 106
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets all archive files in the specified folder.
+  example: []
+  syntax:
+    content: public static IArchiveInfo[] GetArchives(string? path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to search for archive files.
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo[]
+      description: An array of <xref href="Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo" data-throw-if-not-resolved="false"></xref> representing the archive files found.
+    content.vb: Public Shared Function GetArchives(path As String) As IArchiveInfo()
+  overload: Cobilas.GodotEngine.Utility.IO.Folder.GetArchives*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when path is null.
+  nameWithType.vb: Folder.GetArchives(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.GetArchives(String)
+  name.vb: GetArchives(String)
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetFolders(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.GetFolders(System.String)
+  id: GetFolders(System.String)
+  parent: Cobilas.GodotEngine.Utility.IO.Folder
+  langs:
+  - csharp
+  - vb
+  name: GetFolders(string?)
+  nameWithType: Folder.GetFolders(string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetFolders(string?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Folder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetFolders
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
+    startLine: 115
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets all subfolders in the specified folder.
+  example: []
+  syntax:
+    content: public static IFolderInfo[] GetFolders(string? path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to search for subfolders.
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo[]
+      description: An array of <xref href="Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo" data-throw-if-not-resolved="false"></xref> representing the subfolders found.
+    content.vb: Public Shared Function GetFolders(path As String) As IFolderInfo()
+  overload: Cobilas.GodotEngine.Utility.IO.Folder.GetFolders*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when path is null.
+  nameWithType.vb: Folder.GetFolders(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.GetFolders(String)
+  name.vb: GetFolders(String)
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetCreationTime(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.GetCreationTime(System.String)
+  id: GetCreationTime(System.String)
+  parent: Cobilas.GodotEngine.Utility.IO.Folder
+  langs:
+  - csharp
+  - vb
+  name: GetCreationTime(string?)
+  nameWithType: Folder.GetCreationTime(string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetCreationTime(string?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Folder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetCreationTime
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
+    startLine: 124
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets the creation time of the specified folder in local time.
+  example: []
+  syntax:
+    content: public static DateTime GetCreationTime(string? path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the folder.
+    return:
+      type: System.DateTime
+      description: A <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> representing the folder's creation time in local time.
+    content.vb: Public Shared Function GetCreationTime(path As String) As Date
+  overload: Cobilas.GodotEngine.Utility.IO.Folder.GetCreationTime*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when path is null.
+  nameWithType.vb: Folder.GetCreationTime(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.GetCreationTime(String)
+  name.vb: GetCreationTime(String)
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetCreationTimeUtc(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.GetCreationTimeUtc(System.String)
+  id: GetCreationTimeUtc(System.String)
+  parent: Cobilas.GodotEngine.Utility.IO.Folder
+  langs:
+  - csharp
+  - vb
+  name: GetCreationTimeUtc(string?)
+  nameWithType: Folder.GetCreationTimeUtc(string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetCreationTimeUtc(string?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Folder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetCreationTimeUtc
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
+    startLine: 133
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets the creation time of the specified folder in UTC time.
+  example: []
+  syntax:
+    content: public static DateTime GetCreationTimeUtc(string? path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the folder.
+    return:
+      type: System.DateTime
+      description: A <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> representing the folder's creation time in UTC.
+    content.vb: Public Shared Function GetCreationTimeUtc(path As String) As Date
+  overload: Cobilas.GodotEngine.Utility.IO.Folder.GetCreationTimeUtc*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when path is null.
+  nameWithType.vb: Folder.GetCreationTimeUtc(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.GetCreationTimeUtc(String)
+  name.vb: GetCreationTimeUtc(String)
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetLastAccessTime(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.GetLastAccessTime(System.String)
+  id: GetLastAccessTime(System.String)
+  parent: Cobilas.GodotEngine.Utility.IO.Folder
+  langs:
+  - csharp
+  - vb
+  name: GetLastAccessTime(string?)
+  nameWithType: Folder.GetLastAccessTime(string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetLastAccessTime(string?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Folder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetLastAccessTime
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
+    startLine: 142
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets the last access time of the specified folder in local time.
+  example: []
+  syntax:
+    content: public static DateTime GetLastAccessTime(string? path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the folder.
+    return:
+      type: System.DateTime
+      description: A <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> representing the folder's last access time in local time.
+    content.vb: Public Shared Function GetLastAccessTime(path As String) As Date
+  overload: Cobilas.GodotEngine.Utility.IO.Folder.GetLastAccessTime*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when path is null.
+  nameWithType.vb: Folder.GetLastAccessTime(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.GetLastAccessTime(String)
+  name.vb: GetLastAccessTime(String)
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetLastAccessTimeUtc(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.GetLastAccessTimeUtc(System.String)
+  id: GetLastAccessTimeUtc(System.String)
+  parent: Cobilas.GodotEngine.Utility.IO.Folder
+  langs:
+  - csharp
+  - vb
+  name: GetLastAccessTimeUtc(string?)
+  nameWithType: Folder.GetLastAccessTimeUtc(string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetLastAccessTimeUtc(string?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Folder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetLastAccessTimeUtc
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
+    startLine: 151
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets the last access time of the specified folder in UTC time.
+  example: []
+  syntax:
+    content: public static DateTime GetLastAccessTimeUtc(string? path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the folder.
+    return:
+      type: System.DateTime
+      description: A <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> representing the folder's last access time in UTC.
+    content.vb: Public Shared Function GetLastAccessTimeUtc(path As String) As Date
+  overload: Cobilas.GodotEngine.Utility.IO.Folder.GetLastAccessTimeUtc*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when path is null.
+  nameWithType.vb: Folder.GetLastAccessTimeUtc(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.GetLastAccessTimeUtc(String)
+  name.vb: GetLastAccessTimeUtc(String)
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetLastWriteTime(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.GetLastWriteTime(System.String)
+  id: GetLastWriteTime(System.String)
+  parent: Cobilas.GodotEngine.Utility.IO.Folder
+  langs:
+  - csharp
+  - vb
+  name: GetLastWriteTime(string?)
+  nameWithType: Folder.GetLastWriteTime(string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetLastWriteTime(string?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Folder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetLastWriteTime
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
+    startLine: 160
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets the last write time of the specified folder in local time.
+  example: []
+  syntax:
+    content: public static DateTime GetLastWriteTime(string? path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the folder.
+    return:
+      type: System.DateTime
+      description: A <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> representing the folder's last write time in local time.
+    content.vb: Public Shared Function GetLastWriteTime(path As String) As Date
+  overload: Cobilas.GodotEngine.Utility.IO.Folder.GetLastWriteTime*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when path is null.
+  nameWithType.vb: Folder.GetLastWriteTime(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.GetLastWriteTime(String)
+  name.vb: GetLastWriteTime(String)
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetLastWriteTimeUtc(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.GetLastWriteTimeUtc(System.String)
+  id: GetLastWriteTimeUtc(System.String)
+  parent: Cobilas.GodotEngine.Utility.IO.Folder
+  langs:
+  - csharp
+  - vb
+  name: GetLastWriteTimeUtc(string?)
+  nameWithType: Folder.GetLastWriteTimeUtc(string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetLastWriteTimeUtc(string?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Folder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetLastWriteTimeUtc
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
+    startLine: 169
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets the last write time of the specified folder in UTC time.
+  example: []
+  syntax:
+    content: public static DateTime GetLastWriteTimeUtc(string? path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the folder.
+    return:
+      type: System.DateTime
+      description: A <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> representing the folder's last write time in UTC.
+    content.vb: Public Shared Function GetLastWriteTimeUtc(path As String) As Date
+  overload: Cobilas.GodotEngine.Utility.IO.Folder.GetLastWriteTimeUtc*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when path is null.
+  nameWithType.vb: Folder.GetLastWriteTimeUtc(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.GetLastWriteTimeUtc(String)
+  name.vb: GetLastWriteTimeUtc(String)
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetParent(Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Folder.GetParent(Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo)
+  id: GetParent(Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo)
+  parent: Cobilas.GodotEngine.Utility.IO.Folder
+  langs:
+  - csharp
+  - vb
+  name: GetParent(IFolderInfo?)
+  nameWithType: Folder.GetParent(IFolderInfo?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetParent(Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Folder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetParent
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Folder.cs
+    startLine: 178
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets the parent folder of the specified folder information.
+  example: []
+  syntax:
+    content: public static IDataInfo GetParent(IFolderInfo? data)
+    parameters:
+    - id: data
+      type: Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo
+      description: The folder information to get the parent of.
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+      description: An <xref href="Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo" data-throw-if-not-resolved="false"></xref> representing the parent folder, or <xref href="Cobilas.GodotEngine.Utility.IO.DataNull.Null" data-throw-if-not-resolved="false"></xref> if there is no parent.
+    content.vb: Public Shared Function GetParent(data As IFolderInfo) As IDataInfo
+  overload: Cobilas.GodotEngine.Utility.IO.Folder.GetParent*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when data is null.
+  nameWithType.vb: Folder.GetParent(IFolderInfo)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.GetParent(Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo)
+  name.vb: GetParent(IFolderInfo)
 references:
 - uid: Cobilas.GodotEngine.Utility.IO
   commentId: N:Cobilas.GodotEngine.Utility.IO
@@ -1167,94 +972,29 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Cobilas.GodotEngine.Utility.IO.DataBase
-  commentId: T:Cobilas.GodotEngine.Utility.IO.DataBase
-  parent: Cobilas.GodotEngine.Utility.IO
-  href: Cobilas.GodotEngine.Utility.IO.DataBase.html
-  name: DataBase
-  nameWithType: DataBase
-  fullName: Cobilas.GodotEngine.Utility.IO.DataBase
-- uid: System.IDisposable
-  commentId: T:System.IDisposable
-  parent: System
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.idisposable
-  name: IDisposable
-  nameWithType: IDisposable
-  fullName: System.IDisposable
-- uid: System.IFormattable
-  commentId: T:System.IFormattable
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.iformattable
-  name: IFormattable
-  nameWithType: IFormattable
-  fullName: System.IFormattable
-- uid: System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.Utility.IO.DataBase}
-  commentId: T:System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.Utility.IO.DataBase}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.IEnumerable`1
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  name: IEnumerable<DataBase>
-  nameWithType: IEnumerable<DataBase>
-  fullName: System.Collections.Generic.IEnumerable<Cobilas.GodotEngine.Utility.IO.DataBase>
-  nameWithType.vb: IEnumerable(Of DataBase)
-  fullName.vb: System.Collections.Generic.IEnumerable(Of Cobilas.GodotEngine.Utility.IO.DataBase)
-  name.vb: IEnumerable(Of DataBase)
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
   spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
+  - uid: System.Object.ToString
+    name: ToString
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: <
-  - uid: Cobilas.GodotEngine.Utility.IO.DataBase
-    name: DataBase
-    href: Cobilas.GodotEngine.Utility.IO.DataBase.html
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
-  - name: Of
-  - name: " "
-  - uid: Cobilas.GodotEngine.Utility.IO.DataBase
-    name: DataBase
-    href: Cobilas.GodotEngine.Utility.IO.DataBase.html
-  - name: )
-- uid: System.Collections.IEnumerable
-  commentId: T:System.Collections.IEnumerable
-  parent: System.Collections
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
-  name: IEnumerable
-  nameWithType: IEnumerable
-  fullName: System.Collections.IEnumerable
-- uid: Cobilas.GodotEngine.Utility.IO.DataBase.GetDataPath(Cobilas.GodotEngine.Utility.IO.DataBase)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.DataBase.GetDataPath(Cobilas.GodotEngine.Utility.IO.DataBase)
-  parent: Cobilas.GodotEngine.Utility.IO.DataBase
-  href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_GetDataPath_Cobilas_GodotEngine_Utility_IO_DataBase_
-  name: GetDataPath(DataBase)
-  nameWithType: DataBase.GetDataPath(DataBase)
-  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.GetDataPath(Cobilas.GodotEngine.Utility.IO.DataBase)
-  spec.csharp:
-  - uid: Cobilas.GodotEngine.Utility.IO.DataBase.GetDataPath(Cobilas.GodotEngine.Utility.IO.DataBase)
-    name: GetDataPath
-    href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_GetDataPath_Cobilas_GodotEngine_Utility_IO_DataBase_
-  - name: (
-  - uid: Cobilas.GodotEngine.Utility.IO.DataBase
-    name: DataBase
-    href: Cobilas.GodotEngine.Utility.IO.DataBase.html
   - name: )
   spec.vb:
-  - uid: Cobilas.GodotEngine.Utility.IO.DataBase.GetDataPath(Cobilas.GodotEngine.Utility.IO.DataBase)
-    name: GetDataPath
-    href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_GetDataPath_Cobilas_GodotEngine_Utility_IO_DataBase_
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
-  - uid: Cobilas.GodotEngine.Utility.IO.DataBase
-    name: DataBase
-    href: Cobilas.GodotEngine.Utility.IO.DataBase.html
   - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
@@ -1458,111 +1198,55 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.Collections.Generic.IEnumerable`1
-  commentId: T:System.Collections.Generic.IEnumerable`1
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.LogicalDrives*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.LogicalDrives
+  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_LogicalDrives
+  name: LogicalDrives
+  nameWithType: Folder.LogicalDrives
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.LogicalDrives
+- uid: System.String[]
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  name: IEnumerable<T>
-  nameWithType: IEnumerable<T>
-  fullName: System.Collections.Generic.IEnumerable<T>
-  nameWithType.vb: IEnumerable(Of T)
-  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
-  name.vb: IEnumerable(Of T)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
   spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
+  - uid: System.String
+    name: string
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: <
-  - name: T
-  - name: '>'
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
   spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
+  - uid: System.String
+    name: String
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: (
-  - name: Of
-  - name: " "
-  - name: T
   - name: )
-- uid: System.Collections.Generic
-  commentId: N:System.Collections.Generic
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo
+  commentId: T:Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo.html
+  name: IFolderInfo
+  nameWithType: IFolderInfo
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Collections.Generic
-  nameWithType: System.Collections.Generic
-  fullName: System.Collections.Generic
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Collections
-    name: Collections
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections
-  - name: .
-  - uid: System.Collections.Generic
-    name: Generic
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Collections
-    name: Collections
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections
-  - name: .
-  - uid: System.Collections.Generic
-    name: Generic
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
-- uid: System.Collections
-  commentId: N:System.Collections
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Collections
-  nameWithType: System.Collections
-  fullName: System.Collections
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Collections
-    name: Collections
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Collections
-    name: Collections
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections
-- uid: Cobilas.GodotEngine.Utility.IO.DataBase.Path
-  commentId: P:Cobilas.GodotEngine.Utility.IO.DataBase.Path
-  parent: Cobilas.GodotEngine.Utility.IO.DataBase
-  href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_Path
-  name: Path
-  nameWithType: DataBase.Path
-  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.Path
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.Path*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.Path
-  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_Path
-  name: Path
-  nameWithType: Folder.Path
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.Path
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.Open*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.Open
+  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_Open_System_String_System_Boolean_
+  name: Open
+  nameWithType: Folder.Open
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.Open
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -1574,87 +1258,6 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: Cobilas.GodotEngine.Utility.IO.DataBase.Parent
-  commentId: P:Cobilas.GodotEngine.Utility.IO.DataBase.Parent
-  parent: Cobilas.GodotEngine.Utility.IO.DataBase
-  href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_Parent
-  name: Parent
-  nameWithType: DataBase.Parent
-  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.Parent
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.Parent*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.Parent
-  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_Parent
-  name: Parent
-  nameWithType: Folder.Parent
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.Parent
-- uid: Cobilas.GodotEngine.Utility.IO.DataBase.Attributes
-  commentId: P:Cobilas.GodotEngine.Utility.IO.DataBase.Attributes
-  parent: Cobilas.GodotEngine.Utility.IO.DataBase
-  href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_Attributes
-  name: Attributes
-  nameWithType: DataBase.Attributes
-  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.Attributes
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.Attributes*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.Attributes
-  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_Attributes
-  name: Attributes
-  nameWithType: Folder.Attributes
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.Attributes
-- uid: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
-  commentId: T:Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
-  parent: Cobilas.GodotEngine.Utility.IO
-  href: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.html
-  name: ArchiveAttributes
-  nameWithType: ArchiveAttributes
-  fullName: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
-- uid: Cobilas.GodotEngine.Utility.IO.DataBase.Name
-  commentId: P:Cobilas.GodotEngine.Utility.IO.DataBase.Name
-  parent: Cobilas.GodotEngine.Utility.IO.DataBase
-  href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_Name
-  name: Name
-  nameWithType: DataBase.Name
-  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.Name
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.Name*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.Name
-  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_Name
-  name: Name
-  nameWithType: Folder.Name
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.Name
-- uid: Cobilas.GodotEngine.Utility.IO.Folder
-  commentId: T:Cobilas.GodotEngine.Utility.IO.Folder
-  parent: Cobilas.GodotEngine.Utility.IO
-  href: Cobilas.GodotEngine.Utility.IO.Folder.html
-  name: Folder
-  nameWithType: Folder
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.Null*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.Null
-  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_Null
-  name: "Null"
-  nameWithType: Folder.Null
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.Null
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.#ctor*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.#ctor
-  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder__ctor_Cobilas_GodotEngine_Utility_IO_DataBase_System_String_Cobilas_GodotEngine_Utility_IO_ArchiveAttributes_
-  name: Folder
-  nameWithType: Folder.Folder
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.Folder
-  nameWithType.vb: Folder.New
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder.New
-  name.vb: New
-- uid: System.ArgumentNullException
-  commentId: T:System.ArgumentNullException
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
-  name: ArgumentNullException
-  nameWithType: ArgumentNullException
-  fullName: System.ArgumentNullException
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.CreateFolder*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.CreateFolder
-  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_CreateFolder_System_String_System_Boolean_
-  name: CreateFolder
-  nameWithType: Folder.CreateFolder
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.CreateFolder
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -1666,370 +1269,218 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: System.Data.ReadOnlyException
-  commentId: T:System.Data.ReadOnlyException
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.data.readonlyexception
-  name: ReadOnlyException
-  nameWithType: ReadOnlyException
-  fullName: System.Data.ReadOnlyException
-- uid: System.InvalidOperationException
-  commentId: T:System.InvalidOperationException
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
-  name: InvalidOperationException
-  nameWithType: InvalidOperationException
-  fullName: System.InvalidOperationException
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.CreateArchive*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.CreateArchive
-  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_CreateArchive_System_String_
-  name: CreateArchive
-  nameWithType: Folder.CreateArchive
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.CreateArchive
-- uid: Cobilas.GodotEngine.Utility.IO.Archive
-  commentId: T:Cobilas.GodotEngine.Utility.IO.Archive
-  parent: Cobilas.GodotEngine.Utility.IO
-  href: Cobilas.GodotEngine.Utility.IO.Archive.html
-  name: Archive
-  nameWithType: Archive
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.RenameFolder*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.RenameFolder
-  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_RenameFolder_System_String_System_String_
-  name: RenameFolder
-  nameWithType: Folder.RenameFolder
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.RenameFolder
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.RemoveFolder*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.RemoveFolder
-  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_RemoveFolder_System_String_
-  name: RemoveFolder
-  nameWithType: Folder.RemoveFolder
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.RemoveFolder
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.RemoveArchive*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.RemoveArchive
-  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_RemoveArchive_System_String_
-  name: RemoveArchive
-  nameWithType: Folder.RemoveArchive
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.RemoveArchive
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.RenameArchive*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.RenameArchive
-  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_RenameArchive_System_String_System_String_
-  name: RenameArchive
-  nameWithType: Folder.RenameArchive
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.RenameArchive
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.FolderExists*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.FolderExists
-  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_FolderExists_System_String_
-  name: FolderExists
-  nameWithType: Folder.FolderExists
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.FolderExists
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.ArchiveExists*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.ArchiveExists
-  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_ArchiveExists_System_String_
-  name: ArchiveExists
-  nameWithType: Folder.ArchiveExists
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.ArchiveExists
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetFolders*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.GetFolders
-  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_GetFolders
-  name: GetFolders
-  nameWithType: Folder.GetFolders
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetFolders
-- uid: Cobilas.GodotEngine.Utility.IO.Folder[]
-  isExternal: true
-  href: Cobilas.GodotEngine.Utility.IO.Folder.html
-  name: Folder[]
-  nameWithType: Folder[]
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder[]
-  nameWithType.vb: Folder()
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Folder()
-  name.vb: Folder()
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces
+  commentId: N:Cobilas.GodotEngine.Utility.IO.Interfaces
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Utility.IO.Interfaces
+  nameWithType: Cobilas.GodotEngine.Utility.IO.Interfaces
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces
   spec.csharp:
-  - uid: Cobilas.GodotEngine.Utility.IO.Folder
-    name: Folder
-    href: Cobilas.GodotEngine.Utility.IO.Folder.html
-  - name: '['
-  - name: ']'
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO
+    name: IO
+    href: Cobilas.GodotEngine.Utility.IO.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO.Interfaces
+    name: Interfaces
+    href: Cobilas.GodotEngine.Utility.IO.Interfaces.html
   spec.vb:
-  - uid: Cobilas.GodotEngine.Utility.IO.Folder
-    name: Folder
-    href: Cobilas.GodotEngine.Utility.IO.Folder.html
-  - name: (
-  - name: )
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetFolder*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.GetFolder
-  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_GetFolder_System_String_System_Boolean_
-  name: GetFolder
-  nameWithType: Folder.GetFolder
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetFolder
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetArchives*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.GetArchives
-  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_GetArchives_System_String_System_Boolean_
-  name: GetArchives
-  nameWithType: Folder.GetArchives
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetArchives
-- uid: Cobilas.GodotEngine.Utility.IO.Archive[]
-  isExternal: true
-  href: Cobilas.GodotEngine.Utility.IO.Archive.html
-  name: Archive[]
-  nameWithType: Archive[]
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive[]
-  nameWithType.vb: Archive()
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive()
-  name.vb: Archive()
-  spec.csharp:
-  - uid: Cobilas.GodotEngine.Utility.IO.Archive
-    name: Archive
-    href: Cobilas.GodotEngine.Utility.IO.Archive.html
-  - name: '['
-  - name: ']'
-  spec.vb:
-  - uid: Cobilas.GodotEngine.Utility.IO.Archive
-    name: Archive
-    href: Cobilas.GodotEngine.Utility.IO.Archive.html
-  - name: (
-  - name: )
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetArchive*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.GetArchive
-  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_GetArchive_System_String_System_Boolean_
-  name: GetArchive
-  nameWithType: Folder.GetArchive
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetArchive
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.ToString*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.ToString
-  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_ToString_System_Boolean_
-  name: ToString
-  nameWithType: Folder.ToString
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.ToString
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
-- uid: Cobilas.GodotEngine.Utility.IO.DataBase.ToString(System.String,System.IFormatProvider)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.DataBase.ToString(System.String,System.IFormatProvider)
-  parent: Cobilas.GodotEngine.Utility.IO.DataBase
-  isExternal: true
-  href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_ToString_System_String_System_IFormatProvider_
-  name: ToString(string, IFormatProvider)
-  nameWithType: DataBase.ToString(string, IFormatProvider)
-  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.ToString(string, System.IFormatProvider)
-  nameWithType.vb: DataBase.ToString(String, IFormatProvider)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.DataBase.ToString(String, System.IFormatProvider)
-  name.vb: ToString(String, IFormatProvider)
-  spec.csharp:
-  - uid: Cobilas.GodotEngine.Utility.IO.DataBase.ToString(System.String,System.IFormatProvider)
-    name: ToString
-    href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_ToString_System_String_System_IFormatProvider_
-  - name: (
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: ','
-  - name: " "
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
-  - name: )
-  spec.vb:
-  - uid: Cobilas.GodotEngine.Utility.IO.DataBase.ToString(System.String,System.IFormatProvider)
-    name: ToString
-    href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_ToString_System_String_System_IFormatProvider_
-  - name: (
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: ','
-  - name: " "
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
-  - name: )
-- uid: System.IFormatProvider
-  commentId: T:System.IFormatProvider
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
-  name: IFormatProvider
-  nameWithType: IFormatProvider
-  fullName: System.IFormatProvider
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetEnumerator*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.GetEnumerator
-  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_GetEnumerator
-  name: GetEnumerator
-  nameWithType: Folder.GetEnumerator
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetEnumerator
-- uid: System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.Utility.IO.DataBase}.GetEnumerator
-  commentId: M:System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.Utility.IO.DataBase}.GetEnumerator
-  parent: System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.Utility.IO.DataBase}
-  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
-  name: GetEnumerator()
-  nameWithType: IEnumerable<DataBase>.GetEnumerator()
-  fullName: System.Collections.Generic.IEnumerable<Cobilas.GodotEngine.Utility.IO.DataBase>.GetEnumerator()
-  nameWithType.vb: IEnumerable(Of DataBase).GetEnumerator()
-  fullName.vb: System.Collections.Generic.IEnumerable(Of Cobilas.GodotEngine.Utility.IO.DataBase).GetEnumerator()
-  spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.Utility.IO.DataBase}.GetEnumerator
-    name: GetEnumerator
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Collections.Generic.IEnumerable{Cobilas.GodotEngine.Utility.IO.DataBase}.GetEnumerator
-    name: GetEnumerator
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
-  - name: (
-  - name: )
-- uid: System.Collections.Generic.IEnumerator{Cobilas.GodotEngine.Utility.IO.DataBase}
-  commentId: T:System.Collections.Generic.IEnumerator{Cobilas.GodotEngine.Utility.IO.DataBase}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.IEnumerator`1
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
-  name: IEnumerator<DataBase>
-  nameWithType: IEnumerator<DataBase>
-  fullName: System.Collections.Generic.IEnumerator<Cobilas.GodotEngine.Utility.IO.DataBase>
-  nameWithType.vb: IEnumerator(Of DataBase)
-  fullName.vb: System.Collections.Generic.IEnumerator(Of Cobilas.GodotEngine.Utility.IO.DataBase)
-  name.vb: IEnumerator(Of DataBase)
-  spec.csharp:
-  - uid: System.Collections.Generic.IEnumerator`1
-    name: IEnumerator
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
-  - name: <
-  - uid: Cobilas.GodotEngine.Utility.IO.DataBase
-    name: DataBase
-    href: Cobilas.GodotEngine.Utility.IO.DataBase.html
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.IEnumerator`1
-    name: IEnumerator
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Cobilas.GodotEngine.Utility.IO.DataBase
-    name: DataBase
-    href: Cobilas.GodotEngine.Utility.IO.DataBase.html
-  - name: )
-- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
-  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
-  name: GetEnumerator()
-  nameWithType: IEnumerable<T>.GetEnumerator()
-  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
-  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
-  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
-  spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
-    name: GetEnumerator
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
-    name: GetEnumerator
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
-  - name: (
-  - name: )
-- uid: System.Collections.Generic.IEnumerator`1
-  commentId: T:System.Collections.Generic.IEnumerator`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
-  name: IEnumerator<T>
-  nameWithType: IEnumerator<T>
-  fullName: System.Collections.Generic.IEnumerator<T>
-  nameWithType.vb: IEnumerator(Of T)
-  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
-  name.vb: IEnumerator(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.IEnumerator`1
-    name: IEnumerator
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.IEnumerator`1
-    name: IEnumerator
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-- uid: Cobilas.GodotEngine.Utility.IO.DataBase.Dispose
-  commentId: M:Cobilas.GodotEngine.Utility.IO.DataBase.Dispose
-  parent: Cobilas.GodotEngine.Utility.IO.DataBase
-  href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_Dispose
-  name: Dispose()
-  nameWithType: DataBase.Dispose()
-  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.Dispose()
-  spec.csharp:
-  - uid: Cobilas.GodotEngine.Utility.IO.DataBase.Dispose
-    name: Dispose
-    href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_Dispose
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: Cobilas.GodotEngine.Utility.IO.DataBase.Dispose
-    name: Dispose
-    href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_Dispose
-  - name: (
-  - name: )
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.Dispose*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.Dispose
-  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_Dispose
-  name: Dispose
-  nameWithType: Folder.Dispose
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.Dispose
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.CreateRes*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.CreateRes
-  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_CreateRes
-  name: CreateRes
-  nameWithType: Folder.CreateRes
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.CreateRes
-- uid: Cobilas.GodotEngine.Utility.IO.Folder.CreateUser*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.CreateUser
-  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_CreateUser
-  name: CreateUser
-  nameWithType: Folder.CreateUser
-  fullName: Cobilas.GodotEngine.Utility.IO.Folder.CreateUser
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO
+    name: IO
+    href: Cobilas.GodotEngine.Utility.IO.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO.Interfaces
+    name: Interfaces
+    href: Cobilas.GodotEngine.Utility.IO.Interfaces.html
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.OpenRes*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.OpenRes
+  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_OpenRes_System_Boolean_
+  name: OpenRes
+  nameWithType: Folder.OpenRes
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.OpenRes
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.OpenUser*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.OpenUser
+  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_OpenUser_System_Boolean_
+  name: OpenUser
+  nameWithType: Folder.OpenUser
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.OpenUser
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  commentId: T:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html
+  name: IDataInfo
+  nameWithType: IDataInfo
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
 - uid: Cobilas.GodotEngine.Utility.IO.Folder.Create*
   commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.Create
   href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_Create_System_String_
   name: Create
   nameWithType: Folder.Create
   fullName: Cobilas.GodotEngine.Utility.IO.Folder.Create
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.Delete*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.Delete
+  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_Delete_System_String_
+  name: Delete
+  nameWithType: Folder.Delete
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.Delete
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.Exists*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.Exists
+  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_Exists_System_String_
+  name: Exists
+  nameWithType: Folder.Exists
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.Exists
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.Move*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.Move
+  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_Move_System_String_System_String_
+  name: Move
+  nameWithType: Folder.Move
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.Move
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.Rename*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.Rename
+  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_Rename_System_String_System_String_
+  name: Rename
+  nameWithType: Folder.Rename
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.Rename
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo
+  commentId: T:Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.html
+  name: IArchiveInfo
+  nameWithType: IArchiveInfo
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetArchives*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.GetArchives
+  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_GetArchives_System_String_
+  name: GetArchives
+  nameWithType: Folder.GetArchives
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetArchives
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo[]
+  isExternal: true
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.html
+  name: IArchiveInfo[]
+  nameWithType: IArchiveInfo[]
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo[]
+  nameWithType.vb: IArchiveInfo()
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo()
+  name.vb: IArchiveInfo()
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo
+    name: IArchiveInfo
+    href: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo
+    name: IArchiveInfo
+    href: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.html
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetFolders*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.GetFolders
+  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_GetFolders_System_String_
+  name: GetFolders
+  nameWithType: Folder.GetFolders
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetFolders
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo[]
+  isExternal: true
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo.html
+  name: IFolderInfo[]
+  nameWithType: IFolderInfo[]
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo[]
+  nameWithType.vb: IFolderInfo()
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo()
+  name.vb: IFolderInfo()
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo
+    name: IFolderInfo
+    href: Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo
+    name: IFolderInfo
+    href: Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo.html
+  - name: (
+  - name: )
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetCreationTime*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.GetCreationTime
+  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_GetCreationTime_System_String_
+  name: GetCreationTime
+  nameWithType: Folder.GetCreationTime
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetCreationTime
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetCreationTimeUtc*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.GetCreationTimeUtc
+  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_GetCreationTimeUtc_System_String_
+  name: GetCreationTimeUtc
+  nameWithType: Folder.GetCreationTimeUtc
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetCreationTimeUtc
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetLastAccessTime*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.GetLastAccessTime
+  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_GetLastAccessTime_System_String_
+  name: GetLastAccessTime
+  nameWithType: Folder.GetLastAccessTime
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetLastAccessTime
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetLastAccessTimeUtc*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.GetLastAccessTimeUtc
+  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_GetLastAccessTimeUtc_System_String_
+  name: GetLastAccessTimeUtc
+  nameWithType: Folder.GetLastAccessTimeUtc
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetLastAccessTimeUtc
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetLastWriteTime*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.GetLastWriteTime
+  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_GetLastWriteTime_System_String_
+  name: GetLastWriteTime
+  nameWithType: Folder.GetLastWriteTime
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetLastWriteTime
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetLastWriteTimeUtc*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.GetLastWriteTimeUtc
+  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_GetLastWriteTimeUtc_System_String_
+  name: GetLastWriteTimeUtc
+  nameWithType: Folder.GetLastWriteTimeUtc
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetLastWriteTimeUtc
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.Null
+  commentId: P:Cobilas.GodotEngine.Utility.IO.DataNull.Null
+  href: Cobilas.GodotEngine.Utility.IO.DataNull.html#Cobilas_GodotEngine_Utility_IO_DataNull_Null
+  name: "Null"
+  nameWithType: DataNull.Null
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.Null
+- uid: Cobilas.GodotEngine.Utility.IO.Folder.GetParent*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Folder.GetParent
+  href: Cobilas.GodotEngine.Utility.IO.Folder.html#Cobilas_GodotEngine_Utility_IO_Folder_GetParent_Cobilas_GodotEngine_Utility_IO_Interfaces_IFolderInfo_
+  name: GetParent
+  nameWithType: Folder.GetParent
+  fullName: Cobilas.GodotEngine.Utility.IO.Folder.GetParent

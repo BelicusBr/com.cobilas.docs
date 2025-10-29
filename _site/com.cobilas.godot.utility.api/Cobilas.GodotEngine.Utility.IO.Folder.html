@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Folder | Cobilas Documentation ">
       
-      <meta name="description" content="A representation of a system folder.">
+      <meta name="description" content="Provides static methods for working with folders and directories in both Godot and system file systems.">
       <link rel="icon" href="../images/favicon-96x96.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,12 +97,13 @@ Class Folder  <a class="header-action link-secondary" title="View source" href="
   <dl><dt>Assembly</dt><dd>com.cobilas.godot.utility.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>A representation of a system folder.</p>
+  <div class="markdown summary"><p>Provides static methods for working with folders and directories in
+both Godot and system file systems.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Folder : DataBase, IDisposable, IFormattable, IEnumerable&lt;DataBase&gt;, IEnumerable</code></pre>
+    <pre><code class="lang-csharp hljs">public static class Folder</code></pre>
   </div>
 
 
@@ -112,27 +113,17 @@ Class Folder  <a class="header-action link-secondary" title="View source" href="
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="Cobilas.GodotEngine.Utility.IO.DataBase.html">DataBase</a></div>
       <div><span class="xref">Folder</span></div>
     </dd>
   </dl>
 
-  <dl class="typelist implements">
-    <dt>Implements</dt>
-    <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformattable">IFormattable</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.IO.DataBase.html">DataBase</a>&gt;</div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
-    </dd>
-  </dl>
 
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_GetDataPath_Cobilas_GodotEngine_Utility_IO_DataBase_">DataBase.GetDataPath(DataBase)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
@@ -157,65 +148,29 @@ Class Folder  <a class="header-action link-secondary" title="View source" href="
 
 
 
-
-
-  <h2 class="section" id="constructors">Constructors
-</h2>
-
-
-  <a id="Cobilas_GodotEngine_Utility_IO_Folder__ctor_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.#ctor*"></a>
-
-  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder__ctor_Cobilas_GodotEngine_Utility_IO_DataBase_System_String_Cobilas_GodotEngine_Utility_IO_ArchiveAttributes_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.#ctor(Cobilas.GodotEngine.Utility.IO.DataBase,System.String,Cobilas.GodotEngine.Utility.IO.ArchiveAttributes)">
-  Folder(DataBase?, string?, ArchiveAttributes)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L33"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Creates a new instance of this object.</p>
+  <h2 id="Cobilas_GodotEngine_Utility_IO_Folder_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This class offers a unified interface for folder operations that works seamlessly
+across Godot's virtual file system and the underlying operating system's file system.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Folder(DataBase? parent, string? dataName, ArchiveAttributes attributes)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>parent</code> <a class="xref" href="Cobilas.GodotEngine.Utility.IO.DataBase.html">DataBase</a></dt>
-    <dd></dd>
-    <dt><code>dataName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>attributes</code> <a class="xref" href="Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.html">ArchiveAttributes</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
 
 
   <h2 class="section" id="properties">Properties
 </h2>
 
 
-  <a id="Cobilas_GodotEngine_Utility_IO_Folder_Attributes_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.Attributes*"></a>
+  <a id="Cobilas_GodotEngine_Utility_IO_Folder_LogicalDrives_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.LogicalDrives*"></a>
 
-  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_Attributes" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.Attributes">
-  Attributes
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_LogicalDrives" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.LogicalDrives">
+  LogicalDrives
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The attributes of the data file.</p>
+  <div class="markdown level1 summary"><p>Gets the logical drives available on the system.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override ArchiveAttributes Attributes { get; protected set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static string[] LogicalDrives { get; }</code></pre>
   </div>
 
 
@@ -224,140 +179,8 @@ Class Folder  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.html">ArchiveAttributes</a></dt>
-    <dd><p>Returns the attributes of the data file.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Cobilas_GodotEngine_Utility_IO_Folder_Name_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.Name*"></a>
-
-  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_Name" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.Name">
-  Name
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L26"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Data file name.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string? Name { get; protected set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Returns a string containing the name of the data file.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Cobilas_GodotEngine_Utility_IO_Folder_Null_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.Null*"></a>
-
-  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_Null" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.Null">
-  Null
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L31"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>A null representation of the <a class="xref" href="Cobilas.GodotEngine.Utility.IO.Folder.html">Folder</a> object.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Folder Null { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.IO.Folder.html">Folder</a></dt>
-    <dd><p>Returns a null representation of the <a class="xref" href="Cobilas.GodotEngine.Utility.IO.Folder.html">Folder</a> object.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Cobilas_GodotEngine_Utility_IO_Folder_Parent_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.Parent*"></a>
-
-  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_Parent" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.Parent">
-  Parent
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L22"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>The parent element of the data file.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override DataBase? Parent { get; protected set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.IO.DataBase.html">DataBase</a></dt>
-    <dd><p>Returns parent element of data file.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Cobilas_GodotEngine_Utility_IO_Folder_Path_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.Path*"></a>
-
-  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_Path" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.Path">
-  Path
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L20"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>The full path of the data file.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string Path { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Returns a string containing the full path of the data file.</p>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>An array of strings representing the logical drives (e.g., &quot;C:&quot;, &quot;D:&quot;).</p>
 </dd>
   </dl>
 
@@ -372,71 +195,32 @@ Class Folder  <a class="header-action link-secondary" title="View source" href="
 </h2>
 
 
-  <a id="Cobilas_GodotEngine_Utility_IO_Folder_ArchiveExists_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.ArchiveExists*"></a>
-
-  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_ArchiveExists_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.ArchiveExists(System.String)">
-  ArchiveExists(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L171"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Checks if a file exists.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool ArchiveExists(string archiveName)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>archiveName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The name of the archive.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>Returns <code>true</code> when the specified element exists.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
   <a id="Cobilas_GodotEngine_Utility_IO_Folder_Create_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.Create*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_Create_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.Create(System.String)">
   Create(string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L372"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Creates a new instance containing a specified directory.</p>
+  <div class="markdown level1 summary"><p>Creates a new folder at the specified path.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Folder Create(string? path)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IDataInfo Create(string? path)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The path that will be instantiated.</p>
+    <dd><p>The full path where the folder should be created.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.IO.Folder.html">Folder</a></dt>
-    <dd><p>Returns the representation of a folder.</p>
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html">IDataInfo</a></dt>
+    <dd><p>An <a class="xref" href="Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html">IDataInfo</a> instance representing the newly created folder.</p>
 </dd>
   </dl>
 
@@ -450,242 +234,38 @@ Class Folder  <a class="header-action link-secondary" title="View source" href="
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
-    <dd><p>Occurs if the <code class="paramref">path</code> parameter is null.</p>
+    <dd><p>Thrown when path is null.</p>
 </dd>
   </dl>
 
 
 
-  <a id="Cobilas_GodotEngine_Utility_IO_Folder_CreateArchive_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.CreateArchive*"></a>
+  <a id="Cobilas_GodotEngine_Utility_IO_Folder_Delete_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.Delete*"></a>
 
-  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_CreateArchive_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.CreateArchive(System.String)">
-  CreateArchive(string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_Delete_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.Delete(System.String)">
+  Delete(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L61"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Allows you to create a new file in the current folder.</p>
+  <div class="markdown level1 summary"><p>Deletes the folder at the specified path and all its contents.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Archive CreateArchive(string? fileName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool Delete(string? path)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The name of this new file.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.IO.Archive.html">Archive</a></dt>
-    <dd><p>Returns the new file that was created in the current folder.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.readonlyexception">ReadOnlyException</a></dt>
-    <dd><p>Will occur if the method is called on an object that is marked as read-only.</p>
-</dd>
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
-    <dd><p>Occurs if the <code class="paramref">fileName</code> parameter is null.</p>
-</dd>
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
-    <dd><p>Occurs when the name of the new file has an invalid character.</p>
-</dd>
-  </dl>
-
-
-
-  <a id="Cobilas_GodotEngine_Utility_IO_Folder_CreateFolder_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.CreateFolder*"></a>
-
-  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_CreateFolder_System_String_System_Boolean_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.CreateFolder(System.String,System.Boolean)">
-  CreateFolder(string?, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L39"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Allows the creation of a new folder in the current folder.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Folder CreateFolder(string? folderName, bool recursive = false)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>folderName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The name of the new folder.</p>
-</dd>
-    <dt><code>recursive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>Allows the creation of a folder within another in a cascade fashion. <code>(exp: Folder1/Folder2/Folder3/Folder4)</code></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.IO.Folder.html">Folder</a></dt>
-    <dd><p>Returns the newly created folder.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
-    <dd><p>Occurs if the <code class="paramref">folderName</code> parameter is null.</p>
-</dd>
-  </dl>
-
-
-
-  <a id="Cobilas_GodotEngine_Utility_IO_Folder_CreateRes_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.CreateRes*"></a>
-
-  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_CreateRes" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.CreateRes">
-  CreateRes()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L364"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Creates a new instance containing a representation of the <code>res://</code> folder.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Folder CreateRes()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.IO.Folder.html">Folder</a></dt>
-    <dd><p>Returns the representation of a folder.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
-    <dd><p>Occurs if the <code class="paramref">path</code> parameter is null.</p>
-</dd>
-  </dl>
-
-
-
-  <a id="Cobilas_GodotEngine_Utility_IO_Folder_CreateUser_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.CreateUser*"></a>
-
-  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_CreateUser" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.CreateUser">
-  CreateUser()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L367"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Creates a new instance containing a representation of the <code>user://</code> folder.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Folder CreateUser()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.IO.Folder.html">Folder</a></dt>
-    <dd><p>Returns the representation of a folder.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
-    <dd><p>Occurs if the <code class="paramref">path</code> parameter is null.</p>
-</dd>
-  </dl>
-
-
-
-  <a id="Cobilas_GodotEngine_Utility_IO_Folder_Dispose_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.Dispose*"></a>
-
-  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_Dispose" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.Dispose">
-  Dispose()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L277"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Cobilas_GodotEngine_Utility_IO_Folder_FolderExists_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.FolderExists*"></a>
-
-  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_FolderExists_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.FolderExists(System.String)">
-  FolderExists(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L167"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Checks if a folder exists.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool FolderExists(string folderName)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>folderName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The name of the folder.</p>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to the folder to delete.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>Returns <code>true</code> when the specified element exists.</p>
+    <dd><p>true if the folder was successfully deleted; otherwise, false.</p>
 </dd>
   </dl>
 
@@ -695,39 +275,46 @@ Class Folder  <a class="header-action link-secondary" title="View source" href="
 
 
 
+  <h4 class="section" id="Cobilas_GodotEngine_Utility_IO_Folder_Delete_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method will not delete internal Godot folders. If the path is empty or null,
+the operation will return false without throwing an exception.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when path is null.</p>
+</dd>
+  </dl>
 
 
 
+  <a id="Cobilas_GodotEngine_Utility_IO_Folder_Exists_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.Exists*"></a>
 
-  <a id="Cobilas_GodotEngine_Utility_IO_Folder_GetArchive_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetArchive*"></a>
-
-  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_GetArchive_System_String_System_Boolean_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetArchive(System.String,System.Boolean)">
-  GetArchive(string?, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_Exists_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.Exists(System.String)">
+  Exists(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets the target archive from the current folder.</p>
+  <div class="markdown level1 summary"><p>Determines whether the specified folder exists.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Archive GetArchive(string? fileName, bool recursive = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool Exists(string? path)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The name of the archive.</p>
-</dd>
-    <dt><code>recursive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>Allows you to get a specified archive in the current folder or its subfolders</p>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to check for existence.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.IO.Archive.html">Archive</a></dt>
-    <dd><p>Returns the specified archive. If not found, a null representation will be returned.</p>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the folder exists; otherwise, false.</p>
 </dd>
   </dl>
 
@@ -737,36 +324,45 @@ Class Folder  <a class="header-action link-secondary" title="View source" href="
 
 
 
+  <h4 class="section" id="Cobilas_GodotEngine_Utility_IO_Folder_Exists_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method works with both system directories and Godot's virtual file system.</p>
+</div>
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when path is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_IO_Folder_GetArchives_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetArchives*"></a>
 
-  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_GetArchives_System_Boolean_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetArchives(System.Boolean)">
-  GetArchives(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_GetArchives_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetArchives(System.String)">
+  GetArchives(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets the target archive from the current folder.</p>
+  <div class="markdown level1 summary"><p>Gets all archive files in the specified folder.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Archive[]? GetArchives(bool recursive = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IArchiveInfo[] GetArchives(string? path)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>recursive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>Allows you to get a specified archive in the current folder or its subfolders</p>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to search for archive files.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.IO.Archive.html">Archive</a>[]</dt>
-    <dd><p>Returns the specified archive. If not found, a null representation will be returned.</p>
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.html">IArchiveInfo</a>[]</dt>
+    <dd><p>An array of <a class="xref" href="Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.html">IArchiveInfo</a> representing the archive files found.</p>
 </dd>
   </dl>
 
@@ -777,38 +373,41 @@ Class Folder  <a class="header-action link-secondary" title="View source" href="
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when path is null.</p>
+</dd>
+  </dl>
 
 
 
-  <a id="Cobilas_GodotEngine_Utility_IO_Folder_GetArchives_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetArchives*"></a>
+  <a id="Cobilas_GodotEngine_Utility_IO_Folder_GetCreationTime_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetCreationTime*"></a>
 
-  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_GetArchives_System_String_System_Boolean_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetArchives(System.String,System.Boolean)">
-  GetArchives(string?, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_GetCreationTime_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetCreationTime(System.String)">
+  GetCreationTime(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L125"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets all archives in the current folder.</p>
+  <div class="markdown level1 summary"><p>Gets the creation time of the specified folder in local time.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Archive[]? GetArchives(string? search, bool recursive = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public static DateTime GetCreationTime(string? path)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>search</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Allows you to collect specific files. Use '|' to separate search conditions. (exp:&quot;.jpeg|.png|.txt&quot;)</p>
-</dd>
-    <dt><code>recursive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>Allows you to get a specified archives in the current folder or its subfolders.</p>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to the folder.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.IO.Archive.html">Archive</a>[]</dt>
-    <dd><p>Returns a list of all archives in the current folder.</p>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a> representing the folder's creation time in local time.</p>
 </dd>
   </dl>
 
@@ -819,71 +418,41 @@ Class Folder  <a class="header-action link-secondary" title="View source" href="
 
 
 
-
-
-
-  <a id="Cobilas_GodotEngine_Utility_IO_Folder_GetEnumerator_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetEnumerator*"></a>
-
-  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_GetEnumerator" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetEnumerator">
-  GetEnumerator()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L275"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the collection.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerator&lt;DataBase&gt; GetEnumerator()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
+  <h4 class="section">Exceptions</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="Cobilas.GodotEngine.Utility.IO.DataBase.html">DataBase</a>&gt;</dt>
-    <dd><p>An enumerator that can be used to iterate through the collection.</p>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when path is null.</p>
 </dd>
   </dl>
 
 
 
+  <a id="Cobilas_GodotEngine_Utility_IO_Folder_GetCreationTimeUtc_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetCreationTimeUtc*"></a>
 
-
-
-
-
-
-
-
-  <a id="Cobilas_GodotEngine_Utility_IO_Folder_GetFolder_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetFolder*"></a>
-
-  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_GetFolder_System_String_System_Boolean_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetFolder(System.String,System.Boolean)">
-  GetFolder(string?, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_GetCreationTimeUtc_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetCreationTimeUtc(System.String)">
+  GetCreationTimeUtc(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L134"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets the target folder from the current folder.</p>
+  <div class="markdown level1 summary"><p>Gets the creation time of the specified folder in UTC time.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Folder GetFolder(string? folderName, bool recursive = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public static DateTime GetCreationTimeUtc(string? path)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>folderName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The name of the folder.</p>
-</dd>
-    <dt><code>recursive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>Allows you to get a specified folder in the current folder or its subfolders.</p>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to the folder.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.IO.Folder.html">Folder</a></dt>
-    <dd><p>Returns the specified folder. If not found, a null representation will be returned.</p>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a> representing the folder's creation time in UTC.</p>
 </dd>
   </dl>
 
@@ -894,68 +463,41 @@ Class Folder  <a class="header-action link-secondary" title="View source" href="
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when path is null.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_GodotEngine_Utility_IO_Folder_GetFolders_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetFolders*"></a>
 
-  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_GetFolders" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetFolders">
-  GetFolders()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_GetFolders_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetFolders(System.String)">
+  GetFolders(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L116"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets all folders in the current folder.</p>
+  <div class="markdown level1 summary"><p>Gets all subfolders in the specified folder.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Folder[]? GetFolders()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.IO.Folder.html">Folder</a>[]</dt>
-    <dd><p>Returns a list of all folders in the current folder.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Cobilas_GodotEngine_Utility_IO_Folder_RemoveArchive_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.RemoveArchive*"></a>
-
-  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_RemoveArchive_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.RemoveArchive(System.String)">
-  RemoveArchive(string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L126"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Allows you to remove a file in the current folder.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool RemoveArchive(string? archiveName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IFolderInfo[] GetFolders(string? path)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>archiveName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The name of the archive.</p>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to search for subfolders.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>Returns <code>true</code> when the remove operation is successful.</p>
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo.html">IFolderInfo</a>[]</dt>
+    <dd><p>An array of <a class="xref" href="Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo.html">IFolderInfo</a> representing the subfolders found.</p>
 </dd>
   </dl>
 
@@ -968,42 +510,39 @@ Class Folder  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.readonlyexception">ReadOnlyException</a></dt>
-    <dd><p>Will occur if the method is called on an object that is marked as read-only.</p>
-</dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
-    <dd><p>Occurs if the <code class="paramref">archiveName</code> parameter is null.</p>
+    <dd><p>Thrown when path is null.</p>
 </dd>
   </dl>
 
 
 
-  <a id="Cobilas_GodotEngine_Utility_IO_Folder_RemoveFolder_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.RemoveFolder*"></a>
+  <a id="Cobilas_GodotEngine_Utility_IO_Folder_GetLastAccessTime_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetLastAccessTime*"></a>
 
-  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_RemoveFolder_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.RemoveFolder(System.String)">
-  RemoveFolder(string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_GetLastAccessTime_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetLastAccessTime(System.String)">
+  GetLastAccessTime(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L143"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Allows the removal of a folder.</p>
+  <div class="markdown level1 summary"><p>Gets the last access time of the specified folder in local time.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool RemoveFolder(string? folderName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static DateTime GetLastAccessTime(string? path)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>folderName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The name of the folder.</p>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to the folder.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>Returns <code>true</code> when the remove operation is successful.</p>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a> representing the folder's last access time in local time.</p>
 </dd>
   </dl>
 
@@ -1016,45 +555,507 @@ Class Folder  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.readonlyexception">ReadOnlyException</a></dt>
-    <dd><p>Will occur if the method is called on an object that is marked as read-only.</p>
-</dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
-    <dd><p>Occurs if the <code class="paramref">folderName</code> parameter is null.</p>
+    <dd><p>Thrown when path is null.</p>
 </dd>
   </dl>
 
 
 
-  <a id="Cobilas_GodotEngine_Utility_IO_Folder_RenameArchive_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.RenameArchive*"></a>
+  <a id="Cobilas_GodotEngine_Utility_IO_Folder_GetLastAccessTimeUtc_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetLastAccessTimeUtc*"></a>
 
-  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_RenameArchive_System_String_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.RenameArchive(System.String,System.String)">
-  RenameArchive(string?, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_GetLastAccessTimeUtc_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetLastAccessTimeUtc(System.String)">
+  GetLastAccessTimeUtc(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L152"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Allows renaming of a file in the current folder.</p>
+  <div class="markdown level1 summary"><p>Gets the last access time of the specified folder in UTC time.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool RenameArchive(string? oldName, string? newName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static DateTime GetLastAccessTimeUtc(string? path)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>oldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The name of the archive.</p>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to the folder.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a> representing the folder's last access time in UTC.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when path is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_Folder_GetLastWriteTime_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetLastWriteTime*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_GetLastWriteTime_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetLastWriteTime(System.String)">
+  GetLastWriteTime(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the last write time of the specified folder in local time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime GetLastWriteTime(string? path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to the folder.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a> representing the folder's last write time in local time.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when path is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_Folder_GetLastWriteTimeUtc_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetLastWriteTimeUtc*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_GetLastWriteTimeUtc_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetLastWriteTimeUtc(System.String)">
+  GetLastWriteTimeUtc(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the last write time of the specified folder in UTC time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime GetLastWriteTimeUtc(string? path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to the folder.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a> representing the folder's last write time in UTC.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when path is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_Folder_GetParent_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetParent*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_GetParent_Cobilas_GodotEngine_Utility_IO_Interfaces_IFolderInfo_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.GetParent(Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo)">
+  GetParent(IFolderInfo?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the parent folder of the specified folder information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDataInfo GetParent(IFolderInfo? data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo.html">IFolderInfo</a></dt>
+    <dd><p>The folder information to get the parent of.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html">IDataInfo</a></dt>
+    <dd><p>An <a class="xref" href="Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html">IDataInfo</a> representing the parent folder, or <a class="xref" href="Cobilas.GodotEngine.Utility.IO.DataNull.html#Cobilas_GodotEngine_Utility_IO_DataNull_Null">Null</a> if there is no parent.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when data is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_Folder_Move_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.Move*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_Move_System_String_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.Move(System.String,System.String)">
+  Move(string?, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Moves a folder to a new location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Move(string? path, string? destinationPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The current path of the folder.</p>
+</dd>
+    <dt><code>destinationPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The new path for the folder.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the folder was successfully moved; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when either path is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_Folder_Open_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.Open*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_Open_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.Open(System.String)">
+  Open(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Opens a folder at the specified path, automatically skipping hidden items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IFolderInfo Open(string? path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to the folder. If null, an exception will be thrown.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo.html">IFolderInfo</a></dt>
+    <dd><p>An <a class="xref" href="Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo.html">IFolderInfo</a> instance representing the opened folder.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when path is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_Folder_Open_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.Open*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_Open_System_String_System_Boolean_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.Open(System.String,System.Boolean)">
+  Open(string?, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Opens a folder at the specified path with the option to skip hidden items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IFolderInfo Open(string? path, bool skipHidden)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to the folder. If null, an exception will be thrown.</p>
+</dd>
+    <dt><code>skipHidden</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether to skip hidden files and folders in the enumeration.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo.html">IFolderInfo</a></dt>
+    <dd><p>An <a class="xref" href="Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo.html">IFolderInfo</a> instance representing the opened folder.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when path is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_Folder_OpenRes_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.OpenRes*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_OpenRes" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.OpenRes">
+  OpenRes()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Opens the Godot resource path folder, automatically skipping hidden items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IFolderInfo OpenRes()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo.html">IFolderInfo</a></dt>
+    <dd><p>An <a class="xref" href="Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo.html">IFolderInfo</a> instance representing the Godot resource folder.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_Folder_OpenRes_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.OpenRes*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_OpenRes_System_Boolean_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.OpenRes(System.Boolean)">
+  OpenRes(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Opens the Godot resource path folder with the option to skip hidden items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IFolderInfo OpenRes(bool skipHidden)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>skipHidden</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether to skip hidden files and folders in the enumeration.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo.html">IFolderInfo</a></dt>
+    <dd><p>An <a class="xref" href="Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo.html">IFolderInfo</a> instance representing the Godot resource folder.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_Folder_OpenUser_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.OpenUser*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_OpenUser" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.OpenUser">
+  OpenUser()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Opens the Godot user data path folder, automatically skipping hidden items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IFolderInfo OpenUser()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo.html">IFolderInfo</a></dt>
+    <dd><p>An <a class="xref" href="Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo.html">IFolderInfo</a> instance representing the Godot user data folder.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_Folder_OpenUser_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.OpenUser*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_OpenUser_System_Boolean_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.OpenUser(System.Boolean)">
+  OpenUser(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Opens the Godot user data path folder with the option to skip hidden items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IFolderInfo OpenUser(bool skipHidden)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>skipHidden</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether to skip hidden files and folders in the enumeration.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo.html">IFolderInfo</a></dt>
+    <dd><p>An <a class="xref" href="Cobilas.GodotEngine.Utility.IO.Interfaces.IFolderInfo.html">IFolderInfo</a> instance representing the Godot user data folder.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Utility_IO_Folder_Rename_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.Rename*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_Rename_System_String_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.Rename(System.String,System.String)">
+  Rename(string?, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renames a folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Rename(string? folderPath, string? newName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>folderPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The current full path of the folder.</p>
 </dd>
     <dt><code>newName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The new name of the archive.</p>
+    <dd><p>The new name for the folder.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>Returns <code>true</code> when the rename operation was successful.</p>
+    <dd><p>true if the folder was successfully renamed; otherwise, false.</p>
 </dd>
   </dl>
 
@@ -1067,189 +1068,10 @@ Class Folder  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.readonlyexception">ReadOnlyException</a></dt>
-    <dd><p>Will occur if the method is called on an object that is marked as read-only.</p>
-</dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
-    <dd><p>Occurs if the <code class="paramref">oldName</code> parameter is null.</p>
-</dd>
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
-    <dd><p>Occurs if the <code class="paramref">newName</code> parameter is null.</p>
-</dd>
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
-    <dd><p>Occurs when the name of the new file has an invalid character.</p>
+    <dd><p>Thrown when either parameter is null.</p>
 </dd>
   </dl>
-
-
-
-  <a id="Cobilas_GodotEngine_Utility_IO_Folder_RenameFolder_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.RenameFolder*"></a>
-
-  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_RenameFolder_System_String_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.RenameFolder(System.String,System.String)">
-  RenameFolder(string?, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L76"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Allows you to rename the folder.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool RenameFolder(string? oldName, string? newName)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>oldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The name of the folder.</p>
-</dd>
-    <dt><code>newName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The new name of the folder.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>Returns <code>true</code> when the rename operation was successful.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.readonlyexception">ReadOnlyException</a></dt>
-    <dd><p>Will occur if the method is called on an object that is marked as read-only.</p>
-</dd>
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
-    <dd><p>Occurs if the <code class="paramref">oldName</code> parameter is null.</p>
-</dd>
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
-    <dd><p>Occurs if the <code class="paramref">newName</code> parameter is null.</p>
-</dd>
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
-    <dd><p>Occurs when the name of the new file has an invalid character.</p>
-</dd>
-  </dl>
-
-
-
-  <a id="Cobilas_GodotEngine_Utility_IO_Folder_ToString_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.ToString*"></a>
-
-  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_ToString" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.ToString">
-  ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L261"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>A string that represents the current object.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Cobilas_GodotEngine_Utility_IO_Folder_ToString_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.ToString*"></a>
-
-  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_ToString_System_Boolean_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.ToString(System.Boolean)">
-  ToString(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L259"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ToString(bool recursive)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>recursive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>A string that represents the current object.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Cobilas_GodotEngine_Utility_IO_Folder_ToString_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.ToString*"></a>
-
-  <h3 id="Cobilas_GodotEngine_Utility_IO_Folder_ToString_System_String_System_IFormatProvider_" data-uid="Cobilas.GodotEngine.Utility.IO.Folder.ToString(System.String,System.IFormatProvider)">
-  ToString(string, IFormatProvider)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/Folder.cs/#L263"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Formats the value of the current instance using the specified format.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString(string format, IFormatProvider formatProvider)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The format to use.-or- A null reference (<code>Nothing</code> in Visual Basic) to use the default format defined for the type of the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformattable">IFormattable</a> implementation.</p>
-</dd>
-    <dt><code>formatProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
-    <dd><p>The provider to use to format the value.-or- A null reference (<code>Nothing</code> in Visual Basic) to obtain the numeric format information from the current locale setting of the operating system.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The value of the current instance in the specified format.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
 
 
 

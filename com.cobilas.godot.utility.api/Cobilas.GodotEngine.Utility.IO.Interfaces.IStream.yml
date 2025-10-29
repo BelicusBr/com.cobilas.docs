@@ -1,0 +1,1190 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  commentId: T:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  id: IStream
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces
+  children:
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.AutoFlush
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.CanRead
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.CanWrite
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Flush
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(System.Char[]@)
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(System.String@)
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(System.Text.Encoding,System.Char[]@)
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(System.Text.Encoding,System.String@)
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(System.Text.Encoding,System.Text.StringBuilder@)
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(System.Text.StringBuilder@)
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(System.Byte[])
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(System.Char[])
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(System.Char[],System.Text.Encoding)
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(System.String)
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(System.String,System.Text.Encoding)
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(System.Text.StringBuilder)
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(System.Text.StringBuilder,System.Text.Encoding)
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(System.Byte[])
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(System.Char[])
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(System.Char[],System.Text.Encoding)
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(System.String)
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(System.String,System.Text.Encoding)
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(System.Text.StringBuilder)
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(System.Text.StringBuilder,System.Text.Encoding)
+  langs:
+  - csharp
+  - vb
+  name: IStream
+  nameWithType: IStream
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  type: Interface
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IStream.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: IStream
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IStream.cs
+    startLine: 6
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Represents a generic stream interface for reading from and writing to different data sources.
+  example: []
+  syntax:
+    content: 'public interface IStream : IDisposable'
+    content.vb: Public Interface IStream Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.CanRead
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.CanRead
+  id: CanRead
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  langs:
+  - csharp
+  - vb
+  name: CanRead
+  nameWithType: IStream.CanRead
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.CanRead
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IStream.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: CanRead
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IStream.cs
+    startLine: 8
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: When overridden in a derived class, gets a value indicating whether the current stream supports reading.
+  example: []
+  syntax:
+    content: bool CanRead { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the stream supports reading; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: ReadOnly Property CanRead As Boolean
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.CanRead*
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.CanWrite
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.CanWrite
+  id: CanWrite
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  langs:
+  - csharp
+  - vb
+  name: CanWrite
+  nameWithType: IStream.CanWrite
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.CanWrite
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IStream.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: CanWrite
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IStream.cs
+    startLine: 10
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: When overridden in a derived class, gets a value indicating whether the current stream supports writing.
+  example: []
+  syntax:
+    content: bool CanWrite { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the stream supports writing; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: ReadOnly Property CanWrite As Boolean
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.CanWrite*
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.AutoFlush
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.AutoFlush
+  id: AutoFlush
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  langs:
+  - csharp
+  - vb
+  name: AutoFlush
+  nameWithType: IStream.AutoFlush
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.AutoFlush
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IStream.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: AutoFlush
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IStream.cs
+    startLine: 17
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: >-
+    Gets or sets a value indicating whether the stream should automatically flush after 
+
+    each write operation.
+  example: []
+  syntax:
+    content: bool AutoFlush { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <code>true</code> if auto-flush is enabled; otherwise, <code>false</code>.
+    content.vb: Property AutoFlush As Boolean
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.AutoFlush*
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read
+  id: Read
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  langs:
+  - csharp
+  - vb
+  name: Read()
+  nameWithType: IStream.Read()
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IStream.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Read
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IStream.cs
+    startLine: 20
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Reads all bytes from the stream.
+  example: []
+  syntax:
+    content: byte[] Read()
+    return:
+      type: System.Byte[]
+      description: A byte array containing the data read from the stream.
+    content.vb: Function Read() As Byte()
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read*
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(System.Text.Encoding,System.String@)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(System.Text.Encoding,System.String@)
+  id: Read(System.Text.Encoding,System.String@)
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  langs:
+  - csharp
+  - vb
+  name: Read(Encoding?, out string)
+  nameWithType: IStream.Read(Encoding?, out string)
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(System.Text.Encoding?, out string)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IStream.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Read
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IStream.cs
+    startLine: 24
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Reads the stream content as a string using the specified encoding.
+  example: []
+  syntax:
+    content: void Read(Encoding? encoding, out string result)
+    parameters:
+    - id: encoding
+      type: System.Text.Encoding
+      description: The character encoding to use. If null, UTF-8 will be used.
+    - id: result
+      type: System.String
+      description: When this method returns, contains the string representation of the stream content.
+    content.vb: Sub Read(encoding As Encoding, result As String)
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read*
+  nameWithType.vb: IStream.Read(Encoding, String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(System.Text.Encoding, String)
+  name.vb: Read(Encoding, String)
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(System.Text.Encoding,System.Text.StringBuilder@)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(System.Text.Encoding,System.Text.StringBuilder@)
+  id: Read(System.Text.Encoding,System.Text.StringBuilder@)
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  langs:
+  - csharp
+  - vb
+  name: Read(Encoding?, out StringBuilder)
+  nameWithType: IStream.Read(Encoding?, out StringBuilder)
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(System.Text.Encoding?, out System.Text.StringBuilder)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IStream.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Read
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IStream.cs
+    startLine: 28
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Reads the stream content into a <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> using the specified encoding.
+  example: []
+  syntax:
+    content: void Read(Encoding? encoding, out StringBuilder result)
+    parameters:
+    - id: encoding
+      type: System.Text.Encoding
+      description: The character encoding to use. If null, UTF-8 will be used.
+    - id: result
+      type: System.Text.StringBuilder
+      description: When this method returns, contains the <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> with the stream content.
+    content.vb: Sub Read(encoding As Encoding, result As StringBuilder)
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read*
+  nameWithType.vb: IStream.Read(Encoding, StringBuilder)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(System.Text.Encoding, System.Text.StringBuilder)
+  name.vb: Read(Encoding, StringBuilder)
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(System.Text.Encoding,System.Char[]@)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(System.Text.Encoding,System.Char[]@)
+  id: Read(System.Text.Encoding,System.Char[]@)
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  langs:
+  - csharp
+  - vb
+  name: Read(Encoding?, out char[])
+  nameWithType: IStream.Read(Encoding?, out char[])
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(System.Text.Encoding?, out char[])
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IStream.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Read
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IStream.cs
+    startLine: 32
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Reads the stream content as a character array using the specified encoding.
+  example: []
+  syntax:
+    content: void Read(Encoding? encoding, out char[] result)
+    parameters:
+    - id: encoding
+      type: System.Text.Encoding
+      description: The character encoding to use. If null, UTF-8 will be used.
+    - id: result
+      type: System.Char[]
+      description: When this method returns, contains the character array representation of the stream content.
+    content.vb: Sub Read(encoding As Encoding, result As Char())
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read*
+  nameWithType.vb: IStream.Read(Encoding, Char())
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(System.Text.Encoding, Char())
+  name.vb: Read(Encoding, Char())
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(System.String@)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(System.String@)
+  id: Read(System.String@)
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  langs:
+  - csharp
+  - vb
+  name: Read(out string)
+  nameWithType: IStream.Read(out string)
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(out string)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IStream.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Read
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IStream.cs
+    startLine: 35
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Reads the stream content as a string using UTF-8 encoding.
+  example: []
+  syntax:
+    content: void Read(out string result)
+    parameters:
+    - id: result
+      type: System.String
+      description: When this method returns, contains the string representation of the stream content.
+    content.vb: Sub Read(result As String)
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read*
+  nameWithType.vb: IStream.Read(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(String)
+  name.vb: Read(String)
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(System.Text.StringBuilder@)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(System.Text.StringBuilder@)
+  id: Read(System.Text.StringBuilder@)
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  langs:
+  - csharp
+  - vb
+  name: Read(out StringBuilder)
+  nameWithType: IStream.Read(out StringBuilder)
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(out System.Text.StringBuilder)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IStream.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Read
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IStream.cs
+    startLine: 38
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Reads the stream content into a <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> using UTF-8 encoding.
+  example: []
+  syntax:
+    content: void Read(out StringBuilder result)
+    parameters:
+    - id: result
+      type: System.Text.StringBuilder
+      description: When this method returns, contains the <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> with the stream content.
+    content.vb: Sub Read(result As StringBuilder)
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read*
+  nameWithType.vb: IStream.Read(StringBuilder)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(System.Text.StringBuilder)
+  name.vb: Read(StringBuilder)
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(System.Char[]@)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(System.Char[]@)
+  id: Read(System.Char[]@)
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  langs:
+  - csharp
+  - vb
+  name: Read(out char[])
+  nameWithType: IStream.Read(out char[])
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(out char[])
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IStream.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Read
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IStream.cs
+    startLine: 41
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Reads the stream content as a character array using UTF-8 encoding.
+  example: []
+  syntax:
+    content: void Read(out char[] result)
+    parameters:
+    - id: result
+      type: System.Char[]
+      description: When this method returns, contains the character array representation of the stream content.
+    content.vb: Sub Read(result As Char())
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read*
+  nameWithType.vb: IStream.Read(Char())
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read(Char())
+  name.vb: Read(Char())
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(System.Byte[])
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(System.Byte[])
+  id: Write(System.Byte[])
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  langs:
+  - csharp
+  - vb
+  name: Write(byte[]?)
+  nameWithType: IStream.Write(byte[]?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(byte[]?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IStream.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Write
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IStream.cs
+    startLine: 44
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Writes a sequence of bytes to the stream.
+  example: []
+  syntax:
+    content: void Write(byte[]? buffer)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: The byte array to write. If null, no data is written.
+    content.vb: Sub Write(buffer As Byte())
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write*
+  nameWithType.vb: IStream.Write(Byte())
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(Byte())
+  name.vb: Write(Byte())
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(System.Char[],System.Text.Encoding)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(System.Char[],System.Text.Encoding)
+  id: Write(System.Char[],System.Text.Encoding)
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  langs:
+  - csharp
+  - vb
+  name: Write(char[]?, Encoding?)
+  nameWithType: IStream.Write(char[]?, Encoding?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(char[]?, System.Text.Encoding?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IStream.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Write
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IStream.cs
+    startLine: 48
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Writes a character array to the stream using the specified encoding.
+  example: []
+  syntax:
+    content: void Write(char[]? buffer, Encoding? encoding)
+    parameters:
+    - id: buffer
+      type: System.Char[]
+      description: The character array to write. If null, no data is written.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The character encoding to use. If null, UTF-8 will be used.
+    content.vb: Sub Write(buffer As Char(), encoding As Encoding)
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write*
+  nameWithType.vb: IStream.Write(Char(), Encoding)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(Char(), System.Text.Encoding)
+  name.vb: Write(Char(), Encoding)
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(System.String,System.Text.Encoding)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(System.String,System.Text.Encoding)
+  id: Write(System.String,System.Text.Encoding)
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  langs:
+  - csharp
+  - vb
+  name: Write(string?, Encoding?)
+  nameWithType: IStream.Write(string?, Encoding?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(string?, System.Text.Encoding?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IStream.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Write
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IStream.cs
+    startLine: 52
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Writes a string to the stream using the specified encoding.
+  example: []
+  syntax:
+    content: void Write(string? buffer, Encoding? encoding)
+    parameters:
+    - id: buffer
+      type: System.String
+      description: The string to write. If null, no data is written.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The character encoding to use. If null, UTF-8 will be used.
+    content.vb: Sub Write(buffer As String, encoding As Encoding)
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write*
+  nameWithType.vb: IStream.Write(String, Encoding)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(String, System.Text.Encoding)
+  name.vb: Write(String, Encoding)
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(System.Text.StringBuilder,System.Text.Encoding)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(System.Text.StringBuilder,System.Text.Encoding)
+  id: Write(System.Text.StringBuilder,System.Text.Encoding)
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  langs:
+  - csharp
+  - vb
+  name: Write(StringBuilder?, Encoding?)
+  nameWithType: IStream.Write(StringBuilder?, Encoding?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(System.Text.StringBuilder?, System.Text.Encoding?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IStream.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Write
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IStream.cs
+    startLine: 56
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Writes a <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> to the stream using the specified encoding.
+  example: []
+  syntax:
+    content: void Write(StringBuilder? buffer, Encoding? encoding)
+    parameters:
+    - id: buffer
+      type: System.Text.StringBuilder
+      description: The <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> to write. If null, no data is written.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The character encoding to use. If null, UTF-8 will be used.
+    content.vb: Sub Write(buffer As StringBuilder, encoding As Encoding)
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write*
+  nameWithType.vb: IStream.Write(StringBuilder, Encoding)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(System.Text.StringBuilder, System.Text.Encoding)
+  name.vb: Write(StringBuilder, Encoding)
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(System.Char[])
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(System.Char[])
+  id: Write(System.Char[])
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  langs:
+  - csharp
+  - vb
+  name: Write(char[]?)
+  nameWithType: IStream.Write(char[]?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(char[]?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IStream.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Write
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IStream.cs
+    startLine: 59
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Writes a character array to the stream using UTF-8 encoding.
+  example: []
+  syntax:
+    content: void Write(char[]? buffer)
+    parameters:
+    - id: buffer
+      type: System.Char[]
+      description: The character array to write. If null, no data is written.
+    content.vb: Sub Write(buffer As Char())
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write*
+  nameWithType.vb: IStream.Write(Char())
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(Char())
+  name.vb: Write(Char())
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(System.String)
+  id: Write(System.String)
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  langs:
+  - csharp
+  - vb
+  name: Write(string?)
+  nameWithType: IStream.Write(string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(string?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IStream.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Write
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IStream.cs
+    startLine: 62
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Writes a string to the stream using UTF-8 encoding.
+  example: []
+  syntax:
+    content: void Write(string? buffer)
+    parameters:
+    - id: buffer
+      type: System.String
+      description: The string to write. If null, no data is written.
+    content.vb: Sub Write(buffer As String)
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write*
+  nameWithType.vb: IStream.Write(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(String)
+  name.vb: Write(String)
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(System.Text.StringBuilder)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(System.Text.StringBuilder)
+  id: Write(System.Text.StringBuilder)
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  langs:
+  - csharp
+  - vb
+  name: Write(StringBuilder?)
+  nameWithType: IStream.Write(StringBuilder?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(System.Text.StringBuilder?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IStream.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Write
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IStream.cs
+    startLine: 65
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Writes a <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> to the stream using UTF-8 encoding.
+  example: []
+  syntax:
+    content: void Write(StringBuilder? buffer)
+    parameters:
+    - id: buffer
+      type: System.Text.StringBuilder
+      description: The <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> to write. If null, no data is written.
+    content.vb: Sub Write(buffer As StringBuilder)
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write*
+  nameWithType.vb: IStream.Write(StringBuilder)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write(System.Text.StringBuilder)
+  name.vb: Write(StringBuilder)
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Flush
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Flush
+  id: Flush
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  langs:
+  - csharp
+  - vb
+  name: Flush()
+  nameWithType: IStream.Flush()
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Flush()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IStream.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Flush
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IStream.cs
+    startLine: 67
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: When overridden in a derived class, clears all buffers for this stream and causes any buffered data to be written to the underlying device.
+  example: []
+  syntax:
+    content: void Flush()
+    content.vb: Sub Flush()
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Flush*
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: An I/O error occurs.
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(System.Byte[])
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(System.Byte[])
+  id: ReplaceBuffer(System.Byte[])
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  langs:
+  - csharp
+  - vb
+  name: ReplaceBuffer(byte[]?)
+  nameWithType: IStream.ReplaceBuffer(byte[]?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(byte[]?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IStream.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ReplaceBuffer
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IStream.cs
+    startLine: 70
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Replaces the entire stream content with the specified byte array.
+  example: []
+  syntax:
+    content: void ReplaceBuffer(byte[]? newBuffer)
+    parameters:
+    - id: newBuffer
+      type: System.Byte[]
+      description: The new byte array content. If null, the stream will be cleared.
+    content.vb: Sub ReplaceBuffer(newBuffer As Byte())
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer*
+  nameWithType.vb: IStream.ReplaceBuffer(Byte())
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(Byte())
+  name.vb: ReplaceBuffer(Byte())
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(System.Char[],System.Text.Encoding)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(System.Char[],System.Text.Encoding)
+  id: ReplaceBuffer(System.Char[],System.Text.Encoding)
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  langs:
+  - csharp
+  - vb
+  name: ReplaceBuffer(char[]?, Encoding?)
+  nameWithType: IStream.ReplaceBuffer(char[]?, Encoding?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(char[]?, System.Text.Encoding?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IStream.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ReplaceBuffer
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IStream.cs
+    startLine: 74
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Replaces the entire stream content with a character array using the specified encoding.
+  example: []
+  syntax:
+    content: void ReplaceBuffer(char[]? newBuffer, Encoding? encoding)
+    parameters:
+    - id: newBuffer
+      type: System.Char[]
+      description: The new character array content. If null, the stream will be cleared.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The character encoding to use. If null, UTF-8 will be used.
+    content.vb: Sub ReplaceBuffer(newBuffer As Char(), encoding As Encoding)
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer*
+  nameWithType.vb: IStream.ReplaceBuffer(Char(), Encoding)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(Char(), System.Text.Encoding)
+  name.vb: ReplaceBuffer(Char(), Encoding)
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(System.String,System.Text.Encoding)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(System.String,System.Text.Encoding)
+  id: ReplaceBuffer(System.String,System.Text.Encoding)
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  langs:
+  - csharp
+  - vb
+  name: ReplaceBuffer(string?, Encoding?)
+  nameWithType: IStream.ReplaceBuffer(string?, Encoding?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(string?, System.Text.Encoding?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IStream.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ReplaceBuffer
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IStream.cs
+    startLine: 78
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Replaces the entire stream content with a string using the specified encoding.
+  example: []
+  syntax:
+    content: void ReplaceBuffer(string? newBuffer, Encoding? encoding)
+    parameters:
+    - id: newBuffer
+      type: System.String
+      description: The new string content. If null, the stream will be cleared.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The character encoding to use. If null, UTF-8 will be used.
+    content.vb: Sub ReplaceBuffer(newBuffer As String, encoding As Encoding)
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer*
+  nameWithType.vb: IStream.ReplaceBuffer(String, Encoding)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(String, System.Text.Encoding)
+  name.vb: ReplaceBuffer(String, Encoding)
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(System.Text.StringBuilder,System.Text.Encoding)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(System.Text.StringBuilder,System.Text.Encoding)
+  id: ReplaceBuffer(System.Text.StringBuilder,System.Text.Encoding)
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  langs:
+  - csharp
+  - vb
+  name: ReplaceBuffer(StringBuilder?, Encoding?)
+  nameWithType: IStream.ReplaceBuffer(StringBuilder?, Encoding?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(System.Text.StringBuilder?, System.Text.Encoding?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IStream.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ReplaceBuffer
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IStream.cs
+    startLine: 82
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Replaces the entire stream content with a <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> using the specified encoding.
+  example: []
+  syntax:
+    content: void ReplaceBuffer(StringBuilder? newBuffer, Encoding? encoding)
+    parameters:
+    - id: newBuffer
+      type: System.Text.StringBuilder
+      description: The new <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> content. If null, the stream will be cleared.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The character encoding to use. If null, UTF-8 will be used.
+    content.vb: Sub ReplaceBuffer(newBuffer As StringBuilder, encoding As Encoding)
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer*
+  nameWithType.vb: IStream.ReplaceBuffer(StringBuilder, Encoding)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(System.Text.StringBuilder, System.Text.Encoding)
+  name.vb: ReplaceBuffer(StringBuilder, Encoding)
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(System.Char[])
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(System.Char[])
+  id: ReplaceBuffer(System.Char[])
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  langs:
+  - csharp
+  - vb
+  name: ReplaceBuffer(char[]?)
+  nameWithType: IStream.ReplaceBuffer(char[]?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(char[]?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IStream.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ReplaceBuffer
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IStream.cs
+    startLine: 85
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Replaces the entire stream content with a character array using UTF-8 encoding.
+  example: []
+  syntax:
+    content: void ReplaceBuffer(char[]? newBuffer)
+    parameters:
+    - id: newBuffer
+      type: System.Char[]
+      description: The new character array content. If null, the stream will be cleared.
+    content.vb: Sub ReplaceBuffer(newBuffer As Char())
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer*
+  nameWithType.vb: IStream.ReplaceBuffer(Char())
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(Char())
+  name.vb: ReplaceBuffer(Char())
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(System.String)
+  id: ReplaceBuffer(System.String)
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  langs:
+  - csharp
+  - vb
+  name: ReplaceBuffer(string?)
+  nameWithType: IStream.ReplaceBuffer(string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(string?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IStream.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ReplaceBuffer
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IStream.cs
+    startLine: 88
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Replaces the entire stream content with a string using UTF-8 encoding.
+  example: []
+  syntax:
+    content: void ReplaceBuffer(string? newBuffer)
+    parameters:
+    - id: newBuffer
+      type: System.String
+      description: The new string content. If null, the stream will be cleared.
+    content.vb: Sub ReplaceBuffer(newBuffer As String)
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer*
+  nameWithType.vb: IStream.ReplaceBuffer(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(String)
+  name.vb: ReplaceBuffer(String)
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(System.Text.StringBuilder)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(System.Text.StringBuilder)
+  id: ReplaceBuffer(System.Text.StringBuilder)
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  langs:
+  - csharp
+  - vb
+  name: ReplaceBuffer(StringBuilder?)
+  nameWithType: IStream.ReplaceBuffer(StringBuilder?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(System.Text.StringBuilder?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IStream.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ReplaceBuffer
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IStream.cs
+    startLine: 91
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Replaces the entire stream content with a <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> using UTF-8 encoding.
+  example: []
+  syntax:
+    content: void ReplaceBuffer(StringBuilder? newBuffer)
+    parameters:
+    - id: newBuffer
+      type: System.Text.StringBuilder
+      description: The new <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> content. If null, the stream will be cleared.
+    content.vb: Sub ReplaceBuffer(newBuffer As StringBuilder)
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer*
+  nameWithType.vb: IStream.ReplaceBuffer(StringBuilder)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer(System.Text.StringBuilder)
+  name.vb: ReplaceBuffer(StringBuilder)
+references:
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces
+  commentId: N:Cobilas.GodotEngine.Utility.IO.Interfaces
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Utility.IO.Interfaces
+  nameWithType: Cobilas.GodotEngine.Utility.IO.Interfaces
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO
+    name: IO
+    href: Cobilas.GodotEngine.Utility.IO.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO.Interfaces
+    name: Interfaces
+    href: Cobilas.GodotEngine.Utility.IO.Interfaces.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO
+    name: IO
+    href: Cobilas.GodotEngine.Utility.IO.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO.Interfaces
+    name: Interfaces
+    href: Cobilas.GodotEngine.Utility.IO.Interfaces.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.CanRead*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.CanRead
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IStream_CanRead
+  name: CanRead
+  nameWithType: IStream.CanRead
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.CanRead
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.CanWrite*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.CanWrite
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IStream_CanWrite
+  name: CanWrite
+  nameWithType: IStream.CanWrite
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.CanWrite
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.AutoFlush*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.AutoFlush
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IStream_AutoFlush
+  name: AutoFlush
+  nameWithType: IStream.AutoFlush
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.AutoFlush
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IStream_Read
+  name: Read
+  nameWithType: IStream.Read
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Read
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.encoding
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+- uid: System.Text.StringBuilder
+  commentId: T:System.Text.StringBuilder
+  parent: System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  name: StringBuilder
+  nameWithType: StringBuilder
+  fullName: System.Text.StringBuilder
+- uid: System.Char[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char[]
+  nameWithType: char[]
+  fullName: char[]
+  nameWithType.vb: Char()
+  fullName.vb: Char()
+  name.vb: Char()
+  spec.csharp:
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IStream_Write_System_Byte___
+  name: Write
+  nameWithType: IStream.Write
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Write
+- uid: System.IO.IOException
+  commentId: T:System.IO.IOException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.ioexception
+  name: IOException
+  nameWithType: IOException
+  fullName: System.IO.IOException
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Flush*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Flush
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IStream_Flush
+  name: Flush
+  nameWithType: IStream.Flush
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.Flush
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IStream_ReplaceBuffer_System_Byte___
+  name: ReplaceBuffer
+  nameWithType: IStream.ReplaceBuffer
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.ReplaceBuffer

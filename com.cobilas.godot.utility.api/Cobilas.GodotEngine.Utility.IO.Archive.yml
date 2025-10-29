@@ -5,37 +5,22 @@ items:
   id: Archive
   parent: Cobilas.GodotEngine.Utility.IO
   children:
-  - Cobilas.GodotEngine.Utility.IO.Archive.#ctor(Cobilas.GodotEngine.Utility.IO.DataBase,System.String,Cobilas.GodotEngine.Utility.IO.ArchiveAttributes)
-  - Cobilas.GodotEngine.Utility.IO.Archive.ArchiveExtension
-  - Cobilas.GodotEngine.Utility.IO.Archive.Attributes
-  - Cobilas.GodotEngine.Utility.IO.Archive.Dispose
-  - Cobilas.GodotEngine.Utility.IO.Archive.Flush
-  - Cobilas.GodotEngine.Utility.IO.Archive.GetGuid
-  - Cobilas.GodotEngine.Utility.IO.Archive.IsNull
-  - Cobilas.GodotEngine.Utility.IO.Archive.Name
-  - Cobilas.GodotEngine.Utility.IO.Archive.NameWithoutExtension
-  - Cobilas.GodotEngine.Utility.IO.Archive.Null
-  - Cobilas.GodotEngine.Utility.IO.Archive.Parent
-  - Cobilas.GodotEngine.Utility.IO.Archive.Path
-  - Cobilas.GodotEngine.Utility.IO.Archive.Read
-  - Cobilas.GodotEngine.Utility.IO.Archive.Read(System.Char[]@)
-  - Cobilas.GodotEngine.Utility.IO.Archive.Read(System.String@)
-  - Cobilas.GodotEngine.Utility.IO.Archive.Read(System.Text.Encoding,System.Char[]@)
-  - Cobilas.GodotEngine.Utility.IO.Archive.Read(System.Text.Encoding,System.String@)
-  - Cobilas.GodotEngine.Utility.IO.Archive.Read(System.Text.Encoding,System.Text.StringBuilder@)
-  - Cobilas.GodotEngine.Utility.IO.Archive.Read(System.Text.StringBuilder@)
-  - Cobilas.GodotEngine.Utility.IO.Archive.RefreshBuffer
-  - Cobilas.GodotEngine.Utility.IO.Archive.RenameArchive(Cobilas.GodotEngine.Utility.IO.Archive,System.String)
-  - Cobilas.GodotEngine.Utility.IO.Archive.ReplaceBuffer(System.Byte[])
-  - Cobilas.GodotEngine.Utility.IO.Archive.ToString
-  - Cobilas.GodotEngine.Utility.IO.Archive.ToString(System.String,System.IFormatProvider)
-  - Cobilas.GodotEngine.Utility.IO.Archive.Write(System.Byte[])
-  - Cobilas.GodotEngine.Utility.IO.Archive.Write(System.Byte[],System.Text.Encoding)
-  - Cobilas.GodotEngine.Utility.IO.Archive.Write(System.Char[])
-  - Cobilas.GodotEngine.Utility.IO.Archive.Write(System.Char[],System.Text.Encoding)
-  - Cobilas.GodotEngine.Utility.IO.Archive.Write(System.String)
-  - Cobilas.GodotEngine.Utility.IO.Archive.Write(System.String,System.Text.Encoding)
-  - Cobilas.GodotEngine.Utility.IO.Archive.bufferLength
+  - Cobilas.GodotEngine.Utility.IO.Archive.Copy(System.String,System.String)
+  - Cobilas.GodotEngine.Utility.IO.Archive.Create(System.String)
+  - Cobilas.GodotEngine.Utility.IO.Archive.Exists(System.String)
+  - Cobilas.GodotEngine.Utility.IO.Archive.GetArchiveAttributes(Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo)
+  - Cobilas.GodotEngine.Utility.IO.Archive.GetArchiveAttributes(System.String)
+  - Cobilas.GodotEngine.Utility.IO.Archive.GetCreationTime(System.String)
+  - Cobilas.GodotEngine.Utility.IO.Archive.GetCreationTimeUtc(System.String)
+  - Cobilas.GodotEngine.Utility.IO.Archive.GetLastAccessTime(System.String)
+  - Cobilas.GodotEngine.Utility.IO.Archive.GetLastAccessTimeUtc(System.String)
+  - Cobilas.GodotEngine.Utility.IO.Archive.GetLastWriteTime(System.String)
+  - Cobilas.GodotEngine.Utility.IO.Archive.GetLastWriteTimeUtc(System.String)
+  - Cobilas.GodotEngine.Utility.IO.Archive.GetParent(Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo)
+  - Cobilas.GodotEngine.Utility.IO.Archive.Move(System.String,System.String)
+  - Cobilas.GodotEngine.Utility.IO.Archive.Open(System.String)
+  - Cobilas.GodotEngine.Utility.IO.Archive.Open(System.String,System.IO.FileAccess)
+  - Cobilas.GodotEngine.Utility.IO.Archive.Open(System.String,System.IO.FileAccess,Cobilas.GodotEngine.Utility.IO.StreamType)
   langs:
   - csharp
   - vb
@@ -50,1201 +35,720 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Archive
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 11
+    startLine: 15
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Represents a system file.
+  summary: Provides static methods for working with archive files (files) in both Godot and system file systems.
+  remarks: >-
+    This class offers a unified interface for file operations that works seamlessly
+
+    across Godot's virtual file system and the underlying operating system's file system,
+
+    supporting various file operations including creation, opening, moving, and copying.
   example: []
   syntax:
-    content: 'public class Archive : DataBase, IDisposable, IFormattable'
-    content.vb: Public Class Archive Inherits DataBase Implements IDisposable, IFormattable
+    content: public static class Archive
+    content.vb: Public Module Archive
   inheritance:
   - System.Object
-  - Cobilas.GodotEngine.Utility.IO.DataBase
-  implements:
-  - System.IDisposable
-  - System.IFormattable
   inheritedMembers:
-  - Cobilas.GodotEngine.Utility.IO.DataBase.GetDataPath(Cobilas.GodotEngine.Utility.IO.DataBase)
+  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.bufferLength
-  commentId: P:Cobilas.GodotEngine.Utility.IO.Archive.bufferLength
-  id: bufferLength
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.GetArchiveAttributes(Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.GetArchiveAttributes(Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo)
+  id: GetArchiveAttributes(Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo)
   parent: Cobilas.GodotEngine.Utility.IO.Archive
   langs:
   - csharp
   - vb
-  name: bufferLength
-  nameWithType: Archive.bufferLength
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.bufferLength
-  type: Property
+  name: GetArchiveAttributes(IDataInfo?)
+  nameWithType: Archive.GetArchiveAttributes(IDataInfo?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.GetArchiveAttributes(Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo?)
+  type: Method
   source:
     remote:
       path: GodotEngine.Utility/IO/Archive.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: bufferLength
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 16
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Allows you to check the length of the allocated buffer.
-  example: []
-  syntax:
-    content: public long bufferLength { get; }
-    parameters: []
-    return:
-      type: System.Int64
-      description: Returns the length of the allocated buffer.
-    content.vb: Public ReadOnly Property bufferLength As Long
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.bufferLength*
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Path
-  commentId: P:Cobilas.GodotEngine.Utility.IO.Archive.Path
-  id: Path
-  parent: Cobilas.GodotEngine.Utility.IO.Archive
-  langs:
-  - csharp
-  - vb
-  name: Path
-  nameWithType: Archive.Path
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Path
-  type: Property
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Archive.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Path
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 18
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: The full path of the data file.
-  example: []
-  syntax:
-    content: public override string Path { get; }
-    parameters: []
-    return:
-      type: System.String
-      description: Returns a string containing the full path of the data file.
-    content.vb: Public Overrides ReadOnly Property Path As String
-  overridden: Cobilas.GodotEngine.Utility.IO.DataBase.Path
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.Path*
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Parent
-  commentId: P:Cobilas.GodotEngine.Utility.IO.Archive.Parent
-  id: Parent
-  parent: Cobilas.GodotEngine.Utility.IO.Archive
-  langs:
-  - csharp
-  - vb
-  name: Parent
-  nameWithType: Archive.Parent
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Parent
-  type: Property
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Archive.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Parent
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 20
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: The parent element of the data file.
-  example: []
-  syntax:
-    content: public override DataBase? Parent { get; protected set; }
-    parameters: []
-    return:
-      type: Cobilas.GodotEngine.Utility.IO.DataBase
-      description: Returns parent element of data file.
-    content.vb: Public Overrides Property Parent As DataBase
-  overridden: Cobilas.GodotEngine.Utility.IO.DataBase.Parent
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.Parent*
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Attributes
-  commentId: P:Cobilas.GodotEngine.Utility.IO.Archive.Attributes
-  id: Attributes
-  parent: Cobilas.GodotEngine.Utility.IO.Archive
-  langs:
-  - csharp
-  - vb
-  name: Attributes
-  nameWithType: Archive.Attributes
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Attributes
-  type: Property
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Archive.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Attributes
+    id: GetArchiveAttributes
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
     startLine: 22
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.IO
-  summary: The attributes of the data file.
+  summary: Gets the archive attributes for the specified data information.
+  remarks: For internal Godot files, returns a combination of Archive, ReadOnly, and Hidden attributes.
   example: []
   syntax:
-    content: public override ArchiveAttributes Attributes { get; protected set; }
-    parameters: []
+    content: public static ArchiveAttributes GetArchiveAttributes(IDataInfo? data)
+    parameters:
+    - id: data
+      type: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+      description: The data information to get attributes for.
     return:
       type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
-      description: Returns the attributes of the data file.
-    content.vb: Public Overrides Property Attributes As ArchiveAttributes
-  overridden: Cobilas.GodotEngine.Utility.IO.DataBase.Attributes
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.Attributes*
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Name
-  commentId: P:Cobilas.GodotEngine.Utility.IO.Archive.Name
-  id: Name
+      description: The <xref href="Cobilas.GodotEngine.Utility.IO.ArchiveAttributes" data-throw-if-not-resolved="false"></xref> representing the file's attributes.
+    content.vb: Public Shared Function GetArchiveAttributes(data As IDataInfo) As ArchiveAttributes
+  overload: Cobilas.GodotEngine.Utility.IO.Archive.GetArchiveAttributes*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when data is null.
+  nameWithType.vb: Archive.GetArchiveAttributes(IDataInfo)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.GetArchiveAttributes(Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo)
+  name.vb: GetArchiveAttributes(IDataInfo)
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.GetArchiveAttributes(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.GetArchiveAttributes(System.String)
+  id: GetArchiveAttributes(System.String)
   parent: Cobilas.GodotEngine.Utility.IO.Archive
   langs:
   - csharp
   - vb
-  name: Name
-  nameWithType: Archive.Name
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Name
-  type: Property
+  name: GetArchiveAttributes(string?)
+  nameWithType: Archive.GetArchiveAttributes(string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.GetArchiveAttributes(string?)
+  type: Method
   source:
     remote:
       path: GodotEngine.Utility/IO/Archive.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Name
+    id: GetArchiveAttributes
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 24
+    startLine: 31
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Data file name.
+  summary: Gets the archive attributes for the specified file path.
   example: []
   syntax:
-    content: public override string? Name { get; protected set; }
-    parameters: []
-    return:
+    content: public static ArchiveAttributes GetArchiveAttributes(string? path)
+    parameters:
+    - id: path
       type: System.String
-      description: Returns a string containing the name of the data file.
-    content.vb: Public Overrides Property Name As String
-  overridden: Cobilas.GodotEngine.Utility.IO.DataBase.Name
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.Name*
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.IsNull
-  commentId: P:Cobilas.GodotEngine.Utility.IO.Archive.IsNull
-  id: IsNull
+      description: The path to the file to get attributes for.
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+      description: The <xref href="Cobilas.GodotEngine.Utility.IO.ArchiveAttributes" data-throw-if-not-resolved="false"></xref> representing the file's attributes.
+    content.vb: Public Shared Function GetArchiveAttributes(path As String) As ArchiveAttributes
+  overload: Cobilas.GodotEngine.Utility.IO.Archive.GetArchiveAttributes*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when path is null.
+  nameWithType.vb: Archive.GetArchiveAttributes(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.GetArchiveAttributes(String)
+  name.vb: GetArchiveAttributes(String)
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.Exists(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.Exists(System.String)
+  id: Exists(System.String)
   parent: Cobilas.GodotEngine.Utility.IO.Archive
   langs:
   - csharp
   - vb
-  name: IsNull
-  nameWithType: Archive.IsNull
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.IsNull
-  type: Property
+  name: Exists(string?)
+  nameWithType: Archive.Exists(string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Exists(string?)
+  type: Method
   source:
     remote:
       path: GodotEngine.Utility/IO/Archive.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: IsNull
+    id: Exists
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 27
+    startLine: 40
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Determines whether the object is a null representation.
+  summary: Determines whether the specified file exists.
+  remarks: This method works with both system files and Godot's virtual file system.
   example: []
   syntax:
-    content: public bool IsNull { get; }
-    parameters: []
+    content: public static bool Exists(string? path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to check for existence.
     return:
       type: System.Boolean
-      description: Returns <code>true</code> if the object is a null representation.
-    content.vb: Public ReadOnly Property IsNull As Boolean
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.IsNull*
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.ArchiveExtension
-  commentId: P:Cobilas.GodotEngine.Utility.IO.Archive.ArchiveExtension
-  id: ArchiveExtension
+      description: true if the file exists; otherwise, false.
+    content.vb: Public Shared Function Exists(path As String) As Boolean
+  overload: Cobilas.GodotEngine.Utility.IO.Archive.Exists*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when path is null.
+  nameWithType.vb: Archive.Exists(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.Exists(String)
+  name.vb: Exists(String)
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.Create(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.Create(System.String)
+  id: Create(System.String)
   parent: Cobilas.GodotEngine.Utility.IO.Archive
   langs:
   - csharp
   - vb
-  name: ArchiveExtension
-  nameWithType: Archive.ArchiveExtension
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.ArchiveExtension
-  type: Property
+  name: Create(string?)
+  nameWithType: Archive.Create(string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Create(string?)
+  type: Method
   source:
     remote:
       path: GodotEngine.Utility/IO/Archive.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: ArchiveExtension
+    id: Create
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 30
+    startLine: 55
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Allows you to get the system file extension.
+  summary: Creates a new empty file at the specified path.
+  remarks: >-
+    This method will not create files in the Godot resource path when running in release mode.
+
+    If the file already exists, the operation will return false.
   example: []
   syntax:
-    content: public string ArchiveExtension { get; }
-    parameters: []
-    return:
-      type: System.String
-      description: Returns a string containing the system file extension.
-    content.vb: Public ReadOnly Property ArchiveExtension As String
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.ArchiveExtension*
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.NameWithoutExtension
-  commentId: P:Cobilas.GodotEngine.Utility.IO.Archive.NameWithoutExtension
-  id: NameWithoutExtension
-  parent: Cobilas.GodotEngine.Utility.IO.Archive
-  langs:
-  - csharp
-  - vb
-  name: NameWithoutExtension
-  nameWithType: Archive.NameWithoutExtension
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.NameWithoutExtension
-  type: Property
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Archive.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: NameWithoutExtension
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 33
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Allows you to get the name of the system file without its extension.
-  example: []
-  syntax:
-    content: public string NameWithoutExtension { get; }
-    parameters: []
-    return:
-      type: System.String
-      description: Returns a string with the name of the system file without its extension.
-    content.vb: Public ReadOnly Property NameWithoutExtension As String
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.NameWithoutExtension*
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.GetGuid
-  commentId: P:Cobilas.GodotEngine.Utility.IO.Archive.GetGuid
-  id: GetGuid
-  parent: Cobilas.GodotEngine.Utility.IO.Archive
-  langs:
-  - csharp
-  - vb
-  name: GetGuid
-  nameWithType: Archive.GetGuid
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.GetGuid
-  type: Property
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Archive.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: GetGuid
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 36
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Allows you to generate a guid from the allocated buffer.
-  example: []
-  syntax:
-    content: public Guid GetGuid { get; }
-    parameters: []
-    return:
-      type: System.Guid
-      description: Returns a guid generated from the allocated buffer.
-    content.vb: Public ReadOnly Property GetGuid As Guid
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.GetGuid*
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Null
-  commentId: P:Cobilas.GodotEngine.Utility.IO.Archive.Null
-  id: "Null"
-  parent: Cobilas.GodotEngine.Utility.IO.Archive
-  langs:
-  - csharp
-  - vb
-  name: "Null"
-  nameWithType: Archive.Null
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Null
-  type: Property
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Archive.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: "Null"
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 49
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: A null representation of the <xref href="Cobilas.GodotEngine.Utility.IO.Archive" data-throw-if-not-resolved="false"></xref> object.
-  example: []
-  syntax:
-    content: public static Archive Null { get; }
-    parameters: []
-    return:
-      type: Cobilas.GodotEngine.Utility.IO.Archive
-      description: Returns a null representation of the <xref href="Cobilas.GodotEngine.Utility.IO.Archive" data-throw-if-not-resolved="false"></xref> object.
-    content.vb: Public Shared ReadOnly Property Null As Archive
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.Null*
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.#ctor(Cobilas.GodotEngine.Utility.IO.DataBase,System.String,Cobilas.GodotEngine.Utility.IO.ArchiveAttributes)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.#ctor(Cobilas.GodotEngine.Utility.IO.DataBase,System.String,Cobilas.GodotEngine.Utility.IO.ArchiveAttributes)
-  id: '#ctor(Cobilas.GodotEngine.Utility.IO.DataBase,System.String,Cobilas.GodotEngine.Utility.IO.ArchiveAttributes)'
-  parent: Cobilas.GodotEngine.Utility.IO.Archive
-  langs:
-  - csharp
-  - vb
-  name: Archive(DataBase?, string?, ArchiveAttributes)
-  nameWithType: Archive.Archive(DataBase?, string?, ArchiveAttributes)
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Archive(Cobilas.GodotEngine.Utility.IO.DataBase?, string?, Cobilas.GodotEngine.Utility.IO.ArchiveAttributes)
-  type: Constructor
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Archive.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: .ctor
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 51
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Creates a new instance of this object.
-  example: []
-  syntax:
-    content: public Archive(DataBase? parent, string? dataName, ArchiveAttributes attributes)
+    content: public static bool Create(string? path)
     parameters:
-    - id: parent
-      type: Cobilas.GodotEngine.Utility.IO.DataBase
-    - id: dataName
+    - id: path
       type: System.String
-    - id: attributes
-      type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
-    content.vb: Public Sub New(parent As DataBase, dataName As String, attributes As ArchiveAttributes)
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.#ctor*
-  nameWithType.vb: Archive.New(DataBase, String, ArchiveAttributes)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.New(Cobilas.GodotEngine.Utility.IO.DataBase, String, Cobilas.GodotEngine.Utility.IO.ArchiveAttributes)
-  name.vb: New(DataBase, String, ArchiveAttributes)
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Read
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.Read
-  id: Read
-  parent: Cobilas.GodotEngine.Utility.IO.Archive
-  langs:
-  - csharp
-  - vb
-  name: Read()
-  nameWithType: Archive.Read()
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Read()
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Archive.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Read
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 62
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: This method allows reading the system file loaded in this object.
-  example: []
-  syntax:
-    content: public byte[] Read()
+      description: The path where the file should be created.
     return:
-      type: System.Byte[]
-      description: Returns a copy of the buffer loaded into this object.
-    content.vb: Public Function Read() As Byte()
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.Read*
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Read(System.Text.Encoding,System.String@)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.Read(System.Text.Encoding,System.String@)
-  id: Read(System.Text.Encoding,System.String@)
+      type: System.Boolean
+      description: true if the file was successfully created; otherwise, false.
+    content.vb: Public Shared Function Create(path As String) As Boolean
+  overload: Cobilas.GodotEngine.Utility.IO.Archive.Create*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when path is null.
+  nameWithType.vb: Archive.Create(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.Create(String)
+  name.vb: Create(String)
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.Open(System.String,System.IO.FileAccess,Cobilas.GodotEngine.Utility.IO.StreamType)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.Open(System.String,System.IO.FileAccess,Cobilas.GodotEngine.Utility.IO.StreamType)
+  id: Open(System.String,System.IO.FileAccess,Cobilas.GodotEngine.Utility.IO.StreamType)
   parent: Cobilas.GodotEngine.Utility.IO.Archive
   langs:
   - csharp
   - vb
-  name: Read(Encoding, out string)
-  nameWithType: Archive.Read(Encoding, out string)
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Read(System.Text.Encoding, out string)
+  name: Open(string?, FileAccess, StreamType)
+  nameWithType: Archive.Open(string?, FileAccess, StreamType)
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Open(string?, System.IO.FileAccess, Cobilas.GodotEngine.Utility.IO.StreamType)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/IO/Archive.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Read
+    id: Open
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
     startLine: 72
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.IO
-  summary: This method allows reading the system file loaded in this object.
+  summary: Opens a file at the specified path with the given access mode and stream type.
   example: []
   syntax:
-    content: public void Read(Encoding encoding, out string text)
+    content: public static IStream Open(string? path, FileAccess access, StreamType type)
     parameters:
-    - id: encoding
-      type: System.Text.Encoding
-      description: The <xref href="System.Text.Encoding" data-throw-if-not-resolved="false"></xref> that will be used to convert the object buffer to a <xref href="System.String" data-throw-if-not-resolved="false"></xref>.
-    - id: text
+    - id: path
       type: System.String
-      description: Returns the buffer already converted to <xref href="System.String" data-throw-if-not-resolved="false"></xref>.
-    content.vb: Public Sub Read(encoding As Encoding, text As String)
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.Read*
+      description: The path to the file to open.
+    - id: access
+      type: System.IO.FileAccess
+      description: The file access mode specifying read and/or write permissions.
+    - id: type
+      type: Cobilas.GodotEngine.Utility.IO.StreamType
+      description: The type of stream to use for accessing the file.
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+      description: An <xref href="Cobilas.GodotEngine.Utility.IO.Interfaces.IStream" data-throw-if-not-resolved="false"></xref> instance for reading from or writing to the file.
+    content.vb: Public Shared Function Open(path As String, access As FileAccess, type As StreamType) As IStream
+  overload: Cobilas.GodotEngine.Utility.IO.Archive.Open*
   exceptions:
-  - type: System.ObjectDisposedException
-    commentId: T:System.ObjectDisposedException
-    description: Will occur when the method is called after the object has been disposed.
-  nameWithType.vb: Archive.Read(Encoding, String)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.Read(System.Text.Encoding, String)
-  name.vb: Read(Encoding, String)
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Read(System.String@)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.Read(System.String@)
-  id: Read(System.String@)
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when path is null.
+  nameWithType.vb: Archive.Open(String, FileAccess, StreamType)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.Open(String, System.IO.FileAccess, Cobilas.GodotEngine.Utility.IO.StreamType)
+  name.vb: Open(String, FileAccess, StreamType)
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.Open(System.String,System.IO.FileAccess)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.Open(System.String,System.IO.FileAccess)
+  id: Open(System.String,System.IO.FileAccess)
   parent: Cobilas.GodotEngine.Utility.IO.Archive
   langs:
   - csharp
   - vb
-  name: Read(out string)
-  nameWithType: Archive.Read(out string)
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Read(out string)
+  name: Open(string?, FileAccess)
+  nameWithType: Archive.Open(string?, FileAccess)
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Open(string?, System.IO.FileAccess)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/IO/Archive.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Read
+    id: Open
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 77
+    startLine: 82
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.IO
-  summary: This method allows reading the system file loaded in this object.
+  summary: Opens a file at the specified path with the given access mode using automatic stream type detection.
   example: []
   syntax:
-    content: public void Read(out string text)
+    content: public static IStream Open(string? path, FileAccess access)
     parameters:
-    - id: text
+    - id: path
       type: System.String
-      description: Returns the buffer already converted to <xref href="System.String" data-throw-if-not-resolved="false"></xref>.
-    content.vb: Public Sub Read(text As String)
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.Read*
+      description: The path to the file to open.
+    - id: access
+      type: System.IO.FileAccess
+      description: The file access mode specifying read and/or write permissions.
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+      description: An <xref href="Cobilas.GodotEngine.Utility.IO.Interfaces.IStream" data-throw-if-not-resolved="false"></xref> instance for reading from or writing to the file.
+    content.vb: Public Shared Function Open(path As String, access As FileAccess) As IStream
+  overload: Cobilas.GodotEngine.Utility.IO.Archive.Open*
   exceptions:
-  - type: System.ObjectDisposedException
-    commentId: T:System.ObjectDisposedException
-    description: Will occur when the method is called after the object has been disposed.
-  nameWithType.vb: Archive.Read(String)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.Read(String)
-  name.vb: Read(String)
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Read(System.Text.Encoding,System.Text.StringBuilder@)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.Read(System.Text.Encoding,System.Text.StringBuilder@)
-  id: Read(System.Text.Encoding,System.Text.StringBuilder@)
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when path is null.
+  nameWithType.vb: Archive.Open(String, FileAccess)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.Open(String, System.IO.FileAccess)
+  name.vb: Open(String, FileAccess)
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.Open(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.Open(System.String)
+  id: Open(System.String)
   parent: Cobilas.GodotEngine.Utility.IO.Archive
   langs:
   - csharp
   - vb
-  name: Read(Encoding, out StringBuilder)
-  nameWithType: Archive.Read(Encoding, out StringBuilder)
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Read(System.Text.Encoding, out System.Text.StringBuilder)
+  name: Open(string?)
+  nameWithType: Archive.Open(string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Open(string?)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/IO/Archive.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Read
+    id: Open
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 81
+    startLine: 88
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.IO
-  summary: This method allows reading the system file loaded in this object.
+  summary: Opens a file at the specified path with read-write access using automatic stream type detection.
   example: []
   syntax:
-    content: public void Read(Encoding encoding, out StringBuilder builder)
+    content: public static IStream Open(string? path)
     parameters:
-    - id: encoding
-      type: System.Text.Encoding
-      description: The <xref href="System.Text.Encoding" data-throw-if-not-resolved="false"></xref> that will be used to convert the object buffer to a <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref>.
-    - id: builder
-      type: System.Text.StringBuilder
-      description: Returns the buffer already converted to <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref>.
-    content.vb: Public Sub Read(encoding As Encoding, builder As StringBuilder)
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.Read*
+    - id: path
+      type: System.String
+      description: The path to the file to open.
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+      description: An <xref href="Cobilas.GodotEngine.Utility.IO.Interfaces.IStream" data-throw-if-not-resolved="false"></xref> instance for reading from and writing to the file.
+    content.vb: Public Shared Function Open(path As String) As IStream
+  overload: Cobilas.GodotEngine.Utility.IO.Archive.Open*
   exceptions:
-  - type: System.ObjectDisposedException
-    commentId: T:System.ObjectDisposedException
-    description: Will occur when the method is called after the object has been disposed.
-  nameWithType.vb: Archive.Read(Encoding, StringBuilder)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.Read(System.Text.Encoding, System.Text.StringBuilder)
-  name.vb: Read(Encoding, StringBuilder)
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Read(System.Text.StringBuilder@)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.Read(System.Text.StringBuilder@)
-  id: Read(System.Text.StringBuilder@)
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when path is null.
+  nameWithType.vb: Archive.Open(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.Open(String)
+  name.vb: Open(String)
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.Move(System.String,System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.Move(System.String,System.String)
+  id: Move(System.String,System.String)
   parent: Cobilas.GodotEngine.Utility.IO.Archive
   langs:
   - csharp
   - vb
-  name: Read(out StringBuilder)
-  nameWithType: Archive.Read(out StringBuilder)
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Read(out System.Text.StringBuilder)
+  name: Move(string?, string?)
+  nameWithType: Archive.Move(string?, string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Move(string?, string?)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/IO/Archive.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Read
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 86
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: This method allows reading the system file loaded in this object.
-  example: []
-  syntax:
-    content: public void Read(out StringBuilder builder)
-    parameters:
-    - id: builder
-      type: System.Text.StringBuilder
-      description: Returns the buffer already converted to <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref>.
-    content.vb: Public Sub Read(builder As StringBuilder)
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.Read*
-  exceptions:
-  - type: System.ObjectDisposedException
-    commentId: T:System.ObjectDisposedException
-    description: Will occur when the method is called after the object has been disposed.
-  nameWithType.vb: Archive.Read(StringBuilder)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.Read(System.Text.StringBuilder)
-  name.vb: Read(StringBuilder)
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Read(System.Text.Encoding,System.Char[]@)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.Read(System.Text.Encoding,System.Char[]@)
-  id: Read(System.Text.Encoding,System.Char[]@)
-  parent: Cobilas.GodotEngine.Utility.IO.Archive
-  langs:
-  - csharp
-  - vb
-  name: Read(Encoding, out char[])
-  nameWithType: Archive.Read(Encoding, out char[])
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Read(System.Text.Encoding, out char[])
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Archive.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Read
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 90
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: This method allows reading the system file loaded in this object.
-  example: []
-  syntax:
-    content: public void Read(Encoding encoding, out char[] chars)
-    parameters:
-    - id: encoding
-      type: System.Text.Encoding
-      description: The <xref href="System.Text.Encoding" data-throw-if-not-resolved="false"></xref> that will be used to convert the object buffer to a <xref href="System.Char" data-throw-if-not-resolved="false"></xref>[].
-    - id: chars
-      type: System.Char[]
-      description: Returns the buffer already converted to <xref href="System.Char" data-throw-if-not-resolved="false"></xref>[].
-    content.vb: Public Sub Read(encoding As Encoding, chars As Char())
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.Read*
-  exceptions:
-  - type: System.ObjectDisposedException
-    commentId: T:System.ObjectDisposedException
-    description: Will occur when the method is called after the object has been disposed.
-  nameWithType.vb: Archive.Read(Encoding, Char())
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.Read(System.Text.Encoding, Char())
-  name.vb: Read(Encoding, Char())
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Read(System.Char[]@)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.Read(System.Char[]@)
-  id: Read(System.Char[]@)
-  parent: Cobilas.GodotEngine.Utility.IO.Archive
-  langs:
-  - csharp
-  - vb
-  name: Read(out char[])
-  nameWithType: Archive.Read(out char[])
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Read(out char[])
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Archive.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Read
+    id: Move
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
     startLine: 95
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.IO
-  summary: This method allows reading the system file loaded in this object.
+  summary: Moves a file to a new location.
   example: []
   syntax:
-    content: public void Read(out char[] chars)
+    content: public static bool Move(string? path, string? destinationPath)
     parameters:
-    - id: chars
-      type: System.Char[]
-      description: Returns the buffer already converted to <xref href="System.Char" data-throw-if-not-resolved="false"></xref>[].
-    content.vb: Public Sub Read(chars As Char())
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.Read*
+    - id: path
+      type: System.String
+      description: The current path of the file.
+    - id: destinationPath
+      type: System.String
+      description: The new path for the file.
+    return:
+      type: System.Boolean
+      description: true if the file was successfully moved; otherwise, false.
+    content.vb: Public Shared Function Move(path As String, destinationPath As String) As Boolean
+  overload: Cobilas.GodotEngine.Utility.IO.Archive.Move*
   exceptions:
-  - type: System.ObjectDisposedException
-    commentId: T:System.ObjectDisposedException
-    description: Will occur when the method is called after the object has been disposed.
-  nameWithType.vb: Archive.Read(Char())
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.Read(Char())
-  name.vb: Read(Char())
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.ReplaceBuffer(System.Byte[])
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.ReplaceBuffer(System.Byte[])
-  id: ReplaceBuffer(System.Byte[])
-  parent: Cobilas.GodotEngine.Utility.IO.Archive
-  langs:
-  - csharp
-  - vb
-  name: ReplaceBuffer(byte[]?)
-  nameWithType: Archive.ReplaceBuffer(byte[]?)
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.ReplaceBuffer(byte[]?)
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Archive.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: ReplaceBuffer
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 101
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: The method allows replacing the object's current buffer with another one.
-  example: []
-  syntax:
-    content: public void ReplaceBuffer(byte[]? newBuffer)
-    parameters:
-    - id: newBuffer
-      type: System.Byte[]
-      description: The new buffer that will be allocated in this object.
-    content.vb: Public Sub ReplaceBuffer(newBuffer As Byte())
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.ReplaceBuffer*
-  exceptions:
-  - type: System.Data.ReadOnlyException
-    commentId: T:System.Data.ReadOnlyException
-    description: Will occur if the method is called on an object that is marked as read-only.
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: Occurs if the <code class="paramref">newBuffer</code> parameter is null.
-  - type: System.ObjectDisposedException
-    commentId: T:System.ObjectDisposedException
-    description: Will occur when the method is called after the object has been disposed.
-  nameWithType.vb: Archive.ReplaceBuffer(Byte())
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.ReplaceBuffer(Byte())
-  name.vb: ReplaceBuffer(Byte())
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Write(System.Byte[],System.Text.Encoding)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.Write(System.Byte[],System.Text.Encoding)
-  id: Write(System.Byte[],System.Text.Encoding)
+    description: Thrown when either path is null.
+  nameWithType.vb: Archive.Move(String, String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.Move(String, String)
+  name.vb: Move(String, String)
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.Copy(System.String,System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.Copy(System.String,System.String)
+  id: Copy(System.String,System.String)
   parent: Cobilas.GodotEngine.Utility.IO.Archive
   langs:
   - csharp
   - vb
-  name: Write(byte[], Encoding)
-  nameWithType: Archive.Write(byte[], Encoding)
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Write(byte[], System.Text.Encoding)
+  name: Copy(string?, string?)
+  nameWithType: Archive.Copy(string?, string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Copy(string?, string?)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/IO/Archive.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Write
+    id: Copy
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 114
+    startLine: 106
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.IO
-  summary: The method allows writing to the object's buffer.
+  summary: Copies a file to a new location.
   example: []
   syntax:
-    content: public void Write(byte[] buffer, Encoding encoding)
+    content: public static bool Copy(string? path, string? destinationPath)
     parameters:
-    - id: buffer
-      type: System.Byte[]
-      description: The value that will be written to the object buffer.
-    - id: encoding
-      type: System.Text.Encoding
-      description: The Encoding that will be used to write to the object buffer.
-    content.vb: Public Sub Write(buffer As Byte(), encoding As Encoding)
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.Write*
-  exceptions:
-  - type: System.Data.ReadOnlyException
-    commentId: T:System.Data.ReadOnlyException
-    description: Will occur if the method is called on an object that is marked as read-only.
-  - type: System.ObjectDisposedException
-    commentId: T:System.ObjectDisposedException
-    description: Will occur when the method is called after the object has been disposed.
-  nameWithType.vb: Archive.Write(Byte(), Encoding)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.Write(Byte(), System.Text.Encoding)
-  name.vb: Write(Byte(), Encoding)
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Write(System.Byte[])
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.Write(System.Byte[])
-  id: Write(System.Byte[])
-  parent: Cobilas.GodotEngine.Utility.IO.Archive
-  langs:
-  - csharp
-  - vb
-  name: Write(byte[])
-  nameWithType: Archive.Write(byte[])
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Write(byte[])
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Archive.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Write
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 122
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: The method allows writing to the object's buffer.
-  example: []
-  syntax:
-    content: public void Write(byte[] buffer)
-    parameters:
-    - id: buffer
-      type: System.Byte[]
-      description: The value that will be written to the object buffer.
-    content.vb: Public Sub Write(buffer As Byte())
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.Write*
-  exceptions:
-  - type: System.Data.ReadOnlyException
-    commentId: T:System.Data.ReadOnlyException
-    description: Will occur if the method is called on an object that is marked as read-only.
-  - type: System.ObjectDisposedException
-    commentId: T:System.ObjectDisposedException
-    description: Will occur when the method is called after the object has been disposed.
-  nameWithType.vb: Archive.Write(Byte())
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.Write(Byte())
-  name.vb: Write(Byte())
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Write(System.String,System.Text.Encoding)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.Write(System.String,System.Text.Encoding)
-  id: Write(System.String,System.Text.Encoding)
-  parent: Cobilas.GodotEngine.Utility.IO.Archive
-  langs:
-  - csharp
-  - vb
-  name: Write(string, Encoding)
-  nameWithType: Archive.Write(string, Encoding)
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Write(string, System.Text.Encoding)
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Archive.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Write
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 126
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: The method allows writing to the object's buffer.
-  example: []
-  syntax:
-    content: public void Write(string text, Encoding encoding)
-    parameters:
-    - id: text
+    - id: path
       type: System.String
-      description: The value that will be written to the object buffer.
-    - id: encoding
-      type: System.Text.Encoding
-      description: The Encoding that will be used to write to the object buffer.
-    content.vb: Public Sub Write(text As String, encoding As Encoding)
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.Write*
+      description: The current path of the file.
+    - id: destinationPath
+      type: System.String
+      description: The destination path for the copy.
+    return:
+      type: System.Boolean
+      description: true if the file was successfully copied; otherwise, false.
+    content.vb: Public Shared Function Copy(path As String, destinationPath As String) As Boolean
+  overload: Cobilas.GodotEngine.Utility.IO.Archive.Copy*
   exceptions:
-  - type: System.Data.ReadOnlyException
-    commentId: T:System.Data.ReadOnlyException
-    description: Will occur if the method is called on an object that is marked as read-only.
-  - type: System.ObjectDisposedException
-    commentId: T:System.ObjectDisposedException
-    description: Will occur when the method is called after the object has been disposed.
-  nameWithType.vb: Archive.Write(String, Encoding)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.Write(String, System.Text.Encoding)
-  name.vb: Write(String, Encoding)
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Write(System.String)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.Write(System.String)
-  id: Write(System.String)
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when either path is null.
+  nameWithType.vb: Archive.Copy(String, String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.Copy(String, String)
+  name.vb: Copy(String, String)
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.GetCreationTime(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.GetCreationTime(System.String)
+  id: GetCreationTime(System.String)
   parent: Cobilas.GodotEngine.Utility.IO.Archive
   langs:
   - csharp
   - vb
-  name: Write(string)
-  nameWithType: Archive.Write(string)
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Write(string)
+  name: GetCreationTime(string?)
+  nameWithType: Archive.GetCreationTime(string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.GetCreationTime(string?)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/IO/Archive.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Write
+    id: GetCreationTime
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
+    startLine: 116
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets the creation time of the specified file in local time.
+  example: []
+  syntax:
+    content: public static DateTime GetCreationTime(string? path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the file.
+    return:
+      type: System.DateTime
+      description: A <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> representing the file's creation time in local time.
+    content.vb: Public Shared Function GetCreationTime(path As String) As Date
+  overload: Cobilas.GodotEngine.Utility.IO.Archive.GetCreationTime*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when path is null.
+  nameWithType.vb: Archive.GetCreationTime(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.GetCreationTime(String)
+  name.vb: GetCreationTime(String)
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.GetCreationTimeUtc(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.GetCreationTimeUtc(System.String)
+  id: GetCreationTimeUtc(System.String)
+  parent: Cobilas.GodotEngine.Utility.IO.Archive
+  langs:
+  - csharp
+  - vb
+  name: GetCreationTimeUtc(string?)
+  nameWithType: Archive.GetCreationTimeUtc(string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.GetCreationTimeUtc(string?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Archive.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetCreationTimeUtc
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
+    startLine: 125
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets the creation time of the specified file in UTC time.
+  example: []
+  syntax:
+    content: public static DateTime GetCreationTimeUtc(string? path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the file.
+    return:
+      type: System.DateTime
+      description: A <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> representing the file's creation time in UTC.
+    content.vb: Public Shared Function GetCreationTimeUtc(path As String) As Date
+  overload: Cobilas.GodotEngine.Utility.IO.Archive.GetCreationTimeUtc*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when path is null.
+  nameWithType.vb: Archive.GetCreationTimeUtc(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.GetCreationTimeUtc(String)
+  name.vb: GetCreationTimeUtc(String)
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.GetLastAccessTime(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.GetLastAccessTime(System.String)
+  id: GetLastAccessTime(System.String)
+  parent: Cobilas.GodotEngine.Utility.IO.Archive
+  langs:
+  - csharp
+  - vb
+  name: GetLastAccessTime(string?)
+  nameWithType: Archive.GetLastAccessTime(string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.GetLastAccessTime(string?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Archive.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetLastAccessTime
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
     startLine: 134
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.IO
-  summary: The method allows writing to the object's buffer.
+  summary: Gets the last access time of the specified file in local time.
   example: []
   syntax:
-    content: public void Write(string text)
+    content: public static DateTime GetLastAccessTime(string? path)
     parameters:
-    - id: text
+    - id: path
       type: System.String
-      description: The value that will be written to the object buffer.
-    content.vb: Public Sub Write(text As String)
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.Write*
+      description: The path to the file.
+    return:
+      type: System.DateTime
+      description: A <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> representing the file's last access time in local time.
+    content.vb: Public Shared Function GetLastAccessTime(path As String) As Date
+  overload: Cobilas.GodotEngine.Utility.IO.Archive.GetLastAccessTime*
   exceptions:
-  - type: System.Data.ReadOnlyException
-    commentId: T:System.Data.ReadOnlyException
-    description: Will occur if the method is called on an object that is marked as read-only.
-  - type: System.ObjectDisposedException
-    commentId: T:System.ObjectDisposedException
-    description: Will occur when the method is called after the object has been disposed.
-  nameWithType.vb: Archive.Write(String)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.Write(String)
-  name.vb: Write(String)
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Write(System.Char[],System.Text.Encoding)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.Write(System.Char[],System.Text.Encoding)
-  id: Write(System.Char[],System.Text.Encoding)
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when path is null.
+  nameWithType.vb: Archive.GetLastAccessTime(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.GetLastAccessTime(String)
+  name.vb: GetLastAccessTime(String)
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.GetLastAccessTimeUtc(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.GetLastAccessTimeUtc(System.String)
+  id: GetLastAccessTimeUtc(System.String)
   parent: Cobilas.GodotEngine.Utility.IO.Archive
   langs:
   - csharp
   - vb
-  name: Write(char[], Encoding)
-  nameWithType: Archive.Write(char[], Encoding)
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Write(char[], System.Text.Encoding)
+  name: GetLastAccessTimeUtc(string?)
+  nameWithType: Archive.GetLastAccessTimeUtc(string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.GetLastAccessTimeUtc(string?)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/IO/Archive.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Write
+    id: GetLastAccessTimeUtc
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 138
+    startLine: 143
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.IO
-  summary: The method allows writing to the object's buffer.
+  summary: Gets the last access time of the specified file in UTC time.
   example: []
   syntax:
-    content: public void Write(char[] chars, Encoding encoding)
+    content: public static DateTime GetLastAccessTimeUtc(string? path)
     parameters:
-    - id: chars
-      type: System.Char[]
-      description: The value that will be written to the object buffer.
-    - id: encoding
-      type: System.Text.Encoding
-      description: The Encoding that will be used to write to the object buffer.
-    content.vb: Public Sub Write(chars As Char(), encoding As Encoding)
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.Write*
+    - id: path
+      type: System.String
+      description: The path to the file.
+    return:
+      type: System.DateTime
+      description: A <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> representing the file's last access time in UTC.
+    content.vb: Public Shared Function GetLastAccessTimeUtc(path As String) As Date
+  overload: Cobilas.GodotEngine.Utility.IO.Archive.GetLastAccessTimeUtc*
   exceptions:
-  - type: System.Data.ReadOnlyException
-    commentId: T:System.Data.ReadOnlyException
-    description: Will occur if the method is called on an object that is marked as read-only.
-  - type: System.ObjectDisposedException
-    commentId: T:System.ObjectDisposedException
-    description: Will occur when the method is called after the object has been disposed.
-  nameWithType.vb: Archive.Write(Char(), Encoding)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.Write(Char(), System.Text.Encoding)
-  name.vb: Write(Char(), Encoding)
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Write(System.Char[])
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.Write(System.Char[])
-  id: Write(System.Char[])
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when path is null.
+  nameWithType.vb: Archive.GetLastAccessTimeUtc(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.GetLastAccessTimeUtc(String)
+  name.vb: GetLastAccessTimeUtc(String)
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.GetLastWriteTime(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.GetLastWriteTime(System.String)
+  id: GetLastWriteTime(System.String)
   parent: Cobilas.GodotEngine.Utility.IO.Archive
   langs:
   - csharp
   - vb
-  name: Write(char[])
-  nameWithType: Archive.Write(char[])
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Write(char[])
+  name: GetLastWriteTime(string?)
+  nameWithType: Archive.GetLastWriteTime(string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.GetLastWriteTime(string?)
   type: Method
   source:
     remote:
       path: GodotEngine.Utility/IO/Archive.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Write
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 146
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: The method allows writing to the object's buffer.
-  example: []
-  syntax:
-    content: public void Write(char[] chars)
-    parameters:
-    - id: chars
-      type: System.Char[]
-      description: The value that will be written to the object buffer.
-    content.vb: Public Sub Write(chars As Char())
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.Write*
-  exceptions:
-  - type: System.Data.ReadOnlyException
-    commentId: T:System.Data.ReadOnlyException
-    description: Will occur if the method is called on an object that is marked as read-only.
-  - type: System.ObjectDisposedException
-    commentId: T:System.ObjectDisposedException
-    description: Will occur when the method is called after the object has been disposed.
-  nameWithType.vb: Archive.Write(Char())
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.Write(Char())
-  name.vb: Write(Char())
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Flush
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.Flush
-  id: Flush
-  parent: Cobilas.GodotEngine.Utility.IO.Archive
-  langs:
-  - csharp
-  - vb
-  name: Flush()
-  nameWithType: Archive.Flush()
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Flush()
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Archive.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Flush
+    id: GetLastWriteTime
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
     startLine: 152
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Allows you to flush the object's buffer to the system file that this object represents.
+  summary: Gets the last write time of the specified file in local time.
   example: []
   syntax:
-    content: public void Flush()
-    content.vb: Public Sub Flush()
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.Flush*
-  exceptions:
-  - type: System.Data.ReadOnlyException
-    commentId: T:System.Data.ReadOnlyException
-    description: Will occur if the method is called on an object that is marked as read-only.
-  - type: System.InvalidOperationException
-    commentId: T:System.InvalidOperationException
-    description: It will occur when there is another invalid operation.
-  - type: System.ObjectDisposedException
-    commentId: T:System.ObjectDisposedException
-    description: Will occur when the method is called after the object has been disposed.
-  - type: System.IO.FileNotFoundException
-    commentId: T:System.IO.FileNotFoundException
-    description: It will occur when the path of the file that this object represents does not exist.
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.RefreshBuffer
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.RefreshBuffer
-  id: RefreshBuffer
-  parent: Cobilas.GodotEngine.Utility.IO.Archive
-  langs:
-  - csharp
-  - vb
-  name: RefreshBuffer()
-  nameWithType: Archive.RefreshBuffer()
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.RefreshBuffer()
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Archive.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: RefreshBuffer
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 170
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: The method allows you to refresh the buffer if the file is changed.
-  example: []
-  syntax:
-    content: public void RefreshBuffer()
-    content.vb: Public Sub RefreshBuffer()
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.RefreshBuffer*
-  exceptions:
-  - type: System.InvalidOperationException
-    commentId: T:System.InvalidOperationException
-    description: It will occur when there is another invalid operation.
-  - type: System.ObjectDisposedException
-    commentId: T:System.ObjectDisposedException
-    description: Will occur when the method is called after the object has been disposed.
-  - type: System.IO.FileNotFoundException
-    commentId: T:System.IO.FileNotFoundException
-    description: It will occur when the path of the file that this object represents does not exist.
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.ToString
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.ToString
-  id: ToString
-  parent: Cobilas.GodotEngine.Utility.IO.Archive
-  langs:
-  - csharp
-  - vb
-  name: ToString()
-  nameWithType: Archive.ToString()
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.ToString()
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Archive.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: ToString
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 181
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Returns a string that represents the current object.
-  example: []
-  syntax:
-    content: public override string ToString()
-    return:
-      type: System.String
-      description: A string that represents the current object.
-    content.vb: Public Overrides Function ToString() As String
-  overridden: System.Object.ToString
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.ToString*
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.ToString(System.String,System.IFormatProvider)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.ToString(System.String,System.IFormatProvider)
-  id: ToString(System.String,System.IFormatProvider)
-  parent: Cobilas.GodotEngine.Utility.IO.Archive
-  langs:
-  - csharp
-  - vb
-  name: ToString(string, IFormatProvider)
-  nameWithType: Archive.ToString(string, IFormatProvider)
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.ToString(string, System.IFormatProvider)
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Archive.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: ToString
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 183
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Formats the value of the current instance using the specified format.
-  example: []
-  syntax:
-    content: public override string ToString(string format, IFormatProvider formatProvider)
+    content: public static DateTime GetLastWriteTime(string? path)
     parameters:
-    - id: format
+    - id: path
       type: System.String
-      description: The format to use.-or- A null reference (<code>Nothing</code> in Visual Basic) to use the default format defined for the type of the <xref href="System.IFormattable" data-throw-if-not-resolved="false"></xref> implementation.
-    - id: formatProvider
-      type: System.IFormatProvider
-      description: The provider to use to format the value.-or- A null reference (<code>Nothing</code> in Visual Basic) to obtain the numeric format information from the current locale setting of the operating system.
+      description: The path to the file.
     return:
-      type: System.String
-      description: The value of the current instance in the specified format.
-    content.vb: Public Overrides Function ToString(format As String, formatProvider As IFormatProvider) As String
-  overridden: Cobilas.GodotEngine.Utility.IO.DataBase.ToString(System.String,System.IFormatProvider)
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.ToString*
-  nameWithType.vb: Archive.ToString(String, IFormatProvider)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.ToString(String, System.IFormatProvider)
-  name.vb: ToString(String, IFormatProvider)
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Dispose
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.Dispose
-  id: Dispose
-  parent: Cobilas.GodotEngine.Utility.IO.Archive
-  langs:
-  - csharp
-  - vb
-  name: Dispose()
-  nameWithType: Archive.Dispose()
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Dispose()
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Archive.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Dispose
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 194
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
-  example: []
-  syntax:
-    content: public override void Dispose()
-    content.vb: Public Overrides Sub Dispose()
-  overridden: Cobilas.GodotEngine.Utility.IO.DataBase.Dispose
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.Dispose*
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.RenameArchive(Cobilas.GodotEngine.Utility.IO.Archive,System.String)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.RenameArchive(Cobilas.GodotEngine.Utility.IO.Archive,System.String)
-  id: RenameArchive(Cobilas.GodotEngine.Utility.IO.Archive,System.String)
-  parent: Cobilas.GodotEngine.Utility.IO.Archive
-  langs:
-  - csharp
-  - vb
-  name: RenameArchive(Archive?, string?)
-  nameWithType: Archive.RenameArchive(Archive?, string?)
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.RenameArchive(Cobilas.GodotEngine.Utility.IO.Archive?, string?)
-  type: Method
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/Archive.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: RenameArchive
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
-    startLine: 210
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Allows you to rename the system file.
-  example: []
-  syntax:
-    content: public static bool RenameArchive(Archive? archive, string? newName)
-    parameters:
-    - id: archive
-      type: Cobilas.GodotEngine.Utility.IO.Archive
-      description: The representation of the file that will be renamed.
-    - id: newName
-      type: System.String
-      description: The new name that will be given to the object.
-    return:
-      type: System.Boolean
-      description: Returns <code>true</code> when the operation is performed successfully.
-    content.vb: Public Shared Function RenameArchive(archive As Archive, newName As String) As Boolean
-  overload: Cobilas.GodotEngine.Utility.IO.Archive.RenameArchive*
+      type: System.DateTime
+      description: A <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> representing the file's last write time in local time.
+    content.vb: Public Shared Function GetLastWriteTime(path As String) As Date
+  overload: Cobilas.GodotEngine.Utility.IO.Archive.GetLastWriteTime*
   exceptions:
-  - type: System.InvalidOperationException
-    commentId: T:System.InvalidOperationException
-    description: Occurs when the name of the new file has an invalid character.
-  - type: System.Data.ReadOnlyException
-    commentId: T:System.Data.ReadOnlyException
-    description: Will occur if the method is called on an object that is marked as read-only.
-  nameWithType.vb: Archive.RenameArchive(Archive, String)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.RenameArchive(Cobilas.GodotEngine.Utility.IO.Archive, String)
-  name.vb: RenameArchive(Archive, String)
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when path is null.
+  nameWithType.vb: Archive.GetLastWriteTime(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.GetLastWriteTime(String)
+  name.vb: GetLastWriteTime(String)
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.GetLastWriteTimeUtc(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.GetLastWriteTimeUtc(System.String)
+  id: GetLastWriteTimeUtc(System.String)
+  parent: Cobilas.GodotEngine.Utility.IO.Archive
+  langs:
+  - csharp
+  - vb
+  name: GetLastWriteTimeUtc(string?)
+  nameWithType: Archive.GetLastWriteTimeUtc(string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.GetLastWriteTimeUtc(string?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Archive.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetLastWriteTimeUtc
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
+    startLine: 161
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets the last write time of the specified file in UTC time.
+  example: []
+  syntax:
+    content: public static DateTime GetLastWriteTimeUtc(string? path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the file.
+    return:
+      type: System.DateTime
+      description: A <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> representing the file's last write time in UTC.
+    content.vb: Public Shared Function GetLastWriteTimeUtc(path As String) As Date
+  overload: Cobilas.GodotEngine.Utility.IO.Archive.GetLastWriteTimeUtc*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when path is null.
+  nameWithType.vb: Archive.GetLastWriteTimeUtc(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.GetLastWriteTimeUtc(String)
+  name.vb: GetLastWriteTimeUtc(String)
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.GetParent(Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Archive.GetParent(Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo)
+  id: GetParent(Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo)
+  parent: Cobilas.GodotEngine.Utility.IO.Archive
+  langs:
+  - csharp
+  - vb
+  name: GetParent(IArchiveInfo?)
+  nameWithType: Archive.GetParent(IArchiveInfo?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.GetParent(Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Archive.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetParent
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Archive.cs
+    startLine: 169
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets the parent folder of the specified archive information.
+  example: []
+  syntax:
+    content: public static IDataInfo GetParent(IArchiveInfo? data)
+    parameters:
+    - id: data
+      type: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo
+      description: The archive information to get the parent of.
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+      description: An <xref href="Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo" data-throw-if-not-resolved="false"></xref> representing the parent folder.
+    content.vb: Public Shared Function GetParent(data As IArchiveInfo) As IDataInfo
+  overload: Cobilas.GodotEngine.Utility.IO.Archive.GetParent*
+  nameWithType.vb: Archive.GetParent(IArchiveInfo)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.GetParent(Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo)
+  name.vb: GetParent(IArchiveInfo)
 references:
 - uid: Cobilas.GodotEngine.Utility.IO
   commentId: N:Cobilas.GodotEngine.Utility.IO
@@ -1295,53 +799,29 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Cobilas.GodotEngine.Utility.IO.DataBase
-  commentId: T:Cobilas.GodotEngine.Utility.IO.DataBase
-  parent: Cobilas.GodotEngine.Utility.IO
-  href: Cobilas.GodotEngine.Utility.IO.DataBase.html
-  name: DataBase
-  nameWithType: DataBase
-  fullName: Cobilas.GodotEngine.Utility.IO.DataBase
-- uid: System.IDisposable
-  commentId: T:System.IDisposable
-  parent: System
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.idisposable
-  name: IDisposable
-  nameWithType: IDisposable
-  fullName: System.IDisposable
-- uid: System.IFormattable
-  commentId: T:System.IFormattable
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.iformattable
-  name: IFormattable
-  nameWithType: IFormattable
-  fullName: System.IFormattable
-- uid: Cobilas.GodotEngine.Utility.IO.DataBase.GetDataPath(Cobilas.GodotEngine.Utility.IO.DataBase)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.DataBase.GetDataPath(Cobilas.GodotEngine.Utility.IO.DataBase)
-  parent: Cobilas.GodotEngine.Utility.IO.DataBase
-  href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_GetDataPath_Cobilas_GodotEngine_Utility_IO_DataBase_
-  name: GetDataPath(DataBase)
-  nameWithType: DataBase.GetDataPath(DataBase)
-  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.GetDataPath(Cobilas.GodotEngine.Utility.IO.DataBase)
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
   spec.csharp:
-  - uid: Cobilas.GodotEngine.Utility.IO.DataBase.GetDataPath(Cobilas.GodotEngine.Utility.IO.DataBase)
-    name: GetDataPath
-    href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_GetDataPath_Cobilas_GodotEngine_Utility_IO_DataBase_
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
-  - uid: Cobilas.GodotEngine.Utility.IO.DataBase
-    name: DataBase
-    href: Cobilas.GodotEngine.Utility.IO.DataBase.html
   - name: )
   spec.vb:
-  - uid: Cobilas.GodotEngine.Utility.IO.DataBase.GetDataPath(Cobilas.GodotEngine.Utility.IO.DataBase)
-    name: GetDataPath
-    href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_GetDataPath_Cobilas_GodotEngine_Utility_IO_DataBase_
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
-  - uid: Cobilas.GodotEngine.Utility.IO.DataBase
-    name: DataBase
-    href: Cobilas.GodotEngine.Utility.IO.DataBase.html
   - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
@@ -1545,36 +1025,79 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.bufferLength*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.bufferLength
-  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_bufferLength
-  name: bufferLength
-  nameWithType: Archive.bufferLength
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.bufferLength
-- uid: System.Int64
-  commentId: T:System.Int64
-  parent: System
+- uid: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+  commentId: T:Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+  parent: Cobilas.GodotEngine.Utility.IO
+  href: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.html
+  name: ArchiveAttributes
+  nameWithType: ArchiveAttributes
+  fullName: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int64
-  name: long
-  nameWithType: long
-  fullName: long
-  nameWithType.vb: Long
-  fullName.vb: Long
-  name.vb: Long
-- uid: Cobilas.GodotEngine.Utility.IO.DataBase.Path
-  commentId: P:Cobilas.GodotEngine.Utility.IO.DataBase.Path
-  parent: Cobilas.GodotEngine.Utility.IO.DataBase
-  href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_Path
-  name: Path
-  nameWithType: DataBase.Path
-  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.Path
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Path*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.Path
-  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_Path
-  name: Path
-  nameWithType: Archive.Path
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Path
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.GetArchiveAttributes*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.GetArchiveAttributes
+  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_GetArchiveAttributes_Cobilas_GodotEngine_Utility_IO_Interfaces_IDataInfo_
+  name: GetArchiveAttributes
+  nameWithType: Archive.GetArchiveAttributes
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.GetArchiveAttributes
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  commentId: T:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html
+  name: IDataInfo
+  nameWithType: IDataInfo
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces
+  commentId: N:Cobilas.GodotEngine.Utility.IO.Interfaces
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Utility.IO.Interfaces
+  nameWithType: Cobilas.GodotEngine.Utility.IO.Interfaces
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO
+    name: IO
+    href: Cobilas.GodotEngine.Utility.IO.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO.Interfaces
+    name: Interfaces
+    href: Cobilas.GodotEngine.Utility.IO.Interfaces.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO
+    name: IO
+    href: Cobilas.GodotEngine.Utility.IO.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO.Interfaces
+    name: Interfaces
+    href: Cobilas.GodotEngine.Utility.IO.Interfaces.html
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -1586,58 +1109,12 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: Cobilas.GodotEngine.Utility.IO.DataBase.Parent
-  commentId: P:Cobilas.GodotEngine.Utility.IO.DataBase.Parent
-  parent: Cobilas.GodotEngine.Utility.IO.DataBase
-  href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_Parent
-  name: Parent
-  nameWithType: DataBase.Parent
-  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.Parent
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Parent*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.Parent
-  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_Parent
-  name: Parent
-  nameWithType: Archive.Parent
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Parent
-- uid: Cobilas.GodotEngine.Utility.IO.DataBase.Attributes
-  commentId: P:Cobilas.GodotEngine.Utility.IO.DataBase.Attributes
-  parent: Cobilas.GodotEngine.Utility.IO.DataBase
-  href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_Attributes
-  name: Attributes
-  nameWithType: DataBase.Attributes
-  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.Attributes
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Attributes*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.Attributes
-  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_Attributes
-  name: Attributes
-  nameWithType: Archive.Attributes
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Attributes
-- uid: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
-  commentId: T:Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
-  parent: Cobilas.GodotEngine.Utility.IO
-  href: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.html
-  name: ArchiveAttributes
-  nameWithType: ArchiveAttributes
-  fullName: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
-- uid: Cobilas.GodotEngine.Utility.IO.DataBase.Name
-  commentId: P:Cobilas.GodotEngine.Utility.IO.DataBase.Name
-  parent: Cobilas.GodotEngine.Utility.IO.DataBase
-  href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_Name
-  name: Name
-  nameWithType: DataBase.Name
-  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.Name
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Name*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.Name
-  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_Name
-  name: Name
-  nameWithType: Archive.Name
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Name
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.IsNull*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.IsNull
-  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_IsNull
-  name: IsNull
-  nameWithType: Archive.IsNull
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.IsNull
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.Exists*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.Exists
+  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_Exists_System_String_
+  name: Exists
+  nameWithType: Archive.Exists
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Exists
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -1649,328 +1126,136 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.ArchiveExtension*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.ArchiveExtension
-  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_ArchiveExtension
-  name: ArchiveExtension
-  nameWithType: Archive.ArchiveExtension
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.ArchiveExtension
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.NameWithoutExtension*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.NameWithoutExtension
-  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_NameWithoutExtension
-  name: NameWithoutExtension
-  nameWithType: Archive.NameWithoutExtension
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.NameWithoutExtension
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.GetGuid*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.GetGuid
-  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_GetGuid
-  name: GetGuid
-  nameWithType: Archive.GetGuid
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.GetGuid
-- uid: System.Guid
-  commentId: T:System.Guid
-  parent: System
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.Create*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.Create
+  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_Create_System_String_
+  name: Create
+  nameWithType: Archive.Create
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Create
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  commentId: T:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.html
+  name: IStream
+  nameWithType: IStream
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.Open*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.Open
+  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_Open_System_String_System_IO_FileAccess_Cobilas_GodotEngine_Utility_IO_StreamType_
+  name: Open
+  nameWithType: Archive.Open
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Open
+- uid: System.IO.FileAccess
+  commentId: T:System.IO.FileAccess
+  parent: System.IO
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.guid
-  name: Guid
-  nameWithType: Guid
-  fullName: System.Guid
-- uid: Cobilas.GodotEngine.Utility.IO.Archive
-  commentId: T:Cobilas.GodotEngine.Utility.IO.Archive
+  href: https://learn.microsoft.com/dotnet/api/system.io.fileaccess
+  name: FileAccess
+  nameWithType: FileAccess
+  fullName: System.IO.FileAccess
+- uid: Cobilas.GodotEngine.Utility.IO.StreamType
+  commentId: T:Cobilas.GodotEngine.Utility.IO.StreamType
   parent: Cobilas.GodotEngine.Utility.IO
-  href: Cobilas.GodotEngine.Utility.IO.Archive.html
-  name: Archive
-  nameWithType: Archive
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Null*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.Null
-  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_Null
-  name: "Null"
-  nameWithType: Archive.Null
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Null
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.#ctor*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.#ctor
-  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive__ctor_Cobilas_GodotEngine_Utility_IO_DataBase_System_String_Cobilas_GodotEngine_Utility_IO_ArchiveAttributes_
-  name: Archive
-  nameWithType: Archive.Archive
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Archive
-  nameWithType.vb: Archive.New
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.Archive.New
-  name.vb: New
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Read*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.Read
-  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_Read
-  name: Read
-  nameWithType: Archive.Read
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Read
-- uid: System.Byte[]
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.byte
-  name: byte[]
-  nameWithType: byte[]
-  fullName: byte[]
-  nameWithType.vb: Byte()
-  fullName.vb: Byte()
-  name.vb: Byte()
-  spec.csharp:
-  - uid: System.Byte
-    name: byte
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.byte
-  - name: '['
-  - name: ']'
-  spec.vb:
-  - uid: System.Byte
-    name: Byte
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.byte
-  - name: (
-  - name: )
-- uid: System.Text.Encoding
-  commentId: T:System.Text.Encoding
-  parent: System.Text
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.text.encoding
-  name: Encoding
-  nameWithType: Encoding
-  fullName: System.Text.Encoding
-- uid: System.ObjectDisposedException
-  commentId: T:System.ObjectDisposedException
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.objectdisposedexception
-  name: ObjectDisposedException
-  nameWithType: ObjectDisposedException
-  fullName: System.ObjectDisposedException
-- uid: System.Text
-  commentId: N:System.Text
+  href: Cobilas.GodotEngine.Utility.IO.StreamType.html
+  name: StreamType
+  nameWithType: StreamType
+  fullName: Cobilas.GodotEngine.Utility.IO.StreamType
+- uid: System.IO
+  commentId: N:System.IO
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Text
-  nameWithType: System.Text
-  fullName: System.Text
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
   spec.csharp:
   - uid: System
     name: System
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system
   - name: .
-  - uid: System.Text
-    name: Text
+  - uid: System.IO
+    name: IO
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.text
+    href: https://learn.microsoft.com/dotnet/api/system.io
   spec.vb:
   - uid: System
     name: System
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system
   - name: .
-  - uid: System.Text
-    name: Text
+  - uid: System.IO
+    name: IO
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.text
-- uid: System.Text.StringBuilder
-  commentId: T:System.Text.StringBuilder
-  parent: System.Text
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
-  name: StringBuilder
-  nameWithType: StringBuilder
-  fullName: System.Text.StringBuilder
-- uid: System.Char
-  commentId: T:System.Char
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.Move*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.Move
+  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_Move_System_String_System_String_
+  name: Move
+  nameWithType: Archive.Move
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Move
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.Copy*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.Copy
+  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_Copy_System_String_System_String_
+  name: Copy
+  nameWithType: Archive.Copy
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Copy
+- uid: System.DateTime
+  commentId: T:System.DateTime
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.char
-  name: char
-  nameWithType: char
-  fullName: char
-  nameWithType.vb: Char
-  fullName.vb: Char
-  name.vb: Char
-- uid: System.Char[]
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.char
-  name: char[]
-  nameWithType: char[]
-  fullName: char[]
-  nameWithType.vb: Char()
-  fullName.vb: Char()
-  name.vb: Char()
-  spec.csharp:
-  - uid: System.Char
-    name: char
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.char
-  - name: '['
-  - name: ']'
-  spec.vb:
-  - uid: System.Char
-    name: Char
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.char
-  - name: (
-  - name: )
-- uid: System.Data.ReadOnlyException
-  commentId: T:System.Data.ReadOnlyException
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.data.readonlyexception
-  name: ReadOnlyException
-  nameWithType: ReadOnlyException
-  fullName: System.Data.ReadOnlyException
-- uid: System.ArgumentNullException
-  commentId: T:System.ArgumentNullException
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
-  name: ArgumentNullException
-  nameWithType: ArgumentNullException
-  fullName: System.ArgumentNullException
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.ReplaceBuffer*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.ReplaceBuffer
-  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_ReplaceBuffer_System_Byte___
-  name: ReplaceBuffer
-  nameWithType: Archive.ReplaceBuffer
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.ReplaceBuffer
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Write*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.Write
-  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_Write_System_Byte___System_Text_Encoding_
-  name: Write
-  nameWithType: Archive.Write
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Write
-- uid: System.InvalidOperationException
-  commentId: T:System.InvalidOperationException
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
-  name: InvalidOperationException
-  nameWithType: InvalidOperationException
-  fullName: System.InvalidOperationException
-- uid: System.IO.FileNotFoundException
-  commentId: T:System.IO.FileNotFoundException
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception
-  name: FileNotFoundException
-  nameWithType: FileNotFoundException
-  fullName: System.IO.FileNotFoundException
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Flush*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.Flush
-  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_Flush
-  name: Flush
-  nameWithType: Archive.Flush
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Flush
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.RefreshBuffer*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.RefreshBuffer
-  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_RefreshBuffer
-  name: RefreshBuffer
-  nameWithType: Archive.RefreshBuffer
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.RefreshBuffer
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.ToString*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.ToString
-  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_ToString
-  name: ToString
-  nameWithType: Archive.ToString
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.ToString
-- uid: Cobilas.GodotEngine.Utility.IO.DataBase.ToString(System.String,System.IFormatProvider)
-  commentId: M:Cobilas.GodotEngine.Utility.IO.DataBase.ToString(System.String,System.IFormatProvider)
-  parent: Cobilas.GodotEngine.Utility.IO.DataBase
-  isExternal: true
-  href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_ToString_System_String_System_IFormatProvider_
-  name: ToString(string, IFormatProvider)
-  nameWithType: DataBase.ToString(string, IFormatProvider)
-  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.ToString(string, System.IFormatProvider)
-  nameWithType.vb: DataBase.ToString(String, IFormatProvider)
-  fullName.vb: Cobilas.GodotEngine.Utility.IO.DataBase.ToString(String, System.IFormatProvider)
-  name.vb: ToString(String, IFormatProvider)
-  spec.csharp:
-  - uid: Cobilas.GodotEngine.Utility.IO.DataBase.ToString(System.String,System.IFormatProvider)
-    name: ToString
-    href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_ToString_System_String_System_IFormatProvider_
-  - name: (
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: ','
-  - name: " "
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
-  - name: )
-  spec.vb:
-  - uid: Cobilas.GodotEngine.Utility.IO.DataBase.ToString(System.String,System.IFormatProvider)
-    name: ToString
-    href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_ToString_System_String_System_IFormatProvider_
-  - name: (
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: ','
-  - name: " "
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
-  - name: )
-- uid: System.IFormatProvider
-  commentId: T:System.IFormatProvider
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
-  name: IFormatProvider
-  nameWithType: IFormatProvider
-  fullName: System.IFormatProvider
-- uid: Cobilas.GodotEngine.Utility.IO.DataBase.Dispose
-  commentId: M:Cobilas.GodotEngine.Utility.IO.DataBase.Dispose
-  parent: Cobilas.GodotEngine.Utility.IO.DataBase
-  href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_Dispose
-  name: Dispose()
-  nameWithType: DataBase.Dispose()
-  fullName: Cobilas.GodotEngine.Utility.IO.DataBase.Dispose()
-  spec.csharp:
-  - uid: Cobilas.GodotEngine.Utility.IO.DataBase.Dispose
-    name: Dispose
-    href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_Dispose
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: Cobilas.GodotEngine.Utility.IO.DataBase.Dispose
-    name: Dispose
-    href: Cobilas.GodotEngine.Utility.IO.DataBase.html#Cobilas_GodotEngine_Utility_IO_DataBase_Dispose
-  - name: (
-  - name: )
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.Dispose*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.Dispose
-  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_Dispose
-  name: Dispose
-  nameWithType: Archive.Dispose
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.Dispose
-- uid: Cobilas.GodotEngine.Utility.IO.Archive.RenameArchive*
-  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.RenameArchive
-  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_RenameArchive_Cobilas_GodotEngine_Utility_IO_Archive_System_String_
-  name: RenameArchive
-  nameWithType: Archive.RenameArchive
-  fullName: Cobilas.GodotEngine.Utility.IO.Archive.RenameArchive
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.GetCreationTime*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.GetCreationTime
+  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_GetCreationTime_System_String_
+  name: GetCreationTime
+  nameWithType: Archive.GetCreationTime
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.GetCreationTime
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.GetCreationTimeUtc*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.GetCreationTimeUtc
+  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_GetCreationTimeUtc_System_String_
+  name: GetCreationTimeUtc
+  nameWithType: Archive.GetCreationTimeUtc
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.GetCreationTimeUtc
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.GetLastAccessTime*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.GetLastAccessTime
+  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_GetLastAccessTime_System_String_
+  name: GetLastAccessTime
+  nameWithType: Archive.GetLastAccessTime
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.GetLastAccessTime
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.GetLastAccessTimeUtc*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.GetLastAccessTimeUtc
+  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_GetLastAccessTimeUtc_System_String_
+  name: GetLastAccessTimeUtc
+  nameWithType: Archive.GetLastAccessTimeUtc
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.GetLastAccessTimeUtc
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.GetLastWriteTime*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.GetLastWriteTime
+  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_GetLastWriteTime_System_String_
+  name: GetLastWriteTime
+  nameWithType: Archive.GetLastWriteTime
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.GetLastWriteTime
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.GetLastWriteTimeUtc*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.GetLastWriteTimeUtc
+  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_GetLastWriteTimeUtc_System_String_
+  name: GetLastWriteTimeUtc
+  nameWithType: Archive.GetLastWriteTimeUtc
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.GetLastWriteTimeUtc
+- uid: Cobilas.GodotEngine.Utility.IO.Archive.GetParent*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Archive.GetParent
+  href: Cobilas.GodotEngine.Utility.IO.Archive.html#Cobilas_GodotEngine_Utility_IO_Archive_GetParent_Cobilas_GodotEngine_Utility_IO_Interfaces_IArchiveInfo_
+  name: GetParent
+  nameWithType: Archive.GetParent
+  fullName: Cobilas.GodotEngine.Utility.IO.Archive.GetParent
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo
+  commentId: T:Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.html
+  name: IArchiveInfo
+  nameWithType: IArchiveInfo
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo

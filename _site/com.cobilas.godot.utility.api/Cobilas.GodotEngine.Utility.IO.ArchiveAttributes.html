@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum ArchiveAttributes | Cobilas Documentation ">
       
-      <meta name="description" content="Represents the attributes of a file or folder.">
+      <meta name="description" content="Provides attributes for files and directories.">
       <link rel="icon" href="../images/favicon-96x96.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -90,7 +90,7 @@
 
 
   <h1 id="Cobilas_GodotEngine_Utility_IO_ArchiveAttributes" data-uid="Cobilas.GodotEngine.Utility.IO.ArchiveAttributes" class="text-break">
-Enum ArchiveAttributes  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/ArchiveAttributes.cs/#L5"><i class="bi bi-code-slash"></i></a>
+Enum ArchiveAttributes  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/ArchiveAttributes.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -98,12 +98,14 @@ Enum ArchiveAttributes  <a class="header-action link-secondary" title="View sour
   <dl><dt>Assembly</dt><dd>com.cobilas.godot.utility.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Represents the attributes of a file or folder.</p>
+  <div class="markdown summary"><p>Provides attributes for files and directories.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Flags]
+    <pre><code class="lang-csharp hljs">[Serializable]
+[ComVisible(true)]
+[Flags]
 public enum ArchiveAttributes : uint</code></pre>
   </div>
 
@@ -118,25 +120,86 @@ public enum ArchiveAttributes : uint</code></pre>
   <h2 id="fields">Fields
 </h2>
   <dl class="parameters">
-    <dt id="Cobilas_GodotEngine_Utility_IO_ArchiveAttributes_Directory"><code>Directory = 2</code></dt>
+    <dt id="Cobilas_GodotEngine_Utility_IO_ArchiveAttributes_Archive"><code>Archive = 32</code></dt>
   
-  <dd><p>Indicates that it is a directory file.</p>
+  <dd><p>The file is a candidate for backup or removal.</p>
 </dd>
-    <dt id="Cobilas_GodotEngine_Utility_IO_ArchiveAttributes_File"><code>File = 4</code></dt>
+    <dt id="Cobilas_GodotEngine_Utility_IO_ArchiveAttributes_Compressed"><code>Compressed = 2048</code></dt>
   
-  <dd><p>Indicates that it is a file.</p>
+  <dd><p>The file is compressed.</p>
 </dd>
-    <dt id="Cobilas_GodotEngine_Utility_IO_ArchiveAttributes_Hidden"><code>Hidden = 16</code></dt>
+    <dt id="Cobilas_GodotEngine_Utility_IO_ArchiveAttributes_Device"><code>Device = 64</code></dt>
   
-  <dd><p>Indicates whether the file or folder is hidden on the system.</p>
+  <dd><p>Reserved for future use.</p>
 </dd>
-    <dt id="Cobilas_GodotEngine_Utility_IO_ArchiveAttributes_Null"><code>Null = 0</code></dt>
+    <dt id="Cobilas_GodotEngine_Utility_IO_ArchiveAttributes_Directory"><code>Directory = 16</code></dt>
   
-  <dd><p>Indicates whether the file or folder is null.</p>
+  <dd><p>The file is a directory.</p>
 </dd>
-    <dt id="Cobilas_GodotEngine_Utility_IO_ArchiveAttributes_ReadOnly"><code>ReadOnly = 8</code></dt>
+    <dt id="Cobilas_GodotEngine_Utility_IO_ArchiveAttributes_Encrypted"><code>Encrypted = 16384</code></dt>
   
-  <dd><p>Indicates whether the file or folder is read-only.</p>
+  <dd><p>The file or directory is encrypted. For a file, this means that all the data in the file is encrypted.
+For a directory, this means that encryption is the default for newly created files and directories.</p>
+</dd>
+    <dt id="Cobilas_GodotEngine_Utility_IO_ArchiveAttributes_Hidden"><code>Hidden = 2</code></dt>
+  
+  <dd><p>The file is hidden and therefore not included in a regular directory listing.</p>
+</dd>
+    <dt id="Cobilas_GodotEngine_Utility_IO_ArchiveAttributes_IntegrityStream"><code>[ComVisible(false)]
+IntegrityStream = 32768</code></dt>
+  
+  <dd><p>The file or directory includes data integrity support. When this value is applied to a file,
+all data streams in the file have integrity support. When this value is applied to a directory,
+all new files and subfolders in the directory include integrity support by default.</p>
+</dd>
+    <dt id="Cobilas_GodotEngine_Utility_IO_ArchiveAttributes_Nil"><code>Nil = 0</code></dt>
+  
+  <dd><p>The file is null.</p>
+</dd>
+    <dt id="Cobilas_GodotEngine_Utility_IO_ArchiveAttributes_NoScrubData"><code>[ComVisible(false)]
+NoScrubData = 131072</code></dt>
+  
+  <dd><p>The file or directory is excluded from data integrity checking. When this value is applied to a
+folder, by default, all new files and subdirectories within the directory are excluded from
+data integrity checking.</p>
+</dd>
+    <dt id="Cobilas_GodotEngine_Utility_IO_ArchiveAttributes_Normal"><code>Normal = 128</code></dt>
+  
+  <dd><p>The file is a standard file with no special attributes. This attribute is only valid if used alone.</p>
+</dd>
+    <dt id="Cobilas_GodotEngine_Utility_IO_ArchiveAttributes_NotContentIndexed"><code>NotContentIndexed = 8192</code></dt>
+  
+  <dd><p>The file will not be indexed by the operating system's content indexing service.</p>
+</dd>
+    <dt id="Cobilas_GodotEngine_Utility_IO_ArchiveAttributes_Offline"><code>Offline = 4096</code></dt>
+  
+  <dd><p>The file is offline. The file data is not immediately available.</p>
+</dd>
+    <dt id="Cobilas_GodotEngine_Utility_IO_ArchiveAttributes_ReadOnly"><code>ReadOnly = 1</code></dt>
+  
+  <dd><p>The file is read-only.</p>
+</dd>
+    <dt id="Cobilas_GodotEngine_Utility_IO_ArchiveAttributes_ReparsePoint"><code>ReparsePoint = 1024</code></dt>
+  
+  <dd><p>The file contains a reparse point, which is a user-defined block of data
+associated with a file or directory.</p>
+</dd>
+    <dt id="Cobilas_GodotEngine_Utility_IO_ArchiveAttributes_SparseFile"><code>SparseFile = 512</code></dt>
+  
+  <dd><p>The file is a sparse file. In general, sparse files are large files
+whose data consists primarily of zeros.</p>
+</dd>
+    <dt id="Cobilas_GodotEngine_Utility_IO_ArchiveAttributes_System"><code>System = 4</code></dt>
+  
+  <dd><p>The file is a system file. That is, the file is part of the operating
+system or is used exclusively by the operating system.</p>
+</dd>
+    <dt id="Cobilas_GodotEngine_Utility_IO_ArchiveAttributes_Temporary"><code>Temporary = 256</code></dt>
+  
+  <dd><p>The file is temporary. A temporary file contains data needed during an application's execution
+but not needed after the application finishes. File systems attempt to keep all data in memory for
+faster access rather than flushing the data back to mass storage. A temporary file should be
+deleted by the application as soon as it is no longer needed.</p>
 </dd>
   </dl>
 
@@ -145,7 +208,7 @@ public enum ArchiveAttributes : uint</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/ArchiveAttributes.cs/#L5" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/ArchiveAttributes.cs/#L6" class="edit-link">Edit this page</a>
         </div>
 
 

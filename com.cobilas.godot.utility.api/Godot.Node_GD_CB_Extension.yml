@@ -722,7 +722,7 @@ items:
 
     <p>You can fine-tune the behavior using the <code>flags</code> (see <xref href="Godot.Node.DuplicateFlags" data-throw-if-not-resolved="false"></xref>).</p>
 
-    <p>Note: It will not work properly if the node contains a script with constructor arguments (i.e. needs to supply arguments to  method). In that case, the node will be duplicated without a script.</p>
+    <p>Note: It will not work properly if the node contains a script with constructor arguments (i.e. needs to supply arguments to <xref href="Godot.Object.%23ctor" data-throw-if-not-resolved="false"></xref> method). In that case, the node will be duplicated without a script.</p>
   example: []
   syntax:
     content: 'public static T Duplicate<T>(this Node node, int flags = 15) where T : Node'
@@ -1313,6 +1313,25 @@ references:
   - uid: Godot.Node.DuplicateFlags
     name: DuplicateFlags
     isExternal: true
+- uid: Godot.Object.#ctor
+  commentId: M:Godot.Object.#ctor
+  isExternal: true
+  name: Object()
+  nameWithType: Object.Object()
+  fullName: Godot.Object.Object()
+  nameWithType.vb: Object.New()
+  fullName.vb: Godot.Object.New()
+  name.vb: New()
+  spec.csharp:
+  - uid: Godot.Object.#ctor
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - name: New
+  - name: (
+  - name: )
 - uid: Godot.Node_GD_CB_Extension.Duplicate*
   commentId: Overload:Godot.Node_GD_CB_Extension.Duplicate
   href: Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_Duplicate__1_Godot_Node_System_Int32_

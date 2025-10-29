@@ -172,6 +172,9 @@ Class RunTimeInitialization  <a class="header-action link-secondary" title="View
       <span class="xref">Node.NotificationPathChanged</span>
     </div>
     <div>
+      <span class="xref">Node.NotificationChildOrderChanged</span>
+    </div>
+    <div>
       <span class="xref">Node.NotificationInternalProcess</span>
     </div>
     <div>
@@ -487,6 +490,12 @@ Class RunTimeInitialization  <a class="header-action link-secondary" title="View
       <span class="xref">Node.GetSceneInstanceLoadPlaceholder()</span>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Node.SetEditableInstance(Node, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Node.IsEditableInstance(Node)</span>
+    </div>
+    <div>
       <span class="xref">Node.GetViewport()</span>
     </div>
     <div>
@@ -494,6 +503,9 @@ Class RunTimeInitialization  <a class="header-action link-secondary" title="View
     </div>
     <div>
       <span class="xref">Node.RequestReady()</span>
+    </div>
+    <div>
+      <span class="xref">Node.IsNodeReady()</span>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Node.SetNetworkMaster(int, bool)</a>
@@ -825,7 +837,7 @@ Class RunTimeInitialization  <a class="header-action link-secondary" title="View
       <a class="xref" href="Godot.Node_GD_CB_Extension.html#Godot_Node_GD_CB_Extension_SetParent_Godot_Node_Godot_Node_">Node_GD_CB_Extension.SetParent(Node?, Node?)</a>
   </div>
   <div>
-      <a class="xref" href="Godot.Object_CB_GD_Extension.html#Godot_Object_CB_GD_Extension_Print_Godot_Object_System_Object___">Object_CB_GD_Extension.Print(Object, params object[])</a>
+      <a class="xref" href="Godot.Object_CB_GD_Extension.html#Godot_Object_CB_GD_Extension_Print_Godot_Object_System_Object___">Object_CB_GD_Extension.Print(Object?, params object[])</a>
   </div>
   <div>
       <a class="xref" href="Godot.Object_CB_GD_Extension.html#Godot_Object_CB_GD_Extension_SafelySetScript__1_Godot_Object_Godot_Resource_">Object_CB_GD_Extension.SafelySetScript&lt;T&gt;(Object, Resource)</a>
@@ -922,7 +934,7 @@ public class ClassTest : Node {}</code></pre>
 
   <div class="markdown level1 summary"><p>Called when the node is "ready", i.e. when both the node and its children have entered the scene tree. If the node has children, their <span class="xref">Godot.Node._Ready()</span> callbacks get triggered first, and the parent node will receive the ready notification afterwards.</p>
 <p>Corresponds to the <span class="xref">Godot.Node.NotificationReady</span> notification in <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">_Notification(int)</a>. See also the <code>onready</code> keyword for variables.</p>
-<p>Usually used for initialization. For even earlier initialization,  may be used. See also <span class="xref">Godot.Node._EnterTree()</span>.</p>
+<p>Usually used for initialization. For even earlier initialization, <span class="xref">Godot.Object.Object()</span> may be used. See also <span class="xref">Godot.Node._EnterTree()</span>.</p>
 <p>Note: <span class="xref">Godot.Node._Ready()</span> may be called only once for each node. After removing a node from the scene tree and adding it again, <code>_ready</code> will not be called a second time. This can be bypassed by requesting another call with <span class="xref">Godot.Node.RequestReady()</span>, which may be called anywhere before adding the node again.</p>
 </div>
   <div class="markdown level1 conceptual"></div>

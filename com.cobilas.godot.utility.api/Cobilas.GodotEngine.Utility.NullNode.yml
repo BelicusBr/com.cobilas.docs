@@ -50,6 +50,7 @@ items:
   - Godot.Node.NotificationDragBegin
   - Godot.Node.NotificationDragEnd
   - Godot.Node.NotificationPathChanged
+  - Godot.Node.NotificationChildOrderChanged
   - Godot.Node.NotificationInternalProcess
   - Godot.Node.NotificationInternalPhysicsProcess
   - Godot.Node.NotificationPostEnterTree
@@ -158,9 +159,12 @@ items:
   - Godot.Node.ReplaceBy(Godot.Node,System.Boolean)
   - Godot.Node.SetSceneInstanceLoadPlaceholder(System.Boolean)
   - Godot.Node.GetSceneInstanceLoadPlaceholder
+  - Godot.Node.SetEditableInstance(Godot.Node,System.Boolean)
+  - Godot.Node.IsEditableInstance(Godot.Node)
   - Godot.Node.GetViewport
   - Godot.Node.QueueFree
   - Godot.Node.RequestReady
+  - Godot.Node.IsNodeReady
   - Godot.Node.SetNetworkMaster(System.Int32,System.Boolean)
   - Godot.Node.GetNetworkMaster
   - Godot.Node.IsNetworkMaster
@@ -467,6 +471,13 @@ references:
   name: NotificationPathChanged
   nameWithType: Node.NotificationPathChanged
   fullName: Godot.Node.NotificationPathChanged
+- uid: Godot.Node.NotificationChildOrderChanged
+  commentId: F:Godot.Node.NotificationChildOrderChanged
+  parent: Godot.Node
+  isExternal: true
+  name: NotificationChildOrderChanged
+  nameWithType: Node.NotificationChildOrderChanged
+  fullName: Godot.Node.NotificationChildOrderChanged
 - uid: Godot.Node.NotificationInternalProcess
   commentId: F:Godot.Node.NotificationInternalProcess
   parent: Godot.Node
@@ -2943,6 +2954,72 @@ references:
     isExternal: true
   - name: (
   - name: )
+- uid: Godot.Node.SetEditableInstance(Godot.Node,System.Boolean)
+  commentId: M:Godot.Node.SetEditableInstance(Godot.Node,System.Boolean)
+  parent: Godot.Node
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: SetEditableInstance(Node, bool)
+  nameWithType: Node.SetEditableInstance(Node, bool)
+  fullName: Godot.Node.SetEditableInstance(Godot.Node, bool)
+  nameWithType.vb: Node.SetEditableInstance(Node, Boolean)
+  fullName.vb: Godot.Node.SetEditableInstance(Godot.Node, Boolean)
+  name.vb: SetEditableInstance(Node, Boolean)
+  spec.csharp:
+  - uid: Godot.Node.SetEditableInstance(Godot.Node,System.Boolean)
+    name: SetEditableInstance
+    isExternal: true
+  - name: (
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Godot.Node.SetEditableInstance(Godot.Node,System.Boolean)
+    name: SetEditableInstance
+    isExternal: true
+  - name: (
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Godot.Node.IsEditableInstance(Godot.Node)
+  commentId: M:Godot.Node.IsEditableInstance(Godot.Node)
+  parent: Godot.Node
+  isExternal: true
+  name: IsEditableInstance(Node)
+  nameWithType: Node.IsEditableInstance(Node)
+  fullName: Godot.Node.IsEditableInstance(Godot.Node)
+  spec.csharp:
+  - uid: Godot.Node.IsEditableInstance(Godot.Node)
+    name: IsEditableInstance
+    isExternal: true
+  - name: (
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Godot.Node.IsEditableInstance(Godot.Node)
+    name: IsEditableInstance
+    isExternal: true
+  - name: (
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: )
 - uid: Godot.Node.GetViewport
   commentId: M:Godot.Node.GetViewport
   parent: Godot.Node
@@ -2997,6 +3074,25 @@ references:
   spec.vb:
   - uid: Godot.Node.RequestReady
     name: RequestReady
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Godot.Node.IsNodeReady
+  commentId: M:Godot.Node.IsNodeReady
+  parent: Godot.Node
+  isExternal: true
+  name: IsNodeReady()
+  nameWithType: Node.IsNodeReady()
+  fullName: Godot.Node.IsNodeReady()
+  spec.csharp:
+  - uid: Godot.Node.IsNodeReady
+    name: IsNodeReady
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.Node.IsNodeReady
+    name: IsNodeReady
     isExternal: true
   - name: (
   - name: )

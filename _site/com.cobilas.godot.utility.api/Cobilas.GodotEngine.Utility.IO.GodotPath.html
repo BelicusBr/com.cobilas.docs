@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class GodotPath | Cobilas Documentation ">
       
-      <meta name="description" content="The class allows manipulation of system paths in godot.">
+      <meta name="description" content="Provides utilities for manipulating file system paths in Godot.">
       <link rel="icon" href="../images/favicon-96x96.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Cobilas_GodotEngine_Utility_IO_GodotPath" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath" class="text-break">
-Class GodotPath  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L6"><i class="bi bi-code-slash"></i></a>
+Class GodotPath  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,7 @@ Class GodotPath  <a class="header-action link-secondary" title="View source" hre
   <dl><dt>Assembly</dt><dd>com.cobilas.godot.utility.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The class allows manipulation of system paths in godot.</p>
+  <div class="markdown summary"><p>Provides utilities for manipulating file system paths in Godot.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -147,6 +147,10 @@ Class GodotPath  <a class="header-action link-secondary" title="View source" hre
 
 
 
+  <h2 id="Cobilas_GodotEngine_Utility_IO_GodotPath_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This class handles both regular file system paths and Godot-specific paths (res:// and user://).
+It provides methods for path manipulation while maintaining Godot's path conventions.</p>
+</div>
 
 
   <h2 class="section" id="fields">Fields
@@ -156,7 +160,7 @@ Class GodotPath  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_DirectorySeparatorChar" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.DirectorySeparatorChar">
   DirectorySeparatorChar
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Contains the directory separator used in godot.</p>
@@ -184,6 +188,74 @@ Class GodotPath  <a class="header-action link-secondary" title="View source" hre
 
 
 
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_ResPath" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.ResPath">
+  ResPath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The prefix for resource paths in Godot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ResPath = &quot;res://&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="Cobilas_GodotEngine_Utility_IO_GodotPath_ResPath_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Resources with this prefix are loaded from the project's resource directory.</p>
+</div>
+
+
+
+
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_UserPath" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.UserPath">
+  UserPath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The prefix for user data paths in Godot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string UserPath = &quot;user://&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="Cobilas_GodotEngine_Utility_IO_GodotPath_UserPath_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Files with this prefix are stored in the user's persistent data directory.</p>
+</div>
+
+
+
+
   <h2 class="section" id="properties">Properties
 </h2>
 
@@ -192,7 +264,7 @@ Class GodotPath  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_CurrentDirectory" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.CurrentDirectory">
   CurrentDirectory
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the fully qualified path of the current working directory.</p>
@@ -243,7 +315,7 @@ Class GodotPath  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_PersistentFilePath" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.PersistentFilePath">
   PersistentFilePath
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The path to the project's persistent files directory.</p>
@@ -276,7 +348,7 @@ Class GodotPath  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_ProjectPath" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.ProjectPath">
   ProjectPath
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The path to the project's root folder.</p>
@@ -314,7 +386,7 @@ When the project is compiled the property will use the <a class="xref" href="Cob
 
   <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_Combine_System_String_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.Combine(System.String,System.String)">
   Combine(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Combines two strings into a path.</p>
@@ -365,7 +437,7 @@ When the project is compiled the property will use the <a class="xref" href="Cob
 
   <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_Combine_System_String_System_String_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.Combine(System.String,System.String,System.String)">
   Combine(string, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Combines three strings into a path.</p>
@@ -419,7 +491,7 @@ When the project is compiled the property will use the <a class="xref" href="Cob
 
   <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_Combine_System_String_System_String_System_String_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.Combine(System.String,System.String,System.String,System.String)">
   Combine(string, string, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Combines four strings into a path.</p>
@@ -476,7 +548,7 @@ When the project is compiled the property will use the <a class="xref" href="Cob
 
   <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_Combine_System_String___" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.Combine(System.String[])">
   Combine(params string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Combines an array of strings into a path.</p>
@@ -524,7 +596,7 @@ When the project is compiled the property will use the <a class="xref" href="Cob
 
   <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_GetDirectoryName_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.GetDirectoryName(System.String)">
   GetDirectoryName(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the directory information for the specified path string.</p>
@@ -572,7 +644,7 @@ When the project is compiled the property will use the <a class="xref" href="Cob
 
   <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_GetExtension_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.GetExtension(System.String)">
   GetExtension(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the extension of the specified path string.</p>
@@ -617,7 +689,7 @@ When the project is compiled the property will use the <a class="xref" href="Cob
 
   <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_GetFileName_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.GetFileName(System.String)">
   GetFileName(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the file name and extension of the specified path string.</p>
@@ -662,7 +734,7 @@ When the project is compiled the property will use the <a class="xref" href="Cob
 
   <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_GetFileNameWithoutExtension_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.GetFileNameWithoutExtension(System.String)">
   GetFileNameWithoutExtension(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the file name of the specified path string without the extension.</p>
@@ -707,7 +779,7 @@ When the project is compiled the property will use the <a class="xref" href="Cob
 
   <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_GetInvalidFileNameChars" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.GetInvalidFileNameChars">
   GetInvalidFileNameChars()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets an array containing the characters that are not allowed in file names.</p>
@@ -740,7 +812,7 @@ When the project is compiled the property will use the <a class="xref" href="Cob
 
   <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_GetInvalidPathChars" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.GetInvalidPathChars">
   GetInvalidPathChars()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets an array containing the characters that are not allowed in path names.</p>
@@ -773,7 +845,7 @@ When the project is compiled the property will use the <a class="xref" href="Cob
 
   <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_GetPathRoot_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.GetPathRoot(System.String)">
   GetPathRoot(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the root directory information of the specified path.</p>
@@ -819,7 +891,7 @@ When the project is compiled the property will use the <a class="xref" href="Cob
 
   <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_GlobalizePath_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.GlobalizePath(System.String)">
   GlobalizePath(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the absolute, native OS path corresponding to the localized <code>path</code> (starting with <code>res://</code> or <code>user://</code>). The returned path will vary depending on the operating system and user preferences. See <a href="$DOCS_URL/tutorials/io/data_paths.html">File paths in Godot projects</a> to see what those paths convert to. See also <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">LocalizePath(string)</a>.</p>
@@ -869,7 +941,7 @@ When the project is compiled the property will use the <a class="xref" href="Cob
 
   <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_HasExtension_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.HasExtension(System.String)">
   HasExtension(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether a path includes a file name extension.</p>
@@ -910,11 +982,54 @@ When the project is compiled the property will use the <a class="xref" href="Cob
 
 
 
+  <a id="Cobilas_GodotEngine_Utility_IO_GodotPath_IsGodotRoot_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.IsGodotRoot*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_IsGodotRoot_System_String_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.IsGodotRoot(System.String)">
+  IsGodotRoot(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified path is a Godot root path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsGodotRoot(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the path starts with either <a class="xref" href="Cobilas.GodotEngine.Utility.IO.GodotPath.html#Cobilas_GodotEngine_Utility_IO_GodotPath_ResPath">ResPath</a> or <a class="xref" href="Cobilas.GodotEngine.Utility.IO.GodotPath.html#Cobilas_GodotEngine_Utility_IO_GodotPath_UserPath">UserPath</a>; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Cobilas_GodotEngine_Utility_IO_GodotPath_IsGodotRoot_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method checks if a path is one of Godot's special root paths (res:// or user://).
+It is useful for determining if a path refers to a Godot resource or user data.</p>
+</div>
+
+
+
+
   <a id="Cobilas_GodotEngine_Utility_IO_GodotPath_IsInvalidFileName_" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.IsInvalidFileName*"></a>
 
   <h3 id="Cobilas_GodotEngine_Utility_IO_GodotPath_IsInvalidFileName_System_String_System_Char__" data-uid="Cobilas.GodotEngine.Utility.IO.GodotPath.IsInvalidFileName(System.String,System.Char@)">
   IsInvalidFileName(string, out char)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Allows you to check if the system file name contains an invalid character.</p>
@@ -956,7 +1071,7 @@ When the project is compiled the property will use the <a class="xref" href="Cob
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L6" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/GodotEngine.Utility/IO/GodotPath.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 

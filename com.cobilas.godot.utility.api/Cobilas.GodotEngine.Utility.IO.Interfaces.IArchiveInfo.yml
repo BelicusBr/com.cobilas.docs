@@ -1,0 +1,677 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo
+  commentId: T:Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo
+  id: IArchiveInfo
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces
+  children:
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.ArchiveExtension
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.CopyTo(System.String)
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.CopyTo(System.String,System.Boolean)
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.Move(System.String)
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.NameWithoutExtension
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.Open(System.IO.FileAccess)
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.Open(System.IO.FileAccess,Cobilas.GodotEngine.Utility.IO.StreamType)
+  langs:
+  - csharp
+  - vb
+  name: IArchiveInfo
+  nameWithType: IArchiveInfo
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo
+  type: Interface
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IArchiveInfo.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: IArchiveInfo
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IArchiveInfo.cs
+    startLine: 8
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Represents information about an archive file and provides operations for working with archive contents.
+  remarks: >-
+    This interface extends <xref href="Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo" data-throw-if-not-resolved="false"></xref> to provide archive-specific functionality
+
+    including file extension information and stream-based access to archive contents.
+  example: []
+  syntax:
+    content: 'public interface IArchiveInfo : IDataInfo, IDisposable, IFormattable'
+    content.vb: Public Interface IArchiveInfo Inherits IDataInfo, IDisposable, IFormattable
+  inheritedMembers:
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.Name
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.FullName
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.Attributes
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.Parent
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.IsInternal
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.IsGodotRoot
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetCreationTime
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetCreationTimeUtc
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastAccessTime
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastAccessTimeUtc
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastWriteTime
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastWriteTimeUtc
+  - System.IDisposable.Dispose
+  - System.IFormattable.ToString(System.String,System.IFormatProvider)
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.ArchiveExtension
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.ArchiveExtension
+  id: ArchiveExtension
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo
+  langs:
+  - csharp
+  - vb
+  name: ArchiveExtension
+  nameWithType: IArchiveInfo.ArchiveExtension
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.ArchiveExtension
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IArchiveInfo.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ArchiveExtension
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IArchiveInfo.cs
+    startLine: 11
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Gets the file extension of the archive.
+  example: []
+  syntax:
+    content: string ArchiveExtension { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: The archive file extension including the dot (e.g., ".zip", ".rar").
+    content.vb: ReadOnly Property ArchiveExtension As String
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.ArchiveExtension*
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.NameWithoutExtension
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.NameWithoutExtension
+  id: NameWithoutExtension
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo
+  langs:
+  - csharp
+  - vb
+  name: NameWithoutExtension
+  nameWithType: IArchiveInfo.NameWithoutExtension
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.NameWithoutExtension
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IArchiveInfo.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: NameWithoutExtension
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IArchiveInfo.cs
+    startLine: 14
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Gets the name of the archive without the file extension.
+  example: []
+  syntax:
+    content: string NameWithoutExtension { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: The archive name excluding the extension.
+    content.vb: ReadOnly Property NameWithoutExtension As String
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.NameWithoutExtension*
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.Open(System.IO.FileAccess,Cobilas.GodotEngine.Utility.IO.StreamType)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.Open(System.IO.FileAccess,Cobilas.GodotEngine.Utility.IO.StreamType)
+  id: Open(System.IO.FileAccess,Cobilas.GodotEngine.Utility.IO.StreamType)
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo
+  langs:
+  - csharp
+  - vb
+  name: Open(FileAccess, StreamType)
+  nameWithType: IArchiveInfo.Open(FileAccess, StreamType)
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.Open(System.IO.FileAccess, Cobilas.GodotEngine.Utility.IO.StreamType)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IArchiveInfo.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Open
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IArchiveInfo.cs
+    startLine: 19
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Opens the archive with the specified access mode and <xref href="Cobilas.GodotEngine.Utility.IO.StreamType" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: IStream Open(FileAccess access, StreamType type)
+    parameters:
+    - id: access
+      type: System.IO.FileAccess
+      description: The file access mode specifying read and/or write permissions.
+    - id: type
+      type: Cobilas.GodotEngine.Utility.IO.StreamType
+      description: The type of stream to use for accessing the archive contents.
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+      description: A stream object for reading from or writing to the archive.
+    content.vb: Function Open(access As FileAccess, type As StreamType) As IStream
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.Open*
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.Open(System.IO.FileAccess)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.Open(System.IO.FileAccess)
+  id: Open(System.IO.FileAccess)
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo
+  langs:
+  - csharp
+  - vb
+  name: Open(FileAccess)
+  nameWithType: IArchiveInfo.Open(FileAccess)
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.Open(System.IO.FileAccess)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IArchiveInfo.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Open
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IArchiveInfo.cs
+    startLine: 23
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Opens the archive with the specified access mode using the default <xref href="Cobilas.GodotEngine.Utility.IO.StreamType" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: IStream Open(FileAccess access)
+    parameters:
+    - id: access
+      type: System.IO.FileAccess
+      description: The file access mode specifying read and/or write permissions.
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+      description: A stream object for reading from or writing to the archive.
+    content.vb: Function Open(access As FileAccess) As IStream
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.Open*
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.CopyTo(System.String,System.Boolean)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.CopyTo(System.String,System.Boolean)
+  id: CopyTo(System.String,System.Boolean)
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(string?, bool)
+  nameWithType: IArchiveInfo.CopyTo(string?, bool)
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.CopyTo(string?, bool)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IArchiveInfo.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: CopyTo
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IArchiveInfo.cs
+    startLine: 28
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Copies the archive to the specified destination path.
+  example: []
+  syntax:
+    content: bool CopyTo(string? destinationPath, bool overwrite)
+    parameters:
+    - id: destinationPath
+      type: System.String
+      description: The destination path where the archive will be copied.
+    - id: overwrite
+      type: System.Boolean
+      description: Whether to overwrite an existing file at the destination path.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if the copy operation succeeded; otherwise, <code>false</code>.
+    content.vb: Function CopyTo(destinationPath As String, overwrite As Boolean) As Boolean
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.CopyTo*
+  nameWithType.vb: IArchiveInfo.CopyTo(String, Boolean)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.CopyTo(String, Boolean)
+  name.vb: CopyTo(String, Boolean)
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.CopyTo(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.CopyTo(System.String)
+  id: CopyTo(System.String)
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(string?)
+  nameWithType: IArchiveInfo.CopyTo(string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.CopyTo(string?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IArchiveInfo.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: CopyTo
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IArchiveInfo.cs
+    startLine: 32
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Copies the archive to the specified destination path without overwriting existing files.
+  example: []
+  syntax:
+    content: bool CopyTo(string? destinationPath)
+    parameters:
+    - id: destinationPath
+      type: System.String
+      description: The destination path where the archive will be copied.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if the copy operation succeeded; otherwise, <code>false</code>.
+    content.vb: Function CopyTo(destinationPath As String) As Boolean
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.CopyTo*
+  nameWithType.vb: IArchiveInfo.CopyTo(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.CopyTo(String)
+  name.vb: CopyTo(String)
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.Move(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.Move(System.String)
+  id: Move(System.String)
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo
+  langs:
+  - csharp
+  - vb
+  name: Move(string?)
+  nameWithType: IArchiveInfo.Move(string?)
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.Move(string?)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/Interfaces/IArchiveInfo.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Move
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/Interfaces/IArchiveInfo.cs
+    startLine: 36
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO.Interfaces
+  summary: Moves the archive to the specified destination path.
+  example: []
+  syntax:
+    content: bool Move(string? destinationPath)
+    parameters:
+    - id: destinationPath
+      type: System.String
+      description: The destination path where the archive will be moved.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if the move operation succeeded; otherwise, <code>false</code>.
+    content.vb: Function Move(destinationPath As String) As Boolean
+  overload: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.Move*
+  nameWithType.vb: IArchiveInfo.Move(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.Move(String)
+  name.vb: Move(String)
+references:
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  commentId: T:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html
+  name: IDataInfo
+  nameWithType: IDataInfo
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces
+  commentId: N:Cobilas.GodotEngine.Utility.IO.Interfaces
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Utility.IO.Interfaces
+  nameWithType: Cobilas.GodotEngine.Utility.IO.Interfaces
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO
+    name: IO
+    href: Cobilas.GodotEngine.Utility.IO.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO.Interfaces
+    name: Interfaces
+    href: Cobilas.GodotEngine.Utility.IO.Interfaces.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO
+    name: IO
+    href: Cobilas.GodotEngine.Utility.IO.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO.Interfaces
+    name: Interfaces
+    href: Cobilas.GodotEngine.Utility.IO.Interfaces.html
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.Name
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.Name
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IDataInfo_Name
+  name: Name
+  nameWithType: IDataInfo.Name
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.Name
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.FullName
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.FullName
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IDataInfo_FullName
+  name: FullName
+  nameWithType: IDataInfo.FullName
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.FullName
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.Attributes
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.Attributes
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IDataInfo_Attributes
+  name: Attributes
+  nameWithType: IDataInfo.Attributes
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.Attributes
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.Parent
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.Parent
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IDataInfo_Parent
+  name: Parent
+  nameWithType: IDataInfo.Parent
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.Parent
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.IsInternal
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.IsInternal
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IDataInfo_IsInternal
+  name: IsInternal
+  nameWithType: IDataInfo.IsInternal
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.IsInternal
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.IsGodotRoot
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.IsGodotRoot
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IDataInfo_IsGodotRoot
+  name: IsGodotRoot
+  nameWithType: IDataInfo.IsGodotRoot
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.IsGodotRoot
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetCreationTime
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetCreationTime
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IDataInfo_GetCreationTime
+  name: GetCreationTime
+  nameWithType: IDataInfo.GetCreationTime
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetCreationTime
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetCreationTimeUtc
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetCreationTimeUtc
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IDataInfo_GetCreationTimeUtc
+  name: GetCreationTimeUtc
+  nameWithType: IDataInfo.GetCreationTimeUtc
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetCreationTimeUtc
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastAccessTime
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastAccessTime
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IDataInfo_GetLastAccessTime
+  name: GetLastAccessTime
+  nameWithType: IDataInfo.GetLastAccessTime
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastAccessTime
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastAccessTimeUtc
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastAccessTimeUtc
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IDataInfo_GetLastAccessTimeUtc
+  name: GetLastAccessTimeUtc
+  nameWithType: IDataInfo.GetLastAccessTimeUtc
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastAccessTimeUtc
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastWriteTime
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastWriteTime
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IDataInfo_GetLastWriteTime
+  name: GetLastWriteTime
+  nameWithType: IDataInfo.GetLastWriteTime
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastWriteTime
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastWriteTimeUtc
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastWriteTimeUtc
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IDataInfo_GetLastWriteTimeUtc
+  name: GetLastWriteTimeUtc
+  nameWithType: IDataInfo.GetLastWriteTimeUtc
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastWriteTimeUtc
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IFormattable.ToString(System.String,System.IFormatProvider)
+  commentId: M:System.IFormattable.ToString(System.String,System.IFormatProvider)
+  parent: System.IFormattable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformattable.tostring
+  name: ToString(string, IFormatProvider)
+  nameWithType: IFormattable.ToString(string, IFormatProvider)
+  fullName: System.IFormattable.ToString(string, System.IFormatProvider)
+  nameWithType.vb: IFormattable.ToString(String, IFormatProvider)
+  fullName.vb: System.IFormattable.ToString(String, System.IFormatProvider)
+  name.vb: ToString(String, IFormatProvider)
+  spec.csharp:
+  - uid: System.IFormattable.ToString(System.String,System.IFormatProvider)
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformattable.tostring
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  - name: )
+  spec.vb:
+  - uid: System.IFormattable.ToString(System.String,System.IFormatProvider)
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformattable.tostring
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.IFormattable
+  commentId: T:System.IFormattable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformattable
+  name: IFormattable
+  nameWithType: IFormattable
+  fullName: System.IFormattable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.ArchiveExtension*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.ArchiveExtension
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IArchiveInfo_ArchiveExtension
+  name: ArchiveExtension
+  nameWithType: IArchiveInfo.ArchiveExtension
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.ArchiveExtension
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.NameWithoutExtension*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.NameWithoutExtension
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IArchiveInfo_NameWithoutExtension
+  name: NameWithoutExtension
+  nameWithType: IArchiveInfo.NameWithoutExtension
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.NameWithoutExtension
+- uid: Cobilas.GodotEngine.Utility.IO.StreamType
+  commentId: T:Cobilas.GodotEngine.Utility.IO.StreamType
+  parent: Cobilas.GodotEngine.Utility.IO
+  href: Cobilas.GodotEngine.Utility.IO.StreamType.html
+  name: StreamType
+  nameWithType: StreamType
+  fullName: Cobilas.GodotEngine.Utility.IO.StreamType
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.Open*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.Open
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IArchiveInfo_Open_System_IO_FileAccess_Cobilas_GodotEngine_Utility_IO_StreamType_
+  name: Open
+  nameWithType: IArchiveInfo.Open
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.Open
+- uid: System.IO.FileAccess
+  commentId: T:System.IO.FileAccess
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.fileaccess
+  name: FileAccess
+  nameWithType: FileAccess
+  fullName: System.IO.FileAccess
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  commentId: T:Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream.html
+  name: IStream
+  nameWithType: IStream
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IStream
+- uid: Cobilas.GodotEngine.Utility.IO
+  commentId: N:Cobilas.GodotEngine.Utility.IO
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Utility.IO
+  nameWithType: Cobilas.GodotEngine.Utility.IO
+  fullName: Cobilas.GodotEngine.Utility.IO
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO
+    name: IO
+    href: Cobilas.GodotEngine.Utility.IO.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO
+    name: IO
+    href: Cobilas.GodotEngine.Utility.IO.html
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.CopyTo*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.CopyTo
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IArchiveInfo_CopyTo_System_String_System_Boolean_
+  name: CopyTo
+  nameWithType: IArchiveInfo.CopyTo
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.CopyTo
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.Move*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.Move
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IArchiveInfo_Move_System_String_
+  name: Move
+  nameWithType: IArchiveInfo.Move
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IArchiveInfo.Move

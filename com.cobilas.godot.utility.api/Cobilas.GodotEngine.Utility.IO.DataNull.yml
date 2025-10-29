@@ -1,0 +1,1197 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull
+  commentId: T:Cobilas.GodotEngine.Utility.IO.DataNull
+  id: DataNull
+  parent: Cobilas.GodotEngine.Utility.IO
+  children:
+  - Cobilas.GodotEngine.Utility.IO.DataNull.Attributes
+  - Cobilas.GodotEngine.Utility.IO.DataNull.Dispose
+  - Cobilas.GodotEngine.Utility.IO.DataNull.FullName
+  - Cobilas.GodotEngine.Utility.IO.DataNull.GetCreationTime
+  - Cobilas.GodotEngine.Utility.IO.DataNull.GetCreationTimeUtc
+  - Cobilas.GodotEngine.Utility.IO.DataNull.GetLastAccessTime
+  - Cobilas.GodotEngine.Utility.IO.DataNull.GetLastAccessTimeUtc
+  - Cobilas.GodotEngine.Utility.IO.DataNull.GetLastWriteTime
+  - Cobilas.GodotEngine.Utility.IO.DataNull.GetLastWriteTimeUtc
+  - Cobilas.GodotEngine.Utility.IO.DataNull.IsGodotRoot
+  - Cobilas.GodotEngine.Utility.IO.DataNull.IsInternal
+  - Cobilas.GodotEngine.Utility.IO.DataNull.Name
+  - Cobilas.GodotEngine.Utility.IO.DataNull.Null
+  - Cobilas.GodotEngine.Utility.IO.DataNull.Parent
+  - Cobilas.GodotEngine.Utility.IO.DataNull.ToString(System.String,System.IFormatProvider)
+  langs:
+  - csharp
+  - vb
+  name: DataNull
+  nameWithType: DataNull
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull
+  type: Struct
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/DataNull.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: DataNull
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/DataNull.cs
+    startLine: 12
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: >-
+    Represents a null or empty data information structure that implements 
+
+    the <xref href="Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo" data-throw-if-not-resolved="false"></xref> interface.
+  remarks: >-
+    This structure serves as a null object pattern implementation for data information,
+
+    providing default values for all properties and safe no-op operations.
+  example: []
+  syntax:
+    content: 'public readonly struct DataNull : IDataInfo, IDisposable, IFormattable'
+    content.vb: Public Structure DataNull Implements IDataInfo, IDisposable, IFormattable
+  implements:
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  - System.IDisposable
+  - System.IFormattable
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.Name
+  commentId: P:Cobilas.GodotEngine.Utility.IO.DataNull.Name
+  id: Name
+  parent: Cobilas.GodotEngine.Utility.IO.DataNull
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: DataNull.Name
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.Name
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/DataNull.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Name
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/DataNull.cs
+    startLine: 15
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets the name of the data item without the path.
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: The name of the data item.
+    content.vb: Public ReadOnly Property Name As String
+  overload: Cobilas.GodotEngine.Utility.IO.DataNull.Name*
+  implements:
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.Name
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.FullName
+  commentId: P:Cobilas.GodotEngine.Utility.IO.DataNull.FullName
+  id: FullName
+  parent: Cobilas.GodotEngine.Utility.IO.DataNull
+  langs:
+  - csharp
+  - vb
+  name: FullName
+  nameWithType: DataNull.FullName
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.FullName
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/DataNull.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: FullName
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/DataNull.cs
+    startLine: 17
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets the full path and name of the data item.
+  example: []
+  syntax:
+    content: public string FullName { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: The complete path including the item name.
+    content.vb: Public ReadOnly Property FullName As String
+  overload: Cobilas.GodotEngine.Utility.IO.DataNull.FullName*
+  implements:
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.FullName
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.Attributes
+  commentId: P:Cobilas.GodotEngine.Utility.IO.DataNull.Attributes
+  id: Attributes
+  parent: Cobilas.GodotEngine.Utility.IO.DataNull
+  langs:
+  - csharp
+  - vb
+  name: Attributes
+  nameWithType: DataNull.Attributes
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.Attributes
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/DataNull.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Attributes
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/DataNull.cs
+    startLine: 19
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets the attributes associated with the data item.
+  example: []
+  syntax:
+    content: public ArchiveAttributes Attributes { get; }
+    parameters: []
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+      description: The archive attributes defining the item's properties and permissions.
+    content.vb: Public ReadOnly Property Attributes As ArchiveAttributes
+  overload: Cobilas.GodotEngine.Utility.IO.DataNull.Attributes*
+  implements:
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.Attributes
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.Parent
+  commentId: P:Cobilas.GodotEngine.Utility.IO.DataNull.Parent
+  id: Parent
+  parent: Cobilas.GodotEngine.Utility.IO.DataNull
+  langs:
+  - csharp
+  - vb
+  name: Parent
+  nameWithType: DataNull.Parent
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.Parent
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/DataNull.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Parent
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/DataNull.cs
+    startLine: 21
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets the parent data item of the current item.
+  example: []
+  syntax:
+    content: public IDataInfo Parent { get; }
+    parameters: []
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+      description: The parent <xref href="Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo" data-throw-if-not-resolved="false"></xref> instance, or null if this is the root item.
+    content.vb: Public ReadOnly Property Parent As IDataInfo
+  overload: Cobilas.GodotEngine.Utility.IO.DataNull.Parent*
+  implements:
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.Parent
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.IsInternal
+  commentId: P:Cobilas.GodotEngine.Utility.IO.DataNull.IsInternal
+  id: IsInternal
+  parent: Cobilas.GodotEngine.Utility.IO.DataNull
+  langs:
+  - csharp
+  - vb
+  name: IsInternal
+  nameWithType: DataNull.IsInternal
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.IsInternal
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/DataNull.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: IsInternal
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/DataNull.cs
+    startLine: 23
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets a value indicating whether the data item is internal to the application or archive.
+  example: []
+  syntax:
+    content: public bool IsInternal { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the item is internal; otherwise, false.
+    content.vb: Public ReadOnly Property IsInternal As Boolean
+  overload: Cobilas.GodotEngine.Utility.IO.DataNull.IsInternal*
+  implements:
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.IsInternal
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.IsGodotRoot
+  commentId: P:Cobilas.GodotEngine.Utility.IO.DataNull.IsGodotRoot
+  id: IsGodotRoot
+  parent: Cobilas.GodotEngine.Utility.IO.DataNull
+  langs:
+  - csharp
+  - vb
+  name: IsGodotRoot
+  nameWithType: DataNull.IsGodotRoot
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.IsGodotRoot
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/DataNull.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: IsGodotRoot
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/DataNull.cs
+    startLine: 25
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets a value indicating whether the data item is located at the Godot engine root.
+  example: []
+  syntax:
+    content: public bool IsGodotRoot { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the item is at the Godot root; otherwise, false.
+    content.vb: Public ReadOnly Property IsGodotRoot As Boolean
+  overload: Cobilas.GodotEngine.Utility.IO.DataNull.IsGodotRoot*
+  implements:
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.IsGodotRoot
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.Null
+  commentId: P:Cobilas.GodotEngine.Utility.IO.DataNull.Null
+  id: "Null"
+  parent: Cobilas.GodotEngine.Utility.IO.DataNull
+  langs:
+  - csharp
+  - vb
+  name: "Null"
+  nameWithType: DataNull.Null
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.Null
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/DataNull.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: "Null"
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/DataNull.cs
+    startLine: 28
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets the singleton instance of the null data item.
+  example: []
+  syntax:
+    content: public static DataNull Null { get; }
+    parameters: []
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.DataNull
+      description: The static <xref href="Cobilas.GodotEngine.Utility.IO.DataNull" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Public Shared ReadOnly Property Null As DataNull
+  overload: Cobilas.GodotEngine.Utility.IO.DataNull.Null*
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.GetCreationTime
+  commentId: P:Cobilas.GodotEngine.Utility.IO.DataNull.GetCreationTime
+  id: GetCreationTime
+  parent: Cobilas.GodotEngine.Utility.IO.DataNull
+  langs:
+  - csharp
+  - vb
+  name: GetCreationTime
+  nameWithType: DataNull.GetCreationTime
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.GetCreationTime
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/DataNull.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetCreationTime
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/DataNull.cs
+    startLine: 30
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets the creation time of the data item in local time.
+  example: []
+  syntax:
+    content: public DateTime GetCreationTime { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+      description: The creation date and time in local time.
+    content.vb: Public ReadOnly Property GetCreationTime As Date
+  overload: Cobilas.GodotEngine.Utility.IO.DataNull.GetCreationTime*
+  implements:
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetCreationTime
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.GetCreationTimeUtc
+  commentId: P:Cobilas.GodotEngine.Utility.IO.DataNull.GetCreationTimeUtc
+  id: GetCreationTimeUtc
+  parent: Cobilas.GodotEngine.Utility.IO.DataNull
+  langs:
+  - csharp
+  - vb
+  name: GetCreationTimeUtc
+  nameWithType: DataNull.GetCreationTimeUtc
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.GetCreationTimeUtc
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/DataNull.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetCreationTimeUtc
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/DataNull.cs
+    startLine: 32
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets the creation time of the data item in Coordinated Universal Time (UTC).
+  example: []
+  syntax:
+    content: public DateTime GetCreationTimeUtc { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+      description: The creation date and time in UTC.
+    content.vb: Public ReadOnly Property GetCreationTimeUtc As Date
+  overload: Cobilas.GodotEngine.Utility.IO.DataNull.GetCreationTimeUtc*
+  implements:
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetCreationTimeUtc
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.GetLastAccessTime
+  commentId: P:Cobilas.GodotEngine.Utility.IO.DataNull.GetLastAccessTime
+  id: GetLastAccessTime
+  parent: Cobilas.GodotEngine.Utility.IO.DataNull
+  langs:
+  - csharp
+  - vb
+  name: GetLastAccessTime
+  nameWithType: DataNull.GetLastAccessTime
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.GetLastAccessTime
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/DataNull.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetLastAccessTime
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/DataNull.cs
+    startLine: 34
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets the last access time of the data item in local time.
+  example: []
+  syntax:
+    content: public DateTime GetLastAccessTime { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+      description: The last access date and time in local time.
+    content.vb: Public ReadOnly Property GetLastAccessTime As Date
+  overload: Cobilas.GodotEngine.Utility.IO.DataNull.GetLastAccessTime*
+  implements:
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastAccessTime
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.GetLastAccessTimeUtc
+  commentId: P:Cobilas.GodotEngine.Utility.IO.DataNull.GetLastAccessTimeUtc
+  id: GetLastAccessTimeUtc
+  parent: Cobilas.GodotEngine.Utility.IO.DataNull
+  langs:
+  - csharp
+  - vb
+  name: GetLastAccessTimeUtc
+  nameWithType: DataNull.GetLastAccessTimeUtc
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.GetLastAccessTimeUtc
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/DataNull.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetLastAccessTimeUtc
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/DataNull.cs
+    startLine: 36
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets the last access time of the data item in Coordinated Universal Time (UTC).
+  example: []
+  syntax:
+    content: public DateTime GetLastAccessTimeUtc { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+      description: The last access date and time in UTC.
+    content.vb: Public ReadOnly Property GetLastAccessTimeUtc As Date
+  overload: Cobilas.GodotEngine.Utility.IO.DataNull.GetLastAccessTimeUtc*
+  implements:
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastAccessTimeUtc
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.GetLastWriteTime
+  commentId: P:Cobilas.GodotEngine.Utility.IO.DataNull.GetLastWriteTime
+  id: GetLastWriteTime
+  parent: Cobilas.GodotEngine.Utility.IO.DataNull
+  langs:
+  - csharp
+  - vb
+  name: GetLastWriteTime
+  nameWithType: DataNull.GetLastWriteTime
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.GetLastWriteTime
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/DataNull.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetLastWriteTime
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/DataNull.cs
+    startLine: 38
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets the last write time of the data item in local time.
+  example: []
+  syntax:
+    content: public DateTime GetLastWriteTime { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+      description: The last write date and time in local time.
+    content.vb: Public ReadOnly Property GetLastWriteTime As Date
+  overload: Cobilas.GodotEngine.Utility.IO.DataNull.GetLastWriteTime*
+  implements:
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastWriteTime
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.GetLastWriteTimeUtc
+  commentId: P:Cobilas.GodotEngine.Utility.IO.DataNull.GetLastWriteTimeUtc
+  id: GetLastWriteTimeUtc
+  parent: Cobilas.GodotEngine.Utility.IO.DataNull
+  langs:
+  - csharp
+  - vb
+  name: GetLastWriteTimeUtc
+  nameWithType: DataNull.GetLastWriteTimeUtc
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.GetLastWriteTimeUtc
+  type: Property
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/DataNull.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetLastWriteTimeUtc
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/DataNull.cs
+    startLine: 40
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Gets the last write time of the data item in Coordinated Universal Time (UTC).
+  example: []
+  syntax:
+    content: public DateTime GetLastWriteTimeUtc { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+      description: The last write date and time in UTC.
+    content.vb: Public ReadOnly Property GetLastWriteTimeUtc As Date
+  overload: Cobilas.GodotEngine.Utility.IO.DataNull.GetLastWriteTimeUtc*
+  implements:
+  - Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastWriteTimeUtc
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.Dispose
+  commentId: M:Cobilas.GodotEngine.Utility.IO.DataNull.Dispose
+  id: Dispose
+  parent: Cobilas.GodotEngine.Utility.IO.DataNull
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: DataNull.Dispose()
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.Dispose()
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/DataNull.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Dispose
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/DataNull.cs
+    startLine: 42
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Cobilas.GodotEngine.Utility.IO.DataNull.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.ToString(System.String,System.IFormatProvider)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.DataNull.ToString(System.String,System.IFormatProvider)
+  id: ToString(System.String,System.IFormatProvider)
+  parent: Cobilas.GodotEngine.Utility.IO.DataNull
+  langs:
+  - csharp
+  - vb
+  name: ToString(string, IFormatProvider)
+  nameWithType: DataNull.ToString(string, IFormatProvider)
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.ToString(string, System.IFormatProvider)
+  type: Method
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/DataNull.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ToString
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/DataNull.cs
+    startLine: 44
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Formats the value of the current instance using the specified format.
+  example: []
+  syntax:
+    content: public string ToString(string format, IFormatProvider formatProvider)
+    parameters:
+    - id: format
+      type: System.String
+      description: The format to use.-or- A null reference (<code>Nothing</code> in Visual Basic) to use the default format defined for the type of the <xref href="System.IFormattable" data-throw-if-not-resolved="false"></xref> implementation.
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: The provider to use to format the value.-or- A null reference (<code>Nothing</code> in Visual Basic) to obtain the numeric format information from the current locale setting of the operating system.
+    return:
+      type: System.String
+      description: The value of the current instance in the specified format.
+    content.vb: Public Function ToString(format As String, formatProvider As IFormatProvider) As String
+  overload: Cobilas.GodotEngine.Utility.IO.DataNull.ToString*
+  implements:
+  - System.IFormattable.ToString(System.String,System.IFormatProvider)
+  nameWithType.vb: DataNull.ToString(String, IFormatProvider)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.DataNull.ToString(String, System.IFormatProvider)
+  name.vb: ToString(String, IFormatProvider)
+references:
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  commentId: T:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html
+  name: IDataInfo
+  nameWithType: IDataInfo
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+- uid: Cobilas.GodotEngine.Utility.IO
+  commentId: N:Cobilas.GodotEngine.Utility.IO
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Utility.IO
+  nameWithType: Cobilas.GodotEngine.Utility.IO
+  fullName: Cobilas.GodotEngine.Utility.IO
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO
+    name: IO
+    href: Cobilas.GodotEngine.Utility.IO.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO
+    name: IO
+    href: Cobilas.GodotEngine.Utility.IO.html
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.IFormattable
+  commentId: T:System.IFormattable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformattable
+  name: IFormattable
+  nameWithType: IFormattable
+  fullName: System.IFormattable
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces
+  commentId: N:Cobilas.GodotEngine.Utility.IO.Interfaces
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Utility.IO.Interfaces
+  nameWithType: Cobilas.GodotEngine.Utility.IO.Interfaces
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO
+    name: IO
+    href: Cobilas.GodotEngine.Utility.IO.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO.Interfaces
+    name: Interfaces
+    href: Cobilas.GodotEngine.Utility.IO.Interfaces.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO
+    name: IO
+    href: Cobilas.GodotEngine.Utility.IO.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.IO.Interfaces
+    name: Interfaces
+    href: Cobilas.GodotEngine.Utility.IO.Interfaces.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.Name*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.DataNull.Name
+  href: Cobilas.GodotEngine.Utility.IO.DataNull.html#Cobilas_GodotEngine_Utility_IO_DataNull_Name
+  name: Name
+  nameWithType: DataNull.Name
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.Name
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.Name
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.Name
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IDataInfo_Name
+  name: Name
+  nameWithType: IDataInfo.Name
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.FullName*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.DataNull.FullName
+  href: Cobilas.GodotEngine.Utility.IO.DataNull.html#Cobilas_GodotEngine_Utility_IO_DataNull_FullName
+  name: FullName
+  nameWithType: DataNull.FullName
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.FullName
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.FullName
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.FullName
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IDataInfo_FullName
+  name: FullName
+  nameWithType: IDataInfo.FullName
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.FullName
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.Attributes*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.DataNull.Attributes
+  href: Cobilas.GodotEngine.Utility.IO.DataNull.html#Cobilas_GodotEngine_Utility_IO_DataNull_Attributes
+  name: Attributes
+  nameWithType: DataNull.Attributes
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.Attributes
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.Attributes
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.Attributes
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IDataInfo_Attributes
+  name: Attributes
+  nameWithType: IDataInfo.Attributes
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.Attributes
+- uid: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+  commentId: T:Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+  parent: Cobilas.GodotEngine.Utility.IO
+  href: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.html
+  name: ArchiveAttributes
+  nameWithType: ArchiveAttributes
+  fullName: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.Parent*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.DataNull.Parent
+  href: Cobilas.GodotEngine.Utility.IO.DataNull.html#Cobilas_GodotEngine_Utility_IO_DataNull_Parent
+  name: Parent
+  nameWithType: DataNull.Parent
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.Parent
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.Parent
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.Parent
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IDataInfo_Parent
+  name: Parent
+  nameWithType: IDataInfo.Parent
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.Parent
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.IsInternal*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.DataNull.IsInternal
+  href: Cobilas.GodotEngine.Utility.IO.DataNull.html#Cobilas_GodotEngine_Utility_IO_DataNull_IsInternal
+  name: IsInternal
+  nameWithType: DataNull.IsInternal
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.IsInternal
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.IsInternal
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.IsInternal
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IDataInfo_IsInternal
+  name: IsInternal
+  nameWithType: IDataInfo.IsInternal
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.IsInternal
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.IsGodotRoot*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.DataNull.IsGodotRoot
+  href: Cobilas.GodotEngine.Utility.IO.DataNull.html#Cobilas_GodotEngine_Utility_IO_DataNull_IsGodotRoot
+  name: IsGodotRoot
+  nameWithType: DataNull.IsGodotRoot
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.IsGodotRoot
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.IsGodotRoot
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.IsGodotRoot
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IDataInfo_IsGodotRoot
+  name: IsGodotRoot
+  nameWithType: IDataInfo.IsGodotRoot
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.IsGodotRoot
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull
+  commentId: T:Cobilas.GodotEngine.Utility.IO.DataNull
+  parent: Cobilas.GodotEngine.Utility.IO
+  href: Cobilas.GodotEngine.Utility.IO.DataNull.html
+  name: DataNull
+  nameWithType: DataNull
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.Null*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.DataNull.Null
+  href: Cobilas.GodotEngine.Utility.IO.DataNull.html#Cobilas_GodotEngine_Utility_IO_DataNull_Null
+  name: "Null"
+  nameWithType: DataNull.Null
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.Null
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.GetCreationTime*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.DataNull.GetCreationTime
+  href: Cobilas.GodotEngine.Utility.IO.DataNull.html#Cobilas_GodotEngine_Utility_IO_DataNull_GetCreationTime
+  name: GetCreationTime
+  nameWithType: DataNull.GetCreationTime
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.GetCreationTime
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetCreationTime
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetCreationTime
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IDataInfo_GetCreationTime
+  name: GetCreationTime
+  nameWithType: IDataInfo.GetCreationTime
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetCreationTime
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.GetCreationTimeUtc*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.DataNull.GetCreationTimeUtc
+  href: Cobilas.GodotEngine.Utility.IO.DataNull.html#Cobilas_GodotEngine_Utility_IO_DataNull_GetCreationTimeUtc
+  name: GetCreationTimeUtc
+  nameWithType: DataNull.GetCreationTimeUtc
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.GetCreationTimeUtc
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetCreationTimeUtc
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetCreationTimeUtc
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IDataInfo_GetCreationTimeUtc
+  name: GetCreationTimeUtc
+  nameWithType: IDataInfo.GetCreationTimeUtc
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetCreationTimeUtc
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.GetLastAccessTime*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.DataNull.GetLastAccessTime
+  href: Cobilas.GodotEngine.Utility.IO.DataNull.html#Cobilas_GodotEngine_Utility_IO_DataNull_GetLastAccessTime
+  name: GetLastAccessTime
+  nameWithType: DataNull.GetLastAccessTime
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.GetLastAccessTime
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastAccessTime
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastAccessTime
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IDataInfo_GetLastAccessTime
+  name: GetLastAccessTime
+  nameWithType: IDataInfo.GetLastAccessTime
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastAccessTime
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.GetLastAccessTimeUtc*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.DataNull.GetLastAccessTimeUtc
+  href: Cobilas.GodotEngine.Utility.IO.DataNull.html#Cobilas_GodotEngine_Utility_IO_DataNull_GetLastAccessTimeUtc
+  name: GetLastAccessTimeUtc
+  nameWithType: DataNull.GetLastAccessTimeUtc
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.GetLastAccessTimeUtc
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastAccessTimeUtc
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastAccessTimeUtc
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IDataInfo_GetLastAccessTimeUtc
+  name: GetLastAccessTimeUtc
+  nameWithType: IDataInfo.GetLastAccessTimeUtc
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastAccessTimeUtc
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.GetLastWriteTime*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.DataNull.GetLastWriteTime
+  href: Cobilas.GodotEngine.Utility.IO.DataNull.html#Cobilas_GodotEngine_Utility_IO_DataNull_GetLastWriteTime
+  name: GetLastWriteTime
+  nameWithType: DataNull.GetLastWriteTime
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.GetLastWriteTime
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastWriteTime
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastWriteTime
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IDataInfo_GetLastWriteTime
+  name: GetLastWriteTime
+  nameWithType: IDataInfo.GetLastWriteTime
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastWriteTime
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.GetLastWriteTimeUtc*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.DataNull.GetLastWriteTimeUtc
+  href: Cobilas.GodotEngine.Utility.IO.DataNull.html#Cobilas_GodotEngine_Utility_IO_DataNull_GetLastWriteTimeUtc
+  name: GetLastWriteTimeUtc
+  nameWithType: DataNull.GetLastWriteTimeUtc
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.GetLastWriteTimeUtc
+- uid: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastWriteTimeUtc
+  commentId: P:Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastWriteTimeUtc
+  parent: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo
+  href: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.html#Cobilas_GodotEngine_Utility_IO_Interfaces_IDataInfo_GetLastWriteTimeUtc
+  name: GetLastWriteTimeUtc
+  nameWithType: IDataInfo.GetLastWriteTimeUtc
+  fullName: Cobilas.GodotEngine.Utility.IO.Interfaces.IDataInfo.GetLastWriteTimeUtc
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.Dispose*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.DataNull.Dispose
+  href: Cobilas.GodotEngine.Utility.IO.DataNull.html#Cobilas_GodotEngine_Utility_IO_DataNull_Dispose
+  name: Dispose
+  nameWithType: DataNull.Dispose
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Utility.IO.DataNull.ToString*
+  commentId: Overload:Cobilas.GodotEngine.Utility.IO.DataNull.ToString
+  href: Cobilas.GodotEngine.Utility.IO.DataNull.html#Cobilas_GodotEngine_Utility_IO_DataNull_ToString_System_String_System_IFormatProvider_
+  name: ToString
+  nameWithType: DataNull.ToString
+  fullName: Cobilas.GodotEngine.Utility.IO.DataNull.ToString
+- uid: System.IFormattable.ToString(System.String,System.IFormatProvider)
+  commentId: M:System.IFormattable.ToString(System.String,System.IFormatProvider)
+  parent: System.IFormattable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformattable.tostring
+  name: ToString(string, IFormatProvider)
+  nameWithType: IFormattable.ToString(string, IFormatProvider)
+  fullName: System.IFormattable.ToString(string, System.IFormatProvider)
+  nameWithType.vb: IFormattable.ToString(String, IFormatProvider)
+  fullName.vb: System.IFormattable.ToString(String, System.IFormatProvider)
+  name.vb: ToString(String, IFormatProvider)
+  spec.csharp:
+  - uid: System.IFormattable.ToString(System.String,System.IFormatProvider)
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformattable.tostring
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  - name: )
+  spec.vb:
+  - uid: System.IFormattable.ToString(System.String,System.IFormatProvider)
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformattable.tostring
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  - name: )
+- uid: System.IFormatProvider
+  commentId: T:System.IFormatProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  name: IFormatProvider
+  nameWithType: IFormatProvider
+  fullName: System.IFormatProvider

@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: Cobilas/Interrupter.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Interrupter
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Interrupter.cs
@@ -75,7 +75,7 @@ items:
   source:
     remote:
       path: Cobilas/Interrupter.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: CurrentIndex
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Interrupter.cs
@@ -86,7 +86,7 @@ items:
   summary: Returns the current switch index.
   example: []
   syntax:
-    content: public int CurrentIndex { get; }
+    content: public readonly int CurrentIndex { get; }
     parameters: []
     return:
       type: System.Int32
@@ -106,7 +106,7 @@ items:
   source:
     remote:
       path: Cobilas/Interrupter.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: UseASwitch
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Interrupter.cs
@@ -117,7 +117,7 @@ items:
   summary: This property allows the exchange of a single switch for multiple switches and vice versa.
   example: []
   syntax:
-    content: public bool UseASwitch { get; set; }
+    content: public bool UseASwitch { readonly get; set; }
     parameters: []
     return:
       type: System.Boolean
@@ -137,7 +137,7 @@ items:
   source:
     remote:
       path: Cobilas/Interrupter.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: this[]
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Interrupter.cs
@@ -148,7 +148,7 @@ items:
   summary: Gets or sets a switch when specifying an index.
   example: []
   syntax:
-    content: public bool this[int Index] { get; set; }
+    content: public bool this[int Index] { readonly get; set; }
     parameters:
     - id: Index
       type: System.Int32
@@ -173,7 +173,7 @@ items:
   source:
     remote:
       path: Cobilas/Interrupter.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: .ctor
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Interrupter.cs
@@ -211,7 +211,7 @@ items:
   source:
     remote:
       path: Cobilas/Interrupter.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: .ctor
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Interrupter.cs
@@ -246,7 +246,7 @@ items:
   source:
     remote:
       path: Cobilas/Interrupter.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToString
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Interrupter.cs
@@ -257,7 +257,7 @@ items:
   summary: Returns a text representation of the object.
   example: []
   syntax:
-    content: public override string ToString()
+    content: public override readonly string ToString()
     return:
       type: System.String
     content.vb: Public Overrides Function ToString() As String
@@ -277,7 +277,7 @@ items:
   source:
     remote:
       path: Cobilas/Interrupter.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Dispose
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/Interrupter.cs

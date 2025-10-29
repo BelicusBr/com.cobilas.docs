@@ -15,8 +15,14 @@ items:
   - System.Security.Cryptography.HashString.ToString
   - System.Security.Cryptography.HashString.ToString(System.String)
   - System.Security.Cryptography.HashString.ToString(System.String,System.IFormatProvider)
+  - System.Security.Cryptography.HashString.op_Equality(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)
   - System.Security.Cryptography.HashString.op_Explicit(System.Security.Cryptography.HashString)~System.Guid
+  - System.Security.Cryptography.HashString.op_GreaterThan(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)
+  - System.Security.Cryptography.HashString.op_GreaterThanOrEqual(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)
   - System.Security.Cryptography.HashString.op_Implicit(System.Security.Cryptography.HashString)~System.String
+  - System.Security.Cryptography.HashString.op_Inequality(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)
+  - System.Security.Cryptography.HashString.op_LessThan(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)
+  - System.Security.Cryptography.HashString.op_LessThanOrEqual(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)
   langs:
   - csharp
   - vb
@@ -27,11 +33,11 @@ items:
   source:
     remote:
       path: System/Security/Cryptography/HashString.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: HashString
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Security/Cryptography/HashString.cs
-    startLine: 7
+    startLine: 5
   assemblies:
   - Cobilas.Core
   namespace: System.Security.Cryptography
@@ -74,11 +80,11 @@ items:
   source:
     remote:
       path: System/Security/Cryptography/HashString.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Empty
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Security/Cryptography/HashString.cs
-    startLine: 13
+    startLine: 12
   assemblies:
   - Cobilas.Core
   namespace: System.Security.Cryptography
@@ -103,22 +109,26 @@ items:
   source:
     remote:
       path: System/Security/Cryptography/HashString.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: .ctor
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Security/Cryptography/HashString.cs
-    startLine: 21
+    startLine: 24
   assemblies:
   - Cobilas.Core
   namespace: System.Security.Cryptography
   summary: Initializes a <xref href="System.Security.Cryptography.HashString" data-throw-if-not-resolved="false"></xref> object using a list of bytes with a minimum length of 16.
+  remarks: >-
+    The input byte array is processed using an XOR operation to create a 16-byte hash value.
+
+    If the input array is longer than 16 bytes, the bytes are cyclically XORed into the result.
   example: []
   syntax:
     content: public HashString(byte[] hash)
     parameters:
     - id: hash
       type: System.Byte[]
-      description: ''
+      description: The byte array to convert to a hash string.
     content.vb: Public Sub New(hash As Byte())
   overload: System.Security.Cryptography.HashString.#ctor*
   exceptions:
@@ -145,11 +155,11 @@ items:
   source:
     remote:
       path: System/Security/Cryptography/HashString.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Equals
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Security/Cryptography/HashString.cs
-    startLine: 32
+    startLine: 38
   assemblies:
   - Cobilas.Core
   namespace: System.Security.Cryptography
@@ -160,10 +170,10 @@ items:
     parameters:
     - id: obj
       type: System.Object
-      description: The <xref href="System.Object" data-throw-if-not-resolved="false"></xref> to compare with the current instance.
+      description: The object to compare with the current instance.
     return:
       type: System.Boolean
-      description: true if obj and this instance are the same type and represent the same value; otherwise, false.
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Public Overrides Function Equals(obj As Object) As Boolean
   overridden: System.ValueType.Equals(System.Object)
   overload: System.Security.Cryptography.HashString.Equals*
@@ -184,11 +194,11 @@ items:
   source:
     remote:
       path: System/Security/Cryptography/HashString.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: GetHashCode
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Security/Cryptography/HashString.cs
-    startLine: 40
+    startLine: 43
   assemblies:
   - Cobilas.Core
   namespace: System.Security.Cryptography
@@ -216,7 +226,7 @@ items:
   source:
     remote:
       path: System/Security/Cryptography/HashString.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Equals
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Security/Cryptography/HashString.cs
@@ -234,7 +244,7 @@ items:
       description: An object to compare with this object.
     return:
       type: System.Boolean
-      description: true if the current object is equal to the other parameter; otherwise, false.
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Public Function Equals(other As HashString) As Boolean
   overload: System.Security.Cryptography.HashString.Equals*
   implements:
@@ -253,11 +263,11 @@ items:
   source:
     remote:
       path: System/Security/Cryptography/HashString.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Equals
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Security/Cryptography/HashString.cs
-    startLine: 62
+    startLine: 56
   assemblies:
   - Cobilas.Core
   namespace: System.Security.Cryptography
@@ -268,12 +278,10 @@ items:
     parameters:
     - id: other
       type: System.String
-      description: >-
-        An object to compare with this object.
-            <p>Use <xref href="System.Guid" data-throw-if-not-resolved="false"></xref>.ToString() or convert a list of bytes to a <xref href="System.String" data-throw-if-not-resolved="false"></xref> using a <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> or similar.</p>
+      description: An object to compare with this object.
     return:
       type: System.Boolean
-      description: true if the current object is equal to the other parameter; otherwise, false.
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Public Function Equals(other As String) As Boolean
   overload: System.Security.Cryptography.HashString.Equals*
   implements:
@@ -295,27 +303,21 @@ items:
   source:
     remote:
       path: System/Security/Cryptography/HashString.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToString
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Security/Cryptography/HashString.cs
-    startLine: 79
+    startLine: 59
   assemblies:
   - Cobilas.Core
   namespace: System.Security.Cryptography
-  summary: Returns a string representation of the value of this instance in registry format.
+  summary: Returns the fully qualified type name of this instance.
   example: []
   syntax:
     content: public override string ToString()
     return:
       type: System.String
-      description: >-
-        The value of this <xref href="System.Guid" data-throw-if-not-resolved="false"></xref>, formatted by using the "D" format specifier as
-            follows: <code>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</code> where the value of the GUID is
-            represented as a series of lowercase hexadecimal digits in groups of 8, 4, 4,
-            4, and 12 digits and separated by hyphens. An example of a return value is "382c74c3-721d-4f34-80e5-57657b6cbc27".
-            To convert the hexadecimal digits from a through f to uppercase, call the System.String.ToUpper
-            method on the returned string.
+      description: The fully qualified type name.
     content.vb: Public Overrides Function ToString() As String
   overridden: System.ValueType.ToString
   overload: System.Security.Cryptography.HashString.ToString*
@@ -333,36 +335,24 @@ items:
   source:
     remote:
       path: System/Security/Cryptography/HashString.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToString
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Security/Cryptography/HashString.cs
-    startLine: 93
+    startLine: 63
   assemblies:
   - Cobilas.Core
   namespace: System.Security.Cryptography
-  summary: Returns a string representation of the value of this <xref href="System.Guid" data-throw-if-not-resolved="false"></xref> instance, according to the provided format specifier.
   example: []
   syntax:
     content: public string ToString(string format)
     parameters:
     - id: format
       type: System.String
-      description: >-
-        A single format specifier that indicates how to format the value of this <xref href="System.Guid" data-throw-if-not-resolved="false"></xref>.
-            The format parameter can be "N", "D", "B", "P", or "X". If format is null or
-            an empty string (""), "D" is used.
     return:
       type: System.String
-      description: >-
-        The value of this <xref href="System.Guid" data-throw-if-not-resolved="false"></xref>, represented as a series of lowercase hexadecimal
-            digits in the specified format.
     content.vb: Public Function ToString(format As String) As String
   overload: System.Security.Cryptography.HashString.ToString*
-  exceptions:
-  - type: System.FormatException
-    commentId: T:System.FormatException
-    description: The value of format is not null, an empty string (""), "N", "D", "B", "P", or "X".
   nameWithType.vb: HashString.ToString(String)
   fullName.vb: System.Security.Cryptography.HashString.ToString(String)
   name.vb: ToString(String)
@@ -380,20 +370,15 @@ items:
   source:
     remote:
       path: System/Security/Cryptography/HashString.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ToString
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Security/Cryptography/HashString.cs
-    startLine: 109
+    startLine: 67
   assemblies:
   - Cobilas.Core
   namespace: System.Security.Cryptography
-  summary: >-
-    Returns a string representation of the value of this instance of the <xref href="System.Guid" data-throw-if-not-resolved="false"></xref>
-
-    class, according to the provided format specifier and culture-specific format
-
-    information.
+  summary: Formats the value of the current instance using the specified format.
   example: []
   syntax:
     content: public string ToString(string? format, IFormatProvider? formatProvider)
@@ -401,17 +386,22 @@ items:
     - id: format
       type: System.String
       description: >-
-        A single format specifier that indicates how to format the value of this <xref href="System.Guid" data-throw-if-not-resolved="false"></xref>.
-            The format parameter can be "N", "D", "B", "P", or "X". If format is null or
-            an empty string (""), "D" is used.
+        The format to use.  
+
+         -or-  
+
+         A null reference (<code>Nothing</code> in Visual Basic) to use the default format defined for the type of the <xref href="System.IFormattable" data-throw-if-not-resolved="false"></xref> implementation.
     - id: formatProvider
       type: System.IFormatProvider
-      description: (Reserved) An object that supplies culture-specific formatting information.
+      description: >-
+        The provider to use to format the value.  
+
+         -or-  
+
+         A null reference (<code>Nothing</code> in Visual Basic) to obtain the numeric format information from the current locale setting of the operating system.
     return:
       type: System.String
-      description: >-
-        The value of this <xref href="System.Guid" data-throw-if-not-resolved="false"></xref>, represented as a series of lowercase hexadecimal
-            digits in the specified format.
+      description: The value of the current instance in the specified format.
     content.vb: Public Function ToString(format As String, formatProvider As IFormatProvider) As String
   overload: System.Security.Cryptography.HashString.ToString*
   implements:
@@ -433,32 +423,28 @@ items:
   source:
     remote:
       path: System/Security/Cryptography/HashString.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: CompareTo
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Security/Cryptography/HashString.cs
-    startLine: 121
+    startLine: 71
   assemblies:
   - Cobilas.Core
   namespace: System.Security.Cryptography
-  summary: >-
-    Compares this instance to a specified <xref href="System.Security.Cryptography.HashString" data-throw-if-not-resolved="false"></xref> object and returns an indication
-
-    of their relative values.
+  summary: Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
   example: []
   syntax:
     content: public int CompareTo(HashString other)
     parameters:
     - id: other
       type: System.Security.Cryptography.HashString
-      description: An object to compare to this instance.
+      description: An object to compare with this instance.
     return:
       type: System.Int32
       description: >-
-        A signed number indicating the relative values of this instance and value. Return
-            value Description A negative integer This instance is less than value. Zero This
-            instance is equal to value. A positive integer This instance is greater than
-            value.
+        A value that indicates the relative order of the objects being compared. The return value has these meanings:  
+
+         <table><thead><tr><th class="term"> Value</th><th class="description"> Meaning</th></tr></thead><tbody><tr><td class="term"> Less than zero</td><td class="description"> This instance precedes <code class="paramref">other</code> in the sort order.</td></tr><tr><td class="term"> Zero</td><td class="description"> This instance occurs in the same position in the sort order as <code class="paramref">other</code>.</td></tr><tr><td class="term"> Greater than zero</td><td class="description"> This instance follows <code class="paramref">other</code> in the sort order.</td></tr></tbody></table>
     content.vb: Public Function CompareTo(other As HashString) As Integer
   overload: System.Security.Cryptography.HashString.CompareTo*
   implements:
@@ -477,11 +463,11 @@ items:
   source:
     remote:
       path: System/Security/Cryptography/HashString.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Implicit
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Security/Cryptography/HashString.cs
-    startLine: 127
+    startLine: 79
   assemblies:
   - Cobilas.Core
   namespace: System.Security.Cryptography
@@ -492,8 +478,10 @@ items:
     parameters:
     - id: hash
       type: System.Security.Cryptography.HashString
+      description: The HashString to convert.
     return:
       type: System.String
+      description: A string representation of the HashString in GUID format.
     content.vb: Public Shared Widening Operator CType(hash As HashString) As String
   overload: System.Security.Cryptography.HashString.op_Implicit*
   nameWithType.vb: HashString.CType(HashString)
@@ -513,11 +501,11 @@ items:
   source:
     remote:
       path: System/Security/Cryptography/HashString.cs
-      branch: main
+      branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: op_Explicit
     path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Security/Cryptography/HashString.cs
-    startLine: 132
+    startLine: 86
   assemblies:
   - Cobilas.Core
   namespace: System.Security.Cryptography
@@ -528,13 +516,261 @@ items:
     parameters:
     - id: hash
       type: System.Security.Cryptography.HashString
+      description: The HashString to convert.
     return:
       type: System.Guid
+      description: A Guid representation of the HashString.
     content.vb: Public Shared Narrowing Operator CType(hash As HashString) As Guid
   overload: System.Security.Cryptography.HashString.op_Explicit*
   nameWithType.vb: HashString.CType(HashString)
   fullName.vb: System.Security.Cryptography.HashString.CType(System.Security.Cryptography.HashString)
   name.vb: CType(HashString)
+- uid: System.Security.Cryptography.HashString.op_Equality(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)
+  commentId: M:System.Security.Cryptography.HashString.op_Equality(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)
+  id: op_Equality(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)
+  parent: System.Security.Cryptography.HashString
+  langs:
+  - csharp
+  - vb
+  name: operator ==(HashString, HashString)
+  nameWithType: HashString.operator ==(HashString, HashString)
+  fullName: System.Security.Cryptography.HashString.operator ==(System.Security.Cryptography.HashString, System.Security.Cryptography.HashString)
+  type: Operator
+  source:
+    remote:
+      path: System/Security/Cryptography/HashString.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: op_Equality
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Security/Cryptography/HashString.cs
+    startLine: 94
+  assemblies:
+  - Cobilas.Core
+  namespace: System.Security.Cryptography
+  summary: Determines whether two specified instances of <xref href="System.Security.Cryptography.HashString" data-throw-if-not-resolved="false"></xref> are equal.
+  example: []
+  syntax:
+    content: public static bool operator ==(HashString left, HashString right)
+    parameters:
+    - id: left
+      type: System.Security.Cryptography.HashString
+      description: The first object to compare.
+    - id: right
+      type: System.Security.Cryptography.HashString
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: true if left and right are equal; otherwise, false.
+    content.vb: Public Shared Operator =(left As HashString, right As HashString) As Boolean
+  overload: System.Security.Cryptography.HashString.op_Equality*
+  nameWithType.vb: HashString.=(HashString, HashString)
+  fullName.vb: System.Security.Cryptography.HashString.=(System.Security.Cryptography.HashString, System.Security.Cryptography.HashString)
+  name.vb: =(HashString, HashString)
+- uid: System.Security.Cryptography.HashString.op_Inequality(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)
+  commentId: M:System.Security.Cryptography.HashString.op_Inequality(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)
+  id: op_Inequality(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)
+  parent: System.Security.Cryptography.HashString
+  langs:
+  - csharp
+  - vb
+  name: operator !=(HashString, HashString)
+  nameWithType: HashString.operator !=(HashString, HashString)
+  fullName: System.Security.Cryptography.HashString.operator !=(System.Security.Cryptography.HashString, System.Security.Cryptography.HashString)
+  type: Operator
+  source:
+    remote:
+      path: System/Security/Cryptography/HashString.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: op_Inequality
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Security/Cryptography/HashString.cs
+    startLine: 102
+  assemblies:
+  - Cobilas.Core
+  namespace: System.Security.Cryptography
+  summary: Determines whether two specified instances of <xref href="System.Security.Cryptography.HashString" data-throw-if-not-resolved="false"></xref> are not equal.
+  example: []
+  syntax:
+    content: public static bool operator !=(HashString left, HashString right)
+    parameters:
+    - id: left
+      type: System.Security.Cryptography.HashString
+      description: The first object to compare.
+    - id: right
+      type: System.Security.Cryptography.HashString
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: true if left and right are not equal; otherwise, false.
+    content.vb: Public Shared Operator <>(left As HashString, right As HashString) As Boolean
+  overload: System.Security.Cryptography.HashString.op_Inequality*
+  nameWithType.vb: HashString.<>(HashString, HashString)
+  fullName.vb: System.Security.Cryptography.HashString.<>(System.Security.Cryptography.HashString, System.Security.Cryptography.HashString)
+  name.vb: <>(HashString, HashString)
+- uid: System.Security.Cryptography.HashString.op_LessThan(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)
+  commentId: M:System.Security.Cryptography.HashString.op_LessThan(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)
+  id: op_LessThan(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)
+  parent: System.Security.Cryptography.HashString
+  langs:
+  - csharp
+  - vb
+  name: operator <(HashString, HashString)
+  nameWithType: HashString.operator <(HashString, HashString)
+  fullName: System.Security.Cryptography.HashString.operator <(System.Security.Cryptography.HashString, System.Security.Cryptography.HashString)
+  type: Operator
+  source:
+    remote:
+      path: System/Security/Cryptography/HashString.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: op_LessThan
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Security/Cryptography/HashString.cs
+    startLine: 110
+  assemblies:
+  - Cobilas.Core
+  namespace: System.Security.Cryptography
+  summary: Determines whether one specified <xref href="System.Security.Cryptography.HashString" data-throw-if-not-resolved="false"></xref> is less than another specified <xref href="System.Security.Cryptography.HashString" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static bool operator <(HashString left, HashString right)
+    parameters:
+    - id: left
+      type: System.Security.Cryptography.HashString
+      description: The first object to compare.
+    - id: right
+      type: System.Security.Cryptography.HashString
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: true if left is less than right; otherwise, false.
+    content.vb: Public Shared Operator <(left As HashString, right As HashString) As Boolean
+  overload: System.Security.Cryptography.HashString.op_LessThan*
+  nameWithType.vb: HashString.<(HashString, HashString)
+  fullName.vb: System.Security.Cryptography.HashString.<(System.Security.Cryptography.HashString, System.Security.Cryptography.HashString)
+  name.vb: <(HashString, HashString)
+- uid: System.Security.Cryptography.HashString.op_LessThanOrEqual(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)
+  commentId: M:System.Security.Cryptography.HashString.op_LessThanOrEqual(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)
+  id: op_LessThanOrEqual(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)
+  parent: System.Security.Cryptography.HashString
+  langs:
+  - csharp
+  - vb
+  name: operator <=(HashString, HashString)
+  nameWithType: HashString.operator <=(HashString, HashString)
+  fullName: System.Security.Cryptography.HashString.operator <=(System.Security.Cryptography.HashString, System.Security.Cryptography.HashString)
+  type: Operator
+  source:
+    remote:
+      path: System/Security/Cryptography/HashString.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: op_LessThanOrEqual
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Security/Cryptography/HashString.cs
+    startLine: 118
+  assemblies:
+  - Cobilas.Core
+  namespace: System.Security.Cryptography
+  summary: Determines whether one specified <xref href="System.Security.Cryptography.HashString" data-throw-if-not-resolved="false"></xref> is less than or equal to another specified <xref href="System.Security.Cryptography.HashString" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static bool operator <=(HashString left, HashString right)
+    parameters:
+    - id: left
+      type: System.Security.Cryptography.HashString
+      description: The first object to compare.
+    - id: right
+      type: System.Security.Cryptography.HashString
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: true if left is less than or equal to right; otherwise, false.
+    content.vb: Public Shared Operator <=(left As HashString, right As HashString) As Boolean
+  overload: System.Security.Cryptography.HashString.op_LessThanOrEqual*
+  nameWithType.vb: HashString.<=(HashString, HashString)
+  fullName.vb: System.Security.Cryptography.HashString.<=(System.Security.Cryptography.HashString, System.Security.Cryptography.HashString)
+  name.vb: <=(HashString, HashString)
+- uid: System.Security.Cryptography.HashString.op_GreaterThan(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)
+  commentId: M:System.Security.Cryptography.HashString.op_GreaterThan(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)
+  id: op_GreaterThan(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)
+  parent: System.Security.Cryptography.HashString
+  langs:
+  - csharp
+  - vb
+  name: operator >(HashString, HashString)
+  nameWithType: HashString.operator >(HashString, HashString)
+  fullName: System.Security.Cryptography.HashString.operator >(System.Security.Cryptography.HashString, System.Security.Cryptography.HashString)
+  type: Operator
+  source:
+    remote:
+      path: System/Security/Cryptography/HashString.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: op_GreaterThan
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Security/Cryptography/HashString.cs
+    startLine: 126
+  assemblies:
+  - Cobilas.Core
+  namespace: System.Security.Cryptography
+  summary: Determines whether one specified <xref href="System.Security.Cryptography.HashString" data-throw-if-not-resolved="false"></xref> is greater than another specified <xref href="System.Security.Cryptography.HashString" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static bool operator >(HashString left, HashString right)
+    parameters:
+    - id: left
+      type: System.Security.Cryptography.HashString
+      description: The first object to compare.
+    - id: right
+      type: System.Security.Cryptography.HashString
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: true if left is greater than right; otherwise, false.
+    content.vb: Public Shared Operator >(left As HashString, right As HashString) As Boolean
+  overload: System.Security.Cryptography.HashString.op_GreaterThan*
+  nameWithType.vb: HashString.>(HashString, HashString)
+  fullName.vb: System.Security.Cryptography.HashString.>(System.Security.Cryptography.HashString, System.Security.Cryptography.HashString)
+  name.vb: '>(HashString, HashString)'
+- uid: System.Security.Cryptography.HashString.op_GreaterThanOrEqual(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)
+  commentId: M:System.Security.Cryptography.HashString.op_GreaterThanOrEqual(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)
+  id: op_GreaterThanOrEqual(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)
+  parent: System.Security.Cryptography.HashString
+  langs:
+  - csharp
+  - vb
+  name: operator >=(HashString, HashString)
+  nameWithType: HashString.operator >=(HashString, HashString)
+  fullName: System.Security.Cryptography.HashString.operator >=(System.Security.Cryptography.HashString, System.Security.Cryptography.HashString)
+  type: Operator
+  source:
+    remote:
+      path: System/Security/Cryptography/HashString.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: op_GreaterThanOrEqual
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/System/Security/Cryptography/HashString.cs
+    startLine: 134
+  assemblies:
+  - Cobilas.Core
+  namespace: System.Security.Cryptography
+  summary: Determines whether one specified <xref href="System.Security.Cryptography.HashString" data-throw-if-not-resolved="false"></xref> is greater than or equal to another specified <xref href="System.Security.Cryptography.HashString" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static bool operator >=(HashString left, HashString right)
+    parameters:
+    - id: left
+      type: System.Security.Cryptography.HashString
+      description: The first object to compare.
+    - id: right
+      type: System.Security.Cryptography.HashString
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: true if left is greater than or equal to right; otherwise, false.
+    content.vb: Public Shared Operator >=(left As HashString, right As HashString) As Boolean
+  overload: System.Security.Cryptography.HashString.op_GreaterThanOrEqual*
+  nameWithType.vb: HashString.>=(HashString, HashString)
+  fullName.vb: System.Security.Cryptography.HashString.>=(System.Security.Cryptography.HashString, System.Security.Cryptography.HashString)
+  name.vb: '>=(HashString, HashString)'
 references:
 - uid: System.String
   commentId: T:System.String
@@ -1728,14 +1964,6 @@ references:
   - name: (
   - name: T
   - name: )
-- uid: System.Text.StringBuilder
-  commentId: T:System.Text.StringBuilder
-  parent: System.Text
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
-  name: StringBuilder
-  nameWithType: StringBuilder
-  fullName: System.Text.StringBuilder
 - uid: System.IEquatable{System.String}.Equals(System.String)
   commentId: M:System.IEquatable{System.String}.Equals(System.String)
   parent: System.IEquatable{System.String}
@@ -1769,33 +1997,6 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-- uid: System.Text
-  commentId: N:System.Text
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Text
-  nameWithType: System.Text
-  fullName: System.Text
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Text
-    name: Text
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.text
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Text
-    name: Text
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.text
 - uid: System.ValueType.ToString
   commentId: M:System.ValueType.ToString
   parent: System.ValueType
@@ -1824,13 +2025,6 @@ references:
   name: ToString
   nameWithType: HashString.ToString
   fullName: System.Security.Cryptography.HashString.ToString
-- uid: System.FormatException
-  commentId: T:System.FormatException
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.formatexception
-  name: FormatException
-  nameWithType: FormatException
-  fullName: System.FormatException
 - uid: System.IFormattable.ToString(System.String,System.IFormatProvider)
   commentId: M:System.IFormattable.ToString(System.String,System.IFormatProvider)
   parent: System.IFormattable
@@ -1969,3 +2163,93 @@ references:
   - name: explicit
   - name: " "
   - name: operator
+- uid: System.Security.Cryptography.HashString.op_Equality*
+  commentId: Overload:System.Security.Cryptography.HashString.op_Equality
+  href: System.Security.Cryptography.HashString.html#System_Security_Cryptography_HashString_op_Equality_System_Security_Cryptography_HashString_System_Security_Cryptography_HashString_
+  name: operator ==
+  nameWithType: HashString.operator ==
+  fullName: System.Security.Cryptography.HashString.operator ==
+  nameWithType.vb: HashString.=
+  fullName.vb: System.Security.Cryptography.HashString.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Security.Cryptography.HashString.op_Equality*
+    name: ==
+    href: System.Security.Cryptography.HashString.html#System_Security_Cryptography_HashString_op_Equality_System_Security_Cryptography_HashString_System_Security_Cryptography_HashString_
+- uid: System.Security.Cryptography.HashString.op_Inequality*
+  commentId: Overload:System.Security.Cryptography.HashString.op_Inequality
+  href: System.Security.Cryptography.HashString.html#System_Security_Cryptography_HashString_op_Inequality_System_Security_Cryptography_HashString_System_Security_Cryptography_HashString_
+  name: operator !=
+  nameWithType: HashString.operator !=
+  fullName: System.Security.Cryptography.HashString.operator !=
+  nameWithType.vb: HashString.<>
+  fullName.vb: System.Security.Cryptography.HashString.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Security.Cryptography.HashString.op_Inequality*
+    name: '!='
+    href: System.Security.Cryptography.HashString.html#System_Security_Cryptography_HashString_op_Inequality_System_Security_Cryptography_HashString_System_Security_Cryptography_HashString_
+- uid: System.Security.Cryptography.HashString.op_LessThan*
+  commentId: Overload:System.Security.Cryptography.HashString.op_LessThan
+  href: System.Security.Cryptography.HashString.html#System_Security_Cryptography_HashString_op_LessThan_System_Security_Cryptography_HashString_System_Security_Cryptography_HashString_
+  name: operator <
+  nameWithType: HashString.operator <
+  fullName: System.Security.Cryptography.HashString.operator <
+  nameWithType.vb: HashString.<
+  fullName.vb: System.Security.Cryptography.HashString.<
+  name.vb: <
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Security.Cryptography.HashString.op_LessThan*
+    name: <
+    href: System.Security.Cryptography.HashString.html#System_Security_Cryptography_HashString_op_LessThan_System_Security_Cryptography_HashString_System_Security_Cryptography_HashString_
+- uid: System.Security.Cryptography.HashString.op_LessThanOrEqual*
+  commentId: Overload:System.Security.Cryptography.HashString.op_LessThanOrEqual
+  href: System.Security.Cryptography.HashString.html#System_Security_Cryptography_HashString_op_LessThanOrEqual_System_Security_Cryptography_HashString_System_Security_Cryptography_HashString_
+  name: operator <=
+  nameWithType: HashString.operator <=
+  fullName: System.Security.Cryptography.HashString.operator <=
+  nameWithType.vb: HashString.<=
+  fullName.vb: System.Security.Cryptography.HashString.<=
+  name.vb: <=
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Security.Cryptography.HashString.op_LessThanOrEqual*
+    name: <=
+    href: System.Security.Cryptography.HashString.html#System_Security_Cryptography_HashString_op_LessThanOrEqual_System_Security_Cryptography_HashString_System_Security_Cryptography_HashString_
+- uid: System.Security.Cryptography.HashString.op_GreaterThan*
+  commentId: Overload:System.Security.Cryptography.HashString.op_GreaterThan
+  href: System.Security.Cryptography.HashString.html#System_Security_Cryptography_HashString_op_GreaterThan_System_Security_Cryptography_HashString_System_Security_Cryptography_HashString_
+  name: operator >
+  nameWithType: HashString.operator >
+  fullName: System.Security.Cryptography.HashString.operator >
+  nameWithType.vb: HashString.>
+  fullName.vb: System.Security.Cryptography.HashString.>
+  name.vb: '>'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Security.Cryptography.HashString.op_GreaterThan*
+    name: '>'
+    href: System.Security.Cryptography.HashString.html#System_Security_Cryptography_HashString_op_GreaterThan_System_Security_Cryptography_HashString_System_Security_Cryptography_HashString_
+- uid: System.Security.Cryptography.HashString.op_GreaterThanOrEqual*
+  commentId: Overload:System.Security.Cryptography.HashString.op_GreaterThanOrEqual
+  href: System.Security.Cryptography.HashString.html#System_Security_Cryptography_HashString_op_GreaterThanOrEqual_System_Security_Cryptography_HashString_System_Security_Cryptography_HashString_
+  name: operator >=
+  nameWithType: HashString.operator >=
+  fullName: System.Security.Cryptography.HashString.operator >=
+  nameWithType.vb: HashString.>=
+  fullName.vb: System.Security.Cryptography.HashString.>=
+  name.vb: '>='
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Security.Cryptography.HashString.op_GreaterThanOrEqual*
+    name: '>='
+    href: System.Security.Cryptography.HashString.html#System_Security_Cryptography_HashString_op_GreaterThanOrEqual_System_Security_Cryptography_HashString_System_Security_Cryptography_HashString_

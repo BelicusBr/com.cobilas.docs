@@ -5,11 +5,23 @@ items:
   id: ArchiveAttributes
   parent: Cobilas.GodotEngine.Utility.IO
   children:
+  - Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Archive
+  - Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Compressed
+  - Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Device
   - Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Directory
-  - Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.File
+  - Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Encrypted
   - Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Hidden
-  - Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Null
+  - Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.IntegrityStream
+  - Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Nil
+  - Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.NoScrubData
+  - Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Normal
+  - Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.NotContentIndexed
+  - Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Offline
   - Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.ReadOnly
+  - Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.ReparsePoint
+  - Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.SparseFile
+  - Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.System
+  - Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Temporary
   langs:
   - csharp
   - vb
@@ -24,107 +36,67 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ArchiveAttributes
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/ArchiveAttributes.cs
-    startLine: 4
+    startLine: 5
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Represents the attributes of a file or folder.
+  summary: Provides attributes for files and directories.
   example: []
   syntax:
     content: >-
+      [Serializable]
+
+      [ComVisible(true)]
+
       [Flags]
 
       public enum ArchiveAttributes : uint
     content.vb: >-
+      <Serializable>
+
+      <ComVisible(True)>
+
       <Flags>
 
       Public Enum ArchiveAttributes As UInteger
   attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  - type: System.Runtime.InteropServices.ComVisibleAttribute
+    ctor: System.Runtime.InteropServices.ComVisibleAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
   - type: System.FlagsAttribute
     ctor: System.FlagsAttribute.#ctor
     arguments: []
-- uid: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Null
-  commentId: F:Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Null
-  id: "Null"
+- uid: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Nil
+  commentId: F:Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Nil
+  id: Nil
   parent: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
   langs:
   - csharp
   - vb
-  name: "Null"
-  nameWithType: ArchiveAttributes.Null
-  fullName: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Null
+  name: Nil
+  nameWithType: ArchiveAttributes.Nil
+  fullName: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Nil
   type: Field
   source:
     remote:
       path: GodotEngine.Utility/IO/ArchiveAttributes.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: "Null"
+    id: Nil
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/ArchiveAttributes.cs
-    startLine: 7
+    startLine: 8
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Indicates whether the file or folder is null.
+  summary: The file is null.
   example: []
   syntax:
-    content: Null = 0
-    return:
-      type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
-- uid: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Directory
-  commentId: F:Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Directory
-  id: Directory
-  parent: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
-  langs:
-  - csharp
-  - vb
-  name: Directory
-  nameWithType: ArchiveAttributes.Directory
-  fullName: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Directory
-  type: Field
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/ArchiveAttributes.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: Directory
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/ArchiveAttributes.cs
-    startLine: 9
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Indicates that it is a directory file.
-  example: []
-  syntax:
-    content: Directory = 2
-    return:
-      type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
-- uid: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.File
-  commentId: F:Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.File
-  id: File
-  parent: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
-  langs:
-  - csharp
-  - vb
-  name: File
-  nameWithType: ArchiveAttributes.File
-  fullName: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.File
-  type: Field
-  source:
-    remote:
-      path: GodotEngine.Utility/IO/ArchiveAttributes.cs
-      branch: main.dev
-      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
-    id: File
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/ArchiveAttributes.cs
-    startLine: 11
-  assemblies:
-  - com.cobilas.godot.utility
-  namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Indicates that it is a file.
-  example: []
-  syntax:
-    content: File = 4
+    content: Nil = 0
     return:
       type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
 - uid: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.ReadOnly
@@ -145,14 +117,14 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ReadOnly
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/ArchiveAttributes.cs
-    startLine: 13
+    startLine: 10
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Indicates whether the file or folder is read-only.
+  summary: The file is read-only.
   example: []
   syntax:
-    content: ReadOnly = 8
+    content: ReadOnly = 1
     return:
       type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
 - uid: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Hidden
@@ -173,16 +145,463 @@ items:
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Hidden
     path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/ArchiveAttributes.cs
-    startLine: 15
+    startLine: 12
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEngine.Utility.IO
-  summary: Indicates whether the file or folder is hidden on the system.
+  summary: The file is hidden and therefore not included in a regular directory listing.
   example: []
   syntax:
-    content: Hidden = 16
+    content: Hidden = 2
     return:
       type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+- uid: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.System
+  commentId: F:Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.System
+  id: System
+  parent: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+  langs:
+  - csharp
+  - vb
+  name: System
+  nameWithType: ArchiveAttributes.System
+  fullName: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.System
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/ArchiveAttributes.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: System
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/ArchiveAttributes.cs
+    startLine: 17
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: >-
+    The file is a system file. That is, the file is part of the operating 
+
+    system or is used exclusively by the operating system.
+  example: []
+  syntax:
+    content: System = 4
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+- uid: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Directory
+  commentId: F:Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Directory
+  id: Directory
+  parent: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+  langs:
+  - csharp
+  - vb
+  name: Directory
+  nameWithType: ArchiveAttributes.Directory
+  fullName: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Directory
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/ArchiveAttributes.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Directory
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/ArchiveAttributes.cs
+    startLine: 19
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: The file is a directory.
+  example: []
+  syntax:
+    content: Directory = 16
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+- uid: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Archive
+  commentId: F:Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Archive
+  id: Archive
+  parent: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+  langs:
+  - csharp
+  - vb
+  name: Archive
+  nameWithType: ArchiveAttributes.Archive
+  fullName: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Archive
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/ArchiveAttributes.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Archive
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/ArchiveAttributes.cs
+    startLine: 21
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: The file is a candidate for backup or removal.
+  example: []
+  syntax:
+    content: Archive = 32
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+- uid: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Device
+  commentId: F:Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Device
+  id: Device
+  parent: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+  langs:
+  - csharp
+  - vb
+  name: Device
+  nameWithType: ArchiveAttributes.Device
+  fullName: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Device
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/ArchiveAttributes.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Device
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/ArchiveAttributes.cs
+    startLine: 23
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: Reserved for future use.
+  example: []
+  syntax:
+    content: Device = 64
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+- uid: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Normal
+  commentId: F:Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Normal
+  id: Normal
+  parent: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: ArchiveAttributes.Normal
+  fullName: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Normal
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/ArchiveAttributes.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Normal
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/ArchiveAttributes.cs
+    startLine: 25
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: The file is a standard file with no special attributes. This attribute is only valid if used alone.
+  example: []
+  syntax:
+    content: Normal = 128
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+- uid: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Temporary
+  commentId: F:Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Temporary
+  id: Temporary
+  parent: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+  langs:
+  - csharp
+  - vb
+  name: Temporary
+  nameWithType: ArchiveAttributes.Temporary
+  fullName: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Temporary
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/ArchiveAttributes.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Temporary
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/ArchiveAttributes.cs
+    startLine: 32
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: >-
+    The file is temporary. A temporary file contains data needed during an application's execution 
+
+    but not needed after the application finishes. File systems attempt to keep all data in memory for
+
+    faster access rather than flushing the data back to mass storage. A temporary file should be 
+
+    deleted by the application as soon as it is no longer needed.
+  example: []
+  syntax:
+    content: Temporary = 256
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+- uid: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.SparseFile
+  commentId: F:Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.SparseFile
+  id: SparseFile
+  parent: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+  langs:
+  - csharp
+  - vb
+  name: SparseFile
+  nameWithType: ArchiveAttributes.SparseFile
+  fullName: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.SparseFile
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/ArchiveAttributes.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: SparseFile
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/ArchiveAttributes.cs
+    startLine: 37
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: >-
+    The file is a sparse file. In general, sparse files are large files 
+
+    whose data consists primarily of zeros.
+  example: []
+  syntax:
+    content: SparseFile = 512
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+- uid: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.ReparsePoint
+  commentId: F:Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.ReparsePoint
+  id: ReparsePoint
+  parent: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+  langs:
+  - csharp
+  - vb
+  name: ReparsePoint
+  nameWithType: ArchiveAttributes.ReparsePoint
+  fullName: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.ReparsePoint
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/ArchiveAttributes.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ReparsePoint
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/ArchiveAttributes.cs
+    startLine: 42
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: >-
+    The file contains a reparse point, which is a user-defined block of data 
+
+    associated with a file or directory.
+  example: []
+  syntax:
+    content: ReparsePoint = 1024
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+- uid: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Compressed
+  commentId: F:Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Compressed
+  id: Compressed
+  parent: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+  langs:
+  - csharp
+  - vb
+  name: Compressed
+  nameWithType: ArchiveAttributes.Compressed
+  fullName: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Compressed
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/ArchiveAttributes.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Compressed
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/ArchiveAttributes.cs
+    startLine: 44
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: The file is compressed.
+  example: []
+  syntax:
+    content: Compressed = 2048
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+- uid: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Offline
+  commentId: F:Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Offline
+  id: Offline
+  parent: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+  langs:
+  - csharp
+  - vb
+  name: Offline
+  nameWithType: ArchiveAttributes.Offline
+  fullName: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Offline
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/ArchiveAttributes.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Offline
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/ArchiveAttributes.cs
+    startLine: 46
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: The file is offline. The file data is not immediately available.
+  example: []
+  syntax:
+    content: Offline = 4096
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+- uid: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.NotContentIndexed
+  commentId: F:Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.NotContentIndexed
+  id: NotContentIndexed
+  parent: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+  langs:
+  - csharp
+  - vb
+  name: NotContentIndexed
+  nameWithType: ArchiveAttributes.NotContentIndexed
+  fullName: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.NotContentIndexed
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/ArchiveAttributes.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: NotContentIndexed
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/ArchiveAttributes.cs
+    startLine: 48
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: The file will not be indexed by the operating system's content indexing service.
+  example: []
+  syntax:
+    content: NotContentIndexed = 8192
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+- uid: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Encrypted
+  commentId: F:Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Encrypted
+  id: Encrypted
+  parent: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+  langs:
+  - csharp
+  - vb
+  name: Encrypted
+  nameWithType: ArchiveAttributes.Encrypted
+  fullName: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.Encrypted
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/ArchiveAttributes.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Encrypted
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/ArchiveAttributes.cs
+    startLine: 53
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: >-
+    The file or directory is encrypted. For a file, this means that all the data in the file is encrypted. 
+
+    For a directory, this means that encryption is the default for newly created files and directories.
+  example: []
+  syntax:
+    content: Encrypted = 16384
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+- uid: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.IntegrityStream
+  commentId: F:Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.IntegrityStream
+  id: IntegrityStream
+  parent: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+  langs:
+  - csharp
+  - vb
+  name: IntegrityStream
+  nameWithType: ArchiveAttributes.IntegrityStream
+  fullName: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.IntegrityStream
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/ArchiveAttributes.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: IntegrityStream
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/ArchiveAttributes.cs
+    startLine: 59
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: >-
+    The file or directory includes data integrity support. When this value is applied to a file, 
+
+    all data streams in the file have integrity support. When this value is applied to a directory, 
+
+    all new files and subfolders in the directory include integrity support by default.
+  example: []
+  syntax:
+    content: >-
+      [ComVisible(false)]
+
+      IntegrityStream = 32768
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+    content.vb: >-
+      <ComVisible(False)>
+
+      IntegrityStream = 32768
+  attributes:
+  - type: System.Runtime.InteropServices.ComVisibleAttribute
+    ctor: System.Runtime.InteropServices.ComVisibleAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.NoScrubData
+  commentId: F:Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.NoScrubData
+  id: NoScrubData
+  parent: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+  langs:
+  - csharp
+  - vb
+  name: NoScrubData
+  nameWithType: ArchiveAttributes.NoScrubData
+  fullName: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes.NoScrubData
+  type: Field
+  source:
+    remote:
+      path: GodotEngine.Utility/IO/ArchiveAttributes.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: NoScrubData
+    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEngine.Utility/IO/ArchiveAttributes.cs
+    startLine: 66
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility.IO
+  summary: >-
+    The file or directory is excluded from data integrity checking. When this value is applied to a 
+
+    folder, by default, all new files and subdirectories within the directory are excluded from 
+
+    data integrity checking.
+  example: []
+  syntax:
+    content: >-
+      [ComVisible(false)]
+
+      NoScrubData = 131072
+    return:
+      type: Cobilas.GodotEngine.Utility.IO.ArchiveAttributes
+    content.vb: >-
+      <ComVisible(False)>
+
+      NoScrubData = 131072
+  attributes:
+  - type: System.Runtime.InteropServices.ComVisibleAttribute
+    ctor: System.Runtime.InteropServices.ComVisibleAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
 references:
 - uid: Cobilas.GodotEngine.Utility.IO
   commentId: N:Cobilas.GodotEngine.Utility.IO

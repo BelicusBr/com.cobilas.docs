@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/new/main/apiSpec/new?filename=System_Security_Cryptography_HashString.md&amp;value=---%0Auid%3A%20System.Security.Cryptography.HashString%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/new/main.dev/apiSpec/new?filename=System_Security_Cryptography_HashString.md&amp;value=---%0Auid%3A%20System.Security.Cryptography.HashString%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="System_Security_Cryptography_HashString" data-uid="System.Security.Cryptography.HashString" class="text-break">
-Struct HashString  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/System/Security/Cryptography/HashString.cs/#L8"><i class="bi bi-code-slash"></i></a>
+Struct HashString  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/System/Security/Cryptography/HashString.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -173,7 +173,7 @@ Struct HashString  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="System_Security_Cryptography_HashString__ctor_System_Byte___" data-uid="System.Security.Cryptography.HashString.#ctor(System.Byte[])">
   HashString(byte[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/System/Security/Cryptography/HashString.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/System/Security/Cryptography/HashString.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a> object using a list of bytes with a minimum length of 16.</p>
@@ -187,7 +187,8 @@ Struct HashString  <a class="header-action link-secondary" title="View source" h
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>hash</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
-    <dd></dd>
+    <dd><p>The byte array to convert to a hash string.</p>
+</dd>
   </dl>
 
 
@@ -197,6 +198,10 @@ Struct HashString  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <h4 class="section" id="System_Security_Cryptography_HashString__ctor_System_Byte____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The input byte array is processed using an XOR operation to create a 16-byte hash value.
+If the input array is longer than 16 bytes, the bytes are cyclically XORed into the result.</p>
+</div>
 
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
@@ -217,7 +222,7 @@ Struct HashString  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="System_Security_Cryptography_HashString_Empty" data-uid="System.Security.Cryptography.HashString.Empty">
   Empty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/System/Security/Cryptography/HashString.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/System/Security/Cryptography/HashString.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>A read-only instance of type <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a> whose value is all zero.</p>
@@ -253,11 +258,10 @@ Struct HashString  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="System_Security_Cryptography_HashString_CompareTo_System_Security_Cryptography_HashString_" data-uid="System.Security.Cryptography.HashString.CompareTo(System.Security.Cryptography.HashString)">
   CompareTo(HashString)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/System/Security/Cryptography/HashString.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/System/Security/Cryptography/HashString.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Compares this instance to a specified <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a> object and returns an indication
-of their relative values.</p>
+  <div class="markdown level1 summary"><p>Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -268,17 +272,15 @@ of their relative values.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>other</code> <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a></dt>
-    <dd><p>An object to compare to this instance.</p>
+    <dd><p>An object to compare with this instance.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>A signed number indicating the relative values of this instance and value. Return
-value Description A negative integer This instance is less than value. Zero This
-instance is equal to value. A positive integer This instance is greater than
-value.</p>
+    <dd><p>A value that indicates the relative order of the objects being compared. The return value has these meanings:</p>
+ <table><thead><tr><th class="term"> Value</th><th class="description"> Meaning</th></tr></thead><tbody><tr><td class="term"> Less than zero</td><td class="description"> This instance precedes <code class="paramref">other</code> in the sort order.</td></tr><tr><td class="term"> Zero</td><td class="description"> This instance occurs in the same position in the sort order as <code class="paramref">other</code>.</td></tr><tr><td class="term"> Greater than zero</td><td class="description"> This instance follows <code class="paramref">other</code> in the sort order.</td></tr></tbody></table>
 </dd>
   </dl>
 
@@ -296,7 +298,7 @@ value.</p>
 
   <h3 id="System_Security_Cryptography_HashString_Equals_System_Object_" data-uid="System.Security.Cryptography.HashString.Equals(System.Object)">
   Equals(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/System/Security/Cryptography/HashString.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/System/Security/Cryptography/HashString.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates whether this instance and a specified object are equal.</p>
@@ -310,14 +312,14 @@ value.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> to compare with the current instance.</p>
+    <dd><p>The object to compare with the current instance.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>true if obj and this instance are the same type and represent the same value; otherwise, false.</p>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </dd>
   </dl>
 
@@ -335,7 +337,7 @@ value.</p>
 
   <h3 id="System_Security_Cryptography_HashString_Equals_System_Security_Cryptography_HashString_" data-uid="System.Security.Cryptography.HashString.Equals(System.Security.Cryptography.HashString)">
   Equals(HashString)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/System/Security/Cryptography/HashString.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/System/Security/Cryptography/HashString.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
@@ -356,7 +358,7 @@ value.</p>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>true if the current object is equal to the other parameter; otherwise, false.</p>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </dd>
   </dl>
 
@@ -374,7 +376,7 @@ value.</p>
 
   <h3 id="System_Security_Cryptography_HashString_Equals_System_String_" data-uid="System.Security.Cryptography.HashString.Equals(System.String)">
   Equals(string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/System/Security/Cryptography/HashString.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/System/Security/Cryptography/HashString.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
@@ -388,15 +390,14 @@ value.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>other</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>An object to compare with this object.
-<p>Use <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>.ToString() or convert a list of bytes to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> using a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> or similar.</p>
+    <dd><p>An object to compare with this object.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>true if the current object is equal to the other parameter; otherwise, false.</p>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </dd>
   </dl>
 
@@ -414,7 +415,7 @@ value.</p>
 
   <h3 id="System_Security_Cryptography_HashString_GetHashCode" data-uid="System.Security.Cryptography.HashString.GetHashCode">
   GetHashCode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/System/Security/Cryptography/HashString.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/System/Security/Cryptography/HashString.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the hash code for this instance.</p>
@@ -447,10 +448,10 @@ value.</p>
 
   <h3 id="System_Security_Cryptography_HashString_ToString" data-uid="System.Security.Cryptography.HashString.ToString">
   ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/System/Security/Cryptography/HashString.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/System/Security/Cryptography/HashString.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Returns a string representation of the value of this instance in registry format.</p>
+  <div class="markdown level1 summary"><p>Returns the fully qualified type name of this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -462,12 +463,7 @@ value.</p>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The value of this <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>, formatted by using the &quot;D&quot; format specifier as
-follows: <code>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</code> where the value of the GUID is
-represented as a series of lowercase hexadecimal digits in groups of 8, 4, 4,
-4, and 12 digits and separated by hyphens. An example of a return value is &quot;382c74c3-721d-4f34-80e5-57657b6cbc27&quot;.
-To convert the hexadecimal digits from a through f to uppercase, call the System.String.ToUpper
-method on the returned string.</p>
+    <dd><p>The fully qualified type name.</p>
 </dd>
   </dl>
 
@@ -485,11 +481,10 @@ method on the returned string.</p>
 
   <h3 id="System_Security_Cryptography_HashString_ToString_System_String_" data-uid="System.Security.Cryptography.HashString.ToString(System.String)">
   ToString(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/System/Security/Cryptography/HashString.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/System/Security/Cryptography/HashString.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Returns a string representation of the value of this <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a> instance, according to the provided format specifier.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -499,18 +494,13 @@ method on the returned string.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>A single format specifier that indicates how to format the value of this <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>.
-The format parameter can be &quot;N&quot;, &quot;D&quot;, &quot;B&quot;, &quot;P&quot;, or &quot;X&quot;. If format is null or
-an empty string (&quot;&quot;), &quot;D&quot; is used.</p>
-</dd>
+    <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The value of this <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>, represented as a series of lowercase hexadecimal
-digits in the specified format.</p>
-</dd>
+    <dd></dd>
   </dl>
 
 
@@ -520,12 +510,6 @@ digits in the specified format.</p>
 
 
 
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.formatexception">FormatException</a></dt>
-    <dd><p>The value of format is not null, an empty string (&quot;&quot;), &quot;N&quot;, &quot;D&quot;, &quot;B&quot;, &quot;P&quot;, or &quot;X&quot;.</p>
-</dd>
-  </dl>
 
 
 
@@ -533,12 +517,10 @@ digits in the specified format.</p>
 
   <h3 id="System_Security_Cryptography_HashString_ToString_System_String_System_IFormatProvider_" data-uid="System.Security.Cryptography.HashString.ToString(System.String,System.IFormatProvider)">
   ToString(string?, IFormatProvider?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/System/Security/Cryptography/HashString.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/System/Security/Cryptography/HashString.cs/#L68"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Returns a string representation of the value of this instance of the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>
-class, according to the provided format specifier and culture-specific format
-information.</p>
+  <div class="markdown level1 summary"><p>Formats the value of the current instance using the specified format.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -549,20 +531,21 @@ information.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>A single format specifier that indicates how to format the value of this <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>.
-The format parameter can be &quot;N&quot;, &quot;D&quot;, &quot;B&quot;, &quot;P&quot;, or &quot;X&quot;. If format is null or
-an empty string (&quot;&quot;), &quot;D&quot; is used.</p>
+    <dd><p>The format to use.</p>
+<p>-or-</p>
+<p>A null reference (<code>Nothing</code> in Visual Basic) to use the default format defined for the type of the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformattable">IFormattable</a> implementation.</p>
 </dd>
     <dt><code>formatProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
-    <dd><p>(Reserved) An object that supplies culture-specific formatting information.</p>
+    <dd><p>The provider to use to format the value.</p>
+<p>-or-</p>
+<p>A null reference (<code>Nothing</code> in Visual Basic) to obtain the numeric format information from the current locale setting of the operating system.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The value of this <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>, represented as a series of lowercase hexadecimal
-digits in the specified format.</p>
+    <dd><p>The value of the current instance in the specified format.</p>
 </dd>
   </dl>
 
@@ -580,11 +563,53 @@ digits in the specified format.</p>
 </h2>
 
 
+  <a id="System_Security_Cryptography_HashString_op_Equality_" data-uid="System.Security.Cryptography.HashString.op_Equality*"></a>
+
+  <h3 id="System_Security_Cryptography_HashString_op_Equality_System_Security_Cryptography_HashString_System_Security_Cryptography_HashString_" data-uid="System.Security.Cryptography.HashString.op_Equality(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)">
+  operator ==(HashString, HashString)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/System/Security/Cryptography/HashString.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether two specified instances of <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a> are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(HashString left, HashString right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a></dt>
+    <dd><p>The first object to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a></dt>
+    <dd><p>The second object to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if left and right are equal; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="System_Security_Cryptography_HashString_op_Explicit_" data-uid="System.Security.Cryptography.HashString.op_Explicit*"></a>
 
   <h3 id="System_Security_Cryptography_HashString_op_Explicit_System_Security_Cryptography_HashString__System_Guid" data-uid="System.Security.Cryptography.HashString.op_Explicit(System.Security.Cryptography.HashString)~System.Guid">
   explicit operator Guid(HashString)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/System/Security/Cryptography/HashString.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/System/Security/Cryptography/HashString.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Explicit conversion from <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a> object to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>.</p>
@@ -598,13 +623,99 @@ digits in the specified format.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>hash</code> <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a></dt>
-    <dd></dd>
+    <dd><p>The HashString to convert.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
-    <dd></dd>
+    <dd><p>A Guid representation of the HashString.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Security_Cryptography_HashString_op_GreaterThan_" data-uid="System.Security.Cryptography.HashString.op_GreaterThan*"></a>
+
+  <h3 id="System_Security_Cryptography_HashString_op_GreaterThan_System_Security_Cryptography_HashString_System_Security_Cryptography_HashString_" data-uid="System.Security.Cryptography.HashString.op_GreaterThan(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)">
+  operator &gt;(HashString, HashString)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/System/Security/Cryptography/HashString.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether one specified <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a> is greater than another specified <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;(HashString left, HashString right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a></dt>
+    <dd><p>The first object to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a></dt>
+    <dd><p>The second object to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if left is greater than right; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Security_Cryptography_HashString_op_GreaterThanOrEqual_" data-uid="System.Security.Cryptography.HashString.op_GreaterThanOrEqual*"></a>
+
+  <h3 id="System_Security_Cryptography_HashString_op_GreaterThanOrEqual_System_Security_Cryptography_HashString_System_Security_Cryptography_HashString_" data-uid="System.Security.Cryptography.HashString.op_GreaterThanOrEqual(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)">
+  operator &gt;=(HashString, HashString)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/System/Security/Cryptography/HashString.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether one specified <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a> is greater than or equal to another specified <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;=(HashString left, HashString right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a></dt>
+    <dd><p>The first object to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a></dt>
+    <dd><p>The second object to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if left is greater than or equal to right; otherwise, false.</p>
+</dd>
   </dl>
 
 
@@ -621,7 +732,7 @@ digits in the specified format.</p>
 
   <h3 id="System_Security_Cryptography_HashString_op_Implicit_System_Security_Cryptography_HashString__System_String" data-uid="System.Security.Cryptography.HashString.op_Implicit(System.Security.Cryptography.HashString)~System.String">
   implicit operator string(HashString)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/System/Security/Cryptography/HashString.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/System/Security/Cryptography/HashString.cs/#L80"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Implicit conversion from <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a> to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> type.</p>
@@ -635,13 +746,141 @@ digits in the specified format.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>hash</code> <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a></dt>
-    <dd></dd>
+    <dd><p>The HashString to convert.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>A string representation of the HashString in GUID format.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Security_Cryptography_HashString_op_Inequality_" data-uid="System.Security.Cryptography.HashString.op_Inequality*"></a>
+
+  <h3 id="System_Security_Cryptography_HashString_op_Inequality_System_Security_Cryptography_HashString_System_Security_Cryptography_HashString_" data-uid="System.Security.Cryptography.HashString.op_Inequality(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)">
+  operator !=(HashString, HashString)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/System/Security/Cryptography/HashString.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether two specified instances of <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a> are not equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(HashString left, HashString right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a></dt>
+    <dd><p>The first object to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a></dt>
+    <dd><p>The second object to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if left and right are not equal; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Security_Cryptography_HashString_op_LessThan_" data-uid="System.Security.Cryptography.HashString.op_LessThan*"></a>
+
+  <h3 id="System_Security_Cryptography_HashString_op_LessThan_System_Security_Cryptography_HashString_System_Security_Cryptography_HashString_" data-uid="System.Security.Cryptography.HashString.op_LessThan(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)">
+  operator &lt;(HashString, HashString)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/System/Security/Cryptography/HashString.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether one specified <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a> is less than another specified <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;(HashString left, HashString right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a></dt>
+    <dd><p>The first object to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a></dt>
+    <dd><p>The second object to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if left is less than right; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Security_Cryptography_HashString_op_LessThanOrEqual_" data-uid="System.Security.Cryptography.HashString.op_LessThanOrEqual*"></a>
+
+  <h3 id="System_Security_Cryptography_HashString_op_LessThanOrEqual_System_Security_Cryptography_HashString_System_Security_Cryptography_HashString_" data-uid="System.Security.Cryptography.HashString.op_LessThanOrEqual(System.Security.Cryptography.HashString,System.Security.Cryptography.HashString)">
+  operator &lt;=(HashString, HashString)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/System/Security/Cryptography/HashString.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether one specified <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a> is less than or equal to another specified <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;=(HashString left, HashString right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a></dt>
+    <dd><p>The first object to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="System.Security.Cryptography.HashString.html">HashString</a></dt>
+    <dd><p>The second object to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if left is less than or equal to right; otherwise, false.</p>
+</dd>
   </dl>
 
 
@@ -658,7 +897,7 @@ digits in the specified format.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/System/Security/Cryptography/HashString.cs/#L8" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/System/Security/Cryptography/HashString.cs/#L6" class="edit-link">Edit this page</a>
         </div>
 
 
