@@ -7,6 +7,7 @@ items:
   children:
   - Cobilas.GodotEditor.Utility.Serialization.PropertyItem.#ctor(System.String,Godot.Variant.Type,Godot.PropertyHint,System.String,Godot.PropertyUsageFlags)
   - Cobilas.GodotEditor.Utility.Serialization.PropertyItem.Dispose
+  - Cobilas.GodotEditor.Utility.Serialization.PropertyItem.PropertyItemArrayToGDArray(Cobilas.GodotEditor.Utility.Serialization.PropertyItem[])
   - Cobilas.GodotEditor.Utility.Serialization.PropertyItem.ToDictionary
   langs:
   - csharp
@@ -17,11 +18,11 @@ items:
   type: Class
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/PropertyItem.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/PropertyItem.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: PropertyItem
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/PropertyItem.cs
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/PropertyItem.cs
     startLine: 6
   assemblies:
   - com.cobilas.godot.utility
@@ -55,11 +56,11 @@ items:
   type: Constructor
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/PropertyItem.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/PropertyItem.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/PropertyItem.cs
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/PropertyItem.cs
     startLine: 9
   assemblies:
   - com.cobilas.godot.utility
@@ -97,11 +98,11 @@ items:
   type: Method
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/PropertyItem.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/PropertyItem.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Dispose
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/PropertyItem.cs
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/PropertyItem.cs
     startLine: 24
   assemblies:
   - com.cobilas.godot.utility
@@ -127,11 +128,11 @@ items:
   type: Method
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/PropertyItem.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/PropertyItem.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: ToDictionary
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/PropertyItem.cs
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/PropertyItem.cs
     startLine: 27
   assemblies:
   - com.cobilas.godot.utility
@@ -145,6 +146,44 @@ items:
       description: Returns <xref href="Cobilas.GodotEditor.Utility.Serialization.PropertyItem" data-throw-if-not-resolved="false"></xref> converted to <xref href="Godot.Collections.Dictionary" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Function ToDictionary() As Dictionary
   overload: Cobilas.GodotEditor.Utility.Serialization.PropertyItem.ToDictionary*
+- uid: Cobilas.GodotEditor.Utility.Serialization.PropertyItem.PropertyItemArrayToGDArray(Cobilas.GodotEditor.Utility.Serialization.PropertyItem[])
+  commentId: M:Cobilas.GodotEditor.Utility.Serialization.PropertyItem.PropertyItemArrayToGDArray(Cobilas.GodotEditor.Utility.Serialization.PropertyItem[])
+  id: PropertyItemArrayToGDArray(Cobilas.GodotEditor.Utility.Serialization.PropertyItem[])
+  parent: Cobilas.GodotEditor.Utility.Serialization.PropertyItem
+  langs:
+  - csharp
+  - vb
+  name: PropertyItemArrayToGDArray(PropertyItem[]?)
+  nameWithType: PropertyItem.PropertyItemArrayToGDArray(PropertyItem[]?)
+  fullName: Cobilas.GodotEditor.Utility.Serialization.PropertyItem.PropertyItemArrayToGDArray(Cobilas.GodotEditor.Utility.Serialization.PropertyItem[]?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/PropertyItem.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: PropertyItemArrayToGDArray
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/PropertyItem.cs
+    startLine: 31
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEditor.Utility.Serialization
+  summary: The method converts a list of <xref href="Cobilas.GodotEditor.Utility.Serialization.PropertyItem" data-throw-if-not-resolved="false"></xref> to an <xref href="Godot.Collections.Array" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public static Array PropertyItemArrayToGDArray(PropertyItem[]? array)
+    parameters:
+    - id: array
+      type: Cobilas.GodotEditor.Utility.Serialization.PropertyItem[]
+      description: The list to be converted.
+    return:
+      type: Godot.Collections.Array
+      description: Returns an <xref href="Godot.Collections.Array" data-throw-if-not-resolved="false"></xref> containing the serialization information for the properties.
+    content.vb: Public Shared Function PropertyItemArrayToGDArray(array As PropertyItem()) As Array
+  overload: Cobilas.GodotEditor.Utility.Serialization.PropertyItem.PropertyItemArrayToGDArray*
+  nameWithType.vb: PropertyItem.PropertyItemArrayToGDArray(PropertyItem())
+  fullName.vb: Cobilas.GodotEditor.Utility.Serialization.PropertyItem.PropertyItemArrayToGDArray(Cobilas.GodotEditor.Utility.Serialization.PropertyItem())
+  name.vb: PropertyItemArrayToGDArray(PropertyItem())
 references:
 - uid: Cobilas.GodotEditor.Utility.Serialization
   commentId: N:Cobilas.GodotEditor.Utility.Serialization
@@ -537,3 +576,37 @@ references:
   - uid: Godot.Collections
     name: Collections
     isExternal: true
+- uid: Godot.Collections.Array
+  commentId: T:Godot.Collections.Array
+  parent: Godot.Collections
+  isExternal: true
+  name: Array
+  nameWithType: Array
+  fullName: Godot.Collections.Array
+- uid: Cobilas.GodotEditor.Utility.Serialization.PropertyItem.PropertyItemArrayToGDArray*
+  commentId: Overload:Cobilas.GodotEditor.Utility.Serialization.PropertyItem.PropertyItemArrayToGDArray
+  href: Cobilas.GodotEditor.Utility.Serialization.PropertyItem.html#Cobilas_GodotEditor_Utility_Serialization_PropertyItem_PropertyItemArrayToGDArray_Cobilas_GodotEditor_Utility_Serialization_PropertyItem___
+  name: PropertyItemArrayToGDArray
+  nameWithType: PropertyItem.PropertyItemArrayToGDArray
+  fullName: Cobilas.GodotEditor.Utility.Serialization.PropertyItem.PropertyItemArrayToGDArray
+- uid: Cobilas.GodotEditor.Utility.Serialization.PropertyItem[]
+  isExternal: true
+  href: Cobilas.GodotEditor.Utility.Serialization.PropertyItem.html
+  name: PropertyItem[]
+  nameWithType: PropertyItem[]
+  fullName: Cobilas.GodotEditor.Utility.Serialization.PropertyItem[]
+  nameWithType.vb: PropertyItem()
+  fullName.vb: Cobilas.GodotEditor.Utility.Serialization.PropertyItem()
+  name.vb: PropertyItem()
+  spec.csharp:
+  - uid: Cobilas.GodotEditor.Utility.Serialization.PropertyItem
+    name: PropertyItem
+    href: Cobilas.GodotEditor.Utility.Serialization.PropertyItem.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Cobilas.GodotEditor.Utility.Serialization.PropertyItem
+    name: PropertyItem
+    href: Cobilas.GodotEditor.Utility.Serialization.PropertyItem.html
+  - name: (
+  - name: )

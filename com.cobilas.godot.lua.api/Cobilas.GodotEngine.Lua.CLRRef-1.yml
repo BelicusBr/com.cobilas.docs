@@ -1,0 +1,712 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.GodotEngine.Lua.CLRRef`1
+  commentId: T:Cobilas.GodotEngine.Lua.CLRRef`1
+  id: CLRRef`1
+  parent: Cobilas.GodotEngine.Lua
+  children:
+  - Cobilas.GodotEngine.Lua.CLRRef`1.Create(MoonSharp.Interpreter.Table)
+  - Cobilas.GodotEngine.Lua.CLRRef`1.ToObject
+  - Cobilas.GodotEngine.Lua.CLRRef`1.ToString
+  - Cobilas.GodotEngine.Lua.CLRRef`1.ToString(System.String,System.IFormatProvider)
+  - Cobilas.GodotEngine.Lua.CLRRef`1.op_Explicit(Cobilas.GodotEngine.Lua.LuaField)~Cobilas.GodotEngine.Lua.CLRRef{`0}
+  - Cobilas.GodotEngine.Lua.CLRRef`1.op_Implicit(Cobilas.GodotEngine.Lua.CLRRef{`0})~`0
+  langs:
+  - csharp
+  - vb
+  name: CLRRef<T>
+  nameWithType: CLRRef<T>
+  fullName: Cobilas.GodotEngine.Lua.CLRRef<T>
+  type: Struct
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/CLRRef.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: CLRRef
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/CLRRef.cs
+    startLine: 7
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Represents a wrapper for converting between Lua tables and CLR objects of a specified type.
+  example: []
+  syntax:
+    content: 'public struct CLRRef<T> : IFormattable'
+    typeParameters:
+    - id: T
+      description: The type of CLR object to convert to/from.
+    content.vb: Public Structure CLRRef(Of T) Implements IFormattable
+  implements:
+  - System.IFormattable
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  nameWithType.vb: CLRRef(Of T)
+  fullName.vb: Cobilas.GodotEngine.Lua.CLRRef(Of T)
+  name.vb: CLRRef(Of T)
+- uid: Cobilas.GodotEngine.Lua.CLRRef`1.ToObject
+  commentId: M:Cobilas.GodotEngine.Lua.CLRRef`1.ToObject
+  id: ToObject
+  parent: Cobilas.GodotEngine.Lua.CLRRef`1
+  langs:
+  - csharp
+  - vb
+  name: ToObject()
+  nameWithType: CLRRef<T>.ToObject()
+  fullName: Cobilas.GodotEngine.Lua.CLRRef<T>.ToObject()
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/CLRRef.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: ToObject
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/CLRRef.cs
+    startLine: 13
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Converts the wrapped Lua table to a CLR object of type T.
+  example: []
+  syntax:
+    content: public readonly T? ToObject()
+    return:
+      type: '{T}'
+      description: The converted CLR object, or default if conversion fails.
+    content.vb: Public Function ToObject() As T
+  overload: Cobilas.GodotEngine.Lua.CLRRef`1.ToObject*
+  nameWithType.vb: CLRRef(Of T).ToObject()
+  fullName.vb: Cobilas.GodotEngine.Lua.CLRRef(Of T).ToObject()
+- uid: Cobilas.GodotEngine.Lua.CLRRef`1.ToString
+  commentId: M:Cobilas.GodotEngine.Lua.CLRRef`1.ToString
+  id: ToString
+  parent: Cobilas.GodotEngine.Lua.CLRRef`1
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: CLRRef<T>.ToString()
+  fullName: Cobilas.GodotEngine.Lua.CLRRef<T>.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/CLRRef.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: ToString
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/CLRRef.cs
+    startLine: 19
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Returns the fully qualified type name of this instance.
+  example: []
+  syntax:
+    content: public override readonly string ToString()
+    return:
+      type: System.String
+      description: The fully qualified type name.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: Cobilas.GodotEngine.Lua.CLRRef`1.ToString*
+  nameWithType.vb: CLRRef(Of T).ToString()
+  fullName.vb: Cobilas.GodotEngine.Lua.CLRRef(Of T).ToString()
+- uid: Cobilas.GodotEngine.Lua.CLRRef`1.ToString(System.String,System.IFormatProvider)
+  commentId: M:Cobilas.GodotEngine.Lua.CLRRef`1.ToString(System.String,System.IFormatProvider)
+  id: ToString(System.String,System.IFormatProvider)
+  parent: Cobilas.GodotEngine.Lua.CLRRef`1
+  langs:
+  - csharp
+  - vb
+  name: ToString(string, IFormatProvider)
+  nameWithType: CLRRef<T>.ToString(string, IFormatProvider)
+  fullName: Cobilas.GodotEngine.Lua.CLRRef<T>.ToString(string, System.IFormatProvider)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/CLRRef.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: ToString
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/CLRRef.cs
+    startLine: 24
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Formats the value of the current instance using the specified format.
+  example: []
+  syntax:
+    content: public readonly string ToString(string format, IFormatProvider formatProvider)
+    parameters:
+    - id: format
+      type: System.String
+      description: The format to use.-or- A null reference (<code>Nothing</code> in Visual Basic) to use the default format defined for the type of the <xref href="System.IFormattable" data-throw-if-not-resolved="false"></xref> implementation.
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: The provider to use to format the value.-or- A null reference (<code>Nothing</code> in Visual Basic) to obtain the numeric format information from the current locale setting of the operating system.
+    return:
+      type: System.String
+      description: The value of the current instance in the specified format.
+    content.vb: Public Function ToString(format As String, formatProvider As IFormatProvider) As String
+  overload: Cobilas.GodotEngine.Lua.CLRRef`1.ToString*
+  implements:
+  - System.IFormattable.ToString(System.String,System.IFormatProvider)
+  nameWithType.vb: CLRRef(Of T).ToString(String, IFormatProvider)
+  fullName.vb: Cobilas.GodotEngine.Lua.CLRRef(Of T).ToString(String, System.IFormatProvider)
+  name.vb: ToString(String, IFormatProvider)
+- uid: Cobilas.GodotEngine.Lua.CLRRef`1.Create(MoonSharp.Interpreter.Table)
+  commentId: M:Cobilas.GodotEngine.Lua.CLRRef`1.Create(MoonSharp.Interpreter.Table)
+  id: Create(MoonSharp.Interpreter.Table)
+  parent: Cobilas.GodotEngine.Lua.CLRRef`1
+  langs:
+  - csharp
+  - vb
+  name: Create(Table?)
+  nameWithType: CLRRef<T>.Create(Table?)
+  fullName: Cobilas.GodotEngine.Lua.CLRRef<T>.Create(MoonSharp.Interpreter.Table?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/CLRRef.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: Create
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/CLRRef.cs
+    startLine: 35
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Creates a new <xref href="Cobilas.GodotEngine.Lua.CLRRef%601" data-throw-if-not-resolved="false"></xref> instance with the specified Lua table.
+  example: []
+  syntax:
+    content: public static CLRRef<T> Create(Table? inValue)
+    parameters:
+    - id: inValue
+      type: MoonSharp.Interpreter.Table
+      description: The Lua table to wrap.
+    return:
+      type: Cobilas.GodotEngine.Lua.CLRRef`1
+      description: A new <xref href="Cobilas.GodotEngine.Lua.CLRRef%601" data-throw-if-not-resolved="false"></xref> instance containing the specified table.
+    content.vb: Public Shared Function Create(inValue As Table) As CLRRef(Of T)
+  overload: Cobilas.GodotEngine.Lua.CLRRef`1.Create*
+  nameWithType.vb: CLRRef(Of T).Create(Table)
+  fullName.vb: Cobilas.GodotEngine.Lua.CLRRef(Of T).Create(MoonSharp.Interpreter.Table)
+  name.vb: Create(Table)
+- uid: Cobilas.GodotEngine.Lua.CLRRef`1.op_Explicit(Cobilas.GodotEngine.Lua.LuaField)~Cobilas.GodotEngine.Lua.CLRRef{`0}
+  commentId: M:Cobilas.GodotEngine.Lua.CLRRef`1.op_Explicit(Cobilas.GodotEngine.Lua.LuaField)~Cobilas.GodotEngine.Lua.CLRRef{`0}
+  id: op_Explicit(Cobilas.GodotEngine.Lua.LuaField)~Cobilas.GodotEngine.Lua.CLRRef{`0}
+  parent: Cobilas.GodotEngine.Lua.CLRRef`1
+  langs:
+  - csharp
+  - vb
+  name: explicit operator CLRRef<T>(LuaField)
+  nameWithType: CLRRef<T>.explicit operator CLRRef<T>(LuaField)
+  fullName: Cobilas.GodotEngine.Lua.CLRRef<T>.explicit operator Cobilas.GodotEngine.Lua.CLRRef<T>(Cobilas.GodotEngine.Lua.LuaField)
+  type: Operator
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/CLRRef.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: op_Explicit
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/CLRRef.cs
+    startLine: 48
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Explicitly converts a <xref href="Cobilas.GodotEngine.Lua.LuaField" data-throw-if-not-resolved="false"></xref> to a <xref href="Cobilas.GodotEngine.Lua.CLRRef%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static explicit operator CLRRef<T>(LuaField field)
+    parameters:
+    - id: field
+      type: Cobilas.GodotEngine.Lua.LuaField
+      description: The <xref href="Cobilas.GodotEngine.Lua.LuaField" data-throw-if-not-resolved="false"></xref> to convert.
+    return:
+      type: Cobilas.GodotEngine.Lua.CLRRef`1
+    content.vb: Public Shared Narrowing Operator CType(field As LuaField) As CLRRef(Of T)
+  overload: Cobilas.GodotEngine.Lua.CLRRef`1.op_Explicit*
+  nameWithType.vb: CLRRef(Of T).CType(LuaField)
+  fullName.vb: Cobilas.GodotEngine.Lua.CLRRef(Of T).CType(Cobilas.GodotEngine.Lua.LuaField)
+  name.vb: CType(LuaField)
+- uid: Cobilas.GodotEngine.Lua.CLRRef`1.op_Implicit(Cobilas.GodotEngine.Lua.CLRRef{`0})~`0
+  commentId: M:Cobilas.GodotEngine.Lua.CLRRef`1.op_Implicit(Cobilas.GodotEngine.Lua.CLRRef{`0})~`0
+  id: op_Implicit(Cobilas.GodotEngine.Lua.CLRRef{`0})~`0
+  parent: Cobilas.GodotEngine.Lua.CLRRef`1
+  langs:
+  - csharp
+  - vb
+  name: implicit operator T?(CLRRef<T>)
+  nameWithType: CLRRef<T>.implicit operator T?(CLRRef<T>)
+  fullName: Cobilas.GodotEngine.Lua.CLRRef<T>.implicit operator T?(Cobilas.GodotEngine.Lua.CLRRef<T>)
+  type: Operator
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/CLRRef.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: op_Implicit
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/CLRRef.cs
+    startLine: 51
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Implicitly converts a <xref href="Cobilas.GodotEngine.Lua.CLRRef%601" data-throw-if-not-resolved="false"></xref> to its underlying CLR object.
+  example: []
+  syntax:
+    content: public static implicit operator T?(CLRRef<T> obj)
+    parameters:
+    - id: obj
+      type: Cobilas.GodotEngine.Lua.CLRRef`1
+      description: The <xref href="Cobilas.GodotEngine.Lua.CLRRef%601" data-throw-if-not-resolved="false"></xref> to convert.
+    return:
+      type: '{T}'
+    content.vb: Public Shared Widening Operator CType(obj As CLRRef(Of T)) As T
+  overload: Cobilas.GodotEngine.Lua.CLRRef`1.op_Implicit*
+  nameWithType.vb: CLRRef(Of T).CType(CLRRef(Of T))
+  fullName.vb: Cobilas.GodotEngine.Lua.CLRRef(Of T).CType(Cobilas.GodotEngine.Lua.CLRRef(Of T))
+  name.vb: CType(CLRRef(Of T))
+references:
+- uid: Cobilas.GodotEngine.Lua
+  commentId: N:Cobilas.GodotEngine.Lua
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Lua
+  nameWithType: Cobilas.GodotEngine.Lua
+  fullName: Cobilas.GodotEngine.Lua
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Lua
+    name: Lua
+    href: Cobilas.GodotEngine.Lua.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Lua
+    name: Lua
+    href: Cobilas.GodotEngine.Lua.html
+- uid: System.IFormattable
+  commentId: T:System.IFormattable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformattable
+  name: IFormattable
+  nameWithType: IFormattable
+  fullName: System.IFormattable
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Cobilas.GodotEngine.Lua.CLRRef`1.ToObject*
+  commentId: Overload:Cobilas.GodotEngine.Lua.CLRRef`1.ToObject
+  href: Cobilas.GodotEngine.Lua.CLRRef-1.html#Cobilas_GodotEngine_Lua_CLRRef_1_ToObject
+  name: ToObject
+  nameWithType: CLRRef<T>.ToObject
+  fullName: Cobilas.GodotEngine.Lua.CLRRef<T>.ToObject
+  nameWithType.vb: CLRRef(Of T).ToObject
+  fullName.vb: Cobilas.GodotEngine.Lua.CLRRef(Of T).ToObject
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Lua.CLRRef`1.ToString*
+  commentId: Overload:Cobilas.GodotEngine.Lua.CLRRef`1.ToString
+  href: Cobilas.GodotEngine.Lua.CLRRef-1.html#Cobilas_GodotEngine_Lua_CLRRef_1_ToString
+  name: ToString
+  nameWithType: CLRRef<T>.ToString
+  fullName: Cobilas.GodotEngine.Lua.CLRRef<T>.ToString
+  nameWithType.vb: CLRRef(Of T).ToString
+  fullName.vb: Cobilas.GodotEngine.Lua.CLRRef(Of T).ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.IFormattable.ToString(System.String,System.IFormatProvider)
+  commentId: M:System.IFormattable.ToString(System.String,System.IFormatProvider)
+  parent: System.IFormattable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformattable.tostring
+  name: ToString(string, IFormatProvider)
+  nameWithType: IFormattable.ToString(string, IFormatProvider)
+  fullName: System.IFormattable.ToString(string, System.IFormatProvider)
+  nameWithType.vb: IFormattable.ToString(String, IFormatProvider)
+  fullName.vb: System.IFormattable.ToString(String, System.IFormatProvider)
+  name.vb: ToString(String, IFormatProvider)
+  spec.csharp:
+  - uid: System.IFormattable.ToString(System.String,System.IFormatProvider)
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformattable.tostring
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  - name: )
+  spec.vb:
+  - uid: System.IFormattable.ToString(System.String,System.IFormatProvider)
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformattable.tostring
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  - name: )
+- uid: System.IFormatProvider
+  commentId: T:System.IFormatProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  name: IFormatProvider
+  nameWithType: IFormatProvider
+  fullName: System.IFormatProvider
+- uid: Cobilas.GodotEngine.Lua.CLRRef`1
+  commentId: T:Cobilas.GodotEngine.Lua.CLRRef`1
+  parent: Cobilas.GodotEngine.Lua
+  href: Cobilas.GodotEngine.Lua.CLRRef-1.html
+  name: CLRRef<T>
+  nameWithType: CLRRef<T>
+  fullName: Cobilas.GodotEngine.Lua.CLRRef<T>
+  nameWithType.vb: CLRRef(Of T)
+  fullName.vb: Cobilas.GodotEngine.Lua.CLRRef(Of T)
+  name.vb: CLRRef(Of T)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Lua.CLRRef`1
+    name: CLRRef
+    href: Cobilas.GodotEngine.Lua.CLRRef-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Lua.CLRRef`1
+    name: CLRRef
+    href: Cobilas.GodotEngine.Lua.CLRRef-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Cobilas.GodotEngine.Lua.CLRRef`1.Create*
+  commentId: Overload:Cobilas.GodotEngine.Lua.CLRRef`1.Create
+  href: Cobilas.GodotEngine.Lua.CLRRef-1.html#Cobilas_GodotEngine_Lua_CLRRef_1_Create_MoonSharp_Interpreter_Table_
+  name: Create
+  nameWithType: CLRRef<T>.Create
+  fullName: Cobilas.GodotEngine.Lua.CLRRef<T>.Create
+  nameWithType.vb: CLRRef(Of T).Create
+  fullName.vb: Cobilas.GodotEngine.Lua.CLRRef(Of T).Create
+- uid: MoonSharp.Interpreter.Table
+  commentId: T:MoonSharp.Interpreter.Table
+  parent: MoonSharp.Interpreter
+  isExternal: true
+  name: Table
+  nameWithType: Table
+  fullName: MoonSharp.Interpreter.Table
+- uid: MoonSharp.Interpreter
+  commentId: N:MoonSharp.Interpreter
+  isExternal: true
+  name: MoonSharp.Interpreter
+  nameWithType: MoonSharp.Interpreter
+  fullName: MoonSharp.Interpreter
+  spec.csharp:
+  - uid: MoonSharp
+    name: MoonSharp
+    isExternal: true
+  - name: .
+  - uid: MoonSharp.Interpreter
+    name: Interpreter
+    isExternal: true
+  spec.vb:
+  - uid: MoonSharp
+    name: MoonSharp
+    isExternal: true
+  - name: .
+  - uid: MoonSharp.Interpreter
+    name: Interpreter
+    isExternal: true
+- uid: Cobilas.GodotEngine.Lua.LuaField
+  commentId: T:Cobilas.GodotEngine.Lua.LuaField
+  parent: Cobilas.GodotEngine.Lua
+  href: Cobilas.GodotEngine.Lua.LuaField.html
+  name: LuaField
+  nameWithType: LuaField
+  fullName: Cobilas.GodotEngine.Lua.LuaField
+- uid: Cobilas.GodotEngine.Lua.CLRRef`1.op_Explicit*
+  commentId: Overload:Cobilas.GodotEngine.Lua.CLRRef`1.op_Explicit
+  name: explicit operator
+  nameWithType: CLRRef<T>.explicit operator
+  fullName: Cobilas.GodotEngine.Lua.CLRRef<T>.explicit operator
+  nameWithType.vb: CLRRef(Of T).CType
+  fullName.vb: Cobilas.GodotEngine.Lua.CLRRef(Of T).CType
+  name.vb: CType
+  spec.csharp:
+  - name: explicit
+  - name: " "
+  - name: operator
+- uid: Cobilas.GodotEngine.Lua.CLRRef`1.op_Implicit*
+  commentId: Overload:Cobilas.GodotEngine.Lua.CLRRef`1.op_Implicit
+  name: implicit operator
+  nameWithType: CLRRef<T>.implicit operator
+  fullName: Cobilas.GodotEngine.Lua.CLRRef<T>.implicit operator
+  nameWithType.vb: CLRRef(Of T).CType
+  fullName.vb: Cobilas.GodotEngine.Lua.CLRRef(Of T).CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator

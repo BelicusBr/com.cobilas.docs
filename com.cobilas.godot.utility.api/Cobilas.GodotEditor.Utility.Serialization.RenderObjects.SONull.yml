@@ -25,11 +25,11 @@ items:
   type: Class
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SONull
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
     startLine: 4
   assemblies:
   - com.cobilas.godot.utility
@@ -37,8 +37,14 @@ items:
   summary: SerializedObjectNull; Represents a null <xref href="Cobilas.GodotEditor.Utility.Serialization.RenderObjects.SerializedObject" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: 'public sealed class SONull : SerializedObject, ISerializedPropertyManipulation, INullObject'
-    content.vb: Public NotInheritable Class SONull Inherits SerializedObject Implements ISerializedPropertyManipulation, INullObject
+    content: >-
+      [Obsolete]
+
+      public sealed class SONull : SerializedObject, ISerializedPropertyManipulation, INullObject
+    content.vb: >-
+      <Obsolete>
+
+      Public NotInheritable Class SONull Inherits SerializedObject Implements ISerializedPropertyManipulation, INullObject
   inheritance:
   - System.Object
   - Cobilas.GodotEditor.Utility.Serialization.RenderObjects.SerializedObject
@@ -54,6 +60,10 @@ items:
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor
+    arguments: []
 - uid: Cobilas.GodotEditor.Utility.Serialization.RenderObjects.SONull.PropertyPath
   commentId: P:Cobilas.GodotEditor.Utility.Serialization.RenderObjects.SONull.PropertyPath
   id: PropertyPath
@@ -67,12 +77,12 @@ items:
   type: Property
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: PropertyPath
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
-    startLine: 7
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
+    startLine: 8
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.RenderObjects
@@ -100,12 +110,12 @@ items:
   type: Property
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Member
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
-    startLine: 9
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
+    startLine: 10
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.RenderObjects
@@ -133,12 +143,12 @@ items:
   type: Property
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Name
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
-    startLine: 11
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
+    startLine: 12
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.RenderObjects
@@ -166,12 +176,12 @@ items:
   type: Property
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RootInfo
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
-    startLine: 13
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
+    startLine: 14
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.RenderObjects
@@ -199,12 +209,12 @@ items:
   type: Property
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Parent
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
-    startLine: 15
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
+    startLine: 16
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.RenderObjects
@@ -232,12 +242,12 @@ items:
   type: Property
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: "Null"
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
-    startLine: 18
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
+    startLine: 19
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.RenderObjects
@@ -264,12 +274,12 @@ items:
   type: Constructor
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
-    startLine: 21
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
+    startLine: 22
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.RenderObjects
@@ -314,12 +324,12 @@ items:
   type: Constructor
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
-    startLine: 24
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
+    startLine: 25
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.RenderObjects
@@ -352,12 +362,12 @@ items:
   type: Method
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Get
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
-    startLine: 26
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
+    startLine: 27
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.RenderObjects
@@ -391,12 +401,12 @@ items:
   type: Method
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetPropertyList
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
-    startLine: 28
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
+    startLine: 29
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.RenderObjects
@@ -423,12 +433,12 @@ items:
   type: Method
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Set
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
-    startLine: 30
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/SONull.cs
+    startLine: 31
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.RenderObjects

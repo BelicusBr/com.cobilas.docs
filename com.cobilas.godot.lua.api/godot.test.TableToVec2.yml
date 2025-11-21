@@ -1,0 +1,525 @@
+### YamlMime:ManagedReference
+items:
+- uid: godot.test.TableToVec2
+  commentId: T:godot.test.TableToVec2
+  id: TableToVec2
+  parent: godot.test
+  children:
+  - godot.test.TableToVec2.ToLuaTable(System.Object,MoonSharp.Interpreter.Table)
+  - godot.test.TableToVec2.ToObject(System.Object,MoonSharp.Interpreter.Table)
+  langs:
+  - csharp
+  - vb
+  name: TableToVec2
+  nameWithType: TableToVec2
+  fullName: godot.test.TableToVec2
+  type: Class
+  source:
+    remote:
+      path: test/TableToVec2.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: TableToVec2
+    path: ../../Godot Dev/com.cobilas.godot.lua/test/TableToVec2.cs
+    startLine: 6
+  assemblies:
+  - godot.test
+  namespace: godot.test
+  syntax:
+    content: >-
+      [LuaSerializable(typeof(Vector2))]
+
+      public sealed class TableToVec2 : ObjectToLuaTable
+    content.vb: >-
+      <LuaSerializable(GetType(Vector2))>
+
+      Public NotInheritable Class TableToVec2 Inherits ObjectToLuaTable
+  inheritance:
+  - System.Object
+  - Cobilas.GodotEngine.Lua.ObjectToLuaTable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  attributes:
+  - type: Cobilas.GodotEngine.Lua.LuaSerializableAttribute
+    ctor: Cobilas.GodotEngine.Lua.LuaSerializableAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Godot.Vector2
+- uid: godot.test.TableToVec2.ToLuaTable(System.Object,MoonSharp.Interpreter.Table)
+  commentId: M:godot.test.TableToVec2.ToLuaTable(System.Object,MoonSharp.Interpreter.Table)
+  id: ToLuaTable(System.Object,MoonSharp.Interpreter.Table)
+  parent: godot.test.TableToVec2
+  langs:
+  - csharp
+  - vb
+  name: ToLuaTable(object, Table)
+  nameWithType: TableToVec2.ToLuaTable(object, Table)
+  fullName: godot.test.TableToVec2.ToLuaTable(object, MoonSharp.Interpreter.Table)
+  type: Method
+  source:
+    remote:
+      path: test/TableToVec2.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: ToLuaTable
+    path: ../../Godot Dev/com.cobilas.godot.lua/test/TableToVec2.cs
+    startLine: 8
+  assemblies:
+  - godot.test
+  namespace: godot.test
+  summary: Converts a C# object to a Lua table.
+  example: []
+  syntax:
+    content: public override void ToLuaTable(object obj, Table table)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The C# object to convert.
+    - id: table
+      type: MoonSharp.Interpreter.Table
+      description: The Lua table to populate with the object's data.
+    content.vb: Public Overrides Sub ToLuaTable(obj As Object, table As Table)
+  overridden: Cobilas.GodotEngine.Lua.ObjectToLuaTable.ToLuaTable(System.Object,MoonSharp.Interpreter.Table)
+  overload: godot.test.TableToVec2.ToLuaTable*
+  nameWithType.vb: TableToVec2.ToLuaTable(Object, Table)
+  fullName.vb: godot.test.TableToVec2.ToLuaTable(Object, MoonSharp.Interpreter.Table)
+  name.vb: ToLuaTable(Object, Table)
+- uid: godot.test.TableToVec2.ToObject(System.Object,MoonSharp.Interpreter.Table)
+  commentId: M:godot.test.TableToVec2.ToObject(System.Object,MoonSharp.Interpreter.Table)
+  id: ToObject(System.Object,MoonSharp.Interpreter.Table)
+  parent: godot.test.TableToVec2
+  langs:
+  - csharp
+  - vb
+  name: ToObject(object, Table)
+  nameWithType: TableToVec2.ToObject(object, Table)
+  fullName: godot.test.TableToVec2.ToObject(object, MoonSharp.Interpreter.Table)
+  type: Method
+  source:
+    remote:
+      path: test/TableToVec2.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: ToObject
+    path: ../../Godot Dev/com.cobilas.godot.lua/test/TableToVec2.cs
+    startLine: 14
+  assemblies:
+  - godot.test
+  namespace: godot.test
+  summary: Converts a Lua table back to a C# object.
+  example: []
+  syntax:
+    content: public override object ToObject(object obj, Table table)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The original object instance (may be used for context).
+    - id: table
+      type: MoonSharp.Interpreter.Table
+      description: The Lua table containing the serialized data.
+    return:
+      type: System.Object
+      description: A C# object reconstructed from the Lua table data.
+    content.vb: Public Overrides Function ToObject(obj As Object, table As Table) As Object
+  overridden: Cobilas.GodotEngine.Lua.ObjectToLuaTable.ToObject(System.Object,MoonSharp.Interpreter.Table)
+  overload: godot.test.TableToVec2.ToObject*
+  nameWithType.vb: TableToVec2.ToObject(Object, Table)
+  fullName.vb: godot.test.TableToVec2.ToObject(Object, MoonSharp.Interpreter.Table)
+  name.vb: ToObject(Object, Table)
+references:
+- uid: godot.test
+  commentId: N:godot.test
+  href: godot.html
+  name: godot.test
+  nameWithType: godot.test
+  fullName: godot.test
+  spec.csharp:
+  - uid: godot
+    name: godot
+    href: godot.html
+  - name: .
+  - uid: godot.test
+    name: test
+    href: godot.test.html
+  spec.vb:
+  - uid: godot
+    name: godot
+    href: godot.html
+  - name: .
+  - uid: godot.test
+    name: test
+    href: godot.test.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Cobilas.GodotEngine.Lua.ObjectToLuaTable
+  commentId: T:Cobilas.GodotEngine.Lua.ObjectToLuaTable
+  parent: Cobilas.GodotEngine.Lua
+  href: Cobilas.GodotEngine.Lua.ObjectToLuaTable.html
+  name: ObjectToLuaTable
+  nameWithType: ObjectToLuaTable
+  fullName: Cobilas.GodotEngine.Lua.ObjectToLuaTable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cobilas.GodotEngine.Lua
+  commentId: N:Cobilas.GodotEngine.Lua
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Lua
+  nameWithType: Cobilas.GodotEngine.Lua
+  fullName: Cobilas.GodotEngine.Lua
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Lua
+    name: Lua
+    href: Cobilas.GodotEngine.Lua.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Lua
+    name: Lua
+    href: Cobilas.GodotEngine.Lua.html
+- uid: Cobilas.GodotEngine.Lua.ObjectToLuaTable.ToLuaTable(System.Object,MoonSharp.Interpreter.Table)
+  commentId: M:Cobilas.GodotEngine.Lua.ObjectToLuaTable.ToLuaTable(System.Object,MoonSharp.Interpreter.Table)
+  parent: Cobilas.GodotEngine.Lua.ObjectToLuaTable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: ToLuaTable(object, Table)
+  nameWithType: ObjectToLuaTable.ToLuaTable(object, Table)
+  fullName: Cobilas.GodotEngine.Lua.ObjectToLuaTable.ToLuaTable(object, MoonSharp.Interpreter.Table)
+  nameWithType.vb: ObjectToLuaTable.ToLuaTable(Object, Table)
+  fullName.vb: Cobilas.GodotEngine.Lua.ObjectToLuaTable.ToLuaTable(Object, MoonSharp.Interpreter.Table)
+  name.vb: ToLuaTable(Object, Table)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Lua.ObjectToLuaTable.ToLuaTable(System.Object,MoonSharp.Interpreter.Table)
+    name: ToLuaTable
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: MoonSharp.Interpreter.Table
+    name: Table
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Lua.ObjectToLuaTable.ToLuaTable(System.Object,MoonSharp.Interpreter.Table)
+    name: ToLuaTable
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: MoonSharp.Interpreter.Table
+    name: Table
+    isExternal: true
+  - name: )
+- uid: godot.test.TableToVec2.ToLuaTable*
+  commentId: Overload:godot.test.TableToVec2.ToLuaTable
+  href: godot.test.TableToVec2.html#godot_test_TableToVec2_ToLuaTable_System_Object_MoonSharp_Interpreter_Table_
+  name: ToLuaTable
+  nameWithType: TableToVec2.ToLuaTable
+  fullName: godot.test.TableToVec2.ToLuaTable
+- uid: MoonSharp.Interpreter.Table
+  commentId: T:MoonSharp.Interpreter.Table
+  parent: MoonSharp.Interpreter
+  isExternal: true
+  name: Table
+  nameWithType: Table
+  fullName: MoonSharp.Interpreter.Table
+- uid: MoonSharp.Interpreter
+  commentId: N:MoonSharp.Interpreter
+  isExternal: true
+  name: MoonSharp.Interpreter
+  nameWithType: MoonSharp.Interpreter
+  fullName: MoonSharp.Interpreter
+  spec.csharp:
+  - uid: MoonSharp
+    name: MoonSharp
+    isExternal: true
+  - name: .
+  - uid: MoonSharp.Interpreter
+    name: Interpreter
+    isExternal: true
+  spec.vb:
+  - uid: MoonSharp
+    name: MoonSharp
+    isExternal: true
+  - name: .
+  - uid: MoonSharp.Interpreter
+    name: Interpreter
+    isExternal: true
+- uid: Cobilas.GodotEngine.Lua.ObjectToLuaTable.ToObject(System.Object,MoonSharp.Interpreter.Table)
+  commentId: M:Cobilas.GodotEngine.Lua.ObjectToLuaTable.ToObject(System.Object,MoonSharp.Interpreter.Table)
+  parent: Cobilas.GodotEngine.Lua.ObjectToLuaTable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: ToObject(object, Table)
+  nameWithType: ObjectToLuaTable.ToObject(object, Table)
+  fullName: Cobilas.GodotEngine.Lua.ObjectToLuaTable.ToObject(object, MoonSharp.Interpreter.Table)
+  nameWithType.vb: ObjectToLuaTable.ToObject(Object, Table)
+  fullName.vb: Cobilas.GodotEngine.Lua.ObjectToLuaTable.ToObject(Object, MoonSharp.Interpreter.Table)
+  name.vb: ToObject(Object, Table)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Lua.ObjectToLuaTable.ToObject(System.Object,MoonSharp.Interpreter.Table)
+    name: ToObject
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: MoonSharp.Interpreter.Table
+    name: Table
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Lua.ObjectToLuaTable.ToObject(System.Object,MoonSharp.Interpreter.Table)
+    name: ToObject
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: MoonSharp.Interpreter.Table
+    name: Table
+    isExternal: true
+  - name: )
+- uid: godot.test.TableToVec2.ToObject*
+  commentId: Overload:godot.test.TableToVec2.ToObject
+  href: godot.test.TableToVec2.html#godot_test_TableToVec2_ToObject_System_Object_MoonSharp_Interpreter_Table_
+  name: ToObject
+  nameWithType: TableToVec2.ToObject
+  fullName: godot.test.TableToVec2.ToObject

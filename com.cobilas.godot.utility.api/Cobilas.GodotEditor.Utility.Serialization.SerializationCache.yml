@@ -16,20 +16,26 @@ items:
   type: Class
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/SerializationCache.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/SerializationCache.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SerializationCache
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/SerializationCache.cs
-    startLine: 14
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/SerializationCache.cs
+    startLine: 13
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization
   summary: Class to handle property caching.
   example: []
   syntax:
-    content: public static class SerializationCache
-    content.vb: Public Module SerializationCache
+    content: >-
+      [Obsolete("Use PropertyRenderCache class")]
+
+      public static class SerializationCache
+    content.vb: >-
+      <Obsolete("Use PropertyRenderCache class")>
+
+      Public Module SerializationCache
   inheritance:
   - System.Object
   inheritedMembers:
@@ -40,6 +46,12 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use PropertyRenderCache class
 - uid: Cobilas.GodotEditor.Utility.Serialization.SerializationCache.GetValueInCache(Cobilas.GodotEditor.Utility.Serialization.SNInfo,System.String,System.String@)
   commentId: M:Cobilas.GodotEditor.Utility.Serialization.SerializationCache.GetValueInCache(Cobilas.GodotEditor.Utility.Serialization.SNInfo,System.String,System.String@)
   id: GetValueInCache(Cobilas.GodotEditor.Utility.Serialization.SNInfo,System.String,System.String@)
@@ -53,11 +65,11 @@ items:
   type: Method
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/SerializationCache.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/SerializationCache.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetValueInCache
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/SerializationCache.cs
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/SerializationCache.cs
     startLine: 22
   assemblies:
   - com.cobilas.godot.utility
@@ -97,11 +109,11 @@ items:
   type: Method
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/SerializationCache.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/SerializationCache.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SetValueInCache
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/SerializationCache.cs
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/SerializationCache.cs
     startLine: 45
   assemblies:
   - com.cobilas.godot.utility

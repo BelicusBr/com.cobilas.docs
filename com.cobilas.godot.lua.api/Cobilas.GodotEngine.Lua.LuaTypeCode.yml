@@ -1,0 +1,804 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode
+  commentId: T:Cobilas.GodotEngine.Lua.LuaTypeCode
+  id: LuaTypeCode
+  parent: Cobilas.GodotEngine.Lua
+  children:
+  - Cobilas.GodotEngine.Lua.LuaTypeCode.Boolean
+  - Cobilas.GodotEngine.Lua.LuaTypeCode.Byte
+  - Cobilas.GodotEngine.Lua.LuaTypeCode.Char
+  - Cobilas.GodotEngine.Lua.LuaTypeCode.ClrFunction
+  - Cobilas.GodotEngine.Lua.LuaTypeCode.DBNull
+  - Cobilas.GodotEngine.Lua.LuaTypeCode.DateTime
+  - Cobilas.GodotEngine.Lua.LuaTypeCode.Decimal
+  - Cobilas.GodotEngine.Lua.LuaTypeCode.Double
+  - Cobilas.GodotEngine.Lua.LuaTypeCode.Empty
+  - Cobilas.GodotEngine.Lua.LuaTypeCode.Function
+  - Cobilas.GodotEngine.Lua.LuaTypeCode.Int16
+  - Cobilas.GodotEngine.Lua.LuaTypeCode.Int32
+  - Cobilas.GodotEngine.Lua.LuaTypeCode.Int64
+  - Cobilas.GodotEngine.Lua.LuaTypeCode.Object
+  - Cobilas.GodotEngine.Lua.LuaTypeCode.SByte
+  - Cobilas.GodotEngine.Lua.LuaTypeCode.Single
+  - Cobilas.GodotEngine.Lua.LuaTypeCode.String
+  - Cobilas.GodotEngine.Lua.LuaTypeCode.Table
+  - Cobilas.GodotEngine.Lua.LuaTypeCode.TailCallRequest
+  - Cobilas.GodotEngine.Lua.LuaTypeCode.Thread
+  - Cobilas.GodotEngine.Lua.LuaTypeCode.UInt16
+  - Cobilas.GodotEngine.Lua.LuaTypeCode.UInt32
+  - Cobilas.GodotEngine.Lua.LuaTypeCode.UInt64
+  - Cobilas.GodotEngine.Lua.LuaTypeCode.UserData
+  - Cobilas.GodotEngine.Lua.LuaTypeCode.YieldRequest
+  langs:
+  - csharp
+  - vb
+  name: LuaTypeCode
+  nameWithType: LuaTypeCode
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode
+  type: Enum
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: LuaTypeCode
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+    startLine: 9
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Represents the type codes for Lua values, combining CLR type codes with MoonSharp Lua-specific data types.
+  remarks: >-
+    This enumeration provides a unified type system that maps both standard CLR types
+
+    and MoonSharp-specific Lua types to numeric codes for efficient type checking and conversion.
+  example: []
+  syntax:
+    content: 'public enum LuaTypeCode : byte'
+    content.vb: Public Enum LuaTypeCode As Byte
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode.Empty
+  commentId: F:Cobilas.GodotEngine.Lua.LuaTypeCode.Empty
+  id: Empty
+  parent: Cobilas.GodotEngine.Lua.LuaTypeCode
+  langs:
+  - csharp
+  - vb
+  name: Empty
+  nameWithType: LuaTypeCode.Empty
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode.Empty
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: Empty
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+    startLine: 11
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: A null reference.
+  example: []
+  syntax:
+    content: Empty = 0
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaTypeCode
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode.Object
+  commentId: F:Cobilas.GodotEngine.Lua.LuaTypeCode.Object
+  id: Object
+  parent: Cobilas.GodotEngine.Lua.LuaTypeCode
+  langs:
+  - csharp
+  - vb
+  name: Object
+  nameWithType: LuaTypeCode.Object
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode.Object
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: Object
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+    startLine: 13
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: A general type representing any reference or value type not explicitly represented by another <code>TypeCode</code>.
+  example: []
+  syntax:
+    content: Object = 1
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaTypeCode
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode.DBNull
+  commentId: F:Cobilas.GodotEngine.Lua.LuaTypeCode.DBNull
+  id: DBNull
+  parent: Cobilas.GodotEngine.Lua.LuaTypeCode
+  langs:
+  - csharp
+  - vb
+  name: DBNull
+  nameWithType: LuaTypeCode.DBNull
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode.DBNull
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: DBNull
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+    startLine: 15
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: A database null (column) value.
+  example: []
+  syntax:
+    content: DBNull = 2
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaTypeCode
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode.Boolean
+  commentId: F:Cobilas.GodotEngine.Lua.LuaTypeCode.Boolean
+  id: Boolean
+  parent: Cobilas.GodotEngine.Lua.LuaTypeCode
+  langs:
+  - csharp
+  - vb
+  name: Boolean
+  nameWithType: LuaTypeCode.Boolean
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode.Boolean
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: Boolean
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+    startLine: 17
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: A simple type representing Boolean values of <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+  example: []
+  syntax:
+    content: Boolean = 3
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaTypeCode
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode.Char
+  commentId: F:Cobilas.GodotEngine.Lua.LuaTypeCode.Char
+  id: Char
+  parent: Cobilas.GodotEngine.Lua.LuaTypeCode
+  langs:
+  - csharp
+  - vb
+  name: Char
+  nameWithType: LuaTypeCode.Char
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode.Char
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: Char
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+    startLine: 19
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: An integral type representing unsigned 16-bit integers with values between 0 and 65535. The set of possible values for the <xref href="System.TypeCode.Char" data-throw-if-not-resolved="false"></xref> type corresponds to the Unicode character set.
+  example: []
+  syntax:
+    content: Char = 4
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaTypeCode
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode.SByte
+  commentId: F:Cobilas.GodotEngine.Lua.LuaTypeCode.SByte
+  id: SByte
+  parent: Cobilas.GodotEngine.Lua.LuaTypeCode
+  langs:
+  - csharp
+  - vb
+  name: SByte
+  nameWithType: LuaTypeCode.SByte
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode.SByte
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: SByte
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+    startLine: 21
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: An integral type representing signed 8-bit integers with values between -128 and 127.
+  example: []
+  syntax:
+    content: SByte = 5
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaTypeCode
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode.Byte
+  commentId: F:Cobilas.GodotEngine.Lua.LuaTypeCode.Byte
+  id: Byte
+  parent: Cobilas.GodotEngine.Lua.LuaTypeCode
+  langs:
+  - csharp
+  - vb
+  name: Byte
+  nameWithType: LuaTypeCode.Byte
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode.Byte
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: Byte
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+    startLine: 23
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: An integral type representing unsigned 8-bit integers with values between 0 and 255.
+  example: []
+  syntax:
+    content: Byte = 6
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaTypeCode
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode.Int16
+  commentId: F:Cobilas.GodotEngine.Lua.LuaTypeCode.Int16
+  id: Int16
+  parent: Cobilas.GodotEngine.Lua.LuaTypeCode
+  langs:
+  - csharp
+  - vb
+  name: Int16
+  nameWithType: LuaTypeCode.Int16
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode.Int16
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: Int16
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+    startLine: 25
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: An integral type representing signed 16-bit integers with values between -32768 and 32767.
+  example: []
+  syntax:
+    content: Int16 = 7
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaTypeCode
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode.UInt16
+  commentId: F:Cobilas.GodotEngine.Lua.LuaTypeCode.UInt16
+  id: UInt16
+  parent: Cobilas.GodotEngine.Lua.LuaTypeCode
+  langs:
+  - csharp
+  - vb
+  name: UInt16
+  nameWithType: LuaTypeCode.UInt16
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode.UInt16
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: UInt16
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+    startLine: 27
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: An integral type representing unsigned 16-bit integers with values between 0 and 65535.
+  example: []
+  syntax:
+    content: UInt16 = 8
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaTypeCode
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode.Int32
+  commentId: F:Cobilas.GodotEngine.Lua.LuaTypeCode.Int32
+  id: Int32
+  parent: Cobilas.GodotEngine.Lua.LuaTypeCode
+  langs:
+  - csharp
+  - vb
+  name: Int32
+  nameWithType: LuaTypeCode.Int32
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode.Int32
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: Int32
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+    startLine: 29
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: An integral type representing signed 32-bit integers with values between -2147483648 and 2147483647.
+  example: []
+  syntax:
+    content: Int32 = 9
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaTypeCode
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode.UInt32
+  commentId: F:Cobilas.GodotEngine.Lua.LuaTypeCode.UInt32
+  id: UInt32
+  parent: Cobilas.GodotEngine.Lua.LuaTypeCode
+  langs:
+  - csharp
+  - vb
+  name: UInt32
+  nameWithType: LuaTypeCode.UInt32
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode.UInt32
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: UInt32
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+    startLine: 31
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: An integral type representing unsigned 32-bit integers with values between 0 and 4294967295.
+  example: []
+  syntax:
+    content: UInt32 = 10
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaTypeCode
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode.Int64
+  commentId: F:Cobilas.GodotEngine.Lua.LuaTypeCode.Int64
+  id: Int64
+  parent: Cobilas.GodotEngine.Lua.LuaTypeCode
+  langs:
+  - csharp
+  - vb
+  name: Int64
+  nameWithType: LuaTypeCode.Int64
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode.Int64
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: Int64
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+    startLine: 33
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: An integral type representing signed 64-bit integers with values between -9223372036854775808 and 9223372036854775807.
+  example: []
+  syntax:
+    content: Int64 = 11
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaTypeCode
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode.UInt64
+  commentId: F:Cobilas.GodotEngine.Lua.LuaTypeCode.UInt64
+  id: UInt64
+  parent: Cobilas.GodotEngine.Lua.LuaTypeCode
+  langs:
+  - csharp
+  - vb
+  name: UInt64
+  nameWithType: LuaTypeCode.UInt64
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode.UInt64
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: UInt64
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+    startLine: 35
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: An integral type representing unsigned 64-bit integers with values between 0 and 18446744073709551615.
+  example: []
+  syntax:
+    content: UInt64 = 12
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaTypeCode
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode.Single
+  commentId: F:Cobilas.GodotEngine.Lua.LuaTypeCode.Single
+  id: Single
+  parent: Cobilas.GodotEngine.Lua.LuaTypeCode
+  langs:
+  - csharp
+  - vb
+  name: Single
+  nameWithType: LuaTypeCode.Single
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode.Single
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: Single
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+    startLine: 37
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: A floating point type representing values ranging from approximately 1.5 x 10 -45 to 3.4 x 10 38 with a precision of 7 digits.
+  example: []
+  syntax:
+    content: Single = 13
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaTypeCode
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode.Double
+  commentId: F:Cobilas.GodotEngine.Lua.LuaTypeCode.Double
+  id: Double
+  parent: Cobilas.GodotEngine.Lua.LuaTypeCode
+  langs:
+  - csharp
+  - vb
+  name: Double
+  nameWithType: LuaTypeCode.Double
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode.Double
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: Double
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+    startLine: 39
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: A floating point type representing values ranging from approximately 5.0 x 10 -324 to 1.7 x 10 308 with a precision of 15-16 digits.
+  example: []
+  syntax:
+    content: Double = 14
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaTypeCode
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode.Decimal
+  commentId: F:Cobilas.GodotEngine.Lua.LuaTypeCode.Decimal
+  id: Decimal
+  parent: Cobilas.GodotEngine.Lua.LuaTypeCode
+  langs:
+  - csharp
+  - vb
+  name: Decimal
+  nameWithType: LuaTypeCode.Decimal
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode.Decimal
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: Decimal
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+    startLine: 41
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: A simple type representing values ranging from 1.0 x 10 -28 to approximately 7.9 x 10 28 with 28-29 significant digits.
+  example: []
+  syntax:
+    content: Decimal = 15
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaTypeCode
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode.DateTime
+  commentId: F:Cobilas.GodotEngine.Lua.LuaTypeCode.DateTime
+  id: DateTime
+  parent: Cobilas.GodotEngine.Lua.LuaTypeCode
+  langs:
+  - csharp
+  - vb
+  name: DateTime
+  nameWithType: LuaTypeCode.DateTime
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode.DateTime
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: DateTime
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+    startLine: 43
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: A type representing a date and time value.
+  example: []
+  syntax:
+    content: DateTime = 16
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaTypeCode
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode.String
+  commentId: F:Cobilas.GodotEngine.Lua.LuaTypeCode.String
+  id: String
+  parent: Cobilas.GodotEngine.Lua.LuaTypeCode
+  langs:
+  - csharp
+  - vb
+  name: String
+  nameWithType: LuaTypeCode.String
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode.String
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: String
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+    startLine: 45
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: A sealed class type representing Unicode character strings.
+  example: []
+  syntax:
+    content: String = 18
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaTypeCode
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode.Table
+  commentId: F:Cobilas.GodotEngine.Lua.LuaTypeCode.Table
+  id: Table
+  parent: Cobilas.GodotEngine.Lua.LuaTypeCode
+  langs:
+  - csharp
+  - vb
+  name: Table
+  nameWithType: LuaTypeCode.Table
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode.Table
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: Table
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+    startLine: 47
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: A Lua table
+  example: []
+  syntax:
+    content: Table = 19
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaTypeCode
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode.Function
+  commentId: F:Cobilas.GodotEngine.Lua.LuaTypeCode.Function
+  id: Function
+  parent: Cobilas.GodotEngine.Lua.LuaTypeCode
+  langs:
+  - csharp
+  - vb
+  name: Function
+  nameWithType: LuaTypeCode.Function
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode.Function
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: Function
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+    startLine: 49
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: A Lua function
+  example: []
+  syntax:
+    content: Function = 20
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaTypeCode
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode.UserData
+  commentId: F:Cobilas.GodotEngine.Lua.LuaTypeCode.UserData
+  id: UserData
+  parent: Cobilas.GodotEngine.Lua.LuaTypeCode
+  langs:
+  - csharp
+  - vb
+  name: UserData
+  nameWithType: LuaTypeCode.UserData
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode.UserData
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: UserData
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+    startLine: 51
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: A userdata reference - that is a wrapped CLR object
+  example: []
+  syntax:
+    content: UserData = 21
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaTypeCode
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode.ClrFunction
+  commentId: F:Cobilas.GodotEngine.Lua.LuaTypeCode.ClrFunction
+  id: ClrFunction
+  parent: Cobilas.GodotEngine.Lua.LuaTypeCode
+  langs:
+  - csharp
+  - vb
+  name: ClrFunction
+  nameWithType: LuaTypeCode.ClrFunction
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode.ClrFunction
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: ClrFunction
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+    startLine: 53
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: A callback function
+  example: []
+  syntax:
+    content: ClrFunction = 22
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaTypeCode
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode.TailCallRequest
+  commentId: F:Cobilas.GodotEngine.Lua.LuaTypeCode.TailCallRequest
+  id: TailCallRequest
+  parent: Cobilas.GodotEngine.Lua.LuaTypeCode
+  langs:
+  - csharp
+  - vb
+  name: TailCallRequest
+  nameWithType: LuaTypeCode.TailCallRequest
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode.TailCallRequest
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: TailCallRequest
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+    startLine: 55
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: A request to execute a tail call
+  example: []
+  syntax:
+    content: TailCallRequest = 23
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaTypeCode
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode.Thread
+  commentId: F:Cobilas.GodotEngine.Lua.LuaTypeCode.Thread
+  id: Thread
+  parent: Cobilas.GodotEngine.Lua.LuaTypeCode
+  langs:
+  - csharp
+  - vb
+  name: Thread
+  nameWithType: LuaTypeCode.Thread
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode.Thread
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: Thread
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+    startLine: 57
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: A coroutine handle
+  example: []
+  syntax:
+    content: Thread = 24
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaTypeCode
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode.YieldRequest
+  commentId: F:Cobilas.GodotEngine.Lua.LuaTypeCode.YieldRequest
+  id: YieldRequest
+  parent: Cobilas.GodotEngine.Lua.LuaTypeCode
+  langs:
+  - csharp
+  - vb
+  name: YieldRequest
+  nameWithType: LuaTypeCode.YieldRequest
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode.YieldRequest
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: YieldRequest
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaTypeCode.cs
+    startLine: 59
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: A request to coroutine.yield
+  example: []
+  syntax:
+    content: YieldRequest = 25
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaTypeCode
+references:
+- uid: Cobilas.GodotEngine.Lua
+  commentId: N:Cobilas.GodotEngine.Lua
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Lua
+  nameWithType: Cobilas.GodotEngine.Lua
+  fullName: Cobilas.GodotEngine.Lua
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Lua
+    name: Lua
+    href: Cobilas.GodotEngine.Lua.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Lua
+    name: Lua
+    href: Cobilas.GodotEngine.Lua.html
+- uid: Cobilas.GodotEngine.Lua.LuaTypeCode
+  commentId: T:Cobilas.GodotEngine.Lua.LuaTypeCode
+  parent: Cobilas.GodotEngine.Lua
+  href: Cobilas.GodotEngine.Lua.LuaTypeCode.html
+  name: LuaTypeCode
+  nameWithType: LuaTypeCode
+  fullName: Cobilas.GodotEngine.Lua.LuaTypeCode
+- uid: System.TypeCode.Char
+  commentId: F:System.TypeCode.Char
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.typecode#system-typecode-char
+  name: Char
+  nameWithType: TypeCode.Char
+  fullName: System.TypeCode.Char

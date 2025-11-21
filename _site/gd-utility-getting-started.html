@@ -76,13 +76,11 @@
 <h3 id="descripition">Descripition</h3>
 <p>The package contains utility classes in csharp for godot engine(Godot3.5)</p>
 <h2 id="runtimeinitialization">RunTimeInitialization</h2>
-<p>(namespace: Cobilas.GodotEngine.Utility.Runtime) <br>
-The <code>RunTimeInitialization</code> class allows you to automate the <kbd>Project&gt;Project Settings&gt;AutoLoad</kbd> option. <br>
-To use the <code>RunTimeInitialization</code> class, you must create a class and make it inherit <code>RunTimeInitialization</code>.</p>
-<pre><code class="lang-c#">using Cobilas.GodotEngine.Utility.Runtime;
-//The name of the class is up to you.
-public class RunTimeProcess : RunTimeInitialization {}
-</code></pre>
+<p>(namespace: Cobilas.GodotEngine.Utility.Runtime) \</p>
+<p>The <code>RunTimeInitialization</code> class allows you to automate the <kbd>Project&gt;Project Settings&gt;AutoLoad</kbd> option.</p>
+<p>Now the <code>RunTimeInitialization</code> class is automatically included in the <kbd>Project&gt;Project Settings&gt;AutoLoad</kbd> option, simply by reloading the Godot project.</p>
+<p>The package automatically generates a <code>RunTimeInitialization</code> file named <code>res://Godot.Runtime/GameRuntime.cs</code>.</p>
+<p>Remember to build the project before running the game in the Godot editor.</p>
 <p>And remember to add the class that inherits <code>RunTimeInitialization</code> in <kbd>Project&gt;Project Settings&gt;AutoLoad</kbd>. <br>
 Remembering that the <code>RunTimeInitialization</code> class uses the virtual method <code>_Ready()</code> to perform the initialization of other classes. <br>
 And to initialize other classes along with the <code>RunTimeInitialization</code> class, the class must inherit the <code>Godot.Node</code> class or some class that inherits <code>Godot.Node</code> and use the <code>RunTimeInitializationClassAttribute</code> attribute.</p>
@@ -167,9 +165,9 @@ With the <code>HideProperty</code> and <code>ShowProperty</code> attributes you 
 	[HideProperty] string var4;
 	[ShowProperty] vec2d var5;
 
-	public override GDArray _GetPropertyList() =&gt; SerializedNode.GetPropertyList(BuildSerialization.Build(this).GetPropertyList());
-	public override bool _Set(string property, object value) =&gt; BuildSerialization.Build(this).Set(property, value);
-	public override object _Get(string property) =&gt; BuildSerialization.Build(this).Get(property);
+	public override GDArray _GetPropertyList() =&gt; PropertyItem.PropertyItemArrayToGDArray(BuildSerialization.GetPropertyList(this));
+	public override bool _Set(string property, object value) =&gt; BuildSerialization.SetValue(this, property, value);
+	public override object _Get(string property) =&gt; BuildSerialization.GetValue(this, property);
 }
 [Serializable]
 public struct vec2d {
@@ -181,11 +179,11 @@ public struct vec2d {
 <h2 id="the-cobilas-godot-utility-is-on-nugetorg">The <a href="https://www.nuget.org/packages/Cobilas.Godot.Utility/">Cobilas Godot Utility</a> is on nuget.org</h2>
 <p>To include the package, open the <code>.csproj</code> file and add it.</p>
 <pre><code class="lang-xml">&lt;ItemGroup&gt;
-	&lt;PackageReference Include=&quot;Cobilas.Godot.Utility&quot; Version=&quot;7.1.1&quot; /&gt;
+	&lt;PackageReference Include=&quot;Cobilas.Godot.Utility&quot; Version=&quot;7.4.0&quot; /&gt;
 &lt;/ItemGroup&gt;
 </code></pre>
 <p>Or use command line.</p>
-<pre><code>dotnet add package Cobilas.Godot.Utility --version 7.1.1
+<pre><code>dotnet add package Cobilas.Godot.Utility --version 7.4.0
 </code></pre>
 
 </article>

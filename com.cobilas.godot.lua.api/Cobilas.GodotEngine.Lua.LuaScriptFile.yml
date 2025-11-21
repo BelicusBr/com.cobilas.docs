@@ -1,0 +1,1753 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile
+  commentId: T:Cobilas.GodotEngine.Lua.LuaScriptFile
+  id: LuaScriptFile
+  parent: Cobilas.GodotEngine.Lua
+  children:
+  - Cobilas.GodotEngine.Lua.LuaScriptFile.#ctor(System.String)
+  - Cobilas.GodotEngine.Lua.LuaScriptFile.#ctor(System.String,System.Boolean)
+  - Cobilas.GodotEngine.Lua.LuaScriptFile.CreateTable(System.String)
+  - Cobilas.GodotEngine.Lua.LuaScriptFile.DebugInput
+  - Cobilas.GodotEngine.Lua.LuaScriptFile.DebugPrint
+  - Cobilas.GodotEngine.Lua.LuaScriptFile.Dispose(System.Boolean)
+  - Cobilas.GodotEngine.Lua.LuaScriptFile.GetField(System.String)
+  - Cobilas.GodotEngine.Lua.LuaScriptFile.GetFunction(System.String)
+  - Cobilas.GodotEngine.Lua.LuaScriptFile.GetTuplaField(System.String[])
+  - Cobilas.GodotEngine.Lua.LuaScriptFile.RefreshLuaScript
+  - Cobilas.GodotEngine.Lua.LuaScriptFile.ScriptLoader
+  - Cobilas.GodotEngine.Lua.LuaScriptFile.SetField(System.String,System.Object)
+  - Cobilas.GodotEngine.Lua.LuaScriptFile.SetFunction(System.String,System.Delegate)
+  - Cobilas.GodotEngine.Lua.LuaScriptFile.SetTuplaField(System.String[],System.Object[])
+  langs:
+  - csharp
+  - vb
+  name: LuaScriptFile
+  nameWithType: LuaScriptFile
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile
+  type: Class
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: LuaScriptFile
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+    startLine: 14
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Represents a Lua script loaded from a file with automatic refresh capabilities.
+  remarks: >-
+    This class provides file-based Lua script execution with optional automatic
+
+    reloading when the source file changes. It inherits from <xref href="Cobilas.GodotEngine.Lua.LuaScript" data-throw-if-not-resolved="false"></xref> to provide
+
+    full Lua scripting capabilities while adding file monitoring features.
+  example: []
+  syntax:
+    content: 'public sealed class LuaScriptFile : LuaScript, IDisposable'
+    content.vb: Public NotInheritable Class LuaScriptFile Inherits LuaScript Implements IDisposable
+  inheritance:
+  - System.Object
+  - Cobilas.GodotEngine.Lua.LuaScript
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - Cobilas.GodotEngine.Lua.LuaScript.Dispose
+  - Cobilas.GodotEngine.Lua.LuaScript.DynValueToObject(MoonSharp.Interpreter.DynValue)
+  - Cobilas.GodotEngine.Lua.LuaScript.DynValueNumberToObject(MoonSharp.Interpreter.DynValue)
+  - Cobilas.GodotEngine.Lua.LuaScript.DynValueTuplaToObject(MoonSharp.Interpreter.DynValue)
+  - Cobilas.GodotEngine.Lua.LuaScript.ObjectToDynValue(MoonSharp.Interpreter.Script,System.Object)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.RefreshLuaScript
+  commentId: P:Cobilas.GodotEngine.Lua.LuaScriptFile.RefreshLuaScript
+  id: RefreshLuaScript
+  parent: Cobilas.GodotEngine.Lua.LuaScriptFile
+  langs:
+  - csharp
+  - vb
+  name: RefreshLuaScript
+  nameWithType: LuaScriptFile.RefreshLuaScript
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.RefreshLuaScript
+  type: Property
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: RefreshLuaScript
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+    startLine: 28
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Gets or sets a value indicating whether the Lua script should be automatically refreshed when the source file changes.
+  remarks: >-
+    When set to true, the script will automatically reload from the source file
+
+    when changes are detected. This is useful during development when frequently
+
+    modifying Lua scripts without restarting the application.
+  example: []
+  syntax:
+    content: public bool RefreshLuaScript { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: True if the script should be refreshed on file changes; otherwise, false.
+    content.vb: Public Property RefreshLuaScript As Boolean
+  overload: Cobilas.GodotEngine.Lua.LuaScriptFile.RefreshLuaScript*
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.ScriptLoader
+  commentId: P:Cobilas.GodotEngine.Lua.LuaScriptFile.ScriptLoader
+  id: ScriptLoader
+  parent: Cobilas.GodotEngine.Lua.LuaScriptFile
+  langs:
+  - csharp
+  - vb
+  name: ScriptLoader
+  nameWithType: LuaScriptFile.ScriptLoader
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.ScriptLoader
+  type: Property
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: ScriptLoader
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+    startLine: 30
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Gets or sets the script loader for Lua script resolution.
+  example: []
+  syntax:
+    content: public override IScriptLoader ScriptLoader { get; set; }
+    parameters: []
+    return:
+      type: MoonSharp.Interpreter.Loaders.IScriptLoader
+      description: The script loader instance.
+    content.vb: Public Overrides Property ScriptLoader As IScriptLoader
+  overridden: Cobilas.GodotEngine.Lua.LuaScript.ScriptLoader
+  overload: Cobilas.GodotEngine.Lua.LuaScriptFile.ScriptLoader*
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.DebugInput
+  commentId: P:Cobilas.GodotEngine.Lua.LuaScriptFile.DebugInput
+  id: DebugInput
+  parent: Cobilas.GodotEngine.Lua.LuaScriptFile
+  langs:
+  - csharp
+  - vb
+  name: DebugInput
+  nameWithType: LuaScriptFile.DebugInput
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.DebugInput
+  type: Property
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: DebugInput
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+    startLine: 35
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Gets or sets the debug input handler for Lua scripts.
+  example: []
+  syntax:
+    content: public override Func<string, string> DebugInput { get; set; }
+    parameters: []
+    return:
+      type: System.Func{System.String,System.String}
+      description: The debug input function.
+    content.vb: Public Overrides Property DebugInput As Func(Of String, String)
+  overridden: Cobilas.GodotEngine.Lua.LuaScript.DebugInput
+  overload: Cobilas.GodotEngine.Lua.LuaScriptFile.DebugInput*
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.DebugPrint
+  commentId: P:Cobilas.GodotEngine.Lua.LuaScriptFile.DebugPrint
+  id: DebugPrint
+  parent: Cobilas.GodotEngine.Lua.LuaScriptFile
+  langs:
+  - csharp
+  - vb
+  name: DebugPrint
+  nameWithType: LuaScriptFile.DebugPrint
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.DebugPrint
+  type: Property
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: DebugPrint
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+    startLine: 40
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Gets or sets the debug print handler for Lua scripts.
+  example: []
+  syntax:
+    content: public override Action<string> DebugPrint { get; set; }
+    parameters: []
+    return:
+      type: System.Action{System.String}
+      description: The debug print action.
+    content.vb: Public Overrides Property DebugPrint As Action(Of String)
+  overridden: Cobilas.GodotEngine.Lua.LuaScript.DebugPrint
+  overload: Cobilas.GodotEngine.Lua.LuaScriptFile.DebugPrint*
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.#ctor(System.String)
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScriptFile.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Cobilas.GodotEngine.Lua.LuaScriptFile
+  langs:
+  - csharp
+  - vb
+  name: LuaScriptFile(string?)
+  nameWithType: LuaScriptFile.LuaScriptFile(string?)
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.LuaScriptFile(string?)
+  type: Constructor
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: .ctor
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+    startLine: 47
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Initializes a new instance of the <xref href="Cobilas.GodotEngine.Lua.LuaScriptFile" data-throw-if-not-resolved="false"></xref> class with the specified file path.
+  example: []
+  syntax:
+    content: public LuaScriptFile(string? path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the Lua script file.
+    content.vb: Public Sub New(path As String)
+  overload: Cobilas.GodotEngine.Lua.LuaScriptFile.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when path is null.
+  nameWithType.vb: LuaScriptFile.New(String)
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScriptFile.New(String)
+  name.vb: New(String)
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.#ctor(System.String,System.Boolean)
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScriptFile.#ctor(System.String,System.Boolean)
+  id: '#ctor(System.String,System.Boolean)'
+  parent: Cobilas.GodotEngine.Lua.LuaScriptFile
+  langs:
+  - csharp
+  - vb
+  name: LuaScriptFile(string?, bool)
+  nameWithType: LuaScriptFile.LuaScriptFile(string?, bool)
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.LuaScriptFile(string?, bool)
+  type: Constructor
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: .ctor
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+    startLine: 60
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Initializes a new instance of the <xref href="Cobilas.GodotEngine.Lua.LuaScriptFile" data-throw-if-not-resolved="false"></xref> class with optional path globalization.
+  example: []
+  syntax:
+    content: public LuaScriptFile(string? path, bool isGlobalizePath)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the Lua script file.
+    - id: isGlobalizePath
+      type: System.Boolean
+      description: Whether to globalize the path using <xref href="Cobilas.GodotEngine.Utility.IO.GodotPath.GlobalizePath(System.String)" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub New(path As String, isGlobalizePath As Boolean)
+  overload: Cobilas.GodotEngine.Lua.LuaScriptFile.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when path is null.
+  nameWithType.vb: LuaScriptFile.New(String, Boolean)
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScriptFile.New(String, Boolean)
+  name.vb: New(String, Boolean)
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.GetField(System.String)
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScriptFile.GetField(System.String)
+  id: GetField(System.String)
+  parent: Cobilas.GodotEngine.Lua.LuaScriptFile
+  langs:
+  - csharp
+  - vb
+  name: GetField(string?)
+  nameWithType: LuaScriptFile.GetField(string?)
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.GetField(string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: GetField
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+    startLine: 66
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Retrieves a field value from the Lua script.
+  example: []
+  syntax:
+    content: public override LuaField GetField(string? pathField)
+    parameters:
+    - id: pathField
+      type: System.String
+      description: The path to the field in the Lua script.
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaField
+      description: A LuaField representing the requested field.
+    content.vb: Public Overrides Function GetField(pathField As String) As LuaField
+  overridden: Cobilas.GodotEngine.Lua.LuaScript.GetField(System.String)
+  overload: Cobilas.GodotEngine.Lua.LuaScriptFile.GetField*
+  nameWithType.vb: LuaScriptFile.GetField(String)
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScriptFile.GetField(String)
+  name.vb: GetField(String)
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.GetTuplaField(System.String[])
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScriptFile.GetTuplaField(System.String[])
+  id: GetTuplaField(System.String[])
+  parent: Cobilas.GodotEngine.Lua.LuaScriptFile
+  langs:
+  - csharp
+  - vb
+  name: GetTuplaField(string[]?)
+  nameWithType: LuaScriptFile.GetTuplaField(string[]?)
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.GetTuplaField(string[]?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: GetTuplaField
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+    startLine: 74
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Retrieves multiple field values from the Lua script.
+  example: []
+  syntax:
+    content: public override LuaField[] GetTuplaField(string[]? pathFields)
+    parameters:
+    - id: pathFields
+      type: System.String[]
+      description: The paths to the fields in the Lua script.
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaField[]
+      description: An array of LuaField objects representing the requested fields.
+    content.vb: Public Overrides Function GetTuplaField(pathFields As String()) As LuaField()
+  overridden: Cobilas.GodotEngine.Lua.LuaScript.GetTuplaField(System.String[])
+  overload: Cobilas.GodotEngine.Lua.LuaScriptFile.GetTuplaField*
+  nameWithType.vb: LuaScriptFile.GetTuplaField(String())
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScriptFile.GetTuplaField(String())
+  name.vb: GetTuplaField(String())
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.GetFunction(System.String)
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScriptFile.GetFunction(System.String)
+  id: GetFunction(System.String)
+  parent: Cobilas.GodotEngine.Lua.LuaScriptFile
+  langs:
+  - csharp
+  - vb
+  name: GetFunction(string?)
+  nameWithType: LuaScriptFile.GetFunction(string?)
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.GetFunction(string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: GetFunction
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+    startLine: 86
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Retrieves a function from the Lua script.
+  example: []
+  syntax:
+    content: public override LuaFunc GetFunction(string? pathFunction)
+    parameters:
+    - id: pathFunction
+      type: System.String
+      description: The path to the function in the Lua script.
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaFunc
+      description: A LuaFunc representing the requested function.
+    content.vb: Public Overrides Function GetFunction(pathFunction As String) As LuaFunc
+  overridden: Cobilas.GodotEngine.Lua.LuaScript.GetFunction(System.String)
+  overload: Cobilas.GodotEngine.Lua.LuaScriptFile.GetFunction*
+  nameWithType.vb: LuaScriptFile.GetFunction(String)
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScriptFile.GetFunction(String)
+  name.vb: GetFunction(String)
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.SetField(System.String,System.Object)
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScriptFile.SetField(System.String,System.Object)
+  id: SetField(System.String,System.Object)
+  parent: Cobilas.GodotEngine.Lua.LuaScriptFile
+  langs:
+  - csharp
+  - vb
+  name: SetField(string?, object?)
+  nameWithType: LuaScriptFile.SetField(string?, object?)
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.SetField(string?, object?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: SetField
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+    startLine: 96
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Sets a field value in the Lua script.
+  example: []
+  syntax:
+    content: public override void SetField(string? pathField, object? value)
+    parameters:
+    - id: pathField
+      type: System.String
+      description: The path to the field in the Lua script.
+    - id: value
+      type: System.Object
+      description: The value to set.
+    content.vb: Public Overrides Sub SetField(pathField As String, value As Object)
+  overridden: Cobilas.GodotEngine.Lua.LuaScript.SetField(System.String,System.Object)
+  overload: Cobilas.GodotEngine.Lua.LuaScriptFile.SetField*
+  nameWithType.vb: LuaScriptFile.SetField(String, Object)
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScriptFile.SetField(String, Object)
+  name.vb: SetField(String, Object)
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.SetTuplaField(System.String[],System.Object[])
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScriptFile.SetTuplaField(System.String[],System.Object[])
+  id: SetTuplaField(System.String[],System.Object[])
+  parent: Cobilas.GodotEngine.Lua.LuaScriptFile
+  langs:
+  - csharp
+  - vb
+  name: SetTuplaField(string[]?, object[]?)
+  nameWithType: LuaScriptFile.SetTuplaField(string[]?, object[]?)
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.SetTuplaField(string[]?, object[]?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: SetTuplaField
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+    startLine: 105
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Sets multiple field values in the Lua script.
+  example: []
+  syntax:
+    content: public override void SetTuplaField(string[]? pathFields, object[]? value)
+    parameters:
+    - id: pathFields
+      type: System.String[]
+      description: The paths to the fields in the Lua script.
+    - id: value
+      type: System.Object[]
+      description: The values to set.
+    content.vb: Public Overrides Sub SetTuplaField(pathFields As String(), value As Object())
+  overridden: Cobilas.GodotEngine.Lua.LuaScript.SetTuplaField(System.String[],System.Object[])
+  overload: Cobilas.GodotEngine.Lua.LuaScriptFile.SetTuplaField*
+  nameWithType.vb: LuaScriptFile.SetTuplaField(String(), Object())
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScriptFile.SetTuplaField(String(), Object())
+  name.vb: SetTuplaField(String(), Object())
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.SetFunction(System.String,System.Delegate)
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScriptFile.SetFunction(System.String,System.Delegate)
+  id: SetFunction(System.String,System.Delegate)
+  parent: Cobilas.GodotEngine.Lua.LuaScriptFile
+  langs:
+  - csharp
+  - vb
+  name: SetFunction(string?, Delegate?)
+  nameWithType: LuaScriptFile.SetFunction(string?, Delegate?)
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.SetFunction(string?, System.Delegate?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: SetFunction
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+    startLine: 117
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Sets a function in the Lua script.
+  example: []
+  syntax:
+    content: public override void SetFunction(string? pathFunction, Delegate? value)
+    parameters:
+    - id: pathFunction
+      type: System.String
+      description: The path to the function in the Lua script.
+    - id: value
+      type: System.Delegate
+      description: The delegate to set as the function.
+    content.vb: Public Overrides Sub SetFunction(pathFunction As String, value As [Delegate])
+  overridden: Cobilas.GodotEngine.Lua.LuaScript.SetFunction(System.String,System.Delegate)
+  overload: Cobilas.GodotEngine.Lua.LuaScriptFile.SetFunction*
+  nameWithType.vb: LuaScriptFile.SetFunction(String, Delegate)
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScriptFile.SetFunction(String, System.Delegate)
+  name.vb: SetFunction(String, Delegate)
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.CreateTable(System.String)
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScriptFile.CreateTable(System.String)
+  id: CreateTable(System.String)
+  parent: Cobilas.GodotEngine.Lua.LuaScriptFile
+  langs:
+  - csharp
+  - vb
+  name: CreateTable(string?)
+  nameWithType: LuaScriptFile.CreateTable(string?)
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.CreateTable(string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: CreateTable
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+    startLine: 124
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Creates a new table in the Lua script.
+  example: []
+  syntax:
+    content: public override Table CreateTable(string? pathField)
+    parameters:
+    - id: pathField
+      type: System.String
+      description: The path where the table should be created.
+    return:
+      type: MoonSharp.Interpreter.Table
+      description: The newly created Lua table.
+    content.vb: Public Overrides Function CreateTable(pathField As String) As Table
+  overridden: Cobilas.GodotEngine.Lua.LuaScript.CreateTable(System.String)
+  overload: Cobilas.GodotEngine.Lua.LuaScriptFile.CreateTable*
+  nameWithType.vb: LuaScriptFile.CreateTable(String)
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScriptFile.CreateTable(String)
+  name.vb: CreateTable(String)
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.Dispose(System.Boolean)
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScriptFile.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: Cobilas.GodotEngine.Lua.LuaScriptFile
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: LuaScriptFile.Dispose(bool)
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.Dispose(bool)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: Dispose
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptFile.cs
+    startLine: 130
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Disposes resources used by the Lua script.
+  example: []
+  syntax:
+    content: protected override void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: True if called from <xref href="Cobilas.GodotEngine.Lua.LuaScript.Dispose" data-throw-if-not-resolved="false"></xref>, false if from finalizer.
+    content.vb: Protected Overrides Sub Dispose(disposing As Boolean)
+  overridden: Cobilas.GodotEngine.Lua.LuaScript.Dispose(System.Boolean)
+  overload: Cobilas.GodotEngine.Lua.LuaScriptFile.Dispose*
+  nameWithType.vb: LuaScriptFile.Dispose(Boolean)
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScriptFile.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+references:
+- uid: Cobilas.GodotEngine.Lua.LuaScript
+  commentId: T:Cobilas.GodotEngine.Lua.LuaScript
+  parent: Cobilas.GodotEngine.Lua
+  href: Cobilas.GodotEngine.Lua.LuaScript.html
+  name: LuaScript
+  nameWithType: LuaScript
+  fullName: Cobilas.GodotEngine.Lua.LuaScript
+- uid: Cobilas.GodotEngine.Lua
+  commentId: N:Cobilas.GodotEngine.Lua
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Lua
+  nameWithType: Cobilas.GodotEngine.Lua
+  fullName: Cobilas.GodotEngine.Lua
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Lua
+    name: Lua
+    href: Cobilas.GodotEngine.Lua.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Lua
+    name: Lua
+    href: Cobilas.GodotEngine.Lua.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Cobilas.GodotEngine.Lua.LuaScript.Dispose
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScript.Dispose
+  parent: Cobilas.GodotEngine.Lua.LuaScript
+  href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_Dispose
+  name: Dispose()
+  nameWithType: LuaScript.Dispose()
+  fullName: Cobilas.GodotEngine.Lua.LuaScript.Dispose()
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Lua.LuaScript.Dispose
+    name: Dispose
+    href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Lua.LuaScript.Dispose
+    name: Dispose
+    href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_Dispose
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Lua.LuaScript.DynValueToObject(MoonSharp.Interpreter.DynValue)
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScript.DynValueToObject(MoonSharp.Interpreter.DynValue)
+  parent: Cobilas.GodotEngine.Lua.LuaScript
+  isExternal: true
+  href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_DynValueToObject_MoonSharp_Interpreter_DynValue_
+  name: DynValueToObject(DynValue)
+  nameWithType: LuaScript.DynValueToObject(DynValue)
+  fullName: Cobilas.GodotEngine.Lua.LuaScript.DynValueToObject(MoonSharp.Interpreter.DynValue)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Lua.LuaScript.DynValueToObject(MoonSharp.Interpreter.DynValue)
+    name: DynValueToObject
+    href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_DynValueToObject_MoonSharp_Interpreter_DynValue_
+  - name: (
+  - uid: MoonSharp.Interpreter.DynValue
+    name: DynValue
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Lua.LuaScript.DynValueToObject(MoonSharp.Interpreter.DynValue)
+    name: DynValueToObject
+    href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_DynValueToObject_MoonSharp_Interpreter_DynValue_
+  - name: (
+  - uid: MoonSharp.Interpreter.DynValue
+    name: DynValue
+    isExternal: true
+  - name: )
+- uid: Cobilas.GodotEngine.Lua.LuaScript.DynValueNumberToObject(MoonSharp.Interpreter.DynValue)
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScript.DynValueNumberToObject(MoonSharp.Interpreter.DynValue)
+  parent: Cobilas.GodotEngine.Lua.LuaScript
+  isExternal: true
+  href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_DynValueNumberToObject_MoonSharp_Interpreter_DynValue_
+  name: DynValueNumberToObject(DynValue)
+  nameWithType: LuaScript.DynValueNumberToObject(DynValue)
+  fullName: Cobilas.GodotEngine.Lua.LuaScript.DynValueNumberToObject(MoonSharp.Interpreter.DynValue)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Lua.LuaScript.DynValueNumberToObject(MoonSharp.Interpreter.DynValue)
+    name: DynValueNumberToObject
+    href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_DynValueNumberToObject_MoonSharp_Interpreter_DynValue_
+  - name: (
+  - uid: MoonSharp.Interpreter.DynValue
+    name: DynValue
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Lua.LuaScript.DynValueNumberToObject(MoonSharp.Interpreter.DynValue)
+    name: DynValueNumberToObject
+    href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_DynValueNumberToObject_MoonSharp_Interpreter_DynValue_
+  - name: (
+  - uid: MoonSharp.Interpreter.DynValue
+    name: DynValue
+    isExternal: true
+  - name: )
+- uid: Cobilas.GodotEngine.Lua.LuaScript.DynValueTuplaToObject(MoonSharp.Interpreter.DynValue)
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScript.DynValueTuplaToObject(MoonSharp.Interpreter.DynValue)
+  parent: Cobilas.GodotEngine.Lua.LuaScript
+  isExternal: true
+  href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_DynValueTuplaToObject_MoonSharp_Interpreter_DynValue_
+  name: DynValueTuplaToObject(DynValue)
+  nameWithType: LuaScript.DynValueTuplaToObject(DynValue)
+  fullName: Cobilas.GodotEngine.Lua.LuaScript.DynValueTuplaToObject(MoonSharp.Interpreter.DynValue)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Lua.LuaScript.DynValueTuplaToObject(MoonSharp.Interpreter.DynValue)
+    name: DynValueTuplaToObject
+    href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_DynValueTuplaToObject_MoonSharp_Interpreter_DynValue_
+  - name: (
+  - uid: MoonSharp.Interpreter.DynValue
+    name: DynValue
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Lua.LuaScript.DynValueTuplaToObject(MoonSharp.Interpreter.DynValue)
+    name: DynValueTuplaToObject
+    href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_DynValueTuplaToObject_MoonSharp_Interpreter_DynValue_
+  - name: (
+  - uid: MoonSharp.Interpreter.DynValue
+    name: DynValue
+    isExternal: true
+  - name: )
+- uid: Cobilas.GodotEngine.Lua.LuaScript.ObjectToDynValue(MoonSharp.Interpreter.Script,System.Object)
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScript.ObjectToDynValue(MoonSharp.Interpreter.Script,System.Object)
+  parent: Cobilas.GodotEngine.Lua.LuaScript
+  isExternal: true
+  href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_ObjectToDynValue_MoonSharp_Interpreter_Script_System_Object_
+  name: ObjectToDynValue(Script, object)
+  nameWithType: LuaScript.ObjectToDynValue(Script, object)
+  fullName: Cobilas.GodotEngine.Lua.LuaScript.ObjectToDynValue(MoonSharp.Interpreter.Script, object)
+  nameWithType.vb: LuaScript.ObjectToDynValue(Script, Object)
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScript.ObjectToDynValue(MoonSharp.Interpreter.Script, Object)
+  name.vb: ObjectToDynValue(Script, Object)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Lua.LuaScript.ObjectToDynValue(MoonSharp.Interpreter.Script,System.Object)
+    name: ObjectToDynValue
+    href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_ObjectToDynValue_MoonSharp_Interpreter_Script_System_Object_
+  - name: (
+  - uid: MoonSharp.Interpreter.Script
+    name: Script
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Lua.LuaScript.ObjectToDynValue(MoonSharp.Interpreter.Script,System.Object)
+    name: ObjectToDynValue
+    href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_ObjectToDynValue_MoonSharp_Interpreter_Script_System_Object_
+  - name: (
+  - uid: MoonSharp.Interpreter.Script
+    name: Script
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.RefreshLuaScript*
+  commentId: Overload:Cobilas.GodotEngine.Lua.LuaScriptFile.RefreshLuaScript
+  href: Cobilas.GodotEngine.Lua.LuaScriptFile.html#Cobilas_GodotEngine_Lua_LuaScriptFile_RefreshLuaScript
+  name: RefreshLuaScript
+  nameWithType: LuaScriptFile.RefreshLuaScript
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.RefreshLuaScript
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Cobilas.GodotEngine.Lua.LuaScript.ScriptLoader
+  commentId: P:Cobilas.GodotEngine.Lua.LuaScript.ScriptLoader
+  parent: Cobilas.GodotEngine.Lua.LuaScript
+  href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_ScriptLoader
+  name: ScriptLoader
+  nameWithType: LuaScript.ScriptLoader
+  fullName: Cobilas.GodotEngine.Lua.LuaScript.ScriptLoader
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.ScriptLoader*
+  commentId: Overload:Cobilas.GodotEngine.Lua.LuaScriptFile.ScriptLoader
+  href: Cobilas.GodotEngine.Lua.LuaScriptFile.html#Cobilas_GodotEngine_Lua_LuaScriptFile_ScriptLoader
+  name: ScriptLoader
+  nameWithType: LuaScriptFile.ScriptLoader
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.ScriptLoader
+- uid: MoonSharp.Interpreter.Loaders.IScriptLoader
+  commentId: T:MoonSharp.Interpreter.Loaders.IScriptLoader
+  parent: MoonSharp.Interpreter.Loaders
+  isExternal: true
+  name: IScriptLoader
+  nameWithType: IScriptLoader
+  fullName: MoonSharp.Interpreter.Loaders.IScriptLoader
+- uid: MoonSharp.Interpreter.Loaders
+  commentId: N:MoonSharp.Interpreter.Loaders
+  isExternal: true
+  name: MoonSharp.Interpreter.Loaders
+  nameWithType: MoonSharp.Interpreter.Loaders
+  fullName: MoonSharp.Interpreter.Loaders
+  spec.csharp:
+  - uid: MoonSharp
+    name: MoonSharp
+    isExternal: true
+  - name: .
+  - uid: MoonSharp.Interpreter
+    name: Interpreter
+    isExternal: true
+  - name: .
+  - uid: MoonSharp.Interpreter.Loaders
+    name: Loaders
+    isExternal: true
+  spec.vb:
+  - uid: MoonSharp
+    name: MoonSharp
+    isExternal: true
+  - name: .
+  - uid: MoonSharp.Interpreter
+    name: Interpreter
+    isExternal: true
+  - name: .
+  - uid: MoonSharp.Interpreter.Loaders
+    name: Loaders
+    isExternal: true
+- uid: Cobilas.GodotEngine.Lua.LuaScript.DebugInput
+  commentId: P:Cobilas.GodotEngine.Lua.LuaScript.DebugInput
+  parent: Cobilas.GodotEngine.Lua.LuaScript
+  href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_DebugInput
+  name: DebugInput
+  nameWithType: LuaScript.DebugInput
+  fullName: Cobilas.GodotEngine.Lua.LuaScript.DebugInput
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.DebugInput*
+  commentId: Overload:Cobilas.GodotEngine.Lua.LuaScriptFile.DebugInput
+  href: Cobilas.GodotEngine.Lua.LuaScriptFile.html#Cobilas_GodotEngine_Lua_LuaScriptFile_DebugInput
+  name: DebugInput
+  nameWithType: LuaScriptFile.DebugInput
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.DebugInput
+- uid: System.Func{System.String,System.String}
+  commentId: T:System.Func{System.String,System.String}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<string, string>
+  nameWithType: Func<string, string>
+  fullName: System.Func<string, string>
+  nameWithType.vb: Func(Of String, String)
+  fullName.vb: System.Func(Of String, String)
+  name.vb: Func(Of String, String)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Cobilas.GodotEngine.Lua.LuaScript.DebugPrint
+  commentId: P:Cobilas.GodotEngine.Lua.LuaScript.DebugPrint
+  parent: Cobilas.GodotEngine.Lua.LuaScript
+  href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_DebugPrint
+  name: DebugPrint
+  nameWithType: LuaScript.DebugPrint
+  fullName: Cobilas.GodotEngine.Lua.LuaScript.DebugPrint
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.DebugPrint*
+  commentId: Overload:Cobilas.GodotEngine.Lua.LuaScriptFile.DebugPrint
+  href: Cobilas.GodotEngine.Lua.LuaScriptFile.html#Cobilas_GodotEngine_Lua_LuaScriptFile_DebugPrint
+  name: DebugPrint
+  nameWithType: LuaScriptFile.DebugPrint
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.DebugPrint
+- uid: System.Action{System.String}
+  commentId: T:System.Action{System.String}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<string>
+  nameWithType: Action<string>
+  fullName: System.Action<string>
+  nameWithType.vb: Action(Of String)
+  fullName.vb: System.Action(Of String)
+  name.vb: Action(Of String)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile
+  commentId: T:Cobilas.GodotEngine.Lua.LuaScriptFile
+  href: Cobilas.GodotEngine.Lua.LuaScriptFile.html
+  name: LuaScriptFile
+  nameWithType: LuaScriptFile
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.#ctor*
+  commentId: Overload:Cobilas.GodotEngine.Lua.LuaScriptFile.#ctor
+  href: Cobilas.GodotEngine.Lua.LuaScriptFile.html#Cobilas_GodotEngine_Lua_LuaScriptFile__ctor_System_String_
+  name: LuaScriptFile
+  nameWithType: LuaScriptFile.LuaScriptFile
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.LuaScriptFile
+  nameWithType.vb: LuaScriptFile.New
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScriptFile.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Cobilas.GodotEngine.Utility.IO.GodotPath.GlobalizePath(System.String)
+  commentId: M:Cobilas.GodotEngine.Utility.IO.GodotPath.GlobalizePath(System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GlobalizePath(string)
+  nameWithType: GodotPath.GlobalizePath(string)
+  fullName: Cobilas.GodotEngine.Utility.IO.GodotPath.GlobalizePath(string)
+  nameWithType.vb: GodotPath.GlobalizePath(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.IO.GodotPath.GlobalizePath(String)
+  name.vb: GlobalizePath(String)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Utility.IO.GodotPath.GlobalizePath(System.String)
+    name: GlobalizePath
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Utility.IO.GodotPath.GlobalizePath(System.String)
+    name: GlobalizePath
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Cobilas.GodotEngine.Lua.LuaScript.GetField(System.String)
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScript.GetField(System.String)
+  parent: Cobilas.GodotEngine.Lua.LuaScript
+  isExternal: true
+  href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_GetField_System_String_
+  name: GetField(string)
+  nameWithType: LuaScript.GetField(string)
+  fullName: Cobilas.GodotEngine.Lua.LuaScript.GetField(string)
+  nameWithType.vb: LuaScript.GetField(String)
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScript.GetField(String)
+  name.vb: GetField(String)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Lua.LuaScript.GetField(System.String)
+    name: GetField
+    href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_GetField_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Lua.LuaScript.GetField(System.String)
+    name: GetField
+    href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_GetField_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.GetField*
+  commentId: Overload:Cobilas.GodotEngine.Lua.LuaScriptFile.GetField
+  href: Cobilas.GodotEngine.Lua.LuaScriptFile.html#Cobilas_GodotEngine_Lua_LuaScriptFile_GetField_System_String_
+  name: GetField
+  nameWithType: LuaScriptFile.GetField
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.GetField
+- uid: Cobilas.GodotEngine.Lua.LuaField
+  commentId: T:Cobilas.GodotEngine.Lua.LuaField
+  parent: Cobilas.GodotEngine.Lua
+  href: Cobilas.GodotEngine.Lua.LuaField.html
+  name: LuaField
+  nameWithType: LuaField
+  fullName: Cobilas.GodotEngine.Lua.LuaField
+- uid: Cobilas.GodotEngine.Lua.LuaScript.GetTuplaField(System.String[])
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScript.GetTuplaField(System.String[])
+  parent: Cobilas.GodotEngine.Lua.LuaScript
+  isExternal: true
+  href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_GetTuplaField_System_String___
+  name: GetTuplaField(string[])
+  nameWithType: LuaScript.GetTuplaField(string[])
+  fullName: Cobilas.GodotEngine.Lua.LuaScript.GetTuplaField(string[])
+  nameWithType.vb: LuaScript.GetTuplaField(String())
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScript.GetTuplaField(String())
+  name.vb: GetTuplaField(String())
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Lua.LuaScript.GetTuplaField(System.String[])
+    name: GetTuplaField
+    href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_GetTuplaField_System_String___
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Lua.LuaScript.GetTuplaField(System.String[])
+    name: GetTuplaField
+    href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_GetTuplaField_System_String___
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+  - name: )
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.GetTuplaField*
+  commentId: Overload:Cobilas.GodotEngine.Lua.LuaScriptFile.GetTuplaField
+  href: Cobilas.GodotEngine.Lua.LuaScriptFile.html#Cobilas_GodotEngine_Lua_LuaScriptFile_GetTuplaField_System_String___
+  name: GetTuplaField
+  nameWithType: LuaScriptFile.GetTuplaField
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.GetTuplaField
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Lua.LuaField[]
+  isExternal: true
+  href: Cobilas.GodotEngine.Lua.LuaField.html
+  name: LuaField[]
+  nameWithType: LuaField[]
+  fullName: Cobilas.GodotEngine.Lua.LuaField[]
+  nameWithType.vb: LuaField()
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaField()
+  name.vb: LuaField()
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Lua.LuaField
+    name: LuaField
+    href: Cobilas.GodotEngine.Lua.LuaField.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Lua.LuaField
+    name: LuaField
+    href: Cobilas.GodotEngine.Lua.LuaField.html
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Lua.LuaScript.GetFunction(System.String)
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScript.GetFunction(System.String)
+  parent: Cobilas.GodotEngine.Lua.LuaScript
+  isExternal: true
+  href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_GetFunction_System_String_
+  name: GetFunction(string)
+  nameWithType: LuaScript.GetFunction(string)
+  fullName: Cobilas.GodotEngine.Lua.LuaScript.GetFunction(string)
+  nameWithType.vb: LuaScript.GetFunction(String)
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScript.GetFunction(String)
+  name.vb: GetFunction(String)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Lua.LuaScript.GetFunction(System.String)
+    name: GetFunction
+    href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_GetFunction_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Lua.LuaScript.GetFunction(System.String)
+    name: GetFunction
+    href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_GetFunction_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.GetFunction*
+  commentId: Overload:Cobilas.GodotEngine.Lua.LuaScriptFile.GetFunction
+  href: Cobilas.GodotEngine.Lua.LuaScriptFile.html#Cobilas_GodotEngine_Lua_LuaScriptFile_GetFunction_System_String_
+  name: GetFunction
+  nameWithType: LuaScriptFile.GetFunction
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.GetFunction
+- uid: Cobilas.GodotEngine.Lua.LuaFunc
+  commentId: T:Cobilas.GodotEngine.Lua.LuaFunc
+  parent: Cobilas.GodotEngine.Lua
+  href: Cobilas.GodotEngine.Lua.LuaFunc.html
+  name: LuaFunc
+  nameWithType: LuaFunc
+  fullName: Cobilas.GodotEngine.Lua.LuaFunc
+- uid: Cobilas.GodotEngine.Lua.LuaScript.SetField(System.String,System.Object)
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScript.SetField(System.String,System.Object)
+  parent: Cobilas.GodotEngine.Lua.LuaScript
+  isExternal: true
+  href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_SetField_System_String_System_Object_
+  name: SetField(string, object)
+  nameWithType: LuaScript.SetField(string, object)
+  fullName: Cobilas.GodotEngine.Lua.LuaScript.SetField(string, object)
+  nameWithType.vb: LuaScript.SetField(String, Object)
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScript.SetField(String, Object)
+  name.vb: SetField(String, Object)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Lua.LuaScript.SetField(System.String,System.Object)
+    name: SetField
+    href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_SetField_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Lua.LuaScript.SetField(System.String,System.Object)
+    name: SetField
+    href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_SetField_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.SetField*
+  commentId: Overload:Cobilas.GodotEngine.Lua.LuaScriptFile.SetField
+  href: Cobilas.GodotEngine.Lua.LuaScriptFile.html#Cobilas_GodotEngine_Lua_LuaScriptFile_SetField_System_String_System_Object_
+  name: SetField
+  nameWithType: LuaScriptFile.SetField
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.SetField
+- uid: Cobilas.GodotEngine.Lua.LuaScript.SetTuplaField(System.String[],System.Object[])
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScript.SetTuplaField(System.String[],System.Object[])
+  parent: Cobilas.GodotEngine.Lua.LuaScript
+  isExternal: true
+  href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_SetTuplaField_System_String___System_Object___
+  name: SetTuplaField(string[], object[])
+  nameWithType: LuaScript.SetTuplaField(string[], object[])
+  fullName: Cobilas.GodotEngine.Lua.LuaScript.SetTuplaField(string[], object[])
+  nameWithType.vb: LuaScript.SetTuplaField(String(), Object())
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScript.SetTuplaField(String(), Object())
+  name.vb: SetTuplaField(String(), Object())
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Lua.LuaScript.SetTuplaField(System.String[],System.Object[])
+    name: SetTuplaField
+    href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_SetTuplaField_System_String___System_Object___
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Lua.LuaScript.SetTuplaField(System.String[],System.Object[])
+    name: SetTuplaField
+    href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_SetTuplaField_System_String___System_Object___
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.SetTuplaField*
+  commentId: Overload:Cobilas.GodotEngine.Lua.LuaScriptFile.SetTuplaField
+  href: Cobilas.GodotEngine.Lua.LuaScriptFile.html#Cobilas_GodotEngine_Lua_LuaScriptFile_SetTuplaField_System_String___System_Object___
+  name: SetTuplaField
+  nameWithType: LuaScriptFile.SetTuplaField
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.SetTuplaField
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Lua.LuaScript.SetFunction(System.String,System.Delegate)
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScript.SetFunction(System.String,System.Delegate)
+  parent: Cobilas.GodotEngine.Lua.LuaScript
+  isExternal: true
+  href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_SetFunction_System_String_System_Delegate_
+  name: SetFunction(string, Delegate)
+  nameWithType: LuaScript.SetFunction(string, Delegate)
+  fullName: Cobilas.GodotEngine.Lua.LuaScript.SetFunction(string, System.Delegate)
+  nameWithType.vb: LuaScript.SetFunction(String, Delegate)
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScript.SetFunction(String, System.Delegate)
+  name.vb: SetFunction(String, Delegate)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Lua.LuaScript.SetFunction(System.String,System.Delegate)
+    name: SetFunction
+    href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_SetFunction_System_String_System_Delegate_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Lua.LuaScript.SetFunction(System.String,System.Delegate)
+    name: SetFunction
+    href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_SetFunction_System_String_System_Delegate_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: )
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.SetFunction*
+  commentId: Overload:Cobilas.GodotEngine.Lua.LuaScriptFile.SetFunction
+  href: Cobilas.GodotEngine.Lua.LuaScriptFile.html#Cobilas_GodotEngine_Lua_LuaScriptFile_SetFunction_System_String_System_Delegate_
+  name: SetFunction
+  nameWithType: LuaScriptFile.SetFunction
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.SetFunction
+- uid: System.Delegate
+  commentId: T:System.Delegate
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.delegate
+  name: Delegate
+  nameWithType: Delegate
+  fullName: System.Delegate
+- uid: Cobilas.GodotEngine.Lua.LuaScript.CreateTable(System.String)
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScript.CreateTable(System.String)
+  parent: Cobilas.GodotEngine.Lua.LuaScript
+  isExternal: true
+  href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_CreateTable_System_String_
+  name: CreateTable(string)
+  nameWithType: LuaScript.CreateTable(string)
+  fullName: Cobilas.GodotEngine.Lua.LuaScript.CreateTable(string)
+  nameWithType.vb: LuaScript.CreateTable(String)
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScript.CreateTable(String)
+  name.vb: CreateTable(String)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Lua.LuaScript.CreateTable(System.String)
+    name: CreateTable
+    href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_CreateTable_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Lua.LuaScript.CreateTable(System.String)
+    name: CreateTable
+    href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_CreateTable_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.CreateTable*
+  commentId: Overload:Cobilas.GodotEngine.Lua.LuaScriptFile.CreateTable
+  href: Cobilas.GodotEngine.Lua.LuaScriptFile.html#Cobilas_GodotEngine_Lua_LuaScriptFile_CreateTable_System_String_
+  name: CreateTable
+  nameWithType: LuaScriptFile.CreateTable
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.CreateTable
+- uid: MoonSharp.Interpreter.Table
+  commentId: T:MoonSharp.Interpreter.Table
+  parent: MoonSharp.Interpreter
+  isExternal: true
+  name: Table
+  nameWithType: Table
+  fullName: MoonSharp.Interpreter.Table
+- uid: MoonSharp.Interpreter
+  commentId: N:MoonSharp.Interpreter
+  isExternal: true
+  name: MoonSharp.Interpreter
+  nameWithType: MoonSharp.Interpreter
+  fullName: MoonSharp.Interpreter
+  spec.csharp:
+  - uid: MoonSharp
+    name: MoonSharp
+    isExternal: true
+  - name: .
+  - uid: MoonSharp.Interpreter
+    name: Interpreter
+    isExternal: true
+  spec.vb:
+  - uid: MoonSharp
+    name: MoonSharp
+    isExternal: true
+  - name: .
+  - uid: MoonSharp.Interpreter
+    name: Interpreter
+    isExternal: true
+- uid: Cobilas.GodotEngine.Lua.LuaScript.Dispose(System.Boolean)
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScript.Dispose(System.Boolean)
+  parent: Cobilas.GodotEngine.Lua.LuaScript
+  isExternal: true
+  href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_Dispose_System_Boolean_
+  name: Dispose(bool)
+  nameWithType: LuaScript.Dispose(bool)
+  fullName: Cobilas.GodotEngine.Lua.LuaScript.Dispose(bool)
+  nameWithType.vb: LuaScript.Dispose(Boolean)
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScript.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+  spec.csharp:
+  - uid: Cobilas.GodotEngine.Lua.LuaScript.Dispose(System.Boolean)
+    name: Dispose
+    href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_Dispose_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Cobilas.GodotEngine.Lua.LuaScript.Dispose(System.Boolean)
+    name: Dispose
+    href: Cobilas.GodotEngine.Lua.LuaScript.html#Cobilas_GodotEngine_Lua_LuaScript_Dispose_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Cobilas.GodotEngine.Lua.LuaScriptFile.Dispose*
+  commentId: Overload:Cobilas.GodotEngine.Lua.LuaScriptFile.Dispose
+  href: Cobilas.GodotEngine.Lua.LuaScriptFile.html#Cobilas_GodotEngine_Lua_LuaScriptFile_Dispose_System_Boolean_
+  name: Dispose
+  nameWithType: LuaScriptFile.Dispose
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptFile.Dispose

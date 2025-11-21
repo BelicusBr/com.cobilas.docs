@@ -1,0 +1,1036 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+  commentId: T:Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+  id: LuaScriptContainerBuilder
+  parent: Cobilas.GodotEngine.Lua
+  children:
+  - Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField(System.String,System.Nullable{System.Boolean})
+  - Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField(System.String,System.Nullable{System.Char})
+  - Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField(System.String,System.Nullable{System.Double})
+  - Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField(System.String,System.String)
+  - Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddFunction(System.String,System.String,System.String[])
+  - Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField(System.String,System.Nullable{System.Boolean})
+  - Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField(System.String,System.Nullable{System.Char})
+  - Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField(System.String,System.Nullable{System.Double})
+  - Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField(System.String,System.String)
+  - Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddTable(Cobilas.GodotEngine.Lua.LuaTableItem)
+  - Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Clear
+  - Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Create
+  - Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Spacing
+  - Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.ToString
+  langs:
+  - csharp
+  - vb
+  name: LuaScriptContainerBuilder
+  nameWithType: LuaScriptContainerBuilder
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+  type: Class
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: LuaScriptContainerBuilder
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+    startLine: 9
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Provides a builder pattern for constructing Lua script containers with fields, tables, and functions.
+  remarks: >-
+    This class simplifies the creation of Lua scripts by providing a fluent interface
+
+    for adding various types of fields, tables, and functions to a script container.
+  example: []
+  syntax:
+    content: public sealed class LuaScriptContainerBuilder
+    content.vb: Public NotInheritable Class LuaScriptContainerBuilder
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+- uid: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField(System.String,System.String)
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField(System.String,System.String)
+  id: AddField(System.String,System.String)
+  parent: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+  langs:
+  - csharp
+  - vb
+  name: AddField(string?, string?)
+  nameWithType: LuaScriptContainerBuilder.AddField(string?, string?)
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField(string?, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: AddField
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+    startLine: 19
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Adds a global string field to the Lua script.
+  example: []
+  syntax:
+    content: public LuaScriptContainerBuilder AddField(string? name, string? value)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the field.
+    - id: value
+      type: System.String
+      description: The string value of the field.
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+      description: The current builder instance for method chaining.
+    content.vb: Public Function AddField(name As String, value As String) As LuaScriptContainerBuilder
+  overload: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField*
+  nameWithType.vb: LuaScriptContainerBuilder.AddField(String, String)
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField(String, String)
+  name.vb: AddField(String, String)
+- uid: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField(System.String,System.Nullable{System.Double})
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField(System.String,System.Nullable{System.Double})
+  id: AddField(System.String,System.Nullable{System.Double})
+  parent: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+  langs:
+  - csharp
+  - vb
+  name: AddField(string?, double?)
+  nameWithType: LuaScriptContainerBuilder.AddField(string?, double?)
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField(string?, double?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: AddField
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+    startLine: 24
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Adds a global numeric field to the Lua script.
+  example: []
+  syntax:
+    content: public LuaScriptContainerBuilder AddField(string? name, double? value)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the field.
+    - id: value
+      type: System.Nullable{System.Double}
+      description: The numeric value of the field.
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+      description: The current builder instance for method chaining.
+    content.vb: Public Function AddField(name As String, value As Double?) As LuaScriptContainerBuilder
+  overload: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField*
+  nameWithType.vb: LuaScriptContainerBuilder.AddField(String, Double?)
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField(String, Double?)
+  name.vb: AddField(String, Double?)
+- uid: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField(System.String,System.Nullable{System.Char})
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField(System.String,System.Nullable{System.Char})
+  id: AddField(System.String,System.Nullable{System.Char})
+  parent: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+  langs:
+  - csharp
+  - vb
+  name: AddField(string?, char?)
+  nameWithType: LuaScriptContainerBuilder.AddField(string?, char?)
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField(string?, char?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: AddField
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+    startLine: 29
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Adds a global character field to the Lua script.
+  example: []
+  syntax:
+    content: public LuaScriptContainerBuilder AddField(string? name, char? value)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the field.
+    - id: value
+      type: System.Nullable{System.Char}
+      description: The character value of the field.
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+      description: The current builder instance for method chaining.
+    content.vb: Public Function AddField(name As String, value As Char?) As LuaScriptContainerBuilder
+  overload: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField*
+  nameWithType.vb: LuaScriptContainerBuilder.AddField(String, Char?)
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField(String, Char?)
+  name.vb: AddField(String, Char?)
+- uid: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField(System.String,System.Nullable{System.Boolean})
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField(System.String,System.Nullable{System.Boolean})
+  id: AddField(System.String,System.Nullable{System.Boolean})
+  parent: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+  langs:
+  - csharp
+  - vb
+  name: AddField(string?, bool?)
+  nameWithType: LuaScriptContainerBuilder.AddField(string?, bool?)
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField(string?, bool?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: AddField
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+    startLine: 34
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Adds a global boolean field to the Lua script.
+  example: []
+  syntax:
+    content: public LuaScriptContainerBuilder AddField(string? name, bool? value)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the field.
+    - id: value
+      type: System.Nullable{System.Boolean}
+      description: The boolean value of the field.
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+      description: The current builder instance for method chaining.
+    content.vb: Public Function AddField(name As String, value As Boolean?) As LuaScriptContainerBuilder
+  overload: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField*
+  nameWithType.vb: LuaScriptContainerBuilder.AddField(String, Boolean?)
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField(String, Boolean?)
+  name.vb: AddField(String, Boolean?)
+- uid: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField(System.String,System.String)
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField(System.String,System.String)
+  id: AddLocalField(System.String,System.String)
+  parent: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+  langs:
+  - csharp
+  - vb
+  name: AddLocalField(string?, string?)
+  nameWithType: LuaScriptContainerBuilder.AddLocalField(string?, string?)
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField(string?, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: AddLocalField
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+    startLine: 39
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Adds a local string field to the Lua script.
+  example: []
+  syntax:
+    content: public LuaScriptContainerBuilder AddLocalField(string? name, string? value)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the field.
+    - id: value
+      type: System.String
+      description: The string value of the field.
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+      description: The current builder instance for method chaining.
+    content.vb: Public Function AddLocalField(name As String, value As String) As LuaScriptContainerBuilder
+  overload: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField*
+  nameWithType.vb: LuaScriptContainerBuilder.AddLocalField(String, String)
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField(String, String)
+  name.vb: AddLocalField(String, String)
+- uid: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField(System.String,System.Nullable{System.Double})
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField(System.String,System.Nullable{System.Double})
+  id: AddLocalField(System.String,System.Nullable{System.Double})
+  parent: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+  langs:
+  - csharp
+  - vb
+  name: AddLocalField(string?, double?)
+  nameWithType: LuaScriptContainerBuilder.AddLocalField(string?, double?)
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField(string?, double?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: AddLocalField
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+    startLine: 44
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Adds a local numeric field to the Lua script.
+  example: []
+  syntax:
+    content: public LuaScriptContainerBuilder AddLocalField(string? name, double? value)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the field.
+    - id: value
+      type: System.Nullable{System.Double}
+      description: The numeric value of the field.
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+      description: The current builder instance for method chaining.
+    content.vb: Public Function AddLocalField(name As String, value As Double?) As LuaScriptContainerBuilder
+  overload: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField*
+  nameWithType.vb: LuaScriptContainerBuilder.AddLocalField(String, Double?)
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField(String, Double?)
+  name.vb: AddLocalField(String, Double?)
+- uid: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField(System.String,System.Nullable{System.Char})
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField(System.String,System.Nullable{System.Char})
+  id: AddLocalField(System.String,System.Nullable{System.Char})
+  parent: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+  langs:
+  - csharp
+  - vb
+  name: AddLocalField(string?, char?)
+  nameWithType: LuaScriptContainerBuilder.AddLocalField(string?, char?)
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField(string?, char?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: AddLocalField
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+    startLine: 49
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Adds a local character field to the Lua script.
+  example: []
+  syntax:
+    content: public LuaScriptContainerBuilder AddLocalField(string? name, char? value)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the field.
+    - id: value
+      type: System.Nullable{System.Char}
+      description: The character value of the field.
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+      description: The current builder instance for method chaining.
+    content.vb: Public Function AddLocalField(name As String, value As Char?) As LuaScriptContainerBuilder
+  overload: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField*
+  nameWithType.vb: LuaScriptContainerBuilder.AddLocalField(String, Char?)
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField(String, Char?)
+  name.vb: AddLocalField(String, Char?)
+- uid: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField(System.String,System.Nullable{System.Boolean})
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField(System.String,System.Nullable{System.Boolean})
+  id: AddLocalField(System.String,System.Nullable{System.Boolean})
+  parent: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+  langs:
+  - csharp
+  - vb
+  name: AddLocalField(string?, bool?)
+  nameWithType: LuaScriptContainerBuilder.AddLocalField(string?, bool?)
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField(string?, bool?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: AddLocalField
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+    startLine: 54
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Adds a local boolean field to the Lua script.
+  example: []
+  syntax:
+    content: public LuaScriptContainerBuilder AddLocalField(string? name, bool? value)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the field.
+    - id: value
+      type: System.Nullable{System.Boolean}
+      description: The boolean value of the field.
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+      description: The current builder instance for method chaining.
+    content.vb: Public Function AddLocalField(name As String, value As Boolean?) As LuaScriptContainerBuilder
+  overload: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField*
+  nameWithType.vb: LuaScriptContainerBuilder.AddLocalField(String, Boolean?)
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField(String, Boolean?)
+  name.vb: AddLocalField(String, Boolean?)
+- uid: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddTable(Cobilas.GodotEngine.Lua.LuaTableItem)
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddTable(Cobilas.GodotEngine.Lua.LuaTableItem)
+  id: AddTable(Cobilas.GodotEngine.Lua.LuaTableItem)
+  parent: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+  langs:
+  - csharp
+  - vb
+  name: AddTable(LuaTableItem)
+  nameWithType: LuaScriptContainerBuilder.AddTable(LuaTableItem)
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddTable(Cobilas.GodotEngine.Lua.LuaTableItem)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: AddTable
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+    startLine: 58
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Adds a Lua table to the script container.
+  example: []
+  syntax:
+    content: public LuaScriptContainerBuilder AddTable(LuaTableItem table)
+    parameters:
+    - id: table
+      type: Cobilas.GodotEngine.Lua.LuaTableItem
+      description: The table item to add to the script.
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+      description: The current builder instance for method chaining.
+    content.vb: Public Function AddTable(table As LuaTableItem) As LuaScriptContainerBuilder
+  overload: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddTable*
+- uid: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddFunction(System.String,System.String,System.String[])
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddFunction(System.String,System.String,System.String[])
+  id: AddFunction(System.String,System.String,System.String[])
+  parent: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+  langs:
+  - csharp
+  - vb
+  name: AddFunction(string?, string?, params string[]?)
+  nameWithType: LuaScriptContainerBuilder.AddFunction(string?, string?, params string[]?)
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddFunction(string?, string?, params string[]?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: AddFunction
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+    startLine: 68
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Adds a function definition to the Lua script.
+  example: []
+  syntax:
+    content: public LuaScriptContainerBuilder AddFunction(string? name, string? body, params string[]? args)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the function.
+    - id: body
+      type: System.String
+      description: The body of the function as a string.
+    - id: args
+      type: System.String[]
+      description: The parameter names for the function.
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+      description: The current builder instance for method chaining.
+    content.vb: Public Function AddFunction(name As String, body As String, ParamArray args As String()) As LuaScriptContainerBuilder
+  overload: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddFunction*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when name is null or empty.
+  nameWithType.vb: LuaScriptContainerBuilder.AddFunction(String, String, ParamArray String())
+  fullName.vb: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddFunction(String, String, ParamArray String())
+  name.vb: AddFunction(String, String, ParamArray String())
+- uid: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Spacing
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Spacing
+  id: Spacing
+  parent: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+  langs:
+  - csharp
+  - vb
+  name: Spacing()
+  nameWithType: LuaScriptContainerBuilder.Spacing()
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Spacing()
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: Spacing
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+    startLine: 81
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Adds a blank line for spacing in the generated script.
+  example: []
+  syntax:
+    content: public LuaScriptContainerBuilder Spacing()
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+      description: The current builder instance for method chaining.
+    content.vb: Public Function Spacing() As LuaScriptContainerBuilder
+  overload: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Spacing*
+- uid: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Clear
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Clear
+  id: Clear
+  parent: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: LuaScriptContainerBuilder.Clear()
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Clear()
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: Clear
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+    startLine: 87
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Clears the current script content.
+  example: []
+  syntax:
+    content: public LuaScriptContainerBuilder Clear()
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+      description: The current builder instance for method chaining.
+    content.vb: Public Function Clear() As LuaScriptContainerBuilder
+  overload: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Clear*
+- uid: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.ToString
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.ToString
+  id: ToString
+  parent: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: LuaScriptContainerBuilder.ToString()
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: ToString
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+    startLine: 93
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Returns the generated Lua script as a string.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The complete Lua script as a string.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.ToString*
+- uid: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Create
+  commentId: M:Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Create
+  id: Create
+  parent: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+  langs:
+  - csharp
+  - vb
+  name: Create()
+  nameWithType: LuaScriptContainerBuilder.Create()
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Create()
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.lua.git
+    id: Create
+    path: ../../Godot Dev/com.cobilas.godot.lua/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs
+    startLine: 110
+  assemblies:
+  - com.cobilas.godot.lua
+  namespace: Cobilas.GodotEngine.Lua
+  summary: Creates a new instance of the <xref href="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder" data-throw-if-not-resolved="false"></xref> with cleared content.
+  example: []
+  syntax:
+    content: public static LuaScriptContainerBuilder Create()
+    return:
+      type: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+      description: A new <xref href="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder" data-throw-if-not-resolved="false"></xref> instance ready for use.
+    content.vb: Public Shared Function Create() As LuaScriptContainerBuilder
+  overload: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Create*
+references:
+- uid: Cobilas.GodotEngine.Lua
+  commentId: N:Cobilas.GodotEngine.Lua
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Lua
+  nameWithType: Cobilas.GodotEngine.Lua
+  fullName: Cobilas.GodotEngine.Lua
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Lua
+    name: Lua
+    href: Cobilas.GodotEngine.Lua.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Lua
+    name: Lua
+    href: Cobilas.GodotEngine.Lua.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField*
+  commentId: Overload:Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField
+  href: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.html#Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_AddField_System_String_System_String_
+  name: AddField
+  nameWithType: LuaScriptContainerBuilder.AddField
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+  commentId: T:Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+  parent: Cobilas.GodotEngine.Lua
+  href: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.html
+  name: LuaScriptContainerBuilder
+  nameWithType: LuaScriptContainerBuilder
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder
+- uid: System.Nullable{System.Double}
+  commentId: T:System.Nullable{System.Double}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double?
+  nameWithType: double?
+  fullName: double?
+  nameWithType.vb: Double?
+  fullName.vb: Double?
+  name.vb: Double?
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Nullable{System.Char}
+  commentId: T:System.Nullable{System.Char}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char?
+  nameWithType: char?
+  fullName: char?
+  nameWithType.vb: Char?
+  fullName.vb: Char?
+  name.vb: Char?
+  spec.csharp:
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '?'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '?'
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+- uid: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField*
+  commentId: Overload:Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField
+  href: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.html#Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_AddLocalField_System_String_System_String_
+  name: AddLocalField
+  nameWithType: LuaScriptContainerBuilder.AddLocalField
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField
+- uid: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddTable*
+  commentId: Overload:Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddTable
+  href: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.html#Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_AddTable_Cobilas_GodotEngine_Lua_LuaTableItem_
+  name: AddTable
+  nameWithType: LuaScriptContainerBuilder.AddTable
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddTable
+- uid: Cobilas.GodotEngine.Lua.LuaTableItem
+  commentId: T:Cobilas.GodotEngine.Lua.LuaTableItem
+  parent: Cobilas.GodotEngine.Lua
+  href: Cobilas.GodotEngine.Lua.LuaTableItem.html
+  name: LuaTableItem
+  nameWithType: LuaTableItem
+  fullName: Cobilas.GodotEngine.Lua.LuaTableItem
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddFunction*
+  commentId: Overload:Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddFunction
+  href: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.html#Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_AddFunction_System_String_System_String_System_String___
+  name: AddFunction
+  nameWithType: LuaScriptContainerBuilder.AddFunction
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddFunction
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Spacing*
+  commentId: Overload:Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Spacing
+  href: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.html#Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_Spacing
+  name: Spacing
+  nameWithType: LuaScriptContainerBuilder.Spacing
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Spacing
+- uid: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Clear*
+  commentId: Overload:Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Clear
+  href: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.html#Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_Clear
+  name: Clear
+  nameWithType: LuaScriptContainerBuilder.Clear
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Clear
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.ToString*
+  commentId: Overload:Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.ToString
+  href: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.html#Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_ToString
+  name: ToString
+  nameWithType: LuaScriptContainerBuilder.ToString
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.ToString
+- uid: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Create*
+  commentId: Overload:Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Create
+  href: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.html#Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_Create
+  name: Create
+  nameWithType: LuaScriptContainerBuilder.Create
+  fullName: Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Create

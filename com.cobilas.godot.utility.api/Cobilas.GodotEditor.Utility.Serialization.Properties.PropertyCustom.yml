@@ -11,8 +11,12 @@ items:
   - Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.GetPropertyList
   - Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.IsHide
   - Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.Member
+  - Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.ObjectToCacheValue(System.String,System.Object)
   - Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.PropertyPath
+  - Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.PropertyRender
   - Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.Set(System.String,System.Object)
+  - Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.Value
+  - Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.VerifyPropertyName(System.String)
   langs:
   - csharp
   - vb
@@ -22,12 +26,12 @@ items:
   type: Class
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: PropertyCustom
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
-    startLine: 4
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
+    startLine: 5
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.Properties
@@ -40,8 +44,11 @@ items:
   - System.Object
   derivedClasses:
   - Cobilas.GodotEditor.Utility.Serialization.Properties.EnumCustom
+  - Cobilas.GodotEditor.Utility.Serialization.Properties.NodePathCustom
   - Cobilas.GodotEditor.Utility.Serialization.Properties.PrimitiveTypeCustom
   - Cobilas.GodotEditor.Utility.Serialization.Properties.SPCNull
+  - Cobilas.GodotEngine.Utility.Serialization.ObjectRefCustom
+  - Cobilas.GodotEngine.Utility.Serialization.Rect2DCustom
   implements:
   - Cobilas.GodotEditor.Utility.Serialization.ISerializedPropertyManipulation
   inheritedMembers:
@@ -65,12 +72,12 @@ items:
   type: Property
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: IsHide
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
-    startLine: 6
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
+    startLine: 7
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.Properties
@@ -97,12 +104,12 @@ items:
   type: Property
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: PropertyPath
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
-    startLine: 10
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
+    startLine: 11
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.Properties
@@ -129,12 +136,12 @@ items:
   type: Property
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Member
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
-    startLine: 14
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
+    startLine: 15
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.Properties
@@ -148,6 +155,38 @@ items:
       description: Defines a new member.
     content.vb: Public MustOverride Property Member As MemberItem
   overload: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.Member*
+- uid: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.PropertyRender
+  commentId: P:Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.PropertyRender
+  id: PropertyRender
+  parent: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom
+  langs:
+  - csharp
+  - vb
+  name: PropertyRender
+  nameWithType: PropertyCustom.PropertyRender
+  fullName: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.PropertyRender
+  type: Property
+  source:
+    remote:
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: PropertyRender
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
+    startLine: 19
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEditor.Utility.Serialization.Properties
+  summary: Gets or sets the property render associated with this custom property.
+  example: []
+  syntax:
+    content: public abstract IPropertyRender? PropertyRender { get; set; }
+    parameters: []
+    return:
+      type: Cobilas.GodotEditor.Utility.Serialization.Interfaces.IPropertyRender
+      description: Returns the property render associated with this custom property.
+    content.vb: Public MustOverride Property PropertyRender As IPropertyRender
+  overload: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.PropertyRender*
 - uid: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.Attribute
   commentId: P:Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.Attribute
   id: Attribute
@@ -161,12 +200,12 @@ items:
   type: Property
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Attribute
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
-    startLine: 17
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
+    startLine: 22
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.Properties
@@ -180,6 +219,42 @@ items:
       description: Returns the serialization attribute that tells the editor how to display the property.
     content.vb: Public ReadOnly Property Attribute As SerializeFieldAttribute
   overload: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.Attribute*
+- uid: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.Value
+  commentId: P:Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.Value
+  id: Value
+  parent: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: PropertyCustom.Value
+  fullName: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.Value
+  type: Property
+  source:
+    remote:
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: Value
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
+    startLine: 30
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEditor.Utility.Serialization.Properties
+  summary: Gets or sets the value of the property and propagates changes through the render hierarchy.
+  remarks: >-
+    When setting a value, it automatically propagates the change to parent property renders
+
+    to maintain consistency in the serialization hierarchy.
+  example: []
+  syntax:
+    content: public object? Value { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+      description: Returns the current value of the property.
+    content.vb: Public Property Value As Object
+  overload: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.Value*
 - uid: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.Get(System.String)
   commentId: M:Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.Get(System.String)
   id: Get(System.String)
@@ -193,12 +268,12 @@ items:
   type: Method
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Get
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
-    startLine: 19
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
+    startLine: 39
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.Properties
@@ -233,12 +308,12 @@ items:
   type: Method
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetPropertyList
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
-    startLine: 21
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
+    startLine: 41
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.Properties
@@ -266,12 +341,12 @@ items:
   type: Method
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Set
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
-    startLine: 23
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
+    startLine: 43
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.Properties
@@ -309,12 +384,12 @@ items:
   type: Method
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: CacheValueToObject
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
-    startLine: 28
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
+    startLine: 48
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.Properties
@@ -337,6 +412,85 @@ items:
   nameWithType.vb: PropertyCustom.CacheValueToObject(String, String)
   fullName.vb: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.CacheValueToObject(String, String)
   name.vb: CacheValueToObject(String, String)
+- uid: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.ObjectToCacheValue(System.String,System.Object)
+  commentId: M:Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.ObjectToCacheValue(System.String,System.Object)
+  id: ObjectToCacheValue(System.String,System.Object)
+  parent: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom
+  langs:
+  - csharp
+  - vb
+  name: ObjectToCacheValue(string?, object?)
+  nameWithType: PropertyCustom.ObjectToCacheValue(string?, object?)
+  fullName: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.ObjectToCacheValue(string?, object?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ObjectToCacheValue
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
+    startLine: 53
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEditor.Utility.Serialization.Properties
+  summary: Converts an object value to a string representation for caching.
+  example: []
+  syntax:
+    content: public abstract string? ObjectToCacheValue(string? propertyName, object? value)
+    parameters:
+    - id: propertyName
+      type: System.String
+      description: The name of the property.
+    - id: value
+      type: System.Object
+      description: The object value to be converted.
+    return:
+      type: System.String
+      description: Returns the string representation of the value for caching.
+    content.vb: Public MustOverride Function ObjectToCacheValue(propertyName As String, value As Object) As String
+  overload: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.ObjectToCacheValue*
+  nameWithType.vb: PropertyCustom.ObjectToCacheValue(String, Object)
+  fullName.vb: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.ObjectToCacheValue(String, Object)
+  name.vb: ObjectToCacheValue(String, Object)
+- uid: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.VerifyPropertyName(System.String)
+  commentId: M:Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.VerifyPropertyName(System.String)
+  id: VerifyPropertyName(System.String)
+  parent: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom
+  langs:
+  - csharp
+  - vb
+  name: VerifyPropertyName(string?)
+  nameWithType: PropertyCustom.VerifyPropertyName(string?)
+  fullName: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.VerifyPropertyName(string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: VerifyPropertyName
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/Properties/PropertyCustom.cs
+    startLine: 57
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEditor.Utility.Serialization.Properties
+  summary: Verifies if the given property name is valid for this custom property.
+  example: []
+  syntax:
+    content: public abstract bool VerifyPropertyName(string? propertyName)
+    parameters:
+    - id: propertyName
+      type: System.String
+      description: The property name to verify.
+    return:
+      type: System.Boolean
+      description: Returns <code>true</code> when the property name is valid.
+    content.vb: Public MustOverride Function VerifyPropertyName(propertyName As String) As Boolean
+  overload: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.VerifyPropertyName*
+  nameWithType.vb: PropertyCustom.VerifyPropertyName(String)
+  fullName.vb: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.VerifyPropertyName(String)
+  name.vb: VerifyPropertyName(String)
 references:
 - uid: Cobilas.GodotEditor.Utility.Serialization.Properties
   commentId: N:Cobilas.GodotEditor.Utility.Serialization.Properties
@@ -713,6 +867,65 @@ references:
   name: MemberItem
   nameWithType: MemberItem
   fullName: Cobilas.GodotEditor.Utility.Serialization.MemberItem
+- uid: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.PropertyRender*
+  commentId: Overload:Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.PropertyRender
+  href: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.html#Cobilas_GodotEditor_Utility_Serialization_Properties_PropertyCustom_PropertyRender
+  name: PropertyRender
+  nameWithType: PropertyCustom.PropertyRender
+  fullName: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.PropertyRender
+- uid: Cobilas.GodotEditor.Utility.Serialization.Interfaces.IPropertyRender
+  commentId: T:Cobilas.GodotEditor.Utility.Serialization.Interfaces.IPropertyRender
+  parent: Cobilas.GodotEditor.Utility.Serialization.Interfaces
+  href: Cobilas.GodotEditor.Utility.Serialization.Interfaces.IPropertyRender.html
+  name: IPropertyRender
+  nameWithType: IPropertyRender
+  fullName: Cobilas.GodotEditor.Utility.Serialization.Interfaces.IPropertyRender
+- uid: Cobilas.GodotEditor.Utility.Serialization.Interfaces
+  commentId: N:Cobilas.GodotEditor.Utility.Serialization.Interfaces
+  href: Cobilas.html
+  name: Cobilas.GodotEditor.Utility.Serialization.Interfaces
+  nameWithType: Cobilas.GodotEditor.Utility.Serialization.Interfaces
+  fullName: Cobilas.GodotEditor.Utility.Serialization.Interfaces
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEditor
+    name: GodotEditor
+    href: Cobilas.GodotEditor.html
+  - name: .
+  - uid: Cobilas.GodotEditor.Utility
+    name: Utility
+    href: Cobilas.GodotEditor.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEditor.Utility.Serialization
+    name: Serialization
+    href: Cobilas.GodotEditor.Utility.Serialization.html
+  - name: .
+  - uid: Cobilas.GodotEditor.Utility.Serialization.Interfaces
+    name: Interfaces
+    href: Cobilas.GodotEditor.Utility.Serialization.Interfaces.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEditor
+    name: GodotEditor
+    href: Cobilas.GodotEditor.html
+  - name: .
+  - uid: Cobilas.GodotEditor.Utility
+    name: Utility
+    href: Cobilas.GodotEditor.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEditor.Utility.Serialization
+    name: Serialization
+    href: Cobilas.GodotEditor.Utility.Serialization.html
+  - name: .
+  - uid: Cobilas.GodotEditor.Utility.Serialization.Interfaces
+    name: Interfaces
+    href: Cobilas.GodotEditor.Utility.Serialization.Interfaces.html
 - uid: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.Attribute*
   commentId: Overload:Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.Attribute
   href: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.html#Cobilas_GodotEditor_Utility_Serialization_Properties_PropertyCustom_Attribute
@@ -726,6 +939,12 @@ references:
   name: SerializeFieldAttribute
   nameWithType: SerializeFieldAttribute
   fullName: Cobilas.GodotEditor.Utility.Serialization.SerializeFieldAttribute
+- uid: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.Value*
+  commentId: Overload:Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.Value
+  href: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.html#Cobilas_GodotEditor_Utility_Serialization_Properties_PropertyCustom_Value
+  name: Value
+  nameWithType: PropertyCustom.Value
+  fullName: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.Value
 - uid: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.Get*
   commentId: Overload:Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.Get
   href: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.html#Cobilas_GodotEditor_Utility_Serialization_Properties_PropertyCustom_Get_System_String_
@@ -864,3 +1083,15 @@ references:
   name: CacheValueToObject
   nameWithType: PropertyCustom.CacheValueToObject
   fullName: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.CacheValueToObject
+- uid: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.ObjectToCacheValue*
+  commentId: Overload:Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.ObjectToCacheValue
+  href: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.html#Cobilas_GodotEditor_Utility_Serialization_Properties_PropertyCustom_ObjectToCacheValue_System_String_System_Object_
+  name: ObjectToCacheValue
+  nameWithType: PropertyCustom.ObjectToCacheValue
+  fullName: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.ObjectToCacheValue
+- uid: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.VerifyPropertyName*
+  commentId: Overload:Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.VerifyPropertyName
+  href: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.html#Cobilas_GodotEditor_Utility_Serialization_Properties_PropertyCustom_VerifyPropertyName_System_String_
+  name: VerifyPropertyName
+  nameWithType: PropertyCustom.VerifyPropertyName
+  fullName: Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.VerifyPropertyName

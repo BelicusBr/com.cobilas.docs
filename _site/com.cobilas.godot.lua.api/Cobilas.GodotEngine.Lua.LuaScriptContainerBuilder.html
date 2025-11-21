@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class LuaScriptContainerBuilder | Cobilas Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LuaScriptContainerBuilder | Cobilas Documentation ">
+      
+      <meta name="description" content="Provides a builder pattern for constructing Lua script containers with fields, tables, and functions.">
+      <link rel="icon" href="../images/favicon-96x96.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.godot.lua/new/main.dev/apiSpec/new?filename=Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder.md&amp;value=---%0Auid%3A%20Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/apple-icon-57x57.png" alt="Cobilas Documentation">
+            Cobilas Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder">
+
+
+
+  <h1 id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder" class="text-break">
+Class LuaScriptContainerBuilder  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main.dev/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Cobilas.html">Cobilas</a>.<a class="xref" href="Cobilas.GodotEngine.html">GodotEngine</a>.<a class="xref" href="Cobilas.GodotEngine.Lua.html">Lua</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>com.cobilas.godot.lua.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides a builder pattern for constructing Lua script containers with fields, tables, and functions.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class LuaScriptContainerBuilder</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">LuaScriptContainerBuilder</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This class simplifies the creation of Lua scripts by providing a fluent interface
+for adding various types of fields, tables, and functions to a script container.</p>
+</div>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_AddField_" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_AddField_System_String_System_Nullable_System_Boolean__" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField(System.String,System.Nullable{System.Boolean})">
+  AddField(string?, bool?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main.dev/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a global boolean field to the Lua script.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LuaScriptContainerBuilder AddField(string? name, bool? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the field.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd><p>The boolean value of the field.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.html">LuaScriptContainerBuilder</a></dt>
+    <dd><p>The current builder instance for method chaining.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_AddField_" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_AddField_System_String_System_Nullable_System_Char__" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField(System.String,System.Nullable{System.Char})">
+  AddField(string?, char?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main.dev/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a global character field to the Lua script.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LuaScriptContainerBuilder AddField(string? name, char? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the field.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>?</dt>
+    <dd><p>The character value of the field.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.html">LuaScriptContainerBuilder</a></dt>
+    <dd><p>The current builder instance for method chaining.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_AddField_" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_AddField_System_String_System_Nullable_System_Double__" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField(System.String,System.Nullable{System.Double})">
+  AddField(string?, double?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main.dev/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a global numeric field to the Lua script.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LuaScriptContainerBuilder AddField(string? name, double? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the field.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd><p>The numeric value of the field.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.html">LuaScriptContainerBuilder</a></dt>
+    <dd><p>The current builder instance for method chaining.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_AddField_" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_AddField_System_String_System_String_" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddField(System.String,System.String)">
+  AddField(string?, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main.dev/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a global string field to the Lua script.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LuaScriptContainerBuilder AddField(string? name, string? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the field.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string value of the field.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.html">LuaScriptContainerBuilder</a></dt>
+    <dd><p>The current builder instance for method chaining.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_AddFunction_" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddFunction*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_AddFunction_System_String_System_String_System_String___" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddFunction(System.String,System.String,System.String[])">
+  AddFunction(string?, string?, params string[]?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main.dev/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a function definition to the Lua script.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LuaScriptContainerBuilder AddFunction(string? name, string? body, params string[]? args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the function.</p>
+</dd>
+    <dt><code>body</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The body of the function as a string.</p>
+</dd>
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>The parameter names for the function.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.html">LuaScriptContainerBuilder</a></dt>
+    <dd><p>The current builder instance for method chaining.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when name is null or empty.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_AddLocalField_" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_AddLocalField_System_String_System_Nullable_System_Boolean__" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField(System.String,System.Nullable{System.Boolean})">
+  AddLocalField(string?, bool?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main.dev/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a local boolean field to the Lua script.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LuaScriptContainerBuilder AddLocalField(string? name, bool? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the field.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd><p>The boolean value of the field.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.html">LuaScriptContainerBuilder</a></dt>
+    <dd><p>The current builder instance for method chaining.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_AddLocalField_" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_AddLocalField_System_String_System_Nullable_System_Char__" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField(System.String,System.Nullable{System.Char})">
+  AddLocalField(string?, char?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main.dev/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a local character field to the Lua script.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LuaScriptContainerBuilder AddLocalField(string? name, char? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the field.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>?</dt>
+    <dd><p>The character value of the field.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.html">LuaScriptContainerBuilder</a></dt>
+    <dd><p>The current builder instance for method chaining.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_AddLocalField_" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_AddLocalField_System_String_System_Nullable_System_Double__" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField(System.String,System.Nullable{System.Double})">
+  AddLocalField(string?, double?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main.dev/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a local numeric field to the Lua script.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LuaScriptContainerBuilder AddLocalField(string? name, double? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the field.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd><p>The numeric value of the field.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.html">LuaScriptContainerBuilder</a></dt>
+    <dd><p>The current builder instance for method chaining.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_AddLocalField_" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_AddLocalField_System_String_System_String_" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddLocalField(System.String,System.String)">
+  AddLocalField(string?, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main.dev/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a local string field to the Lua script.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LuaScriptContainerBuilder AddLocalField(string? name, string? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the field.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string value of the field.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.html">LuaScriptContainerBuilder</a></dt>
+    <dd><p>The current builder instance for method chaining.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_AddTable_" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddTable*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_AddTable_Cobilas_GodotEngine_Lua_LuaTableItem_" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.AddTable(Cobilas.GodotEngine.Lua.LuaTableItem)">
+  AddTable(LuaTableItem)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main.dev/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a Lua table to the script container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LuaScriptContainerBuilder AddTable(LuaTableItem table)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>table</code> <a class="xref" href="Cobilas.GodotEngine.Lua.LuaTableItem.html">LuaTableItem</a></dt>
+    <dd><p>The table item to add to the script.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.html">LuaScriptContainerBuilder</a></dt>
+    <dd><p>The current builder instance for method chaining.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_Clear_" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Clear*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_Clear" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Clear">
+  Clear()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main.dev/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears the current script content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LuaScriptContainerBuilder Clear()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.html">LuaScriptContainerBuilder</a></dt>
+    <dd><p>The current builder instance for method chaining.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_Create_" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Create*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_Create" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Create">
+  Create()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main.dev/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new instance of the <a class="xref" href="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.html">LuaScriptContainerBuilder</a> with cleared content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LuaScriptContainerBuilder Create()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.html">LuaScriptContainerBuilder</a></dt>
+    <dd><p>A new <a class="xref" href="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.html">LuaScriptContainerBuilder</a> instance ready for use.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_Spacing_" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Spacing*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_Spacing" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.Spacing">
+  Spacing()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main.dev/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a blank line for spacing in the generated script.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LuaScriptContainerBuilder Spacing()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.html">LuaScriptContainerBuilder</a></dt>
+    <dd><p>The current builder instance for method chaining.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_ToString_" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.ToString*"></a>
+
+  <h3 id="Cobilas_GodotEngine_Lua_LuaScriptContainerBuilder_ToString" data-uid="Cobilas.GodotEngine.Lua.LuaScriptContainerBuilder.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main.dev/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the generated Lua script as a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The complete Lua script as a string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BelicusBr/com.cobilas.godot.lua/blob/main.dev/src/com.cobilas.godot.lua/GodotEngine/Lua/LuaScriptContainerBuilder.cs/#L10" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -27,11 +27,11 @@ items:
   type: Class
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: NoSerializedProperty
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
     startLine: 6
   assemblies:
   - com.cobilas.godot.utility
@@ -39,8 +39,14 @@ items:
   summary: Represents a property that does not have a <xref href="Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: 'public class NoSerializedProperty : SerializedObject, ISerializedPropertyManipulation, IEnumerable<SerializedObject>, IEnumerable'
-    content.vb: Public Class NoSerializedProperty Inherits SerializedObject Implements ISerializedPropertyManipulation, IEnumerable(Of SerializedObject), IEnumerable
+    content: >-
+      [Obsolete("Use NodeReneder or ResourceRender class")]
+
+      public class NoSerializedProperty : SerializedObject, ISerializedPropertyManipulation, IEnumerable<SerializedObject>, IEnumerable
+    content.vb: >-
+      <Obsolete("Use NodeReneder or ResourceRender class")>
+
+      Public Class NoSerializedProperty Inherits SerializedObject Implements ISerializedPropertyManipulation, IEnumerable(Of SerializedObject), IEnumerable
   inheritance:
   - System.Object
   - Cobilas.GodotEditor.Utility.Serialization.RenderObjects.SerializedObject
@@ -58,6 +64,12 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use NodeReneder or ResourceRender class
 - uid: Cobilas.GodotEditor.Utility.Serialization.RenderObjects.NoSerializedProperty.RootInfo
   commentId: P:Cobilas.GodotEditor.Utility.Serialization.RenderObjects.NoSerializedProperty.RootInfo
   id: RootInfo
@@ -71,12 +83,12 @@ items:
   type: Property
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: RootInfo
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
-    startLine: 9
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+    startLine: 10
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.RenderObjects
@@ -104,12 +116,12 @@ items:
   type: Property
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Member
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
-    startLine: 11
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+    startLine: 12
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.RenderObjects
@@ -137,12 +149,12 @@ items:
   type: Property
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Name
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
-    startLine: 13
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+    startLine: 14
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.RenderObjects
@@ -170,12 +182,12 @@ items:
   type: Property
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: PropertyPath
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
-    startLine: 15
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+    startLine: 16
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.RenderObjects
@@ -203,12 +215,12 @@ items:
   type: Property
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Parent
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
-    startLine: 17
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+    startLine: 18
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.RenderObjects
@@ -236,12 +248,12 @@ items:
   type: Constructor
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
-    startLine: 20
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+    startLine: 21
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.RenderObjects
@@ -286,12 +298,12 @@ items:
   type: Constructor
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: .ctor
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
-    startLine: 25
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+    startLine: 26
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.RenderObjects
@@ -324,12 +336,12 @@ items:
   type: Method
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Add
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
-    startLine: 30
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+    startLine: 31
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.RenderObjects
@@ -356,12 +368,12 @@ items:
   type: Method
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Add
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
-    startLine: 33
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+    startLine: 34
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.RenderObjects
@@ -391,12 +403,12 @@ items:
   type: Method
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetEnumerator
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
-    startLine: 35
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+    startLine: 36
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.RenderObjects
@@ -424,12 +436,12 @@ items:
   type: Method
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Get
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
-    startLine: 38
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+    startLine: 39
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.RenderObjects
@@ -463,12 +475,12 @@ items:
   type: Method
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Set
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
-    startLine: 46
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+    startLine: 47
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.RenderObjects
@@ -505,12 +517,12 @@ items:
   type: Method
   source:
     remote:
-      path: GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
       branch: main.dev
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetPropertyList
-    path: ../../Godot Dev/Package/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
-    startLine: 56
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/RenderObjects/NoSerializedProperty.cs
+    startLine: 57
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization.RenderObjects

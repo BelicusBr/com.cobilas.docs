@@ -19,6 +19,9 @@ items:
   - uid: Cobilas.GodotEditor.Utility.Serialization.PropertyItem
     name: PropertyItem
     type: Class
+  - uid: Cobilas.GodotEditor.Utility.Serialization.PropertyRenderCache
+    name: PropertyRenderCache
+    type: Class
   - uid: Cobilas.GodotEditor.Utility.Serialization.SNInfo
     name: SNInfo
     type: Struct
@@ -47,12 +50,25 @@ items:
   - uid: Cobilas.GodotEditor.Utility.Serialization.Hints.RangeHint
     name: RangeHint
     type: Class
+- uid: Cobilas.GodotEditor.Utility.Serialization.Interfaces
+  name: Cobilas.GodotEditor.Utility.Serialization.Interfaces
+  type: Namespace
+  items:
+  - uid: Cobilas.GodotEditor.Utility.Serialization.Interfaces.IObjectRender
+    name: IObjectRender
+    type: Interface
+  - uid: Cobilas.GodotEditor.Utility.Serialization.Interfaces.IPropertyRender
+    name: IPropertyRender
+    type: Interface
 - uid: Cobilas.GodotEditor.Utility.Serialization.Properties
   name: Cobilas.GodotEditor.Utility.Serialization.Properties
   type: Namespace
   items:
   - uid: Cobilas.GodotEditor.Utility.Serialization.Properties.EnumCustom
     name: EnumCustom
+    type: Class
+  - uid: Cobilas.GodotEditor.Utility.Serialization.Properties.NodePathCustom
+    name: NodePathCustom
     type: Class
   - uid: Cobilas.GodotEditor.Utility.Serialization.Properties.PrimitiveTypeCustom
     name: PrimitiveTypeCustom
@@ -73,6 +89,15 @@ items:
   - uid: Cobilas.GodotEditor.Utility.Serialization.RenderObjects.NoSerializedProperty
     name: NoSerializedProperty
     type: Class
+  - uid: Cobilas.GodotEditor.Utility.Serialization.RenderObjects.NodeReneder
+    name: NodeReneder
+    type: Class
+  - uid: Cobilas.GodotEditor.Utility.Serialization.RenderObjects.PropertyRender
+    name: PropertyRender
+    type: Class
+  - uid: Cobilas.GodotEditor.Utility.Serialization.RenderObjects.ResourceRender
+    name: ResourceRender
+    type: Class
   - uid: Cobilas.GodotEditor.Utility.Serialization.RenderObjects.SONull
     name: SONull
     type: Class
@@ -84,6 +109,13 @@ items:
     type: Class
   - uid: Cobilas.GodotEditor.Utility.Serialization.RenderObjects.SerializedProperty
     name: SerializedProperty
+    type: Class
+- uid: Cobilas.GodotEditor.Utility.Tasks
+  name: Cobilas.GodotEditor.Utility.Tasks
+  type: Namespace
+  items:
+  - uid: Cobilas.GodotEditor.Utility.Tasks.GodotUtilityTask
+    name: GodotUtilityTask
     type: Class
 - uid: Cobilas.GodotEngine.Utility
   name: Cobilas.GodotEngine.Utility
@@ -136,6 +168,12 @@ items:
     type: Struct
   - uid: Cobilas.GodotEngine.Utility.NullNode
     name: NullNode
+    type: Class
+  - uid: Cobilas.GodotEngine.Utility.ObjectRef
+    name: ObjectRef
+    type: Class
+  - uid: Cobilas.GodotEngine.Utility.ObjectRef`1
+    name: ObjectRef<T>
     type: Class
   - uid: Cobilas.GodotEngine.Utility.Randomico
     name: Randomico
@@ -312,6 +350,16 @@ items:
   - uid: Cobilas.GodotEngine.Utility.Scene.SceneManager
     name: SceneManager
     type: Class
+- uid: Cobilas.GodotEngine.Utility.Serialization
+  name: Cobilas.GodotEngine.Utility.Serialization
+  type: Namespace
+  items:
+  - uid: Cobilas.GodotEngine.Utility.Serialization.ObjectRefCustom
+    name: ObjectRefCustom
+    type: Class
+  - uid: Cobilas.GodotEngine.Utility.Serialization.Rect2DCustom
+    name: Rect2DCustom
+    type: Class
 - uid: Cobilas.Runtime
   name: Cobilas.Runtime
   type: Namespace
@@ -358,5 +406,12 @@ items:
     type: Class
   - uid: Godot.Vector2_CB_GD_Extensions
     name: Vector2_CB_GD_Extensions
+    type: Class
+- uid: Godot.Runtime
+  name: Godot.Runtime
+  type: Namespace
+  items:
+  - uid: Godot.Runtime.GameRuntime
+    name: GameRuntime
     type: Class
 memberLayout: SamePage

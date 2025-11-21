@@ -1,0 +1,737 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cobilas.GodotEngine.Utility.ObjectRef
+  commentId: T:Cobilas.GodotEngine.Utility.ObjectRef
+  id: ObjectRef
+  parent: Cobilas.GodotEngine.Utility
+  children:
+  - Cobilas.GodotEngine.Utility.ObjectRef.#ctor
+  - Cobilas.GodotEngine.Utility.ObjectRef.#ctor(Godot.NodePath)
+  - Cobilas.GodotEngine.Utility.ObjectRef.node
+  - Cobilas.GodotEngine.Utility.ObjectRef.op_Implicit(Cobilas.GodotEngine.Utility.ObjectRef)~Godot.Node
+  - Cobilas.GodotEngine.Utility.ObjectRef.op_Implicit(Cobilas.GodotEngine.Utility.ObjectRef)~Godot.NodePath
+  - Cobilas.GodotEngine.Utility.ObjectRef.op_Implicit(Cobilas.GodotEngine.Utility.ObjectRef)~System.String
+  - Cobilas.GodotEngine.Utility.ObjectRef.op_Implicit(Godot.NodePath)~Cobilas.GodotEngine.Utility.ObjectRef
+  - Cobilas.GodotEngine.Utility.ObjectRef.op_Implicit(System.String)~Cobilas.GodotEngine.Utility.ObjectRef
+  - Cobilas.GodotEngine.Utility.ObjectRef.path
+  langs:
+  - csharp
+  - vb
+  name: ObjectRef
+  nameWithType: ObjectRef
+  fullName: Cobilas.GodotEngine.Utility.ObjectRef
+  type: Class
+  source:
+    remote:
+      path: src/com.cobilas.godot.utility/GodotEngine.Utility/ObjectRef.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: ObjectRef
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEngine.Utility/ObjectRef.cs
+    startLine: 9
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Represents a reference to a Godot node with automatic path resolution and node caching.
+  remarks: >-
+    This class provides a convenient way to store and resolve node references in Godot,
+
+    with implicit conversions between NodePath, string, and Node types.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class ObjectRef
+    content.vb: >-
+      <Serializable>
+
+      Public Class ObjectRef
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Cobilas.GodotEngine.Utility.ObjectRef`1
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Cobilas.GodotEngine.Utility.ObjectRef.node
+  commentId: F:Cobilas.GodotEngine.Utility.ObjectRef.node
+  id: node
+  parent: Cobilas.GodotEngine.Utility.ObjectRef
+  langs:
+  - csharp
+  - vb
+  name: node
+  nameWithType: ObjectRef.node
+  fullName: Cobilas.GodotEngine.Utility.ObjectRef.node
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.utility/GodotEngine.Utility/ObjectRef.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: node
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEngine.Utility/ObjectRef.cs
+    startLine: 12
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: The cached node instance resolved from the path.
+  example: []
+  syntax:
+    content: protected Node node
+    return:
+      type: Godot.Node
+    content.vb: Protected node As Node
+- uid: Cobilas.GodotEngine.Utility.ObjectRef.path
+  commentId: F:Cobilas.GodotEngine.Utility.ObjectRef.path
+  id: path
+  parent: Cobilas.GodotEngine.Utility.ObjectRef
+  langs:
+  - csharp
+  - vb
+  name: path
+  nameWithType: ObjectRef.path
+  fullName: Cobilas.GodotEngine.Utility.ObjectRef.path
+  type: Field
+  source:
+    remote:
+      path: src/com.cobilas.godot.utility/GodotEngine.Utility/ObjectRef.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: path
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEngine.Utility/ObjectRef.cs
+    startLine: 14
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: The path to the node in the Godot scene tree.
+  example: []
+  syntax:
+    content: protected NodePath path
+    return:
+      type: Godot.NodePath
+    content.vb: Protected path As NodePath
+- uid: Cobilas.GodotEngine.Utility.ObjectRef.#ctor
+  commentId: M:Cobilas.GodotEngine.Utility.ObjectRef.#ctor
+  id: '#ctor'
+  parent: Cobilas.GodotEngine.Utility.ObjectRef
+  langs:
+  - csharp
+  - vb
+  name: ObjectRef()
+  nameWithType: ObjectRef.ObjectRef()
+  fullName: Cobilas.GodotEngine.Utility.ObjectRef.ObjectRef()
+  type: Constructor
+  source:
+    remote:
+      path: src/com.cobilas.godot.utility/GodotEngine.Utility/ObjectRef.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: .ctor
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEngine.Utility/ObjectRef.cs
+    startLine: 16
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Initializes a new instance of the <xref href="Cobilas.GodotEngine.Utility.ObjectRef" data-throw-if-not-resolved="false"></xref> class with empty path and null node.
+  example: []
+  syntax:
+    content: public ObjectRef()
+    content.vb: Public Sub New()
+  overload: Cobilas.GodotEngine.Utility.ObjectRef.#ctor*
+  nameWithType.vb: ObjectRef.New()
+  fullName.vb: Cobilas.GodotEngine.Utility.ObjectRef.New()
+  name.vb: New()
+- uid: Cobilas.GodotEngine.Utility.ObjectRef.#ctor(Godot.NodePath)
+  commentId: M:Cobilas.GodotEngine.Utility.ObjectRef.#ctor(Godot.NodePath)
+  id: '#ctor(Godot.NodePath)'
+  parent: Cobilas.GodotEngine.Utility.ObjectRef
+  langs:
+  - csharp
+  - vb
+  name: ObjectRef(NodePath)
+  nameWithType: ObjectRef.ObjectRef(NodePath)
+  fullName: Cobilas.GodotEngine.Utility.ObjectRef.ObjectRef(Godot.NodePath)
+  type: Constructor
+  source:
+    remote:
+      path: src/com.cobilas.godot.utility/GodotEngine.Utility/ObjectRef.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: .ctor
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEngine.Utility/ObjectRef.cs
+    startLine: 22
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Initializes a new instance of the <xref href="Cobilas.GodotEngine.Utility.ObjectRef" data-throw-if-not-resolved="false"></xref> class with the specified node path.
+  example: []
+  syntax:
+    content: protected ObjectRef(NodePath path)
+    parameters:
+    - id: path
+      type: Godot.NodePath
+      description: The node path to initialize the reference with.
+    content.vb: Protected Sub New(path As NodePath)
+  overload: Cobilas.GodotEngine.Utility.ObjectRef.#ctor*
+  nameWithType.vb: ObjectRef.New(NodePath)
+  fullName.vb: Cobilas.GodotEngine.Utility.ObjectRef.New(Godot.NodePath)
+  name.vb: New(NodePath)
+- uid: Cobilas.GodotEngine.Utility.ObjectRef.op_Implicit(Cobilas.GodotEngine.Utility.ObjectRef)~Godot.NodePath
+  commentId: M:Cobilas.GodotEngine.Utility.ObjectRef.op_Implicit(Cobilas.GodotEngine.Utility.ObjectRef)~Godot.NodePath
+  id: op_Implicit(Cobilas.GodotEngine.Utility.ObjectRef)~Godot.NodePath
+  parent: Cobilas.GodotEngine.Utility.ObjectRef
+  langs:
+  - csharp
+  - vb
+  name: implicit operator NodePath(ObjectRef?)
+  nameWithType: ObjectRef.implicit operator NodePath(ObjectRef?)
+  fullName: Cobilas.GodotEngine.Utility.ObjectRef.implicit operator Godot.NodePath(Cobilas.GodotEngine.Utility.ObjectRef?)
+  type: Operator
+  source:
+    remote:
+      path: src/com.cobilas.godot.utility/GodotEngine.Utility/ObjectRef.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Implicit
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEngine.Utility/ObjectRef.cs
+    startLine: 29
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Implicitly converts an <xref href="Cobilas.GodotEngine.Utility.ObjectRef" data-throw-if-not-resolved="false"></xref> to a <xref href="Godot.NodePath" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static implicit operator NodePath(ObjectRef? obj)
+    parameters:
+    - id: obj
+      type: Cobilas.GodotEngine.Utility.ObjectRef
+      description: The ObjectRef to convert.
+    return:
+      type: Godot.NodePath
+      description: The NodePath stored in the ObjectRef.
+    content.vb: Public Shared Widening Operator CType(obj As ObjectRef) As NodePath
+  overload: Cobilas.GodotEngine.Utility.ObjectRef.op_Implicit*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when obj is null.
+  nameWithType.vb: ObjectRef.CType(ObjectRef)
+  fullName.vb: Cobilas.GodotEngine.Utility.ObjectRef.CType(Cobilas.GodotEngine.Utility.ObjectRef)
+  name.vb: CType(ObjectRef)
+- uid: Cobilas.GodotEngine.Utility.ObjectRef.op_Implicit(Cobilas.GodotEngine.Utility.ObjectRef)~System.String
+  commentId: M:Cobilas.GodotEngine.Utility.ObjectRef.op_Implicit(Cobilas.GodotEngine.Utility.ObjectRef)~System.String
+  id: op_Implicit(Cobilas.GodotEngine.Utility.ObjectRef)~System.String
+  parent: Cobilas.GodotEngine.Utility.ObjectRef
+  langs:
+  - csharp
+  - vb
+  name: implicit operator string(ObjectRef?)
+  nameWithType: ObjectRef.implicit operator string(ObjectRef?)
+  fullName: Cobilas.GodotEngine.Utility.ObjectRef.implicit operator string(Cobilas.GodotEngine.Utility.ObjectRef?)
+  type: Operator
+  source:
+    remote:
+      path: src/com.cobilas.godot.utility/GodotEngine.Utility/ObjectRef.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Implicit
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEngine.Utility/ObjectRef.cs
+    startLine: 35
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Implicitly converts an <xref href="Cobilas.GodotEngine.Utility.ObjectRef" data-throw-if-not-resolved="false"></xref> to a string.
+  example: []
+  syntax:
+    content: public static implicit operator string(ObjectRef? obj)
+    parameters:
+    - id: obj
+      type: Cobilas.GodotEngine.Utility.ObjectRef
+      description: The ObjectRef to convert.
+    return:
+      type: System.String
+      description: The string representation of the NodePath.
+    content.vb: Public Shared Widening Operator CType(obj As ObjectRef) As String
+  overload: Cobilas.GodotEngine.Utility.ObjectRef.op_Implicit*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when obj is null.
+  nameWithType.vb: ObjectRef.CType(ObjectRef)
+  fullName.vb: Cobilas.GodotEngine.Utility.ObjectRef.CType(Cobilas.GodotEngine.Utility.ObjectRef)
+  name.vb: CType(ObjectRef)
+- uid: Cobilas.GodotEngine.Utility.ObjectRef.op_Implicit(Godot.NodePath)~Cobilas.GodotEngine.Utility.ObjectRef
+  commentId: M:Cobilas.GodotEngine.Utility.ObjectRef.op_Implicit(Godot.NodePath)~Cobilas.GodotEngine.Utility.ObjectRef
+  id: op_Implicit(Godot.NodePath)~Cobilas.GodotEngine.Utility.ObjectRef
+  parent: Cobilas.GodotEngine.Utility.ObjectRef
+  langs:
+  - csharp
+  - vb
+  name: implicit operator ObjectRef(NodePath?)
+  nameWithType: ObjectRef.implicit operator ObjectRef(NodePath?)
+  fullName: Cobilas.GodotEngine.Utility.ObjectRef.implicit operator Cobilas.GodotEngine.Utility.ObjectRef(Godot.NodePath?)
+  type: Operator
+  source:
+    remote:
+      path: src/com.cobilas.godot.utility/GodotEngine.Utility/ObjectRef.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Implicit
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEngine.Utility/ObjectRef.cs
+    startLine: 41
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Implicitly converts a <xref href="Godot.NodePath" data-throw-if-not-resolved="false"></xref> to an <xref href="Cobilas.GodotEngine.Utility.ObjectRef" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static implicit operator ObjectRef(NodePath? obj)
+    parameters:
+    - id: obj
+      type: Godot.NodePath
+      description: The NodePath to convert.
+    return:
+      type: Cobilas.GodotEngine.Utility.ObjectRef
+      description: A new ObjectRef instance with the specified NodePath.
+    content.vb: Public Shared Widening Operator CType(obj As NodePath) As ObjectRef
+  overload: Cobilas.GodotEngine.Utility.ObjectRef.op_Implicit*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when obj is null.
+  nameWithType.vb: ObjectRef.CType(NodePath)
+  fullName.vb: Cobilas.GodotEngine.Utility.ObjectRef.CType(Godot.NodePath)
+  name.vb: CType(NodePath)
+- uid: Cobilas.GodotEngine.Utility.ObjectRef.op_Implicit(System.String)~Cobilas.GodotEngine.Utility.ObjectRef
+  commentId: M:Cobilas.GodotEngine.Utility.ObjectRef.op_Implicit(System.String)~Cobilas.GodotEngine.Utility.ObjectRef
+  id: op_Implicit(System.String)~Cobilas.GodotEngine.Utility.ObjectRef
+  parent: Cobilas.GodotEngine.Utility.ObjectRef
+  langs:
+  - csharp
+  - vb
+  name: implicit operator ObjectRef(string?)
+  nameWithType: ObjectRef.implicit operator ObjectRef(string?)
+  fullName: Cobilas.GodotEngine.Utility.ObjectRef.implicit operator Cobilas.GodotEngine.Utility.ObjectRef(string?)
+  type: Operator
+  source:
+    remote:
+      path: src/com.cobilas.godot.utility/GodotEngine.Utility/ObjectRef.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Implicit
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEngine.Utility/ObjectRef.cs
+    startLine: 47
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Implicitly converts a string to an <xref href="Cobilas.GodotEngine.Utility.ObjectRef" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static implicit operator ObjectRef(string? obj)
+    parameters:
+    - id: obj
+      type: System.String
+      description: The string representing a node path to convert.
+    return:
+      type: Cobilas.GodotEngine.Utility.ObjectRef
+      description: A new ObjectRef instance with the specified node path.
+    content.vb: Public Shared Widening Operator CType(obj As String) As ObjectRef
+  overload: Cobilas.GodotEngine.Utility.ObjectRef.op_Implicit*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when obj is null.
+  nameWithType.vb: ObjectRef.CType(String)
+  fullName.vb: Cobilas.GodotEngine.Utility.ObjectRef.CType(String)
+  name.vb: CType(String)
+- uid: Cobilas.GodotEngine.Utility.ObjectRef.op_Implicit(Cobilas.GodotEngine.Utility.ObjectRef)~Godot.Node
+  commentId: M:Cobilas.GodotEngine.Utility.ObjectRef.op_Implicit(Cobilas.GodotEngine.Utility.ObjectRef)~Godot.Node
+  id: op_Implicit(Cobilas.GodotEngine.Utility.ObjectRef)~Godot.Node
+  parent: Cobilas.GodotEngine.Utility.ObjectRef
+  langs:
+  - csharp
+  - vb
+  name: implicit operator Node(ObjectRef?)
+  nameWithType: ObjectRef.implicit operator Node(ObjectRef?)
+  fullName: Cobilas.GodotEngine.Utility.ObjectRef.implicit operator Godot.Node(Cobilas.GodotEngine.Utility.ObjectRef?)
+  type: Operator
+  source:
+    remote:
+      path: src/com.cobilas.godot.utility/GodotEngine.Utility/ObjectRef.cs
+      branch: main.dev
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: op_Implicit
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEngine.Utility/ObjectRef.cs
+    startLine: 57
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEngine.Utility
+  summary: Implicitly converts an <xref href="Cobilas.GodotEngine.Utility.ObjectRef" data-throw-if-not-resolved="false"></xref> to a <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    This operator automatically resolves the node from the stored path and caches it.
+
+    If the node's path has changed, it will re-resolve the node from the stored path.
+  example: []
+  syntax:
+    content: public static implicit operator Node(ObjectRef? obj)
+    parameters:
+    - id: obj
+      type: Cobilas.GodotEngine.Utility.ObjectRef
+      description: The ObjectRef to convert.
+    return:
+      type: Godot.Node
+      description: The resolved Node instance.
+    content.vb: Public Shared Widening Operator CType(obj As ObjectRef) As Node
+  overload: Cobilas.GodotEngine.Utility.ObjectRef.op_Implicit*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when obj is null.
+  nameWithType.vb: ObjectRef.CType(ObjectRef)
+  fullName.vb: Cobilas.GodotEngine.Utility.ObjectRef.CType(Cobilas.GodotEngine.Utility.ObjectRef)
+  name.vb: CType(ObjectRef)
+references:
+- uid: Cobilas.GodotEngine.Utility
+  commentId: N:Cobilas.GodotEngine.Utility
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Utility
+  nameWithType: Cobilas.GodotEngine.Utility
+  fullName: Cobilas.GodotEngine.Utility
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot.Node
+  commentId: T:Godot.Node
+  parent: Godot
+  isExternal: true
+  name: Node
+  nameWithType: Node
+  fullName: Godot.Node
+- uid: Godot
+  commentId: N:Godot
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: Godot.NodePath
+  commentId: T:Godot.NodePath
+  parent: Godot
+  isExternal: true
+  name: NodePath
+  nameWithType: NodePath
+  fullName: Godot.NodePath
+- uid: Cobilas.GodotEngine.Utility.ObjectRef
+  commentId: T:Cobilas.GodotEngine.Utility.ObjectRef
+  parent: Cobilas.GodotEngine.Utility
+  href: Cobilas.GodotEngine.Utility.ObjectRef.html
+  name: ObjectRef
+  nameWithType: ObjectRef
+  fullName: Cobilas.GodotEngine.Utility.ObjectRef
+- uid: Cobilas.GodotEngine.Utility.ObjectRef.#ctor*
+  commentId: Overload:Cobilas.GodotEngine.Utility.ObjectRef.#ctor
+  href: Cobilas.GodotEngine.Utility.ObjectRef.html#Cobilas_GodotEngine_Utility_ObjectRef__ctor
+  name: ObjectRef
+  nameWithType: ObjectRef.ObjectRef
+  fullName: Cobilas.GodotEngine.Utility.ObjectRef.ObjectRef
+  nameWithType.vb: ObjectRef.New
+  fullName.vb: Cobilas.GodotEngine.Utility.ObjectRef.New
+  name.vb: New
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Cobilas.GodotEngine.Utility.ObjectRef.op_Implicit*
+  commentId: Overload:Cobilas.GodotEngine.Utility.ObjectRef.op_Implicit
+  name: implicit operator
+  nameWithType: ObjectRef.implicit operator
+  fullName: Cobilas.GodotEngine.Utility.ObjectRef.implicit operator
+  nameWithType.vb: ObjectRef.CType
+  fullName.vb: Cobilas.GodotEngine.Utility.ObjectRef.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
