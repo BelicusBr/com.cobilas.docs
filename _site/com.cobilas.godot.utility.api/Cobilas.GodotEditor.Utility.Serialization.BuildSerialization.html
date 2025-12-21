@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.godot.utility/new/main.dev/apiSpec/new?filename=Cobilas_GodotEditor_Utility_Serialization_BuildSerialization.md&amp;value=---%0Auid%3A%20Cobilas.GodotEditor.Utility.Serialization.BuildSerialization%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.godot.utility/new/main/apiSpec/new?filename=Cobilas_GodotEditor_Utility_Serialization_BuildSerialization.md&amp;value=---%0Auid%3A%20Cobilas.GodotEditor.Utility.Serialization.BuildSerialization%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Cobilas_GodotEditor_Utility_Serialization_BuildSerialization" data-uid="Cobilas.GodotEditor.Utility.Serialization.BuildSerialization" class="text-break">
-Class BuildSerialization  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs/#L14"><i class="bi bi-code-slash"></i></a>
+Class BuildSerialization  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -157,7 +157,7 @@ Class BuildSerialization  <a class="header-action link-secondary" title="View so
 
   <h3 id="Cobilas_GodotEditor_Utility_Serialization_BuildSerialization_Build_Godot_Object_" data-uid="Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.Build(Godot.Object)">
   Build(Object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The method constructs a serialization list of properties for the node.</p>
@@ -193,11 +193,54 @@ public static SerializedNode? Build(Object obj)</code></pre>
 
 
 
+  <a id="Cobilas_GodotEditor_Utility_Serialization_BuildSerialization_BuildObjectRender_" data-uid="Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.BuildObjectRender*"></a>
+
+  <h3 id="Cobilas_GodotEditor_Utility_Serialization_BuildSerialization_BuildObjectRender_Godot_Object_" data-uid="Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.BuildObjectRender(Godot.Object)">
+  BuildObjectRender(Object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Builds a property manipulation interface for the specified Godot object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ISerializedPropertyManipulation? BuildObjectRender(Object? obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <span class="xref">Object</span></dt>
+    <dd><p>The Godot object to build the render for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.GodotEditor.Utility.Serialization.ISerializedPropertyManipulation.html">ISerializedPropertyManipulation</a></dt>
+    <dd><p>An <a class="xref" href="Cobilas.GodotEditor.Utility.Serialization.ISerializedPropertyManipulation.html">ISerializedPropertyManipulation</a> interface for the object, or null if unsupported.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Cobilas_GodotEditor_Utility_Serialization_BuildSerialization_BuildObjectRender_Godot_Object__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method creates and caches property renderers for efficient property manipulation.
+Supported object types include <span class="xref">Godot.Node</span> and <span class="xref">Godot.Resource</span>.</p>
+</div>
+
+
+
+
   <a id="Cobilas_GodotEditor_Utility_Serialization_BuildSerialization_GetPropertyList_" data-uid="Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.GetPropertyList*"></a>
 
   <h3 id="Cobilas_GodotEditor_Utility_Serialization_BuildSerialization_GetPropertyList_Godot_Object_" data-uid="Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.GetPropertyList(Godot.Object)">
   GetPropertyList(Object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the property list for serialization of the specified Godot object.</p>
@@ -236,7 +279,7 @@ public static SerializedNode? Build(Object obj)</code></pre>
 
   <h3 id="Cobilas_GodotEditor_Utility_Serialization_BuildSerialization_GetValue_Godot_Object_System_String_" data-uid="Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.GetValue(Godot.Object,System.String)">
   GetValue(Object?, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs/#L40"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the value of a property from the specified Godot object.</p>
@@ -278,7 +321,7 @@ public static SerializedNode? Build(Object obj)</code></pre>
 
   <h3 id="Cobilas_GodotEditor_Utility_Serialization_BuildSerialization_IsPropertyCustom_System_Type_" data-uid="Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.IsPropertyCustom(System.Type)">
   IsPropertyCustom(Type)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs/#L167"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if the type has a <a class="xref" href="Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom.html">PropertyCustom</a>.</p>
@@ -317,7 +360,7 @@ public static SerializedNode? Build(Object obj)</code></pre>
 
   <h3 id="Cobilas_GodotEditor_Utility_Serialization_BuildSerialization_IsPropertyCustom_System_Type_Cobilas_GodotEditor_Utility_Serialization_Properties_PropertyCustom__" data-uid="Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.IsPropertyCustom(System.Type,Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom@)">
   IsPropertyCustom(Type, out PropertyCustom?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs/#L156"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if the type has a custom property handler and retrieves it.</p>
@@ -359,7 +402,7 @@ public static SerializedNode? Build(Object obj)</code></pre>
 
   <h3 id="Cobilas_GodotEditor_Utility_Serialization_BuildSerialization_SetValue_Godot_Object_System_String_System_Object_" data-uid="Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.SetValue(Godot.Object,System.String,System.Object)">
   SetValue(Object?, string?, object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the value of a property on the specified Godot object.</p>
@@ -407,7 +450,7 @@ public static SerializedNode? Build(Object obj)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main.dev/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs/#L14" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BelicusBr/com.cobilas.godot.utility/blob/main/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs/#L13" class="edit-link">Edit this page</a>
         </div>
 
 

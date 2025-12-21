@@ -1,0 +1,571 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Collections.Generic.Dictionary_CB_Extension
+  commentId: T:System.Collections.Generic.Dictionary_CB_Extension
+  id: Dictionary_CB_Extension
+  parent: System.Collections.Generic
+  children:
+  - System.Collections.Generic.Dictionary_CB_Extension.Find``2(System.Collections.Generic.Dictionary{``0,``1},System.Predicate{``0})
+  langs:
+  - csharp
+  - vb
+  name: Dictionary_CB_Extension
+  nameWithType: Dictionary_CB_Extension
+  fullName: System.Collections.Generic.Dictionary_CB_Extension
+  type: Class
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/Collections/Generic/Dictionary_CB_Extension.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Dictionary_CB_Extension
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/Collections/Generic/Dictionary_CB_Extension.cs
+    startLine: 2
+  assemblies:
+  - Cobilas.Core
+  namespace: System.Collections.Generic
+  summary: Provides extension methods for <xref href="System.Collections.Generic.Dictionary%602" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static class Dictionary_CB_Extension
+    content.vb: Public Module Dictionary_CB_Extension
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: System.Collections.Generic.Dictionary_CB_Extension.Find``2(System.Collections.Generic.Dictionary{``0,``1},System.Predicate{``0})
+  commentId: M:System.Collections.Generic.Dictionary_CB_Extension.Find``2(System.Collections.Generic.Dictionary{``0,``1},System.Predicate{``0})
+  id: Find``2(System.Collections.Generic.Dictionary{``0,``1},System.Predicate{``0})
+  isExtensionMethod: true
+  parent: System.Collections.Generic.Dictionary_CB_Extension
+  langs:
+  - csharp
+  - vb
+  name: Find<Tkey, Tvalue>(Dictionary<Tkey, Tvalue>?, Predicate<Tkey>?)
+  nameWithType: Dictionary_CB_Extension.Find<Tkey, Tvalue>(Dictionary<Tkey, Tvalue>?, Predicate<Tkey>?)
+  fullName: System.Collections.Generic.Dictionary_CB_Extension.Find<Tkey, Tvalue>(System.Collections.Generic.Dictionary<Tkey, Tvalue>?, System.Predicate<Tkey>?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/Collections/Generic/Dictionary_CB_Extension.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: Find
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/Collections/Generic/Dictionary_CB_Extension.cs
+    startLine: 16
+  assemblies:
+  - Cobilas.Core
+  namespace: System.Collections.Generic
+  summary: Searches for a key-value pair in the dictionary using a predicate for the key.
+  remarks: >-
+    This method iterates through the dictionary and returns the first key-value pair where the key satisfies the predicate.
+
+    If no match is found, returns <code><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/default">default</a>(<xref href="System.Collections.Generic.KeyValuePair%602" data-throw-if-not-resolved="false"></xref>)</code>, which typically has a default key and value.
+  example: []
+  syntax:
+    content: 'public static KeyValuePair<Tkey, Tvalue> Find<Tkey, Tvalue>(this Dictionary<Tkey, Tvalue>? d, Predicate<Tkey>? predicate) where Tkey : notnull'
+    parameters:
+    - id: d
+      type: System.Collections.Generic.Dictionary{{Tkey},{Tvalue}}
+      description: The dictionary to search in.
+    - id: predicate
+      type: System.Predicate{{Tkey}}
+      description: A function to test each key for a condition.
+    typeParameters:
+    - id: Tkey
+      description: The type of keys in the dictionary.
+    - id: Tvalue
+      description: The type of values in the dictionary.
+    return:
+      type: System.Collections.Generic.KeyValuePair{{Tkey},{Tvalue}}
+      description: The first key-value pair whose key matches the predicate, or a <code><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/default">default</a>(<xref href="System.Collections.Generic.KeyValuePair%602" data-throw-if-not-resolved="false"></xref>)</code> if no match is found.
+    content.vb: Public Shared Function Find(Of Tkey, Tvalue)(d As Dictionary(Of Tkey, Tvalue), predicate As Predicate(Of Tkey)) As KeyValuePair(Of Tkey, Tvalue)
+  overload: System.Collections.Generic.Dictionary_CB_Extension.Find*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">d</code> or <code class="paramref">predicate</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  nameWithType.vb: Dictionary_CB_Extension.Find(Of Tkey, Tvalue)(Dictionary(Of Tkey, Tvalue), Predicate(Of Tkey))
+  fullName.vb: System.Collections.Generic.Dictionary_CB_Extension.Find(Of Tkey, Tvalue)(System.Collections.Generic.Dictionary(Of Tkey, Tvalue), System.Predicate(Of Tkey))
+  name.vb: Find(Of Tkey, Tvalue)(Dictionary(Of Tkey, Tvalue), Predicate(Of Tkey))
+references:
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.KeyValuePair`2
+  commentId: T:System.Collections.Generic.KeyValuePair`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  name: KeyValuePair<TKey, TValue>
+  nameWithType: KeyValuePair<TKey, TValue>
+  fullName: System.Collections.Generic.KeyValuePair<TKey, TValue>
+  nameWithType.vb: KeyValuePair(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of TKey, TValue)
+  name.vb: KeyValuePair(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.Collections.Generic.Dictionary_CB_Extension.Find*
+  commentId: Overload:System.Collections.Generic.Dictionary_CB_Extension.Find
+  href: System.Collections.Generic.Dictionary_CB_Extension.html#System_Collections_Generic_Dictionary_CB_Extension_Find__2_System_Collections_Generic_Dictionary___0___1__System_Predicate___0__
+  name: Find
+  nameWithType: Dictionary_CB_Extension.Find
+  fullName: System.Collections.Generic.Dictionary_CB_Extension.Find
+- uid: System.Collections.Generic.Dictionary{{Tkey},{Tvalue}}
+  commentId: T:System.Collections.Generic.Dictionary{``0,``1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<Tkey, Tvalue>
+  nameWithType: Dictionary<Tkey, Tvalue>
+  fullName: System.Collections.Generic.Dictionary<Tkey, Tvalue>
+  nameWithType.vb: Dictionary(Of Tkey, Tvalue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of Tkey, Tvalue)
+  name.vb: Dictionary(Of Tkey, Tvalue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: Tkey
+  - name: ','
+  - name: " "
+  - name: Tvalue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: Tkey
+  - name: ','
+  - name: " "
+  - name: Tvalue
+  - name: )
+- uid: System.Predicate{{Tkey}}
+  commentId: T:System.Predicate{``0}
+  parent: System
+  definition: System.Predicate`1
+  href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  name: Predicate<Tkey>
+  nameWithType: Predicate<Tkey>
+  fullName: System.Predicate<Tkey>
+  nameWithType.vb: Predicate(Of Tkey)
+  fullName.vb: System.Predicate(Of Tkey)
+  name.vb: Predicate(Of Tkey)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  - name: <
+  - name: Tkey
+  - name: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: Tkey
+  - name: )
+- uid: System.Collections.Generic.KeyValuePair{{Tkey},{Tvalue}}
+  commentId: T:System.Collections.Generic.KeyValuePair{``0,``1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.KeyValuePair`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  name: KeyValuePair<Tkey, Tvalue>
+  nameWithType: KeyValuePair<Tkey, Tvalue>
+  fullName: System.Collections.Generic.KeyValuePair<Tkey, Tvalue>
+  nameWithType.vb: KeyValuePair(Of Tkey, Tvalue)
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of Tkey, Tvalue)
+  name.vb: KeyValuePair(Of Tkey, Tvalue)
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - name: Tkey
+  - name: ','
+  - name: " "
+  - name: Tvalue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: Tkey
+  - name: ','
+  - name: " "
+  - name: Tvalue
+  - name: )
+- uid: System.Predicate`1
+  commentId: T:System.Predicate`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  name: Predicate<T>
+  nameWithType: Predicate<T>
+  fullName: System.Predicate<T>
+  nameWithType.vb: Predicate(Of T)
+  fullName.vb: System.Predicate(Of T)
+  name.vb: Predicate(Of T)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

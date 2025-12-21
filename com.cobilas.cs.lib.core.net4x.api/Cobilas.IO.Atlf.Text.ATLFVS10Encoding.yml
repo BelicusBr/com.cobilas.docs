@@ -18,11 +18,11 @@ items:
   type: Class
   source:
     remote:
-      path: Cobilas/IO/Atlf/Text/ATLFVS10Encoding.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Encoding.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ATLFVS10Encoding
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Encoding.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Encoding.cs
     startLine: 4
   assemblies:
   - Cobilas.Core
@@ -65,11 +65,11 @@ items:
   type: Property
   source:
     remote:
-      path: Cobilas/IO/Atlf/Text/ATLFVS10Encoding.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Encoding.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Version
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Encoding.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Encoding.cs
     startLine: 6
   assemblies:
   - Cobilas.Core
@@ -97,16 +97,17 @@ items:
   type: Method
   source:
     remote:
-      path: Cobilas/IO/Atlf/Text/ATLFVS10Encoding.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Encoding.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Writer
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Encoding.cs
-    startLine: 12
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Encoding.cs
+    startLine: 15
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf.Text
   summary: Writes a list of objects.
+  remarks: The first argument must be an array of <xref href="Cobilas.IO.Atlf.ATLFNode" data-throw-if-not-resolved="false"></xref> objects to encode.
   example: []
   syntax:
     content: public override string Writer(params object[] args)
@@ -116,6 +117,7 @@ items:
       description: <p>args[0] = <xref href="Cobilas.IO.Atlf.ATLFNode" data-throw-if-not-resolved="false"></xref>[]</p>
     return:
       type: System.String
+      description: A string containing the ATLF-encoded representation of the nodes.
     content.vb: Public Overrides Function Writer(ParamArray args As Object()) As String
   overridden: Cobilas.IO.Atlf.Text.ATLFEncoding.Writer(System.Object[])
   overload: Cobilas.IO.Atlf.Text.ATLFVS10Encoding.Writer*
@@ -135,16 +137,17 @@ items:
   type: Method
   source:
     remote:
-      path: Cobilas/IO/Atlf/Text/ATLFVS10Encoding.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Encoding.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Writer4Byte
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Encoding.cs
-    startLine: 20
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Encoding.cs
+    startLine: 26
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf.Text
   summary: Writes a list of objects.
+  remarks: If the encoding argument is null, an empty byte array is returned.
   example: []
   syntax:
     content: public override byte[] Writer4Byte(params object[] args)
@@ -152,11 +155,12 @@ items:
     - id: args
       type: System.Object[]
       description: >-
-        <p>args[0] = <xref href="Cobilas.IO.Atlf.ATLFNode" data-throw-if-not-resolved="false"></xref>[]</p>
+        args[0] = <xref href="Cobilas.IO.Atlf.ATLFNode" data-throw-if-not-resolved="false"></xref>[]<br />
 
-        <p>args[1] = <xref href="System.Text.Encoding" data-throw-if-not-resolved="false"></xref></p>
+        args[1] = <xref href="System.Text.Encoding" data-throw-if-not-resolved="false"></xref>
     return:
       type: System.Byte[]
+      description: A byte array containing the encoded ATLF data in the specified encoding.
     content.vb: Public Overrides Function Writer4Byte(ParamArray args As Object()) As Byte()
   overridden: Cobilas.IO.Atlf.Text.ATLFEncoding.Writer4Byte(System.Object[])
   overload: Cobilas.IO.Atlf.Text.ATLFVS10Encoding.Writer4Byte*
@@ -176,22 +180,34 @@ items:
   type: Method
   source:
     remote:
-      path: Cobilas/IO/Atlf/Text/ATLFVS10Encoding.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Encoding.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Writer
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Encoding.cs
-    startLine: 27
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Encoding.cs
+    startLine: 40
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf.Text
+  summary: Converts an array of <xref href="Cobilas.IO.Atlf.ATLFNode" data-throw-if-not-resolved="false"></xref> objects to an ATLF-formatted string.
+  remarks: >-
+    This method processes different node types:<br />
+
+    - <xref href="Cobilas.IO.Atlf.ATLFNodeType.Tag" data-throw-if-not-resolved="false"></xref>: Encoded as "#! {name}:/*{value}*/" with "*/" escaped as "\*/"<br />
+
+    - <xref href="Cobilas.IO.Atlf.ATLFNodeType.Spacing" data-throw-if-not-resolved="false"></xref>: Outputs the value directly without modification<br />
+
+    - <xref href="Cobilas.IO.Atlf.ATLFNodeType.Comment" data-throw-if-not-resolved="false"></xref>: Encoded as "#&gt; {value} &lt;#" with "&lt;#" escaped as "\&lt;#"
+  example: []
   syntax:
     content: protected virtual string Writer(ATLFNode[] nodes)
     parameters:
     - id: nodes
       type: Cobilas.IO.Atlf.ATLFNode[]
+      description: The array of nodes to encode.
     return:
       type: System.String
+      description: An ATLF-formatted string representing the nodes.
     content.vb: Protected Overridable Function Writer(nodes As ATLFNode()) As String
   overload: Cobilas.IO.Atlf.Text.ATLFVS10Encoding.Writer*
   nameWithType.vb: ATLFVS10Encoding.Writer(ATLFNode())
@@ -1360,6 +1376,24 @@ references:
     name: Text
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.text
+- uid: Cobilas.IO.Atlf.ATLFNodeType.Tag
+  commentId: F:Cobilas.IO.Atlf.ATLFNodeType.Tag
+  href: Cobilas.IO.Atlf.ATLFNodeType.html#Cobilas_IO_Atlf_ATLFNodeType_Tag
+  name: Tag
+  nameWithType: ATLFNodeType.Tag
+  fullName: Cobilas.IO.Atlf.ATLFNodeType.Tag
+- uid: Cobilas.IO.Atlf.ATLFNodeType.Spacing
+  commentId: F:Cobilas.IO.Atlf.ATLFNodeType.Spacing
+  href: Cobilas.IO.Atlf.ATLFNodeType.html#Cobilas_IO_Atlf_ATLFNodeType_Spacing
+  name: Spacing
+  nameWithType: ATLFNodeType.Spacing
+  fullName: Cobilas.IO.Atlf.ATLFNodeType.Spacing
+- uid: Cobilas.IO.Atlf.ATLFNodeType.Comment
+  commentId: F:Cobilas.IO.Atlf.ATLFNodeType.Comment
+  href: Cobilas.IO.Atlf.ATLFNodeType.html#Cobilas_IO_Atlf_ATLFNodeType_Comment
+  name: Comment
+  nameWithType: ATLFNodeType.Comment
+  fullName: Cobilas.IO.Atlf.ATLFNodeType.Comment
 - uid: Cobilas.IO.Atlf.ATLFNode[]
   isExternal: true
   href: Cobilas.IO.Atlf.ATLFNode.html

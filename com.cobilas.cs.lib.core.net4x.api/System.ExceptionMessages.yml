@@ -1,0 +1,2369 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.ExceptionMessages
+  commentId: T:System.ExceptionMessages
+  id: ExceptionMessages
+  parent: System
+  children:
+  - System.ExceptionMessages.ThrowIfEqual``1(``0,``0,System.String)
+  - System.ExceptionMessages.ThrowIfGreaterThanOrEqual``1(``0,``0,System.String)
+  - System.ExceptionMessages.ThrowIfGreaterThan``1(``0,``0,System.String)
+  - System.ExceptionMessages.ThrowIfLessThanOrEqual``1(``0,``0,System.String)
+  - System.ExceptionMessages.ThrowIfLessThan``1(``0,``0,System.String)
+  - System.ExceptionMessages.ThrowIfNegative(System.Decimal,System.String)
+  - System.ExceptionMessages.ThrowIfNegative(System.Double,System.String)
+  - System.ExceptionMessages.ThrowIfNegative(System.Int16,System.String)
+  - System.ExceptionMessages.ThrowIfNegative(System.Int32,System.String)
+  - System.ExceptionMessages.ThrowIfNegative(System.Int64,System.String)
+  - System.ExceptionMessages.ThrowIfNegative(System.SByte,System.String)
+  - System.ExceptionMessages.ThrowIfNegative(System.Single,System.String)
+  - System.ExceptionMessages.ThrowIfNegativeOrZero(System.Byte,System.String)
+  - System.ExceptionMessages.ThrowIfNegativeOrZero(System.Decimal,System.String)
+  - System.ExceptionMessages.ThrowIfNegativeOrZero(System.Double,System.String)
+  - System.ExceptionMessages.ThrowIfNegativeOrZero(System.Int16,System.String)
+  - System.ExceptionMessages.ThrowIfNegativeOrZero(System.Int32,System.String)
+  - System.ExceptionMessages.ThrowIfNegativeOrZero(System.Int64,System.String)
+  - System.ExceptionMessages.ThrowIfNegativeOrZero(System.SByte,System.String)
+  - System.ExceptionMessages.ThrowIfNegativeOrZero(System.Single,System.String)
+  - System.ExceptionMessages.ThrowIfNegativeOrZero(System.UInt16,System.String)
+  - System.ExceptionMessages.ThrowIfNegativeOrZero(System.UInt32,System.String)
+  - System.ExceptionMessages.ThrowIfNegativeOrZero(System.UInt64,System.String)
+  - System.ExceptionMessages.ThrowIfNotEqual``1(``0,``0,System.String)
+  - System.ExceptionMessages.ThrowIfNull(System.IntPtr,System.String)
+  - System.ExceptionMessages.ThrowIfNull(System.Object,System.String)
+  - System.ExceptionMessages.ThrowIfNullOrEmpty(System.String,System.String)
+  - System.ExceptionMessages.ThrowIfNullOrWhiteSpace(System.String,System.String)
+  - System.ExceptionMessages.ThrowIfZero(System.Byte,System.String)
+  - System.ExceptionMessages.ThrowIfZero(System.Decimal,System.String)
+  - System.ExceptionMessages.ThrowIfZero(System.Double,System.String)
+  - System.ExceptionMessages.ThrowIfZero(System.Int16,System.String)
+  - System.ExceptionMessages.ThrowIfZero(System.Int32,System.String)
+  - System.ExceptionMessages.ThrowIfZero(System.Int64,System.String)
+  - System.ExceptionMessages.ThrowIfZero(System.SByte,System.String)
+  - System.ExceptionMessages.ThrowIfZero(System.Single,System.String)
+  - System.ExceptionMessages.ThrowIfZero(System.UInt16,System.String)
+  - System.ExceptionMessages.ThrowIfZero(System.UInt32,System.String)
+  - System.ExceptionMessages.ThrowIfZero(System.UInt64,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ExceptionMessages
+  nameWithType: ExceptionMessages
+  fullName: System.ExceptionMessages
+  type: Class
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ExceptionMessages
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 12
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Provides utility methods for throwing standard exceptions with consistent messages.
+  remarks: >-
+    This static class contains methods that replicate the behavior of exception-throwing methods introduced in newer .NET versions,
+
+    providing backward compatibility for older frameworks. Each method conditionally uses the framework's native method when available.
+  example: []
+  syntax:
+    content: public static class ExceptionMessages
+    content.vb: Public Module ExceptionMessages
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: System.ExceptionMessages.ThrowIfNull(System.Object,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfNull(System.Object,System.String)
+  id: ThrowIfNull(System.Object,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfNull(object?, string?)
+  nameWithType: ExceptionMessages.ThrowIfNull(object?, string?)
+  fullName: System.ExceptionMessages.ThrowIfNull(object?, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfNull
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 22
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentNullException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">argument</code> is null.
+  remarks: On .NET 7.0 and above, this method uses the framework's built-in '<code>ArgumentNullException.ThrowIfNull(object?, string?)</code>' method.
+  example: []
+  syntax:
+    content: public static void ThrowIfNull(object? argument, string? paramName = null)
+    parameters:
+    - id: argument
+      type: System.Object
+      description: The reference type argument to validate as non-null.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">argument</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfNull(argument As Object, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfNull*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">argument</code> is null.
+  nameWithType.vb: ExceptionMessages.ThrowIfNull(Object, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfNull(Object, String)
+  name.vb: ThrowIfNull(Object, String)
+- uid: System.ExceptionMessages.ThrowIfNull(System.IntPtr,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfNull(System.IntPtr,System.String)
+  id: ThrowIfNull(System.IntPtr,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfNull(nint, string?)
+  nameWithType: ExceptionMessages.ThrowIfNull(nint, string?)
+  fullName: System.ExceptionMessages.ThrowIfNull(nint, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfNull
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 40
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentNullException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">argument</code> is null (IntPtr.Zero).
+  remarks: Validates that an <xref href="System.IntPtr" data-throw-if-not-resolved="false"></xref> is not zero, which represents a null pointer.
+  example: []
+  syntax:
+    content: public static void ThrowIfNull(nint argument, string? paramName = null)
+    parameters:
+    - id: argument
+      type: System.IntPtr
+      description: The pointer argument to validate as non-null.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">argument</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfNull(argument As IntPtr, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfNull*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">argument</code> is <xref href="System.IntPtr.Zero" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: ExceptionMessages.ThrowIfNull(IntPtr, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfNull(System.IntPtr, String)
+  name.vb: ThrowIfNull(IntPtr, String)
+- uid: System.ExceptionMessages.ThrowIfNullOrEmpty(System.String,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfNullOrEmpty(System.String,System.String)
+  id: ThrowIfNullOrEmpty(System.String,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfNullOrEmpty(string?, string?)
+  nameWithType: ExceptionMessages.ThrowIfNullOrEmpty(string?, string?)
+  fullName: System.ExceptionMessages.ThrowIfNullOrEmpty(string?, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfNullOrEmpty
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 58
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an exception if <code class="paramref">argument</code> is null or empty.
+  remarks: This method checks for both null and empty strings. On .NET 7.0 and above, uses the framework's built-in method.
+  example: []
+  syntax:
+    content: public static void ThrowIfNullOrEmpty(string? argument, string? paramName = null)
+    parameters:
+    - id: argument
+      type: System.String
+      description: The string argument to validate as non-null and non-empty.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">argument</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfNullOrEmpty(argument As String, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfNullOrEmpty*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">argument</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">argument</code> is empty.
+  nameWithType.vb: ExceptionMessages.ThrowIfNullOrEmpty(String, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfNullOrEmpty(String, String)
+  name.vb: ThrowIfNullOrEmpty(String, String)
+- uid: System.ExceptionMessages.ThrowIfNullOrWhiteSpace(System.String,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfNullOrWhiteSpace(System.String,System.String)
+  id: ThrowIfNullOrWhiteSpace(System.String,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfNullOrWhiteSpace(string?, string?)
+  nameWithType: ExceptionMessages.ThrowIfNullOrWhiteSpace(string?, string?)
+  fullName: System.ExceptionMessages.ThrowIfNullOrWhiteSpace(string?, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfNullOrWhiteSpace
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 78
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an exception if <code class="paramref">argument</code> is null, empty, or consists only of white-space characters.
+  remarks: This method performs a more stringent validation than <xref href="System.ExceptionMessages.ThrowIfNullOrEmpty(System.String%2cSystem.String)" data-throw-if-not-resolved="false"></xref> by also checking for whitespace-only strings.
+  example: []
+  syntax:
+    content: public static void ThrowIfNullOrWhiteSpace(string? argument, string? paramName = null)
+    parameters:
+    - id: argument
+      type: System.String
+      description: The string argument to validate.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">argument</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfNullOrWhiteSpace(argument As String, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfNullOrWhiteSpace*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">argument</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">argument</code> is empty or consists only of white-space characters.
+  nameWithType.vb: ExceptionMessages.ThrowIfNullOrWhiteSpace(String, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfNullOrWhiteSpace(String, String)
+  name.vb: ThrowIfNullOrWhiteSpace(String, String)
+- uid: System.ExceptionMessages.ThrowIfZero(System.Int32,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfZero(System.Int32,System.String)
+  id: ThrowIfZero(System.Int32,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfZero(int, string?)
+  nameWithType: ExceptionMessages.ThrowIfZero(int, string?)
+  fullName: System.ExceptionMessages.ThrowIfZero(int, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfZero
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 95
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is zero.
+  example: []
+  syntax:
+    content: public static void ThrowIfZero(int value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.Int32
+      description: The argument to validate as non-zero.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfZero(value As Integer, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfZero*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is zero.
+  nameWithType.vb: ExceptionMessages.ThrowIfZero(Integer, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfZero(Integer, String)
+  name.vb: ThrowIfZero(Integer, String)
+- uid: System.ExceptionMessages.ThrowIfZero(System.UInt32,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfZero(System.UInt32,System.String)
+  id: ThrowIfZero(System.UInt32,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfZero(uint, string?)
+  nameWithType: ExceptionMessages.ThrowIfZero(uint, string?)
+  fullName: System.ExceptionMessages.ThrowIfZero(uint, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfZero
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 99
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is zero.
+  example: []
+  syntax:
+    content: public static void ThrowIfZero(uint value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.UInt32
+      description: The argument to validate as non-zero.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfZero(value As UInteger, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfZero*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is zero.
+  nameWithType.vb: ExceptionMessages.ThrowIfZero(UInteger, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfZero(UInteger, String)
+  name.vb: ThrowIfZero(UInteger, String)
+- uid: System.ExceptionMessages.ThrowIfZero(System.Byte,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfZero(System.Byte,System.String)
+  id: ThrowIfZero(System.Byte,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfZero(byte, string?)
+  nameWithType: ExceptionMessages.ThrowIfZero(byte, string?)
+  fullName: System.ExceptionMessages.ThrowIfZero(byte, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfZero
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 103
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is zero.
+  example: []
+  syntax:
+    content: public static void ThrowIfZero(byte value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.Byte
+      description: The argument to validate as non-zero.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfZero(value As Byte, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfZero*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is zero.
+  nameWithType.vb: ExceptionMessages.ThrowIfZero(Byte, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfZero(Byte, String)
+  name.vb: ThrowIfZero(Byte, String)
+- uid: System.ExceptionMessages.ThrowIfZero(System.SByte,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfZero(System.SByte,System.String)
+  id: ThrowIfZero(System.SByte,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfZero(sbyte, string?)
+  nameWithType: ExceptionMessages.ThrowIfZero(sbyte, string?)
+  fullName: System.ExceptionMessages.ThrowIfZero(sbyte, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfZero
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 107
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is zero.
+  example: []
+  syntax:
+    content: public static void ThrowIfZero(sbyte value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.SByte
+      description: The argument to validate as non-zero.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfZero(value As SByte, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfZero*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is zero.
+  nameWithType.vb: ExceptionMessages.ThrowIfZero(SByte, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfZero(SByte, String)
+  name.vb: ThrowIfZero(SByte, String)
+- uid: System.ExceptionMessages.ThrowIfZero(System.Int16,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfZero(System.Int16,System.String)
+  id: ThrowIfZero(System.Int16,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfZero(short, string?)
+  nameWithType: ExceptionMessages.ThrowIfZero(short, string?)
+  fullName: System.ExceptionMessages.ThrowIfZero(short, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfZero
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 111
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is zero.
+  example: []
+  syntax:
+    content: public static void ThrowIfZero(short value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.Int16
+      description: The argument to validate as non-zero.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfZero(value As Short, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfZero*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is zero.
+  nameWithType.vb: ExceptionMessages.ThrowIfZero(Short, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfZero(Short, String)
+  name.vb: ThrowIfZero(Short, String)
+- uid: System.ExceptionMessages.ThrowIfZero(System.UInt16,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfZero(System.UInt16,System.String)
+  id: ThrowIfZero(System.UInt16,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfZero(ushort, string?)
+  nameWithType: ExceptionMessages.ThrowIfZero(ushort, string?)
+  fullName: System.ExceptionMessages.ThrowIfZero(ushort, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfZero
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 115
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is zero.
+  example: []
+  syntax:
+    content: public static void ThrowIfZero(ushort value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.UInt16
+      description: The argument to validate as non-zero.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfZero(value As UShort, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfZero*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is zero.
+  nameWithType.vb: ExceptionMessages.ThrowIfZero(UShort, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfZero(UShort, String)
+  name.vb: ThrowIfZero(UShort, String)
+- uid: System.ExceptionMessages.ThrowIfZero(System.Int64,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfZero(System.Int64,System.String)
+  id: ThrowIfZero(System.Int64,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfZero(long, string?)
+  nameWithType: ExceptionMessages.ThrowIfZero(long, string?)
+  fullName: System.ExceptionMessages.ThrowIfZero(long, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfZero
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 119
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is zero.
+  example: []
+  syntax:
+    content: public static void ThrowIfZero(long value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.Int64
+      description: The argument to validate as non-zero.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfZero(value As Long, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfZero*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is zero.
+  nameWithType.vb: ExceptionMessages.ThrowIfZero(Long, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfZero(Long, String)
+  name.vb: ThrowIfZero(Long, String)
+- uid: System.ExceptionMessages.ThrowIfZero(System.UInt64,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfZero(System.UInt64,System.String)
+  id: ThrowIfZero(System.UInt64,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfZero(ulong, string?)
+  nameWithType: ExceptionMessages.ThrowIfZero(ulong, string?)
+  fullName: System.ExceptionMessages.ThrowIfZero(ulong, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfZero
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 123
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is zero.
+  example: []
+  syntax:
+    content: public static void ThrowIfZero(ulong value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.UInt64
+      description: The argument to validate as non-zero.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfZero(value As ULong, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfZero*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is zero.
+  nameWithType.vb: ExceptionMessages.ThrowIfZero(ULong, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfZero(ULong, String)
+  name.vb: ThrowIfZero(ULong, String)
+- uid: System.ExceptionMessages.ThrowIfZero(System.Single,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfZero(System.Single,System.String)
+  id: ThrowIfZero(System.Single,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfZero(float, string?)
+  nameWithType: ExceptionMessages.ThrowIfZero(float, string?)
+  fullName: System.ExceptionMessages.ThrowIfZero(float, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfZero
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 127
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is zero.
+  example: []
+  syntax:
+    content: public static void ThrowIfZero(float value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.Single
+      description: The argument to validate as non-zero.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfZero(value As Single, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfZero*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is zero.
+  nameWithType.vb: ExceptionMessages.ThrowIfZero(Single, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfZero(Single, String)
+  name.vb: ThrowIfZero(Single, String)
+- uid: System.ExceptionMessages.ThrowIfZero(System.Double,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfZero(System.Double,System.String)
+  id: ThrowIfZero(System.Double,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfZero(double, string?)
+  nameWithType: ExceptionMessages.ThrowIfZero(double, string?)
+  fullName: System.ExceptionMessages.ThrowIfZero(double, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfZero
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 131
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is zero.
+  example: []
+  syntax:
+    content: public static void ThrowIfZero(double value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.Double
+      description: The argument to validate as non-zero.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfZero(value As Double, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfZero*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is zero.
+  nameWithType.vb: ExceptionMessages.ThrowIfZero(Double, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfZero(Double, String)
+  name.vb: ThrowIfZero(Double, String)
+- uid: System.ExceptionMessages.ThrowIfZero(System.Decimal,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfZero(System.Decimal,System.String)
+  id: ThrowIfZero(System.Decimal,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfZero(decimal, string?)
+  nameWithType: ExceptionMessages.ThrowIfZero(decimal, string?)
+  fullName: System.ExceptionMessages.ThrowIfZero(decimal, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfZero
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 135
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is zero.
+  example: []
+  syntax:
+    content: public static void ThrowIfZero(decimal value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.Decimal
+      description: The argument to validate as non-zero.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfZero(value As Decimal, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfZero*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is zero.
+  nameWithType.vb: ExceptionMessages.ThrowIfZero(Decimal, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfZero(Decimal, String)
+  name.vb: ThrowIfZero(Decimal, String)
+- uid: System.ExceptionMessages.ThrowIfNegative(System.SByte,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfNegative(System.SByte,System.String)
+  id: ThrowIfNegative(System.SByte,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfNegative(sbyte, string?)
+  nameWithType: ExceptionMessages.ThrowIfNegative(sbyte, string?)
+  fullName: System.ExceptionMessages.ThrowIfNegative(sbyte, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfNegative
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 165
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is negative.
+  example: []
+  syntax:
+    content: public static void ThrowIfNegative(sbyte value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.SByte
+      description: The argument to validate as non-negative.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfNegative(value As SByte, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfNegative*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is negative.
+  nameWithType.vb: ExceptionMessages.ThrowIfNegative(SByte, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfNegative(SByte, String)
+  name.vb: ThrowIfNegative(SByte, String)
+- uid: System.ExceptionMessages.ThrowIfNegative(System.Int16,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfNegative(System.Int16,System.String)
+  id: ThrowIfNegative(System.Int16,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfNegative(short, string?)
+  nameWithType: ExceptionMessages.ThrowIfNegative(short, string?)
+  fullName: System.ExceptionMessages.ThrowIfNegative(short, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfNegative
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 169
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is negative.
+  example: []
+  syntax:
+    content: public static void ThrowIfNegative(short value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.Int16
+      description: The argument to validate as non-negative.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfNegative(value As Short, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfNegative*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is negative.
+  nameWithType.vb: ExceptionMessages.ThrowIfNegative(Short, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfNegative(Short, String)
+  name.vb: ThrowIfNegative(Short, String)
+- uid: System.ExceptionMessages.ThrowIfNegative(System.Int32,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfNegative(System.Int32,System.String)
+  id: ThrowIfNegative(System.Int32,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfNegative(int, string?)
+  nameWithType: ExceptionMessages.ThrowIfNegative(int, string?)
+  fullName: System.ExceptionMessages.ThrowIfNegative(int, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfNegative
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 173
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is negative.
+  example: []
+  syntax:
+    content: public static void ThrowIfNegative(int value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.Int32
+      description: The argument to validate as non-negative.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfNegative(value As Integer, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfNegative*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is negative.
+  nameWithType.vb: ExceptionMessages.ThrowIfNegative(Integer, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfNegative(Integer, String)
+  name.vb: ThrowIfNegative(Integer, String)
+- uid: System.ExceptionMessages.ThrowIfNegative(System.Int64,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfNegative(System.Int64,System.String)
+  id: ThrowIfNegative(System.Int64,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfNegative(long, string?)
+  nameWithType: ExceptionMessages.ThrowIfNegative(long, string?)
+  fullName: System.ExceptionMessages.ThrowIfNegative(long, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfNegative
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 177
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is negative.
+  example: []
+  syntax:
+    content: public static void ThrowIfNegative(long value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.Int64
+      description: The argument to validate as non-negative.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfNegative(value As Long, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfNegative*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is negative.
+  nameWithType.vb: ExceptionMessages.ThrowIfNegative(Long, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfNegative(Long, String)
+  name.vb: ThrowIfNegative(Long, String)
+- uid: System.ExceptionMessages.ThrowIfNegative(System.Single,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfNegative(System.Single,System.String)
+  id: ThrowIfNegative(System.Single,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfNegative(float, string?)
+  nameWithType: ExceptionMessages.ThrowIfNegative(float, string?)
+  fullName: System.ExceptionMessages.ThrowIfNegative(float, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfNegative
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 181
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is negative.
+  example: []
+  syntax:
+    content: public static void ThrowIfNegative(float value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.Single
+      description: The argument to validate as non-negative.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfNegative(value As Single, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfNegative*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is negative.
+  nameWithType.vb: ExceptionMessages.ThrowIfNegative(Single, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfNegative(Single, String)
+  name.vb: ThrowIfNegative(Single, String)
+- uid: System.ExceptionMessages.ThrowIfNegative(System.Double,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfNegative(System.Double,System.String)
+  id: ThrowIfNegative(System.Double,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfNegative(double, string?)
+  nameWithType: ExceptionMessages.ThrowIfNegative(double, string?)
+  fullName: System.ExceptionMessages.ThrowIfNegative(double, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfNegative
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 185
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is negative.
+  example: []
+  syntax:
+    content: public static void ThrowIfNegative(double value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.Double
+      description: The argument to validate as non-negative.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfNegative(value As Double, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfNegative*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is negative.
+  nameWithType.vb: ExceptionMessages.ThrowIfNegative(Double, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfNegative(Double, String)
+  name.vb: ThrowIfNegative(Double, String)
+- uid: System.ExceptionMessages.ThrowIfNegative(System.Decimal,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfNegative(System.Decimal,System.String)
+  id: ThrowIfNegative(System.Decimal,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfNegative(decimal, string?)
+  nameWithType: ExceptionMessages.ThrowIfNegative(decimal, string?)
+  fullName: System.ExceptionMessages.ThrowIfNegative(decimal, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfNegative
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 189
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is negative.
+  example: []
+  syntax:
+    content: public static void ThrowIfNegative(decimal value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.Decimal
+      description: The argument to validate as non-negative.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfNegative(value As Decimal, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfNegative*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is negative.
+  nameWithType.vb: ExceptionMessages.ThrowIfNegative(Decimal, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfNegative(Decimal, String)
+  name.vb: ThrowIfNegative(Decimal, String)
+- uid: System.ExceptionMessages.ThrowIfNegativeOrZero(System.Int32,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfNegativeOrZero(System.Int32,System.String)
+  id: ThrowIfNegativeOrZero(System.Int32,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfNegativeOrZero(int, string?)
+  nameWithType: ExceptionMessages.ThrowIfNegativeOrZero(int, string?)
+  fullName: System.ExceptionMessages.ThrowIfNegativeOrZero(int, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfNegativeOrZero
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 218
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is negative or zero.
+  example: []
+  syntax:
+    content: public static void ThrowIfNegativeOrZero(int value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.Int32
+      description: The argument to validate as non-zero or non-negative.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfNegativeOrZero(value As Integer, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfNegativeOrZero*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is negative or zero.
+  nameWithType.vb: ExceptionMessages.ThrowIfNegativeOrZero(Integer, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfNegativeOrZero(Integer, String)
+  name.vb: ThrowIfNegativeOrZero(Integer, String)
+- uid: System.ExceptionMessages.ThrowIfNegativeOrZero(System.UInt32,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfNegativeOrZero(System.UInt32,System.String)
+  id: ThrowIfNegativeOrZero(System.UInt32,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfNegativeOrZero(uint, string?)
+  nameWithType: ExceptionMessages.ThrowIfNegativeOrZero(uint, string?)
+  fullName: System.ExceptionMessages.ThrowIfNegativeOrZero(uint, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfNegativeOrZero
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 222
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is negative or zero.
+  example: []
+  syntax:
+    content: public static void ThrowIfNegativeOrZero(uint value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.UInt32
+      description: The argument to validate as non-zero or non-negative.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfNegativeOrZero(value As UInteger, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfNegativeOrZero*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is negative or zero.
+  nameWithType.vb: ExceptionMessages.ThrowIfNegativeOrZero(UInteger, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfNegativeOrZero(UInteger, String)
+  name.vb: ThrowIfNegativeOrZero(UInteger, String)
+- uid: System.ExceptionMessages.ThrowIfNegativeOrZero(System.Byte,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfNegativeOrZero(System.Byte,System.String)
+  id: ThrowIfNegativeOrZero(System.Byte,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfNegativeOrZero(byte, string?)
+  nameWithType: ExceptionMessages.ThrowIfNegativeOrZero(byte, string?)
+  fullName: System.ExceptionMessages.ThrowIfNegativeOrZero(byte, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfNegativeOrZero
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 226
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is negative or zero.
+  example: []
+  syntax:
+    content: public static void ThrowIfNegativeOrZero(byte value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.Byte
+      description: The argument to validate as non-zero or non-negative.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfNegativeOrZero(value As Byte, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfNegativeOrZero*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is negative or zero.
+  nameWithType.vb: ExceptionMessages.ThrowIfNegativeOrZero(Byte, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfNegativeOrZero(Byte, String)
+  name.vb: ThrowIfNegativeOrZero(Byte, String)
+- uid: System.ExceptionMessages.ThrowIfNegativeOrZero(System.SByte,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfNegativeOrZero(System.SByte,System.String)
+  id: ThrowIfNegativeOrZero(System.SByte,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfNegativeOrZero(sbyte, string?)
+  nameWithType: ExceptionMessages.ThrowIfNegativeOrZero(sbyte, string?)
+  fullName: System.ExceptionMessages.ThrowIfNegativeOrZero(sbyte, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfNegativeOrZero
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 230
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is negative or zero.
+  example: []
+  syntax:
+    content: public static void ThrowIfNegativeOrZero(sbyte value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.SByte
+      description: The argument to validate as non-zero or non-negative.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfNegativeOrZero(value As SByte, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfNegativeOrZero*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is negative or zero.
+  nameWithType.vb: ExceptionMessages.ThrowIfNegativeOrZero(SByte, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfNegativeOrZero(SByte, String)
+  name.vb: ThrowIfNegativeOrZero(SByte, String)
+- uid: System.ExceptionMessages.ThrowIfNegativeOrZero(System.Int16,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfNegativeOrZero(System.Int16,System.String)
+  id: ThrowIfNegativeOrZero(System.Int16,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfNegativeOrZero(short, string?)
+  nameWithType: ExceptionMessages.ThrowIfNegativeOrZero(short, string?)
+  fullName: System.ExceptionMessages.ThrowIfNegativeOrZero(short, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfNegativeOrZero
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 234
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is negative or zero.
+  example: []
+  syntax:
+    content: public static void ThrowIfNegativeOrZero(short value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.Int16
+      description: The argument to validate as non-zero or non-negative.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfNegativeOrZero(value As Short, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfNegativeOrZero*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is negative or zero.
+  nameWithType.vb: ExceptionMessages.ThrowIfNegativeOrZero(Short, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfNegativeOrZero(Short, String)
+  name.vb: ThrowIfNegativeOrZero(Short, String)
+- uid: System.ExceptionMessages.ThrowIfNegativeOrZero(System.UInt16,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfNegativeOrZero(System.UInt16,System.String)
+  id: ThrowIfNegativeOrZero(System.UInt16,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfNegativeOrZero(ushort, string?)
+  nameWithType: ExceptionMessages.ThrowIfNegativeOrZero(ushort, string?)
+  fullName: System.ExceptionMessages.ThrowIfNegativeOrZero(ushort, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfNegativeOrZero
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 238
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is negative or zero.
+  example: []
+  syntax:
+    content: public static void ThrowIfNegativeOrZero(ushort value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.UInt16
+      description: The argument to validate as non-zero or non-negative.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfNegativeOrZero(value As UShort, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfNegativeOrZero*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is negative or zero.
+  nameWithType.vb: ExceptionMessages.ThrowIfNegativeOrZero(UShort, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfNegativeOrZero(UShort, String)
+  name.vb: ThrowIfNegativeOrZero(UShort, String)
+- uid: System.ExceptionMessages.ThrowIfNegativeOrZero(System.Int64,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfNegativeOrZero(System.Int64,System.String)
+  id: ThrowIfNegativeOrZero(System.Int64,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfNegativeOrZero(long, string?)
+  nameWithType: ExceptionMessages.ThrowIfNegativeOrZero(long, string?)
+  fullName: System.ExceptionMessages.ThrowIfNegativeOrZero(long, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfNegativeOrZero
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 242
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is negative or zero.
+  example: []
+  syntax:
+    content: public static void ThrowIfNegativeOrZero(long value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.Int64
+      description: The argument to validate as non-zero or non-negative.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfNegativeOrZero(value As Long, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfNegativeOrZero*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is negative or zero.
+  nameWithType.vb: ExceptionMessages.ThrowIfNegativeOrZero(Long, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfNegativeOrZero(Long, String)
+  name.vb: ThrowIfNegativeOrZero(Long, String)
+- uid: System.ExceptionMessages.ThrowIfNegativeOrZero(System.UInt64,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfNegativeOrZero(System.UInt64,System.String)
+  id: ThrowIfNegativeOrZero(System.UInt64,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfNegativeOrZero(ulong, string?)
+  nameWithType: ExceptionMessages.ThrowIfNegativeOrZero(ulong, string?)
+  fullName: System.ExceptionMessages.ThrowIfNegativeOrZero(ulong, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfNegativeOrZero
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 246
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is negative or zero.
+  example: []
+  syntax:
+    content: public static void ThrowIfNegativeOrZero(ulong value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.UInt64
+      description: The argument to validate as non-zero or non-negative.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfNegativeOrZero(value As ULong, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfNegativeOrZero*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is negative or zero.
+  nameWithType.vb: ExceptionMessages.ThrowIfNegativeOrZero(ULong, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfNegativeOrZero(ULong, String)
+  name.vb: ThrowIfNegativeOrZero(ULong, String)
+- uid: System.ExceptionMessages.ThrowIfNegativeOrZero(System.Single,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfNegativeOrZero(System.Single,System.String)
+  id: ThrowIfNegativeOrZero(System.Single,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfNegativeOrZero(float, string?)
+  nameWithType: ExceptionMessages.ThrowIfNegativeOrZero(float, string?)
+  fullName: System.ExceptionMessages.ThrowIfNegativeOrZero(float, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfNegativeOrZero
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 250
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is negative or zero.
+  example: []
+  syntax:
+    content: public static void ThrowIfNegativeOrZero(float value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.Single
+      description: The argument to validate as non-zero or non-negative.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfNegativeOrZero(value As Single, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfNegativeOrZero*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is negative or zero.
+  nameWithType.vb: ExceptionMessages.ThrowIfNegativeOrZero(Single, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfNegativeOrZero(Single, String)
+  name.vb: ThrowIfNegativeOrZero(Single, String)
+- uid: System.ExceptionMessages.ThrowIfNegativeOrZero(System.Double,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfNegativeOrZero(System.Double,System.String)
+  id: ThrowIfNegativeOrZero(System.Double,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfNegativeOrZero(double, string?)
+  nameWithType: ExceptionMessages.ThrowIfNegativeOrZero(double, string?)
+  fullName: System.ExceptionMessages.ThrowIfNegativeOrZero(double, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfNegativeOrZero
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 254
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is negative or zero.
+  example: []
+  syntax:
+    content: public static void ThrowIfNegativeOrZero(double value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.Double
+      description: The argument to validate as non-zero or non-negative.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfNegativeOrZero(value As Double, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfNegativeOrZero*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is negative or zero.
+  nameWithType.vb: ExceptionMessages.ThrowIfNegativeOrZero(Double, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfNegativeOrZero(Double, String)
+  name.vb: ThrowIfNegativeOrZero(Double, String)
+- uid: System.ExceptionMessages.ThrowIfNegativeOrZero(System.Decimal,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfNegativeOrZero(System.Decimal,System.String)
+  id: ThrowIfNegativeOrZero(System.Decimal,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfNegativeOrZero(decimal, string?)
+  nameWithType: ExceptionMessages.ThrowIfNegativeOrZero(decimal, string?)
+  fullName: System.ExceptionMessages.ThrowIfNegativeOrZero(decimal, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfNegativeOrZero
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 258
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is negative or zero.
+  example: []
+  syntax:
+    content: public static void ThrowIfNegativeOrZero(decimal value, string? paramName = null)
+    parameters:
+    - id: value
+      type: System.Decimal
+      description: The argument to validate as non-zero or non-negative.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    content.vb: Public Shared Sub ThrowIfNegativeOrZero(value As Decimal, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfNegativeOrZero*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is negative or zero.
+  nameWithType.vb: ExceptionMessages.ThrowIfNegativeOrZero(Decimal, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfNegativeOrZero(Decimal, String)
+  name.vb: ThrowIfNegativeOrZero(Decimal, String)
+- uid: System.ExceptionMessages.ThrowIfEqual``1(``0,``0,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfEqual``1(``0,``0,System.String)
+  id: ThrowIfEqual``1(``0,``0,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfEqual<T>(T, T, string?)
+  nameWithType: ExceptionMessages.ThrowIfEqual<T>(T, T, string?)
+  fullName: System.ExceptionMessages.ThrowIfEqual<T>(T, T, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfEqual
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 292
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is equal to <code class="paramref">other</code>.
+  remarks: This method requires <code class="typeparamref">T</code> to implement <xref href="System.IEquatable%601" data-throw-if-not-resolved="false"></xref> for comparison.
+  example: []
+  syntax:
+    content: 'public static void ThrowIfEqual<T>(T value, T other, string? paramName = null) where T : IEquatable<T>'
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The argument to validate as not equal to <code class="paramref">other</code>.
+    - id: other
+      type: '{T}'
+      description: The value to compare with <code class="paramref">value</code>.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    typeParameters:
+    - id: T
+      description: The type of the values to compare.
+    content.vb: Public Shared Sub ThrowIfEqual(Of T As IEquatable(Of T))(value As T, other As T, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfEqual*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is equal to <code class="paramref">other</code>.
+  nameWithType.vb: ExceptionMessages.ThrowIfEqual(Of T)(T, T, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfEqual(Of T)(T, T, String)
+  name.vb: ThrowIfEqual(Of T)(T, T, String)
+- uid: System.ExceptionMessages.ThrowIfNotEqual``1(``0,``0,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfNotEqual``1(``0,``0,System.String)
+  id: ThrowIfNotEqual``1(``0,``0,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfNotEqual<T>(T, T, string?)
+  nameWithType: ExceptionMessages.ThrowIfNotEqual<T>(T, T, string?)
+  fullName: System.ExceptionMessages.ThrowIfNotEqual<T>(T, T, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfNotEqual
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 313
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is not equal to <code class="paramref">other</code>.
+  remarks: This method requires <code class="typeparamref">T</code> to implement <xref href="System.IEquatable%601" data-throw-if-not-resolved="false"></xref> for comparison.
+  example: []
+  syntax:
+    content: 'public static void ThrowIfNotEqual<T>(T value, T other, string? paramName = null) where T : IEquatable<T>'
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The argument to validate as equal to <code class="paramref">other</code>.
+    - id: other
+      type: '{T}'
+      description: The value to compare with <code class="paramref">value</code>.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    typeParameters:
+    - id: T
+      description: The type of the values to compare.
+    content.vb: Public Shared Sub ThrowIfNotEqual(Of T As IEquatable(Of T))(value As T, other As T, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfNotEqual*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is not equal to <code class="paramref">other</code>.
+  nameWithType.vb: ExceptionMessages.ThrowIfNotEqual(Of T)(T, T, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfNotEqual(Of T)(T, T, String)
+  name.vb: ThrowIfNotEqual(Of T)(T, T, String)
+- uid: System.ExceptionMessages.ThrowIfGreaterThan``1(``0,``0,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfGreaterThan``1(``0,``0,System.String)
+  id: ThrowIfGreaterThan``1(``0,``0,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfGreaterThan<T>(T, T, string?)
+  nameWithType: ExceptionMessages.ThrowIfGreaterThan<T>(T, T, string?)
+  fullName: System.ExceptionMessages.ThrowIfGreaterThan<T>(T, T, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfGreaterThan
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 334
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is greater than <code class="paramref">other</code>.
+  remarks: This method requires <code class="typeparamref">T</code> to implement <xref href="System.IComparable%601" data-throw-if-not-resolved="false"></xref> for comparison.
+  example: []
+  syntax:
+    content: 'public static void ThrowIfGreaterThan<T>(T value, T other, string? paramName = null) where T : IComparable<T>'
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The argument to validate as less or equal than <code class="paramref">other</code>.
+    - id: other
+      type: '{T}'
+      description: The value to compare with <code class="paramref">value</code>.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    typeParameters:
+    - id: T
+      description: The type of the values to compare.
+    content.vb: Public Shared Sub ThrowIfGreaterThan(Of T As IComparable(Of T))(value As T, other As T, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfGreaterThan*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is greater than <code class="paramref">other</code>.
+  nameWithType.vb: ExceptionMessages.ThrowIfGreaterThan(Of T)(T, T, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfGreaterThan(Of T)(T, T, String)
+  name.vb: ThrowIfGreaterThan(Of T)(T, T, String)
+- uid: System.ExceptionMessages.ThrowIfGreaterThanOrEqual``1(``0,``0,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfGreaterThanOrEqual``1(``0,``0,System.String)
+  id: ThrowIfGreaterThanOrEqual``1(``0,``0,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfGreaterThanOrEqual<T>(T, T, string?)
+  nameWithType: ExceptionMessages.ThrowIfGreaterThanOrEqual<T>(T, T, string?)
+  fullName: System.ExceptionMessages.ThrowIfGreaterThanOrEqual<T>(T, T, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfGreaterThanOrEqual
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 356
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is greater than or equal <code class="paramref">other</code>.
+  remarks: >-
+    This method requires <code class="typeparamref">T</code> to implement both <xref href="System.IComparable%601" data-throw-if-not-resolved="false"></xref> and <xref href="System.IEquatable%601" data-throw-if-not-resolved="false"></xref>.
+
+    On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines greater-than and equality checks.
+  example: []
+  syntax:
+    content: 'public static void ThrowIfGreaterThanOrEqual<T>(T value, T other, string? paramName = null) where T : IComparable<T>, IEquatable<T>'
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The argument to validate as less than <code class="paramref">other</code>.
+    - id: other
+      type: '{T}'
+      description: The value to compare with <code class="paramref">value</code>.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    typeParameters:
+    - id: T
+      description: The type of the values to compare.
+    content.vb: Public Shared Sub ThrowIfGreaterThanOrEqual(Of T As {IComparable(Of T), IEquatable(Of T)})(value As T, other As T, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfGreaterThanOrEqual*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is greater than or equal to <code class="paramref">other</code>.
+  nameWithType.vb: ExceptionMessages.ThrowIfGreaterThanOrEqual(Of T)(T, T, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfGreaterThanOrEqual(Of T)(T, T, String)
+  name.vb: ThrowIfGreaterThanOrEqual(Of T)(T, T, String)
+- uid: System.ExceptionMessages.ThrowIfLessThan``1(``0,``0,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfLessThan``1(``0,``0,System.String)
+  id: ThrowIfLessThan``1(``0,``0,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfLessThan<T>(T, T, string?)
+  nameWithType: ExceptionMessages.ThrowIfLessThan<T>(T, T, string?)
+  fullName: System.ExceptionMessages.ThrowIfLessThan<T>(T, T, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfLessThan
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 377
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is less than <code class="paramref">other</code>.
+  remarks: This method requires <code class="typeparamref">T</code> to implement <xref href="System.IComparable%601" data-throw-if-not-resolved="false"></xref> for comparison.
+  example: []
+  syntax:
+    content: 'public static void ThrowIfLessThan<T>(T value, T other, string? paramName = null) where T : IComparable<T>'
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The argument to validate as greater than or equal than <code class="paramref">other</code>.
+    - id: other
+      type: '{T}'
+      description: The value to compare with <code class="paramref">value</code>.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    typeParameters:
+    - id: T
+      description: The type of the values to compare.
+    content.vb: Public Shared Sub ThrowIfLessThan(Of T As IComparable(Of T))(value As T, other As T, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfLessThan*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is less than <code class="paramref">other</code>.
+  nameWithType.vb: ExceptionMessages.ThrowIfLessThan(Of T)(T, T, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfLessThan(Of T)(T, T, String)
+  name.vb: ThrowIfLessThan(Of T)(T, T, String)
+- uid: System.ExceptionMessages.ThrowIfLessThanOrEqual``1(``0,``0,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfLessThanOrEqual``1(``0,``0,System.String)
+  id: ThrowIfLessThanOrEqual``1(``0,``0,System.String)
+  parent: System.ExceptionMessages
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfLessThanOrEqual<T>(T, T, string?)
+  nameWithType: ExceptionMessages.ThrowIfLessThanOrEqual<T>(T, T, string?)
+  fullName: System.ExceptionMessages.ThrowIfLessThanOrEqual<T>(T, T, string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: ThrowIfLessThanOrEqual
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs
+    startLine: 399
+  assemblies:
+  - Cobilas.Core
+  namespace: System
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> if <code class="paramref">value</code> is less than or equal to <code class="paramref">other</code>.
+  remarks: >-
+    This method requires <code class="typeparamref">T</code> to implement both <xref href="System.IComparable%601" data-throw-if-not-resolved="false"></xref> and <xref href="System.IEquatable%601" data-throw-if-not-resolved="false"></xref>.
+
+    On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines less-than and equality checks.
+  example: []
+  syntax:
+    content: 'public static void ThrowIfLessThanOrEqual<T>(T value, T other, string? paramName = null) where T : IComparable<T>, IEquatable<T>'
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The argument to validate as greater than <code class="paramref">other</code>.
+    - id: other
+      type: '{T}'
+      description: The value to compare with <code class="paramref">value</code>.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter with which <code class="paramref">value</code> corresponds.
+    typeParameters:
+    - id: T
+      description: The type of the values to compare.
+    content.vb: Public Shared Sub ThrowIfLessThanOrEqual(Of T As {IComparable(Of T), IEquatable(Of T)})(value As T, other As T, paramName As String = Nothing)
+  overload: System.ExceptionMessages.ThrowIfLessThanOrEqual*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">value</code> is less than or equal to <code class="paramref">other</code>.
+  nameWithType.vb: ExceptionMessages.ThrowIfLessThanOrEqual(Of T)(T, T, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfLessThanOrEqual(Of T)(T, T, String)
+  name.vb: ThrowIfLessThanOrEqual(Of T)(T, T, String)
+references:
+- uid: System
+  commentId: N:System
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.ExceptionMessages.ThrowIfNull*
+  commentId: Overload:System.ExceptionMessages.ThrowIfNull
+  href: System.ExceptionMessages.html#System_ExceptionMessages_ThrowIfNull_System_Object_System_String_
+  name: ThrowIfNull
+  nameWithType: ExceptionMessages.ThrowIfNull
+  fullName: System.ExceptionMessages.ThrowIfNull
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.IntPtr.Zero
+  commentId: F:System.IntPtr.Zero
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr.zero
+  name: Zero
+  nameWithType: nint.Zero
+  fullName: nint.Zero
+  nameWithType.vb: IntPtr.Zero
+  fullName.vb: System.IntPtr.Zero
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.ExceptionMessages.ThrowIfNullOrEmpty*
+  commentId: Overload:System.ExceptionMessages.ThrowIfNullOrEmpty
+  href: System.ExceptionMessages.html#System_ExceptionMessages_ThrowIfNullOrEmpty_System_String_System_String_
+  name: ThrowIfNullOrEmpty
+  nameWithType: ExceptionMessages.ThrowIfNullOrEmpty
+  fullName: System.ExceptionMessages.ThrowIfNullOrEmpty
+- uid: System.ExceptionMessages.ThrowIfNullOrEmpty(System.String,System.String)
+  commentId: M:System.ExceptionMessages.ThrowIfNullOrEmpty(System.String,System.String)
+  isExternal: true
+  href: System.ExceptionMessages.html#System_ExceptionMessages_ThrowIfNullOrEmpty_System_String_System_String_
+  name: ThrowIfNullOrEmpty(string, string)
+  nameWithType: ExceptionMessages.ThrowIfNullOrEmpty(string, string)
+  fullName: System.ExceptionMessages.ThrowIfNullOrEmpty(string, string)
+  nameWithType.vb: ExceptionMessages.ThrowIfNullOrEmpty(String, String)
+  fullName.vb: System.ExceptionMessages.ThrowIfNullOrEmpty(String, String)
+  name.vb: ThrowIfNullOrEmpty(String, String)
+  spec.csharp:
+  - uid: System.ExceptionMessages.ThrowIfNullOrEmpty(System.String,System.String)
+    name: ThrowIfNullOrEmpty
+    href: System.ExceptionMessages.html#System_ExceptionMessages_ThrowIfNullOrEmpty_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.ExceptionMessages.ThrowIfNullOrEmpty(System.String,System.String)
+    name: ThrowIfNullOrEmpty
+    href: System.ExceptionMessages.html#System_ExceptionMessages_ThrowIfNullOrEmpty_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.ExceptionMessages.ThrowIfNullOrWhiteSpace*
+  commentId: Overload:System.ExceptionMessages.ThrowIfNullOrWhiteSpace
+  href: System.ExceptionMessages.html#System_ExceptionMessages_ThrowIfNullOrWhiteSpace_System_String_System_String_
+  name: ThrowIfNullOrWhiteSpace
+  nameWithType: ExceptionMessages.ThrowIfNullOrWhiteSpace
+  fullName: System.ExceptionMessages.ThrowIfNullOrWhiteSpace
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: System.ExceptionMessages.ThrowIfZero*
+  commentId: Overload:System.ExceptionMessages.ThrowIfZero
+  href: System.ExceptionMessages.html#System_ExceptionMessages_ThrowIfZero_System_Int32_System_String_
+  name: ThrowIfZero
+  nameWithType: ExceptionMessages.ThrowIfZero
+  fullName: System.ExceptionMessages.ThrowIfZero
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: System.SByte
+  commentId: T:System.SByte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  name: sbyte
+  nameWithType: sbyte
+  fullName: sbyte
+  nameWithType.vb: SByte
+  fullName.vb: SByte
+  name.vb: SByte
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short
+  nameWithType: short
+  fullName: short
+  nameWithType.vb: Short
+  fullName.vb: Short
+  name.vb: Short
+- uid: System.UInt16
+  commentId: T:System.UInt16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint16
+  name: ushort
+  nameWithType: ushort
+  fullName: ushort
+  nameWithType.vb: UShort
+  fullName.vb: UShort
+  name.vb: UShort
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal
+- uid: System.ExceptionMessages.ThrowIfNegative*
+  commentId: Overload:System.ExceptionMessages.ThrowIfNegative
+  href: System.ExceptionMessages.html#System_ExceptionMessages_ThrowIfNegative_System_SByte_System_String_
+  name: ThrowIfNegative
+  nameWithType: ExceptionMessages.ThrowIfNegative
+  fullName: System.ExceptionMessages.ThrowIfNegative
+- uid: System.ExceptionMessages.ThrowIfNegativeOrZero*
+  commentId: Overload:System.ExceptionMessages.ThrowIfNegativeOrZero
+  href: System.ExceptionMessages.html#System_ExceptionMessages_ThrowIfNegativeOrZero_System_Int32_System_String_
+  name: ThrowIfNegativeOrZero
+  nameWithType: ExceptionMessages.ThrowIfNegativeOrZero
+  fullName: System.ExceptionMessages.ThrowIfNegativeOrZero
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ExceptionMessages.ThrowIfEqual*
+  commentId: Overload:System.ExceptionMessages.ThrowIfEqual
+  href: System.ExceptionMessages.html#System_ExceptionMessages_ThrowIfEqual__1___0___0_System_String_
+  name: ThrowIfEqual
+  nameWithType: ExceptionMessages.ThrowIfEqual
+  fullName: System.ExceptionMessages.ThrowIfEqual
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.ExceptionMessages.ThrowIfNotEqual*
+  commentId: Overload:System.ExceptionMessages.ThrowIfNotEqual
+  href: System.ExceptionMessages.html#System_ExceptionMessages_ThrowIfNotEqual__1___0___0_System_String_
+  name: ThrowIfNotEqual
+  nameWithType: ExceptionMessages.ThrowIfNotEqual
+  fullName: System.ExceptionMessages.ThrowIfNotEqual
+- uid: System.IComparable`1
+  commentId: T:System.IComparable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<T>
+  nameWithType: IComparable<T>
+  fullName: System.IComparable<T>
+  nameWithType.vb: IComparable(Of T)
+  fullName.vb: System.IComparable(Of T)
+  name.vb: IComparable(Of T)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ExceptionMessages.ThrowIfGreaterThan*
+  commentId: Overload:System.ExceptionMessages.ThrowIfGreaterThan
+  href: System.ExceptionMessages.html#System_ExceptionMessages_ThrowIfGreaterThan__1___0___0_System_String_
+  name: ThrowIfGreaterThan
+  nameWithType: ExceptionMessages.ThrowIfGreaterThan
+  fullName: System.ExceptionMessages.ThrowIfGreaterThan
+- uid: System.ExceptionMessages.ThrowIfGreaterThanOrEqual*
+  commentId: Overload:System.ExceptionMessages.ThrowIfGreaterThanOrEqual
+  href: System.ExceptionMessages.html#System_ExceptionMessages_ThrowIfGreaterThanOrEqual__1___0___0_System_String_
+  name: ThrowIfGreaterThanOrEqual
+  nameWithType: ExceptionMessages.ThrowIfGreaterThanOrEqual
+  fullName: System.ExceptionMessages.ThrowIfGreaterThanOrEqual
+- uid: System.ExceptionMessages.ThrowIfLessThan*
+  commentId: Overload:System.ExceptionMessages.ThrowIfLessThan
+  href: System.ExceptionMessages.html#System_ExceptionMessages_ThrowIfLessThan__1___0___0_System_String_
+  name: ThrowIfLessThan
+  nameWithType: ExceptionMessages.ThrowIfLessThan
+  fullName: System.ExceptionMessages.ThrowIfLessThan
+- uid: System.ExceptionMessages.ThrowIfLessThanOrEqual*
+  commentId: Overload:System.ExceptionMessages.ThrowIfLessThanOrEqual
+  href: System.ExceptionMessages.html#System_ExceptionMessages_ThrowIfLessThanOrEqual__1___0___0_System_String_
+  name: ThrowIfLessThanOrEqual
+  nameWithType: ExceptionMessages.ThrowIfLessThanOrEqual
+  fullName: System.ExceptionMessages.ThrowIfLessThanOrEqual

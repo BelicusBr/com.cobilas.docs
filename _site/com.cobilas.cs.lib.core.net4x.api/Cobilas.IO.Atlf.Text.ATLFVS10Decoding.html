@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/new/main.dev/apiSpec/new?filename=Cobilas_IO_Atlf_Text_ATLFVS10Decoding.md&amp;value=---%0Auid%3A%20Cobilas.IO.Atlf.Text.ATLFVS10Decoding%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/new/main/apiSpec/new?filename=Cobilas_IO_Atlf_Text_ATLFVS10Decoding.md&amp;value=---%0Auid%3A%20Cobilas.IO.Atlf.Text.ATLFVS10Decoding%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Cobilas_IO_Atlf_Text_ATLFVS10Decoding" data-uid="Cobilas.IO.Atlf.Text.ATLFVS10Decoding" class="text-break">
-Class ATLFVS10Decoding  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs/#L8"><i class="bi bi-code-slash"></i></a>
+Class ATLFVS10Decoding  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -186,7 +186,7 @@ Class ATLFVS10Decoding  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Cobilas_IO_Atlf_Text_ATLFVS10Decoding_Version" data-uid="Cobilas.IO.Atlf.Text.ATLFVS10Decoding.Version">
   Version
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Represents the decoder version.</p>
@@ -222,10 +222,11 @@ Class ATLFVS10Decoding  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Cobilas_IO_Atlf_Text_ATLFVS10Decoding_GetComment_Cobilas_IO_Atlf_Components_CharacterCursor_" data-uid="Cobilas.IO.Atlf.Text.ATLFVS10Decoding.GetComment(Cobilas.IO.Atlf.Components.CharacterCursor)">
   GetComment(CharacterCursor)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Parses a comment node from the cursor.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -235,13 +236,15 @@ Class ATLFVS10Decoding  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>cursor</code> <a class="xref" href="Cobilas.IO.Atlf.Components.CharacterCursor.html">CharacterCursor</a></dt>
-    <dd></dd>
+    <dd><p>The character cursor positioned at the start of the comment content.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Cobilas.IO.Atlf.ATLFNode.html">ATLFNode</a></dt>
-    <dd></dd>
+    <dd><p>An <a class="xref" href="Cobilas.IO.Atlf.ATLFNode.html">ATLFNode</a> of type <a class="xref" href="Cobilas.IO.Atlf.ATLFNodeType.html#Cobilas_IO_Atlf_ATLFNodeType_Comment">Comment</a> containing the comment text.</p>
+</dd>
   </dl>
 
 
@@ -250,7 +253,16 @@ Class ATLFVS10Decoding  <a class="header-action link-secondary" title="View sour
 
 
 
+  <h4 class="section" id="Cobilas_IO_Atlf_Text_ATLFVS10Decoding_GetComment_Cobilas_IO_Atlf_Components_CharacterCursor__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The comment block is expected to end with the &quot;&lt;#&quot; token. The escape sequence &quot;&amp;lt;#&quot; is allowed within the comment.</p>
+</div>
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.IO.Atlf.ATLFException.html">ATLFException</a></dt>
+    <dd><p>Thrown when the comment block is not properly closed.</p>
+</dd>
+  </dl>
 
 
 
@@ -258,10 +270,11 @@ Class ATLFVS10Decoding  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Cobilas_IO_Atlf_Text_ATLFVS10Decoding_GetTag_Cobilas_IO_Atlf_Components_CharacterCursor_" data-uid="Cobilas.IO.Atlf.Text.ATLFVS10Decoding.GetTag(Cobilas.IO.Atlf.Components.CharacterCursor)">
   GetTag(CharacterCursor)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Parses a tag node from the cursor.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -271,13 +284,15 @@ Class ATLFVS10Decoding  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>cursor</code> <a class="xref" href="Cobilas.IO.Atlf.Components.CharacterCursor.html">CharacterCursor</a></dt>
-    <dd></dd>
+    <dd><p>The character cursor positioned after the &quot;#!&quot; token.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Cobilas.IO.Atlf.ATLFNode.html">ATLFNode</a></dt>
-    <dd></dd>
+    <dd><p>An <a class="xref" href="Cobilas.IO.Atlf.ATLFNode.html">ATLFNode</a> of type <a class="xref" href="Cobilas.IO.Atlf.ATLFNodeType.html#Cobilas_IO_Atlf_ATLFNodeType_Tag">Tag</a> containing the tag name and text.</p>
+</dd>
   </dl>
 
 
@@ -294,10 +309,11 @@ Class ATLFVS10Decoding  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Cobilas_IO_Atlf_Text_ATLFVS10Decoding_GetTag_Cobilas_IO_Atlf_Components_CharacterCursor_Cobilas_IO_Atlf_ATLFNodeType_" data-uid="Cobilas.IO.Atlf.Text.ATLFVS10Decoding.GetTag(Cobilas.IO.Atlf.Components.CharacterCursor,Cobilas.IO.Atlf.ATLFNodeType)">
   GetTag(CharacterCursor, ATLFNodeType)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Parses a tag node from the cursor with a specified node type.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -307,15 +323,18 @@ Class ATLFVS10Decoding  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>cursor</code> <a class="xref" href="Cobilas.IO.Atlf.Components.CharacterCursor.html">CharacterCursor</a></dt>
-    <dd></dd>
+    <dd><p>The character cursor positioned after the &quot;#!&quot; token.</p>
+</dd>
     <dt><code>nodeType</code> <a class="xref" href="Cobilas.IO.Atlf.ATLFNodeType.html">ATLFNodeType</a></dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="Cobilas.IO.Atlf.ATLFNodeType.html">ATLFNodeType</a> to assign to the parsed node.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Cobilas.IO.Atlf.ATLFNode.html">ATLFNode</a></dt>
-    <dd></dd>
+    <dd><p>An <a class="xref" href="Cobilas.IO.Atlf.ATLFNode.html">ATLFNode</a> with the specified type, containing the tag name and text.</p>
+</dd>
   </dl>
 
 
@@ -324,7 +343,17 @@ Class ATLFVS10Decoding  <a class="header-action link-secondary" title="View sour
 
 
 
+  <h4 class="section" id="Cobilas_IO_Atlf_Text_ATLFVS10Decoding_GetTag_Cobilas_IO_Atlf_Components_CharacterCursor_Cobilas_IO_Atlf_ATLFNodeType__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The tag format is: #! name :/* text <em>/. The text block ends with &quot;</em>/&quot; and the escape sequence &quot;*/&quot; is allowed.
+Valid characters for tag names are letters, digits, '.', '_', '/', '', and '&gt;'.</p>
+</div>
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.IO.Atlf.ATLFException.html">ATLFException</a></dt>
+    <dd><p>Thrown when the tag has no name, contains invalid characters, or the text block is not properly opened or closed.</p>
+</dd>
+  </dl>
 
 
 
@@ -332,10 +361,11 @@ Class ATLFVS10Decoding  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Cobilas_IO_Atlf_Text_ATLFVS10Decoding_Reader_Cobilas_IO_Atlf_Components_CharacterCursor_" data-uid="Cobilas.IO.Atlf.Text.ATLFVS10Decoding.Reader(Cobilas.IO.Atlf.Components.CharacterCursor)">
   Reader(CharacterCursor)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reads ATLF nodes from a <a class="xref" href="Cobilas.IO.Atlf.Components.CharacterCursor.html">CharacterCursor</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -345,13 +375,15 @@ Class ATLFVS10Decoding  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>cursor</code> <a class="xref" href="Cobilas.IO.Atlf.Components.CharacterCursor.html">CharacterCursor</a></dt>
-    <dd></dd>
+    <dd><p>The character cursor providing the source text.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Cobilas.IO.Atlf.ATLFNode.html">ATLFNode</a>[]</dt>
-    <dd></dd>
+    <dd><p>An array of <a class="xref" href="Cobilas.IO.Atlf.ATLFNode.html">ATLFNode</a> objects parsed from the cursor.</p>
+</dd>
   </dl>
 
 
@@ -360,7 +392,17 @@ Class ATLFVS10Decoding  <a class="header-action link-secondary" title="View sour
 
 
 
+  <h4 class="section" id="Cobilas_IO_Atlf_Text_ATLFVS10Decoding_Reader_Cobilas_IO_Atlf_Components_CharacterCursor__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method processes the ATLF format by reading tokens sequentially from the cursor.
+It recognizes tag openings (#!), comment openings (#&gt;), and ignores whitespace.</p>
+</div>
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.IO.Atlf.ATLFException.html">ATLFException</a></dt>
+    <dd><p>Thrown when the input text is empty or contains unrecognized tokens.</p>
+</dd>
+  </dl>
 
 
 
@@ -368,7 +410,7 @@ Class ATLFVS10Decoding  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Cobilas_IO_Atlf_Text_ATLFVS10Decoding_Reader_System_Object___" data-uid="Cobilas.IO.Atlf.Text.ATLFVS10Decoding.Reader(System.Object[])">
   Reader(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Read a list of objects.</p>
@@ -389,7 +431,8 @@ Class ATLFVS10Decoding  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Cobilas.IO.Atlf.ATLFNode.html">ATLFNode</a>[]</dt>
-    <dd></dd>
+    <dd><p>An array of <a class="xref" href="Cobilas.IO.Atlf.ATLFNode.html">ATLFNode</a> objects parsed from the input string.</p>
+</dd>
   </dl>
 
 
@@ -406,7 +449,7 @@ Class ATLFVS10Decoding  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Cobilas_IO_Atlf_Text_ATLFVS10Decoding_Reader4Byte_System_Object___" data-uid="Cobilas.IO.Atlf.Text.ATLFVS10Decoding.Reader4Byte(System.Object[])">
   Reader4Byte(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Read a list of objects.</p>
@@ -428,7 +471,8 @@ Class ATLFVS10Decoding  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Cobilas.IO.Atlf.ATLFNode.html">ATLFNode</a>[]</dt>
-    <dd></dd>
+    <dd><p>An array of <a class="xref" href="Cobilas.IO.Atlf.ATLFNode.html">ATLFNode</a> objects parsed from the byte array.</p>
+</dd>
   </dl>
 
 
@@ -445,7 +489,7 @@ Class ATLFVS10Decoding  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Cobilas_IO_Atlf_Text_ATLFVS10Decoding_ValidCharacter_System_Char_" data-uid="Cobilas.IO.Atlf.Text.ATLFVS10Decoding.ValidCharacter(System.Char)">
   ValidCharacter(char)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs/#L141"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks whether the character is valid.</p>
@@ -465,7 +509,9 @@ Class ATLFVS10Decoding  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the character is a letter, digit, or one of the allowed special characters ('.', '_', '/', '', '&gt;');
+otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
   </dl>
 
 
@@ -482,7 +528,7 @@ Class ATLFVS10Decoding  <a class="header-action link-secondary" title="View sour
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs/#L8" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs/#L8" class="edit-link">Edit this page</a>
         </div>
 
 

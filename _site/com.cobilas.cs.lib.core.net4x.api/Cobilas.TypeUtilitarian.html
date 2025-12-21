@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/new/main.dev/apiSpec/new?filename=Cobilas_TypeUtilitarian.md&amp;value=---%0Auid%3A%20Cobilas.TypeUtilitarian%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/new/main/apiSpec/new?filename=Cobilas_TypeUtilitarian.md&amp;value=---%0Auid%3A%20Cobilas.TypeUtilitarian%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Cobilas_TypeUtilitarian" data-uid="Cobilas.TypeUtilitarian" class="text-break">
-Class TypeUtilitarian  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/TypeUtilitarian.cs/#L7"><i class="bi bi-code-slash"></i></a>
+Class TypeUtilitarian  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -157,7 +157,7 @@ Class TypeUtilitarian  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Cobilas_TypeUtilitarian_GetAssemblies" data-uid="Cobilas.TypeUtilitarian.GetAssemblies">
   GetAssemblies()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/TypeUtilitarian.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get all assemblies for the current domain.</p>
@@ -172,7 +172,7 @@ Class TypeUtilitarian  <a class="header-action link-secondary" title="View sourc
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a>[]</dt>
-    <dd><p>Returns a list all assemblies of the domain.</p>
+    <dd><p>Returns a list of all assemblies in the current application domain.</p>
 </dd>
   </dl>
 
@@ -186,11 +186,59 @@ Class TypeUtilitarian  <a class="header-action link-secondary" title="View sourc
 
 
 
+  <a id="Cobilas_TypeUtilitarian_GetAssembly_" data-uid="Cobilas.TypeUtilitarian.GetAssembly*"></a>
+
+  <h3 id="Cobilas_TypeUtilitarian_GetAssembly_System_String_" data-uid="Cobilas.TypeUtilitarian.GetAssembly(System.String)">
+  GetAssembly(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get a specific assembly by its full name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Assembly? GetAssembly(string? assemblyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assemblyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The full name of the assembly to retrieve.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></dt>
+    <dd><p>The requested <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a> if found; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Cobilas_TypeUtilitarian_GetAssembly_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method searches the current application domain for an assembly with the exact full name.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown when <code class="paramref">assemblyName</code> is null or empty.</p>
+</dd>
+  </dl>
+
+
+
   <a id="Cobilas_TypeUtilitarian_GetType_" data-uid="Cobilas.TypeUtilitarian.GetType*"></a>
 
-  <h3 id="Cobilas_TypeUtilitarian_GetType_System_String_" data-uid="Cobilas.TypeUtilitarian.GetType(System.String)">
-  GetType(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/TypeUtilitarian.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Cobilas_TypeUtilitarian_GetType_System_String_System_String_" data-uid="Cobilas.TypeUtilitarian.GetType(System.String,System.String)">
+  GetType(string, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get a specific type.</p>
@@ -198,21 +246,24 @@ Class TypeUtilitarian  <a class="header-action link-secondary" title="View sourc
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Type GetType(string fullName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Type GetType(string fullName, string? assemblyName = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>fullName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The full name of the type. (example:<code>System.String</code>)</p>
+    <dd><p>The full name of the type (e.g., <code>System.String</code>).</p>
+</dd>
+    <dt><code>assemblyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The full name of the assembly to search in. If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, all assemblies are searched.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-    <dd><p>Returns the type that was specified in the parameter.
-<p>If the specified type is not found had returned the <a class="xref" href="Cobilas.NullObject.html">NullObject</a> type.</p>
+    <dd><p>Returns the type that was specified in the parameter.</p>
+<p>If the specified type is not found, returns the <a class="xref" href="Cobilas.NullObject.html#Cobilas_NullObject_Null">Null</a> type.</p>
 </dd>
   </dl>
 
@@ -222,15 +273,18 @@ Class TypeUtilitarian  <a class="header-action link-secondary" title="View sourc
 
 
 
+  <h4 class="section" id="Cobilas_TypeUtilitarian_GetType_System_String_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method searches for a type by its full name (including namespace). If not found, it returns the type of <a class="xref" href="Cobilas.NullObject.html#Cobilas_NullObject_Null">Null</a>.</p>
+</div>
 
 
 
 
   <a id="Cobilas_TypeUtilitarian_GetTypes_" data-uid="Cobilas.TypeUtilitarian.GetTypes*"></a>
 
-  <h3 id="Cobilas_TypeUtilitarian_GetTypes" data-uid="Cobilas.TypeUtilitarian.GetTypes">
-  GetTypes()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/TypeUtilitarian.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Cobilas_TypeUtilitarian_GetTypes_System_String_" data-uid="Cobilas.TypeUtilitarian.GetTypes(System.String)">
+  GetTypes(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get all types of assembly.</p>
@@ -238,14 +292,20 @@ Class TypeUtilitarian  <a class="header-action link-secondary" title="View sourc
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Type[] GetTypes()</code></pre>
+    <pre><code class="lang-csharp hljs">public static Type[] GetTypes(string? assemblyName = null)</code></pre>
   </div>
 
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assemblyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The full name of the assembly to get types from. If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, types from all assemblies are returned.</p>
+</dd>
+  </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>[]</dt>
-    <dd><p>Returns all types of objects from all assemblies.</p>
+    <dd><p>Returns all types of objects from the specified assembly or from all assemblies.</p>
 </dd>
   </dl>
 
@@ -255,15 +315,25 @@ Class TypeUtilitarian  <a class="header-action link-secondary" title="View sourc
 
 
 
+  <h4 class="section" id="Cobilas_TypeUtilitarian_GetTypes_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When <code class="paramref">assemblyName</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, this method returns types from all loaded assemblies.
+Otherwise, it returns types only from the specified assembly.</p>
+</div>
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Cobilas.Exceptions.AssemblyNotFoundException.html">AssemblyNotFoundException</a></dt>
+    <dd><p>Thrown when the specified assembly name is not found.</p>
+</dd>
+  </dl>
 
 
 
   <a id="Cobilas_TypeUtilitarian_TypeExist_" data-uid="Cobilas.TypeUtilitarian.TypeExist*"></a>
 
-  <h3 id="Cobilas_TypeUtilitarian_TypeExist_System_String_" data-uid="Cobilas.TypeUtilitarian.TypeExist(System.String)">
-  TypeExist(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/TypeUtilitarian.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Cobilas_TypeUtilitarian_TypeExist_System_String_System_String_" data-uid="Cobilas.TypeUtilitarian.TypeExist(System.String,System.String)">
+  TypeExist(string, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if the type exists.</p>
@@ -271,20 +341,23 @@ Class TypeUtilitarian  <a class="header-action link-secondary" title="View sourc
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool TypeExist(string fullName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool TypeExist(string fullName, string? assemblyName = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>fullName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The full name of the type. (example:<code>System.String</code>)</p>
+    <dd><p>The full name of the type (e.g., <code>System.String</code>).</p>
+</dd>
+    <dt><code>assemblyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The full name of the assembly to search in. If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, all assemblies are searched.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>Returns <code>true</code> when the type exists.</p>
+    <dd><p>Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> when the type exists; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </dd>
   </dl>
 
@@ -294,6 +367,9 @@ Class TypeUtilitarian  <a class="header-action link-secondary" title="View sourc
 
 
 
+  <h4 class="section" id="Cobilas_TypeUtilitarian_TypeExist_System_String_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method compares the type's full name (including namespace) with the provided <code class="paramref">fullName</code>.</p>
+</div>
 
 
 
@@ -302,7 +378,7 @@ Class TypeUtilitarian  <a class="header-action link-secondary" title="View sourc
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.dev/Cobilas/TypeUtilitarian.cs/#L7" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs/#L8" class="edit-link">Edit this page</a>
         </div>
 
 

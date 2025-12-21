@@ -23,11 +23,11 @@ items:
   type: Class
   source:
     remote:
-      path: Cobilas/IO/Serialization/Json/Json.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Json
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
     startLine: 7
   assemblies:
   - Cobilas.Core
@@ -54,17 +54,17 @@ items:
   langs:
   - csharp
   - vb
-  name: Serialize(object, JsonSerializerSettings)
-  nameWithType: Json.Serialize(object, JsonSerializerSettings)
-  fullName: Cobilas.IO.Serialization.Json.Json.Serialize(object, Newtonsoft.Json.JsonSerializerSettings)
+  name: Serialize(object?, JsonSerializerSettings?)
+  nameWithType: Json.Serialize(object?, JsonSerializerSettings?)
+  fullName: Cobilas.IO.Serialization.Json.Json.Serialize(object?, Newtonsoft.Json.JsonSerializerSettings?)
   type: Method
   source:
     remote:
-      path: Cobilas/IO/Serialization/Json/Json.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Serialize
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
     startLine: 13
   assemblies:
   - Cobilas.Core
@@ -72,7 +72,7 @@ items:
   summary: Serializes the specified object to a JSON string using <xref href="Newtonsoft.Json.JsonSerializerSettings" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public static string Serialize(object value, JsonSerializerSettings settings)
+    content: public static string Serialize(object? value, JsonSerializerSettings? settings)
     parameters:
     - id: value
       type: System.Object
@@ -97,17 +97,17 @@ items:
   langs:
   - csharp
   - vb
-  name: Serialize(object, bool)
-  nameWithType: Json.Serialize(object, bool)
-  fullName: Cobilas.IO.Serialization.Json.Json.Serialize(object, bool)
+  name: Serialize(object?, bool)
+  nameWithType: Json.Serialize(object?, bool)
+  fullName: Cobilas.IO.Serialization.Json.Json.Serialize(object?, bool)
   type: Method
   source:
     remote:
-      path: Cobilas/IO/Serialization/Json/Json.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Serialize
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
     startLine: 18
   assemblies:
   - Cobilas.Core
@@ -115,7 +115,7 @@ items:
   summary: Serializes the specified object to a JSON string using <xref href="Newtonsoft.Json.JsonSerializerSettings" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public static string Serialize(object value, bool Indented)
+    content: public static string Serialize(object? value, bool Indented)
     parameters:
     - id: value
       type: System.Object
@@ -138,17 +138,17 @@ items:
   langs:
   - csharp
   - vb
-  name: Serialize(object)
-  nameWithType: Json.Serialize(object)
-  fullName: Cobilas.IO.Serialization.Json.Json.Serialize(object)
+  name: Serialize(object?)
+  nameWithType: Json.Serialize(object?)
+  fullName: Cobilas.IO.Serialization.Json.Json.Serialize(object?)
   type: Method
   source:
     remote:
-      path: Cobilas/IO/Serialization/Json/Json.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Serialize
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
     startLine: 26
   assemblies:
   - Cobilas.Core
@@ -156,7 +156,7 @@ items:
   summary: Serializes the specified object to a JSON string using <xref href="Newtonsoft.Json.JsonSerializerSettings" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public static string Serialize(object value)
+    content: public static string Serialize(object? value)
     parameters:
     - id: value
       type: System.Object
@@ -176,17 +176,17 @@ items:
   langs:
   - csharp
   - vb
-  name: Deserialize(string, JsonSerializerSettings?)
-  nameWithType: Json.Deserialize(string, JsonSerializerSettings?)
-  fullName: Cobilas.IO.Serialization.Json.Json.Deserialize(string, Newtonsoft.Json.JsonSerializerSettings?)
+  name: Deserialize(string?, JsonSerializerSettings?)
+  nameWithType: Json.Deserialize(string?, JsonSerializerSettings?)
+  fullName: Cobilas.IO.Serialization.Json.Json.Deserialize(string?, Newtonsoft.Json.JsonSerializerSettings?)
   type: Method
   source:
     remote:
-      path: Cobilas/IO/Serialization/Json/Json.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Deserialize
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
     startLine: 29
   assemblies:
   - Cobilas.Core
@@ -194,7 +194,7 @@ items:
   summary: Deserializes the JSON to a .NET object using <xref href="Newtonsoft.Json.JsonSerializerSettings" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public static object Deserialize(string value, JsonSerializerSettings? settings)
+    content: public static object Deserialize(string? value, JsonSerializerSettings? settings)
     parameters:
     - id: value
       type: System.String
@@ -221,17 +221,17 @@ items:
   langs:
   - csharp
   - vb
-  name: Deserialize(string)
-  nameWithType: Json.Deserialize(string)
-  fullName: Cobilas.IO.Serialization.Json.Json.Deserialize(string)
+  name: Deserialize(string?)
+  nameWithType: Json.Deserialize(string?)
+  fullName: Cobilas.IO.Serialization.Json.Json.Deserialize(string?)
   type: Method
   source:
     remote:
-      path: Cobilas/IO/Serialization/Json/Json.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Deserialize
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
     startLine: 32
   assemblies:
   - Cobilas.Core
@@ -239,7 +239,7 @@ items:
   summary: Deserializes the JSON to a .NET object using <xref href="Newtonsoft.Json.JsonSerializerSettings" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public static object Deserialize(string value)
+    content: public static object Deserialize(string? value)
     parameters:
     - id: value
       type: System.String
@@ -261,17 +261,17 @@ items:
   langs:
   - csharp
   - vb
-  name: Deserialize(string, Type?, JsonSerializerSettings?)
-  nameWithType: Json.Deserialize(string, Type?, JsonSerializerSettings?)
-  fullName: Cobilas.IO.Serialization.Json.Json.Deserialize(string, System.Type?, Newtonsoft.Json.JsonSerializerSettings?)
+  name: Deserialize(string?, Type?, JsonSerializerSettings?)
+  nameWithType: Json.Deserialize(string?, Type?, JsonSerializerSettings?)
+  fullName: Cobilas.IO.Serialization.Json.Json.Deserialize(string?, System.Type?, Newtonsoft.Json.JsonSerializerSettings?)
   type: Method
   source:
     remote:
-      path: Cobilas/IO/Serialization/Json/Json.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Deserialize
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
     startLine: 41
   assemblies:
   - Cobilas.Core
@@ -279,7 +279,7 @@ items:
   summary: Deserializes the JSON to a .NET object using <xref href="Newtonsoft.Json.JsonSerializerSettings" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public static object Deserialize(string value, Type? typeObject, JsonSerializerSettings? settings)
+    content: public static object Deserialize(string? value, Type? typeObject, JsonSerializerSettings? settings)
     parameters:
     - id: value
       type: System.String
@@ -309,17 +309,17 @@ items:
   langs:
   - csharp
   - vb
-  name: Deserialize(string, Type?)
-  nameWithType: Json.Deserialize(string, Type?)
-  fullName: Cobilas.IO.Serialization.Json.Json.Deserialize(string, System.Type?)
+  name: Deserialize(string?, Type?)
+  nameWithType: Json.Deserialize(string?, Type?)
+  fullName: Cobilas.IO.Serialization.Json.Json.Deserialize(string?, System.Type?)
   type: Method
   source:
     remote:
-      path: Cobilas/IO/Serialization/Json/Json.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Deserialize
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
     startLine: 44
   assemblies:
   - Cobilas.Core
@@ -327,7 +327,7 @@ items:
   summary: Deserializes the JSON to a .NET object using <xref href="Newtonsoft.Json.JsonSerializerSettings" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public static object Deserialize(string value, Type? typeObject)
+    content: public static object Deserialize(string? value, Type? typeObject)
     parameters:
     - id: value
       type: System.String
@@ -352,17 +352,17 @@ items:
   langs:
   - csharp
   - vb
-  name: Deserialize<T>(string, JsonSerializerSettings)
-  nameWithType: Json.Deserialize<T>(string, JsonSerializerSettings)
-  fullName: Cobilas.IO.Serialization.Json.Json.Deserialize<T>(string, Newtonsoft.Json.JsonSerializerSettings)
+  name: Deserialize<T>(string?, JsonSerializerSettings)
+  nameWithType: Json.Deserialize<T>(string?, JsonSerializerSettings)
+  fullName: Cobilas.IO.Serialization.Json.Json.Deserialize<T>(string?, Newtonsoft.Json.JsonSerializerSettings)
   type: Method
   source:
     remote:
-      path: Cobilas/IO/Serialization/Json/Json.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Deserialize
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
     startLine: 48
   assemblies:
   - Cobilas.Core
@@ -370,7 +370,7 @@ items:
   summary: Deserializes the JSON to a .NET object using <xref href="Newtonsoft.Json.JsonSerializerSettings" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public static T? Deserialize<T>(string value, JsonSerializerSettings settings)
+    content: public static T? Deserialize<T>(string? value, JsonSerializerSettings settings)
     parameters:
     - id: value
       type: System.String
@@ -400,17 +400,17 @@ items:
   langs:
   - csharp
   - vb
-  name: Deserialize<T>(string)
-  nameWithType: Json.Deserialize<T>(string)
-  fullName: Cobilas.IO.Serialization.Json.Json.Deserialize<T>(string)
+  name: Deserialize<T>(string?)
+  nameWithType: Json.Deserialize<T>(string?)
+  fullName: Cobilas.IO.Serialization.Json.Json.Deserialize<T>(string?)
   type: Method
   source:
     remote:
-      path: Cobilas/IO/Serialization/Json/Json.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Deserialize
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Serialization/Json/Json.cs
     startLine: 51
   assemblies:
   - Cobilas.Core
@@ -418,7 +418,7 @@ items:
   summary: Deserializes the JSON to a .NET object using <xref href="Newtonsoft.Json.JsonSerializerSettings" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public static T? Deserialize<T>(string value)
+    content: public static T? Deserialize<T>(string? value)
     parameters:
     - id: value
       type: System.String

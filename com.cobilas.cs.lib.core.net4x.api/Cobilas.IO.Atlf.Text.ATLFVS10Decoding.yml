@@ -22,11 +22,11 @@ items:
   type: Class
   source:
     remote:
-      path: Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ATLFVS10Decoding
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
     startLine: 7
   assemblies:
   - Cobilas.Core
@@ -69,11 +69,11 @@ items:
   type: Property
   source:
     remote:
-      path: Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Version
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
     startLine: 9
   assemblies:
   - Cobilas.Core
@@ -101,11 +101,11 @@ items:
   type: Method
   source:
     remote:
-      path: Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Reader
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
     startLine: 15
   assemblies:
   - Cobilas.Core
@@ -120,6 +120,7 @@ items:
       description: <p>args[0] = <xref href="System.String" data-throw-if-not-resolved="false"></xref></p>
     return:
       type: Cobilas.IO.Atlf.ATLFNode[]
+      description: An array of <xref href="Cobilas.IO.Atlf.ATLFNode" data-throw-if-not-resolved="false"></xref> objects parsed from the input string.
     content.vb: Public Overrides Function Reader(ParamArray args As Object()) As ATLFNode()
   overridden: Cobilas.IO.Atlf.Text.ATLFDecoding.Reader(System.Object[])
   overload: Cobilas.IO.Atlf.Text.ATLFVS10Decoding.Reader*
@@ -139,11 +140,11 @@ items:
   type: Method
   source:
     remote:
-      path: Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Reader4Byte
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
     startLine: 26
   assemblies:
   - Cobilas.Core
@@ -161,6 +162,7 @@ items:
         <p>args[1] = <xref href="System.Text.Encoding" data-throw-if-not-resolved="false"></xref></p>
     return:
       type: Cobilas.IO.Atlf.ATLFNode[]
+      description: An array of <xref href="Cobilas.IO.Atlf.ATLFNode" data-throw-if-not-resolved="false"></xref> objects parsed from the byte array.
     content.vb: Public Overrides Function Reader4Byte(ParamArray args As Object()) As ATLFNode()
   overridden: Cobilas.IO.Atlf.Text.ATLFDecoding.Reader4Byte(System.Object[])
   overload: Cobilas.IO.Atlf.Text.ATLFVS10Decoding.Reader4Byte*
@@ -180,24 +182,36 @@ items:
   type: Method
   source:
     remote:
-      path: Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: Reader
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
-    startLine: 34
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
+    startLine: 40
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf.Text
+  summary: Reads ATLF nodes from a <xref href="Cobilas.IO.Atlf.Components.CharacterCursor" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    This method processes the ATLF format by reading tokens sequentially from the cursor.
+
+    It recognizes tag openings (#!), comment openings (#&gt;), and ignores whitespace.
+  example: []
   syntax:
     content: protected virtual ATLFNode[] Reader(CharacterCursor cursor)
     parameters:
     - id: cursor
       type: Cobilas.IO.Atlf.Components.CharacterCursor
+      description: The character cursor providing the source text.
     return:
       type: Cobilas.IO.Atlf.ATLFNode[]
+      description: An array of <xref href="Cobilas.IO.Atlf.ATLFNode" data-throw-if-not-resolved="false"></xref> objects parsed from the cursor.
     content.vb: Protected Overridable Function Reader(cursor As CharacterCursor) As ATLFNode()
   overload: Cobilas.IO.Atlf.Text.ATLFVS10Decoding.Reader*
+  exceptions:
+  - type: Cobilas.IO.Atlf.ATLFException
+    commentId: T:Cobilas.IO.Atlf.ATLFException
+    description: Thrown when the input text is empty or contains unrecognized tokens.
 - uid: Cobilas.IO.Atlf.Text.ATLFVS10Decoding.GetComment(Cobilas.IO.Atlf.Components.CharacterCursor)
   commentId: M:Cobilas.IO.Atlf.Text.ATLFVS10Decoding.GetComment(Cobilas.IO.Atlf.Components.CharacterCursor)
   id: GetComment(Cobilas.IO.Atlf.Components.CharacterCursor)
@@ -211,24 +225,33 @@ items:
   type: Method
   source:
     remote:
-      path: Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: GetComment
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
-    startLine: 53
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
+    startLine: 64
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf.Text
+  summary: Parses a comment node from the cursor.
+  remarks: The comment block is expected to end with the "&lt;#" token. The escape sequence "\&lt;#" is allowed within the comment.
+  example: []
   syntax:
     content: protected virtual ATLFNode GetComment(CharacterCursor cursor)
     parameters:
     - id: cursor
       type: Cobilas.IO.Atlf.Components.CharacterCursor
+      description: The character cursor positioned at the start of the comment content.
     return:
       type: Cobilas.IO.Atlf.ATLFNode
+      description: An <xref href="Cobilas.IO.Atlf.ATLFNode" data-throw-if-not-resolved="false"></xref> of type <xref href="Cobilas.IO.Atlf.ATLFNodeType.Comment" data-throw-if-not-resolved="false"></xref> containing the comment text.
     content.vb: Protected Overridable Function GetComment(cursor As CharacterCursor) As ATLFNode
   overload: Cobilas.IO.Atlf.Text.ATLFVS10Decoding.GetComment*
+  exceptions:
+  - type: Cobilas.IO.Atlf.ATLFException
+    commentId: T:Cobilas.IO.Atlf.ATLFException
+    description: Thrown when the comment block is not properly closed.
 - uid: Cobilas.IO.Atlf.Text.ATLFVS10Decoding.GetTag(Cobilas.IO.Atlf.Components.CharacterCursor)
   commentId: M:Cobilas.IO.Atlf.Text.ATLFVS10Decoding.GetTag(Cobilas.IO.Atlf.Components.CharacterCursor)
   id: GetTag(Cobilas.IO.Atlf.Components.CharacterCursor)
@@ -242,22 +265,26 @@ items:
   type: Method
   source:
     remote:
-      path: Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: GetTag
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
-    startLine: 70
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
+    startLine: 83
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf.Text
+  summary: Parses a tag node from the cursor.
+  example: []
   syntax:
     content: protected virtual ATLFNode GetTag(CharacterCursor cursor)
     parameters:
     - id: cursor
       type: Cobilas.IO.Atlf.Components.CharacterCursor
+      description: The character cursor positioned after the "#!" token.
     return:
       type: Cobilas.IO.Atlf.ATLFNode
+      description: An <xref href="Cobilas.IO.Atlf.ATLFNode" data-throw-if-not-resolved="false"></xref> of type <xref href="Cobilas.IO.Atlf.ATLFNodeType.Tag" data-throw-if-not-resolved="false"></xref> containing the tag name and text.
     content.vb: Protected Overridable Function GetTag(cursor As CharacterCursor) As ATLFNode
   overload: Cobilas.IO.Atlf.Text.ATLFVS10Decoding.GetTag*
 - uid: Cobilas.IO.Atlf.Text.ATLFVS10Decoding.GetTag(Cobilas.IO.Atlf.Components.CharacterCursor,Cobilas.IO.Atlf.ATLFNodeType)
@@ -273,26 +300,39 @@ items:
   type: Method
   source:
     remote:
-      path: Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: GetTag
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
-    startLine: 72
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
+    startLine: 95
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf.Text
+  summary: Parses a tag node from the cursor with a specified node type.
+  remarks: >-
+    The tag format is: #! name :/* text */. The text block ends with "*/" and the escape sequence "\*/" is allowed.
+
+    Valid characters for tag names are letters, digits, '.', '_', '/', '\', and '&gt;'.
+  example: []
   syntax:
     content: protected virtual ATLFNode GetTag(CharacterCursor cursor, ATLFNodeType nodeType)
     parameters:
     - id: cursor
       type: Cobilas.IO.Atlf.Components.CharacterCursor
+      description: The character cursor positioned after the "#!" token.
     - id: nodeType
       type: Cobilas.IO.Atlf.ATLFNodeType
+      description: The <xref href="Cobilas.IO.Atlf.ATLFNodeType" data-throw-if-not-resolved="false"></xref> to assign to the parsed node.
     return:
       type: Cobilas.IO.Atlf.ATLFNode
+      description: An <xref href="Cobilas.IO.Atlf.ATLFNode" data-throw-if-not-resolved="false"></xref> with the specified type, containing the tag name and text.
     content.vb: Protected Overridable Function GetTag(cursor As CharacterCursor, nodeType As ATLFNodeType) As ATLFNode
   overload: Cobilas.IO.Atlf.Text.ATLFVS10Decoding.GetTag*
+  exceptions:
+  - type: Cobilas.IO.Atlf.ATLFException
+    commentId: T:Cobilas.IO.Atlf.ATLFException
+    description: Thrown when the tag has no name, contains invalid characters, or the text block is not properly opened or closed.
 - uid: Cobilas.IO.Atlf.Text.ATLFVS10Decoding.ValidCharacter(System.Char)
   commentId: M:Cobilas.IO.Atlf.Text.ATLFVS10Decoding.ValidCharacter(System.Char)
   id: ValidCharacter(System.Char)
@@ -306,12 +346,12 @@ items:
   type: Method
   source:
     remote:
-      path: Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: ValidCharacter
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
-    startLine: 115
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/IO/Atlf/Text/ATLFVS10Decoding.cs
+    startLine: 140
   assemblies:
   - Cobilas.Core
   namespace: Cobilas.IO.Atlf.Text
@@ -324,6 +364,10 @@ items:
       type: System.Char
     return:
       type: System.Boolean
+      description: >-
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the character is a letter, digit, or one of the allowed special characters ('.', '_', '/', '\', '&gt;'); 
+
+        otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Protected Overrides Function ValidCharacter(c As Char) As Boolean
   overridden: Cobilas.IO.Atlf.Text.ATLFDecoding.ValidCharacter(System.Char)
   overload: Cobilas.IO.Atlf.Text.ATLFVS10Decoding.ValidCharacter*
@@ -1285,6 +1329,13 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: Cobilas.IO.Atlf.ATLFNode
+  commentId: T:Cobilas.IO.Atlf.ATLFNode
+  parent: Cobilas.IO.Atlf
+  href: Cobilas.IO.Atlf.ATLFNode.html
+  name: ATLFNode
+  nameWithType: ATLFNode
+  fullName: Cobilas.IO.Atlf.ATLFNode
 - uid: Cobilas.IO.Atlf.Text.ATLFDecoding.Reader(System.Object[])
   commentId: M:Cobilas.IO.Atlf.Text.ATLFDecoding.Reader(System.Object[])
   parent: Cobilas.IO.Atlf.Text.ATLFDecoding
@@ -1374,6 +1425,36 @@ references:
     href: Cobilas.IO.Atlf.ATLFNode.html
   - name: (
   - name: )
+- uid: Cobilas.IO.Atlf
+  commentId: N:Cobilas.IO.Atlf
+  href: Cobilas.html
+  name: Cobilas.IO.Atlf
+  nameWithType: Cobilas.IO.Atlf
+  fullName: Cobilas.IO.Atlf
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.IO
+    name: IO
+    href: Cobilas.IO.html
+  - name: .
+  - uid: Cobilas.IO.Atlf
+    name: Atlf
+    href: Cobilas.IO.Atlf.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.IO
+    name: IO
+    href: Cobilas.IO.html
+  - name: .
+  - uid: Cobilas.IO.Atlf
+    name: Atlf
+    href: Cobilas.IO.Atlf.html
 - uid: System.Byte
   commentId: T:System.Byte
   parent: System
@@ -1472,6 +1553,13 @@ references:
   name: CharacterCursor
   nameWithType: CharacterCursor
   fullName: Cobilas.IO.Atlf.Components.CharacterCursor
+- uid: Cobilas.IO.Atlf.ATLFException
+  commentId: T:Cobilas.IO.Atlf.ATLFException
+  parent: Cobilas.IO.Atlf
+  href: Cobilas.IO.Atlf.ATLFException.html
+  name: ATLFException
+  nameWithType: ATLFException
+  fullName: Cobilas.IO.Atlf.ATLFException
 - uid: Cobilas.IO.Atlf.Components
   commentId: N:Cobilas.IO.Atlf.Components
   href: Cobilas.html
@@ -1510,49 +1598,24 @@ references:
   - uid: Cobilas.IO.Atlf.Components
     name: Components
     href: Cobilas.IO.Atlf.Components.html
+- uid: Cobilas.IO.Atlf.ATLFNodeType.Comment
+  commentId: F:Cobilas.IO.Atlf.ATLFNodeType.Comment
+  href: Cobilas.IO.Atlf.ATLFNodeType.html#Cobilas_IO_Atlf_ATLFNodeType_Comment
+  name: Comment
+  nameWithType: ATLFNodeType.Comment
+  fullName: Cobilas.IO.Atlf.ATLFNodeType.Comment
 - uid: Cobilas.IO.Atlf.Text.ATLFVS10Decoding.GetComment*
   commentId: Overload:Cobilas.IO.Atlf.Text.ATLFVS10Decoding.GetComment
   href: Cobilas.IO.Atlf.Text.ATLFVS10Decoding.html#Cobilas_IO_Atlf_Text_ATLFVS10Decoding_GetComment_Cobilas_IO_Atlf_Components_CharacterCursor_
   name: GetComment
   nameWithType: ATLFVS10Decoding.GetComment
   fullName: Cobilas.IO.Atlf.Text.ATLFVS10Decoding.GetComment
-- uid: Cobilas.IO.Atlf.ATLFNode
-  commentId: T:Cobilas.IO.Atlf.ATLFNode
-  parent: Cobilas.IO.Atlf
-  href: Cobilas.IO.Atlf.ATLFNode.html
-  name: ATLFNode
-  nameWithType: ATLFNode
-  fullName: Cobilas.IO.Atlf.ATLFNode
-- uid: Cobilas.IO.Atlf
-  commentId: N:Cobilas.IO.Atlf
-  href: Cobilas.html
-  name: Cobilas.IO.Atlf
-  nameWithType: Cobilas.IO.Atlf
-  fullName: Cobilas.IO.Atlf
-  spec.csharp:
-  - uid: Cobilas
-    name: Cobilas
-    href: Cobilas.html
-  - name: .
-  - uid: Cobilas.IO
-    name: IO
-    href: Cobilas.IO.html
-  - name: .
-  - uid: Cobilas.IO.Atlf
-    name: Atlf
-    href: Cobilas.IO.Atlf.html
-  spec.vb:
-  - uid: Cobilas
-    name: Cobilas
-    href: Cobilas.html
-  - name: .
-  - uid: Cobilas.IO
-    name: IO
-    href: Cobilas.IO.html
-  - name: .
-  - uid: Cobilas.IO.Atlf
-    name: Atlf
-    href: Cobilas.IO.Atlf.html
+- uid: Cobilas.IO.Atlf.ATLFNodeType.Tag
+  commentId: F:Cobilas.IO.Atlf.ATLFNodeType.Tag
+  href: Cobilas.IO.Atlf.ATLFNodeType.html#Cobilas_IO_Atlf_ATLFNodeType_Tag
+  name: Tag
+  nameWithType: ATLFNodeType.Tag
+  fullName: Cobilas.IO.Atlf.ATLFNodeType.Tag
 - uid: Cobilas.IO.Atlf.Text.ATLFVS10Decoding.GetTag*
   commentId: Overload:Cobilas.IO.Atlf.Text.ATLFVS10Decoding.GetTag
   href: Cobilas.IO.Atlf.Text.ATLFVS10Decoding.html#Cobilas_IO_Atlf_Text_ATLFVS10Decoding_GetTag_Cobilas_IO_Atlf_Components_CharacterCursor_

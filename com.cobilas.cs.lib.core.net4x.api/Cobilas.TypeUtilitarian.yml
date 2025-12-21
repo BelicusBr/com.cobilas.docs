@@ -6,9 +6,10 @@ items:
   parent: Cobilas
   children:
   - Cobilas.TypeUtilitarian.GetAssemblies
-  - Cobilas.TypeUtilitarian.GetType(System.String)
-  - Cobilas.TypeUtilitarian.GetTypes
-  - Cobilas.TypeUtilitarian.TypeExist(System.String)
+  - Cobilas.TypeUtilitarian.GetAssembly(System.String)
+  - Cobilas.TypeUtilitarian.GetType(System.String,System.String)
+  - Cobilas.TypeUtilitarian.GetTypes(System.String)
+  - Cobilas.TypeUtilitarian.TypeExist(System.String,System.String)
   langs:
   - csharp
   - vb
@@ -18,12 +19,12 @@ items:
   type: Class
   source:
     remote:
-      path: Cobilas/TypeUtilitarian.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: TypeUtilitarian
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs
-    startLine: 6
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs
+    startLine: 7
   assemblies:
   - Cobilas.Core
   namespace: Cobilas
@@ -42,115 +43,139 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Cobilas.TypeUtilitarian.GetTypes
-  commentId: M:Cobilas.TypeUtilitarian.GetTypes
-  id: GetTypes
+- uid: Cobilas.TypeUtilitarian.GetTypes(System.String)
+  commentId: M:Cobilas.TypeUtilitarian.GetTypes(System.String)
+  id: GetTypes(System.String)
   parent: Cobilas.TypeUtilitarian
   langs:
   - csharp
   - vb
-  name: GetTypes()
-  nameWithType: TypeUtilitarian.GetTypes()
-  fullName: Cobilas.TypeUtilitarian.GetTypes()
+  name: GetTypes(string?)
+  nameWithType: TypeUtilitarian.GetTypes(string?)
+  fullName: Cobilas.TypeUtilitarian.GetTypes(string?)
   type: Method
   source:
     remote:
-      path: Cobilas/TypeUtilitarian.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: GetTypes
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs
-    startLine: 10
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs
+    startLine: 16
   assemblies:
   - Cobilas.Core
   namespace: Cobilas
   summary: Get all types of assembly.
+  remarks: >-
+    When <code class="paramref">assemblyName</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, this method returns types from all loaded assemblies.
+
+    Otherwise, it returns types only from the specified assembly.
   example: []
   syntax:
-    content: public static Type[] GetTypes()
+    content: public static Type[] GetTypes(string? assemblyName = null)
+    parameters:
+    - id: assemblyName
+      type: System.String
+      description: The full name of the assembly to get types from. If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, types from all assemblies are returned.
     return:
       type: System.Type[]
-      description: Returns all types of objects from all assemblies.
-    content.vb: Public Shared Function GetTypes() As Type()
+      description: Returns all types of objects from the specified assembly or from all assemblies.
+    content.vb: Public Shared Function GetTypes(assemblyName As String = Nothing) As Type()
   overload: Cobilas.TypeUtilitarian.GetTypes*
-- uid: Cobilas.TypeUtilitarian.TypeExist(System.String)
-  commentId: M:Cobilas.TypeUtilitarian.TypeExist(System.String)
-  id: TypeExist(System.String)
+  exceptions:
+  - type: Cobilas.Exceptions.AssemblyNotFoundException
+    commentId: T:Cobilas.Exceptions.AssemblyNotFoundException
+    description: Thrown when the specified assembly name is not found.
+  nameWithType.vb: TypeUtilitarian.GetTypes(String)
+  fullName.vb: Cobilas.TypeUtilitarian.GetTypes(String)
+  name.vb: GetTypes(String)
+- uid: Cobilas.TypeUtilitarian.TypeExist(System.String,System.String)
+  commentId: M:Cobilas.TypeUtilitarian.TypeExist(System.String,System.String)
+  id: TypeExist(System.String,System.String)
   parent: Cobilas.TypeUtilitarian
   langs:
   - csharp
   - vb
-  name: TypeExist(string)
-  nameWithType: TypeUtilitarian.TypeExist(string)
-  fullName: Cobilas.TypeUtilitarian.TypeExist(string)
+  name: TypeExist(string, string?)
+  nameWithType: TypeUtilitarian.TypeExist(string, string?)
+  fullName: Cobilas.TypeUtilitarian.TypeExist(string, string?)
   type: Method
   source:
     remote:
-      path: Cobilas/TypeUtilitarian.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: TypeExist
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs
-    startLine: 21
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs
+    startLine: 35
   assemblies:
   - Cobilas.Core
   namespace: Cobilas
   summary: Checks if the type exists.
+  remarks: This method compares the type's full name (including namespace) with the provided <code class="paramref">fullName</code>.
   example: []
   syntax:
-    content: public static bool TypeExist(string fullName)
+    content: public static bool TypeExist(string fullName, string? assemblyName = null)
     parameters:
     - id: fullName
       type: System.String
-      description: The full name of the type. (example:<code>System.String</code>)
+      description: The full name of the type (e.g., <code>System.String</code>).
+    - id: assemblyName
+      type: System.String
+      description: The full name of the assembly to search in. If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, all assemblies are searched.
     return:
       type: System.Boolean
-      description: Returns <code>true</code> when the type exists.
-    content.vb: Public Shared Function TypeExist(fullName As String) As Boolean
+      description: Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> when the type exists; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Shared Function TypeExist(fullName As String, assemblyName As String = Nothing) As Boolean
   overload: Cobilas.TypeUtilitarian.TypeExist*
-  nameWithType.vb: TypeUtilitarian.TypeExist(String)
-  fullName.vb: Cobilas.TypeUtilitarian.TypeExist(String)
-  name.vb: TypeExist(String)
-- uid: Cobilas.TypeUtilitarian.GetType(System.String)
-  commentId: M:Cobilas.TypeUtilitarian.GetType(System.String)
-  id: GetType(System.String)
+  nameWithType.vb: TypeUtilitarian.TypeExist(String, String)
+  fullName.vb: Cobilas.TypeUtilitarian.TypeExist(String, String)
+  name.vb: TypeExist(String, String)
+- uid: Cobilas.TypeUtilitarian.GetType(System.String,System.String)
+  commentId: M:Cobilas.TypeUtilitarian.GetType(System.String,System.String)
+  id: GetType(System.String,System.String)
   parent: Cobilas.TypeUtilitarian
   langs:
   - csharp
   - vb
-  name: GetType(string)
-  nameWithType: TypeUtilitarian.GetType(string)
-  fullName: Cobilas.TypeUtilitarian.GetType(string)
+  name: GetType(string, string?)
+  nameWithType: TypeUtilitarian.GetType(string, string?)
+  fullName: Cobilas.TypeUtilitarian.GetType(string, string?)
   type: Method
   source:
     remote:
-      path: Cobilas/TypeUtilitarian.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: GetType
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs
-    startLine: 33
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs
+    startLine: 51
   assemblies:
   - Cobilas.Core
   namespace: Cobilas
   summary: Get a specific type.
+  remarks: This method searches for a type by its full name (including namespace). If not found, it returns the type of <xref href="Cobilas.NullObject.Null" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public static Type GetType(string fullName)
+    content: public static Type GetType(string fullName, string? assemblyName = null)
     parameters:
     - id: fullName
       type: System.String
-      description: The full name of the type. (example:<code>System.String</code>)
+      description: The full name of the type (e.g., <code>System.String</code>).
+    - id: assemblyName
+      type: System.String
+      description: The full name of the assembly to search in. If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, all assemblies are searched.
     return:
       type: System.Type
       description: >-
         Returns the type that was specified in the parameter.
-            <p>If the specified type is not found had returned the <xref href="Cobilas.NullObject" data-throw-if-not-resolved="false"></xref> type.</p>
-    content.vb: Public Shared Function [GetType](fullName As String) As Type
+
+        <p>If the specified type is not found, returns the <xref href="Cobilas.NullObject.Null" data-throw-if-not-resolved="false"></xref> type.</p>
+    content.vb: Public Shared Function [GetType](fullName As String, assemblyName As String = Nothing) As Type
   overload: Cobilas.TypeUtilitarian.GetType*
-  nameWithType.vb: TypeUtilitarian.GetType(String)
-  fullName.vb: Cobilas.TypeUtilitarian.GetType(String)
-  name.vb: GetType(String)
+  nameWithType.vb: TypeUtilitarian.GetType(String, String)
+  fullName.vb: Cobilas.TypeUtilitarian.GetType(String, String)
+  name.vb: GetType(String, String)
 - uid: Cobilas.TypeUtilitarian.GetAssemblies
   commentId: M:Cobilas.TypeUtilitarian.GetAssemblies
   id: GetAssemblies
@@ -164,12 +189,12 @@ items:
   type: Method
   source:
     remote:
-      path: Cobilas/TypeUtilitarian.cs
-      branch: main.dev
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
     id: GetAssemblies
-    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs
-    startLine: 42
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs
+    startLine: 59
   assemblies:
   - Cobilas.Core
   namespace: Cobilas
@@ -179,9 +204,52 @@ items:
     content: public static Assembly[] GetAssemblies()
     return:
       type: System.Reflection.Assembly[]
-      description: Returns a list all assemblies of the domain.
+      description: Returns a list of all assemblies in the current application domain.
     content.vb: Public Shared Function GetAssemblies() As Assembly()
   overload: Cobilas.TypeUtilitarian.GetAssemblies*
+- uid: Cobilas.TypeUtilitarian.GetAssembly(System.String)
+  commentId: M:Cobilas.TypeUtilitarian.GetAssembly(System.String)
+  id: GetAssembly(System.String)
+  parent: Cobilas.TypeUtilitarian
+  langs:
+  - csharp
+  - vb
+  name: GetAssembly(string?)
+  nameWithType: TypeUtilitarian.GetAssembly(string?)
+  fullName: Cobilas.TypeUtilitarian.GetAssembly(string?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x.git
+    id: GetAssembly
+    path: ../../CSharp Dev/Lib's/com.cobilas.cs.lib.core.net4x/src/com.cobilas.cs.lib.core.net4x/Cobilas/TypeUtilitarian.cs
+    startLine: 70
+  assemblies:
+  - Cobilas.Core
+  namespace: Cobilas
+  summary: Get a specific assembly by its full name.
+  remarks: This method searches the current application domain for an assembly with the exact full name.
+  example: []
+  syntax:
+    content: public static Assembly? GetAssembly(string? assemblyName)
+    parameters:
+    - id: assemblyName
+      type: System.String
+      description: The full name of the assembly to retrieve.
+    return:
+      type: System.Reflection.Assembly
+      description: The requested <xref href="System.Reflection.Assembly" data-throw-if-not-resolved="false"></xref> if found; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    content.vb: Public Shared Function GetAssembly(assemblyName As String) As Assembly
+  overload: Cobilas.TypeUtilitarian.GetAssembly*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">assemblyName</code> is null or empty.
+  nameWithType.vb: TypeUtilitarian.GetAssembly(String)
+  fullName.vb: Cobilas.TypeUtilitarian.GetAssembly(String)
+  name.vb: GetAssembly(String)
 references:
 - uid: Cobilas
   commentId: N:Cobilas
@@ -425,12 +493,29 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Cobilas.Exceptions.AssemblyNotFoundException
+  commentId: T:Cobilas.Exceptions.AssemblyNotFoundException
+  href: Cobilas.Exceptions.AssemblyNotFoundException.html
+  name: AssemblyNotFoundException
+  nameWithType: AssemblyNotFoundException
+  fullName: Cobilas.Exceptions.AssemblyNotFoundException
 - uid: Cobilas.TypeUtilitarian.GetTypes*
   commentId: Overload:Cobilas.TypeUtilitarian.GetTypes
-  href: Cobilas.TypeUtilitarian.html#Cobilas_TypeUtilitarian_GetTypes
+  href: Cobilas.TypeUtilitarian.html#Cobilas_TypeUtilitarian_GetTypes_System_String_
   name: GetTypes
   nameWithType: TypeUtilitarian.GetTypes
   fullName: Cobilas.TypeUtilitarian.GetTypes
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
 - uid: System.Type[]
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.type
@@ -456,21 +541,10 @@ references:
   - name: )
 - uid: Cobilas.TypeUtilitarian.TypeExist*
   commentId: Overload:Cobilas.TypeUtilitarian.TypeExist
-  href: Cobilas.TypeUtilitarian.html#Cobilas_TypeUtilitarian_TypeExist_System_String_
+  href: Cobilas.TypeUtilitarian.html#Cobilas_TypeUtilitarian_TypeExist_System_String_System_String_
   name: TypeExist
   nameWithType: TypeUtilitarian.TypeExist
   fullName: Cobilas.TypeUtilitarian.TypeExist
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -482,16 +556,15 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: Cobilas.NullObject
-  commentId: T:Cobilas.NullObject
-  parent: Cobilas
-  href: Cobilas.NullObject.html
-  name: NullObject
-  nameWithType: NullObject
-  fullName: Cobilas.NullObject
+- uid: Cobilas.NullObject.Null
+  commentId: P:Cobilas.NullObject.Null
+  href: Cobilas.NullObject.html#Cobilas_NullObject_Null
+  name: "Null"
+  nameWithType: NullObject.Null
+  fullName: Cobilas.NullObject.Null
 - uid: Cobilas.TypeUtilitarian.GetType*
   commentId: Overload:Cobilas.TypeUtilitarian.GetType
-  href: Cobilas.TypeUtilitarian.html#Cobilas_TypeUtilitarian_GetType_System_String_
+  href: Cobilas.TypeUtilitarian.html#Cobilas_TypeUtilitarian_GetType_System_String_System_String_
   name: GetType
   nameWithType: TypeUtilitarian.GetType
   fullName: Cobilas.TypeUtilitarian.GetType
@@ -532,3 +605,46 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
   - name: (
   - name: )
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: Cobilas.TypeUtilitarian.GetAssembly*
+  commentId: Overload:Cobilas.TypeUtilitarian.GetAssembly
+  href: Cobilas.TypeUtilitarian.html#Cobilas_TypeUtilitarian_GetAssembly_System_String_
+  name: GetAssembly
+  nameWithType: TypeUtilitarian.GetAssembly
+  fullName: Cobilas.TypeUtilitarian.GetAssembly
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    href: https://learn.microsoft.com/dotnet/api/system.reflection

@@ -7,8 +7,10 @@ items:
   children:
   - Godot.Sprite_CB_GB_Extension.GetGlobalRect2D(Godot.Sprite)
   - Godot.Sprite_CB_GB_Extension.GetRect2D(Godot.Sprite)
+  - Godot.Sprite_CB_GB_Extension.GetTextureSize(Godot.Sprite)
   - Godot.Sprite_CB_GB_Extension.SetGlobalRect2D(Godot.Sprite,Cobilas.GodotEngine.Utility.Rect2D)
   - Godot.Sprite_CB_GB_Extension.SetRect2D(Godot.Sprite,Cobilas.GodotEngine.Utility.Rect2D)
+  - Godot.Sprite_CB_GB_Extension.SetTextureSize(Godot.Sprite,Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
   langs:
   - csharp
   - vb
@@ -19,7 +21,7 @@ items:
   source:
     remote:
       path: src/com.cobilas.godot.utility/Godot/Sprite_CB_GB_Extension.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Sprite_CB_GB_Extension
     path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/Godot/Sprite_CB_GB_Extension.cs
@@ -64,7 +66,7 @@ items:
   source:
     remote:
       path: src/com.cobilas.godot.utility/Godot/Sprite_CB_GB_Extension.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetRect2D
     path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/Godot/Sprite_CB_GB_Extension.cs
@@ -107,7 +109,7 @@ items:
   source:
     remote:
       path: src/com.cobilas.godot.utility/Godot/Sprite_CB_GB_Extension.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SetRect2D
     path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/Godot/Sprite_CB_GB_Extension.cs
@@ -150,7 +152,7 @@ items:
   source:
     remote:
       path: src/com.cobilas.godot.utility/Godot/Sprite_CB_GB_Extension.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetGlobalRect2D
     path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/Godot/Sprite_CB_GB_Extension.cs
@@ -193,7 +195,7 @@ items:
   source:
     remote:
       path: src/com.cobilas.godot.utility/Godot/Sprite_CB_GB_Extension.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SetGlobalRect2D
     path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/Godot/Sprite_CB_GB_Extension.cs
@@ -221,6 +223,96 @@ items:
   nameWithType.vb: Sprite_CB_GB_Extension.SetGlobalRect2D(Sprite, Rect2D)
   fullName.vb: Godot.Sprite_CB_GB_Extension.SetGlobalRect2D(Godot.Sprite, Cobilas.GodotEngine.Utility.Rect2D)
   name.vb: SetGlobalRect2D(Sprite, Rect2D)
+- uid: Godot.Sprite_CB_GB_Extension.GetTextureSize(Godot.Sprite)
+  commentId: M:Godot.Sprite_CB_GB_Extension.GetTextureSize(Godot.Sprite)
+  id: GetTextureSize(Godot.Sprite)
+  isExtensionMethod: true
+  parent: Godot.Sprite_CB_GB_Extension
+  langs:
+  - csharp
+  - vb
+  name: GetTextureSize(Sprite?)
+  nameWithType: Sprite_CB_GB_Extension.GetTextureSize(Sprite?)
+  fullName: Godot.Sprite_CB_GB_Extension.GetTextureSize(Godot.Sprite?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.utility/Godot/Sprite_CB_GB_Extension.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: GetTextureSize
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/Godot/Sprite_CB_GB_Extension.cs
+    startLine: 64
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Godot
+  summary: Gets the scaled texture size of the <xref href="Godot.Sprite" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static Vector2D GetTextureSize(this Sprite? ctl)
+    parameters:
+    - id: ctl
+      type: Godot.Sprite
+      description: <xref href="Godot.Sprite" data-throw-if-not-resolved="false"></xref> target (can be null)
+    return:
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+      description: A <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector2D" data-throw-if-not-resolved="false"></xref> representing the scaled texture size, or <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector2D.Zero" data-throw-if-not-resolved="false"></xref> if texture is null
+    content.vb: Public Shared Function GetTextureSize(ctl As Sprite) As Vector2D
+  overload: Godot.Sprite_CB_GB_Extension.GetTextureSize*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <xref href="Godot.Sprite" data-throw-if-not-resolved="false"></xref> is null
+  nameWithType.vb: Sprite_CB_GB_Extension.GetTextureSize(Sprite)
+  fullName.vb: Godot.Sprite_CB_GB_Extension.GetTextureSize(Godot.Sprite)
+  name.vb: GetTextureSize(Sprite)
+- uid: Godot.Sprite_CB_GB_Extension.SetTextureSize(Godot.Sprite,Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  commentId: M:Godot.Sprite_CB_GB_Extension.SetTextureSize(Godot.Sprite,Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  id: SetTextureSize(Godot.Sprite,Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  isExtensionMethod: true
+  parent: Godot.Sprite_CB_GB_Extension
+  langs:
+  - csharp
+  - vb
+  name: SetTextureSize(Sprite?, Vector2DInt)
+  nameWithType: Sprite_CB_GB_Extension.SetTextureSize(Sprite?, Vector2DInt)
+  fullName: Godot.Sprite_CB_GB_Extension.SetTextureSize(Godot.Sprite?, Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.utility/Godot/Sprite_CB_GB_Extension.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: SetTextureSize
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/Godot/Sprite_CB_GB_Extension.cs
+    startLine: 79
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Godot
+  summary: Sets the texture size of the <xref href="Godot.Sprite" data-throw-if-not-resolved="false"></xref> by adjusting its scale.
+  remarks: >-
+    This method calculates and applies the appropriate scale to achieve the desired texture size.
+
+    If the sprite's texture is null, the method returns without making changes.
+  example: []
+  syntax:
+    content: public static void SetTextureSize(this Sprite? ctl, Vector2DInt newSize)
+    parameters:
+    - id: ctl
+      type: Godot.Sprite
+      description: <xref href="Godot.Sprite" data-throw-if-not-resolved="false"></xref> target (can be null)
+    - id: newSize
+      type: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+      description: The desired texture size as a <xref href="Cobilas.GodotEngine.Utility.Numerics.Vector2DInt" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Shared Sub SetTextureSize(ctl As Sprite, newSize As Vector2DInt)
+  overload: Godot.Sprite_CB_GB_Extension.SetTextureSize*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <xref href="Godot.Sprite" data-throw-if-not-resolved="false"></xref> is null
+  nameWithType.vb: Sprite_CB_GB_Extension.SetTextureSize(Sprite, Vector2DInt)
+  fullName.vb: Godot.Sprite_CB_GB_Extension.SetTextureSize(Godot.Sprite, Cobilas.GodotEngine.Utility.Numerics.Vector2DInt)
+  name.vb: SetTextureSize(Sprite, Vector2DInt)
 references:
 - uid: Godot
   commentId: N:Godot
@@ -547,3 +639,73 @@ references:
   name: SetGlobalRect2D
   nameWithType: Sprite_CB_GB_Extension.SetGlobalRect2D
   fullName: Godot.Sprite_CB_GB_Extension.SetGlobalRect2D
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+  commentId: T:Cobilas.GodotEngine.Utility.Numerics.Vector2D
+  parent: Cobilas.GodotEngine.Utility.Numerics
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector2D.html
+  name: Vector2D
+  nameWithType: Vector2D
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector2D
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector2D.Zero
+  commentId: P:Cobilas.GodotEngine.Utility.Numerics.Vector2D.Zero
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector2D.html#Cobilas_GodotEngine_Utility_Numerics_Vector2D_Zero
+  name: Zero
+  nameWithType: Vector2D.Zero
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector2D.Zero
+- uid: Godot.Sprite_CB_GB_Extension.GetTextureSize*
+  commentId: Overload:Godot.Sprite_CB_GB_Extension.GetTextureSize
+  href: Godot.Sprite_CB_GB_Extension.html#Godot_Sprite_CB_GB_Extension_GetTextureSize_Godot_Sprite_
+  name: GetTextureSize
+  nameWithType: Sprite_CB_GB_Extension.GetTextureSize
+  fullName: Godot.Sprite_CB_GB_Extension.GetTextureSize
+- uid: Cobilas.GodotEngine.Utility.Numerics
+  commentId: N:Cobilas.GodotEngine.Utility.Numerics
+  href: Cobilas.html
+  name: Cobilas.GodotEngine.Utility.Numerics
+  nameWithType: Cobilas.GodotEngine.Utility.Numerics
+  fullName: Cobilas.GodotEngine.Utility.Numerics
+  spec.csharp:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.Numerics
+    name: Numerics
+    href: Cobilas.GodotEngine.Utility.Numerics.html
+  spec.vb:
+  - uid: Cobilas
+    name: Cobilas
+    href: Cobilas.html
+  - name: .
+  - uid: Cobilas.GodotEngine
+    name: GodotEngine
+    href: Cobilas.GodotEngine.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility
+    name: Utility
+    href: Cobilas.GodotEngine.Utility.html
+  - name: .
+  - uid: Cobilas.GodotEngine.Utility.Numerics
+    name: Numerics
+    href: Cobilas.GodotEngine.Utility.Numerics.html
+- uid: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+  commentId: T:Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+  parent: Cobilas.GodotEngine.Utility.Numerics
+  href: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt.html
+  name: Vector2DInt
+  nameWithType: Vector2DInt
+  fullName: Cobilas.GodotEngine.Utility.Numerics.Vector2DInt
+- uid: Godot.Sprite_CB_GB_Extension.SetTextureSize*
+  commentId: Overload:Godot.Sprite_CB_GB_Extension.SetTextureSize
+  href: Godot.Sprite_CB_GB_Extension.html#Godot_Sprite_CB_GB_Extension_SetTextureSize_Godot_Sprite_Cobilas_GodotEngine_Utility_Numerics_Vector2DInt_
+  name: SetTextureSize
+  nameWithType: Sprite_CB_GB_Extension.SetTextureSize
+  fullName: Godot.Sprite_CB_GB_Extension.SetTextureSize

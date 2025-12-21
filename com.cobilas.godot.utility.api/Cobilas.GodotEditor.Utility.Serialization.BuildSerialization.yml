@@ -6,6 +6,7 @@ items:
   parent: Cobilas.GodotEditor.Utility.Serialization
   children:
   - Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.Build(Godot.Object)
+  - Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.BuildObjectRender(Godot.Object)
   - Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.GetPropertyList(Godot.Object)
   - Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.GetValue(Godot.Object,System.String)
   - Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.IsPropertyCustom(System.Type)
@@ -21,11 +22,11 @@ items:
   source:
     remote:
       path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: BuildSerialization
     path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs
-    startLine: 13
+    startLine: 12
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization
@@ -58,11 +59,11 @@ items:
   source:
     remote:
       path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: Build
     path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs
-    startLine: 21
+    startLine: 20
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization
@@ -105,11 +106,11 @@ items:
   source:
     remote:
       path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetPropertyList
     path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs
-    startLine: 31
+    startLine: 30
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization
@@ -143,11 +144,11 @@ items:
   source:
     remote:
       path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: GetValue
     path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs
-    startLine: 40
+    startLine: 39
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization
@@ -184,11 +185,11 @@ items:
   source:
     remote:
       path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: SetValue
     path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs
-    startLine: 51
+    startLine: 50
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization
@@ -215,6 +216,48 @@ items:
   nameWithType.vb: BuildSerialization.SetValue(Object, String, Object)
   fullName.vb: Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.SetValue(Godot.Object, String, Object)
   name.vb: SetValue(Object, String, Object)
+- uid: Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.BuildObjectRender(Godot.Object)
+  commentId: M:Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.BuildObjectRender(Godot.Object)
+  id: BuildObjectRender(Godot.Object)
+  parent: Cobilas.GodotEditor.Utility.Serialization.BuildSerialization
+  langs:
+  - csharp
+  - vb
+  name: BuildObjectRender(Object?)
+  nameWithType: BuildSerialization.BuildObjectRender(Object?)
+  fullName: Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.BuildObjectRender(Godot.Object?)
+  type: Method
+  source:
+    remote:
+      path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs
+      branch: main
+      repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
+    id: BuildObjectRender
+    path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs
+    startLine: 62
+  assemblies:
+  - com.cobilas.godot.utility
+  namespace: Cobilas.GodotEditor.Utility.Serialization
+  summary: Builds a property manipulation interface for the specified Godot object.
+  remarks: >-
+    This method creates and caches property renderers for efficient property manipulation.
+
+    Supported object types include <xref href="Godot.Node" data-throw-if-not-resolved="false"></xref> and <xref href="Godot.Resource" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static ISerializedPropertyManipulation? BuildObjectRender(Object? obj)
+    parameters:
+    - id: obj
+      type: Godot.Object
+      description: The Godot object to build the render for.
+    return:
+      type: Cobilas.GodotEditor.Utility.Serialization.ISerializedPropertyManipulation
+      description: An <xref href="Cobilas.GodotEditor.Utility.Serialization.ISerializedPropertyManipulation" data-throw-if-not-resolved="false"></xref> interface for the object, or null if unsupported.
+    content.vb: Public Shared Function BuildObjectRender(obj As [Object]) As ISerializedPropertyManipulation
+  overload: Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.BuildObjectRender*
+  nameWithType.vb: BuildSerialization.BuildObjectRender(Object)
+  fullName.vb: Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.BuildObjectRender(Godot.Object)
+  name.vb: BuildObjectRender(Object)
 - uid: Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.IsPropertyCustom(System.Type,Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom@)
   commentId: M:Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.IsPropertyCustom(System.Type,Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom@)
   id: IsPropertyCustom(System.Type,Cobilas.GodotEditor.Utility.Serialization.Properties.PropertyCustom@)
@@ -229,11 +272,11 @@ items:
   source:
     remote:
       path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: IsPropertyCustom
     path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs
-    startLine: 154
+    startLine: 155
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization
@@ -270,11 +313,11 @@ items:
   source:
     remote:
       path: src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs
-      branch: main.dev
+      branch: main
       repo: https://github.com/BelicusBr/com.cobilas.godot.utility.git
     id: IsPropertyCustom
     path: ../../Godot Dev/com.cobilas.godot.utility/src/com.cobilas.godot.utility/GodotEditor.Utility/Serialization/BuildSerialization.cs
-    startLine: 165
+    startLine: 166
   assemblies:
   - com.cobilas.godot.utility
   namespace: Cobilas.GodotEditor.Utility.Serialization
@@ -700,6 +743,33 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: Cobilas.GodotEditor.Utility.Serialization.ISerializedPropertyManipulation
+  commentId: T:Cobilas.GodotEditor.Utility.Serialization.ISerializedPropertyManipulation
+  parent: Cobilas.GodotEditor.Utility.Serialization
+  href: Cobilas.GodotEditor.Utility.Serialization.ISerializedPropertyManipulation.html
+  name: ISerializedPropertyManipulation
+  nameWithType: ISerializedPropertyManipulation
+  fullName: Cobilas.GodotEditor.Utility.Serialization.ISerializedPropertyManipulation
+- uid: Godot.Node
+  commentId: T:Godot.Node
+  parent: Godot
+  isExternal: true
+  name: Node
+  nameWithType: Node
+  fullName: Godot.Node
+- uid: Godot.Resource
+  commentId: T:Godot.Resource
+  parent: Godot
+  isExternal: true
+  name: Resource
+  nameWithType: Resource
+  fullName: Godot.Resource
+- uid: Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.BuildObjectRender*
+  commentId: Overload:Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.BuildObjectRender
+  href: Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.html#Cobilas_GodotEditor_Utility_Serialization_BuildSerialization_BuildObjectRender_Godot_Object_
+  name: BuildObjectRender
+  nameWithType: BuildSerialization.BuildObjectRender
+  fullName: Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.BuildObjectRender
 - uid: Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.IsPropertyCustom*
   commentId: Overload:Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.IsPropertyCustom
   href: Cobilas.GodotEditor.Utility.Serialization.BuildSerialization.html#Cobilas_GodotEditor_Utility_Serialization_BuildSerialization_IsPropertyCustom_System_Type_Cobilas_GodotEditor_Utility_Serialization_Properties_PropertyCustom__

@@ -84,18 +84,18 @@ static void Main(string[] args) {
 Regarding encoders and decoders, ATLF allows the creation of customized encoders and decoders.<br>
 To use a custom encoder or decoder, assign a version to your custom encoder or decoder using the `Version` property and then assign the version of the custom encoder or decoder in the `TargetVersion` property of the `ATLFWriter` and `ATLFReader` classes.<br>
 #### Creating a custom encoding class
-To create a custom encoding class, the class must inherit the `ATLFVS10Encoding` class.
+To create a custom encoding class, the class must inherit the `ATLFEncoding` class.
 #### Creating a custom decoding class
-To create a custom decoding class, the class must inherit the `ATLFVS10Decoding` class.
+To create a custom decoding class, the class must inherit the `ATLFDecoding` class.
 
 # [Cobilas.Core.Net4x](https://www.nuget.org/packages/Cobilas.Core.Net4x) is on nuget.org
 To include the package, open the `.csproj` file and add it.
 ```xml
 <ItemGroup>
-  <PackageReference Include="Cobilas.Core.Net4x" Version="2.7.2" />
+  <PackageReference Include="Cobilas.Core.Net4x" Version="2.8.0" />
 </ItemGroup>
 ```
 Or use command line.
 ```ps1
-dotnet add package Cobilas.Core.Net4x --version 2.7.2
+dotnet add package Cobilas.Core.Net4x --version 2.8.0
 ```
