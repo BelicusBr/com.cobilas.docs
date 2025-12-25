@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/new/main/apiSpec/new?filename=System_ExceptionMessages.md&amp;value=---%0Auid%3A%20System.ExceptionMessages%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/new/main.fix/apiSpec/new?filename=System_ExceptionMessages.md&amp;value=---%0Auid%3A%20System.ExceptionMessages%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="System_ExceptionMessages" data-uid="System.ExceptionMessages" class="text-break">
-Class ExceptionMessages  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L13"><i class="bi bi-code-slash"></i></a>
+Class ExceptionMessages  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -157,11 +157,95 @@ providing backward compatibility for older frameworks. Each method conditionally
 </h2>
 
 
+  <a id="System_ExceptionMessages_ThrowIf_" data-uid="System.ExceptionMessages.ThrowIf*"></a>
+
+  <h3 id="System_ExceptionMessages_ThrowIf_System_Boolean_System_Object_" data-uid="System.ExceptionMessages.ThrowIf(System.Boolean,System.Object)">
+  ThrowIf(bool, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a> if the specified <code class="paramref">condition</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ThrowIf(bool condition, object instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The condition to evaluate.</p>
+</dd>
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object whose type's full name should be included in any resulting <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>The <code class="paramref">condition</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="System_ExceptionMessages_ThrowIf_" data-uid="System.ExceptionMessages.ThrowIf*"></a>
+
+  <h3 id="System_ExceptionMessages_ThrowIf_System_Boolean_System_Type_" data-uid="System.ExceptionMessages.ThrowIf(System.Boolean,System.Type)">
+  ThrowIf(bool, Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a> if the specified <code class="paramref">condition</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ThrowIf(bool condition, Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The condition to evaluate.</p>
+</dd>
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The type whose full name should be included in any resulting <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>The <code class="paramref">condition</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</p>
+</dd>
+  </dl>
+
+
+
   <a id="System_ExceptionMessages_ThrowIfEqual_" data-uid="System.ExceptionMessages.ThrowIfEqual*"></a>
 
   <h3 id="System_ExceptionMessages_ThrowIfEqual__1___0___0_System_String_" data-uid="System.ExceptionMessages.ThrowIfEqual``1(``0,``0,System.String)">
   ThrowIfEqual&lt;T&gt;(T, T, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L293"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L382"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is equal to <code class="paramref">other</code>.</p>
@@ -215,7 +299,7 @@ providing backward compatibility for older frameworks. Each method conditionally
 
   <h3 id="System_ExceptionMessages_ThrowIfGreaterThanOrEqual__1___0___0_System_String_" data-uid="System.ExceptionMessages.ThrowIfGreaterThanOrEqual``1(``0,``0,System.String)">
   ThrowIfGreaterThanOrEqual&lt;T&gt;(T, T, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L357"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L449"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is greater than or equal <code class="paramref">other</code>.</p>
@@ -270,7 +354,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfGreaterThan__1___0___0_System_String_" data-uid="System.ExceptionMessages.ThrowIfGreaterThan``1(``0,``0,System.String)">
   ThrowIfGreaterThan&lt;T&gt;(T, T, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L335"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L426"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is greater than <code class="paramref">other</code>.</p>
@@ -324,7 +408,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfLessThanOrEqual__1___0___0_System_String_" data-uid="System.ExceptionMessages.ThrowIfLessThanOrEqual``1(``0,``0,System.String)">
   ThrowIfLessThanOrEqual&lt;T&gt;(T, T, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L400"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L494"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is less than or equal to <code class="paramref">other</code>.</p>
@@ -379,7 +463,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfLessThan__1___0___0_System_String_" data-uid="System.ExceptionMessages.ThrowIfLessThan``1(``0,``0,System.String)">
   ThrowIfLessThan&lt;T&gt;(T, T, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L378"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L471"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is less than <code class="paramref">other</code>.</p>
@@ -433,7 +517,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfNegative_System_Decimal_System_String_" data-uid="System.ExceptionMessages.ThrowIfNegative(System.Decimal,System.String)">
   ThrowIfNegative(decimal, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L253"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is negative.</p>
@@ -475,7 +559,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfNegative_System_Double_System_String_" data-uid="System.ExceptionMessages.ThrowIfNegative(System.Double,System.String)">
   ThrowIfNegative(double, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L247"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is negative.</p>
@@ -517,7 +601,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfNegative_System_Int16_System_String_" data-uid="System.ExceptionMessages.ThrowIfNegative(System.Int16,System.String)">
   ThrowIfNegative(short, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L223"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is negative.</p>
@@ -559,7 +643,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfNegative_System_Int32_System_String_" data-uid="System.ExceptionMessages.ThrowIfNegative(System.Int32,System.String)">
   ThrowIfNegative(int, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L229"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is negative.</p>
@@ -601,7 +685,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfNegative_System_Int64_System_String_" data-uid="System.ExceptionMessages.ThrowIfNegative(System.Int64,System.String)">
   ThrowIfNegative(long, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L235"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is negative.</p>
@@ -643,7 +727,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfNegative_System_SByte_System_String_" data-uid="System.ExceptionMessages.ThrowIfNegative(System.SByte,System.String)">
   ThrowIfNegative(sbyte, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L217"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is negative.</p>
@@ -685,7 +769,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfNegative_System_Single_System_String_" data-uid="System.ExceptionMessages.ThrowIfNegative(System.Single,System.String)">
   ThrowIfNegative(float, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L241"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is negative.</p>
@@ -727,7 +811,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfNegativeOrZero_System_Byte_System_String_" data-uid="System.ExceptionMessages.ThrowIfNegativeOrZero(System.Byte,System.String)">
   ThrowIfNegativeOrZero(byte, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L297"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is negative or zero.</p>
@@ -769,7 +853,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfNegativeOrZero_System_Decimal_System_String_" data-uid="System.ExceptionMessages.ThrowIfNegativeOrZero(System.Decimal,System.String)">
   ThrowIfNegativeOrZero(decimal, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L345"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is negative or zero.</p>
@@ -811,7 +895,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfNegativeOrZero_System_Double_System_String_" data-uid="System.ExceptionMessages.ThrowIfNegativeOrZero(System.Double,System.String)">
   ThrowIfNegativeOrZero(double, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L255"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L339"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is negative or zero.</p>
@@ -853,7 +937,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfNegativeOrZero_System_Int16_System_String_" data-uid="System.ExceptionMessages.ThrowIfNegativeOrZero(System.Int16,System.String)">
   ThrowIfNegativeOrZero(short, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L309"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is negative or zero.</p>
@@ -895,7 +979,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfNegativeOrZero_System_Int32_System_String_" data-uid="System.ExceptionMessages.ThrowIfNegativeOrZero(System.Int32,System.String)">
   ThrowIfNegativeOrZero(int, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L285"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is negative or zero.</p>
@@ -937,7 +1021,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfNegativeOrZero_System_Int64_System_String_" data-uid="System.ExceptionMessages.ThrowIfNegativeOrZero(System.Int64,System.String)">
   ThrowIfNegativeOrZero(long, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L321"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is negative or zero.</p>
@@ -979,7 +1063,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfNegativeOrZero_System_SByte_System_String_" data-uid="System.ExceptionMessages.ThrowIfNegativeOrZero(System.SByte,System.String)">
   ThrowIfNegativeOrZero(sbyte, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L303"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is negative or zero.</p>
@@ -1021,7 +1105,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfNegativeOrZero_System_Single_System_String_" data-uid="System.ExceptionMessages.ThrowIfNegativeOrZero(System.Single,System.String)">
   ThrowIfNegativeOrZero(float, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L251"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L333"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is negative or zero.</p>
@@ -1063,7 +1147,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfNegativeOrZero_System_UInt16_System_String_" data-uid="System.ExceptionMessages.ThrowIfNegativeOrZero(System.UInt16,System.String)">
   ThrowIfNegativeOrZero(ushort, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L239"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L315"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is negative or zero.</p>
@@ -1105,7 +1189,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfNegativeOrZero_System_UInt32_System_String_" data-uid="System.ExceptionMessages.ThrowIfNegativeOrZero(System.UInt32,System.String)">
   ThrowIfNegativeOrZero(uint, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L291"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is negative or zero.</p>
@@ -1147,7 +1231,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfNegativeOrZero_System_UInt64_System_String_" data-uid="System.ExceptionMessages.ThrowIfNegativeOrZero(System.UInt64,System.String)">
   ThrowIfNegativeOrZero(ulong, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L327"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is negative or zero.</p>
@@ -1189,7 +1273,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfNotEqual__1___0___0_System_String_" data-uid="System.ExceptionMessages.ThrowIfNotEqual``1(``0,``0,System.String)">
   ThrowIfNotEqual&lt;T&gt;(T, T, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L404"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is not equal to <code class="paramref">other</code>.</p>
@@ -1243,7 +1327,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfNull_System_IntPtr_System_String_" data-uid="System.ExceptionMessages.ThrowIfNull(System.IntPtr,System.String)">
   ThrowIfNull(nint, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a> if <code class="paramref">argument</code> is null (IntPtr.Zero).</p>
@@ -1288,7 +1372,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfNull_System_Object_System_String_" data-uid="System.ExceptionMessages.ThrowIfNull(System.Object,System.String)">
   ThrowIfNull(object?, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a> if <code class="paramref">argument</code> is null.</p>
@@ -1333,7 +1417,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfNullOrEmpty_System_String_System_String_" data-uid="System.ExceptionMessages.ThrowIfNullOrEmpty(System.String,System.String)">
   ThrowIfNullOrEmpty(string?, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an exception if <code class="paramref">argument</code> is null or empty.</p>
@@ -1381,7 +1465,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfNullOrWhiteSpace_System_String_System_String_" data-uid="System.ExceptionMessages.ThrowIfNullOrWhiteSpace(System.String,System.String)">
   ThrowIfNullOrWhiteSpace(string?, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L109"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an exception if <code class="paramref">argument</code> is null, empty, or consists only of white-space characters.</p>
@@ -1429,7 +1513,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfZero_System_Byte_System_String_" data-uid="System.ExceptionMessages.ThrowIfZero(System.Byte,System.String)">
   ThrowIfZero(byte, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is zero.</p>
@@ -1471,7 +1555,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfZero_System_Decimal_System_String_" data-uid="System.ExceptionMessages.ThrowIfZero(System.Decimal,System.String)">
   ThrowIfZero(decimal, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L184"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is zero.</p>
@@ -1513,7 +1597,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfZero_System_Double_System_String_" data-uid="System.ExceptionMessages.ThrowIfZero(System.Double,System.String)">
   ThrowIfZero(double, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L178"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is zero.</p>
@@ -1555,7 +1639,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfZero_System_Int16_System_String_" data-uid="System.ExceptionMessages.ThrowIfZero(System.Int16,System.String)">
   ThrowIfZero(short, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L148"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is zero.</p>
@@ -1597,7 +1681,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfZero_System_Int32_System_String_" data-uid="System.ExceptionMessages.ThrowIfZero(System.Int32,System.String)">
   ThrowIfZero(int, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L127"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is zero.</p>
@@ -1639,7 +1723,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfZero_System_Int64_System_String_" data-uid="System.ExceptionMessages.ThrowIfZero(System.Int64,System.String)">
   ThrowIfZero(long, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L160"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is zero.</p>
@@ -1681,7 +1765,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfZero_System_SByte_System_String_" data-uid="System.ExceptionMessages.ThrowIfZero(System.SByte,System.String)">
   ThrowIfZero(sbyte, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L144"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is zero.</p>
@@ -1723,7 +1807,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfZero_System_Single_System_String_" data-uid="System.ExceptionMessages.ThrowIfZero(System.Single,System.String)">
   ThrowIfZero(float, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L172"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is zero.</p>
@@ -1765,7 +1849,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfZero_System_UInt16_System_String_" data-uid="System.ExceptionMessages.ThrowIfZero(System.UInt16,System.String)">
   ThrowIfZero(ushort, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L154"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is zero.</p>
@@ -1807,7 +1891,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfZero_System_UInt32_System_String_" data-uid="System.ExceptionMessages.ThrowIfZero(System.UInt32,System.String)">
   ThrowIfZero(uint, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L133"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is zero.</p>
@@ -1849,7 +1933,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 
   <h3 id="System_ExceptionMessages_ThrowIfZero_System_UInt64_System_String_" data-uid="System.ExceptionMessages.ThrowIfZero(System.UInt64,System.String)">
   ThrowIfZero(ulong, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L166"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Throws an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code class="paramref">value</code> is zero.</p>
@@ -1891,7 +1975,7 @@ On .NET 8.0 and above, uses the framework's built-in method; otherwise, combines
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L13" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BelicusBr/com.cobilas.cs.lib.core.net4x/blob/main.fix/src/com.cobilas.cs.lib.core.net4x/System/ExceptionMessages.cs/#L9" class="edit-link">Edit this page</a>
         </div>
 
 
